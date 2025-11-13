@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/button_container" android:tag="layout/view_item_text_button_0" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="12.0dip" android:textColor="@color/synapse_basic_button_text_color" android:ellipsize="end" android:id="@id/button" android:background="@drawable/photo_list_button_background_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:maxLines="2" android:fontFamily="sec" android:layout_marginHorizontal="16.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="7.0dip" android:textFontWeight="600" style="@style/TextAppearance.RobotoRegular" />
+</LinearLayout>

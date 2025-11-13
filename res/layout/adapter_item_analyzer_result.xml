@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#ff2c2c2c" app:cardCornerRadius="12.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/analyzer_result_analyzer_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="2.0dip" android:alpha="0.9" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/analyzer_result_date_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="2.0dip" android:alpha="0.9" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start" android:id="@id/analyzer_result_chunk_result_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="chunk result: " android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" android:alpha="0.9" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="end" android:id="@id/analyzer_result_chunk_result" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start" android:id="@id/analyzer_result_noti_result_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="noti result:" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" android:alpha="0.9" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="end" android:id="@id/analyzer_result_noti_result" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

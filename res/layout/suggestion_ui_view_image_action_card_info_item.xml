@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_image_action_card_info_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/image_action_card_subtitle_text_size" android:id="@id/image_action_card_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/image_action_card_info_name_margin_end" />
+    <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/image_action_card_subtitle_text_size" android:id="@id/image_action_card_info_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

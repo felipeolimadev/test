@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="knowledge" keyFieldName="iri" version="1">
+
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer"/>
+
+    <fieldType name="string" dataType="String" class="StringField"/>
+    <fieldType name="text_field" dataType="String" class="TextField"/>
+
+    <field name="iri" type="string"/>
+    <field name="path" type="string"/>
+    <field name="label" type="text_field"/>
+
+    <fieldList type="search">
+        <fieldItem name="label" />
+    </fieldList>
+
+    <fieldList type="projection_search">
+        <fieldItem name="iri"/>
+        <fieldItem name="path"/>
+        <fieldItem name="label"/>
+    </fieldList>
+
+    <resultProvider class="knowledge.KnowledgeResultProvider" fillInIndexCursor="false">
+        <projectionField name="iri" />
+        <projectionField name="path" />
+        <projectionField name="label" />
+    </resultProvider>
+
+</schema>

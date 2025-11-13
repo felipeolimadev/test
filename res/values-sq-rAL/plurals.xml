@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d ditë mbeten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ditë mbetet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s vjen pas %2$d ditësh.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s vjen pas %2$d dite.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d ngjarje%3$s do të vazhdojnë nesër.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d ngjarje%3$s do të vazhdojë nesër.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Ke %1$s%2$d ngjarje%3$s sot.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke %1$s%2$d ngjarje%3$s sot.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Ke %1$d ngjarje sot. Ngjarja e parë është %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke %1$d ngjarje sot. Ngjarja e parë është %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d ngjarje kanë mbetur%3$s për sot.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d ngjarje ka mbetur%3$s për sot.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Ke %1$s%2$d ngjarje%3$s nesër.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke %1$s%2$d ngjarje%3$s nesër.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Ke %1$d ngjarje nesër. Ngjarja e parë është %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke %1$d ngjarje nesër. Ngjarja e parë është %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d ngjarje</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ngjarje</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Fillon për %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fillon për %d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d përkujtesa mbeten për sot</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d përkujtesë mbetet për sot</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Ke marrë %d mesazhe rreth dorëzimeve sot. Kontrollo për t’u siguruar se je përditësuar me statusin e dorëzimeve.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke marrë %d mesazh rreth një dorëzimi sot. Kontrollo për t’u siguruar se je përditësuar me statusin e dorëzimit.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d dorëzime sot</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dorëzim sot</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Mbi objektiv %d herë këtë javë.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mbi objektiv %d herë këtë javë.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">Arrite %d synime akt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Arrite %d synim akt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Diferenca totale në lartësi ishte %1$s dhe ti dogje %2$,d kilokalori.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Diferenca totale në lartësi ishte %1$s dhe ti dogje %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Tempoja jote mesatare ishte %1$s dhe ti dogje %2$,d kilokalori.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tempoja jote mesatare ishte %1$s dhe ti dogje %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Shpejtësia jote mesatare ishte %1$s dhe ti dogje %2$,d kilokalori.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Shpejtësia jote mesatare ishte %1$s dhe ti dogje %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Ja një përmbledhje e stërvitjes sate %1$s. Zgjati gjithsej %2$s dhe dogje %3$,d kilokalori.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ja një përmbledhje e stërvitjes sate %1$s. Zgjati gjithsej %2$s dhe dogje %3$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Nuk ke marrë %d barna të planëzuara sot.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nuk ke marrë %d bar të planëzuar sot.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d orë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d orë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d orë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d orë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Ke %1$s%2$d thirrje të humbura%3$s sot, që ende nuk i ke kontrolluar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke %1$s%2$d thirrje të humbur%3$s sot, që ende nuk e ke kontrolluar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Sot ke humbur %d thirrje. Shqyrtoji këto thirrje të humbura në Now brief. Po të jetë nevoja, mund edhe të cilësosh përkujtesa, që të mos harrosh t’i kthesh thirrjet.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sot ke humbur %d thirrje. Shqyrtoje këtë thirrje të humbur në Now brief. Po të jetë nevoja, mund edhe të cilësosh një përkujtesë, që të mos harrosh ta kthesh thirrjen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Edhe %d thirrje të humbura</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Edhe %d thirrje e humbur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d th. humbura</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d th. humbur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Para %d orësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Para %d ore</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Para %d minutash</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Para %d minute</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Duhet të jesh së paku %d vjeç, për të përdorur funksionalitetet e inteligjencës së avancuar të Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duhet të jesh së paku %d vjeç, për të përdorur funksionalitetet e inteligjencës së avancuar të Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d mesazhe</item>
+        <item quantity="one">%d mesazh</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekonda</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekondë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Ke cilësuar %1$s%2$d alarme%3$s për në mëngjes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke cilësuar %1$s%2$d alarm%3$s për në mëngjes.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Ke cilësuar %1$s%2$d alarme%3$s për nesër në mëngjes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke cilësuar %1$s%2$d alarm%3$s për nesër në mëngjes.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sDil para orës %2$s%3$s që të arrish në aeroport të paktën %4$d orë para nisjes së avionit. Cilëso një alarm që të mos harrosh.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sDil para orës %2$s%3$s që të arrish në aeroport të paktën %4$d orë para nisjes së avionit. Cilëso një alarm që të mos harrosh.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sDil para orës %2$s%3$s që të shkosh në aeroport të paktën %4$d orë para fluturimit.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sDil para orës %2$s%3$s që të shkosh në aeroport të paktën %4$d orë para fluturimit.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Sugjero një itinerar udhëtimesh %1$d-ditor për %2$s, përfshi vendet për të vizituar, gjërat për të bërë dhe restorantet që ia vlen t’i provosh.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sugjero një itinerar udhëtimesh %1$d-ditor për %2$s, përfshi vendet për të vizituar, gjërat për të bërë dhe restorantet që ia vlen t’i provosh.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Hidhi një sy këtyre %1$sapp-eve të rekomanduara%2$s që mund të jenë me dobi gjatë udhëtimit tënd.</item>
+        <item quantity="one">Hidhi një sy këtij %1$sapp-i të rekomanduar%2$s që mund të jetë me dobi gjatë udhëtimit tënd.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sShkarkoje këtë paketë gjuhësore%2$s paraprakisht, që të jesh gati ta përdorësh te Përkthyesi gojor kur të mbërrish në destinacion.</item>
+        <item quantity="one">%1$sShkarkoji këto paketa gjuhësore%2$s paraprakisht, që të jesh gati t’i përdorësh te Përkthyesi gojor kur të mbërrish në destinacion.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Paketat gjuhësore për shkarkim</item>
+        <item quantity="one">Paketa gjuhësore për shkarkim</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d pajisje janë ndezur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pajisje është ndezur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Kontaktuar së fundi para %d ditësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktuar së fundi para %d dite</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Kontaktuar së fundi para %d ditësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktuar së fundi para %d dite</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Kontaktuar së fundi para %d muajsh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktuar së fundi para %d muaji</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Kontaktuar së fundi para %d javësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktuar së fundi para %d jave</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Edhe %d kontakte të tjera</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Edhe %d kontakt tjetër</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Ke një kupon në Samsung Wallet që skadon pas %d ditësh. Mos harro që ta përdorësh para se të skadojë.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke një kupon në Samsung Wallet që skadon pas %d dite. Mos harro që ta përdorësh para se të skadojë.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">E lartë minus %d gradë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">E lartë minus %d gradë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">E ulët minus %d gradë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">E ulët minus %d gradë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Ke një ngjarje në kalendar të quajtur %1$s. Do të jetë %2$d gradë %3$s në %4$s në %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ke një ngjarje në kalendar të quajtur %1$s. Do të jetë %2$d gradë %3$s në %4$s në %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">E lartë %d gradë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">E lartë %d gradë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">E ulët %d gradë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">E ulët %d gradë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s afishime</item>
+        <item quantity="one">%s afishim</item>
+    </plurals>
+</resources>

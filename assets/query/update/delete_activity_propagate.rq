@@ -1,0 +1,45 @@
+DELETE { ?s ?p ?o }
+WHERE {
+    {
+        VALUES (?target) {<Keywords>}
+        BIND(?target AS ?s)
+        ?s ?p ?o .
+    } UNION {
+        VALUES (?target) {<Keywords>}
+        BIND(?target AS ?o)
+        ?s ?p ?o .
+    } UNION {
+        VALUES (?target) {<Keywords>}
+        ?target time:hasBeginning|time:hasEnd ?s .
+        ?s ?p ?o .
+    } UNION {
+        VALUES (?target) {<Keywords>}
+        ?target ?contentPredicate ?s .
+        ?s rdf:type/rdfs:subClassOf content:Content .
+        ?s ?p ?o .
+        FILTER NOT EXISTS {
+             ?another rdf:type/rdfs:subClassOf user:Event .
+             ?another ?ps ?s .
+             FILTER (?another != ?target)
+        }
+    } UNION {
+        VALUES (?target) {<Keywords>}
+        ?engram ?eventPredicate ?target .
+        ?engram rdf:type/rdfs:subClassOf user:Engram .
+        {
+            ?s rdf:unknown? ?engram .
+            ?s ?p ?o .
+        } UNION {
+            ?engram time:hasBeginning|time:hasEnd ?s .
+          ?s ?p ?o .
+        } UNION {
+          ?o rdf:unknown? ?engram .
+            ?s ?p ?o .
+        }
+        FILTER NOT EXISTS {
+             ?another rdf:type/rdfs:subClassOf user:Event .
+             ?engram ?ps ?another .
+             FILTER (?another != ?target)
+        }
+    }
+}

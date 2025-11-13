@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/db_table_buttons_layout" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/dropdown_category" app:layout_constraintTop_toTopOf="parent">
+        <Button android:textColor="@color/selector_button_text" android:id="@id/btn_table_raw_notification" android:background="@drawable/button_solid_selectable" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Notification Table" android:layout_weight="1.0" />
+        <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+        <Button android:enabled="false" android:textColor="@color/selector_button_text" android:id="@id/btn_table_notification_summary" android:background="@drawable/button_solid_selectable" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Summary Table" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Spinner android:id="@id/dropdown_category" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:spinnerMode="dropdown" android:layout_marginHorizontal="12.0dip" app:layout_constraintBottom_toTopOf="@id/content_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/db_table_buttons_layout" />
+    <FrameLayout android:id="@id/content_container" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dropdown_category">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout_raw_notification" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_raw_notification" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout_notification_summray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/item_recycler_view_notification_summary" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/notification_item_loading_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+        <TextView android:textSize="15.0sp" android:layout_gravity="center" android:id="@id/empty_notification_item_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="표시할 항목이 없습니다.\n화면을 아래로 내려 새로고침" android:alpha="0.7" android:textAlignment="center" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

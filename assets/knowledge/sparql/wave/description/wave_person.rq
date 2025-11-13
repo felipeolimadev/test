@@ -1,0 +1,13 @@
+SELECT DISTINCT ?targetTP
+(GROUP_CONCAT(DISTINCT STR(?originTP); SEPARATOR=',') AS ?originTPs)
+(GROUP_CONCAT(DISTINCT STR(?person); SEPARATOR=',') AS ?persons)
+{
+    VALUES ?originTP { <ORIGIN_TAKING_PICTURES_IRI> }
+    VALUES ?targetTP { <TARGET_TAKING_PICTURES_IRI> }
+
+    # 포함된 사람의 사진
+    ?originTP user:withPerson ?person .
+    ?targetTP user:withPerson ?person .
+}
+GROUP BY ?targetTP
+ORDER BY ?targetTP

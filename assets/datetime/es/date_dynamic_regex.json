@@ -1,0 +1,90 @@
+[
+  {
+    "patternName": "<<event_keywords_start>>",
+    "patternValue": [
+      "comienz[ao]",
+      "comenza(?:r[á]?|ndo)",
+      "inici(?:[oa]|ará|o)",
+      "empiez[oa]",
+      "empeza(?:r[á]?|ndo)",
+      "abiert[oa]",
+      "abr(?:e|irá)",
+      "apertura",
+      "arranca",
+      "activa"
+    ]
+  },
+  {
+    "patternName": "<<event_keywords_end>>",
+    "patternValue": [
+      "termina(?:do)?",
+      "finaliza(?:do)?",
+      "acaba(?:do)?",
+      "conclu(?:ye|ido)",
+      "cierr(?:[ae]|ado)?",
+      "cerrará",
+      "clausura",
+      "detiene(?:do)?",
+      "suspend(?:e|ido)",
+      "cabo"
+    ]
+  },
+  {
+    "patternName": "<<date_keywords_before>>",
+    "patternValue": [
+      "del?",
+      "el",
+      "alrededor de"
+    ]
+  },
+  {
+    "patternName": "<<date_keywords_before_others>>",
+    "patternValue": [
+      "por las?",
+      "en las?",
+      "a el"
+    ]
+  },
+  {
+    "patternName": "<<range_connector>>",
+    "patternValue": [
+      "hasta",
+      "al?",
+      "y"
+    ]
+  },
+  {
+    "patternName": "<<from>>",
+    "patternValue": [
+      "desde",
+      "a patir",
+      "del?"
+    ]
+  },
+  {
+    "patternName": "<<between>>",
+    "patternValue": [
+      "entre"
+    ]
+  },
+  {
+    "patternName": "<<valid>>",
+    "patternValue": [
+      "válid[oa]",
+      "efectiv[oa]",
+      "aplicable"
+    ]
+  },
+  {
+    "patternName" : "<<dm_connector>>",
+    "patternValue" : [
+      "de"
+    ]
+  },
+  {
+    "patternName" : "<<my_connector>>",
+    "patternValue" : [
+      "del"
+    ]
+  }
+]

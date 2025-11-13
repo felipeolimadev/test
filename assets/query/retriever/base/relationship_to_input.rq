@@ -1,0 +1,6 @@
+{
+    VALUES (?relationInput{IDX}) {<Keywords>}
+    GRAPH user:relation {
+        person:TheUser ?relationInput{IDX} ?input{IDX} .
+    }
+}

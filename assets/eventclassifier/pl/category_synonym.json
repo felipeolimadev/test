@@ -1,0 +1,135 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "impreza",
+                    "urodziny",
+                    "randka",
+                    "parapetówka",
+                    "zebranie",
+                    "ceremonia wejścia",
+                    "festiwal",
+                    "msza",
+                    "cześć",
+                    "kościół",
+                    "rocznica",
+                    "zakupy",
+                    "kolacja",
+                    "obiad",
+                    "przekąska",
+                    "świętować",
+                    "uroczystość",
+                    "randki",
+                    "pogrzeb"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "impreza na zakończenie roku",
+                    "przyjęcie powitalne",
+                    "randka w ciemno",
+                    "wspólne posiłki",
+                    "jedzenie poza domem",
+                    "ceremonia ślubna",
+                    "ceremonia ukończenia szkoły",
+                    "ceremonia pogrzebowa",
+                    "ceremonia wręczenia nagród",
+                    "obrzędy przodków",
+                    "zjeść poza domem"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "dzień ślubu"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "spotkanie",
+                    "warsztat",
+                    "seminarium",
+                    "wywiad",
+                    "konferencja",
+                    "praca",
+                    "egzamin",
+                    "klasa",
+                    "biuro",
+                    "forum",
+                    "prezentacja",
+                    "analiza"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "pracujący",
+                    "iść do pracy",
+                    "wyjść z pracy",
+                    "uczestniczyć w zajęciach"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "praca na pół etatu"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "podróż",
+                    "kemping",
+                    "wesołe miasteczko",
+                    "zoo",
+                    "akwarium",
+                    "wycieczka",
+                    "świat Disneya",
+                    "miesiąc miodowy"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "wspinaczka górska",
+                    "podróż służbowa"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "rezerwacja",
+                    "Rezerwacja",
+                    "bilet"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "zameldować się",
+                    "wymeldować się"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/learn_more_activity_layout" android:tag="layout/smart_suggestions_settings_learn_more_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expandedTitleTextAppearance="@style/CollapsingToolBarStyle" app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed|snap" app:title="@string/learn_more_about_personal_data_intelligence">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/AppCompatStyle" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_marginEnd="36.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/AppTheme" app:titleTextAppearance="@style/Toolbar.TitleText" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include android:id="@id/message_layout" android:background="@color/round_and_bgcolor" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/smart_suggestions_settings_learn_more_message" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

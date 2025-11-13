@@ -1,0 +1,19 @@
+SELECT distinct ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+WHERE {
+    VALUES (?originImageFile) {<IMAGE_FILE_IRI>}
+        # originNode is  TakingPicturesActivity
+        ?originImageFile ^user:objectContent ?originNode.
+        {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+            WHERE{
+                VALUES ?waveNum {  1 }
+                VALUES ?pathNum { 2 }
+                VALUES ?score { 0.01 }
+                ?originNode user:capturedToScheduled/user:extractedFrom ?bridgeNode.
+                ?bridgeNode content:eventCategory/^content:eventCategory ?secondBridgeNode.
+                ?secondBridgeNode ^user:extractedFrom/user:scheduledToCaptured ?targetNode.
+                ?targetNode a user:TakingPictures.
+                FILTER (?bridgeNode  != ?secondBridgeNode)
+            }
+        }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/suggestion_ui_view_moments_detail_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.ui.decoration.BriefBackgroundView android:id="@id/background_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:background="@color/moments_detail_dimmer_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/main_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

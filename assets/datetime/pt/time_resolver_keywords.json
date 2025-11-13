@@ -1,0 +1,65 @@
+{
+    "absolute": [
+      {
+        "id": 1,
+        "key": "am_present",
+        "keywords": [
+          "manhã",
+          "de manhã",
+          "pela manhã",
+          "cedo de manhã",
+          "tarde da manhã",
+          "amanhecer"
+        ]
+      },
+      {
+        "id": 2,
+        "key": "pm_present",
+        "keywords": [
+          "tarde",
+          "da tarde",
+          "hoje à tarde",
+          "noite",
+          "à noite",
+          "no final da tarde",
+          "no final da noite",
+          "no início da noite",
+          "no início da tarde",
+          "anoitecer"
+        ]
+      }
+    ],
+    "special": [
+      {
+        "id": 1,
+        "key": "00:00:00:AM",
+        "keywords": [
+          "meia-noite",
+          "meia noite"
+        ]
+      },
+      {
+        "id": 2,
+        "key": "12:00:00:PM",
+        "keywords": [
+          "meio-dia",
+          "meio dia"
+        ]
+      },
+      {
+        "id": 3,
+        "key": "00:30:00:DELTA",
+        "keywords": [
+          "\\s*(meia hora)\\s*"
+        ]
+      },
+      {
+        "id": 4,
+        "key": "00:01:00:DELTA",
+        "keywords": [
+          "um minuto"
+        ]
+      }
+    ]
+  }
+  

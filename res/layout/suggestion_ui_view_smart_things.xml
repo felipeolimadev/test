@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/smartThingsWidgetContainerLayout" android:tag="layout/suggestion_ui_view_smart_things_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/smart_things_title_text_size" android:textStyle="bold" android:textColor="@color/card_text_color" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smart_things_title_margin" android:fontFamily="sec" android:layout_marginStart="@dimen/smart_things_title_margin" />
+    <TextView android:textSize="@dimen/smart_things_subtitle_text_size" android:textColor="@color/energy_score_description_text_color" android:layout_gravity="center_vertical" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/smart_things_subtitle_margin_top" android:fontFamily="sec" android:layout_marginStart="@dimen/smart_things_title_margin" />
+</LinearLayout>

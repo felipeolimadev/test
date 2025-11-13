@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/widget_rounded_background_color" />
+    <corners android:topLeftRadius="@dimen/image_action_card_image_radius" android:topRightRadius="@dimen/image_action_card_image_radius" android:bottomLeftRadius="@dimen/image_action_card_image_radius" android:bottomRightRadius="@dimen/image_action_card_image_radius" />
+</shape>

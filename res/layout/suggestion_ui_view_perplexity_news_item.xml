@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/perplexity_news_item_layout" android:tag="layout/suggestion_ui_view_perplexity_news_item_0" android:background="@drawable/rounded_widget_info_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/health_exercise_weekly_report_layout_top_margin" android:baselineAligned="false" android:weightSum="5.0" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/health_exercise_weekly_report_layout_top_margin" android:layout_marginBottom="@dimen/health_exercise_weekly_report_layout_top_margin" android:layout_weight="4.0" android:layout_marginStart="@dimen/health_exercise_weekly_report_layout_top_margin">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/perplexity_news_item_icon" android:background="@drawable/suggestion_ui_body_icon_background" android:layout_width="@dimen/perplexity_news_item_icon_size" android:layout_height="@dimen/perplexity_news_item_icon_size" android:importantForAccessibility="no" android:clipToOutline="true" />
+            <TextView android:textSize="@dimen/perplexity_news_item_title_text_size" android:id="@id/perplexity_news_item_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/health_exercise_weekly_report_layout_top_margin" style="@style/TextAppearance.RobotoMedium" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/perplexity_news_main_text_size" android:id="@id/perplexity_news_item_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/health_exercise_weekly_report_layout_top_margin" style="@style/TextAppearance.RobotoRegular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginTop="@dimen/health_exercise_weekly_report_layout_top_margin" android:layout_marginBottom="@dimen/health_exercise_weekly_report_layout_top_margin" android:layout_weight="1.0" android:layout_marginStart="@dimen/health_exercise_weekly_report_layout_top_margin" android:layout_marginEnd="@dimen/health_exercise_weekly_report_layout_top_margin">
+        <ImageView android:id="@id/perplexity_news_item_image" android:background="@drawable/rounded_widget_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" android:clipToOutline="true" />
+    </LinearLayout>
+</LinearLayout>

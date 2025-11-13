@@ -1,0 +1,13 @@
+{
+    select distinct ?engram ?pivot{IDX} ?p_score{IDX} ?max_linkingScore{IDX}
+    where {
+        <INPUT_TO_PIVOT>
+
+        ?engram rdf:type/rdfs:subClassOf user:Engram .
+        ?pivot{IDX} rdf:unknown? ?engram .
+        BIND(<SCORE_ENGRAM_PIVOT> AS ?p_score{IDX})
+
+        <PIVOT_TO_TIME>
+        <TIME_FILTER>
+    }
+}

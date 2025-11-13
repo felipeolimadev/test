@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "pattern" : "vom (<date>)\\s?bis\\s?(<date>)\\s?(?:von)?\\s?(<time>)\\s?(?:-|~|bis)?\\s?(<time>)",
+    "groupings" : [[1,2],[3,4]]
+  },{
+    "id": "2",
+    "pattern" : "(<date>)\\(?:-|~|bis)?\\s?(<date>)\\s?(?:,|um)?\\s?(<time>)",
+    "groupings" : [[1,2],[3,-1]]
+  },{
+    "id": "3",
+    "pattern" : "(<date>)\\s?(?:von|,)?\\s?(<time>)\\s?(?:-|~|bis)?\\s?(<time>)",
+    "groupings" : [[1,-1],[2,3]]
+  }
+]
+

@@ -1,0 +1,10 @@
+{
+  "name": "RObject",
+  "type": "datatype",
+  "id": "datatype.primitive.RObject",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

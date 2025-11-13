@@ -1,0 +1,7 @@
+travel,tour,viagem,trip
+matrimônio,sejuntar,celebraçãodecasamento,wedding,diadocasamento,cerimônia de casamento,eventodecasamento,casamento,seamarrando,núpcias,amarrandoonó,marriage ceremony
+cerimôniadeadmissão,matriculation,cerimônia de entrada,cerimôniadeinscrição,cerimôniadematrícula,entrance ceremony
+diadaformatura,cerimôniadediploma,cerimôniadeformatura,graduation,formatura,eventodeformatura,convocação,graduação,commencement
+dn,birthday,aniversário,níver,datadenascimento,aniversáriodenascimento,diadenatal,diadenascimento,birth anniversary
+aniversário de casamento,marriage anniversary,wedding anniversary,comemoraçãonupcial
+vacation,férias

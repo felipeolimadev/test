@@ -1,0 +1,5 @@
+SELECT distinct ?s
+WHERE {
+    VALUES (?signature) {<Signatures>}
+    ?s design:identifier ?signature .
+}

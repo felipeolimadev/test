@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Analyzer">
+        <SwitchPreferenceCompat android:title="Relationship Analyzer" android:key="KEY_RELATIONSHIP_ANALYZER_SWITCH" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Settings">
+        <SwitchPreferenceCompat android:title="Relationship Constraints" android:key="KEY_RELATIONSHIP_CONSTRAINT_SWITCH" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="Full Analysis" android:key="KEY_RELATIONSHIP_INCREMENTAL_ANALYSIS_SWITCH" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Family APIs">
+        <Preference android:title="Gallery Person Type" android:key="KEY_RELATIONSHIP_GALLERY_FAMILY" app:iconSpaceReserved="false" />
+        <Preference android:title="Contact Person Type" android:key="KEY_RELATIONSHIP_CONTACT_FAMILY" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Engine">
+        <Preference android:title="Gender Age Estimator" android:key="KEY_RELATIONSHIP_GAE_ENGINE" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

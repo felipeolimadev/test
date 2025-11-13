@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/document_nav_graph" app:startDestination="@id/document_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Document" android:name="com.samsung.android.moneta.debugui.developmode.collector.rawdata.DocumentMainFragment" android:id="@id/document_main">
+        <action android:id="@id/action_document_main_to_document_viewer" app:destination="@id/document_viewer" />
+    </fragment>
+    <fragment android:label="Viewer" android:name="com.samsung.android.moneta.debugui.developmode.collector.rawdata.viewer.DocumentViewerFragment" android:id="@id/document_viewer" />
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="correlated" package="" keyFieldName="keyword_set" prefKey="correlated" version="5">
+    <defaultAnalyzer type="index" class="bs.LowerCaseKeywordAnalyzer" />
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+
+    <!-- parent value-->
+    <field name="keyword_set" type="string" stored="true" />
+    <!-- level 0 child value-->
+    <field name="keyword" type="multi_value_string" stored="false" />
+    <field name="related_keyword" type="multi_value_string" stored="false" />
+</schema>

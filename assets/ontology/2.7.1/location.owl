@@ -1,0 +1,83 @@
+@prefix design: <http://pkg.samsung.com/design#> .
+@prefix location: <http://pkg.samsung.com/location#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://pkg.samsung.com/location> a owl:Ontology ;
+    owl:versionIRI <http://pkg.samsung.com/location/1.1.2> .
+
+location:AdminArea a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:Country a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:FrequentlyVisitedPlace a owl:Class ;
+    rdfs:subClassOf location:Place .
+
+location:Home a owl:Class ;
+    rdfs:subClassOf location:Place .
+
+location:Locality a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:Point a owl:Class ;
+    rdfs:subClassOf location:GCSDescription .
+
+location:Region a owl:Class ;
+    rdfs:subClassOf location:GCSDescription .
+
+location:StreetName a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:StreetNumber a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:SubAdminArea a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:SubLocality a owl:Class ;
+    rdfs:subClassOf location:AddressComponent .
+
+location:WorkPlace a owl:Class ;
+    rdfs:subClassOf location:Place .
+
+location:address a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+location:altitude a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+location:hasPart a owl:ObjectProperty .
+
+location:inside a owl:ObjectProperty .
+
+location:latitude a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+location:longitude a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+location:name a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+location:near a owl:ObjectProperty .
+
+location:positioning a owl:ObjectProperty .
+
+location:radius a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+location:GCSDescription a owl:Class ;
+    rdfs:subClassOf location:Location .
+
+location:Location a owl:Class .
+
+location:Place a owl:Class ;
+    rdfs:subClassOf location:Location .
+
+location:AddressComponent a owl:Class ;
+    rdfs:subClassOf location:Location .
+

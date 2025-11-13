@@ -1,0 +1,77 @@
+SELECT DISTINCT ?target {
+    ?target a user:TakingPictures .
+
+    # (1) 초기 검색 결과에 포함된 사람이 나온 사진 존재
+    FILTER EXISTS {
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        ?target user:withPerson ?person .
+        ?origin user:withPerson ?person .
+    }
+
+    # (2) 물리적으로 구분되는 다른 장소에서 찍은 사진 존재
+    FILTER EXISTS {
+        ?target user:atLocation ?location .
+        FILTER NOT EXISTS {
+            values ?origin { <TAKING_PICTURES_IRI> } .
+            ?origin user:atLocation ?location .
+        }
+    }
+
+    # (3) 초기 검색 결과 이벤트와 동일한 카테고리의 이벤트 존재
+    FILTER EXISTS {
+        {
+            SELECT DISTINCT ?targetEvent {
+                {
+                    SELECT DISTINCT ?originEvent {
+                        VALUES ?origin { <TAKING_PICTURES_IRI> }
+                        ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                        ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                        ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+                        ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+                        ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+                        FILTER (?originEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originStartTime)
+                    }
+                }
+                ?originEvent content:eventCategory/^content:eventCategory ?targetEvent .
+            }
+        }
+        ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+        ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+        ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+        ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+
+        FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+    }
+
+    # (4) 초기 검색 결과와 다른 시간에 발생한 이벤트 존재
+    FILTER EXISTS {
+        {
+            SELECT DISTINCT ?targetEvent ?targetEventStartTime ?targetEventEndTime {
+                ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+                ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+
+                ?targetEvent a/rdfs:subClassOf user:ScheduledEvent .
+                ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+                ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+                FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+            }
+        }
+
+        FILTER NOT EXISTS {
+            {
+                SELECT DISTINCT ?originEvent ?originEventStartTime ?originEventEndTime {
+                    VALUES ?origin { <TAKING_PICTURES_IRI> }
+                    ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                    ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                    ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+                    ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+                    ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+                    FILTER (?originEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originStartTime)
+                }
+            }
+            FILTER (?originEventEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?originEventStartTime)
+        }
+    }
+}

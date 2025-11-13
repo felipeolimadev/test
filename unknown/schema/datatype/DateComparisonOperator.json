@@ -1,0 +1,50 @@
+{
+  "name": "DateComparisonOperator",
+  "type": "datatype",
+  "id": "datatype.enumeration.DateComparisonOperator",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "isOn",
+      "isNotOn",
+      "isAfter",
+      "isBefore",
+      "isOnOrAfter",
+      "isOnOrBefore",
+      "between"
+    ],
+    "descriptions": [
+      {
+        "value": "isOn",
+        "description": "Is on"
+      },
+      {
+        "value": "isNotOn",
+        "description": "Is not on"
+      },
+      {
+        "value": "isAfter",
+        "description": "Is after"
+      },
+      {
+        "value": "isBefore",
+        "description": "Is before"
+      },
+      {
+        "value": "isOnOrAfter",
+        "description": "Is on or after"
+      },
+      {
+        "value": "isOnOrBefore",
+        "description": "Is on or before"
+      },
+      {
+        "value": "between",
+        "description": "Between"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

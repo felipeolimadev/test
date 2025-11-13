@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "NUM_TIME_AFTER_REFERENCE",
+    "comment": "2 days from now, a week after, after a week, past 2 days, before 3 days, etc.",
+    "patternString": "(?:of|in)?\\s*(?:a)?\\s*((<num>)?(?:a)?\\s*(<time_period>))\\s*(?:and)?\\s*(?:a)?\\s*((<num>)?\\s*(<time_period>))?\\s*(?:and)?\\s*(?:a)?\\s*((<num>)?\\s*(<time_period>))?\\s*(<after_reference>|<before_reference>)\\s*(?:of|in)?",
+    "isRelative": true,
+    "isPrefix": true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id": 2,
+    "type": "AFTER_REFERENCE_NUM_TIME",
+    "comment": "after a week, before 2 months",
+    "patternString": "(?:of|in)?\\s*(<after_reference>|<before_reference>)\\s*(?:a|an)?\\s*((<num>)?\\s*(<time_period>))\\s*(?:and)?\\s*(?:a|an)?\\s*((<num>)?\\s*(<time_period>))?\\s*(?:and)?\\s*(?:a|an)?\\s*((<num>)?\\s*(<time_period>))?\\s*(?:of|in)?",
+    "isRelative": true,
+    "isPrefix" : true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id" : 3,
+    "type" : "AFTER_REFERENCE_NUM_TIME_ONLY_FOR_PREFIX",
+    "comment" : "next month, next year, this will only serve as a prefix | suffix for cases like 25th jan next year, only next year will be handled by range resolver.",
+    "patternString" : "(?:of|in)?\\s*(<after_range>|<before_range>|<last_reference>|<current_reference>)\\s*(<time_period>)\\s*(?:of|in)?",
+    "isOnlyPrefix" : true,
+    "isPrefix" : true,
+    "isRelative" : false
+  },
+  {
+    "id" : 4,
+    "type" : "SPECIAL_CASE_OF_FROM",
+    "comment" : "2 days from now",
+    "patternString" : "(<num>|<num_suffix>|a)\\s*(<time_period>)\\s*(<starts_from>)",
+    "isPrefix" : true,
+    "isOnlyPrefix" : true
+  },
+  {
+    "id" : 5,
+    "type" : "RELATIVE_DAY_OF_WEEK",
+    "patternString" : "(<after_range>|<before_range>|<current_reference>|<last_reference>)\\s*(<day_of_week>)",
+    "comment" : "last sunday, next sunday",
+    "isRelative": true
+  }
+]

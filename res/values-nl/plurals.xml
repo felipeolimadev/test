@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d dagen over.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dag over.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s vindt plaats over %2$d dagen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s vindt plaats over %2$d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d gebeurtenissen%3$s gaan morgen verder.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d gebeurtenis%3$s gaat morgen verder.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Je hebt vandaag %1$s%2$d gebeurtenissen%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt vandaag %1$s%2$d gebeurtenis%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Je hebt vandaag %1$d gebeurtenissen. De eerste gebeurtenis is %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt vandaag %1$d gebeurtenis. De eerste gebeurtenis is %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d gebeurtenissen over%3$s voor vandaag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d gebeurtenis over%3$s voor vandaag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Je hebt morgen %1$s%2$d gebeurtenissen%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt morgen %1$s%2$d gebeurtenis%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Je hebt morgen %1$d gebeurtenissen. De eerste gebeurtenis is %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt morgen %1$d gebeurtenis. De eerste gebeurtenis is %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d gebeurt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gebeurt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Begint over %d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Begint over %d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d herinneringen over vandaag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d herinnering over vandaag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Je hebt vandaag %d leveringsberichten ontvangen. Controleer dit zodat je op de hoogte bent van de status van je leveringen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt vandaag %d leveringsbericht ontvangen. Controleer dit zodat je op de hoogte bent van de status van je levering.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d leveringen vandaag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d levering vandaag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Deze week %d keer boven je doel.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Deze week %d keer boven je doel.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d activ.doelen behaald</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d activ.doel behaald</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Je totale stijging was %1$s en je hebt %2$,d kilocalorieën verbrand.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je totale stijging was %1$s en je hebt %2$,d kilocalorie verbrand.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Je gemiddelde tempo was %1$s en je hebt %2$,d kilocalorieën verbrand.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je gemiddelde tempo was %1$s en je hebt %2$,d kilocalorie verbrand.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Je gemiddelde snelheid was %1$s en je hebt %2$,d kilocalorieën verbrand.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je gemiddelde snelheid was %1$s en je hebt %2$,d kilocalorie verbrand.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Dit is een samenvatting van je training voor %1$s. De duur was %2$s en je hebt %3$,d kilocalorieën verbrand.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dit is een samenvatting van je training voor %1$s. De duur was %2$s en je hebt %3$,d kilocalorie verbrand.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Je hebt vandaag %d geplande medicaties gemist.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt vandaag %d geplande medicatie gemist.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d uur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d uur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minuten</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Je hebt vandaag %1$s%2$d gemiste oproepen%3$s die je nog niet hebt bekeken.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt vandaag %1$s%2$d gemiste oproep%3$s die je nog niet hebt bekeken.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Je hebt vandaag %d gemiste oproepen. Bekijk deze gemiste oproepen in je Now brief. Indien nodig kun je ook herinneringen instellen zodat je niet vergeet om terug te bellen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt vandaag %d gemiste oproep. Bekijk deze gemiste oproep in je Now brief. Indien nodig kun je ook een herinnering instellen zodat je niet vergeet om terug te bellen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Nog %d gemiste oproepen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nog %d gemiste oproep</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d gemiste opr.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gemiste oproep</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nieuwe meldingen</item>
+        <item quantity="one">%d nieuwe melding</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d uur geleden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uur geleden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d min geleden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min geleden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Je moet ten minste %d jaar zijn om de Galaxy AI-functies voor geavanceerde intelligentie te gebruiken.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je moet ten minste %d jaar zijn om de Galaxy AI-functies voor geavanceerde intelligentie te gebruiken.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d berichten</item>
+        <item quantity="one">%d bericht</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d seconden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Je hebt %1$s%2$d alarmen%3$s ingesteld voor de ochtend.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt %1$s%2$d alarm%3$s ingesteld voor de ochtend.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Je hebt %1$s%2$d alarmen%3$s ingesteld voor morgenochtend.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt %1$s%2$d alarm%3$s ingesteld voor morgenochtend.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sVertrek om %2$s%3$s zodat je ten minste %4$d uur voor vertrek op de luchthaven bent. Stel een alarm in om het niet te vergeten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sVertrek om %2$s%3$s zodat je ten minste %4$d uur voor vertrek op de luchthaven bent. Stel een alarm in om het niet te vergeten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sVertrek om %2$s%3$s zodat je ten minste %4$d uur voor vlucht op de luchthaven bent.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sVertrek om %2$s%3$s zodat je ten minste %4$d uur voor vlucht op de luchthaven bent.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Stel een %1$d-daagse reis voor naar %2$s met plaatsen om te bezoeken, dingen te doen en restaurants die de moeite van het proberen waard zijn.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Stel een %1$d-daagse reis voor naar %2$s met plaatsen om te bezoeken, dingen te doen en restaurants die de moeite van het proberen waard zijn.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Controleer deze %1$saanbevolen apps%2$s die mogelijk handig zijn tijdens je reis.</item>
+        <item quantity="one">Controleer deze %1$saanbevolen app%2$s die mogelijk handig is tijdens je reis.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sDownload dit taalpakket%2$s van tevoren zodat je het als tolk kunt gebruiken wanneer je op je bestemming aankomt.</item>
+        <item quantity="one">%1$sDownload deze taalpakketten%2$s van tevoren zodat je ze als tolk kunt gebruiken wanneer je op je bestemming aankomt.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Taalpakketten om te downloaden</item>
+        <item quantity="one">Taalpakket om te downloaden</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d apparaten zijn aan</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d apparaat is aan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Laatst contact %d dagen geleden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laatst contact %d dag geleden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Laatste contact %d dagen geleden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laatste contact %d dag geleden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Laatste contact %d maanden geleden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laatste contact %d maand geleden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Laatste contact %d weken geleden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laatste contact %d week geleden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Nog %d contacten</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nog %d contact</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Je hebt een coupon in Samsung Wallet die over %d dagen verloopt. Zorg dat je de coupon gebruikt voordat deze verloopt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt een coupon in Samsung Wallet die over %d dag verloopt. Zorg dat je de coupon gebruikt voordat deze verloopt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Hoog min %d graden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hoog min %d graad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Laag min %d graden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laag min %d graad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Je hebt een gebeurtenis in je agenda met de naam %1$s. Het wordt %2$d graden %3$s om %4$s in %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Je hebt een gebeurtenis in je agenda met de naam %1$s. Het wordt %2$d graad %3$s om %4$s in %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Hoog %d graden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hoog %d graad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Laag %d graden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laag %d graad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s weergaven</item>
+        <item quantity="one">Weergave %s</item>
+    </plurals>
+</resources>

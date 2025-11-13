@@ -1,0 +1,114 @@
+[
+    {
+      "patternName": "<<event_keywords_start>>",
+      "patternValue": [
+        "começar",
+        "iniciar",
+        "partir",
+        "provocar",
+        "dar começo a",
+        "causar",
+        "trazer à baila",
+        "orginar",
+        "arranque",
+        "largada",
+        "arrancada",
+        "a linha de partida",
+        "arranco",
+        "dianteria",
+        "principiar",
+        "inaugurar"
+      ]
+    },
+    {
+        "patternName": "<<event_keywords_end>>",
+        "patternValue": [
+            "final",
+            "último",
+            "fim",
+            "terminação",
+            "conclusão",
+            "arremate",
+            "fechando",
+            "encerramento",
+            "decisivo",
+            "fechar",
+            "encerrar",
+            "terminar",
+            "fechado",
+            "acabar",
+            "rematar",
+            "termo"
+        ]
+    },
+    {
+        "patternName": "<<date_keywords_before>>",
+        "patternValue": [
+            "da?",
+            "do",
+            "na?",
+            "no",
+            "às",
+            "cerca\\sde",
+            "por\\svolta\\sde"
+        ]
+    },
+    {
+        "patternName": "<<date_keywords_before_others>>",
+        "patternValue": [
+                "à",
+                "às",
+                "na?",
+                "no",
+                "por",
+                "pelas?",
+                "nas?"
+        ]
+    },
+    {
+        "patternName": "<<range_connector>>",
+        "patternValue": [
+            "a",
+            "até",
+            "e"
+        ]
+    },
+    {
+        "patternName": "<<from>>",
+        "patternValue": [
+            "de",
+            "desde",
+            "a partir de",
+            "do?",
+            "da?",
+            "das?",
+            "dos?"
+        ]
+    },
+    {
+        "patternName": "<<between>>",
+        "patternValue": [
+            "entre"
+        ]
+    },
+    {
+        "patternName": "<<valid>>",
+        "patternValue": [
+            "válid[oa]",
+            "eficaz",
+            "aplicável"
+        ]
+    },
+    {
+        "patternName": "<<dm_connector>>",
+        "patternValue": [
+            "de"
+        ]
+    },
+    {
+        "patternName": "<<my_connector>>",
+        "patternValue": [
+            "do"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "type": "2_DATE_RANGE",
+    "patternString": "(?<startDay>(<num>|<num_suffix>))\\s*(?:([-])|(<range_relative_connector>))\\s*(?<endDate><date>)",
+    "comment": "25-27th jan <date> will be replaced dynamically",
+    "boundRange" : true
+  },
+  {
+    "id" : 1,
+    "type": "2_DATE_RANGE",
+    "patternString": "(?<startDate><date>)\\s*(?:([-])|(<range_relative_connector>))\\s*(?<endDay>(<num>|<num_suffix>))\\s*[,]?\\s*(?<endYear><num>)?",
+    "comment": "27th jan - 29th , 2025 <date> will be replaced dynamically",
+    "boundRange" : true
+  },
+  {
+    "id": 2,
+    "type" : "2_date_range",
+    "comment" : "27th to 29th of this month",
+    "boundRange": true,
+    "patternString" : "(?<startDay>(<num>|<num_suffix>))\\s*(?:([-])|(<range_relative_connector>))\\s*(?<endDate>(<num>|<num_suffix>)\\s*(?:của)\\s*(<current_reference>|<after_range>|<before_range>|<recurring_keyword>)\\s*(<time_period>))"
+  },
+  {
+    "id": 3,
+    "type": "DAY_OF_WEEK_2_DAY_OF_WEEK_SPECIAL_CASE",
+    "comment": "mon - fri",
+    "patternString": "(?<dayOfWeek1><day_of_week>)\\s*(?:\\p{Punct})?\\s*(?:to)?\\s*(?<dayOfWeek2><day_of_week>)",
+    "twoDayOfWeekRange" : true
+  },
+  {
+    "id": 4,
+    "type": "PREVIOUS_NEXT_TIME_PERIOD",
+    "comment": "next week next january",
+    "patternString": "(<after_range>|<before_range>|<last_reference>|<current_reference>)\\s*(<num>)?\\s*(<time_period>)\\s*(<num>)?\\s*(<time_period>)?\\s*(<num>)?\\s*(<time_period>)?",
+    "relativeRange" : true
+  },
+  {
+    "id": 5,
+    "type": "NEXT_PREVIOUS_DAY_OF_WEEK",
+    "comment": "from (next sunday | previous sunday)",
+    "patternString": "(<starts_from>|<ends_on>)\\s*(?<dateBoundary>(<day_of_week>)\\s*(<time_period>)?\\s*(<after_range>|<before_range>|<current_reference>|<last_reference>))",
+    "unBoundRange" : true,
+    "isDurationPossible" : true,
+    "relativeRange": true
+  },
+  {
+    "id" : 6,
+    "type" : "RELATIVE_UNBOUND_RANGE",
+    "comment" : "from next month, day, year, week",
+    "patternString" : "(<starts_from>|<ends_on>)\\s*(?<dateBoundary>(<time_period>|<month>)\\s*(<after_range>|<before_range>|<current_reference>|<last_reference>))",
+    "unBoundRange" : true,
+    "relativeRange" : true
+  },
+  {
+    "id" : 7,
+    "type" : "RELATIVE_BOUND_RANGE",
+    "comment" : "next january",
+    "patternString" : "(<month>)\\s*(<after_range>|<before_range>|<current_reference>|<last_reference>)",
+    "relativeRange" : true
+  },
+  {
+    "id": 8,
+    "type": "WEEKEND_OR_WEEKDAY",
+    "comment": "weekend | weekday",
+    "patternString": "(?:tuần|tuần\\s*thứ|cuối\\s*tuần)",
+    "isOnlyWeekendOrWeekDay": true
+  }
+]

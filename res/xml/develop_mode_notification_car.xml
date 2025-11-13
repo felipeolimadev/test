@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_notification_car">
+        <Preference android:title="@string/preference_notification_car_driver_info" android:fragment="com.samsung.android.moneta.debugui.developmode.notification.NotificationCarDriverFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_notification_car_analysis" android:fragment="com.samsung.android.moneta.debugui.developmode.notification.NotificationCarAnalysisFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_notification_car_classifier" android:fragment="com.samsung.android.moneta.debugui.developmode.notification.NotificationCarClassifierFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_notification_navigation_monitor" android:fragment="com.samsung.android.moneta.debugui.developmode.notification.NotificationNavigationMonitorFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

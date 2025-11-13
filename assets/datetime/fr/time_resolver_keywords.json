@@ -1,0 +1,53 @@
+{
+  "absolute": [
+    {
+      "id": 1,
+      "key": "am_present",
+      "keywords":[
+        "am",
+        "a.m.",
+        "a.m",
+        "matin",
+        "(?:tôt\\s)?(?:le|du)? matin",
+        "fin de matinée",
+        "aube"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "pm_present",
+      "keywords":[
+        "pm",
+        "p.m.",
+        "p.m",
+        "midi",
+        "(?:dans l|fin d)'après-midi",
+        "soir",
+        "nuit",
+        "dans la (?:soirée|nuit)",
+        "tard dans la (?:nuit|soirée)",
+        "début de soirée",
+        "crépuscule",
+        "l'après-midi",
+        "l'aprã¨s-midi"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "key": "00:00:00:AM",
+      "keywords": [
+        "minuit"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "12:00:00:PM",
+      "keywords": [
+        "après-midi",
+        "midi"
+      ]
+    }
+  ]
+}

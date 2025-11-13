@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/suggestion_ui_view_health_exercise_workout_result_item_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/workout_data_icon" android:layout_width="@dimen/health_exercise_workout_report_data_icon_width" android:layout_height="@dimen/health_exercise_workout_report_data_icon_height" android:tint="@color/spotify_card_logo_color" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/health_exercise_workout_report_data_text_size" android:ellipsize="end" android:id="@id/workout_data_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/health_exercise_workout_report_data_text_start_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/workout_data_icon" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.RobotoRegular" />
+</androidx.constraintlayout.widget.ConstraintLayout>

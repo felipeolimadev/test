@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d күн калды.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d күн калды.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s %2$d күндөн кийин болот.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s %2$d күндөн кийин болот.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d иш-чара%3$s эртең уланат.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d иш-чара%3$s эртең уланат.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Бүгүн %1$s%2$d иш-чара%3$s калды.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгүн %1$s%2$d иш-чара%3$s калды.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Сизде бүгүн %1$d иш-чара бар. Биринчи иш-чара: %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сизде бүгүн %1$d иш-чара бар. Биринчи иш-чара: %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Бүгүн үчүн %1$s%2$d иш-чара%3$s калды.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгүн үчүн %1$s%2$d иш-чара%3$s калды.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Сизде эртең %1$s%2$d иш-чара%3$s болот.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сизде эртең %1$s%2$d иш-чара%3$s болот.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Сизде эртең %1$d иш-чара бар. Биринчи иш-чара: %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сизде эртең %1$d иш-чара бар. Биринчи иш-чара: %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d иш-чара</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d иш-чара</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d мүнөттө башталат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мүнөттө башталат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Бүгүнкүгө %d эстеткичтер калды</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгүнкүгө %d эскертүү калды</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Бүгүн %d жеткирүү билдирүүсүн алдыңыз. Жеткирүүүңүздүн абалы боюнча жаңыртуу алганыңызды текшериңиз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгүн %d жеткирүү билдирүүсүн алдыңыз. Жеткирүүүңүздүн абалы боюнча жаңыртуу алганыңызды текшериңиз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">Бүгүн %d жеткирүү бар</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгүн %d жеткирүү бар</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Аптада максат.н %d жолу аштыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аптада максат.н %d жолу аштыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d аракет макс. жетти</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d аракет макс. жетти</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Жалпы бийиктик %1$s болуп, %2$,d килокалория күйгүздүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Жалпы бийиктик %1$s болуп, %2$,d килокалория күйгүздүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Орточо темпиңиз %1$s болуп, %2$,d килокалория күйгүздүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Орточо темпиңиз %1$s болуп, %2$,d килокалория күйгүздүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Орточо ылдамдыгыңыз %1$s болуп, %2$,d килокалория күйгүздүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Орточо ылдамдыгыңыз %1$s болуп, %2$,d килокалория күйгүздүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">%1$s машыгууңуздун корутундусу бул жерде. %2$s убакыт машыгып, %3$,d килокалория күйгүздүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s машыгууңуздун корутундусу бул жерде. %2$s убакыт машыгып, %3$,d килокалория күйгүздүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Сиз бүгүнкүгө %d тартиптелген дары-дармектерди өткөрүп жибердиңиз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сиз бүгүнкүгө %d тартиптелген дары-дармекти өткөрүп жибердиңиз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d саат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d саат мурун</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d саат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d саат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d мүнөт</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мүнөт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d мүнөт</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мүнөт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Сиз бүгүн текшербеген %1$sжооп берилбеген %2$d чалуу%3$s бар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сиз бүгүн текшербеген %1$sжооп берилбеген %2$d чалуу%3$s бар.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">"Бүгүн %d чалууга жооп берген жоксуз. Бул жооп берилбеген чалууларды Now brief'тен карап көрүңүз. Керек болсо, кайра чалууну унутпоо үчүн эстеткич жөндөй аласыз."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Бүгүн %d чалууга жооп берген жоксуз. Бул жооп берилбеген чалууну Now brief'тен карап көрүңүз. Керек болсо, кайра чалууну унутпоо үчүн эстеткич жөндөй аласыз."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Жооп берилбеген дагы %d чалуу</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Жооп берилбеген дагы %d чалуу</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d алынб. чалуу</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d алынб. чалуу</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d саат мурун</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d саат мурун</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d мүнөт мурун</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мүнөт мурун</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI өркүндөтүлгөн функцияларын колдонуу үчүн сиз кеминде %d жашта болушуңуз керек.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AI өркүндөтүлгөн функцияларын колдонуу үчүн сиз кеминде %d жашта болушуңуз керек.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d билдирүү</item>
+        <item quantity="one">%d билдирүүсү</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d миля</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d миля</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d секунд</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d секунд</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Эртең менен үчүн %1$s%2$d ойготкуч%3$s койдуңуз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Эртең менен үчүн %1$s%2$d ойготкуч%3$s койдуңуз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Эртеңки таң үчүн %1$s%2$d ойготкуч%3$s койдуңуз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Эртеңки таң үчүн %1$s%2$d ойготкуч%3$s койдуңуз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">Аэропортко учууңузга кеминде %4$d саат калганда баруу үчүн %1$sсаат%2$s чейин чыгыңыз%3$s. Унутуп калбашыңыз үчүн ойготкуч коюңуз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аэропортко учууңузга кеминде %4$d саат калганда баруу үчүн %1$sсаат%2$s чейин чыгыңыз%3$s. Унутуп калбашыңыз үчүн ойготкуч коюңуз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">Аэропортко учууңузга кеминде %4$d саат калганда жетүү үчүн %1$sсаат%2$s чейин чыгыңыз%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аэропортко учууңузга кеминде %4$d саат калганда жетүү үчүн %1$sсаат%2$s чейин чыгыңыз%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">%2$s үчүн %1$d күндүк саякат маршрутун сунуштаңыз, анын ичинде зыярат кылуучу жерлер, жасай турган нерселер жана бара турган ресторандар бар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s үчүн %1$d күндүк саякат маршрутун сунуштаңыз, анын ичинде зыярат кылуучу жерлер, жасай турган нерселер жана бара турган ресторандар бар.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Сапарыңыз үчүн бул пайдалуу %1$sсунушталган колдонмолорду%2$s текшериңиз.</item>
+        <item quantity="one">Сапарыңыз үчүн бул пайдалуу %1$sсунушталган колдонмону%2$s текшериңиз.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sБул тил топтомун жүктөп алып%2$s, көздөгөн жериңизге келгенде аны Котормочуда колдонуңуз.</item>
+        <item quantity="one">%1$sБул тил топтомдорун жүктөп алып%2$s, көздөгөн жериңизге келгенде аны Котормочуда колдонуңуз.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Жүктөп алуу үчүн тил таңгактары</item>
+        <item quantity="one">Жүктөп алуу үчүн тил таңгагы</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d түзмөк күйүк</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d түзмөк күйүк</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Акыркы жолу %d күн мурун байланышкан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Акыркы жолу %d күн мурун байланышкан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Акыркы байланыш: %d күн мурун</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Акыркы байланыш: %d күн мурун</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Акыркы байланыш: %d ай мурун</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Акыркы байланыш: %d ай мурун</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Акыркы байланыш: %d апта мурун</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Акыркы байланыш: %d апта мурун</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Дагы %d байланыш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Дагы %d байланыш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">"Samsung Wallet'те купонуңуз бар, анын мөөнөтү %d күндөн кийин бүтөт. Мөөнөтү бүтө электен мурун аны колдонуңуз."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Wallet'те купонуңуз бар, анын мөөнөтү %d күндөн кийин бүтөт. Мөөнөтү бүтө электен мурун аны колдонуңуз."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Жогору минус %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Жогору минус %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Төмөн минус %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Төмөн минус %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Календарыңызда %1$s деген иш-чара бар. %5$s деген жерде саат %4$s температура %2$d (%3$s) болот.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Календарыңызда %1$s деген иш-чара бар. %5$s деген жерде саат %4$s температура %2$d (%3$s) болот.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Жогору %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Жогору %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Төмөн %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Төмөн %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s көрүү</item>
+        <item quantity="one">%s көрүү</item>
+    </plurals>
+</resources>

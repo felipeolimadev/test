@@ -1,0 +1,91 @@
+[
+  {
+    "id" : 1,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1,
+        "dayOfWeek" : 2
+      }
+    ],
+    "comment" : "2nd tuesday"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "day",
+    "comment" : "2nd day"
+  },
+  {
+    "id": 3,
+    "patternString": "(?:\\s|^|\\.|,)(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping": [
+        {
+          "dayOfWeek": 1
+        }
+      ],
+      "comment" : "tuesday"
+  },
+  {
+    "id": 3,
+    "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "weekCount": 1
+      }
+    ],
+    "shouldContainKeyword": "\\bweek\\b",
+    "comment" : "2nd week"
+  },
+  {
+    "id" : 4,
+    "patternString": "(?:\\s|^|\\.|,|\\-|\\?)(<relative_day>)(?:\\s|$|\\.|,|\\-|\\?)",
+    "isRelative" : true,
+    "comment" : "today | tmrw | yesterday .."
+  },
+  {
+    "id" : 5,
+    "patternString" : "(?:\\s|^|\\.|,)(<last_reference>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1
+      }
+    ]
+  },
+  {
+    "id" : 5,
+    "patternString" : "(?:\\s|^|\\.|,)(<last_reference>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "day"
+  },
+  {
+    "id" : 6,
+    "patternString" : "(?:\\s|^|\\.|,)(?:the)?\\s*(<num_suffix>|<num>)\\s*(?:of)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ]
+  },
+  {
+    "id" : 7,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekendCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "\\bweekend\\b",
+    "comment" : "2nd weekend"
+  }
+
+]

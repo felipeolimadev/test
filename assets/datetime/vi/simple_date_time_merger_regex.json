@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1",
+    "pattern" : "(<date>)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "2",
+    "pattern" : "(<date>)\\s?(?:trên|vào)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "3",
+    "pattern" : "(?:trên|vào)(<date>)\\s?,?\\s?(?:vào\\s*lúc|lúc)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "4",
+    "pattern" : "(<date>)\\s?,?\\s?(?:tại|Vào lúc|lúc|@)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "5",
+    "pattern" : "(<date>)\\s*,\\s*(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "6",
+    "pattern" : "trước\\s?(<time>)\\s?(?:trên|vào)\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },
+  {
+    "id": "7",
+    "pattern" : "(<time>)\\s?(?:trên|vào)\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },
+  {
+    "id": "8",
+    "pattern" : "(<time>)\\s?,?\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },
+  {
+    "id": "9",
+    "pattern" : "(<date>),? từ (<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "10",
+    "pattern" : "(<date>),?\\s*(?:bắt\\s*đầu)\\s?(?:tại|Vào lúc|lúc|@)?\\s*(<time>)",
+    "groupings" : [[1,2]],
+    "specialLengthCase" : true
+  },
+  {
+    "id": "11",
+    "pattern" : "(<date>),?\\s*(?:kết\\s*thúc)\\s?(?:tại|Vào lúc|lúc|@)?\\s*(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "12",
+    "pattern": "(<date>)\\s*(?:\\|)\\s*(?:Thời gian:|thời gian:)?\\s*(<time>)",
+    "groupings" : [[1,2]]
+  }
+]

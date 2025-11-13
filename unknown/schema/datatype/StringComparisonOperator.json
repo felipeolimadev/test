@@ -1,0 +1,35 @@
+{
+  "name": "StringComparisonOperator",
+  "type": "datatype",
+  "id": "datatype.enumeration.StringComparisonOperator",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "contains",
+      "notContains",
+      "startWith",
+      "endWith"
+    ],
+    "descriptions": [
+      {
+        "value": "contains",
+        "description": "Contains"
+      },
+      {
+        "value": "notContains",
+        "description": "Not contains"
+      },
+      {
+        "value": "startWith",
+        "description": "Start with"
+      },
+      {
+        "value": "endWith",
+        "description": "End with"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

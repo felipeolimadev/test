@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:gravity="center" android:id="@id/container" android:tag="layout/suggestion_ui_view_moments_detail_carousel_image_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/content_image_view" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/moments_bg_carousel_card_content_view" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

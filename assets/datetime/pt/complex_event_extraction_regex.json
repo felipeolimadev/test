@@ -1,0 +1,32 @@
+[
+    {
+      "id": "1",
+      "pattern": "(?:entre|desde|a partir de)\\s?(?:o|os)?\\s?(<date>)\\s?(?:e|até|para)\\s?(?:o|os)?\\s?(<date>)\\s?(?:desde|de)?\\s?(?:às|as)?\\s*(<time>)\\s?(?:até|para|e)\\s?(?:as)?\\s?(<time>)",
+      "groupings": [[1, 2], [3, 4]],
+      "comment": "entre (<date>) e (<date>) desde (<time>) até (<time>)"
+    },
+    {
+      "id": "2",
+      "pattern": "(?:de\\s?|do\\s?)?(<date>)\\s?(?:a|até|para)\\s?(<date>)\\s?(?:de|desde|a)?\\s?(?:às|as)?\\s*(<time>)\\s?(?:até|para)\\s?(?:as)?\\s*(<time>)",
+      "groupings": [[1, 2], [3, 4]],
+      "comment": "de (<date>) a (<date>) desde (<time>) até (<time>)"
+    },
+    {
+      "id": "3",
+      "pattern": "(<date>)(?:\\s?(?:a|até|para|de|em|por|do)\\s?)?(<date>)(?:\\s?(?:às|as|a|em|hacia|sobre)\\s?)?(<time>)",
+      "groupings": [[1, 2], [3, -1]],
+      "comment": "de (<date>) a (<date>) às (<time>)"
+    },
+    {
+      "id": "4",
+      "pattern": "(?:do|desde)\\s?(<date>)(?:\\s?(?:a|desde|em|por|da|das?|às?)\\s?)?(<time>)\\s?(?:até|para|e)?\\s?(?:as)?\\s?(<time>)",
+      "groupings": [[1, -1], [2, 3]],
+      "comment": "desde (<date>) às (<time>) até (<time>)"
+    },
+    {
+      "id": "5",
+      "pattern": "(?:o\\s)?(<date>)\\s?(?:até|para|a|al|e)\\s?(?:o\\s)?(<date>)\\s?(?:depois de|a partir de|em diante|desde|luego de|passado|tras|mais tarde de|de aí em diante|antes de)\\s?(?:às|as)?\\s?(<time>)",
+      "groupings": [[1, 2], [3, -1]],
+      "comment": "desde (<date>) até (<date>) em diante/antes de (<time>)"
+    }
+  ]

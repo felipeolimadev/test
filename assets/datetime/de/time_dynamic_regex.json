@@ -1,0 +1,57 @@
+[
+  {
+    "patternName": "<<hourly_suffix>>",
+    "patternValue": [
+      "<time_h>",
+      "uhr",
+      "auf die Minute genau",
+      "auf den Punkt",
+      "uhrzeit",
+      "o Uhr",
+      "punktgenau"
+    ]
+  },
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "an",
+      "in",
+      "auf",
+      "um",
+      "in dem",
+      "diesem",
+      "das",
+      "bei",
+      "im",
+      "herein",
+      "zirka",
+      "diese",
+      "dass",
+      "zu",
+      "in der",
+      "dieses",
+      "die"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "nach",
+      "vor"
+    ]
+  },
+  {
+    "patternName": "<<time_keywords_before>>",
+    "patternValue": [
+      "um",
+      "gegen",
+      "am",
+      "Zeit:",
+      "Zeit",
+      "bei",
+      "an",
+      "zirka",
+      "auf"
+    ]
+  }
+]

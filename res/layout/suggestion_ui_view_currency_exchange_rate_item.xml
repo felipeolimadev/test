@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggestion_ui_view_currency_exchange_rate_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/exchange_rate_item_height">
+        <TextView android:textAppearance="@style/TextStyleRegular" android:textSize="13.0sp" android:textColor="@color/currency_code_color" android:id="@id/currency_unit" android:layout_width="@dimen/exchange_rate_item_currency_code_width" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextStyleMedium" android:textSize="20.0sp" android:textColor="@color/currency_exchange_color" android:id="@id/value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewEnd" android:layout_marginStart="8.0dip" />
+        <TextView android:textAppearance="@style/TextStyleRegular" android:textSize="13.0sp" android:textColor="@color/currency_change_up_color" android:id="@id/change" android:layout_width="@dimen/exchange_rate_item_currency_change_width" android:layout_height="wrap_content" android:textAlignment="viewEnd" android:layout_marginStart="7.0dip" />
+        <ImageView android:id="@id/change_image" android:layout_width="@dimen/exchange_rate_item_currency_change_size" android:layout_height="@dimen/exchange_rate_item_currency_change_size" android:src="@drawable/currency_exchange_change_up" android:contentDescription="@null" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/travel_currency_exchange_list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/weekly_item_container" android:tag="layout/suggestion_ui_view_weekly_report_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/weekly_item_bar" android:background="@drawable/weekly_report_bar_image" android:layout_width="@dimen/digital_well_being_report_item_bar_width" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <TextView android:textSize="@dimen/digital_well_being_report_item_day_text_size" android:textColor="@color/digital_well_being_item_day_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/weekly_item_day" android:layout_width="@dimen/digital_well_being_report_item_day_width" android:layout_height="@dimen/digital_well_being_report_item_day_height" android:layout_marginTop="@dimen/digital_well_being_report_item_margin_top" android:singleLine="true" android:fontFamily="sec" android:textFontWeight="400" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="52.0dip" android:width="52.0dip" android:viewportWidth="52.0" android:viewportHeight="52.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_contents_parking__0" android:pathData="M26,26m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffcfcff" android:pathData="M26,13C33.18,13 39,18.82 39,26C39,33.18 33.18,39 26,39C18.82,39 13,33.18 13,26C13,18.82 18.82,13 26,13ZM26.094,18.78L21.234,18.78L21.234,33L23.714,33L23.714,28.52L26.094,28.52C27.841,28.52 29.207,28.087 30.194,27.22C31.181,26.353 31.674,25.153 31.674,23.62C31.674,22.127 31.177,20.947 30.184,20.08C29.191,19.213 27.827,18.78 26.094,18.78ZM25.914,21.06C26.994,21.06 27.807,21.283 28.354,21.73C28.901,22.177 29.174,22.807 29.174,23.62C29.174,24.46 28.901,25.103 28.354,25.55C27.807,25.997 26.994,26.22 25.914,26.22L23.714,26.22L23.714,21.06L25.914,21.06Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

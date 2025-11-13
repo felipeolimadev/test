@@ -1,0 +1,25 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pkg: <http://pkg.samsung.com#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix widoco: <https://w3id.org/widoco/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://pkg.samsung.com> a owl:Ontology ;
+    dct:abstract "Personal Knowledge Ontology is a modeling of a user's memory. Data sources for modeling are Samsung mobile phones, Tv, and various home appliances, and high level information that has been analyzed and refined is the input of KG." ;
+    owl:imports <http://pkg.samsung.com/content/2.7.0>,
+        <http://pkg.samsung.com/design/1.0.6>,
+        <http://pkg.samsung.com/location/1.1.2>,
+        <http://pkg.samsung.com/relationship/1.0.1>,
+        <http://pkg.samsung.com/user/1.8.0>,
+        time:2016-0.1.0 ;
+    owl:versionIRI <http://pkg.samsung.com/2.7.0> ;
+    widoco:introduction "The most basic element of user memory is the Episode memory, which is the record of user activity and action.The following information describes classes and properties required to express user action and activity." .
+
+pkg:ontology pkg:version "2.7.0" .
+
+pkg:version a owl:DatatypeProperty .
+
+xsd:date a rdfs:Datatype .
+

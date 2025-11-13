@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d egun falta dira.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d egun falta da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s %2$d egun barru.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s %2$d egun barru.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d gertaerek%3$s bihar jarraituko dute.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d gertaerak%3$s bihar jarraituko du.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">%1$s%2$d gertaera%3$s dituzu gaur.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d gertaera%3$s duzu gaur.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">%1$d gertaera dituzu gaur. Lehen gertaera %2$s da.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d gertaera duzu gaur. Lehen gertaera %2$s da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d gertaera geratzen dira%3$s gaur.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d gertaera geratzen da%3$s gaur.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">%1$s%2$d gertaera%3$s dituzu bihar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d gertaera%3$s duzu bihar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">%1$d gertaera dituzu bihar. Lehen gertaera %2$s da.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$d gertaera duzu bihar. Lehen gertaera %2$s da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d gertaera</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gertaera</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Hasiera: %d min barru</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hasiera: %d min barru</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d abisu geratzen dira gaur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d abisu geratzen da gaur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">%d entrega mezu jaso dituzu gaur. Eman begiratu bat entregen egoerari buruzko informazio eguneratu duzula ziurtatzeko.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d entrega mezu jaso duzu gaur. Eman begiratu bat entregaren egoerari buruzko informazio eguneratu duzula ziurtatzeko.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d entrega gaur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d entrega gaur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Helb. gain. %d aldiz aste honetan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Helb. gain. %d aldiz aste honetan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d jard. helb. bete dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d jard. helb. bete da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Zure guztizko desnibel positiboa %1$s izan da eta %2$,d kilokaloria erre dituzu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zure guztizko desnibel positiboa %1$s izan da eta %2$,d kilokaloria erre duzu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Zure batez besteko erritmoa %1$s izan da eta %2$,d kilokaloria erre dituzu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zure batez besteko erritmoa %1$s izan da eta %2$,d kilokaloria erre duzu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Zure batez besteko abiadura %1$s izan da eta %2$,d kilokaloria erre dituzu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zure batez besteko abiadura %1$s izan da eta %2$,d kilokaloria erre duzu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Hona hemen zure %1$s entrenamenduaren laburpena. %2$s iraun du eta %3$,d kilokaloria erre dituzu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hona hemen zure %1$s entrenamenduaren laburpena. %2$s iraun du eta %3$,d kilokaloria erre duzu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Gaur ez dituzu hartu programatutako %d sendagai.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gaur ez duzu hartu programatutako %d sendagai.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ordu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ordu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ordu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ordu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minutu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minutu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Oraindik ikusi ez dituzun %1$s%2$d dei galdu%3$s dituzu gaur.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oraindik ikusi ez duzun %1$s%2$d dei galdu%3$s duzu gaur.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">%d dei galdu dituzu gaur. Ikusi dei galdu horiek Now brief-en. Behar izanez gero, abisuak ere ezar ditzakezu, deiak itzultzea ez ahazteko.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dei galdu duzu gaur. Ikusi dei galdu hori Now brief-en. Behar izanez gero, abisu bat ere ezar dezakezu, deia itzultzea ez ahazteko.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Beste %d dei galdu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Beste %d dei galdu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d dei galdu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dei galdu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Duela %d ordu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duela %d ordu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Duela %d minutu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Duela %d minutu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Gutxienez %d urte izan behar dituzu Galaxy AI-ren adimen aurreratuko eginbideak erabiltzeko.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gutxienez %d urte izan behar duzu Galaxy AI-ren adimen aurreratuko eginbideak erabiltzeko.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d mezu</item>
+        <item quantity="one">%d mezu</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d segundo</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d segundo</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Goizerako %1$s%2$d alarma%3$s ezarri dituzu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Goizerako %1$s%2$d alarma%3$s ezarri duzu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Bihar goizerako %1$s%2$d alarma%3$s ezarri dituzu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bihar goizerako %1$s%2$d alarma%3$s ezarri duzu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sAbiatu %2$s%3$s(ak) aldera aireportura aireratu baino %4$d ordu lehenago iristeko. Ezarri alarma bat ahatz ez dezazun.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sAbiatu %2$s%3$s(ak) aldera aireportura aireratu baino %4$d ordu lehenago iristeko. Ezarri alarma bat ahatz ez dezazun.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sAbiatu %2$s%3$s(ak) aldera aireportuan hegaldia aireratu baino %4$d ordu lehenago egoteko.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sAbiatu %2$s%3$s(ak) aldera aireportuan hegaldia aireratu baino %4$d ordu lehenago egoteko.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Proposatu %2$s helmuga duen %1$d eguneko bidaia ibilbide bat, bisitatzeko tokiak, egitekoak eta probatzea merezi duten jatetxeak barne.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Proposatu %2$s helmuga duen %1$d eguneko bidaia ibilbide bat, bisitatzeko tokiak, egitekoak eta probatzea merezi duten jatetxeak barne.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Ikusi bidaian lagungarriak izan daitezkeen %1$saplikazio gomendatu%2$s hauek.</item>
+        <item quantity="one">Ikusi bidaian lagungarria izan daitekeen %1$saplikazio gomendatu%2$s hau.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sDeskargatu hizkuntza pakete hau %2$s aldez aurretik, helmugara iristen zarenean Interpretea aplikazioan erabiltzeko prest egon dadin.</item>
+        <item quantity="one">%1$sDeskargatu hizkuntza pakete hauek %2$s aldez aurretik, helmugara iristen zarenean Interpretea aplikazioan erabiltzeko prest egon daitezen.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Deskargatzeko hizkuntza paketeak</item>
+        <item quantity="one">Deskargatzeko hizkuntza paketea</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d gailu piztuta daude</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gailua piztuta dago</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Azken harremana duela %d egun</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Azken harremana duela %d egun</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Azken konexioa: duela %d egun</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Azken konexioa: duela %d egun</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Azken konexioa: duela %d hil</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Azken konexioa: duela %d hil</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Azken konexioa: duela %d aste</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Azken konexioa: duela %d aste</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d kontaktu gehiago</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kontaktu gehiago</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">%d egun barru iraungitzen den kupoi bat daukazu Samsung Wallet-en. Ziurtatu iraungi baino lehen erabiltzen dela.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d egun barru iraungitzen den kupoi bat daukazu Samsung Wallet-en. Ziurtatu iraungi baino lehen erabiltzen dela.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Altua minus %d gradu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Altua minus %d gradu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Baxua minus %d gradu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Baxua minus %d gradu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">%1$s izeneko gertaera bat duzu egutegian. %2$d %3$s gradu egingo ditu %4$setan %5$s kokapenean.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s izeneko gertaera bat duzu egutegian. %2$d %3$s gradu egingo ditu %4$setan %5$s kokapenean.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Altua %d gradu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Altua %d gradu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Baxua %d gradu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Baxua %d gradu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s ikustaldi</item>
+        <item quantity="one">%s ikustaldi</item>
+    </plurals>
+</resources>

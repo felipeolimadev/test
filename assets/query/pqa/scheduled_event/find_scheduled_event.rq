@@ -1,0 +1,20 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    {
+        <TARGET_TYPES_FILTER>
+
+        ?scheduled_event rdf:type/rdfs:subClassOf ?event_type .
+        ?scheduled_event time:inXSDBeginningDateTimeStamp ?start_time .
+        ?scheduled_event time:inXSDEndDateTimeStamp ?end_time .
+
+        <TIME_FILTER>
+
+        <CONTENT_FILTER>
+
+    }
+    {
+        ?s rdf:unknown? ?scheduled_event .
+        ?s ?p ?o .
+    }
+}
+<OUTPUT_SORT>

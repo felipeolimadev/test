@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.graphics.drawable.SeslRecoilDrawable app:seslRecoilColor="@color/moments_sesl_recoil_ripple_color" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="@dimen/moments_content_detail_video_desc_bg_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/moments_detail_content_detail_desc_bg_color" />
+            <corners android:radius="@dimen/moments_content_detail_video_desc_bg_radius" />
+            <stroke android:width="@dimen/moments_content_detail_video_desc_bg_stroke_width" android:color="@color/moments_detail_content_detail_desc_stroke_color" />
+        </shape>
+    </item>
+</androidx.appcompat.graphics.drawable.SeslRecoilDrawable>

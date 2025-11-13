@@ -1,0 +1,14 @@
+{
+    ?s rdf:unknown? ?person .
+    FILTER (?s != person:TheUser)
+    ?s ?p ?o EXPLICIT true .
+    BIND(STR(?s) AS ?index)
+} UNION {
+    GRAPH user:relation {
+        ?o relationship:sameAs? ?person .
+        ?s ?p ?o EXPLICIT true .
+        FILTER (?o != person:TheUser)
+        FILTER (?s = person:TheUser)
+    }
+    BIND(STR(?person) AS ?index)
+}

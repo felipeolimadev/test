@@ -1,0 +1,17 @@
+SELECT ?S ?P ?O {
+    {
+        SELECT DISTINCT ?S {
+            ?activity rdf:type/rdfs:subClassOf user:Exercising .
+            ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+            ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+<PERSON_FILTER>
+<TIME_FILTER>
+            ?staying rdf:type/rdfs:subClassOf user:Staying .
+            ?staying time:hasBeginning/time:inXSDDateTimeStamp ?staying_start_time .
+            ?staying time:hasEnd/time:inXSDDateTimeStamp ?staying_end_time .
+            ?staying user:atLocation ?S .
+            FILTER (?end_time >= ?staying_start_time && ?staying_end_time >= ?start_time)
+        }
+    }
+    ?S ?P ?O .
+}

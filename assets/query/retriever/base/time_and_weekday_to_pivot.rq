@@ -1,0 +1,10 @@
+OPTIONAL {
+    ?pivot{IDX} (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDCreatedDateTimeStamp|time:inXSDBeginningDateTimeStamp ?start_time .
+   	BIND((TIME_ON_TIMELINE(TO_TIMEZONE(?start_time)) + 1) / 604800 AS ?start_time_stamp)
+   	BIND(xsd:Integer(FLOOR(7 * (?start_time_stamp - FLOOR(?start_time_stamp)))) AS ?start_week_day)
+}
+OPTIONAL {
+    ?pivot{IDX} (time:hasEnd/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDCreatedDateTimeStamp|time:inXSDEndDateTimeStamp ?end_time .
+    BIND((TIME_ON_TIMELINE(TO_TIMEZONE(?end_time)) + 1) / 604800 AS ?end_time_stamp)
+    BIND(xsd:Integer(FLOOR(7 * (?end_time_stamp - FLOOR(?end_time_stamp)))) AS ?end_week_day)
+}

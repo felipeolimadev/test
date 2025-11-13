@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="capsule_background_radius">20.0dip</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="lang_change_layout_width">360.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <item type="dimen" name="preview_icon_ratio_fold_main">0.084</item>
+    <item type="dimen" name="preview_icon_ratio_fold_main_10x6">0.07</item>
+    <item type="dimen" name="preview_icon_ratio_fold_main_8x6">0.081</item>
+    <item type="dimen" name="sesl_glance_grid_item_large_circle_padding">@dimen/circle_padding_52</item>
+    <dimen name="sesl_glance_grid_item_large_circle_size">52.0dip</dimen>
+    <item type="dimen" name="sesl_glance_grid_item_medium_circle_padding">@dimen/circle_padding_52</item>
+    <dimen name="sesl_glance_grid_item_medium_circle_size">52.0dip</dimen>
+    <item type="dimen" name="sesl_glance_grid_item_small_circle_padding">@dimen/circle_padding_40</item>
+    <dimen name="sesl_glance_grid_item_small_circle_size">40.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+</resources>

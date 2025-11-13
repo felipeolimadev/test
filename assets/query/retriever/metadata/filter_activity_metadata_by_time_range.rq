@@ -1,0 +1,15 @@
+SELECT DISTINCT ?s ?is_action ?start_time ?end_time
+WHERE {
+    {
+        <ACTIVITY_FILTER>
+        ?activity rdf:type/rdfs:subClassOf ?activity_type .
+        ?activity time:hasBeginning/time:inXSDDateTimeStamp|time:inXSDDateTimeStamp|time:inXSDBeginningDateTimeStamp ?start_time .
+        ?activity time:hasEnd/time:inXSDDateTimeStamp|time:inXSDDateTimeStamp|time:inXSDEndDateTimeStamp ?end_time .
+        BIND (?start_time = ?end_time AS ?is_action)
+        ?s rdf:unknown? ?activity .
+    }
+    <TIME_FILTER>
+}
+<SIMPLE_SORT_METHOD>
+<OFFSET_STATEMENT>
+<LIMIT>

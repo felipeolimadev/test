@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="52.0dip" android:width="52.0dip" android:drawable="@drawable/birthday_background" />
+    <item android:gravity="center" android:height="38.47998dip" android:width="38.47998dip" android:drawable="@drawable/birthday_svg" />
+</layer-list>

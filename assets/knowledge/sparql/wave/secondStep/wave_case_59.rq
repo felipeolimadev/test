@@ -1,0 +1,45 @@
+select distinct ?target where {
+    ?target rdf:type user:TakingPictures .
+
+    # (1) 초기 검색 결과 이벤트와 동일한 카테고리의 이벤트 존재
+    # (2) 초기 검색 결과와 동일한 이벤트만 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        {
+            SELECT DISTINCT ?event ?eventStartTime ?eventEndTime {
+                VALUES ?origin { <TAKING_PICTURES_IRI> }
+                ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                ?event a/rdfs:subClassOf user:ScheduledEvent .
+                ?event time:inXSDBeginningDateTimeStamp ?eventStartTime .
+                ?event time:inXSDEndDateTimeStamp ?eventEndTime .
+                FILTER (?originEndTime >= ?eventStartTime && ?eventEndTime >= ?originStartTime)
+            }
+        }
+        ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+        ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+
+        FILTER (?targetEndTime >= ?eventStartTime && ?eventEndTime >= ?targetStartTime)
+    }
+
+    # (3) 초기 검색 결과에 포함된 사람과 동일한 사람의 사진 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        ?target user:withPerson ?person .
+        FILTER EXISTS {
+            values ?origin3 { <TAKING_PICTURES_IRI> } .
+            ?origin3 user:withPerson ?person .
+        }
+    }
+
+    # (4) 물리적으로 구분되는 다른 장소에서 찍은 사진 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        ?target user:atLocation ?location4 .
+        FILTER NOT EXISTS {
+            values ?origin4 { <TAKING_PICTURES_IRI> } .
+            ?origin4 user:atLocation ?location4 .
+        }
+    }
+}

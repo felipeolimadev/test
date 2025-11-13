@@ -1,0 +1,7 @@
+travel,wycieczka,podróż,trip
+wziąćślub,wydarzenieweselne,wedding,ceremoniazaślubin,dzieńślubu,ślub,małżeństwo,ceremonia ślubna,zaślubiny,marriage ceremony,uroczystośćweselna
+matriculation,ceremoniaprzyjęcia,ceremoniazapisu,ceremoniaimmatrykulacji,ceremonia wejścia,entrance ceremony
+ukończenieszkoły,rozpoczęcie,zwołanie,ceremoniadyplomowa,imprezamaturalna,graduation,ceremoniaukończeniaszkoły,absolutorium ,dzieńukończeniaszkoły,commencement
+birthday,dzieńurodzin,dataurodzenia,dzieńurodzenia,urodziny,rocznicaurodzin,birth anniversary
+marriage anniversary,rocznica ślubu,wedding anniversary,upamiętnieniezaślubin
+vacation, wakacje

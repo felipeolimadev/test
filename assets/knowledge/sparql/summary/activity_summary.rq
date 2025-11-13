@@ -1,0 +1,44 @@
+SELECT ?activity ?startTime ?endTime ?engram ?contentList ?contentCount
+WHERE{
+    {
+        SELECT ?activity ?engram
+        WHERE {
+            VALUES (?activity) {<ACTIVITY_IRI>}
+            OPTIONAL{
+                ?engram user:event ?activity .
+                FILTER EXISTS {?engram a/rdfs:subClassOf user:Engram .}
+                FILTER EXISTS {?activity rdf:type user:TakingPictures .}
+            }
+        }
+        LIMIT 1
+    }
+    {
+        VALUES (?activity) {<ACTIVITY_IRI>}
+        ?activity (time:hasBeginning/time:inXSDDateTimeStamp) ?startTime.
+        ?activity (time:hasEnd/time:inXSDDateTimeStamp) ?endTime.
+    }
+    {
+        SELECT ?activity (GROUP_CONCAT(STR(?content)) AS ?contentList)
+        WHERE {
+            SELECT ?activity ?content
+            WHERE {
+                VALUES (?activity) {<ACTIVITY_IRI>}
+                FILTER EXISTS{?activity rdf:type user:TakingPictures}
+                OPTIONAL{
+                    ?activity user:objectContent ?content.
+                }
+            }
+            LIMIT 4
+        }
+        GROUP BY ?activity
+    }
+    {
+        SELECT ?activity (COUNT(DISTINCT ?content) AS ?contentCount)
+        WHERE {
+            VALUES (?activity) {<ACTIVITY_IRI>}
+            FILTER EXISTS{?activity rdf:type user:TakingPictures}
+            ?activity user:objectContent ?content.
+        }
+        GROUP BY ?activity
+    }
+}

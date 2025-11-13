@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggestion_ui_birthday_select_container_0" android:background="@color/widget_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/birthday_dialog_title_text_size" android:textColor="@color/description_widget_text_color" android:id="@id/birthday_dialog_title" android:layout_width="fill_parent" android:layout_height="@dimen/birthday_dialog_title_height" android:layout_marginTop="@dimen/birthday_dialog_title_top_margin" android:layout_marginBottom="@dimen/birthday_dialog_title_bottom_margin" android:fontFamily="sec" android:layout_marginHorizontal="@dimen/birthday_dialog_title_horizontal_margin" android:textFontWeight="600" />
+    <LinearLayout android:orientation="vertical" android:id="@id/birthday_dialog_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/birthday_dialog_bottom_margin" android:layout_marginHorizontal="@dimen/birthday_dialog_container_horizontal_margin" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="event" keyFieldName="_id" version="1">
+
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer"/>
+
+    <fieldType name="string_field" dataType="String" class="StringField"/>
+    <fieldType name="long_point_field" dataType="long" class="LongPoint"/>
+
+    <fieldType name="text_field" dataType="String" class="TextField"/>
+    <fieldType name="multi_value_text" dataType="MultiValuedString" class="TextField"/>
+
+    <field name="_id" type="string_field"/>
+    <field name="json_event" type="string_field" stored="false"/>/>
+    <field name="event_type" type="string_field" stored="false"/>
+
+    <field name="when.start" type="long_point_field" sort="true"/>
+    <field name="when.start.month" type="string_field" stored="false"/>
+    <field name="when.start.day_of_month" type="string_field" stored="false"/>
+    <field name="when.start.day_of_week" type="string_field" stored="false"/>
+
+    <field name="when.end" type="long_point_field" sort="true"/>
+    <field name="when.end.month" type="string_field" stored="false"/>
+    <field name="when.end.day_of_month" type="string_field" stored="false"/>
+    <field name="when.end.day_of_week" type="string_field" stored="false"/>
+
+    <field name="what.title" type="multi_value_text" stored="false"/>
+    <field name="what.category" type="multi_value_text" stored="false"/>
+    <field name="where.name" type="multi_value_text" stored="false"/>
+    <field name="where.address" type="multi_value_text" stored="false"/>
+    <field name="where.poi" type="multi_value_text" stored="false"/>
+    <field name="who.name" type="multi_value_text" stored="true"/>
+
+    <fieldList type="search">
+        <fieldItem name="what.title" />
+        <fieldItem name="what.category" />
+        <fieldItem name="where.name" />
+        <fieldItem name="where.address" />
+        <fieldItem name="where.poi" />
+        <fieldItem name="who.name" />
+    </fieldList>
+
+    <resultProvider class="event.EventResultProvider">
+        <projectionField name="_id" />
+        <projectionField name="json_event" />
+    </resultProvider>
+
+    <sort>
+        <sortedField name="when.start" order="DESC" />
+    </sort>
+</schema>

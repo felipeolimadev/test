@@ -1,0 +1,168 @@
+SELECT ?event (SUM(?elementWiseProduct) * SUM(?elementWiseProduct)/ SUM(?targetElement * ?targetElement) as ?score)  WHERE {
+{
+    select ?baseActivity ?contentTag (?baseTagCount/?baseTotalTagCount as ?baseNormTF) WHERE
+            {
+                {
+                    SELECT ?baseActivity (COUNT(?contentTag) as ?baseTotalTagCount)
+                    WHERE {
+                        VALUES (?baseActivity) {<ACTIVITY_IRI>}
+                        ?baseActivity user:objectContent/content:objectRecognized ?contentTag
+                     }
+                    GROUP BY ?baseActivity
+                }
+                {
+                    SELECT ?baseActivity ?contentTag (COUNT(?contentTag) as ?baseTagCount)
+                    WHERE {
+                        VALUES (?baseActivity) {<ACTIVITY_IRI>}
+                        ?baseActivity user:objectContent/content:objectRecognized ?contentTag
+                     }
+                    GROUP BY ?baseActivity ?contentTag
+                }
+               }
+    }
+    {
+    select ?event ?contentTag (?targetTagCount/?targetTotalTagCount as ?targetNormTF) WHERE
+            {
+                {
+                    SELECT ?event (COUNT(?contentTag) as ?targetTotalTagCount)
+                    WHERE {
+                        # Find events
+                        {
+                            # Case 1: TravelEngram events
+                            {
+                                ?event a user:TravelEngram
+                                MINUS {
+                                    VALUES (?baseActivity) {<ACTIVITY_IRI>}
+                                    ?event user:event ?baseActivity
+                                }
+                            }
+                            UNION
+                            # Case 2: FourWEvent events
+                            {
+
+                                VALUES ?eventTag {contenttag:SOCIAL contenttag:TRIP}
+                                FILTER EXISTS {?validTagValue design:subIndividualOf? ?eventTag}
+                                ?fourWEvent content:eventCategory ?validTagValue
+                                MINUS {
+                                    VALUES (?baseActivity) {<ACTIVITY_IRI>}
+                                    ?baseActivity user:capturedToScheduled/user:extractedFrom ?fourWEvent
+                                }
+                                ?fourWEvent ^user:extractedFrom ?event .
+                            }
+                        }
+
+                        # Extract contentTags
+
+                        ?event user:event|user:scheduledToCaptured ?takingPicturesActivity .
+                        ?takingPicturesActivity a user:TakingPictures .
+                        ?takingPicturesActivity user:objectContent/content:objectRecognized ?contentTag
+                    }
+                    GROUP BY ?event
+                }
+                {
+                    SELECT ?event ?contentTag (COUNT(?contentTag) as ?targetTagCount)
+                    WHERE {
+                        # Find events
+                        {
+                            # Case 1: TravelEngram events
+                            {
+                                ?event a user:TravelEngram
+                                MINUS {
+                                    VALUES (?baseActivity) {<ACTIVITY_IRI>}
+                                    ?event user:event ?baseActivity
+                                }
+                            }
+                            UNION
+                            # Case 2: FourWEvent events
+                            {
+                                VALUES ?eventTag {contenttag:SOCIAL contenttag:TRIP}
+                                FILTER EXISTS {?validTagValue design:subIndividualOf? ?eventTag}
+                                ?fourWEvent content:eventCategory ?validTagValue
+                                MINUS {
+                                    VALUES (?baseActivity) {<ACTIVITY_IRI>}
+                                    ?baseActivity user:capturedToScheduled/user:extractedFrom ?fourWEvent
+                                }
+                                ?fourWEvent ^user:extractedFrom ?event .
+                            }
+                        }
+
+                        # Extract contentTags
+
+                        ?event user:event|user:scheduledToCaptured ?takingPicturesActivity .
+                        ?takingPicturesActivity a user:TakingPictures .
+                        ?takingPicturesActivity user:objectContent/content:objectRecognized ?contentTag
+                    }
+                    GROUP BY ?event ?contentTag
+                }
+            }
+    }
+    {
+        {
+    SELECT ?contentTag ?idf {
+            {
+                SELECT (COUNT(DISTINCT ?event) as ?eventCount)
+                WHERE {
+                    # Find events
+                    {
+                        # Case 1: TravelEngram events
+                        {
+                            ?event a user:TravelEngram
+                        }
+                        UNION
+                        # Case 2: FourWEvent events
+                        {
+                            VALUES ?eventTag {contenttag:SOCIAL contenttag:TRIP}
+                            FILTER EXISTS {?validTagValue design:subIndividualOf? ?eventTag}
+                            ?fourWEvent content:eventCategory ?validTagValue .
+                            ?fourWEvent ^user:extractedFrom ?event .
+                        }
+                    }
+
+                    # Extract contentTags
+                    {
+                        ?event user:event|user:scheduledToCaptured ?takingPicturesActivity .
+                        ?takingPicturesActivity a user:TakingPictures .
+                        ?takingPicturesActivity user:objectContent/content:objectRecognized ?contentTag
+                    }
+                }
+            }
+            {
+                SELECT ?contentTag (COUNT( DISTINCT ?event) as ?eventCountPerTag)
+                WHERE {
+                    # Find events
+                    {
+                        # Case 1: TravelEngram events
+                        {
+                            ?event a user:TravelEngram
+                        }
+                        UNION
+                        # Case 2: FourWEvent events
+                        {
+                            VALUES ?eventTag {contenttag:SOCIAL contenttag:TRIP}
+                            FILTER EXISTS {?validTagValue design:subIndividualOf? ?eventTag}
+                            ?fourWEvent content:eventCategory ?validTagValue .
+                            ?fourWEvent ^user:extractedFrom ?event .
+                        }
+                    }
+
+                    # Extract contentTags
+                    {
+                        ?event user:event|user:scheduledToCaptured ?takingPicturesActivity .
+                        ?takingPicturesActivity a user:TakingPictures .
+                        ?takingPicturesActivity user:objectContent/content:objectRecognized ?contentTag
+                    }
+                }
+
+                GROUP BY ?contentTag
+            }
+            BIND ( LOG(?eventCount/(?eventCountPerTag+1)) as ?idf)
+        }
+}
+    }
+    BIND (?baseNormTF * ?targetNormTF * ?idf * ?idf AS ?elementWiseProduct)
+    BIND (?targetNormTF * ?idf AS ?targetElement)
+}
+
+GROUP BY ?event
+ORDER BY DESC(?score)
+LIMIT <LIMIT_VALUE>

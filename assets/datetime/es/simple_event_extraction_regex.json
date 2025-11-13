@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "pattern": "<<from>>[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)[\\s]?(?:<<range_connector>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "from <date-time> until/to <date-time>"
+  },
+  {
+    "id": "2",
+    "pattern": "<<between>>[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)[\\s]?(?:o|<<range_connector>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "between <date-time> and <date-time>"
+  },
+  {
+    "id": "3",
+    "pattern": "(?:<<event_keywords_start>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)[\\s]?[,]?(?:[\\wáéíóúñü¿¡ÁÉÍÓÚÑÜ]{0,25})?<<range_connector>>?[\\s]?(?:<<event_keywords_end>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "start/open/begin <preposition> <date-time> and end/close/end <preposition> <date-time>"
+  },
+  {
+    "id": "4",
+    "pattern": "(?:<<event_keywords_end>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)[\\s]?[,]?[\\s]?(?:[\\wáéíóúñü¿¡ÁÉÍÓÚÑÜ]{0,25})?<<range_connector>>?[\\s]?(?:<<event_keywords_start>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "end/close/end <preposition> <date-time> and start/open/begin <preposition> <date-time>"
+  },
+  {
+    "id": "5",
+    "pattern": "<<valid>>[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)[\\s]?<<range_connector>>?[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "valid <preposition> <date_time> to <date_time>"
+  },
+  {
+    "id": "6",
+    "pattern": "(?:<<date_keywords_before>>|<<date_keywords_before_others>>|<<time_keywords_before>>)?[\\s]?(<date-time>)[\\s]?[,]?[\\s]?(?:<<range_connector>>|[-~])[\\s]?(?:<<date_keywords_before>>|<<date_keywords_before_others>>|<<time_keywords_before>>)?[\\s]?[,]?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "<date-time> a <date-time>"
+  },
+  {
+    "id": "7",
+    "pattern": "(?:<<time_keywords_before>>|<<date_keywords_before>>)?[\\s]?(<date-time>)[\\s]?[,]?[\\s]?(?:[\\w\\sáéíóúñü¿¡ÁÉÍÓÚÑÜ]{0,50})[\\s]?(<<event_keywords_end>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?[,]?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "start <date-time> end <date-time>"
+  },
+  {
+    "id": "8",
+    "pattern": "(?:<<time_keywords_before>>|<<date_keywords_before>>)?[\\s]?(<date-time>)[\\s]?[,]?[\\s]?(?:[\\w\\sáéíóúñü¿¡ÁÉÍÓÚÑÜ]{0,50})[\\s]?(<<event_keywords_start>>)[\\s]?(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]?[,]?[\\s]?(<date-time>)",
+    "groupMappings": {
+      "startDate": 2,
+      "endDate": 1,
+      "startTime": 2,
+      "endTime": 1,
+      "startDateTime": 2,
+      "endDateTime": 1
+    },
+    "comment": "end <date-time> start <date-time> "
+  }
+]

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginHorizontal="2.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/app_storage" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_marginHorizontal="2.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/summary">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Database (App Storage)" />
+        <TextView android:textSize="@dimen/text_size_15" android:id="@id/app_storage_database_usage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="File (App Storage)" />
+        <TextView android:textSize="@dimen/text_size_15" android:id="@id/app_storage_file_usage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/secure_storage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginHorizontal="2.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/app_storage">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Database (Secure Storage)" />
+        <TextView android:textSize="@dimen/text_size_15" android:id="@id/secure_storage_database_usage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="File (Secure Storage)" />
+        <TextView android:textSize="@dimen/text_size_15" android:id="@id/secure_storage_file_usage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

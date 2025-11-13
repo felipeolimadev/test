@@ -1,0 +1,11 @@
+# 초기 검색 결과와 물리적으로 구분 가능한 시간 구간을 가지는 여행 기간에 찍은 사진 존재 (= 다른 여행 Engram)
+FILTER EXISTS {
+    ?targetEventProperty rdfs:subPropertyOf user:event .
+    ?targetTravelEngram ?targetEventProperty ?target .
+    ?targetTravelEngram a user:TravelEngram .
+    VALUES ?origin { <TAKING_PICTURES_IRI> }
+    ?originEventProperty rdfs:subPropertyOf user:event .
+    ?originTravelEngram ?originEventProperty ?origin .
+    ?originTravelEngram a user:TravelEngram .
+    FILTER (?originTravelEngram != ?targetTravelEngram)
+}

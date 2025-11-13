@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="preview_icon_ratio_fold_main">0.078</item>
+    <item type="dimen" name="preview_icon_ratio_fold_main_10x6">0.071</item>
+    <item type="dimen" name="preview_icon_ratio_fold_main_8x6">0.074</item>
+    <item type="dimen" name="sesl_glance_arc_progress_medium_icon_size">@dimen/arc_progress_icon_size_46</item>
+    <item type="dimen" name="sesl_glance_arc_progress_medium_icon_top_margin">@dimen/arc_progress_icon_margin_46</item>
+</resources>

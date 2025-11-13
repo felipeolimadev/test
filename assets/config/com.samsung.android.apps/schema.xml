@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.apps" package="" prefKey="application_v5" version="36">
+    <!-- disable chinese/japanese analyzer in applicaiton query to fix P190208-03854 -->
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" type="index" connectingWord="true">
+        <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" hasOrigin="true" originCNoun="true"/>
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+        <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+        <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+    </defaultAnalyzer>
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" type="search" connectingWord="true">
+        <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" hasOrigin="false" originCNoun="false"/>
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+        <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+        <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+    </defaultAnalyzer>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="long_stored" dataType="long" class="StoredField" />
+    <fieldType name="int_stored" dataType="int" class="StoredField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint"/>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="multi_value_text" dataType="MultiValuedString" class="TextField" />
+    <fieldType name="bytes_sorted" dataType="BytesRef" class="SortedDocValuesField" />
+    <fieldType name="spell" dataType="MultiValuedString" class="TextField" >
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+    <fieldType name="pinyin" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" withMixed="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="chosung" dataType="String" class="TextField">
+        <analyzer class="bs.korean.ChosungAnalyzer" keepOtherLang="true" />
+    </fieldType>
+    <fieldType name="korean_decompose" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.korean.KoreanDecompositionAnalyzer"
+            morphemeAnalysis="false"/>
+        <analyzer type="search" class="bs.korean.KoreanDecompositionAnalyzer"
+            morphemeAnalysis="false"/>
+    </fieldType>
+    <fieldType name="kana" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer" normalize="true"
+            keepUncombinedTokens="true" />
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true" />
+    </fieldType>
+    <fieldType name="phonetic" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"
+                enableLinkingRule="false"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="title_transliterated" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="app" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="app" />
+    </fieldType>
+    <fieldType name="float_numeric_field" dataType="float" class="FloatDocValuesField" />
+    <fieldType name="keyword_field" dataType="String" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="initial_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.core.InitialAnalyzer"/>
+    </fieldType>
+    <fieldType name="filter_text_field" class="TextField" dataType="String">
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="true" type="index">
+            <subAnalyzer class="bs.LowerCaseKeywordAnalyzer" lang="default" />
+        </analyzer>
+        <preprocessor name="String.replaceAll">
+            <str name="regex"> de | e | y | d | 및 | by </str>
+            <str name="replacement"> </str>
+        </preprocessor>
+    </fieldType>
+
+    <field name="_id" type="string" />
+    <field name="label" type="string" />
+    <field name="title" type="text" stored="false" />
+    <field name="title_initial" type="initial_field" src="title" stored="false" />
+    <field name="title_fuzzy" type="spell" src="title" stored="false" termVector="true" />
+    <field name="chosung" type="chosung" stored="false"/>
+    <field name="title_pinyin" type="pinyin" src="label" stored="false"/>
+    <field name="title_kana" type="kana" src="label" stored="false" />
+    <field name="raw" type="string" stored="false" />
+    <field name="englishRawTitle" type="string" stored="false" />
+    <field name="app_version_code" type="long_stored" />
+    <field name="relatedKeywords" type="multi_value_string" stored="false" />
+    <field name="title_keyword" type="keyword_field" src="label" stored="false"/>
+    <field name="packageName" type="string" />
+    <field name="is_hidden_app" type="int_stored" />
+    <field name="is_hidden_app_compare" type="int_compare_field" src="is_hidden_app"/>
+
+    <!-- class name -->
+    <field name="componentName" type="string"/>
+    <!-- user id -->
+    <field name="user" type="int_stored" />
+    <!-- sort alphabetic -->
+    <field name="titleSort" type="bytes_sorted" />
+    <field name="idSort" type="bytes_sorted" />
+    <field name="englishTitle" type="text" />
+    <field name="englishTitle_keyword" type="keyword_field" src="englishTitle" stored="false"/>
+    <field name="title_phonetic" type="phonetic" src="title" stored="false" />
+    <field name="title_transliterated" type="title_transliterated" src="title" stored="false"/>
+    <field name="decomposition" type="korean_decompose"/>
+    <field name="usage_score" type="float_numeric_field"/>
+
+    <fieldList type="search">
+        <fieldItem name="title" />
+        <fieldItem name="title_pinyin" />
+    </fieldList>
+
+    <fieldList type="projection_search">
+        <fieldItem name="packageName"/>
+        <fieldItem name="componentName"/>
+        <fieldItem name="label"/>
+        <fieldItem name="user"/>
+        <fieldItem name="_id"/>
+        <fieldItem name="is_hidden_app"/>
+    </fieldList>
+
+</schema>

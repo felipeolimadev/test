@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/hidden_artificial_intelligence" android:id="@id/hidden_nav_about" android:title="About" />
+        <item android:icon="@drawable/hidden_artificial_intelligence" android:id="@id/hidden_nav_app_suggestion" android:title="App Suggestion" />
+        <item android:icon="@drawable/hidden_artificial_intelligence" android:id="@id/hidden_nav_app_action_suggestion" android:title="App Action Suggestion" />
+        <item android:icon="@drawable/hidden_artificial_intelligence" android:id="@id/hidden_nav_widget_suggestion" android:title="Widget Suggestion" />
+    </group>
+</menu>

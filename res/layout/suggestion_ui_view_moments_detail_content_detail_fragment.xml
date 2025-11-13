@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/suggestion_ui_view_moments_detail_content_detail_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content_detail_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.moments.detail.contentdetail.MomentsContentDetailViewPagerView android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <View android:id="@id/status_bar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/nav_bar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:id="@id/toolbar_layout" layout="@layout/suggestion_ui_view_moments_detail_toolbar" />
+</FrameLayout>

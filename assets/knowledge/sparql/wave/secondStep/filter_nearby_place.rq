@@ -1,0 +1,3 @@
+# 초기 검색 결과와 떨어진 장소에서 찍은 사진 존재 (H3 사용)
+# <DISTANT_TAKING_PICTURES_IRI_COMMA> = "IRI_1, IRI_2, ..., IRI_N"
+FILTER (?target IN ( <DISTANT_TAKING_PICTURES_IRI_COMMA> )) .

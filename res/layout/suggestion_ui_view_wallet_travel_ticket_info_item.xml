@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/suggestion_ui_view_wallet_travel_ticket_info_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/wallet_travel_ticket_info_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/wallet_travel_ticket_info__text_size" android:id="@id/ticket_info_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textAlignment="viewStart" app:layout_constraintEnd_toStartOf="@id/ticket_info_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/wallet_travel_ticket_info__text_size" android:id="@id/ticket_info_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textAlignment="viewEnd" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ticket_info_title" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

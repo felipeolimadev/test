@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d wydarz.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d wydarz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d wydarz.</item>
+        <item quantity="many">%d wydarz.</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Początek za %d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Początek za %d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Początek za %d min</item>
+        <item quantity="many">Początek za %d min</item>
+    </plurals>
+</resources>

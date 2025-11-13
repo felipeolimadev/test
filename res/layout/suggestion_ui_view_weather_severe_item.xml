@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:tag="layout/suggestion_ui_view_weather_severe_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/weather_severe_description_text_size" android:textColor="@color/weather_severe_title_text_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/weather_severe_description_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/weather_severe_description_height" android:maxLines="2" android:fontFamily="sec" android:textFontWeight="600" />
+    <LinearLayout android:orientation="vertical" android:id="@id/weather_severe_item_divider" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/widget_horizontal_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/weather_severe_divider_height" android:layout_marginVertical="@dimen/weather_severe_item_margin_vertical" />
+    </LinearLayout>
+</LinearLayout>

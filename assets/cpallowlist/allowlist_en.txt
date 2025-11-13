@@ -1,0 +1,7 @@
+travel, trip, vacation
+wedding, marriage ceremony
+entrance ceremony, matriculation
+commencement, graduation
+birthday, birth anniversary
+wedding anniversary, wedding anniversary, marriage anniversary
+vacation

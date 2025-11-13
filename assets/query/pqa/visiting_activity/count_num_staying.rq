@@ -1,0 +1,9 @@
+SELECT (COUNT (DISTINCT ?staying) AS ?cnt)
+WHERE {
+    ?staying rdf:type/rdfs:subClassOf user:Staying .
+    ?staying time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?staying time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+    <TIME_FILTER>
+    <LOCATION_FILTER>
+    <PERSON_FILTER>
+}

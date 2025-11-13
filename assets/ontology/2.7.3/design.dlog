@@ -1,0 +1,15 @@
+
+# Assign pivot score 1 if it is the subClassOf user:Engram
+design:searchRankScore[?X, "1.Engram"] :- rdfs:subClassOf[?X, user:Engram] .
+
+# Assign pivot score 2 if it is the subClassOf user:Activity
+design:searchRankScore[?X, "2.Activity"] :- rdfs:subClassOf[?X, user:Activity] .
+
+# Assign pivot score 2 if it is the subClassOf user:Action
+design:searchRankScore[?X, "2.Activity"] :- rdfs:subClassOf[?X, user:Action] .
+
+# Assign pivot score 3 if it is the subClassOf user:Activity
+design:searchRankScore[?X, "3.Content"] :- rdfs:subClassOf[?X, content:Content] .
+
+# Assign pivot score 4 if it is the subClassOf user:Person
+design:searchRankScore[?X, "4.Person"] :- rdfs:subClassOf[?X, user:Person] .

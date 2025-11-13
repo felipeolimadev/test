@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="end" android:id="@id/start_test_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start" />
+    <Button android:gravity="end" android:id="@id/next_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" />
+    <Button android:gravity="end" android:id="@id/end_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terminate" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:id="@id/contents_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.smartsuggestions.service.translation.floatingui.view.FloatingInitView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/floating_ui" android:background="@drawable/chat_translation_floating_ui_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/floating_ui_elevation_margin" android:layoutDirection="locale" android:elevation="@dimen/floating_ui_elevation">
+        <LinearLayout android:orientation="horizontal" android:id="@id/floating_ui_blur_view" android:layout_width="wrap_content" android:layout_height="@dimen/floating_ui_height" android:layoutDirection="locale">
+            <TextView android:textSize="@dimen/floating_ui_translate_text_text_size" android:textColor="@color/floating_ui_translate_text_normal" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/floating_ui_translate_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="@drawable/chat_translation_floating_ui_ripple" android:maxWidth="@dimen/floating_ui_translate_text_width_max" android:minWidth="@dimen/floating_ui_translate_text_width_min" android:minHeight="@dimen/floating_ui_translate_text_height" android:text="@string/button_translate" android:maxLines="1" android:fontFamily="sec" android:textAlignment="center" android:layout_marginStart="@dimen/floating_ui_translate_text_margin" android:textFontWeight="600" />
+            <include layout="@layout/chat_translation_floating_ui_close_button_view" />
+        </LinearLayout>
+    </LinearLayout>
+</com.samsung.android.smartsuggestions.service.translation.floatingui.view.FloatingInitView>

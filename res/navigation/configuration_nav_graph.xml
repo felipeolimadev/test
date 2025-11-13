@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/configuration_nav_graph" app:startDestination="@id/configuration_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Configuration" android:name="com.samsung.android.moneta.debugui.developmode.configuration.ConfigurationMainFragment" android:id="@id/configuration_main">
+        <action android:id="@id/action_configuration_main_to_feature_configuration" app:destination="@id/feature_configuration" />
+        <action android:id="@id/action_configuration_main_to_data_source_configuration" app:destination="@id/data_source_configuration" />
+    </fragment>
+    <fragment android:label="@string/feature_configuration" android:name="com.samsung.android.moneta.debugui.developmode.configuration.FeatureConfigurationFragment" android:id="@id/feature_configuration" />
+    <fragment android:label="@string/data_source_configuration" android:name="com.samsung.android.moneta.debugui.developmode.configuration.DataSourceConfigurationFragment" android:id="@id/data_source_configuration" />
+</navigation>

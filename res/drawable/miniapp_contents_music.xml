@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="46.0dip" android:width="46.0dip" android:viewportWidth="46.0" android:viewportHeight="46.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_contents_music__0" android:pathData="M23,23m-23,0a23,23 0,1 1,46 0a23,23 0,1 1,-46 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffafaff" android:pathData="M24.198,13.7L23.313,13.7C22.5,13.7 21.839,14.363 21.839,15.174L21.839,24.362C21.086,23.795 20.15,23.454 19.133,23.454C16.664,23.454 14.657,25.438 14.657,27.877C14.657,30.315 16.664,32.3 19.133,32.3C21.46,32.3 23.376,30.535 23.587,28.289C23.6,28.229 23.608,28.166 23.608,28.101L23.608,27.877L23.608,15.469L24.198,15.469C27.865,15.469 29.574,18.928 29.574,21.266L29.574,22.878C29.574,23.367 29.97,23.763 30.458,23.763C30.947,23.763 31.343,23.367 31.343,22.878L31.343,21.266C31.343,18.215 29.073,13.7 24.198,13.7" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

@@ -1,0 +1,7 @@
+călătorie,travel,excursie,trip,tur
+ceremonie de nuntă,aselua,evenimentdenuntă,sărbătoareanunții,wedding,aseînsoți,căsătorie,asecăsători,ziuanunții,nuntă,ceremoniedecăsătorie,marriage ceremony
+matriculation,ceremoniedeînmatriculare,ceremoniedeadmitere,ceremonie de intrare,ceremoniedeînscriere,entrance ceremony
+absolvire,ceremoniedeabsolvire,graduation,ziuaabsolvirii,ceremoniedediplomă,evenimentdeabsolvire,commencement
+birthday,aniversareanașterii,datanașterii,ziuanașterii,datădenaștere,aniversaredenaștere,zi de naștere,birth anniversary
+aniversaredenuntă,aniversareacăsătoriei,wedding anniversary,marriage anniversary,aniversaredecăsătorie,aniversarea nunții
+vacation, vacanță

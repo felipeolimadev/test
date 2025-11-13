@@ -1,0 +1,108 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "festa",
+                    "aniversário",
+                    "festa de fim de ano",
+                    "festa de boas vindas",
+                    "reunião de classe",
+                    "encontro às cegas",
+                    "jantar juntos",
+                    "comer for a",
+                    "refeição",
+                    "festa de inauguração",
+                    "visita ao hospital",
+                    "cerimônia de casamento",
+                    "cerimônia de formatura",
+                    "cerimônia de ingresso",
+                    "funeral",
+                    "cerimônia de premiação",
+                    "ritos ancestrais",
+                    "missa",
+                    "culto",
+                    "reunião no templo",
+                    "igreja",
+                    "reunião de família de noivos",
+                    "compras",
+                    "jantar",
+                    "almoço",
+                    "brunch",
+                    "comemorar",
+                    "celebração",
+                    "namorando",
+                    "festival",
+                    "dia do casamento",
+                    "comer fora"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "reunião",
+                    "oficina",
+                    "seminário",
+                    "entrevista",
+                    "trabalho",
+                    "conferência",
+                    "Sessão de briefing",
+                    "trabalho de meio período",
+                    "ir trabalhar",
+                    "sair do trabalho",
+                    "exame",
+                    "atribuição",
+                    "aula",
+                    "assistir à aula",
+                    "escritório",
+                    "fórum",
+                    "apresentação",
+                    "análise"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "viagem",
+                    "camping",
+                    "pesca",
+                    "parque de diversões",
+                    "zoológico",
+                    "aquário",
+                    "alpinismo",
+                    "viagem de negócios",
+                    "tour",
+                    "disney",
+                    "lua de mel"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "reserva",
+                    "bilhete",
+                    "consulta",
+                    "check-in",
+                    "check-out"
+                ]
+            }
+        ]
+    }
+]

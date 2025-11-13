@@ -1,0 +1,129 @@
+{
+  "absolute": [
+    {
+      "id": 1,
+      "key": "am_present",
+      "keywords":[
+        "morning",
+        "in the morning",
+        "early morning",
+        "late morning",
+        "in morning",
+        "dawn"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "pm_present",
+      "keywords":[
+        "afternoon",
+        "in the afternoon",
+        "noon",
+        "evening",
+        "night",
+        "in night",
+        "in the night",
+        "in the evening",
+        "in the night",
+        "late night",
+        "late afternoon",
+        "late evening",
+        "early evening",
+        "dusk",
+        "dinner",
+        "lunch",
+        "at night",
+        "night at"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "key": "00:00:00:AM",
+      "keywords": [
+        "midnight",
+        "mid night",
+        "mid-night"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "12:00:00:PM",
+      "keywords": [
+        "noon",
+        "midday",
+        "mid day",
+        "mid-day"
+      ]
+    },
+    {
+      "id": 3,
+      "key": "00:30:00:DELTA",
+      "keywords": [
+        "half an hour"
+      ]
+    },
+    {
+      "id": 4,
+      "key": "00:01:00:DELTA",
+      "keywords": [
+        "a minute"
+      ]
+    },
+    {
+      "id": 4,
+      "key": "01:00:00:DELTA",
+      "keywords": [
+        "an hour"
+      ]
+    },
+    {
+      "id": 5,
+      "key": "-1:-1:-1:24-hr",
+      "keywords": [
+        "now",
+        "right now",
+        "now onwards",
+        "this moment",
+        "same time"
+      ]
+    },
+    {
+      "id": 6,
+      "key": "06:00:00:AM:RANGE",
+      "endTime" :"09:59:59:AM",
+      "keywords": [
+        "morning",
+        "in the morning",
+        "early morning"
+      ]
+    },
+    {
+      "id": 7,
+      "key": "04:00:00:PM:RANGE",
+      "endTime" :"07:59:59:PM",
+      "keywords": [
+        "evening",
+        "in the evening"
+      ]
+    },
+    {
+      "id": 8,
+      "key": "09:00:00:PM:RANGE",
+      "endTime" :"03:59:59:AM",
+      "keywords": [
+        "tonight",
+        "night"
+      ]
+    },
+    {
+      "id": 9,
+      "key": "12:00:00:PM:RANGE",
+      "endTime" :"11:59:59:PM",
+      "keywords": [
+        "afternoon"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+select <OUTPUT>
+where{
+    {
+        select distinct ?location
+        where {
+            ?location rdf:type/rdfs:subClassOf location:Location .
+            <LOCATION_FILTER>
+        }
+        <SIMPLE_SORT_METHOD>
+        <LIMIT>
+        <OFFSET_STATEMENT>
+    }
+    <BODY_GET_TARGET_TRIPLE>
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+}
+<COMPLEX_SORT_METHOD>
+
+

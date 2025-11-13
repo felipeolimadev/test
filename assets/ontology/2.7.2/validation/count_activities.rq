@@ -1,0 +1,6 @@
+SELECT DISTINCT ?activity
+WHERE {
+    VALUES(?superclass) {(user:Activity) (user:Action)}
+    ?class rdfs:subClassOf ?superclass .
+    ?activity rdf:type ?class .
+}

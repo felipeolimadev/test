@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="250" android:valueFrom="0" android:valueTo="0" android:propertyName="trimPathStart" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="250" android:startOffset="482" android:valueFrom="0" android:valueTo="0.37" android:propertyName="trimPathStart" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="366" android:valueFrom="0.37" android:valueTo="0.66" android:propertyName="trimPathStart" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="166" android:valueFrom="0.66" android:valueTo="1" android:propertyName="trimPathStart" />
+        <objectAnimator android:duration="1500" android:valueFrom="1" android:valueTo="1" android:propertyName="trimPathStart" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="250" android:valueFrom="0" android:valueTo="0" android:propertyName="trimPathEnd" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="66" android:startOffset="183" android:valueFrom="0" android:valueTo="0.38" android:propertyName="trimPathEnd" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="233" android:valueFrom="0.38" android:valueTo="0.53" android:propertyName="trimPathEnd" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="250" android:valueFrom="0.53" android:valueTo="0.65" android:propertyName="trimPathEnd" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="366" android:valueFrom="0.65" android:valueTo="1" android:propertyName="trimPathEnd" />
+        <objectAnimator android:duration="1666" android:valueFrom="1" android:valueTo="1" android:propertyName="trimPathEnd" />
+    </set>
+</set>

@@ -1,0 +1,7 @@
+DELETE{
+    ?TP user:hasTag ?tag.
+}
+WHERE{
+    VALUES ?TP { <TAKING_PICTURES_IRI> }
+    ?TP user:hasTag ?tag .
+}

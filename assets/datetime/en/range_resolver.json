@@ -1,0 +1,46 @@
+[
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)\\s*(<after_range>|<before_range>|<last_reference>|<current_reference>)\\s*(<num>)?\\s*(<time_period>)\\s*(?:and)?\\s*(<num>)?\\s*(<time_period>)?\\s*(?:and)?\\s*(<num>)?\\s*(<time_period>)?\\s*(?:\\s|$|\\.|,)",
+    "comment": "next week, next 2 months, next year, next january etc.",
+    "mapping" : [
+      {
+        "periodAndDurationGroupings" : [
+          {
+            "timeDurationGroup": 2,
+            "timePeriodGroup": 3
+          },
+          {
+            "timeDurationGroup": 4,
+            "timePeriodGroup": 5
+          },
+          {
+            "timeDurationGroup": 6,
+            "timePeriodGroup": 7
+          }
+        ],
+        "shouldContainKeywords" : true
+      }
+    ]
+  },
+  {
+    "id" : 3,
+    "patternString" : "(?:\\s|^|\\.|,)\\s*(<after_range>|<before_range>|<last_reference>|<current_reference>)?\\s*(<month>)\\s*(?:\\s|$|\\.|,)",
+    "comment" : "jan, this jan, next jan, previous jan :: if only jan consider it for next year.",
+    "mapping" : [
+      {
+        "month" : 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "patternString" :  "(?:\\s|^|\\.|,)\\s*(<after_range>|<before_range>|<last_reference>|<current_reference>)?\\s*(<day_of_week>)\\s*(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayOfWeek" : 2
+      }
+    ]
+
+  }
+]

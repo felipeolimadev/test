@@ -1,0 +1,18 @@
+SELECT DISTINCT ?S ?P ?O
+WHERE {
+    ?activity rdf:type user:TakingPictures .
+    ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+<PERSON_FILTER>
+<LOCATION_FILTER>
+<TIME_FILTER>
+<EXERCISING_FILTER>
+
+    ?activity user:objectContent ?S .
+<CONTENT_TIME>
+<CONTENT_FILTER>
+    ?S ?P ?O .
+<TARGET_TYPES_FILTER>
+}
+<OUTPUT_SORT>

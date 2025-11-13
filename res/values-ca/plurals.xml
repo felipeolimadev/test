@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">Queden %d dies.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Queda %d dia.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">"%1$s serà d'aquí a %2$d dies."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%1$s serà d'aquí a %2$d dia."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d esdeveniments%3$s continuaran demà.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d esdeveniment%3$s continuarà demà.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Tens %1$s%2$d esdeveniments%3$s avui.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tens %1$s%2$d esdeveniment%3$s avui.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Avui tens %1$d esdeveniments. El primer és %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avui tens %1$d esdeveniment. El primer és %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$sQueden %2$d esdeveniments%3$s per a avui.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sQueda %2$d esdeveniment%3$s per a avui.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Tens %1$s%2$d esdeveniments%3$s demà.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tens %1$s%2$d esdeveniment%3$s demà.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Demà tens %1$d esdeveniments. El primer és %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Demà tens %1$d esdeveniment. El primer és %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d esdevenim</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d esdevenim</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Comença en %d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Comença en %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">"Queden %d recordatoris d'avui"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Queda %d recordatori d'avui"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">"Avui has rebut %d missatges de lliurament. Consulta'ls per estar al dia sobre el seu estat."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Avui has rebut %d missatge de lliurament. Consulta'l per estar al dia sobre el seu estat."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d lliuraments avui</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d lliurament avui</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Per sobre %d cops aquesta setmana.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Per sobre %d cop aquesta setmana.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d objectius assolits</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d objectiu assolit</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">"El guany d'elevació total ha estat %1$s i has cremat %2$,d quilocalories."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"El guany d'elevació total ha estat %1$s i has cremat %2$,d quilocaloria."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">El ritme mitjà ha estat %1$s i has cremat %2$,d quilocalories.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">El ritme mitjà ha estat %1$s i has cremat %2$,d quilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">La velocitat mitjana ha estat %1$s i has cremat %2$,d quilocalories.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">La velocitat mitjana ha estat %1$s i has cremat %2$,d quilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Aquí tens un resum del teu entrenament %1$s. La durada ha estat de %2$s i has cremat %3$,d quilocalories.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aquí tens un resum del teu entrenament %1$s. La durada ha estat de %2$s i has cremat %3$,d quilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">"Avui t'has saltat %d medicaments programats."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Avui t'has saltat %d medicament programat."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d hores</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d hores</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Avui tens %1$s%2$d trucades perdudes%3$s que encara no has consultat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avui tens %1$s%2$d trucada perduda%3$s que encara no has consultat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Avui has tingut %d trucades perdudes. Revisa-les a Now brief. Si cal, també pots establir recordatoris per no oblidar-te de respondre-les.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avui has tingut %d trucada perduda. Revisa-la a Now brief. Si cal, també pots establir un recordatori per no oblidar-te de respondre-la.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d trucades perdudes més</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d trucada perduda més</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d perdudes</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perduda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notificacions noves</item>
+        <item quantity="one">%d notificació nova</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Fa %d hores</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fa %d hora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Fa %d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fa %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">"Cal tenir almenys %d anys per utilitzar les funcions d'intel·ligència avançada de Galaxy AI."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Cal tenir almenys %d any per utilitzar les funcions d'intel·ligència avançada de Galaxy AI."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d missatges</item>
+        <item quantity="one">Missatge %d</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d segons</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d segon</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Has establert %1$s%2$d alarmes%3$s per al matí.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Has establert %1$s%2$d alarma%3$s per al matí.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Has establert %1$s%2$d alarmes%3$s per a demà al matí.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Has establert %1$s%2$d alarma%3$s per a demà al matí.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">"%1$sSurt abans de les %2$s%3$s per arribar a l'aeroport almenys %4$d hores abans de la sortida. Estableix una alarma per no oblidar-te'n."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%1$sSurt abans de les %2$s%3$s per arribar a l'aeroport almenys %4$d hora abans de la sortida. Estableix una alarma per no oblidar-te'n."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">"%1$sSurt abans de les %2$s%3$s per arribar a l'aeroport almenys %4$d hores abans del vol."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%1$sSurt abans de les %2$s%3$s per arribar a l'aeroport almenys %4$d hora abans del vol."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Suggereix un itinerari de viatge de %1$d dies a %2$s que inclogui llocs per visitar, coses per fer i restaurants que val la pena provar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Suggereix un itinerari de viatge d'%1$d dia a %2$s que inclogui llocs per visitar, coses per fer i restaurants que val la pena provar."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Consulta aquestes %1$saplicacions recomanades%2$s que et poden ser útils durant el viatge.</item>
+        <item quantity="one">Consulta aquesta %1$saplicació recomanada%2$s que et pot ser útil durant el viatge.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">"%1$sDescarrega't aquest paquet d'idioma%2$s amb temps per poder-lo utilitzar a Intèrpret en arribar a la destinació."</item>
+        <item quantity="one">"%1$sDescarrega't aquests paquets d'idioma%2$s amb temps per poder-los utilitzar a Intèrpret en arribar a la destinació."</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">"Paquets d'idioma per descarregar"</item>
+        <item quantity="one">"Paquet d'idioma per descarregar"</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d dispositius activats</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dispositiu activat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Hi has contactat per darrera vegada fa %d dies</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hi has contactat per darrera vegada fa %d dia</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Últim contacte fa %d dies</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Últim contacte fa %d dia</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Últim contacte fa %d mesos</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Últim contacte fa %d mes</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Últim contacte fa %d setmanes</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Últim contacte fa %d setmana</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d contactes més</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d contacte més</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">"Tens un cupó a Samsung Wallet que caduca d'aquí a %d dies. Utilitza'l abans que caduqui."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Tens un cupó a Samsung Wallet que caduca d'aquí a %d dia. Utilitza'l abans que caduqui."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Màxima menys %d graus</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Màxima menys %d grau</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Mínima menys %d graus</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mínima menys %d grau</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Tens un esdeveniment al calendari anomenat %1$s. Hi haurà %2$d graus %3$s a les %4$s a %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tens un esdeveniment al calendari anomenat %1$s. Hi haurà %2$d grau %3$s a les %4$s a %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Màxima %d graus</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Màxima %d grau</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Mínima %d graus</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mínima %d grau</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s visualitzacions</item>
+        <item quantity="one">%s visualització</item>
+    </plurals>
+</resources>

@@ -1,0 +1,365 @@
+{
+  "masks": [
+    {
+      "id": 1,
+      "mask": "<day_of_week>",
+      "keywords": [
+        "sonntag",
+        "so",
+        "montag",
+        "mo",
+        "dienstag",
+        "di",
+        "mittwoch",
+        "mi",
+        "donnerstag",
+        "do",
+        "freitag",
+        "fr",
+        "samstag",
+        "sa"
+      ]
+    },
+    {
+      "id": 2,
+      "mask": "<month>",
+      "keywords": [
+        "januar",
+        "jan",
+        "februar",
+        "feb",
+        "märz",
+        "mrz",
+        "april",
+        "apr",
+        "mai",
+        "juni",
+        "jun",
+        "juli",
+        "jul",
+        "august",
+        "aug",
+        "september",
+        "sep",
+        "sept",
+        "oktober",
+        "okt",
+        "november",
+        "nov",
+        "dezember",
+        "dez"
+      ]
+    },
+    {
+      "id": 3,
+      "mask": "<relative>",
+      "keywords": [
+        "letzte",
+        "zuletzt",
+        "nächste",
+        "vorherige",
+        "folgend",
+        "anfang",
+        "ende",
+        "kommen",
+        "das",
+        "kommende",
+        "diese",
+        "folgende"
+      ]
+    },
+    {
+      "id": 4,
+      "mask": "<special_day>",
+      "keywords": [
+        "unabhängigkeitstag",
+        "thanksgiving",
+        "arbeitstag",
+        "weihnachten",
+        "silvester",
+        "heiligabend",
+        "ostermontag",
+        "pfingsten",
+        "neujahr",
+        "tag der deutschen einheit",
+        "erntedankfest",
+        "tag der arbeit"
+      ]
+    },
+    {
+      "id": 5,
+      "mask": "<time_format>",
+      "keywords": [
+      ]
+    },
+    {
+      "id": 6,
+      "mask": "<relative_time_format>",
+      "keywords": [
+        "früh",
+        "frühling",
+        "sommer",
+        "herbst",
+        "winter",
+        "dämmerung",
+        "dämmerung",
+        "abend",
+        "abends",
+        "morgen",
+        "morgens",
+        "nachmittag",
+        "nacht",
+        "nachts",
+        "späte nacht",
+        "früher morgen",
+        "später nachmittag",
+        "früher abend",
+        "später abend",
+        "sonnenaufgang",
+        "sonnenuntergang",
+        "dämmerung",
+        "tagesanbruch",
+        "nachmittags",
+        "uhr nachmittags?",
+        "uhr morgens?"
+      ]
+    },
+    {
+      "id": 7,
+      "mask": "<time_h>",
+      "keywords": [
+        "std",
+        "stunde",
+        "stunden",
+        "uhr"
+      ]
+    },
+    {
+      "id": 8,
+      "mask": "<time_m>",
+      "keywords": [
+        "minuten",
+        "minute",
+        "min"
+      ]
+    },
+    {
+      "id": 9,
+      "mask": "<time_s>",
+      "keywords": [
+        "sekunden",
+        "zweite",
+        "sek"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time>",
+      "keywords": [
+        "mitternacht",
+        "mittags?",
+        "jetzt"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<num_word>",
+      "keywords": [
+        "eine",
+        "eins?", "einen", "einer",
+        "zwei",
+        "drei",
+        "vier",
+        "fünf",
+        "sechs",
+        "sieben",
+        "achte?",
+        "neunte?",
+        "zehn",
+        "elf",
+        "zwölf", "zwã¶lf",
+        "dreizehn",
+        "vierzehn",
+        "fünfzehn",
+        "fã¼nfzehn",
+        "sechzehn",
+        "siebzehn",
+        "achtzehn",
+        "neunzehn",
+        "zwanzig",
+        "dreißig",
+        "Erste",
+        "zweite",
+        "dritte",
+        "fünfte",
+        "zwölfte",
+        "hundert",
+        "tausend",
+        "quartal",
+        "viertel",
+        "halb",
+        "fã¼nfundvierzig",
+        "fünfundvierzig"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<cyclic_keyword>",
+      "keywords": [
+        "jeder",
+        "jede",
+        "jährlich",
+        "monatlich",
+        "wöchentlich",
+        "täglich",
+        "stündlich",
+        "jährlich"
+      ]
+    },
+    {
+      "id": 12,
+      "mask": "<time_period>",
+      "keywords": [
+        "tag",
+        "woche",
+        "monats?",
+        "jahr",
+        "vierzehn Tage",
+        "jahrzehnt",
+        "jahrhundert",
+        "wochentag",
+        "wochenende",
+        "tage",
+        "tagen",
+        "wochen",
+        "monate",
+        "monaten",
+        "jahre",
+        "jahren",
+        "vierzehn Tage",
+        "jahrzehnte",
+        "jahrhunderte",
+        "wochentage",
+        "wochenenden"
+      ]
+    },
+    {
+      "id": 13,
+      "mask": "<relative_day>",
+      "keywords": [
+        "heute",
+        "gestern"
+      ]
+    },
+    {
+      "id": 15,
+      "mask": "<num_suffix>",
+      "keywords": [
+        "erste[lr]?",
+        "einen",
+        "zuerst",
+        "zweite[lr]?",
+        "dritte[lr]?",
+        "vierter",
+        "fünfte[lr]?",
+        "sechste[lr]?",
+        "siebte[lr]?",
+        "achte[lr]?",
+        "neunte[lr]?",
+        "zehnte[lr]?",
+        "elfte[lr]?",
+        "zwölfte[lr]?",
+        "dreizehn",
+        "vierzehn",
+        "fünfzehn",
+        "hundert",
+        "tausend"
+      ]
+    },
+    {
+      "id": 16,
+      "mask": "<num>",
+      "keywords": [
+        "\\d{1,4}"
+      ]
+    },
+    {
+      "id": 17,
+      "mask": "<before_reference>",
+      "keywords": [
+        "vorher",
+        "früher von",
+        "früher",
+        "vergangen",
+        "vorherig",
+        "vor",
+        "Vergangenheit",
+        "vorherige",
+        "bevor"
+      ]
+    },
+    {
+      "id": 18,
+      "mask": "<current_reference>",
+      "keywords": [
+        "an",
+        "auf",
+        "um",
+        "in dem",
+        "diesem",
+        "das",
+        "bei",
+        "herein",
+        "zirka",
+        "dieses?",
+        "dass",
+        "die"
+      ]
+    },
+    {
+      "id" : 19,
+      "mask" : "<last_reference>",
+      "keywords" : [
+        "letzter",
+        "ende",
+        "zuletzt",
+        "andauern",
+        "schluss",
+        "endung",
+        "dauern",
+        "enden",
+        "letzte",
+        "end",
+        "beenden"
+      ]
+    },
+    {
+      "id": 20,
+      "mask": "<after_reference>",
+      "keywords": [
+        "ab jetzt",
+        "nach",
+        "bis",
+        "innerhalb",
+        "später",
+        "nächstes",
+        "folgend",
+        "kommend",
+        "bald",
+        "bevorstehend",
+        "daher",
+        "von",
+        "nächste",
+        "nächsten",
+        "kommen",
+        "somit",
+        "von nun an",
+        "herein",
+        "neben",
+        "mächster",
+        "nachfolgend",
+        "demnächst"
+      ]
+    }
+  ]
+}

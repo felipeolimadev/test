@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.google.android.providers.media" package="" prefKey="images">
+    <permissions>
+        <systemRole name="android.app.role.SYSTEM_GALLERY"
+            dataConfigName="com.sec.android.gallery3d" />
+        <readPermission>
+            <permission name="android.permission.READ_MEDIA_IMAGES" apiLevel="33" />
+            <permission name="android.permission.READ_MEDIA_VIDEO" apiLevel="33" />
+        </readPermission>
+        <writePermission>
+            <permission name="android.permission.READ_MEDIA_IMAGES" apiLevel="33" />
+            <permission name="android.permission.READ_MEDIA_VIDEO" apiLevel="33" />
+        </writePermission>
+    </permissions>
+    <permissions dataConfigName="com.sec.android.app.myfiles">
+        <readPermission name="android.permission.MANAGE_EXTERNAL_STORAGE" apiLevel="30" />
+        <writePermission name="android.permission.MANAGE_EXTERNAL_STORAGE" apiLevel="30" />
+    </permissions>
+    <!--NOTE: If we change the properties of the common field of both indexes
+              then increase both observer versions. -->
+    <versions>
+        <observer name="sec_mp" version="69"/>
+        <observer name="aosp_mp" version="32"/>
+    </versions>
+    <fieldType name="string" dataType="String" class="StringField" />
+
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="normalized_text" dataType="String" class="TextField">
+        <analyzer class="bs.core.NormalizerAnalyzer" normalizerType="nfkc"/>
+    </fieldType>
+    <fieldType name="long_point_field" dataType="long" class="LongPoint" />
+    <fieldType name="long_numeric_field" dataType="long" class="NumericDocValuesField" />
+    <fieldType name="float_numeric_field" dataType="float" class="FloatDocValuesField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+    <fieldType name="int_stored_field" dataType="int" class="StoredField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="multi_value_text" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.LowerCaseSpaceAnalyzer" />
+    </fieldType>
+    <!-- mixed_multi_value_text is for case like "abc三星123"-->
+    <fieldType name="mixed_multi_value_text" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.core.SpacePerLanguageAnalyzer" tokenizeEmoji="true"
+            removeTrailingPunctuations="true">
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja"
+                normalize="true" keepKanji="true" />
+        </analyzer>
+        <analyzer type="search" class="bs.core.SpacePerLanguageAnalyzer" tokenizeEmoji="true"
+            removeTrailingPunctuations="true">
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="mixed_multi_value_text_ocr" dataType="MultiValuedString" class="TextField">
+        <!-- No need to analyze at indexing. Ocr Text already analyzed by BDC Text mining engine -->
+        <analyzer class="bs.core.SpacePerLanguageAnalyzer" type="index" >
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" />
+        </analyzer>
+        <analyzer class="bs.core.SpacePerLanguageAnalyzer" type="search" >
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko"
+                useBasicAnalyzer="true" hasOrigin="false"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="multi_value_text_usertag" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.gallery.GalleryUserTagAnalyzer" type="index" >
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja"
+                normalize="true" keepUncombinedTokens="false" keepKanji="true" />
+        </analyzer>
+        <analyzer class="bs.gallery.GalleryUserTagAnalyzer" type="search" removeFirstIfHashSign="true">
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="bytes_sorted" dataType="BytesRef" class="SortedDocValuesField">
+        <preprocessor name="String.toLowerCase" />
+    </fieldType>
+    <fieldType name="keep_other_lang_text" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer" type="index" connectingWord="false" removeSpecialChar="false">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" hasOrigin="true" originCNoun="true"/>
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true" />
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        </analyzer>
+        <analyzer class="bs.core.PerLanguageAnalyzer" type="search" connectingWord="false" removeSpecialChar="false">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" hasOrigin="false" originCNoun="false"/>
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="multi_valued_phonetic" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"
+                enableLinkingRule="false" storeRawTermInPayload="true"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" storeRawTermInPayload="true"/>
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="transliteration_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="common" storeRawTermInPayload="true"/>
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="common" />
+    </fieldType>
+    <fieldType name="addr_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer" connectingWord="false" removeSpecialChar="true">
+            <subAnalyzer class="bs.korean.KoreanAddressAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true" keepKanji="true"/>
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="core.KeywordAnalyzer" lang="default"/>
+        </analyzer>
+        <analyzer type="search" class="bs.core.PerLanguageAnalyzer" connectingWord="false" removeSpecialChar="true">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="core.KeywordAnalyzer" lang="default"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="keyword_multi_value_string" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+
+    <fieldType name="phonetic_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"
+                         enableLinkingRule="false"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" minLength="4"/>
+            <subAnalyzer class="bs.core.DummyAnalyzer" lang="default"/>
+        </analyzer>
+        <analyzer type="search" class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"
+                enableLinkingRule="false"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" minLength="4"/>
+        </analyzer>
+    </fieldType>
+
+    <!-- For matched fuzzy term, We get the original term from payload so need to save raw term -->
+    <fieldType name="keyword_space_suggestion_spell" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.SpacePerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.ConsonantAnalyzer" lang="ko"
+                storeRawTermInPayload="true"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="keyword_suggestion_spell" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.ConsonantAnalyzer" lang="ko"
+                storeRawTermInPayload="true"/>
+        </analyzer>
+    </fieldType>
+
+    <!--Now we don't support fuzzy keyword suggestion for _display_name field-->
+    <fieldType name="search_field_spell" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.ConsonantAnalyzer" lang="ko"/>
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="korean_only" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.core.DummyAnalyzer" lang="default"/>
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="japanese_only" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="bs.core.DummyAnalyzer" lang="default"/>
+        </analyzer>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+
+    <fieldType name="string_ignore_case" dataType="String" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+
+    <fieldType name="keyword" dataType="String" class="TextField">
+        <analyzer class="core.KeywordAnalyzer" />
+    </fieldType>
+
+    <!-- By default indexed="true" stored="true" -->
+    <!-- enable termVector for gallery clustering -->
+    <field name="_id" type="keyword" termVector="true"/>
+    <field name="_id_sort" type="long_numeric_field" src="_id" />
+    <field name="media_id" type="string"/>
+    <field name="_display_name" type="text" />
+    <field name="display_name_normalized" type="normalized_text" src="_display_name"
+        stored="false" />
+    <field name="display_name_korean" type="korean_only" src="_display_name" stored="false" />
+    <field name="display_name_japanese" type="japanese_only" src="_display_name" stored="false" />
+    <field name="display_name_keyword" type="string_ignore_case" src="_display_name" stored="false" />
+    <field name="bucket_display_name" type="string" />
+    <field name="bucket_display_name_token" src="bucket_display_name" stored="false"
+        type="keep_other_lang_text" />
+    <field name="latitude" type="string" />
+    <field name="longitude" type="string" />
+    <field name="_data" type="string_ignore_case" />
+    <field name="parent_path" type="string_ignore_case" />
+    <field name="datetaken" type="string" />
+    <!-- TODO(ngyu): remove this after Gallery fix. The Gallery app uses this. -->
+    <field name="datetaken_sort" type="long_numeric_field" src="datetaken" />
+    <!-- localtime contains UTC+0 time, no timezone-offset regardless of the timezone of the media
+     file -->
+    <field name="localtime" type="string" />
+    <field name="localtime_sort" type="long_numeric_field" src="localtime" />
+    <field name="uri" type="string" />
+    <field name="download_uri" type="string_ignore_case" />
+    <!-- User defined tags-->
+    <field name="usertag" type="multi_value_text_usertag" />
+
+    <!-- Address fields-->
+    <field name="country_name" type="addr_field" />
+    <field name="admin_level_one" type="addr_field" />
+    <field name="admin_level_two" type="addr_field" />
+    <field name="locationtag" type="addr_field" />
+    <field name="facet_location" type="addr_field" />
+    <field name="sub_location" type="addr_field" />
+
+    <!-- Shot mode like blur, panorama-->
+    <field name="sef_file_type" type="multi_value_string" />
+    <!-- recording mode, slow motion-->
+    <field name="recording_mode" type="string" />
+    <!-- media type, image or video-->
+    <field name="media_type" type="string" />
+    <field name="person_id" type="multi_value_string" />
+    <field name="persontag" type="mixed_multi_value_text" />
+    <field name="recommended_id" type="multi_value_string" />
+    <field name="person_cluster" type="multi_value_string" />
+    <field name="story_cluster" type="multi_value_string" />
+    <field name="album_cluster" type="string" />
+    <field name="relationship" type="mixed_multi_value_text" />
+    <!-- {relationship}\u2E31{persontag}\u2E31{recommended_id} to match relationship to person -->
+    <field name="relation_cluster" type="multi_value_string" stored="false"/>
+    <!--    TODO : need to change "multi_value_string" -> "string"-->
+    <field name="face_count" type="multi_value_string" />
+    <!-- Point of interest tag-->
+    <field name="poitag" type="mixed_multi_value_text"/>
+    <!-- Scenery Tags like Clouds, Mountain, Beach,...-->
+    <field name="scenetag" type="multi_value_string"/>
+    <!-- OCR Tags for text extracted from images -->
+    <field name="ocrtext" type="mixed_multi_value_text_ocr" stored="false" />
+    <!-- Expression TAG like HAPPY, SAD-->
+    <field name="expressionstag" type="multi_value_text" />
+    <field name="storytag" type="mixed_multi_value_text"/>
+    <field name="story_type" type="multi_value_string"/>
+    <field name="scene_name" type="multi_value_string" />
+    <field name="visible" type="string" />
+    <field name="group_id" type="string" />
+    <field name="bucket_id" type="string"/>
+    <!-- NLQ time tag-->
+    <field name="year" type="string" />
+    <field name="month" type="string" />
+    <field name="num_of_day" type="string" />
+    <field name="day" type="string" />
+    <field name="hour" type="int_compare_field" />
+    <field name="minute" type="int_compare_field" />
+    <field name="second" type="int_compare_field" />
+
+    <field name="pet_tag" type="mixed_multi_value_text" />
+    <field name="pet_recommended_id" type="multi_value_string" />
+    <field name="pet_cluster" type="mixed_multi_value_text" />
+
+    <!-- Fuzzy fields for keyword suggestion-->
+    <field name="usertag_fuzzy" type="keyword_space_suggestion_spell" src="usertag"
+        stored="false" termVector="true" />
+    <field name="persontag_fuzzy" type="keyword_space_suggestion_spell" src="persontag"
+        stored="false" termVector="true" />
+    <field name="bucket_display_name_fuzzy" type="keyword_suggestion_spell"
+        src="bucket_display_name" stored="false" termVector="true" />
+    <field name="storytag_fuzzy" type="keyword_space_suggestion_spell" src="storytag"
+        stored="false" termVector="true" />
+    <!-- Transliterated Tag for Gallery Album Name-->
+    <field name="bucket_display_name_transliterated" type="transliteration_field"
+        src="bucket_display_name" stored="false" termVector="true" />
+    <!--Phonetic Tags-->
+    <field name="usertag_phonetic" type="multi_valued_phonetic" src="usertag"
+        stored="false" termVector="true" />
+    <field name="persontag_phonetic" type="multi_valued_phonetic"  src="persontag"
+        stored="false" termVector="true" />
+    <field name="storytag_phonetic" type="multi_valued_phonetic" src="storytag"
+        stored="false" termVector="true" />
+
+    <!-- Date Expressions in Gallery Suggestions -->
+    <field name="date_suggestion" type="keyword_multi_value_string"/>
+    <!-- cloud or local -->
+    <field name="is_cloud" type="string" />
+    <!-- hidden album -->
+    <field name="is_hide" type="string" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_observer_name" type="string"/>
+    <field name="cmh_timestamp" type="long_stored_field" />
+
+    <!-- fields and their copies for MP(files)  -->
+    <field name="display_name_phonetic" type="phonetic_field" src="_display_name" stored="false" />
+    <field name="display_name_fuzzy" type="search_field_spell" src="_display_name" stored="false" />
+    <field name="display_name_sort" type="bytes_sorted" src="_display_name"/>
+    <field name="mime_type" type="string" />
+    <field name="_size" type="long_stored_field" sort="true"/>
+    <field name="date_modified" type="long_stored_field" sort="true" compare="true"/>
+    <field name="format" type="long_stored_field" sort="true"/>
+    <field name="file_extension" type="string" sort="true"/>
+    <field name="directory_name_transliterated" termVector="true"
+        type="transliteration_field" stored="false" />
+    <field name="title" type="string_ignore_case" />
+    <!-- Audio album, Not Gallery Album -->
+    <field name="audio_album" type="string_ignore_case" />
+    <field name="audio_artist" type="string_ignore_case" />
+
+    <!-- Content searchable for document file -->
+    <field name="is_content_searchable" type="string" />
+    <!-- inode is a unique id in file system. Document index will use this value as key field. -->
+    <field name="inode" type="string" sort="true"/>
+    <field name="usage_score" type="int_stored_field" sort="true" stored="true"/>
+    <field name="is_edited" type="int_stored_field"/>
+    <field name="is_favorite" type="int_stored_field" compare="true"/>
+    <field name="feedback_score" type="float_numeric_field" />
+    <field name="is_user_story" type="string" />
+    <field name="mfc_share_count" type="int_stored_field"/>
+    <nested name="video_frame" foreignKey="_id">
+        <field name="frame_id" type="string" />
+        <field name="scenetag" type="multi_value_string"/>
+        <field name="persontag" type="mixed_multi_value_text" />
+        <field name="relationship" type="mixed_multi_value_text" />
+        <field name="pet_tag" type="mixed_multi_value_text" />
+    </nested>
+
+
+    <fieldList type="search">
+        <fieldItem name="_display_name" />
+        <fieldItem name="bucket_display_name_token" />
+        <fieldItem name="display_name_japanese"/>
+        <fieldItem name="usertag" />
+        <fieldItem name="country_name" />
+        <fieldItem name="admin_level_one" />
+        <fieldItem name="admin_level_two" />
+        <fieldItem name="locationtag" />
+        <fieldItem name="sub_location" />
+        <fieldItem name="sef_file_type" />
+        <fieldItem name="recording_mode" />
+        <fieldItem name="media_type" />
+        <fieldItem name="persontag" />
+        <fieldItem name="pet_tag" />
+        <fieldItem name="poitag" />
+        <fieldItem name="scenetag" />
+        <fieldItem name="expressionstag" />
+        <fieldItem name="storytag" />
+        <fieldItem name="ocrtext" />
+        <fieldItem name="date_suggestion"/>
+        <fieldItem name="scene_name"/>
+    </fieldList>
+
+    <fieldList type="facet">
+        <fieldItem name="bucket_display_name"/>
+        <fieldItem name="usertag"/>
+        <fieldItem name="sef_file_type"/>
+        <fieldItem name="recording_mode"/>
+        <fieldItem name="media_type"/>
+        <fieldItem name="persontag"/>
+        <fieldItem name="recommended_id"/>
+        <fieldItem name="scenetag"/>
+        <fieldItem name="expressionstag"/>
+        <fieldItem name="storytag"/>
+        <fieldItem name="poitag"/>
+        <fieldItem name="facet_location"/>
+        <fieldItem name="pet_recommended_id"/>
+        <fieldItem name="pet_tag"/>
+        <fieldItem name="person_cluster"/>
+        <fieldItem name="story_cluster"/>
+        <fieldItem name="album_cluster"/>
+        <fieldItem name="pet_cluster"/>
+        <fieldItem name="relationship"/>
+    </fieldList>
+
+    <sort>
+        <sortedField name="localtime_sort" order="DESC" />
+        <sortedField name="_id_sort" order="DESC" />
+    </sort>
+</schema>

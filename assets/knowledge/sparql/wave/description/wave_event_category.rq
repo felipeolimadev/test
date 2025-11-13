@@ -1,0 +1,31 @@
+SELECT DISTINCT ?targetTP
+(GROUP_CONCAT(DISTINCT STR(?originTP); SEPARATOR=',') AS ?originTPs)
+(GROUP_CONCAT(DISTINCT STR(?event); SEPARATOR=',') AS ?events)
+
+{
+    VALUES ?targetTP { <TARGET_TAKING_PICTURES_IRI> }
+
+    # 동일 카테고리를 가지는 이벤트에서 찍은 사진
+    {
+        SELECT DISTINCT ?originTP ?originEvent ?category {
+            VALUES ?originTP { <ORIGIN_TAKING_PICTURES_IRI> }
+            ?originTP time:hasBeginning/time:inXSDDateTimeStamp ?originTPStartTime .
+            ?originTP time:hasEnd/time:inXSDDateTimeStamp ?originTPEndTime .
+
+            ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+            ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+            ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+            ?originEvent content:eventCategory ?category .
+            FILTER (?originTPEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originTPStartTime)
+        }
+    }
+    ?targetTP time:hasBeginning/time:inXSDDateTimeStamp ?targetTPStartTime .
+    ?targetTP time:hasEnd/time:inXSDDateTimeStamp ?targetTPEndTime .
+    ?event time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+    ?event time:inXSDEndDateTimeStamp ?targetEventEndTime .
+    ?event content:eventCategory ?category .
+
+    FILTER (?targetTPEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetTPStartTime)
+}
+GROUP BY ?targetTP
+ORDER BY ?targetTP

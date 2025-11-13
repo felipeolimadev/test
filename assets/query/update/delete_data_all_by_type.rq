@@ -1,0 +1,20 @@
+DELETE {
+    ?s ?p ?o .
+    ?ss ?sp ?s .
+    GRAPH user:relation {
+        person:TheUser ?rp ?s .
+    }
+} WHERE {
+    VALUES (?dataType) {<DataType>}
+    ?s rdf:type/rdfs:subClassOf ?dataType .
+    FILTER (?s != person:TheUser)
+    {
+        ?s ?p ?o .
+    } UNION {
+        ?ss ?sp ?s .
+    } UNION {
+        GRAPH user:relation {
+            person:TheUser ?rp ?s .
+        }
+    }
+}

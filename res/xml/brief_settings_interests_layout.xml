@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_main_screen" android:title="@string/brief_settings_content_to_include_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout="@layout/brief_settings_interests_description_layout" android:key="interests_description" />
+    <PreferenceCategory android:layout_width="fill_parent">
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_health_and_wellness" android:title="@string/interests_item_health_and_wellness" android:key="health_and_wellness" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_finance" android:title="@string/interests_item_finance" android:key="finance" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_travel" android:title="@string/interests_item_travel" android:key="travel" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_driving" android:title="@string/interests_item_driving" android:key="driving" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_birthday_reminders" android:title="@string/interests_item_birthday_reminders" android:key="birthday_reminders" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_sports" android:title="@string/interests_item_sports" android:key="sports" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_routines" android:title="@string/interests_item_routines" android:key="routines" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_games" android:title="@string/interests_item_games" android:key="games" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_pets" android:title="@string/interests_item_pets" android:key="pets" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_news" android:title="@string/interests_item_news" android:key="news" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_music_and_podcasts" android:title="@string/interests_item_music_and_podcasts" android:key="music_and_podcasts" android:defaultValue="false" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.GearPreferenceWithFrontWidget android:icon="@drawable/interests_item_home" android:title="@string/interests_item_home" android:key="smart_home" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

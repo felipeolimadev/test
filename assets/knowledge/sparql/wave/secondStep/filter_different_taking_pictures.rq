@@ -1,0 +1,5 @@
+# 연관 검색 결과가 초기 검색 결과 외의 사진 보유
+FILTER NOT EXISTS {
+    VALUES ?origin { <TAKING_PICTURES_IRI> }
+    FILTER (?target = ?origin)
+}

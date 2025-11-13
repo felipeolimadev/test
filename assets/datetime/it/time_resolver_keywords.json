@@ -1,0 +1,64 @@
+{
+  "absolute": [
+    {
+      "id": 1,
+      "key": "am_present",
+      "keywords":[
+        "a[.]?\\s*m[.]?",
+        "mattina",
+        "mattina presto",
+        "tarda mattina",
+        "mattina",
+        "alba",
+        "stamattina"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "pm_present",
+      "keywords":[
+        "p[.]?\\s*m[.]?",
+        "del pomeriggio",
+        "nel pomeriggio",
+        "tardo pomeriggio",
+        "pomeriggio",
+        "notte",
+        "in serata",
+        "nella notte",
+        "tarda notte",
+        "tarda sera",
+        "sera",
+        "prima serata",
+        "crepuscolo",
+        "pranzo",
+        "stasera"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "key": "00:00:00:AM",
+      "keywords": [
+        "mezzanotte",
+        "mezza notte"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "12:00:00:PM",
+      "keywords": [
+        "mezzogiorno",
+        "mezzo giorno"
+      ]
+    },
+    {
+      "id": 3,
+      "key": "00:30:00:DELTA",
+      "keywords": [
+        "mezz'ora",
+        "mezzora"
+      ]
+    }
+  ]
+}

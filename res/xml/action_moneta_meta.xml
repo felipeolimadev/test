@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action dataEventType="ONE_OFF_EVENT" sourcePackageName="com.samsung.android.moneta" tag="Moneta/DataCollector">
+        <parameters>
+            <parameter key="CCSType" name="ccs_type" type="STRING" />
+            <parameter key="CCSMessageLength" name="ccs_message_length" type="INT" />
+            <parameter key="lastUpdateTime" name="last_update_time" type="LONG" />
+            <parameter key="isReady" name="is_ready" type="BOOLEAN" />
+        </parameters>
+    </action>
+</actions>

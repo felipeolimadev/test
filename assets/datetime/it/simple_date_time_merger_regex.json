@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "pattern" : "<<at>>?[\\s]*(?:<<time_keywords_before>>)?[\\s]?(<time>)[\\s]*<<on>>[\\s]*<<date_keywords_before>>?[\\s](<date>)",
+    "groupings" : [[2,1]],
+    "comment": "alle ore 10 del 5 marzo"
+  },
+  {
+    "id": "2",
+    "pattern" : "<<on>>?[\\s]*(?:<<date_keywords_before>>)?[\\s]?(<date>)[\\s]*<<at>>[\\s]*<<time_keywords_before>>?[\\s](<time>)",
+    "groupings" : [[1,2]],
+    "comment": "il 5 marzo alle 10:00"
+  },
+  {
+    "id": "4",
+    "pattern" : "(<date>)[\\s]*[,][\\s*](<time>)",
+    "groupings" : [[1,2]],
+    "comment": "5 marzo, ore 10.00"
+  },
+  {
+    "id": "5",
+    "pattern" : "<<time_keywords_before>>?[\\s]?(<time>)[\\s]?[,]?[\\s]?(?:[\\w\\sÀàÈèÉéÌìÒòÓóÙùÇç'a-zA-Z]{0,50})?[\\s]?(?:<<event_keywords_start>>|<<event_keywords_end>>)[\\s]<<date_keywords_before>>?[\\s]?(<date>)",
+    "groupings" : [[2,1]],
+    "comment": "at/from <time> <<event>> will start on <date>"
+  },
+  {
+    "id": "",
+    "pattern" : "<<date_keywords_before>>?[\\s]?(<date>)[\\s]?[,]?[\\s]?(?:[\\w\\sÀàÈèÉéÌìÒòÓóÙùÇç'a-zA-Z]{0,50})?[\\s]?(?:<<event_keywords_start>>|<<event_keywords_end>>)[\\s]<<time_keywords_before>>?[\\s]?(<time>)",
+    "groupings" : [[1,2]],
+    "comment": "at/from <date> <<event>> will start on <time>"
+  }
+]

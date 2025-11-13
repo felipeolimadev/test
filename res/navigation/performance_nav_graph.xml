@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/performance_nav_graph" app:startDestination="@id/performance_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Performance" android:name="com.samsung.android.moneta.debugui.developmode.performance.PerformanceFragment" android:id="@id/performance_main">
+        <action android:id="@id/action_performance_main_to_storage_usage" app:destination="@id/storage_usage" />
+        <action android:id="@id/action_performance_main_to_clear_storage" app:destination="@id/clear_storage" />
+        <action android:id="@id/action_performance_main_to_cpu_usage" app:destination="@id/cpu_usage" />
+        <action android:id="@id/action_performance_main_to_thermal_usage" app:destination="@id/thermal_usage_fragment" />
+        <action android:id="@id/action_performance_main_to_memory" app:destination="@id/memory_fragment" />
+        <action android:id="@id/action_performance_main_to_realtime_monitoring" app:destination="@id/realtime_monitoring" />
+    </fragment>
+    <fragment android:label="Storage Usage" android:name="com.samsung.android.moneta.debugui.developmode.performance.StorageUsageFragment" android:id="@id/storage_usage" />
+    <fragment android:label="CPU Usage" android:name="com.samsung.android.moneta.debugui.developmode.performance.CpuUsageFragment" android:id="@id/cpu_usage" />
+    <action android:id="@id/action_performance_main_to_clear_storage" app:destination="@id/clear_storage" />
+    <dialog android:label="Clear Storage" android:name="com.samsung.android.moneta.debugui.developmode.performance.ClearStorageDialogFragment" android:id="@id/clear_storage" />
+    <fragment android:label="MemoryUsageFragment" android:name="com.samsung.android.moneta.debugui.developmode.performance.MemoryUsageFragment" android:id="@id/memory_usage_fragment" />
+    <fragment android:label="ThermalUsageFragment" android:name="com.samsung.android.moneta.debugui.developmode.performance.ThermalStatsFragment" android:id="@id/thermal_usage_fragment" />
+    <fragment android:label="MemoryFragment" android:name="com.samsung.android.moneta.debugui.developmode.performance.MemoryFragment" android:id="@id/memory_fragment">
+        <action android:id="@id/action_performance_main_to_memory_usage" app:destination="@id/memory_usage_fragment" />
+    </fragment>
+    <fragment android:label="Realtime Monitoring" android:name="com.samsung.android.moneta.debugui.developmode.performance.RealtimeMonitoringFragment" android:id="@id/realtime_monitoring" />
+</navigation>

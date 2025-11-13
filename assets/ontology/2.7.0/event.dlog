@@ -1,0 +1,221 @@
+# version : 2.7
+
+
+# person validation rule
+rdf:type[?personB, owl:Nothing],
+rdf:type[?personA, owl:Nothing],
+[?personA, design:wrongSameAs, ?personB]
+    :-
+        user:Person[?personA],
+        user:Person[?personB],
+        [?personA, user:galleryPersonId, ?id],
+        [?personB, user:galleryPersonId, ?id],
+        FILTER(?personA != ?personB).
+
+
+# make personRecognized between Person and Image.
+[?media, content:personRecognized, ?person]
+    :-
+        rdfs:subClassOf[?mediaType, content:MediaObject],
+        rdf:type[?media, ?mediaType],
+        [?media, content:personIdRecognized, ?personId],
+        user:Person[?person],
+        [?person, user:galleryPersonId, ?personId].
+
+# connect Person and CallLog by using contactId.
+[?callLog, content:caller, ?person]
+    :-
+        content:CallLog[?callLog],
+        content:callType[?callLog, content:IncomingCall],
+        [?callLog, content:contactId, ?contactIdA],
+        user:Person[?person],
+        [?person, user:contactId, ?contactIdB],
+        FILTER(?contactIdA = ?contactIdB).
+
+[?callLog, content:receiver, ?person]
+    :-
+        content:CallLog[?callLog],
+        content:callType[?callLog, content:OutgoingCall],
+        [?callLog, content:contactId, ?contactIdA],
+        user:Person[?person],
+        [?person, user:contactId, ?contactIdB],
+        FILTER(?contactIdA = ?contactIdB).
+
+
+# connect between SharingContents and Person by using contactId
+[?activity, user:toPerson, ?person]
+    :-
+        [?activityClass, rdfs:subClassOf, user:SharingContents],
+        [?activity, rdf:type, ?activityClass],
+        [?activity, user:contactIdOfRecipient, ?contactIdA],
+        user:Person[?person],
+        [?person, user:contactId, ?contactIdB],
+        FILTER(?contactIdA = ?contactIdB).
+
+# connect between StoringContents and Person by using contactId
+[?activity, user:fromPerson, ?person]
+    :-
+        [?activityClass, rdfs:subClassOf, user:StoringContents],
+        [?activity, rdf:type, ?activityClass],
+        [?activity, user:contactIdOfSender, ?contactIdA],
+        user:Person[?person],
+        [?person, user:contactId, ?contactIdB],
+        FILTER(?contactIdA = ?contactIdB).
+
+
+# Eating Activity parameter rules
+[?activity, user:withPerson, ?person]
+    :-
+        user:Eating[?activity],
+        user:extractedFrom[?activity, ?image],
+        content:personRecognized[?image, ?person].
+
+# TakingPictures Activity parameter rules
+[?activity, user:withPerson, ?person]
+    :-
+        user:TakingPictures[?activity],
+        user:objectContent[?activity, ?image],
+        content:personRecognized[?image, ?person].
+
+
+
+# Making event relation from Engram to ScheduledEvent
+# time:intervalIn/Overlab/Inside[?ScheduledEvent, ?Engram]
+# time:intervalIn[?Engram, ?ScheduledEvent]
+user:event[?engram, ?event]
+    :-
+    user:ScheduledEvent[?event],
+        time:inXSDBeginningDateTimeStamp[?event, ?eventBeginTime],
+        time:inXSDEndDateTimeStamp[?event, ?eventEndTime],
+    FILTER (?eventBeginTime <= ?eventEndTime),
+
+    rdfs:subClassOf[?ENGRAM, user:Engram],
+        rdf:type[?engram, ?ENGRAM],
+        time:hasBeginning[?engram, ?engramBegin],
+        time:hasEnd[?engram, ?engramEnd],
+    time:inXSDDateTimeStamp[?engramBegin, ?engramBeginTime],
+    time:inXSDDateTimeStamp[?engramEnd, ?engramEndTime],
+
+    FILTER( ?engramBeginTime < ?eventEndTime && ?engramEndTime > ?eventBeginTime ).
+
+
+
+
+# Making event relation from TravelEngram to TravelEvent
+# time:intervalIn/Overlab/Inside[?ScheduledTravel, ?TravelEngram]
+# time:intervalIn[?Engram, ?ScheduledTravel]
+user:realizedEvent[?engram, ?event]
+    :-
+    user:ScheduledTravel[?event],
+        time:inXSDBeginningDateTimeStamp[?event, ?eventBeginTime],
+        time:inXSDEndDateTimeStamp[?event, ?eventEndTime],
+    FILTER (?eventBeginTime <= ?eventEndTime),
+
+    rdfs:subClassOf[?ENGRAM, user:TravelEngram],
+        rdf:type[?engram, ?ENGRAM],
+        time:hasBeginning[?engram, ?engramBegin],
+        time:hasEnd[?engram, ?engramEnd],
+    time:inXSDDateTimeStamp[?engramBegin, ?engramBeginTime],
+    time:inXSDDateTimeStamp[?engramEnd, ?engramEndTime],
+
+    FILTER( ?engramBeginTime < ?eventEndTime && ?engramEndTime > ?eventBeginTime).
+
+
+##############################################################
+# connect TakingPictures and ScheduledEvent
+user:scheduledToCaptured[?scheduledEvent, ?takingPictures],
+user:capturedToScheduled[?takingPictures, ?scheduledEvent]
+    :-
+        [?specialProperty, rdfs:subPropertyOf, user:event],
+        user:TakingPictures[?takingPictures],
+        [?engram, ?specialProperty, ?takingPictures],
+        user:objectContent[?takingPictures, ?image],
+        content:objectRecognized[?image, ?object],
+        [?EVENT_TYPE, rdfs:subClassOf, user:ScheduledEvent],
+        [?scheduledEvent, rdf:type, ?EVENT_TYPE],
+        [?realizedProperty, rdfs:subPropertyOf, user:event],
+        [?engram, ?realizedProperty, ?scheduledEvent],
+        user:extractedFrom[?scheduledEvent, ?wEvent],
+        content:eventCategory[?wEvent, ?category],
+        content:hasPart[?category, ?object] .
+
+
+# Starting General Engram
+[?newEngram, rdf:type, user:GeneralEngram],
+[?newBeginAction, rdf:type, time:Instant],
+[?newEngram, time:hasBeginning, ?newBeginAction],
+[?newBeginAction, time:inXSDDateTimeStamp, ?beginDate],
+[?newEngram, user:event, ?activity]
+    :-
+        rdfs:subClassOf[?ACTIVITY, user:Activity],
+        rdf:type[?activity, ?ACTIVITY],
+        FILTER(?ACTIVITY = user:Moving || ?ACTIVITY = user:Staying),
+        time:hasBeginning[?activity, ?begin],
+        time:inXSDDateTimeStamp[?begin, ?beginDate],
+        BIND(STRAFTER(STR(?activity), "_") AS ?beginTimeStamp),
+        BIND(IRI(CONCAT(STR(engram:),"GeneralEngram_", ?beginTimeStamp)) AS ?newEngram),
+        BIND(IRI(CONCAT(STR(action:),"GeneralEngram_", ?beginTimeStamp, "_BEGINNING")) AS ?newBeginAction).
+
+
+
+
+# Stopping General Engram
+[?newEndAction, rdf:type, time:Instant],
+[?newEngram, time:hasEnd, ?newEndAction],
+[?newEndAction, time:inXSDDateTimeStamp, ?endDate]
+    :-
+        rdfs:subClassOf[?ACTIVITY, user:Activity],
+        rdf:type[?activity, ?ACTIVITY],
+        FILTER(?ACTIVITY = user:Moving || ?ACTIVITY = user:Staying),
+        time:hasBeginning[?activity, ?begin],
+        BIND(STRAFTER(STR(?activity), "_") AS ?beginTimeStamp),
+        BIND(IRI(CONCAT(STR(engram:),"GeneralEngram_", ?beginTimeStamp)) AS ?newEngram),
+        time:hasEnd[?activity, ?end],
+        time:inXSDDateTimeStamp[?end, ?endDate],
+        BIND(IRI(CONCAT(STR(action:), "GeneralEngram_", ?beginTimeStamp, "_END")) AS ?newEndAction).
+
+
+#[?engram, rdf:type, user:SpecialEngram],
+#[?engram, user:hasTag, "TakingPictures"],
+#[?engram, user:specialEvent, ?activity]
+#    :-
+#        user:GeneralEngram[?engram],
+#        user:TakingPictures[?activity],
+#        user:event[?engram, ?activity].
+
+
+
+# candidates Activity intervalIn Engram
+[?engram, user:event, ?activity]
+    :-
+        rdfs:subClassOf[?EngramType, user:Engram],
+        rdf:type[?engram, ?EngramType],
+        rdfs:subClassOf[?ActivityType, user:Activity],
+        rdf:type[?activity, ?ActivityType],
+        time:intervalIn[?activity, ?engram].
+
+# candidates Activity intervalOverlaps Engram
+[?engram, user:event, ?activity]
+    :-
+        rdfs:subClassOf[?EngramType, user:Engram],
+        rdf:type[?engram, ?EngramType],
+        rdfs:subClassOf[?ActivityType, user:Activity],
+        rdf:type[?activity, ?ActivityType],
+        time:intervalOverlaps[?activity, ?engram].
+
+[?engram, user:event, ?activity]
+    :-
+        rdfs:subClassOf[?EngramType, user:Engram],
+        rdf:type[?engram, ?EngramType],
+        rdfs:subClassOf[?ActivityType, user:Activity],
+        rdf:type[?activity, ?ActivityType],
+        time:intervalOverlaps[?engram, ?activity].
+
+# base Engram inside candidates Action
+[?engram, user:event, ?action]
+    :-
+        rdfs:subClassOf[?EngramType, user:Engram],
+        rdf:type[?engram, ?EngramType],
+        rdfs:subClassOf[?ActionType, user:Action],
+        rdf:type[?action, ?ActionType],
+        time:inside[?engram, ?action].

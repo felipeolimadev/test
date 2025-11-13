@@ -1,0 +1,7 @@
+travel, trip, 旅行, 出遊, 旅程
+wedding, marriage ceremony, 婚禮, 結婚典禮
+entrance ceremony, matriculation, 入學典禮, 入學儀式
+commencement, graduation, 畢業典禮, 畢業, 畢業典禮
+birthday, birth anniversary, 生日, 出生紀念日,
+wedding anniversary, wedding anniversary, marriage anniversary, 結婚紀念日
+vacation, 假期

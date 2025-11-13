@@ -1,0 +1,17 @@
+{
+  "type_test1": {
+    "properties": {
+      "label_ngram": {
+        "index": true,
+        "ignore_above": 256,
+        "store": true
+      },
+      "label": {
+        "index": true,
+        "ignore_above": 256,
+        "store": true
+      }
+    }
+  }
+}
+

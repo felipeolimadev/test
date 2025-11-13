@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggestion_ui_view_currency_exchange_rate_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:paddingHorizontal="@dimen/widget_margin_horizontal" android:paddingVertical="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/exchange_rate_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView android:textAppearance="@style/TextStyleRegular" android:textSize="11.0sp" android:textColor="@color/currency_code_color" android:id="@id/exchange_rate_updated_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/exchange_rate_item_date_topMargin" android:layout_marginBottom="@dimen/exchange_rate_item_date_bottomMargin" android:textAlignment="viewEnd" />
+</LinearLayout>

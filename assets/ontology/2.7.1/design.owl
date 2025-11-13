@@ -1,0 +1,19 @@
+@prefix : <http://pkg.samsung.com/design#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://pkg.samsung.com/design> a owl:Ontology ;
+    owl:versionIRI <http://pkg.samsung.com/design/1.0.6> .
+
+:NamedEntity a owl:Class .
+
+:identifier a owl:DatatypeProperty .
+
+:name a owl:DatatypeProperty,
+        owl:FunctionalProperty .
+
+:subIndividualOf a owl:ObjectProperty,
+        owl:TransitiveProperty .
+
+:wrongSameAs rdfs:subPropertyOf :wrongPolicy .
+

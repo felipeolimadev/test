@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/feature_configuration">
+        <SwitchPreferenceCompat android:title="@string/basic_domain" android:key="key_feature_basic_domain" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/fourwevent" android:key="key_feature_fourwevent" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/preference" android:key="key_feature_preference" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/memory" android:key="key_feature_memory" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/noti_inference" android:key="key_feature_noti_inference" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/knowledge" android:key="key_feature_knowledge" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/search" android:key="key_feature_search" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/recall" android:key="key_feature_recall" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

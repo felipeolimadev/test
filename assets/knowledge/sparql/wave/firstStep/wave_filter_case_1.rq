@@ -1,0 +1,12 @@
+#사람 장소
+select distinct ?tp where {
+    values ?image {<IMAGE_FILE_IRI>}
+    ?tp user:objectContent ?image .
+    ?tp rdf:type user:TakingPictures .
+
+    # Person filter
+    ?tp user:withPerson ?person .
+
+    # Location filter
+    ?tp user:atLocation ?location .
+}

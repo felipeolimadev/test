@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:tag="layout/suggestion_ui_view_moments_card_description_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.vanillavibes.motion.text.view.MotionTextView android:textAppearance="@style/TextAppearance.Description" android:textColor="@color/description_widget_text_start_color" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

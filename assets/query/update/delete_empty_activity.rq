@@ -1,0 +1,17 @@
+DELETE {
+    ?s ?p ?o .
+    ?ss ?sp ?s .
+    ?so ?sop ?soo .
+} WHERE {
+    VALUES (?activityClass) {(user:Eating) (user:ListeningToMusic) (user:Paying) (user:SpeakingOnPhone) (user:TakingPictures) (user:WatchingVideo) (user:ScheduledEvent)}
+    ?s rdf:type/rdfs:subClassOf ?activityClass .
+    FILTER NOT EXISTS { ?s user:extractedFrom|user:objectContent|user:object ?something . }
+    {
+        ?s ?p ?o .
+    } UNION {
+        ?ss ?sp ?s .
+    } UNION {
+        ?s time:hasBeginning|time:hasEnd ?so .
+        ?so ?sop ?soo .
+    }
+}

@@ -1,0 +1,31 @@
+{
+    select distinct ?person ?pivot{IDX} ?p_score{IDX} ?max_linkingScore{IDX}
+    where {
+        <INPUT_TO_PIVOT>
+
+        {
+            ?pivot{IDX} user:event/(user:objectContent|user:extractedFrom) ?b_content .
+            ?b_content ?predicate ?person .
+            FILTER(?predicate IN (content:attendee, content:personRecognized, content:caller, content:receiver, content:recipient, content:sender))
+            BIND(<SCORE_ENGRAM_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} (user:capturedToScheduled|user:scheduledToCaptured)?/(user:objectContent|user:extractedFrom) ?b_content .
+            ?b_content ?predicate ?person .
+            FILTER(?predicate IN (content:attendee, content:personRecognized, content:caller, content:receiver, content:recipient, content:sender))
+            BIND(<SCORE_ACTIVITY_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} (user:capturedToScheduled|user:scheduledToCaptured)?/(user:fromPerson|user:toPerson) ?person .
+            BIND(<SCORE_ACTIVITY_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} content:attendee|content:personRecognized|content:caller|content:receiver|content:recipient|content:sender ?person .
+            BIND(<SCORE_CONTENT_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?person rdf:type/rdfs:subClassOf user:Person .
+            ?pivot{IDX} rdf:unknown? ?person .
+            BIND(<SCORE_PERSON_PIVOT> AS ?p_score{IDX})
+        }
+
+        <PIVOT_TO_TIME>
+        <TIME_FILTER>
+    }
+}

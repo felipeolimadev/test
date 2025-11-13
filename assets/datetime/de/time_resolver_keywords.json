@@ -1,0 +1,62 @@
+{
+  "absolute": [
+    {
+      "id": 1,
+      "key": "am_present",
+      "keywords":[
+        "Morgen",
+        "am Morgen",
+        "früh am Morgen",
+        "später Morgen",
+        "Morgendämmerung",
+        "Morgengrauen",
+        "morgen",
+        "uhr morgen",
+        "uhr morgens"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "pm_present",
+      "keywords":[
+        "nachmittag",
+        "am Nachmittag",
+        "Abend",
+        "Nacht",
+        "am Abend",
+        "in der Nacht",
+        "späte Nacht",
+        "später Nachmittag",
+        "später Abend",
+        "früher Abend",
+        "Dämmerung",
+        "nachmittags",
+        "abends",
+        "bis spät in die Nacht",
+        "am frühen Abend",
+        "Abenddämmerung",
+        "uhr nachmittags"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "key": "00:00:00:AM",
+      "keywords": [
+        "Mitternacht",
+        "Mitten in der Nacht"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "12:00:00:PM",
+      "keywords": [
+        "Mittag",
+        "Mittags",
+        "mittags",
+        "mittag"
+      ]
+    }
+  ]
+}

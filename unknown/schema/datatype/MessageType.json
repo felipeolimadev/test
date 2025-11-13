@@ -1,0 +1,25 @@
+{
+  "name": "MessageType",
+  "type": "datatype",
+  "id": "datatype.enumeration.MessageType",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "sms",
+      "mms"
+    ],
+    "descriptions": [
+      {
+        "value": "sms",
+        "description": "sms"
+      },
+      {
+        "value": "mms",
+        "description": "mms"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

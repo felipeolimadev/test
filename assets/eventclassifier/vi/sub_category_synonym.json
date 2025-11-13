@@ -1,0 +1,200 @@
+[
+    {
+        "category": "SOCIAL",
+        "synonyms": [
+            {
+                "event": "BIRTHDAY",
+                "words": [
+                    "sinh nhật",
+                    "ngày sinh",
+                    "ngày kỷ niệm sinh nhật",
+                    "kỷ niệm ngày sinh",
+                    "ngày sinh nhật",
+                    "Ngày sinh"
+                ],
+                "excludes": [
+                    "quà tặng",
+                    "quà",
+                    "tặng phẩm",
+                    "chuẩn bị",
+                    "gói",
+                    "chọn",
+                    "mua",
+                    "cửa hàng",
+                    "lựa chọn",
+                    "mua sắm",
+                    "đặt hàng",
+                    "cuộc họp tóm tắt",
+                    "xem xét",
+                    "bài thuyết trình",
+                    "cuộc họp",
+                    "bữa tiệc"
+                ]
+            },
+            {
+                "event": "WEDDING_ANNIVERSARY",
+                "words": [
+                    "kỷ niệm ngày cưới"
+                ]
+            },
+            {
+                "event": "WEDDING",
+                "words": [
+                    "lễ cưới",
+                    "lễ kết hôn",
+                    "ngày cưới",
+                    "sự kiện đám cưới",
+                    "lễ kỷ niệm đám cưới",
+                    "hôn nhân",
+                    "thành hôn"
+                ]
+            },
+            {
+                "event": "ENTRANCE_CEREMONY",
+                "words": [
+                    "lễ khai giảng",
+                    "lễ nhập học",
+                    "lễ tuyển sinh",
+                    "lễ trúng tuyển"
+                ]
+            },
+            {
+                "event": "GRADUATION",
+                "words": [
+                    "lễ tốt nghiệp",
+                    "ngày tốt nghiệp",
+                    "sự kiện tốt nghiệp",
+                    "tốt nghiệp"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "RESERVATION",
+        "synonyms": [
+            {
+                "event": "ACCOMMODATION",
+                "words": [
+                    "khách sạn",
+                    "nhà nghỉ",
+                    "quán trọ",
+                    "airbnb",
+                    "khu nghỉ mát",
+                    "nhà khách",
+                    "nhà nghỉ dưỡng",
+                    "ký túc xá",
+                    "chỗ ở",
+                    "campground",
+                    "marriott",
+                    "hilton",
+                    "accor",
+                    "intercontinental",
+                    "wyndham",
+                    "hyatt",
+                    "Sheraton",
+                    "baccarat",
+                    "biaco",
+                    "langham",
+                    "jefferson",
+                    "montage",
+                    "Radisson",
+                    "hostelling international",
+                    "aman",
+                    "the brando",
+                    "soneva fushi",
+                    "anantara",
+                    "Ritz Carlton",
+                    "phòng đôi",
+                    "phòng đơn",
+                    "phòng hút thuốc",
+                    "phòng không hút thuốc",
+                    "nhìn ra đại dương",
+                    "quang cảnh thành phố",
+                    "nhìn ra vườn",
+                    "Reverie ",
+                    "Vinpearl "
+                ]
+            },
+            {
+                "event": "TRANSPORTATION",
+                "words": [
+                    "xe buýt",
+                    "tàu điện ngầm",
+                    "xe lửa",
+                    "xe điện",
+                    "Taxi",
+                    "phà",
+                    "tàu thủy",
+                    "du thuyền",
+                    "máy bay",
+                    "chuyến bay",
+                    "cáp treo",
+                    "xe tải",
+                    "uber",
+                    "lyft",
+                    "amtrak",
+                    "mũ màu vàng",
+                    "hộ chiếu muni",
+                    "đưa đón",
+                    "skyscanner",
+                    "xe đẩy",
+                    "eurostar",
+                    "thuê xe",
+                    "xe limousine",
+                    "vận tải",
+                    "đường hàng không",
+                    "hãng hàng không",
+                    "phi cơ",
+                    "máy bay chở khách",
+                    "sân bay",
+                    "vietnam airline",
+                    "Bamboo Airways",
+                    "Vietjet Air",
+                    "emirates",
+                    "allegiant air",
+                    "endeavor air",
+                    "hạng phổ thông",
+                    "hạng thương gia",
+                    "hạng nhất",
+                    "ranh giới",
+                    "sự khởi hành",
+                    "đến",
+                    "cởi",
+                    "hạ cánh",
+                    "hành lý",
+                    "quá cảnh",
+                    "điểm dừng chân",
+                    "giá vé",
+                    "chuyến đi khứ hồi",
+                    "một chiều",
+                    "xe máy",
+                    "xe xích lô"
+                ]
+            },
+            {
+                "event": "RESTAURANT",
+                "words": [
+                    "nhà hàng",
+                    "quán ăn",
+                    "ăn uống",
+                    "quán cà phê",
+                    "quán rượu",
+                    "phòng chờ",
+                    "căng tin",
+                    "trattoria",
+                    "quán bia",
+                    "thanh",
+                    "tiệm bánh pizza",
+                    "tiệm bánh quay",
+                    "quán bít tết",
+                    "nơi ăn trưa",
+                    "phòng ăn",
+                    "buffet",
+                    "lái xe qua",
+                    "bữa nửa buổi",
+                    "bữa sáng"
+                ]
+            }
+        ]
+    }
+]

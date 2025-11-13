@@ -1,0 +1,60 @@
+<ACTIVITY_FILTER>
+{
+    ?s rdf:unknown? ?activity .
+    ?s ?p ?o .
+    BIND(STR(?activity) AS ?index)
+} UNION {
+    ?activity time:hasBeginning|time:hasEnd ?s .
+    ?s ?p ?o EXPLICIT true .
+    BIND(STR(?activity) AS ?index)
+} UNION {
+    ?activity user:onApplication|user:fromApplication|user:toApplication ?s .
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?activity), '|', STR(?s)) AS ?index)
+} UNION {
+    ?activity user:fromLocation|user:toLocation|user:atLocation ?s .
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?activity), '|', STR(?s)) AS ?index)
+} UNION {
+    ?activity user:objectContent|user:extractedFrom ?s .
+    ?s ?p ?o EXPLICIT ?e .
+    FILTER (?e || ?p = content:personRecognized)
+    BIND(CONCAT(STR(?activity), '|', STR(?s)) AS ?index)
+} UNION {
+    ?activity user:objectContent|user:extractedFrom ?content .
+    ?content content:locationCreated|content:locationRegistered ?s .
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?activity), '|', STR(?content), '|', STR(?s)) AS ?index)
+} UNION {
+    ?activity user:fromPerson|user:toPerson ?s .
+    FILTER (?s != person:TheUser)
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?activity), '|', STR(?s)) AS ?index)
+} UNION {
+    ?activity user:fromPerson|user:toPerson ?person .
+    GRAPH user:relation {
+        ?o relationship:sameAs? ?person .
+        ?s ?p ?o EXPLICIT true .
+        FILTER (?o != person:TheUser)
+        FILTER (?s = person:TheUser)
+    }
+    BIND(CONCAT(STR(?activity), '|', STR(?person)) AS ?index)
+} UNION {
+    ?activity user:objectContent|user:extractedFrom ?content .
+    ?personPredicate rdfs:subPropertyOf content:person .
+    ?content ?personPredicate ?s .
+    FILTER (?s != person:TheUser)
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?activity), '|', STR(?content), '|', STR(?s)) AS ?index)
+} UNION {
+    ?activity user:objectContent|user:extractedFrom ?content .
+    ?personPredicate rdfs:subPropertyOf content:person .
+    ?content ?personPredicate ?person .
+    GRAPH user:relation {
+        ?o relationship:sameAs? ?person .
+        ?s ?p ?o EXPLICIT true .
+        FILTER (?o != person:TheUser)
+        FILTER (?s = person:TheUser)
+    }
+    BIND(CONCAT(STR(?activity), '|', STR(?content), '|', STR(?person)) AS ?index)
+}

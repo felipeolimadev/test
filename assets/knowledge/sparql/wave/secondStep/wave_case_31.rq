@@ -1,0 +1,32 @@
+SELECT DISTINCT ?target {
+    ?target a user:TakingPictures .
+
+    # (1) 초기 검색 결과에 포함된 사람과 동일한 사람의 사진 존재
+    FILTER EXISTS {
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        ?origin user:withPerson ?person .
+        ?target user:withPerson ?person .
+    }
+    # (2) 초기 검색 결과와 동일한 여행 기간 내 찍은 사진만 존재
+    FILTER EXISTS {
+        ?targetEventProperty rdfs:subPropertyOf user:event .
+        ?travelEngram a user:TravelEngram .
+        ?travelEngram ?targetEventProperty ?target .
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        ?originEventProperty rdfs:subPropertyOf user:event .
+        ?travelEngram ?originEventProperty ?origin .
+    }
+    # (3) 그 외 다른 사람이 나온 사진 없음
+    FILTER NOT EXISTS {
+        ?target user:withPerson ?personInExists .
+        FILTER NOT EXISTS {
+            VALUES ?origin { <TAKING_PICTURES_IRI> }
+            ?origin user:withPerson ?personInExists .
+        }
+    }
+    # (4) 연관 검색 결과가 초기 검색 결과 외의 사진 보유
+    FILTER NOT EXISTS {
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        FILTER (?target = ?origin)
+    }
+}

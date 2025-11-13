@@ -1,0 +1,10 @@
+select <OUTPUT>
+where{
+    ?location rdf:type/rdfs:subClassOf location:Location .
+    VALUES (?location) {<Keywords>}
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+
+    <BODY_GET_TARGET_TRIPLE>
+}
+<COMPLEX_SORT_METHOD>

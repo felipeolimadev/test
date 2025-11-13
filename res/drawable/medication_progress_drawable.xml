@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:fromDegrees="270.0" android:toDegrees="270.0">
+            <shape android:shape="ring" android:useLevel="true" android:innerRadius="36.0dip" android:thickness="@dimen/medication_card_progressBar_width">
+                <solid android:color="@color/medication_card_progress_color" />
+            </shape>
+        </rotate>
+    </item>
+    <item android:id="@id/insetLayer">
+        <rotate>
+            <inset android:insetBottom="78.0dip">
+                <shape android:shape="ring" android:innerRadiusRatio="1000.0" android:useLevel="false" android:thickness="@dimen/medication_card_progressbar_thickness">
+                    <solid android:color="@color/medication_card_progress_color" />
+                </shape>
+            </inset>
+        </rotate>
+    </item>
+</layer-list>

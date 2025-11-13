@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/card_container" android:tag="layout/suggestion_ui_view_card_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/news_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/card_image_container" android:layout_width="@dimen/card_image_container_size" android:layout_height="@dimen/card_image_container_size" android:layout_marginStart="@dimen/card_image_margin_start" android:layout_marginVertical="@dimen/card_margin_vertical">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/card_image" android:background="@drawable/rounded_widget_image_background" android:layout_width="@dimen/card_image_size" android:layout_height="@dimen/card_image_size" android:scaleType="centerCrop" android:importantForAccessibility="no" android:clipToOutline="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/card_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/card_text_margin_start" android:layout_marginVertical="@dimen/card_margin_vertical">
+        <TextView android:textSize="@dimen/card_title_text_size" android:textColor="@color/card_text_color" android:ellipsize="end" android:id="@id/card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sec" android:textFontWeight="600" />
+        <TextView android:textSize="@dimen/card_sub_title_text_size" android:textColor="@color/card_text_color" android:ellipsize="end" android:id="@id/card_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_sub_title_margin_top" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="400" />
+    </LinearLayout>
+</LinearLayout>

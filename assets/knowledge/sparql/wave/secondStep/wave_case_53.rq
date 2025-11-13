@@ -1,0 +1,34 @@
+select distinct ?target where {
+    ?target rdf:type user:TakingPictures .
+
+    # (1) 초기 검색 결과와 동일한 장소에서 찍은 사진 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        values ?origin1 { <TAKING_PICTURES_IRI> } .
+        ?origin1 user:atLocation/^user:atLocation ?target .
+    }
+
+    # (2) 초기 검색 결과에 포함된 사람과 동일한 사람의 사진 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        ?target user:withPerson ?person .
+        FILTER EXISTS {
+            values ?origin2 { <TAKING_PICTURES_IRI> } .
+            ?origin2 user:withPerson ?person .
+        }
+    }
+
+    # (3) 그 외 다른 사람이 나온 사진 없음
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER NOT EXISTS {
+        ?target user:withPerson ?person .
+        FILTER NOT EXISTS {
+            values ?origin3 { <TAKING_PICTURES_IRI> } .
+            ?origin3 user:withPerson ?person .
+        }
+    }
+
+    # (4) 연관 검색 결과가 초기 검색 결과 외의 사진 보유
+    # <TAKING_PICTURES_IRI_COMMA> = "IRI_1, IRI_2, ..., IRI_N"
+    FILTER (?target NOT IN (<TAKING_PICTURES_IRI_COMMA>)) .
+}

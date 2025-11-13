@@ -1,0 +1,230 @@
+@prefix : <http://pkg.samsung.com/relationship#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix user: <http://pkg.samsung.com/user#> .
+
+<http://pkg.samsung.com/relationship> a owl:Ontology ;
+    owl:versionIRI <http://pkg.samsung.com/relationship/1.0.1> .
+
+:hasAssistant a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasCoWorker .
+
+:hasBoyFriend a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasFriend,
+        :hasLover ;
+    owl:inverseOf :hasGirlFriend ;
+    owl:propertyDisjointWith :hasGirlFriend,
+        :hasSpouse .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasChild ;
+    owl:propertyDisjointWith :hasSon .
+
+:hasDaughterInLaw a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasChildInLaw .
+
+:hasDomesticPartner a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasAcquaintance .
+
+:hasFather a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParent ;
+    owl:propertyDisjointWith :hasMother .
+
+:hasFatherInLawOfHusband a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParentInLawOfHusband .
+
+:hasFatherInLawOfWife a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParentInLawOfWife .
+
+:hasGranddaughter a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandChild .
+
+:hasGrandson a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandChild .
+
+:hasHusband a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasSpouse ;
+    owl:inverseOf :hasWife .
+
+:hasManager a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasCoWorker .
+
+:hasMaternalGrandfather a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandFather,
+        :hasMaternalGrandparent .
+
+:hasMaternalGrandmother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandMother,
+        :hasMaternalGrandparent .
+
+:hasMotherInLawOfHusband a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParentInLawOfHusband .
+
+:hasMotherInLawOfWife a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParentInLawOfWife .
+
+:hasOlderBrotherOfFemale a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasOlderBrother ;
+    owl:propertyDisjointWith :hasOlderBrotherOfMale .
+
+:hasOlderSisterOfFemale a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasOlderSister ;
+    owl:propertyDisjointWith :hasOlderSisterOfMale .
+
+:hasPaternalGrandfather a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandFather,
+        :hasPaternalGrandparent .
+
+:hasPaternalGrandmother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandMother,
+        :hasPaternalGrandparent .
+
+:hasSonInLaw a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasChildInLaw .
+
+:hasSubordinate a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:subPropertyOf :hasCoWorker .
+
+:sameAs a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty .
+
+user:Person a owl:Class .
+
+:hasMother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParent .
+
+:hasOlderBrotherOfMale a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasOlderBrother .
+
+:hasOlderSisterOfMale a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasOlderSister .
+
+:hasRelationship a owl:ObjectProperty .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasChild .
+
+:hasWife a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasSpouse .
+
+:hasYoungerBrother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasBrother .
+
+:hasYoungerSister a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasSister .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasSibling ;
+    owl:propertyDisjointWith :hasSister .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDescendent ;
+    owl:inverseOf :hasParent ;
+    owl:propertyDisjointWith :hasGrandChild .
+
+:hasChildInLaw a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDescendent .
+
+:hasFriend a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasAcquaintance .
+
+:hasGirlFriend a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasFriend,
+        :hasLover ;
+    owl:propertyDisjointWith :hasSpouse .
+
+:hasGrandFather a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandParent ;
+    owl:propertyDisjointWith :hasGrandMother .
+
+:hasMaternalGrandparent a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandParent ;
+    owl:propertyDisjointWith :hasPaternalGrandparent .
+
+:hasOlderBrother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasBrother ;
+    owl:propertyDisjointWith :hasYoungerBrother .
+
+:hasOlderSister a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasSister ;
+    owl:propertyDisjointWith :hasYoungerSister .
+
+:hasParentInLaw a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasAncestor .
+
+:hasParentInLawOfHusband a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParentInLaw .
+
+:hasParentInLawOfWife a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasParentInLaw .
+
+:hasRelative a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasFamily ;
+    owl:propertyDisjointWith :hasSibling,
+        :hasSpouse .
+
+:hasAncestor a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:subPropertyOf :hasFamily ;
+    owl:inverseOf :hasDescendent ;
+    owl:propertyDisjointWith :hasDescendent,
+        :hasRelative,
+        :hasSibling,
+        :hasSpouse .
+
+:hasCoWorker a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasAcquaintance .
+
+:hasGrandChild a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasDescendent ;
+    owl:inverseOf :hasGrandParent .
+
+:hasGrandMother a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandParent .
+
+:hasLover a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasAcquaintance .
+
+:hasPaternalGrandparent a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasGrandParent .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasSibling .
+
+:hasParent a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasAncestor .
+
+:hasAcquaintance a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasRelationship .
+
+:hasDescendent a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:subPropertyOf :hasFamily ;
+    owl:propertyDisjointWith :hasRelative,
+        :hasSibling,
+        :hasSpouse .
+
+:hasFamily a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasAcquaintance .
+
+:hasGrandParent a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasAncestor ;
+    owl:propertyDisjointWith :hasParent .
+
+:hasSibling a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasFamily ;
+    owl:propertyDisjointWith :hasSpouse .
+
+:hasSpouse a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:subPropertyOf :hasFamily,
+        :hasLover .
+

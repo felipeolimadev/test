@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "type": "YEAR_WITH_YEAR_KEYWORD_AS_SUFFIX_OR_PREFIX",
+      "patternString": "(?:\\s|^|\\.|,)(<time_period>)?\\s*(?:o)?\\s*(<num>)\\s*(?:,|do|de o)?\\s*(<time_period>)?(?:\\s|$|\\.|,)",
+      "comment": "ano 2002 | 2002 ano, ano 2002 | o num ano | num, ano de | do ano num | num do ano)",
+      "mapping": [
+        {
+          "year": 1,
+          "timePeriod": 2
+        },
+        {
+          "year": 2,
+          "timePeriod": 1
+        }
+      ],
+      "shouldContainKeyword": "ano"
+    },
+    {
+      "id": 2,
+      "type": "YEAR_WITH_SUPPORTING_KEYWORDS",
+      "patternString": "(?:\\s|^|\\.|,)(?:de|em)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+      "comment": "em 2002 or 24",
+      "mapping": [
+        {
+          "year": 1
+        }
+      ]
+    }
+  ]

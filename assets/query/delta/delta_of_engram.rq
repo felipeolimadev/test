@@ -1,0 +1,6 @@
+SELECT ?engram ?engram_type
+WHERE {
+    ?class rdfs:subClassOf user:Engram .
+    ?engram rdf:type ?class .
+    BIND(STRAFTER(STR(?class), str(user:)) as ?engram_type).
+}

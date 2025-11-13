@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_raw_database_import_export">
+        <Preference android:title="@string/collector_raw_database_load" android:key="key_collector_raw_database_load" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_raw_database_import" android:key="key_collector_raw_database_import" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_raw_database_export" android:key="key_collector_raw_database_export" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_raw_database_json_csv_export" android:key="key_collector_raw_database_json_csv_export" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+SELECT DISTINCT ?targetTP
+(GROUP_CONCAT(DISTINCT STR(?originTP); SEPARATOR=',') AS ?originTPs)
+(GROUP_CONCAT(DISTINCT STR(?travelEngram); SEPARATOR=',') AS ?travelEngrams)
+{
+    VALUES ?originTP { <ORIGIN_TAKING_PICTURES_IRI> }
+    VALUES ?targetTP { <TARGET_TAKING_PICTURES_IRI> }
+
+    ?travelEngram a/rdfs:subClassOf user:TravelEngram .
+    ?originEventProperty rdfs:subPropertyOf user:event .
+    ?targetEventProperty rdfs:subPropertyOf user:event .
+    ?travelEngram ?originEventProperty ?originTP .
+    ?travelEngram ?targetEventProperty ?targetTP .
+
+    FILTER NOT EXISTS{
+        ?originTP user:atLocation ?tpLocation.
+        ?tpLocation a/rdfs:subClassOf ?tpLocationType.
+        FILTER(?tpLocationType = location:Home
+            || ?tpLocationType = location:WorkPlace
+            || ?tpLocationType = location:FrequentlyVisitedPlace)
+    }
+}
+GROUP BY ?targetTP
+ORDER BY ?targetTP

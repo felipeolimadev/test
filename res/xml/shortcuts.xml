@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <capability android:name="samsung.actions.intent.TEST">
+        <app-widget android:targetClass="com.samsung.android.smartsuggestions.settings.about.developermode.widget.ShortcutContributionTestWidgetProvider" android:identifier="myShortcutId" />
+    </capability>
+</shortcuts>

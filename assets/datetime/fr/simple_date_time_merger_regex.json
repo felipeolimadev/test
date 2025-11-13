@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "pattern" : "(?:<<date_keywords_before>>)?[\\s]?(<date>)[\\s]+(?:<<time_keywords_before>>|<<around_time>>)?[\\s]?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "2",
+    "pattern" : "(?:<<time_keywords_before>>|<<around_time>>)?[\\s](<time>)[\\s]+(?:<<date_keywords_before>>)?[\\s](<date>)",
+    "groupings" : [[2,1]]
+  },
+  {
+    "id": "3",
+    "pattern" : "<before_reference>[\\s](?:<<time_keywords_before>>)?[\\s]?(<time>)[\\s]<<date_keywords_before>>[\\s](<date>)",
+    "groupings" : [[2,1]]
+  },
+  {
+    "id": "4",
+    "pattern" : "<after_reference>[\\s](?:<<time_keywords_before>>)?[\\s]?(<time>)[\\s]<<date_keywords_before>>[\\s](<date>)",
+    "groupings" : [[2,1]]
+  },
+  {
+   "id": "5",
+    "pattern" : "<<date_keywords_before>>[\\s](<date>)[\\s]<<range_connector>>[\\s]<<time_keywords_before>>?[\\s]?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "6",
+    "pattern" : "(<date>)[\\s]?[\\s]?(<time>)",
+    "groupings" : [[1,2]]
+  },
+  {
+    "id": "7",
+    "pattern" : "<<time_keywords_before>>?[\\s]?(<time>)[\\s]?[,][\\s]?(?:[\\w\\sÀàÂâÄäÉéÈèÊêËëÎîÏïÔôÖöÙùÛûÜüŸÿÆæŒœÇç]{0,50})[\\s]?(<<event_keywords_start>>|<<event_keywords_end>>)[\\s]<<date_keywords_before>>?[\\s]?(<date>)",
+    "groupings" : [[2,1]],
+    "comment": "at/from <time> <<event>> will start on <date>"
+  },
+  {
+    "id": "8",
+    "pattern" : "<<date_keywords_before>>?[\\s]?(<date>)[\\s]?[,][\\s]?(?:[\\w\\sÀàÂâÄäÉéÈèÊêËëÎîÏïÔôÖöÙùÛûÜüŸÿÆæŒœÇç]{0,50})[\\s]?(<<event_keywords_start>>|<<event_keywords_end>>)[\\s]<<time_keywords_before>>?[\\s]?(<time>)",
+    "groupings" : [[2,1]],
+    "comment": "at/from <date> <<event>> will start on <time>"
+  }
+]

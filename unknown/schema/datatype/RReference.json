@@ -1,0 +1,39 @@
+{
+  "name": "RReference",
+  "type": "datatype",
+  "id": "datatype.composite.RReference",
+  "version": "",
+  "description": "",
+  "schema": {
+    "properties": {
+      "dataId": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "refDataType": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "displayName": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "attributes": {
+        "dataType": "datatype.primitive.RList",
+        "description": ""
+      },
+      "dataSource": {
+        "dataType": "datatype.enumeration.DataSource",
+        "description": ""
+      },
+      "uuid": {
+        "dataType": "datatype.composite.RUUID",
+        "description": ""
+      }
+    },
+    "required": [
+      "dataSource"
+    ],
+    "type": "object"
+  }
+}

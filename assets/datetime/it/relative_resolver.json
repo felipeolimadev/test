@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*<<ref_rel_connector>>?\\s*(<num>|<num_suffix>)?\\s*<<ref_num_connector>>?\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "periodAndDurationGroupings" : [
+          {
+            "timePeriodGroup" : 3,
+            "timeDurationGroup" : 2
+          }
+        ]
+      }
+    ],
+    "comment": "entro 2 giorni, dopo una settimana, dopo una settimana, prima di 3 giorni, ecc."
+  },
+  {
+    "id": 2,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*<<ref_num_connector>>?\\s*(<month>|<day_of_week>)(?:\\s|$|\\.|,)",
+    "comment" : "lunedì prossimo, martedì scorso, mercoledì prossimo, gennaio prossimo, febbraio scorso, marzo prossimo, ecc."
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<month>|<day_of_week>)\\s*<<ref_rel_connector>>?\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)(?:\\s|$|\\.|,)",
+    "comment" : "lunedì prossimo, martedì scorso, mercoledì prossimo, gennaio prossimo, febbraio scorso, marzo prossimo, ecc."
+  },
+  {
+    "id" : 4,
+    "type" : "NUM_TIME_AFTER_REFERENCE",
+    "comment" : "il mese prossimo, la settimana scorsa, l'anno scorso",
+    "patternString" : "(?:\\s|^|\\.|,)(<num>|<num_suffix>)?\\s*<<ref_num_connector>>?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "periodAndDurationGroupings" : [
+          {
+            "timePeriodGroup" : 2,
+            "timeDurationGroup" : 1
+          }
+        ]
+      }
+    ]
+  }
+]

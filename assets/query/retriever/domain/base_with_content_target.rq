@@ -1,0 +1,9 @@
+select <OUTPUT>
+where{
+    VALUES (?content) {<Keywords>}
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+
+    <BODY_GET_TARGET_TRIPLE>
+}
+<COMPLEX_SORT_METHOD>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cardContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cardImage" android:background="@drawable/map_image_rounded_corner_24dp" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" android:clipToOutline="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,4:3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@drawable/news_card_image_gradation" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/publish_logo_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <ImageView android:id="@id/publish_logo_taboola" android:layout_width="12.0dip" android:layout_height="12.0dip" android:scaleType="fitStart" android:layout_marginEnd="5.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="#fffafaff" android:ellipsize="end" android:id="@id/publish_logo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+        </LinearLayout>
+        <ImageView android:id="@id/publish_logo" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitStart" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/news_full_title_text_color" android:ellipsize="end" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:maxLines="2" android:fontFamily="sec" android:textFontWeight="600" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="@color/news_full_title_text_color" android:gravity="center_vertical" android:id="@id/samsung_news_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textAlignment="center" android:textFontWeight="400" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <Button android:textSize="9.0dip" android:textColor="@color/news_full_logo_button_text_color" android:gravity="center_vertical" android:id="@id/samsung_news_logo" android:background="@drawable/news_full_rounded_border_button_background" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="@string/news_logo_tag" android:fontFamily="sec" android:textAlignment="center" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:textFontWeight="600" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

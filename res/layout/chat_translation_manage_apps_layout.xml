@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/app_theme_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="0.0dip" app:expanded="false">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/chat_translation_manage_apps" app:layout_scrollFlags="scroll|exitUntilCollapsed" style="@style/collapsing_toolbar_layout_style">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:title="@string/chat_translation_manage_apps" app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/manage_app_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/switch_bar_margin">
+                <androidx.appcompat.widget.SeslSwitchBar android:id="@id/manage_apps_primary_switch_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/open_theme_description_text_color" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_translation_manage_apps_summary" android:layout_marginHorizontal="@dimen/preference_settings_summary_text_margin_horizontal" android:layout_marginVertical="@dimen/preference_settings_summary_text_margin_vertical" />
+                <androidx.picker.widget.SeslAppPickerListView android:id="@id/suggested_app_list" android:background="@color/default_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:layout_width="fill_parent" android:layout_height="@dimen/main_switch_margin_bottom" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

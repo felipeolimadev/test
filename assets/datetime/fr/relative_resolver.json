@@ -1,0 +1,70 @@
+[
+  {
+    "id": 2,
+    "type": "RELATIVE_TIME_PERIOD_REVERSED",
+    "patternString": "(?:\\s|^|\\.|,)(<time_period>)\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>)?(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "periodAndDurationGroupings": [
+          {
+            "timeDurationGroup": 3,
+            "timePeriodGroup": 1
+          }
+        ]
+      }
+    ],
+    "comment" : "la semaine prochaine, le mois prochain, la semaine dernière, l'année dernière,"
+  },
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>)(?:(?:\\s*et)?\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>))?(?:(?:\\s*et)?\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>))?(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "periodAndDurationGroupings": [
+          {
+            "timeDurationGroup": 2,
+            "timePeriodGroup": 3
+          },
+          {
+            "timeDurationGroup": 4,
+            "timePeriodGroup": 5
+          },
+          {
+            "timeDurationGroup": 6,
+            "timePeriodGroup": 7
+          }
+        ]
+      }
+    ],
+    "comment" : " cette semaine, ce mois-ci, dernier jour"
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(?:la|le)?\\s*(<month>|<day_of_week>)(?:\\s|$|\\.|,)",
+    "comment" : "lundi prochain, mardi dernier, ce mercredi, janvier prochain, février dernier, ce mars"
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH_REVERSED",
+    "patternString": "(?:\\s|^|\\.|,)\\s*(?:la|le)?(<month>|<day_of_week>)\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)(?:\\s|$|\\.|,)",
+    "comment" : "lundi prochain, mardi dernier, ce mercredi, janvier prochain, février dernier, ce mars"
+  },
+  {
+    "id" : 4,
+    "type" : "NUM_TIME_AFTER_REFERENCE",
+    "comment": "dentro de 2 días, una semana después, después de una semana, antes de 3 días, etc.",
+    "patternString" : "(?:\\s|^|\\.|,)(<num>|<num_suffix>|une)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "periodAndDurationGroupings": [
+          {
+            "timeDurationGroup": 1,
+            "timePeriodGroup": 2
+          }
+        ]
+      }
+    ]
+  }
+]

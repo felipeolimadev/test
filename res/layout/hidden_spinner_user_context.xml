@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="WeeklyTime" />
+        <Spinner android:id="@id/spinner_weeklyTime" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="DailyTime" />
+        <Spinner android:id="@id/spinner_dailyTime" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="DayOfWeek" />
+        <Spinner android:id="@id/spinner_dayOfWeek" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="EventTime" />
+        <Spinner android:id="@id/spinner_eventTime" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Location" />
+        <Spinner android:id="@id/spinner_location" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Weather" />
+        <Spinner android:id="@id/spinner_weather" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Activity1" />
+        <Spinner android:id="@id/spinner_activity1" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Activity2" />
+        <Spinner android:id="@id/spinner_activity2" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Activity3" />
+        <Spinner android:id="@id/spinner_activity3" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Activity4" />
+        <Spinner android:id="@id/spinner_activity4" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

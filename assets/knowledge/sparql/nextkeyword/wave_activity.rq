@@ -1,0 +1,99 @@
+SELECT distinct ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+WHERE {
+    VALUES (?originImageFile) {<IMAGE_FILE_IRI>}
+        # originNode is  TakingPicturesActivity
+        ?originImageFile ^user:objectContent ?originNode.
+        {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?score
+            WHERE{
+            VALUES ?waveNum { 1 }
+            VALUES ?pathNum { 1 }
+            VALUES ?score { 0.4 }
+            #targetNode is ForWEvent
+                ?originNode  user:capturedToScheduled/user:extractedFrom ?bridgeNode.
+                ?bridgeNode ^user:extractedFrom/user:scheduledToCaptured ?targetNode.
+                ?targetNode a user:TakingPictures.
+                #FILTER (?originNode  != targetNode)
+            }
+            LIMIT 100
+        } UNION {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+            WHERE{
+                VALUES ?waveNum {  1 }
+                VALUES ?pathNum { 2 }
+                VALUES ?score { 0.01 }
+                ?originNode user:capturedToScheduled/user:extractedFrom ?bridgeNode.
+                ?bridgeNode content:eventCategory/^content:eventCategory ?secondBridgeNode.
+                ?secondBridgeNode ^user:extractedFrom/user:scheduledToCaptured ?targetNode.
+                ?targetNode a user:TakingPictures.
+                FILTER (?bridgeNode  != ?secondBridgeNode)
+            }
+            LIMIT 100
+        } UNION {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?score
+            WHERE{
+                VALUES ?waveNum {  2 }
+                VALUES ?pathNum { 1 }
+                VALUES ?score { 1 }
+                ?originNode ^user:specialEvent ?bridgeNode.
+                ?bridgeNode a user:TravelEngram.
+                ?bridgeNode user:specialEvent ?targetNode.
+                ?targetNode a user:TakingPictures.
+            }
+            LIMIT 100
+        } UNION {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+            WHERE{
+                VALUES ?waveNum {  2 }
+                VALUES ?pathNum { 2 }
+                VALUES ?score { 0.01 }
+                ?originNode ^user:specialEvent ?bridgeNode.
+                ?bridgeNode a user:TravelEngram.
+                user:TravelEngram ^a ?secondBridgeNode.
+                ?secondBridgeNode user:specialEvent ?targetNode.
+                ?targetNode a user:TakingPictures.
+                FILTER (?bridgeNode  != ?secondBridgeNode)
+            }
+            LIMIT 100
+        } UNION {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?score
+            WHERE{
+                VALUES ?waveNum {  3 }
+                VALUES ?pathNum { 1 }
+                VALUES?score { 2 }
+                ?originNode user:withPerson ?bridgeNode.
+                ?bridgeNode ^user:withPerson ?targetNode.
+                ?targetNode a user:TakingPictures.
+                #FILTER (?originNode  != targetNode)
+            }
+            LIMIT 100
+        } UNION {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+            WHERE{
+                VALUES ?waveNum {  3 }
+                VALUES ?pathNum { 2 }
+                VALUES?score { 2 }
+                ?originNode user:withPerson ?bridgeNode.
+                ?bridgeNode ^content:attendee ?secondBridgeNode.
+                ?secondBridgeNode   ^user:extractedFrom/user:scheduledToCaptured ?targetNode.
+                ?targetNode a user:TakingPictures.
+                #FILTER (?originNode  != targetNode)
+            }
+            LIMIT 100
+        } UNION {
+        SELECT ?waveNum ?pathNum ?originNode ?bridgeNode ?targetNode ?secondBridgeNode ?score
+            WHERE{
+                VALUES ?waveNum {  4 }
+                VALUES ?pathNum { 1 }
+                VALUES ?score { 0.5 }
+                ?originNode user:atLocation ?secondBridgeNode.
+                #BIND(COALESCE(STR(?bridgeNode), "_error_") as ?bridgeNode_iri_string) .
+                #TT <TUPLE_TABLE_NAME> { ?secondBridgeNode ?bridgeNode_iri_string }
+                ?secondBridgeNode ^user:atLocation ?targetNode.
+        #        ?bridgeNode ^user:atLocation ?targetNode.
+                ?targetNode a user:TakingPictures.
+                #FILTER (?originTakingPicturesActivity  != iri)
+            }
+            LIMIT 200
+        }
+     }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/feedback_button_radius" />
+            <solid android:color="@color/feedback_not_clicked" />
+        </shape>
+    </item>
+</ripple>

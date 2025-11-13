@@ -1,0 +1,53 @@
+[
+  {
+    "id": 11,
+    "type": "2nd January, January 2, January 2nd, January 2025, 2025 January",
+    "patternString": "(<time_period>)\\s*(<num>)",
+    "comment": "2nd January, January 2, January 2nd",
+    "mapping": [
+      {
+        "month": 2
+      }
+    ],
+    "shouldContainKeyword": "tháng",
+    "isMonthNum" : true
+  },
+  {
+    "id": 2,
+    "type": "MONTH_WITH_NUM_AS_PREFIX",
+    "patternString": "(<num>)\\s*[\\/|\\.|\\-|,]?\\s*(<time_period>)\\s*(<num>)\\s*[\\/|\\.|\\-|,]?\\s*(<time_period>)\\s*(<num>)",
+    "comment": "2024, jan 2nd",
+    "mapping": [
+      {
+        "year": 1,
+        "day" : 3,
+        "month": 5
+      },
+      {
+        "year": 5,
+        "day": 1,
+        "month": 3
+      }
+    ],
+    "shouldContainKeyword": "tháng",
+    "isMonthNum" : true
+  },
+  {
+    "id": 1,
+    "type": "MONTH_NAME_EXACT_MATCH",
+    "patternString": "(?:\\s|^|\\.|,)(<month>)(?:\\s|$|\\.|,)",
+    "comment": "march",
+    "mapping": [
+      {
+        "month": 1
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 8,
+    "type": "SPECIAL_DAY",
+    "patternString": "(?:\\s|^|\\.|,)(<special_day>)(?:\\s|$|\\.|,)",
+    "isSpecialDay": true
+  }
+]

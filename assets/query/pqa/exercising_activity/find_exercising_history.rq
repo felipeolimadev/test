@@ -1,0 +1,13 @@
+SELECT ?S ?P ?O {
+    {
+        SELECT DISTINCT ?S {
+            ?S rdf:type/rdfs:subClassOf user:Exercising .
+            ?S time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+            ?S time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+<PERSON_FILTER>
+<TIME_FILTER>
+<LOCATION_FILTER>
+        }
+    }
+    ?S ?P ?O .
+}

@@ -1,0 +1,73 @@
+SELECT ?engram ?startTime ?endTime ?contentList ?contentCount ?locationList ?fourWEventList ?validTagValueList
+WHERE {
+    {
+        SELECT DISTINCT ?engram (GROUP_CONCAT(STR(?location)) AS ?locationList){
+            SELECT DISTINCT ?engram ?location
+            WHERE
+            {
+                VALUES (?engram) {<ENGRAM_IRI>}
+                OPTIONAL{
+                    ?engram user:event/((user:atLocation)|((user:ObjectContent|user:extractedFrom)/(content:locationCreated|content:locationRegistered))) ?location .
+                }
+            }
+            LIMIT 10
+        }
+        GROUP BY ?engram
+    }
+    {
+        SELECT DISTINCT ?engram ?startTime ?endTime
+        WHERE
+        {
+            VALUES (?engram) {<ENGRAM_IRI>}
+            ?engram (time:hasBeginning/time:inXSDDateTimeStamp) ?startTime.
+            ?engram (time:hasEnd/time:inXSDDateTimeStamp) ?endTime.
+        }
+    }
+
+    {
+        SELECT ?engram (GROUP_CONCAT(STR(?content)) AS ?contentList)
+        WHERE {
+            SELECT ?engram ?content
+            WHERE {
+                VALUES (?engram) {<ENGRAM_IRI>}
+                ?engram user:event ?activity.
+                FILTER EXISTS{?activity rdf:type user:TakingPictures. }
+                OPTIONAL{
+                    ?activity user:objectContent ?content .
+                }
+            }
+            LIMIT 4
+        }
+        GROUP BY ?engram
+    }
+    {
+        SELECT ?engram (COUNT(DISTINCT ?content) AS ?contentCount)
+        WHERE {
+            VALUES (?engram) {<ENGRAM_IRI>}
+            ?engram user:event ?activity.
+            FILTER EXISTS{?activity rdf:type user:TakingPictures}
+            OPTIONAL{
+                ?activity user:objectContent ?content.
+            }
+        }
+        GROUP BY ?engram
+    }
+    {
+        SELECT (GROUP_CONCAT(STR(?fourWEvent)) AS ?fourWEventList) (GROUP_CONCAT(STR(?validTagValue)) AS ?validTagValueList)
+        WHERE
+        {
+            SELECT DISTINCT ?engram ?fourWEvent ?validTagValue
+            WHERE {
+                VALUES (?engram) {<ENGRAM_IRI>}
+                OPTIONAL{
+                    ?engram user:event/user:extractedFrom ?fourWEvent .
+                    ?fourWEvent content:eventCategory ?validTagValue
+                    VALUES ?tag {contenttag:SOCIAL contenttag:TRIP}
+                    FILTER EXISTS {?validTagValue design:subIndividualOf? ?tag .}
+                }
+            }
+            LIMIT 4
+        }
+        GROUP BY ?engram
+    }
+}

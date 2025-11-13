@@ -1,0 +1,59 @@
+[
+  {
+    "id" : 1,
+    "type" : "RECURRING_KEYWORD",
+    "patternString" : "<recurring_event>",
+    "comment" : "daily, weekly ",
+    "isPrefix" : false,
+    "isCyclic" : true
+  },
+  {
+    "id": 2,
+    "type" : "RECURRING_KEYWORD_WITH_TIME_PERIOD",
+    "patternString" : "(?:the|on)?\\s*(<time_period>)\\s*(<day_of_week_recurring>|<day_of_week>|<num_suffix>|<num>)?\\s*(?:của)?\\s*(<recurring_keyword>)\\s*(<num_suffix>|other|<num>)?\\s*(<time_period>)\\s*[,]?\\s*(?:vào)?\\s*(<day_of_week_recurring>|<num_suffix>|<day_of_week>)?",
+    "comment" : "every 2nd day, every 2nd week on sundays",
+    "isCyclic" : true
+  },
+  {
+    "id" : 3,
+    "type" : "RECURRING_DAY_OF_WEEKS",
+    "patternString" : "(?:\\s|^|\\.|,)(?:vào|vào\\s*các\\s*ngày)?\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "isCyclic" : true
+  },
+  {
+    "id" : 4,
+    "type" : "RECURRING_TIME_PERIOD",
+    "patternString" : "(<recurring_keyword>)\\s*(<num>)?\\s*(<time_period>)\\s*(?:vào)?",
+    "comment" : "every month, every year likewise, already covered in id:2, but this is just for prefix",
+    "isPrefix" : true,
+    "isCyclic" : true
+  },
+  {
+    "id": 5,
+    "patternString" : "(<recurring_keyword>)\\s*(<day_of_week>)\\s*(<time_period>)\\s*(?:thứ)?\\s*(<num>)",
+    "isPrefix" : false,
+    "isCyclic" : true
+  },
+  {
+    "id": 6,
+    "patternString": "(<recurring_keyword>)\\s*(<day_of_week>)",
+    "isCyclic": true
+  },
+  {
+    "id": 7,
+    "patternString": "(<recurring_keyword>)\\s*(<time_period>)",
+    "isCyclic": true
+  },
+  {
+    "id": 8,
+    "comment": "day 28 every month",
+    "patternString": "(<time_period>)\\s*(<num>)\\s*(<recurring_keyword>)\\s*(<time_period>)",
+    "isCyclic": true
+  },
+  {
+    "id": 8,
+    "comment": "every month day 28",
+    "patternString": "(<recurring_keyword>)\\s*(<time_period>)\\s*(<time_period>)\\s*(<num>)",
+    "isCyclic": true
+  }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">18.213.52.134</domain>
+        <domain includeSubdomains="true">ia.s-knowledge.net</domain>
+        <domain includeSubdomains="true">tsearch.snssdk.com</domain>
+        <domain includeSubdomains="true">odin.sohu.com</domain>
+        <domain includeSubdomains="true">52.22.179.91</domain>
+    </domain-config>
+</network-security-config>

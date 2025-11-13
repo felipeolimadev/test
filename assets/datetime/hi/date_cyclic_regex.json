@@ -1,0 +1,31 @@
+[
+  {
+    "id" : 1,
+    "type" : "RECURRING_KEYWORD",
+    "patternString" : "<recurring_event>",
+    "comment" : "daily, weekly ,दैनिक, साप्ताहिक",
+    "isPrefix" : false,
+    "isCyclic" : true
+  },
+  {
+    "id": 2,
+    "type" : "RECURRING_KEYWORD_WITH_TIME_PERIOD",
+    "patternString" : "(<recurring_keyword>)\\s*(<num_suffix>|other|<num>)?\\s*(<time_period>)\\s*[,]?\\s*(?:के|की)?\\s*(<day_of_week_recurring>|<num_suffix>|<day_of_week>)?(?:\\s*को)?",
+    "comment" : "every 2nd day, every 2nd week on sundays हर दूसरे दिन, हर दूसरे सप्ताह के रविवार",
+    "isCyclic" : true
+  },
+  {
+    "id" : 4,
+    "type" : "RECURRING_TIME_PERIOD",
+    "patternString" : "(<recurring_keyword>)\\s*(<num>)?\\s*(<time_period>)\\s*(?:के|की)?",
+    "comment" : "every month, every year likewise, already covered in id:2, but this is just for prefix",
+    "isPrefix" : true,
+    "isCyclic" : false
+  },
+  {
+    "id": 5,
+    "patternString" : "(<recurring_keyword>)\\s*(<num_suffix>|other)?\\s*(<day_of_week>)",
+    "isPrefix" : false,
+    "isCyclic" : true
+  }
+]

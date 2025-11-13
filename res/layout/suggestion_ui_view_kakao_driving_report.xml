@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggestion_ui_view_kakao_driving_report_0" android:background="@drawable/rounded_widget_background" android:padding="@dimen/score_padding_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/card_text_margin_start">
+        <TextView android:textSize="@dimen/perplexity_news_title_text_size" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/TextStyleMedium" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="end" android:id="@id/icon" android:background="@drawable/suggestion_ui_body_icon_background" android:layout_width="@dimen/driving_score_icon_size" android:layout_height="@dimen/driving_score_icon_size" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/widget_margin_top" android:clipToOutline="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:weightSum="2.0" android:layout_marginStart="@dimen/card_text_margin_start" android:layout_marginEnd="@dimen/card_text_margin_start">
+        <LinearLayout android:orientation="vertical" android:id="@id/score_layout" android:background="@drawable/rounded_button_map_background" android:padding="@dimen/score_padding_size" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/score_title_text_size" android:id="@id/score_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/score_num_text_size" android:id="@id/score_num" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+                <TextView android:textSize="@dimen/score_unit_text_size" android:id="@id/score_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/driving_layout" android:background="@drawable/rounded_button_map_background" android:padding="@dimen/score_padding_size" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/card_text_margin_start">
+            <TextView android:textSize="@dimen/score_title_text_size" android:id="@id/driving_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            <TextView android:textSize="@dimen/score_unit_text_size" android:id="@id/driving_address" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            <TextView android:textSize="@dimen/score_unit_text_size" android:id="@id/driving_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/score_cause_layout" android:background="@drawable/rounded_action_button_background" android:padding="@dimen/score_padding_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:layout_marginStart="@dimen/card_text_margin_start">
+        <TextView android:textSize="@dimen/score_title_text_size" android:id="@id/score_cause_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:weightSum="3.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/speed_text_size" android:id="@id/speed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleRegular" />
+                <TextView android:textSize="@dimen/score_num_text_size" android:id="@id/speed_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/speed_text_size" android:id="@id/accel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleRegular" />
+                <TextView android:textSize="@dimen/score_num_text_size" android:id="@id/accel_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/speed_text_size" android:id="@id/decel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleRegular" />
+                <TextView android:textSize="@dimen/score_num_text_size" android:id="@id/decel_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

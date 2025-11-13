@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "type": "MONTH_WITH_NUM",
+    "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>|<num_word>)\\s*(?:<<dm_connector>>|<<my_connector>>|[,-.\\/])?\\s*(<month>)[.]?\\s*(?:\\s*[,.\\/]|<<my_connector>>|<<dm_connector>>)?\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "comment": "(2 gennaio 2024), (2024.gennaio.2)",
+    "mapping": [
+      {
+        "day": 1,
+        "month": 2,
+        "year": 3
+      },
+      {
+        "year": 1,
+        "month": 2,
+        "day": 3
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 2,
+    "type": "MONTH_WITH_NUM_AS_SUFFIX",
+    "patternString": "(?:\\s|^|\\.|,)(<month>)[.]?\\s*(?:[\\-|,]|<<dm_connector>>)?\\s*(<num>|<num_suffix>)\\s*(?:[\\-|,|\\.]|<<my_connector>>)?\\s*(<num>|<num_suffix>)?(?:\\s|$|\\.|,)",
+    "comment": "(aprile venti, 2025)",
+    "mapping": [
+      {
+        "month": 1,
+        "day": 2,
+        "year" : 3
+      },
+      {
+        "month": 1,
+        "year" : 2,
+        "day" : 3
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 3,
+    "type": "DAY_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>|<num_word>)\\s*<<dm_connector>>?\\s*(<month>)(?:\\s|$|\\.|,)",
+    "comment": "(20 aprile)",
+    "mapping": [
+      {
+        "day" : 1,
+        "month" : 2
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 3,
+    "type": "MONTH_DAY",
+    "patternString": "(?:\\s|^|\\.|,)(<month>)[.]?\\s*<<dm_connector>>?\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "comment": "(aprile 20), (nov. 7)",
+    "mapping": [
+      {
+        "day" : 2,
+        "month" : 1
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 4,
+    "type": "MONTH_WITH_NUM_AS_SUFFIX",
+    "patternString": "(?:\\s|^|\\.|,)(<month>)[.]?\\s*(?:<<my_connector>>|[,])?\\s*(<num>)(?:\\s|$|\\.|,)",
+    "comment": "(dicembre del 2024), (luglio 1943)",
+    "mapping": [
+      {
+        "month": 1,
+        "year": 2
+      }
+    ],
+    "isMonthNum": false
+  },
+  {
+    "id": 5,
+    "type": "DAY_YEAR_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<num>)\\s*(?:<<my_connector>>|[,])?\\s*(<num>)\\s*(?:<<my_connector>>|\\s*[,])?[\\s]*(<month>)(?:\\s|$|\\.|,)",
+    "comment": "1 del 2024, gennaio",
+    "mapping": [
+      {
+        "day": 1,
+        "month" : 3,
+        "year" : 2
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 6,
+    "type": "MONTH_WITH_NUM_AS_SUFFIX",
+    "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)\\s*<<my_connector>>?\\s*(<num>)?(?:\\s|$|\\.|,)",
+    "comment": "mese primo, mese 1, mese 1 del 2025",
+    "mapping": [
+      {
+        "timePeriod" : 2,
+        "month" : 1,
+        "year" : 3
+      },
+      {
+        "timePeriod" : 2,
+        "month" : 1
+      }
+    ],
+    "isMonthNum" : true,
+    "shouldContainKeyword" : "mes[eo]"
+  },
+  {
+    "id": 7,
+    "type": "NUM_WORD_WITH_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>)\\s*<<my_connector>>?\\s*(<num>)?(?:\\s|$|\\.|,)",
+    "comment": "mese 2, mese 1 del 2024",
+    "mapping": [
+      {
+        "timePeriod" : 1,
+        "month" : 2,
+        "year" : 3
+      },
+      {
+        "timePeriod" : 1,
+        "month" : 2
+      }
+    ],
+    "isMonthNum" : true,
+    "shouldContainKeyword" : "mes[eo]"
+  },
+  {
+    "id": 8,
+    "type": "MONTH_WITH_ITS_NUMBER",
+    "comment": "secondo mese",
+    "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "month": 1,
+        "timePeriod": 2
+      }
+    ],
+    "isMonthNum": true,
+    "shouldContainKeyword" : "mes[eo]"
+  },
+  {
+    "id": 10,
+    "type": "MONTH_NAME_EXACT_MATCH",
+    "patternString": "(?:\\s|^|\\.|,)(<month>)(?:\\s|$|\\.|,)",
+    "comment": "marzo",
+    "mapping": [
+      {
+        "month": 1
+      }
+    ],
+    "isMonthNum" : false
+  }
+]

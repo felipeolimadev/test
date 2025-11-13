@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="navigation_bar_light_flag">false</bool>
+    <bool name="status_bar_light_flag">false</bool>
+    <bool name="widget_window_light_statusBar">false</bool>
+</resources>

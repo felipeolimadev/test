@@ -1,0 +1,13 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    {
+        ?s rdf:type/rdfs:subClassOf content:CallLog .
+        ?s time:inXSDBeginningDateTimeStamp ?start_time .
+        ?s time:inXSDEndDateTimeStamp ?end_time .
+        <TIME_FILTER>
+    }
+    <LOCATION_FILTER>
+    <PERSON_FILTER>
+
+    ?s ?p ?o EXPLICIT true .
+}

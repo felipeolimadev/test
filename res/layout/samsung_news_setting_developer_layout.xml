@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/samsung_news_setting_developer_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/horizontal_divider_black" android:layout_width="fill_parent" android:layout_height="@dimen/widget_horizontal_divider_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/country_selected_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="News Country Settings" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/item_color_blue" android:id="@id/country_selected_option" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not Selected" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/horizontal_divider_black" android:layout_width="fill_parent" android:layout_height="@dimen/widget_horizontal_divider_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/server_selected_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="News Server Settings" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/item_color_blue" android:id="@id/server_selected_option" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not Selected" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/horizontal_divider_black" android:layout_width="fill_parent" android:layout_height="@dimen/widget_horizontal_divider_height" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UserId : " />
+        <EditText android:id="@id/user_id_edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="text" />
+        <Button android:id="@id/user_id_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Apply" />
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/horizontal_divider_black" android:layout_width="fill_parent" android:layout_height="@dimen/widget_horizontal_divider_height" />
+</LinearLayout>

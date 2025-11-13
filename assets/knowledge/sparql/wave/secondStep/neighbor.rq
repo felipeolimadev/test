@@ -1,0 +1,27 @@
+SELECT DISTINCT ?level ?neighbor WHERE {
+{
+    VALUES ?level { 5 }
+    {
+        SELECT DISTINCT ?originLocation {
+            VALUES ?origin { <TAKING_PICTURES_IRI> } .
+            ?origin user:atLocation ?originLocation .
+        }
+    }
+
+    TT find_h3_neighbors_res5 { ?neighborLocation ?originLocation } .
+    ?neighbor rdf:type user:TakingPictures .
+    ?neighbor user:atLocation ?neighborLocation .
+} UNION {
+    VALUES ?level { 8 }
+    {
+        SELECT DISTINCT ?originLocation {
+            VALUES ?origin { <TAKING_PICTURES_IRI> } .
+            ?origin user:atLocation ?originLocation .
+        }
+    }
+
+    TT find_h3_neighbors_res8 { ?neighborLocation ?originLocation } .
+    ?neighbor rdf:type user:TakingPictures .
+    ?neighbor user:atLocation ?neighborLocation .
+}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema name="com.samsung.android.smartsuggestions.notification" keyFieldName="summaryId"
+    package="com.samsung.android.smartsuggestions" version="1">
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="long_stored" dataType="long" class="StoredField" />
+    <fieldType name="long" dataType="long" class="NumericDocValuesField" />
+
+    <field name="summaryId" type="string" />
+    <field name="summary" type="string" />
+    <field name="appInfo" type="string" />
+    <field name="message" type="string" />
+    <field name="sourcePackage" type="string" />
+    <field name="rawMessage" type="string" />
+    <field name="postTime" type="long_stored" />
+    <field name="postTime_sort" type="long" />
+    <copyField dest="postTime_sort" source="postTime" />
+    <embedding name="description" />
+</schema>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/floating_ui_close_icon_size" android:width="@dimen/floating_ui_close_icon_size" />
+    <solid android:color="@color/floating_ui_close_icon_background" />
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:tag="layout/suggestion_ui_view_calendar_image_0" android:layout_width="@dimen/brief_main_card_size" android:layout_height="@dimen/brief_main_card_size" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/calendar_image_view" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" android:clipToOutline="true" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/calendar_image_container_margin_bottom" android:layout_marginStart="@dimen/calendar_image_container_margin_start">
+        <TextView android:textSize="@dimen/calendar_image_title_text_size" android:textColor="@android:color/white" android:id="@id/calendar_image_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="400" />
+        <TextView android:textSize="@dimen/calendar_image_time_text_size" android:textColor="@android:color/white" android:id="@id/calendar_image_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/calendar_image_time_margin_top" android:fontFamily="sec" android:textFontWeight="600" />
+    </LinearLayout>
+</FrameLayout>

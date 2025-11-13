@@ -1,0 +1,13 @@
+SELECT
+?s ?p ?o
+WHERE {
+    ?s rdf:type/rdfs:subClassOf content:FourWEvent .
+
+    <PERSON_FILTER>
+    <LOCATION_FILTER>
+
+    ?s time:inXSDBeginningDateTimeStamp ?start_time .
+    ?s time:inXSDEndDateTimeStamp ?end_time .
+    <TIME_FILTER>
+    ?s ?p ?o EXPLICIT true .
+}

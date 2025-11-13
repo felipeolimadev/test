@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/weather_item_container" android:tag="layout/suggestion_ui_view_weather_sticker_single_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/weather_item_icon" android:layout_width="@dimen/weather_sticker_single_item_icon_size" android:layout_height="@dimen/weather_sticker_single_item_icon_size" android:importantForAccessibility="no" />
+    <TextView android:textSize="@dimen/weather_item_temp_text_size" android:textColor="@color/weather_as_time_sticker_title_color" android:layout_gravity="center_horizontal" android:id="@id/weather_item_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+    <TextView android:textSize="@dimen/weather_item_time_text_size" android:textColor="@color/weather_as_time_sticker_title_color" android:layout_gravity="center_horizontal" android:id="@id/weather_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="400" />
+</LinearLayout>

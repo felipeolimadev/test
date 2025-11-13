@@ -1,0 +1,26 @@
+{
+    ?s rdf:unknown? ?content .
+    ?s ?p ?o EXPLICIT ?e .
+    FILTER (?e || ?p = content:personRecognized)
+    BIND(STR(?content) AS ?index)
+} UNION {
+    ?content content:locationCreated|content:locationRegistered ?s .
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?content), '|', STR(?s)) AS ?index)
+} UNION {
+    ?personPredicate rdfs:subPropertyOf content:person .
+    ?content ?personPredicate ?s .
+    FILTER (?s != person:TheUser)
+    ?s ?p ?o EXPLICIT true .
+    BIND(CONCAT(STR(?content), '|', STR(?s)) AS ?index)
+} UNION {
+    ?personPredicate rdfs:subPropertyOf content:person .
+    ?content ?personPredicate ?person .
+    GRAPH user:relation {
+        ?o relationship:sameAs? ?person .
+        ?s ?p ?o EXPLICIT true .
+        FILTER (?o != person:TheUser)
+        FILTER (?s = person:TheUser)
+    }
+    BIND(CONCAT(STR(?content), '|', STR(?person)) AS ?index)
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.smartsuggestions.pde" embeddingVersion="$EMBEDDING_VERSION"
+    package="com.samsung.android.smartsuggestions" version="1">
+    <fieldType name="string" class="StringField" dataType="String" />
+
+    <field name="_id" type="string" />
+    <field name="identifier" type="string" />
+    <field name="title" type="string" />
+    <field name="contents" type="string" />
+    <field name="time_stamp" type="string" />
+    <field name="type" type="string" />
+    <field name="source_package" type="string" />
+    <field name="app_name" type="string" />
+    <embedding name="key" />
+</schema>

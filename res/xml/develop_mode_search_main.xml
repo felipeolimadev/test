@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/search" app:iconSpaceReserved="false">
+        <Preference android:title="Intent Analyzer" android:fragment="com.samsung.android.moneta.debugui.developmode.search.IntentAnalyzer" app:iconSpaceReserved="false" />
+        <Preference android:title="Search History" android:fragment="com.samsung.android.moneta.debugui.developmode.search.SearchHistory" app:iconSpaceReserved="false" />
+        <Preference android:title="Wave Search History" android:fragment="com.samsung.android.moneta.debugui.developmode.search.WaveSearchHistory" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Semantic Search" app:iconSpaceReserved="false">
+        <Preference android:title="Search" android:fragment="com.samsung.android.moneta.debugui.developmode.search.SemanticSearchFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="Create schema" android:key="key_semantic_search_register_schema" app:iconSpaceReserved="false" />
+        <Preference android:title="Clear schema" android:key="key_semantic_search_unregister_schema" app:iconSpaceReserved="false" />
+        <Preference android:title="Search Notification Summary" android:fragment="com.samsung.android.moneta.debugui.developmode.search.NotificationSemanticSearchFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="Reset Only Notification Schema" android:key="key_notification_semantic_search_reset_schema" app:iconSpaceReserved="false" />
+        <Preference android:title="ReIndex Notification Search" android:key="key_notification_reindex_semantic_search" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Recall" app:iconSpaceReserved="false">
+        <Preference android:title="Magic Cue Test" android:fragment="com.samsung.android.moneta.debugui.developmode.search.MagicInferenceTestFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

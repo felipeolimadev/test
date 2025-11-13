@@ -1,0 +1,131 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "fiesta",
+                    "cumpleaños",
+                    "comer fuera",
+                    "comida",
+                    "visita",
+                    "banquete",
+                    "ritos ancestrales",
+                    "masa",
+                    "culto",
+                    "iglesia",
+                    "aniversario",
+                    "compras",
+                    "cena",
+                    "almuerzo",
+                    "celebrar",
+                    "celebración",
+                    "funeral",
+                    "festival",
+                    "día de la boda"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "fiesta de fin de año",
+                    "fiesta de bienvenida",
+                    "cita a ciegas",
+                    "ceremonia de entrada",
+                    "ceremonia de premiación",
+                    "misa budista"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "cenando juntos",
+                    "ceremonia de boda",
+                    "ceremonia de graduación",
+                    "funerario",
+                    "tener una cita"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "reunión",
+                    "taller",
+                    "seminario",
+                    "entrevista",
+                    "laboral",
+                    "conferencia",
+                    "Sesión informativa",
+                    "trabajar",
+                    "trabajo a tiempo parcial",
+                    "examen",
+                    "asignación",
+                    "clase",
+                    "oficina",
+                    "foro",
+                    "presentación",
+                    "análisis"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "ir a trabajar",
+                    "dejar el trabajo",
+                    "asistir a clase"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "viajar",
+                    "cámping",
+                    "pesca",
+                    "parque de atracciones",
+                    "zoo",
+                    "acuario",
+                    "montañismo",
+                    "viaje",
+                    "recorrido",
+                    "Disney World",
+                    "luna de miel"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "viaje de negocios"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "reserva",
+                    "Reserva",
+                    "billete",
+                    "cita",
+                    "checkin",
+                    "checkout",
+                    "check in",
+                    "check out"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,219 @@
+[
+    {
+        "category": "SOCIAL",
+        "synonyms": [
+            {
+                "event": "BIRTHDAY",
+                "words": [
+                    "aniversário",
+                    "dia de nascimento",
+                    "aniversário de nascimento",
+                    "data de nascimento",
+                    "níver",
+                    "Dia de Natal",
+                    "DN"
+                ],
+                "excludes": [
+                    "presente",
+                    "gift",
+                    "oferta",
+                    "preparar",
+                    "embalar",
+                    "escolher",
+                    "comprar",
+                    "loja",
+                    "selecionar",
+                    "adquirir",
+                    "pedido",
+                    "informativo",
+                    "revisão",
+                    "apresentação",
+                    "reunião",
+                    "festa"
+                ]
+            },
+            {
+                "event": "WEDDING_ANNIVERSARY",
+                "words": [
+                    "aniversário de casamento",
+                    "comemoração nupcial"
+                ]
+            },
+            {
+                "event": "WEDDING",
+                "words": [
+                    "cerimônia de casamento",
+                    "dia do casamento",
+                    "evento de casamento",
+                    "celebração de casamento",
+                    "casamento",
+                    "matrimônio",
+                    "núpcias",
+                    "amarrando o nó",
+                    "Se juntar",
+                    "Se amarrando"
+                ]
+            },
+            {
+                "event": "ENTRANCE_CEREMONY",
+                "words": [
+                    "cerimônia de entrada",
+                    "cerimônia de admissão",
+                    "cerimônia de inscrição",
+                    "cerimônia de matrícula"
+                ]
+            },
+            {
+                "event": "GRADUATION",
+                "words": [
+                    "Formatura",
+                    "cerimônia de formatura",
+                    "convocação",
+                    "dia da formatura",
+                    "evento de formatura",
+                    "cerimônia de diploma",
+                    "graduação"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "RESERVATION",
+        "synonyms": [
+            {
+                "event": "ACCOMMODATION",
+                "words": [
+                    "hotel",
+                    "motel",
+                    "Pousada",
+                    "Airbnb",
+                    "resort",
+                    "casa de hóspedes",
+                    "casa de férias",
+                    "Hostel",
+                    "alojamento",
+                    "área de camping",
+                    "Marriot",
+                    "Hilton",
+                    "Accor",
+                    "intercontinental",
+                    "Wyndham",
+                    "Hyatt",
+                    "Rosewood",
+                    "Four Seasons",
+                    "Chase",
+                    "sheraton",
+                    "íbis",
+                    "Trident",
+                    "mandarim oriental",
+                    "Vantage",
+                    "Baccarat",
+                    "Bianco",
+                    "Langham",
+                    "Jefferson",
+                    "Montage",
+                    "Radisson",
+                    "hostelling international",
+                    "Aman",
+                    "O Brando",
+                    "Six Sense Douro Vallet",
+                    "Soneva Fushi",
+                    "One&only Reethi Rah",
+                    "Anantara",
+                    "o Ritz Carlton",
+                    "quarto duplo",
+                    "quarto individual",
+                    "quarto para fumantes",
+                    "quarto para não fumantes",
+                    "vista para o mar",
+                    "vista da cidade",
+                    "vista para o jardim"
+                ]
+            },
+            {
+                "event": "TRANSPORTATION",
+                "words": [
+                    "ônibus",
+                    "metrô",
+                    "trem",
+                    "Bondinho",
+                    "Táxi",
+                    "balsa",
+                    "barco",
+                    "cruzeiro",
+                    "avião",
+                    "voo",
+                    "voos",
+                    "teleférico",
+                    "van",
+                    "Uber",
+                    "Lyft",
+                    "Greyhound",
+                    "amtrak",
+                    "táxi amarelo",
+                    "passaporte municipal",
+                    "transporte",
+                    "Skyscanner",
+                    "balsas",
+                    "EuroStar",
+                    "aluguel de carro",
+                    "limusine",
+                    "vias aéreas",
+                    "companhia aérea",
+                    "aeronave",
+                    "avião comercial",
+                    "aeroporto",
+                    "Air Canada",
+                    "Emirates",
+                    "Allegiant Air",
+                    "Endeavour Air",
+                    "classe econômica",
+                    "classe executiva",
+                    "primeira classe",
+                    "embarque",
+                    "partida",
+                    "chegada",
+                    "decolar",
+                    "pousar",
+                    "malas",
+                    "Bagagem",
+                    "trânsito",
+                    "sem-escalas",
+                    "escala",
+                    "stop over",
+                    "tarifa",
+                    "ida e volta",
+                    "ida"
+                ]
+            },
+            {
+                "event": "RESTAURANT",
+                "words": [
+                    "restaurante",
+                    "jantar",
+                    "café",
+                    "bistro",
+                    "lanchonete",
+                    "boteco",
+                    "saguão",
+                    "cantina",
+                    "refeitório",
+                    "trattoria",
+                    "cervejaria",
+                    "bar",
+                    "pizzaria",
+                    "churrasqueira",
+                    "churrascaria",
+                    "bufê",
+                    "drive thru",
+                    "drive-in",
+                    "drive-thru",
+                    "brunch",
+                    "café da manhã",
+                    "Yelp",
+                    "OpenTable"
+                ]
+            }
+        ]
+    }
+]

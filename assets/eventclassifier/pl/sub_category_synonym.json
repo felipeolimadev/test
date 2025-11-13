@@ -1,0 +1,230 @@
+[
+    {
+        "category": "SOCIAL",
+        "synonyms": [
+            {
+                "event": "BIRTHDAY",
+                "words": [
+                    "urodziny",
+                    "dzień urodzenia",
+                    "rocznica urodzin",
+                    "data urodzenia",
+                    "dzień urodzin",
+                    "Dzień urodzin"
+                ],
+                "excludes": [
+                    "prezent",
+                    "dar",
+                    "oferta",
+                    "przygotować",
+                    "opakować",
+                    "wybrać",
+                    "kupić",
+                    "sklep",
+                    "wybierać",
+                    "zakupić",
+                    "zamówić",
+                    "odprawa",
+                    "recenzja",
+                    "prezentacja",
+                    "spotkanie",
+                    "impreza"
+                ]
+            },
+            {
+                "event": "WEDDING_ANNIVERSARY",
+                "words": [
+                    "rocznica ślubu",
+                    "upamiętnienie zaślubin"
+                ]
+            },
+            {
+                "event": "WEDDING",
+                "words": [
+                    "ceremonia ślubna",
+                    "ceremonia zaślubin",
+                    "dzień ślubu",
+                    "wydarzenie weselne",
+                    "uroczystość weselna",
+                    "ślub",
+                    "małżeństwo",
+                    "zaślubiny",
+                    "wziąć ślub "
+                ]
+            },
+            {
+                "event": "ENTRANCE_CEREMONY",
+                "words": [
+                    "ceremonia wejścia",
+                    "ceremonia przyjęcia",
+                    "ceremonia zapisu",
+                    "ceremonia immatrykulacji"
+                ]
+            },
+            {
+                "event": "GRADUATION",
+                "words": [
+                    "rozpoczęcie",
+                    "ceremonia ukończenia szkoły",
+                    "zwołanie",
+                    "dzień ukończenia szkoły",
+                    "impreza maturalna",
+                    "ceremonia dyplomowa",
+                    "ukończenie szkoły",
+                    "absolutorium "
+                ]
+            }
+        ]
+    },
+    {
+        "category": "RESERVATION",
+        "synonyms": [
+            {
+                "event": "ACCOMMODATION",
+                "words": [
+                    "hotel",
+                    "motel",
+                    "karczma",
+                    "zajazd",
+                    "Airbnb",
+                    "kurort ",
+                    "pensjonat",
+                    "domek letniskowy",
+                    "schronisko",
+                    "hostel ",
+                    "domek",
+                    "kwatera",
+                    "zakwaterowanie",
+                    "obozowisko",
+                    "Marriott",
+                    "Hilton",
+                    "Accor",
+                    "InterContinental",
+                    "Wyndham",
+                    "Hyatt",
+                    "Rosewood",
+                    "Four Seasons ",
+                    "Chase",
+                    "Sheraton",
+                    "Ibis",
+                    "Trident",
+                    "Mandarin Oriental",
+                    "Vantage",
+                    "Baccarat",
+                    "Bianco",
+                    "Langham",
+                    "Jefferson",
+                    "Montage",
+                    "Radisson",
+                    "Hostelling International",
+                    "Aman",
+                    "The Brando",
+                    "Six Senses Douro Valley",
+                    "Soneva Fushi",
+                    "One&Only Reethi Rah",
+                    "Anantara",
+                    "Ritz Carlton",
+                    "pokój dwuosobowy",
+                    "pokój jednoosobowy",
+                    "pokój dla palących",
+                    "pokój dla niepalących",
+                    "widok na ocean",
+                    "widok na miasto",
+                    "widok na ogród"
+                ]
+            },
+            {
+                "event": "TRANSPORTATION",
+                "words": [
+                    "autobus",
+                    "metro",
+                    "pociąg",
+                    "tramwaj",
+                    "taryfa",
+                    "taksówka",
+                    "Taxi",
+                    "prom",
+                    "statek",
+                    "rejs",
+                    "samolot",
+                    "lot",
+                    "loty",
+                    "kolejka linowa",
+                    "furgonetka",
+                    "Uber",
+                    "Lyft",
+                    "Greyhound",
+                    "Amtrak",
+                    "żółta czapka",
+                    "paszport muni",
+                    "Skyscanner",
+                    "promy",
+                    "wózek",
+                    "Eurostar",
+                    "wynajem samochodów",
+                    "limuzyna",
+                    "transport",
+                    "linie lotnicze ",
+                    "linia lotnicza",
+                    "samolot pasażerski",
+                    "lotnisko",
+                    "Air Canada",
+                    "Emirates",
+                    "Allegiant Air",
+                    "Wizz Air",
+                    "Ryanair",
+                    "Endeavor Air",
+                    "klasa ekonomiczna",
+                    "klasa biznesowa",
+                    "pierwsza klasa",
+                    "odprawa ",
+                    "wyjazd",
+                    "przyjazd",
+                    "startowanie",
+                    "lądowanie",
+                    "bagaż",
+                    "tranzyt",
+                    "nieprzerwanie",
+                    "postój",
+                    "przerwa w podróży",
+                    "opłata za przejazd",
+                    "w obie strony",
+                    "w jedną stronę"
+                ]
+            },
+            {
+                "event": "RESTAURANT",
+                "words": [
+                    "restauracja",
+                    "knajpka",
+                    "wyżywienie",
+                    "kawiarnia",
+                    "bistro",
+                    "jadłodajnia",
+                    "knajpa",
+                    "tania restauracja",
+                    "pub",
+                    "salonik",
+                    "kantyna",
+                    "stołówka",
+                    "trattoria",
+                    "piwiarnia",
+                    "bar",
+                    "pizzeria",
+                    "rożen",
+                    "steakhouse",
+                    "bufet",
+                    "drive-thru",
+                    "przejazd",
+                    "wjazd",
+                    "przekąska",
+                    "brunch",
+                    "śniadanie",
+                    "Yelp",
+                    "Tripadvizor",
+                    "OpenTable"
+                ]
+            }
+        ]
+    }
+]

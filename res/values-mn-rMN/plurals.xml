@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d хоног үлдлээ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хоног үлдлээ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s нь %2$d хоногийн дараа болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s нь %2$d хоногийн дараа болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d арга хэмжээ%3$s маргааш үргэлжилнэ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d арга хэмжээ%3$s маргааш үргэлжилнэ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Танд өнөөдөр %1$s%2$d арга хэмжээ%3$s байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Танд өнөөдөр %1$s%2$d арга хэмжээ%3$s байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Танд өнөөдөр %1$d арга хэмжээ байна. Эхний арга хэмжээ нь %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Танд өнөөдөр %1$d арга хэмжээ байна. Эхний арга хэмжээ нь %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Өнөөдөр %1$s%2$d арга хэмжээ үлдсэн%3$s байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Өнөөдөр %1$s%2$d арга хэмжээ үлдсэн%3$s байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Танд маргааш %1$s%2$d арга хэмжээ%3$s байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Танд маргааш %1$s%2$d арга хэмжээ%3$s байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Танд маргааш %1$d арга хэмжээ байна. Эхний арга хэмжээ нь %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Танд маргааш %1$d арга хэмжээ байна. Эхний арга хэмжээ нь %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d үйл явд</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d үйл явд</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d минутн дара эхлнэ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минутн дара эхлнэ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Өнөөдөрт %d сануулга үлдсэн</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Өнөөдөрт %d сануулга үлдсэн</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Та өнөөдөр %d хүргэлтийн зурвас хүлээн авсан байна. Үүнийг шалгаж хүргэлтийн төлөвийн талаарх шинэчилсэн мэдээлэлтэй байна уу.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та өнөөдөр %d хүргэлтийн зурвас хүлээн авсан байна. Үүнийг шалгаж хүргэлтийн төлөвийн талаарх шинэчилсэн мэдээлэлтэй байна уу.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">Өнөөдөр %d хүргэлт байна</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Өнөөдөр %d хүргэлт байна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Энэ 7 хоногт зорилт.с %d дахн их.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Энэ 7 хоногт зорилт.с %d дахн их.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d үйл ажиллагааны зорилго биеллээ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дасгал хөдөлгөөний зорилго биеллээ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Та %1$s-р дээшилсэн ба %2$,d калори шатаасан байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та нийт %1$s-р дээшилсэн ба %2$,d калори шатаасан байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Таны дундаж алхалтын хурд %1$s байсан ба та %2$,d калори шатаасан байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дундаж алхалтын хурд %1$s байсан ба та %2$,d калори шатаасан байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Таны дундаж хурд %1$s байсан ба та %2$,d калори шатаасан байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны дундаж хурд %1$s байсан ба та %2$,d калори шатаасан байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Таны %1$s дасгалын хураангуй энд байна. %2$s хугацаа үргэлжилсэн ба та %3$,d калори шатаасан байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны %1$s дасгалын хураангуй энд байна. %2$s хугацаа үргэлжилсэн ба та %3$,d калори шатаасан байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Та өнөөдөр %d хуваарьт эмийг уугаагүй байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та өнөөдөр %d хуваарьт эмийг уугаагүй байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d цаг</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d цаг</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d цаг</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d цаг</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d мин</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мин</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Танд өнөөдөр хараахан шалгаж амжаагүй байгаа %1$s%2$d аваагүй дуудлага%3$s байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Танд өнөөдөр хараахан шалгаж амжаагүй байгаа %1$s%2$d аваагүй дуудлага%3$s байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Та өнөөдөр %d дуудлага аваагүй байна. Энэ аваагүй дуудлагыг өөрийн Now brief-с шалгана уу. Шаардлагатай бол дахин залгахаа мартахгүйн тулд та мөн сануулагч тохируулж болно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та өнөөдөр %d дуудлага аваагүй байна. Энэ аваагүй дуудлагыг өөрийн Now brief-с шалгана уу. Шаардлагатай бол дахин залгахаа мартахгүйн тулд та мөн сануулагч тохируулж болно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d аваагүй дуудлага</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d аваагүй дуудлага</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d аваагүй дуудлага</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d аваагүй дуудлага</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d цагийн өмнө</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d цагийн өмнө</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d минутын өмнө</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минутын өмнө</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Та Galaxy AI-н дэвшилтэт оюун ухааны онцлогуудыг ашиглахын тулд та дор хаяж %d настай байх ёстой.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та Galaxy AI-н дэвшилтэт оюун ухааны онцлогуудыг ашиглахын тулд та дор хаяж %d настай байх ёстой.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d зурвас</item>
+        <item quantity="one">%d зурвас</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d миль</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d миль</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d секунд</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d секунд</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Та өглөөний %1$s%2$d сэрүүлэг%3$s тохируулсан байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та өглөөний %1$s%2$d сэрүүлэг%3$s тохируулсан байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Та маргааш өглөөний %1$s%2$d сэрүүлгийг%3$s тохируулсан байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та маргааш өглөөний %1$s%2$d сэрүүлгийг%3$s тохируулсан байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$s%2$s гэхэд гарч%3$s хөөрөхөөс дор хаяж %4$d цагийн өмнө онгоцны буудалд ирээрэй. Мартахгүйн тулд сэрүүлэг тавь.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$s гэхэд гарч%3$s хөөрөхөөс дор хаяж %4$d цагийн өмнө онгоцны буудалд ирээрэй. Мартахгүйн тулд сэрүүлэг тавь.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$s%2$s гэхэд гарч%3$s нислэгээс дор хаяж %4$d цагийн өмнө онгоцны буудалд ирээрэй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$s гэхэд гарч%3$s нислэгээс дор хаяж %4$d цагийн өмнө онгоцны буудалд ирээрэй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Очих газар, хийх зүйлс, туршиж үзэх ресторан зэргийг багтаасан %2$s-д %1$d хоногийн аяллын маршрутыг санал болгоно уу.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Очих газар, хийх зүйлс, туршиж үзэх ресторан зэргийг багтаасан %2$s-д %1$d хоногийн аяллын маршрутыг санал болгоно уу.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Таны аяллын үеэр хэрэг болох эдгээр %1$sсанал болгож буй хэрэглүүрүүдийг%2$s шалгана уу.</item>
+        <item quantity="one">Таны аяллын үеэр хэрэг болох энэ %1$sсанал болгож буй хэрэглүүрийг%2$s шалгана уу.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sЭнэ хэлний багцыг татаж аваад%2$s та зорьсон газартаа очихдоо Орчуулагчийг ашиглахад бэлэн болно.</item>
+        <item quantity="one">%1$sЭдгээр хэлний багцыг татаж аваад%2$s та зорьсон газартаа очихдоо Орчуулагчийг ашиглахад бэлэн болно.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Татаж авах хэлний багцууд</item>
+        <item quantity="one">Татаж авах хэлний багц</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d төхөөрөмж асаалттай байна</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d төхөөрөмж асаалттай байна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Сүүлд %d хоногийн өмнө холбоо барьсан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сүүлд %d хоногийн өмнө холбоо барьсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Сүүлд %d хоногийн өмнө холбоо барьсан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сүүлд %d хоногийн өмнө холбоо барьсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Сүүлд %d сарын өмнө холбогдсон</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сүүлд %d сарын өмнө холбоо барьсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Сүүлд %d долоо хоногийн өмнө холбоо барьсан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сүүлд %d долоо хоногийн өмнө холбоо барьсан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Нэмэлт %d харилцагч</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Нэмэлт %d харилцагч</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Танд %d хоногийн дараа дуусах купон Samsung Wallet дээр байна. Хугацаа нь дуусахаас өмнө ашиглана уу.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Танд %d хоногийн дараа дуусах купон Samsung Wallet дээр байна. Хугацаа нь дуусахаас өмнө ашиглана уу.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Өндөр хасах %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Өндөр хасах %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Бага хасах %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бага хасах %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Таны хуанлид %1$s нэртэй арга хэмжээ байна. Энэ нь %5$s-д %4$s цагт %2$d градус %3$s байна.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Таны хуанлид %1$s нэртэй арга хэмжээ байна. Энэ нь %5$s-д %4$s цагт %2$d градус %3$s байна.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Өндөр %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Өндөр %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Бага %d градус</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бага %d градус</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s харсан</item>
+        <item quantity="one">%s харах</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/listening_history_card_container" android:tag="layout/suggestion_ui_view_moments_detail_carousel_history_listening_music_0" android:background="@drawable/moments_history_background" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="@dimen/moments_now_brief_detail_carousel_item_radius" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="?listPreferredItemPaddingStart" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_carousel_history_list_title_margin_bottom" android:text="@string/moments_listening_to_music_title_single_line" style="@style/MomentsDetailCarouselHistoryTitleStyle" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/listening_history_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

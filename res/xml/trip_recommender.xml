@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta-data type="recommender">
+    <input> [
+            {
+                "name":"event",
+                "type":"http://schema.org/Event",
+                "require":true
+            },
+            {
+                "name":"trip",
+                "type":"http://schema.org/Trip",
+                "require":true
+            }
+        ]</input>
+    <output> [
+            {
+                "name":"value",
+                "type":"http://schema.org/Recommendation"
+            }
+        ]</output>
+</meta-data>

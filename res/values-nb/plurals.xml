@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d dager igjen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dag igjen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s er om %2$d dager.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s er om %2$d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d arrangementer%3$s fortsetter i morgen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d arrangement%3$s fortsetter i morgen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Du har %1$s%2$d arrangementer%3$s i dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$s%2$d arrangement%3$s i dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Du har %1$d arrangementer i dag. Det første arrangementet er %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$d arrangement i dag. Det første arrangementet er %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d arrangementer igjen%3$s i dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d arrangement igjen%3$s i dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Du har %1$s%2$d arrangementer%3$s i morgen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$s%2$d arrangement%3$s i morgen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Du har %1$d arrangementer i morgen. Det første arrangementet er %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$d arrangement i morgen. Det første arrangementet er %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d hendelser</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hendelse</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Starter om %d minutter</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Starter om %d minutt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d påminnelser igjen for i dag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d påminnelse igjen for i dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Du fikk %d leveringsmeldinger i dag. Sjekk for å passe på at du er oppdatert på statusen til leveringene.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du fikk %d leveringsmelding i dag. Sjekk for å passe på at du er oppdatert på statusen til leveringen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d leveringer i dag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d levering i dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Over målet %d ganger denne uken.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Over målet %d gang denne uken.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d aktivitetsmål nådd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aktivitetsmål nådd</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Den totale høydestigningen var %1$s, og du forbrant %2$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Den totale høydestigningen var %1$s, og du forbrant %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Gjennomsnittsfarten var %1$s, og du forbrant %2$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gjennomsnittsfarten var %1$s, og du forbrant %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Gjennomsnittshastigheten var %1$s, og du forbrant %2$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gjennomsnittshastigheten var %1$s, og du forbrant %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Her er en oppsummering av %1$s-treningsøkten. Varigheten var %2$s, og du forbrant %3$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Her er en oppsummering av %1$s-treningsøkten. Varigheten var %2$s, og du forbrant %3$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Du gikk glipp av %d planlagte medisiner i dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du gikk glipp av %d planlagt medisin i dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d timer</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d time</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d timer</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d time</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minutter</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minutt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Du har %1$s%2$d tapte anrop%3$s i dag som du ikke har sjekket ennå.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$s%2$d tapt anrop%3$s i dag som du ikke har sjekket ennå.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Du har %d tapte anrop i dag. Se gjennom de tapte anropene i Now Brief. Ved behov kan du også angi påminnelser slik at du ikke glemmer å ringe tilbake.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %d tapt anrop i dag. Se gjennom det tapte anropet i Now Brief. Ved behov kan du også angi en påminnelse slik at du ikke glemmer å ringe tilbake.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d tapte anrop til</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tapt anrop til</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d tapte anrop</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tapt anrop</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nye varsler</item>
+        <item quantity="one">%d nytt varsel</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">for %d t siden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">for %d t siden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">for %d min siden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">for %d min siden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Du må være minst %d år gammel for å bruke funksjoner for avansert intelligens i Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du må være minst %d år gammel for å bruke funksjoner for avansert intelligens i Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d meldinger</item>
+        <item quantity="one">%d melding</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d engelske mil</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d engelsk mil</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekunder</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Du har angitt %1$s%2$d alarmer%3$s for morgenen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har angitt %1$s%2$d alarm%3$s for morgenen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Du har angitt %1$s%2$d alarmer%3$s for i morgen tidlig.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har angitt %1$s%2$d alarm%3$s for i morgen tidlig.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sDra innen %2$s%3$s for å være på flyplassen minst %4$d timer før avgang. Angi en alarm slik at du ikke glemmer det.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sDra innen %2$s%3$s for å være på flyplassen minst %4$d time før avgang. Angi en alarm slik at du ikke glemmer det.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sDra innen %2$s%3$s for å komme til flyplassen minst %4$d timer før flyvningen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sDra innen %2$s%3$s for å komme til flyplassen minst %4$d time før flyvningen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Foreslå en %1$d dagers reiserute for %2$s inkludert steder å besøke, ting å gjøre og restauranter som er verdt å prøve.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Foreslå en %1$d dags reiserute for %2$s inkludert steder å besøke, ting å gjøre og restauranter som er verdt å prøve.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Sjekk disse %1$sanbefalte appene%2$s som kan være nyttige på reisen.</item>
+        <item quantity="one">Sjekk denne %1$sanbefalte appen%2$s som kan være nyttig på reisen.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sLast ned denne språkpakken%2$s på forhånd slik at du er klar til å bruke den i Tolk når du ankommer reisemålet.</item>
+        <item quantity="one">%1$sLast ned disse språkpakkene%2$s på forhånd slik at du er klar til å bruke dem i Tolk når du ankommer reisemålet.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Språkpakker som kan lastes ned</item>
+        <item quantity="one">Språkpakke som kan lastes ned</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d enheter er på</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d enhet er på</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Sist kontaktet for %d dager siden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sist kontaktet for %d dag siden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Sist kontaktet for %d dager siden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sist kontaktet for %d dag siden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Sist kontaktet for %d måneder siden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sist kontaktet for %d måned siden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Sist kontaktet for %d uker siden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sist kontaktet for %d uke siden</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d kontakter til</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kontakt til</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Du har en kupong i Samsung Wallet som utløper om %d dager. Pass på at du bruker den før den utløper.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har en kupong i Samsung Wallet som utløper om %d dag. Pass på at du bruker den før den utløper.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Høyeste minus %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Høyeste minus %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Laveste minus %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laveste minus %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Du har et arrangement i kalenderen kalt %1$s. Det blir %2$d grader %3$s klokken %4$s i %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har et arrangement i kalenderen kalt %1$s. Det blir %2$d grad %3$s klokken %4$s i %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Høyeste %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Høyeste %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Laveste %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Laveste %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s visninger</item>
+        <item quantity="one">%s visning</item>
+    </plurals>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/body_icon_more_base_color" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/body_icon_more_gradient_top" android:endColor="@color/body_icon_more_gradient_down" android:angle="270.0" android:type="linear" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="24.0dip" android:width="24.0dip" android:drawable="@drawable/suggestion_ui_more_icon" />
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/body_icon_container_stroke_size" android:color="@color/body_icon_more_stroke_color" />
+        </shape>
+    </item>
+</layer-list>

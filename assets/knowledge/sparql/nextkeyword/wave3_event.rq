@@ -1,0 +1,29 @@
+# Wave-3
+SELECT ?waveType ?origin ?event ?score
+WHERE {
+    {
+        SELECT ("wave-3" as ?waveType) (?person as ?origin) ?event (SUM(?subScore) AS ?score)
+        WHERE {
+                VALUES ?inputActivities {<ACTIVITY_IRI>}
+                ?inputActivities user:withPerson ?person.
+                #4WEvent Case - content:attendee 로 연결되고 관련된 TakingPicturesActivy 가 있는 경우
+                {
+                    ?event content:attendee ?person.
+                    ?someTakingPicturesActivity user:capturedToScheduled/user:extractedFrom ?event.
+                    BIND (0.1 as ?subScore)
+                }
+                #4WEvent Case - user:withPerson 으로 연결된 TakingPicturesActivity 와 연결된 경우
+                UNION {
+                    ?person ^user:withPerson/user:capturedToScheduled/user:extractedFrom ?event.
+                    BIND (0.2 as ?subScore)
+                }
+            #Travel Engram Case - user:withPerson 으로 연결된 TakingPicturesActivity 와 연결된 경우
+                UNION {
+                    ?event user:event/user:withPerson ?person.
+                    BIND (0.25 as ?subScore)
+                }
+        }
+        
+        GROUP BY ?person ?event
+    }
+}

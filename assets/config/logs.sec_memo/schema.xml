@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="logs.sec_memo" package="" prefKey="sec_memo" version="1"
+    readPermission="android.permission.READ_CALL_LOG">
+
+    <!-- By default any index field is indexed="true" stored="true"
+    isSearchField="false" isSuggestField="false",
+    isSuggestProjectField="false" isTaskSuggestProjectField="false"
+    can be turned off by setting false or on by setting true -->
+
+    <fieldType name="number_field" dataType="String" class="TextField">
+        <analyzer class="bs.calllog.NumberAnalyzer" />
+    </fieldType>
+    <fieldType name="string_field" dataType="String" class="StringField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+
+
+    <field name="_id" type="string_field"/>
+    <field name="number" type="number_field"/>
+    <field name="normalized_number" type="string_field" indexed="false"/>
+    <field name="e164_number" type="string_field" indexed="false"/>
+    <field name="post_dial_digits" type="string_field" indexed="false"/>
+    <field name="countryiso" type="string_field" indexed="false"/>
+    <field name="sec_memo" type="string_field"/>
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+</schema>

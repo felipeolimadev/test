@@ -1,0 +1,15 @@
+prefix design: <http://pkg.samsung.com/design#>
+
+DELETE {
+    design:migration ?p ?o .
+} WHERE {
+    design:migration ?p ?o .
+}
+
+INSERT {
+    design:migration design:fromVersion "2.7.1" .
+    design:migration design:toVersion "2.7.0" .
+    design:migration design:inXSDDateTimeStamp ?time .
+} WHERE {
+	BIND(STR(NOW()) AS ?time)
+}

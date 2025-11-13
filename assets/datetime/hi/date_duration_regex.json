@@ -1,0 +1,8 @@
+[
+  {
+    "id" : 1,
+    "type" : "NUM_DAYS_NUM_MONTH_NUM_YEAR",
+    "comment" : "for 2 years, for 5 months and 10 days",
+    "patternString" : "((?<timeDuration1><num>)?\\s*(?<timePeriod1><time_period>))\\s*((?<timeDuration2><num>)?\\s*(?<timePeriod2><time_period>))\\s*((?<timeDuration3><num>)?\\s*(?<timePeriod3><time_period>))?(?:<start_of_duration>)"
+  }
+]

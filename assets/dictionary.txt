@@ -1,0 +1,1181 @@
+AOD
+Accessibility
+Accounts
+Advanced
+Apps
+Battery
+Bluetooth
+Brightness
+Button
+Connections
+Display
+Ethernet
+Face
+FaceWidgets
+Fingerprints
+GPUWatch
+Games
+Gesture
+Hearing
+Iris
+Licence
+Location
+Magnification
+Media
+MirrorLink
+Mute
+None
+Notification
+Notifications
+PIN
+Password
+Pattern
+Printing
+RAM
+Reset
+Ringtone
+Screen
+Screensaver
+Sound
+Status
+Storage
+Swipe
+System
+Text-to-speech
+Transparency
+VPN
+Vibrate
+Vision
+Volume
+Wi-Fi
+able
+about
+absolute
+access
+accessibility
+accidental
+account
+accounts
+accuracy
+accurate
+action
+activities
+activity
+adb
+add
+address
+adjust
+adjustment
+adjustments
+admin
+administrators
+adt
+advanced
+after
+again
+aggressive
+alarms
+alert
+alerts
+all
+allow
+almost
+always
+amount
+analyse
+analysing
+analysis
+android
+animation
+animator
+anrs
+answering
+any
+api
+app
+app's
+application
+apply
+apps
+area
+areas
+aren't
+aspect
+assistance
+assistant
+attached
+attribute
+audio
+authentication
+authorisations
+authorise
+auto
+autofill
+automatic
+automatically
+avrcp
+awake
+baby
+back
+backed
+background
+backup
+backups
+badges
+bag
+balance
+bar
+baseband
+based
+battery
+beam
+before
+begin
+behaviour
+being
+below
+billing
+biometric
+bits
+block
+blue
+bluetooth
+booster
+bottom
+boundaries
+briefly
+brightness
+browser
+buffer
+bug
+build
+button
+buttons
+ca
+cable
+call
+calling
+calls
+camera
+can
+capacity
+capture
+car
+card
+case
+cc
+cell
+certain
+certificates
+change
+channel
+characters
+charger
+charging
+check
+checking
+choose
+clear
+click
+clip
+clips
+clock
+close
+cloud
+codec
+collect
+colour
+colours
+compositing
+conditions
+configuration
+connect
+connected
+connection
+connections
+contact
+contacts
+content
+contrast
+control
+controlled
+controls
+convert
+corner
+credentials
+crying
+current
+currently
+customise
+cycle
+dark
+data
+date
+debug
+debugged
+debugger
+debugging
+default
+defaults
+delay
+demo
+deny
+desktop
+destroy
+details
+detecting
+detectors
+detects
+determine
+developer
+device
+device's
+devices
+dexterity
+diagnostic
+diagonally
+dialling
+dialogue
+direct
+direction
+directions
+directly
+disable
+disables
+display
+displays
+disturb
+do
+don't
+doorbell
+double
+download
+downloaded
+drawing
+drawn
+driving
+dual
+duration
+during
+ear
+easily
+easy
+edge
+effects
+either
+eligible
+email
+emitted
+enable
+encrypt
+encrypted
+encryption
+ending
+enhancer
+entering
+entry
+erase
+es
+etc
+ethernet
+even
+every
+exceptions
+experience
+export
+external
+eye
+face
+facewidgets
+factory
+falls
+faster
+feature
+features
+feedback
+fi
+file
+files
+filter
+find
+finger
+fingerprint
+fingerprints
+first
+flash
+flight
+folder
+font
+fonts
+for
+force
+forces
+forget
+format
+frames
+frequently
+from
+full
+function
+functionality
+functions
+game
+games
+general
+gesture
+gestures
+get
+glance
+go
+google
+gpu
+gpuwatch
+green
+handed
+handover
+hard
+hardkeys
+hardware
+harmful
+has
+have
+having
+hci
+hdcp
+headphones
+hearing
+help
+hide
+high
+history
+hold
+home
+hotspot
+hour
+icon
+icons
+identity
+image
+images
+imei
+implementation
+import
+improve
+improves
+inactive
+include
+including
+incoming
+incorrectly
+increase
+increasing
+indicator
+information
+input
+inserted
+inside
+inspection
+install
+installed
+instead
+intensity
+interaction
+interactions
+internet
+iris
+irises
+issues
+it's
+items
+its
+keep
+kernel
+key
+keyboard
+keypad
+keys
+knox
+label
+lack
+laid
+language
+large
+last
+launch
+launcher
+launches
+layers
+layout
+ldac
+learning
+leaves
+led
+left
+legal
+lens
+level
+licences
+light
+lighting
+limit
+limiting
+listening
+local
+locales
+locate
+locating
+location
+lock
+log
+logger
+logging
+logs
+long
+lost
+loud
+magnification
+magnifier
+magnify
+main
+maintenance
+make
+makes
+manage
+management
+manifest
+manual
+manually
+margins
+marketing
+mask
+media
+medium
+memory
+menu
+messages
+messaging
+messenger
+method
+minimum
+mirrorlink
+mobile
+mock
+mode
+model
+modem
+monitor
+mono
+more
+mouse
+msaa
+multi
+mute
+my
+name
+names
+navigation
+nearby
+needed
+negative
+network
+networks
+never
+nfc
+non
+none
+notice
+notification
+notifications
+notified
+now
+number
+oem
+off
+offers
+old
+once
+one
+only
+open
+opengl
+operations
+operators
+optimise
+option
+options
+order
+other
+out
+outline
+outlines
+output
+overdraw
+overlay
+overlays
+packets
+palm
+panel
+pass
+password
+passwords
+patch
+pattern
+patterns
+pay
+payment
+payments
+per
+percentage
+perform
+performance
+peripherals
+permission
+permissions
+persistently
+personal
+phone
+phone's
+physical
+picture
+pin
+place
+places
+planner
+play
+playback
+pocket
+point
+pointer
+policy
+pop
+possibility
+power
+powers
+preferences
+press
+pressing
+pressure
+prevent
+preview
+print
+printing
+privacy
+private
+problem
+processes
+profile
+prompt
+protect
+protected
+provide
+provided
+provider
+push
+quality
+quick
+quicker
+quickly
+rapid
+rate
+ratio
+re
+read
+receive
+recent
+recently
+recents
+recognised
+recognition
+recording
+recordings
+rectangular
+reduce
+reduced
+reduces
+regardless
+reinstalled
+related
+remaining
+reminder
+remote
+remotely
+remove
+renderer
+rendering
+report
+reports
+reset
+resizable
+resolution
+respond
+responding
+restart
+restarting
+restarts
+restore
+restrict
+reverse
+revoke
+right
+ringing
+ringtone
+roaming
+router
+routing
+rssi
+rtl
+rules
+running
+s
+safe
+safely
+safety
+same
+sample
+samsung
+save
+saved
+saver
+saving
+scale
+scanner
+scanning
+scans
+schedule
+scheduled
+screen
+screensaver
+sd
+se
+secondary
+secure
+securely
+security
+select
+selected
+selection
+send
+sends
+sensitivity
+sensor
+sent
+separate
+series
+server
+service
+services
+set
+settings
+shapes
+share
+sharing
+shell
+shortcut
+shortcutmanager
+shortcuts
+show
+showing
+shown
+side
+signal
+sim
+similar
+simulate
+single
+sizable
+size
+skip
+sleep
+slow
+smart
+snap
+snoop
+software
+soon
+sos
+sound
+sounds
+source
+space
+specific
+speech
+speed
+split
+srgb
+ssid
+stand
+startup
+status
+statuses
+stay
+stereo
+still
+stops
+storage
+store
+strain
+strict
+style
+subtitles
+supported
+sw
+swipe
+swiping
+switch
+sync
+system
+tags
+take
+taking
+tap
+tapped
+tapping
+telephony
+telephonymonitor
+temporary
+terminal
+tethering
+text
+than
+them
+themes
+thread
+threat
+tiles
+time
+timeout
+times
+tips
+tones
+touch
+touches
+touchpad
+track
+trackpad
+traffic
+transfer
+transition
+transparency
+triple
+trusted
+turn
+turned
+turns
+twice
+two
+type
+typing
+unacceptably
+universal
+unlock
+unlocked
+unread
+unsaved
+unstable
+up
+update
+updates
+updating
+us
+usage
+usb
+use
+used
+useful
+user
+users
+using
+valid
+values
+ver
+verbose
+verify
+version
+via
+vibrate
+vibration
+video
+view
+views
+virtual
+visibility
+visible
+vision
+visual
+voice
+volte
+volume
+vpn
+vpns
+wait
+wallpapers
+want
+warning
+warnings
+watch
+weak
+webview
+week
+when
+whenever
+where
+whether
+which
+while
+wi
+width
+window
+windows
+wireless
+wirelessly
+without
+wps
+write
+written
+you
+your
+zone
+zoom
+About always On display
+About phone
+Access Point Names
+Accessibility settings backup
+Accessibility shortcut
+Add users from lock screen
+Advanced features
+Aggressive Wi-Fi/cell handover
+Allow Wi-Fi roaming scans
+Allow app while Data saver on
+Allow exceptions
+Always On display
+Analyse on-screen images
+Analyse on-screen text
+Android Beam
+Android security patch level
+Android version
+Animator duration scale
+Answering and ending calls
+App icon badges
+App permission monitor
+App permissions
+App rules
+App to watch
+Assistant menu
+Authorise wireless display devices
+Auto brightness
+Auto restart
+Auto sync data
+Auto update
+Auto update system
+Auto-reverse text colour
+Automatic date and time
+Automatic restore
+Back up data
+Back up my data
+Backup account
+Backup and restore
+Baseband version
+Battery capacity
+Battery information
+Battery level
+Battery status
+Billing cycle and data warning
+Block accidental touches
+Blue light filter
+Bluetooth AVRCP Version
+Bluetooth Audio Bits Per Sample
+Bluetooth Audio Channel Mode
+Bluetooth Audio Codec
+Bluetooth Audio LDAC Codec: Playback Quality
+Bluetooth Audio Sample Rate
+Bluetooth HCI snoop log
+Bluetooth tethering
+Browser app
+Buffer size for logging
+Build number
+Button layout
+Calling app
+Camera light
+Charging sound
+Clear credentials
+Click after pointer stops
+Clock and FaceWidgets
+Clock style
+Cloud and accounts
+Colour adjustment
+Colour lens
+Connect to car via USB
+Contact us
+Convert to file encryption
+Dark screen
+Data saver
+Data usage
+Date and time
+Debug GPU overdraw
+Default app selection
+Default apps
+Demo mode
+Desktop backup password
+Developer options
+Device admin apps
+Device assistance app
+Device name
+Device security
+Dexterity and interaction
+Dialling keypad tones
+Direct access
+Direct call
+Direct share
+Direction lock
+Disable absolute volume
+Disable hardware overlays
+Do not disturb
+Do not disturb permission
+Do not keep activities
+Download booster
+Download updates automatically
+Download updates manually
+Download updates via
+Dual Messenger
+Dual clock
+Easy mode
+Easy mute
+Easy screen turn on
+Edge screen
+Enable 4x MSAA
+Encrypt SD card
+Face Recognition
+Face unlock
+Face unlock when screen turns on
+Factory data reset
+Faster recognition
+Find My Mobile
+Finger sensor gestures
+Fingerprint Scanner
+Fingerprint unlock
+Flash notification
+Flight mode
+Font and screen zoom
+Force GPU rendering
+Force RTL layout
+Force activities to be resizable
+Force allow apps on external
+Full screen apps
+Full screen colour balance
+GPU rendering profile
+Game Launcher
+General management
+Google location service
+Google subtitles (CC)
+HDCP checking settings
+Hard press Home button
+Hard press vibration feedback
+Hide content
+Hide visual notifications
+High contrast fonts
+High contrast keyboard
+Home screen
+Icon frames
+Improve accuracy
+Inactive apps
+Include bug reports in power menu
+Incoming call
+Install from device storage
+Install network certificates
+Interaction control
+Iris Scanner
+Iris unlock
+Iris unlock when screen turns on
+Keep Mobile data turned on
+Keep Wi-Fi on during sleep
+Kernel version
+Keyboard sound
+Keyboard vibration
+Knox version
+LED indicator
+Language and input
+Large mouse/touchpad pointer
+Last update information
+Left shortcut
+Left/right sound balance
+Legal information
+Limit background processes
+Local terminal
+Locating method
+Lock screen and security
+Magnifier window
+Make bug report
+Make passwords visible
+Manage networks
+Marketing information
+Messaging app
+Minimum width
+Mobile Hotspot
+Mobile Hotspot and Tethering
+Mobile data
+Mobile data usage
+Mobile keyboard
+Mobile networks
+Mock location app
+Model number
+Mono audio
+More connection settings
+Multi window
+Mute all sounds
+My phone number
+NFC and payment
+Navigation bar
+Nearby device scanning
+Negative colours
+Network operators
+Notification access
+Notification icons only
+Notification reminder
+Notification sounds
+OEM unlock
+One-handed mode
+Other security settings
+Owner information
+Palm swipe to capture
+Performance mode
+Phone visibility
+Picture color mode
+Pin windows
+Pop-up view action
+Power saving mode
+Prevent USB audio routing
+Preview screen mask
+Quick launch Camera
+Quick settings developer tiles
+Rapid key input
+Remote controls
+Rendering API
+Report diagnostic information
+Reset network settings
+Reset settings
+Reset the ShortcutManager API call limit.
+Reset usage patterns
+Restore data
+Restrict networks
+Revoke USB debugging authorisations
+Right shortcut
+Ringtones and notifications
+Running services
+SE for Android status
+Safety information
+Samsung Cloud
+Samsung Experience version
+Samsung Knox Privacy Notice
+Samsung Pass
+Samsung Pay
+Samsung legal
+Samsung subtitles (CC)
+Scheduled software updates
+Screen lock sounds
+Screen lock type
+Screen mode
+Screen resolution
+Screen timeout
+Secure Folder
+Secure startup
+Security policy updates
+Security software version
+Select app to be debugged
+Select apps to show notifications on the Lock screen and Always On Display, and select whether to hide content and notification details on the Lock screen.
+Send SOS messages
+Send last location
+Send security reports
+Separate app sound
+Service provider SW ver.
+Set GPU Renderer
+Set as default
+Set up SIM card lock
+Show GPU view updates
+Show all ANRs
+Show and hide button
+Show battery percentage
+Show button shapes
+Show hardware layers updates
+Show layout boundaries
+Show non-rectangular clips
+Show notification channel warnings
+Show notifications
+Show notifications from
+Show pointer location
+Show recent notifications only
+Show screen updates
+Show touches
+Show with number
+Show without number
+Simulate colour space
+Simulate secondary displays
+Single tap mode
+Smart Switch
+Smart alert
+Smart capture
+Smart stay
+Snap window
+Software information
+Software update
+Sound detectors
+Sound mode
+Sound quality and effects
+Sounds and vibration
+Split screen view
+Status bar
+Stay awake
+Storage type
+Store logger data persistently on device
+Strict mode
+Swipe to call or send messages
+Switch to mobile data
+System WebView License
+Tap and pay
+Tap button to magnify
+Telephony Monitor
+Temporary mute
+Terms and Conditions
+Tips for using iris recognition
+Touch and hold delay
+Touch sounds
+Transition animation scale
+Triple tap screen to magnify
+Turn on Wi-Fi automatically
+Turn on as scheduled
+Turn on now
+USB configuration
+USB debugging
+USB tethering
+Unlock with Home button
+Update now
+Usage data access
+Use 24-hour format
+Use Recents button
+Use Volume keys for media
+User certificates
+User manual
+Verify apps via USB
+Vibrate while ringing
+Vibration feedback
+Vibration intensity
+Vibration pattern
+Video enhancer
+View attribute inspection
+View security certificates
+Voice Assistant
+Voice Assistant help
+Voice Label
+Voice input
+WPS PIN entry
+WPS push button
+Wait for debugger
+WebView implementation
+Where to show
+Wi-Fi Sharing, Wifi Sharing
+Wi-Fi control history
+Wi-Fi data usage
+Wi-Fi networks
+Wi-Fi power saving mode
+Wi-Fi verbose logging
+Window animation scale
+rate, language, default, speak, speaking, tts, accessibility, screen reader, blind

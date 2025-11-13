@@ -1,0 +1,45 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    {
+        <ENGRAM_VALUE_LIST>
+        ?engram rdf:type/rdfs:subClassOf user:Engram .
+        ?engram user:event ?activity_or_being_present .
+
+        #{
+            VALUES (?activity_type) { (user:Staying) (user:TakingPictures) }
+            ?activity_or_being_present rdf:type/rdfs:subClassOf ?activity_type .
+            ?activity_or_being_present time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+            ?activity_or_being_present time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+        #}
+        #UNION {
+        #    ?activity_or_being_present rdf:type/rdfs:subClassOf user:BeingPresent .
+        #    ?activity_or_being_present time:inXSDDateTimeStamp ?start_time .
+        #    ?start_time rdf:unknown? ?end_time .
+        #}
+        <LOCATION_FILTER>
+    }
+    {
+        ?s rdf:unknown? ?activity_or_being_present .
+        VALUES (?p) { (rdf:type) (user:atLocation) } .
+        ?s ?p ?o .
+    }
+    UNION
+    {
+		?s rdf:unknown? ?activity_or_being_present .
+        VALUES ?p {time:inXSDBeginningDateTimeStamp} .
+        ?s (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp ?o .
+    }
+    UNION
+    {
+		?s rdf:unknown? ?activity_or_being_present .
+        VALUES ?p {time:inXSDEndDateTimeStamp} .
+        ?s (time:hasEnd/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp ?o .
+    }
+    UNION
+    {
+        ?s rdf:unknown? ?activity_or_being_present .
+        VALUES ?p {user:event} .
+        ?engram rdf:unknown? ?o .
+    }
+}
+<OUTPUT_SORT>

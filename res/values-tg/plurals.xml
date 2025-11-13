@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d рӯз монд.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d рӯз монд.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s баъди %2$d рӯз мерасад.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s баъди %2$d рӯз мерасад.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d рӯйдод%3$s фардо идома меёбад.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d рӯйдод%3$s фардо идома меёбад.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Шумо имрӯз %1$s%2$d рӯйдод%3$s доред.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо имрӯз %1$s%2$d рӯйдод%3$s доред.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Шумо имрӯз %1$d рӯйдод доред. Рӯйдоди якум %2$s аст.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо имрӯз %1$d рӯйдод доред. Рӯйдоди якум %2$s аст.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Барои имрӯз %1$s%2$d рӯйдод%3$s мондааст.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Барои имрӯз %1$s%2$d рӯйдод%3$s мондааст.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Шумо фардо %1$s%2$d рӯйдод%3$s доред.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо фардо %1$s%2$d рӯйдод%3$s доред.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Шумо фардо %1$d рӯйдод доред. Рӯйдоди якум %2$s аст.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо фардо %1$d рӯйдод доред. Рӯйдоди якум %2$s аст.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d рӯйдод</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d рӯйдод</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Оғоз баъди %d дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Оғоз баъди %d дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Имрӯз %d ёдраси дигар монд</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Имрӯз %d ёдраси дигар монд</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Шумо имрӯз дар бораи таҳвил %d паём гирифта будед. Онҳоро аз назар гузаронида, мутмаин шавед, ки аз ҳолати ҳама таҳвилҳои худ бохабар ҳастед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо имрӯз дар бораи таҳвил %d паём гирифта будед. Онҳоро аз назар гузаронида, мутмаин шавед, ки аз ҳолати таҳвили худ бохабар ҳастед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">Имрӯз %d таҳвил ҳаст</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Имрӯз %d таҳвил ҳаст</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Ин ҳафта ҳадаф %d бор афзуда ш.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ин ҳафта ҳадаф %d бор афзуда ш.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d ҳдфи фълнкӣ иҷро ш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ҳдфи фълнкӣ иҷро ш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Афзоиши умумии баландии шумо %1$s буд ва шумо %2$,d килокалория сӯзондед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Афзоиши умумии баландии шумо %1$s буд ва шумо %2$,d килокалория сӯзондед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Суръати назми миёнаи шумо %1$s буд ва шумо %2$,d килокалория сӯзондед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Суръати назми миёнаи шумо %1$s буд ва шумо %2$,d килокалория сӯзондед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Суръати миёнаи шумо %1$s буд ва шумо %2$,d килокалория сӯзондед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Суръати миёнаи шумо %1$s буд ва шумо %2$,d килокалория сӯзондед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Хулосаи тамрини %1$s-и шумо тайёр аст. Давомнокӣ %2$s буд ва шумо %3$,d килокалория сӯзондед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Хулосаи тамрини %1$s-и шумо тайёр аст. Давомнокӣ %2$s буд ва шумо %3$,d килокалория сӯзондед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Шумо имрӯз %d доруи нақшавиро истеъмол накардед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо имрӯз %d доруи нақшавиро истеъмол накардед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d соат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d соат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d соат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d соат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d дақ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Шумо имрӯз %1$s%2$d занги беҷавоб%3$s доред, ки ҳоло тафтиш накардаед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо имрӯз %1$s%2$d занги беҷавоб%3$s доред, ки ҳоло тафтиш накардаед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Шумо имрӯз ба %d занг ҷавоб надодед. Ин зангҳои беҷавобро дар Now brief баррасӣ кунед. Агар лозим шавад, метавонед барои баргашта занг заданро фаромӯш накардан ёдрасҳо танзим кунед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо имрӯз ба %d занг ҷавоб надодед. Ин занги беҷавобро дар Now brief баррасӣ кунед. Агар лозим шавад, метавонед барои баргашта занг заданро фаромӯш накардан ёдрас танзим кунед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d занги беҷавоби дигар</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d занги беҷавоби дигар</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d знги беҷавоб</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d знги беҷавоб</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d соат пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d соат пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d дақиқа пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Барои хусусиятҳои зеҳни такмилёфтаи Galaxy AI-ро истифода бурдан, шумо бояд ақаллан %d сол дошта бошед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Барои хусусиятҳои зеҳни такмилёфтаи Galaxy AI-ро истифода бурдан, шумо бояд ақаллан %d сол дошта бошед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d паём</item>
+        <item quantity="one">%d паём</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d мил</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мил</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d сония</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d сония</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Шумо барои субҳ %1$s%2$d бедоркунак%3$s танзим кардаед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо барои субҳ %1$s%2$d бедоркунак%3$s танзим кардаед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Шумо барои субҳи фардо %1$s%2$d бедоркунак%3$s танзим кардаед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо барои субҳи фардо %1$s%2$d бедоркунак%3$s танзим кардаед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sТо соати %2$s бароед%3$s, то ақаллан %4$d соат пеш аз рейси худ ба фурудгоҳ бирасед. Бедоркунак танзим кунед, то аз ёдатон набарояд.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sТо соати %2$s бароед%3$s, то ақаллан %4$d соат пеш аз рейси худ ба фурудгоҳ бирасед. Бедоркунак танзим кунед, то аз ёдатон набарояд.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sТо соати %2$s бароед%3$s, то ақаллан %4$d соат пеш аз парвози худ ба фурудгоҳ бирасед.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sТо соати %2$s бароед%3$s, то ақаллан %4$d соат пеш аз парвози худ ба фурудгоҳ бирасед.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Барои %2$s барномаи сафарии %1$d-рӯза пешниҳод карда мешавад, аз ҷумла ҷойҳо барои зиёрат, машғулиятҳо ва тарабхонаҳои арзанда.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Барои %2$s барномаи сафарии %1$d-рӯза пешниҳод карда мешавад, аз ҷумла ҷойҳо барои зиёрат, машғулиятҳо ва тарабхонаҳои арзанда.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Ин %1$sбарномаҳои тавсияшударо%2$s дида бароед, ки метавонанд дар сафаратон ба шумо ёрӣ расонанд.</item>
+        <item quantity="one">Ин %1$sбарномаи тавсияшударо%2$s дида бароед, ки метавонад дар сафаратон ба шумо ёрӣ расонад.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sИн бастаи забониро пешакӣ бор кунед%2$s, то ҳангоми ба ҷои таъйинот расиданатон барои онро дар Тарҷумон истифода бурдан тайёр бошед.</item>
+        <item quantity="one">%1$sИн бастаҳои забониро пешакӣ бор кунед%2$s, то ҳангоми ба ҷои таъйинот расиданатон барои онҳоро дар Тарҷумон истифода бурдан тайёр бошед.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Бастаҳои забонӣ барои боргирӣ кардан</item>
+        <item quantity="one">Бастаи забонӣ барои боргирӣ кардан</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d дастгоҳ фрзн аст</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дастгоҳ фрзн аст</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Тамоси охирин %d рӯз пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Тамоси охирин %d рӯз пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Тамоси охирин %d рӯз пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Тамоси охирин %d рӯз пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Тамоси охирин %d моҳ пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Тамоси охирин %d моҳ пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Тамоси охирин %d ҳафта пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Тамоси охирин %d ҳафта пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d алоқаи дигар</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d алоқаи дигар</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Шумо дар Samsung Wallet купоне доред, ки муҳлаташ баъди %d рӯз мегузарад. Кӯшиш кунед, ки онро пеш аз беэътибор шуданаш истифода баред.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо дар Samsung Wallet купоне доред, ки муҳлаташ баъди %d рӯз мегузарад. Кӯшиш кунед, ки онро пеш аз беэътибор шуданаш истифода баред.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Баланд минус %d дараҷа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Баланд минус %d дараҷа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Паст минус %d дараҷа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Паст минус %d дараҷа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Шумо дар тақвими худ як рӯйдод бо номи %1$s доред. Дар %5$s соати %4$s ҳарорат %2$d дараҷаи %3$s мешавад.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Шумо дар тақвими худ як рӯйдод бо номи %1$s доред. Дар %5$s соати %4$s ҳарорат %2$d дараҷаи %3$s мешавад.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Баланд %d дараҷа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Баланд %d дараҷа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Паст %d дараҷа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Паст %d дараҷа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">Намоишҳо дар %s</item>
+        <item quantity="one">Намуди %s</item>
+    </plurals>
+</resources>

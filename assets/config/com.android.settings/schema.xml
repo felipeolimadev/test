@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.android.settings" package="com.android.settings" prefKey="settings" version="4">
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="pinyin" dataType="String" class="TextField" >
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" />
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="spell" dataType="String" class="TextField" >
+        <analyzer class="bs.core.PerLanguageAnalyzer" connectingWord="true">
+            <subAnalyzer class="bs.korean.ConsonantAnalyzer" lang="ko" storeRawTermInPayload="true" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="chosung" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.korean.ChosungAnalyzer" />
+        <analyzer type="search" class="bs.korean.ChosungAnalyzer" keepOtherLang="true" />
+    </fieldType>
+    <fieldType name="keyword_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="nospace_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseNoSpaceAnalyzer" />
+    </fieldType>
+
+    <field name="_id" type="string" />
+    <field name="title" type="text" />
+    <field name="title_keyword" type="keyword_field" src="title" stored="false"/>
+    <field name="title_fuzzy" type="spell" src="title" stored="false"
+        termVector="true" termVectorPayload="true" />
+    <field name="subText" type="text" stored="false" />
+    <field name="ObjectId" type="string" stored="false" />
+    <field name="ObjectVersion" type="string" stored="false" />
+    <field name="chosung" type="chosung" src="title" stored="false" />
+    <field name="title_pinyin" type="pinyin" src="title" stored="false" />
+    <field name="raw" type="nospace_field" src="title" stored="false" />
+
+    <fieldList type="search">
+        <fieldItem name="title" />
+        <fieldItem name="subText" />
+        <fieldItem name="title_pinyin" />
+    </fieldList>
+
+    <fieldList type="projection_suggestion">
+        <fieldItem name="title"/>
+    </fieldList>
+
+</schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/suggestion_ui_view_birthday_0" android:background="@drawable/rounded_widget_background" android:padding="@dimen/birthday_container_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/birthday_no_items_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/rounded_birthday_card_background" android:layout_width="@dimen/nudge_icon_size" android:layout_height="@dimen/nudge_icon_size" android:src="@drawable/birthday_svg" android:scaleType="centerInside" android:importantForAccessibility="no" android:clipToOutline="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="13.0dip">
+            <TextView android:textSize="@dimen/calendar_list_items_title_text_size" android:id="@id/birthday_no_items_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.RobotoMedium" />
+            <TextView android:textSize="@dimen/calendar_list_items_title_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/birthday_sub_title_no_items" style="@style/TextAppearance.RobotoRegular" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/birthday_expand_widget_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:background="@drawable/birthday_card_icon_background" android:layout_width="@dimen/birthday_icon_background_size" android:layout_height="@dimen/birthday_icon_background_size">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/birthday_icon_size" android:layout_height="@dimen/birthday_icon_size" android:src="@drawable/birthday_card_icon" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/birthday_text_size" android:ellipsize="end" android:id="@id/birthday_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/birthday_title_margin_start" android:breakStrategy="simple" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/birthday_subtitle_text_size" android:id="@id/birthday_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/birthday_subtitle_margin_top" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/birthday_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/birthday_image_margin_top">
+            <ImageView android:id="@id/birthday_image" android:layout_width="@dimen/birthday_image_size" android:layout_height="@dimen/birthday_image_size" android:src="@drawable/birthday_thumbnail" android:scaleType="fitXY" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/birthday_button_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="@dimen/birthday_button_text_size" android:textColor="@color/description_widget_text_color" android:id="@id/birthday_message" android:background="@drawable/button_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/birthday_message" android:singleLine="true" android:textFontWeight="400" />
+                <Button android:textSize="@dimen/birthday_button_text_size" android:textColor="@color/description_widget_text_color" android:layout_gravity="center_vertical" android:id="@id/birthday_gift" android:background="@drawable/button_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/birthday_button_margin_top" android:text="@string/birthday_gift" android:singleLine="true" android:textFontWeight="400" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

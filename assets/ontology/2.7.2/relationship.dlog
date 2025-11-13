@@ -1,0 +1,115 @@
+
+
+
+# transitive relation inference
+[?x, relationship:hasGrandChild, ?z]  :- [?x, relationship:hasChild, ?y], [?y, relationship:hasChild, ?z] .
+[?x, relationship:hasGrandParent, ?z] :- [?x, relationship:hasParent, ?y], [?y, relationship:hasParent, ?z].
+
+# relation specification inference from gender
+[?x, relationship:hasFather, ?y] :- [?x, relationship:hasParent, ?y], [?y, user:gender, user:Male] .
+[?x, relationship:hasMother, ?y] :- [?x, relationship:hasParent, ?y], [?y, user:gender, user:Female] .
+[?x, relationship:hasGrandFather, ?y] :- [?x, relationship:hasGrandParent, ?y], [?y, user:gender, user:Male] .
+[?x, relationship:hasGrandMother, ?y] :- [?x, relationship:hasGrandParent, ?y], [?y, user:gender, user:Female] .
+[?x, relationship:hasSon, ?y] :- [?x, relationship:hasChild, ?y], [?y, user:gender, user:Male] .
+[?x, relationship:hasDaughter, ?y] :- [?x, relationship:hasChild, ?y], [?y, user:gender, user:Female] .
+[?x, relationship:hasHusband, ?y] :- [?x, relationship:hasSpouse, ?y], [?y, user:gender, user:Male] .
+[?x, relationship:hasWife, ?y] :- [?x, relationship:hasSpouse, ?y], [?y, user:gender, user:Female] .
+[?x, relationship:hasBrother, ?y] :- [?x, relationship:hasSibling, ?y], [?y, user:gender, user:Male] .
+[?x, relationship:hasSister, ?y] :- [?x, relationship:hasSibling, ?y], [?y, user:gender, user:Female] .
+[?x, relationship:hasBoyFriend, ?y] :- [?x, relationship:hasLover, ?y], [?x, relationship:hasFriend, ?y], [?y, user:gender, user:Male] .
+[?x, relationship:hasGirlFriend, ?y] :- [?x, relationship:hasLover, ?y], [?x, relationship:hasFriend, ?y], [?y, user:gender, user:Female] .
+
+# relationship inference using sibling defined symmetric restriction.
+[?x, relationship:hasRelative, ?z] :- [?x, relationship:hasAncestor, ?y], [?y, relationship:hasSibling, ?z] .
+[?x, relationship:hasDescendant, ?z] :- [?x, relationship:hasDescendant, ?y], [?y, relationship:hasSibling, ?z] .
+[?x, relationship:hasParent, ?z] :- [?x, relationship:hasSibling, ?y], [?y, relationship:hasParent, ?z] .
+# Exception case : Person A <--> Person B : sameAs
+#[?x, relationship:hasSibling, ?y] :- [?x, relationship:hasParent, ?z], [?y, relationship:hasParent, ?z], FILTER(?x != ?y).
+#[?x, relationship:hasSibling, ?z] :- [?x, relationship:hasSibling, ?y], [?y, relationship:hasSibling, ?z], FILTER(?x != ?z) .
+
+
+# Child relationship inference using parent definition
+[?x, relationship:hasChild, ?y] :- [?x, relationship:hasSpouse, ?z], [?z, relationship:hasChild, ?y] .
+
+# Ancestor relationship inference
+[?x, relationship:hasMaternalGrandmother, ?y] :- [?x, relationship:hasMother, ?z], [?z, relationship:hasMother, ?y] .
+[?x, relationship:hasMaternalGrandfather, ?y] :- [?x, relationship:hasMother, ?z], [?z, relationship:hasFather, ?y] .
+[?x, relationship:hasPaternalGrandmother, ?y] :- [?x, relationship:hasFather, ?z], [?z, relationship:hasMother, ?y] .
+[?x, relationship:hasPaternalGrandfather, ?y] :- [?x, relationship:hasFather, ?z], [?z, relationship:hasFather, ?y] .
+[?x, relationship:hasMotherInLawOfWife, ?y] :- [?x, relationship:hasWife, ?z], [?z, relationship:hasMother, ?y] .
+[?x, relationship:hasFatherInLawOfWife, ?y] :- [?x, relationship:hasWife, ?z], [?z, relationship:hasFather, ?y] .
+[?x, relationship:hasMotherInLawOfHusband, ?y] :- [?x, relationship:hasHusband, ?z], [?z, relationship:hasMother, ?y] .
+[?x, relationship:hasFatherInLawOfHusband, ?y] :- [?x, relationship:hasHusband, ?z], [?z, relationship:hasFather, ?y] .
+
+# Descendant relationship inference
+[?x, relationship:hasSonInLaw, ?y] :- [?x, relationship:hasDaughter, ?z], [?z, relationship:hasHusband, ?y] .
+[?x, relationship:hasDaughterInLaw, ?y] :- [?x, relationship:hasSon, ?z], [?z, relationship:hasWife, ?y] .
+[?x, relationship:hasGranddaughter, ?y] :- [?x, relationship:hasChild, ?z], [?z, relationship:hasDaughter, ?y] .
+[?x, relationship:hasGrandson, ?y] :- [?x, relationship:hasChild, ?z], [?z, relationship:hasSon, ?y] .
+
+# spouse inference from mother, father relationship
+[?x, relationship:hasWife, ?z] :- [?y, relationship:hasFather, ?x], [?y, relationship:hasMother, ?z].
+[?x, relationship:hasWife, ?z] :- [?y, relationship:hasMaternalGrandfather, ?x], [?y, relationship:hasMaternalGrandmother, ?z].
+[?x, relationship:hasWife, ?z] :- [?y, relationship:hasPaternalGrandfather, ?x], [?y, relationship:hasPaternalGrandmother, ?z].
+
+#[?x, relationship:hasOlderBrother, ?y] :- [?x, relationship:hasBrother, ?y], 	[?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age < ?y_age) .
+#[?x, relationship:hasOlderBrotherOfMale, ?y] :- [?x, relationship:hasBrother, ?y], [?x, user:gender, user:Male],	[?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age < ?y_age) .
+#[?x, relationship:hasOlderBrotherOfFemale, ?y] :- [?x, relationship:hasBrother, ?y], [?x, user:gender, user:Female], 	[?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age < ?y_age) .
+#[?x, relationship:hasYoungerBrother, ?y] :- [?x, relationship:hasBrother, ?y], [?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age > ?y_age) .
+#[?x, relationship:hasYoungerSister, ?y] :- [?x, relationship:hasSister, ?y], [?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age > ?y_age) .
+#[?x, relationship:hasOlderSisterOfMale, ?y] :- [?x, relationship:hasSister, ?y], [?x, user:gender, user:Male], [?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age < ?y_age) .
+#[?x, relationship:hasOlderSisterOfFemale, ?y] :- [?x, relationship:hasSister, ?y], [?x, user:gender, user:Female], [?x, content:age, ?x_age], [?y, content:age, ?y_age], FILTER(?x_age < ?y_age) .
+
+
+# gender inference from relationship
+[?x, user:gender, user:Female] :- [?y, relationship:hasDaughter, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasSon, ?x] .
+[?x, user:gender, user:Female] :- [?y, relationship:hasWife, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasHusband, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasBrother, ?x] .
+[?x, user:gender, user:Female] :- [?y, relationship:hasSister, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasFather, ?x] .
+[?x, user:gender, user:Female] :- [?y, relationship:hasMother, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasGrandFather, ?x] .
+[?x, user:gender, user:Female] :- [?y, relationship:hasGrandMother, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasGrandson, ?x] .
+[?x, user:gender, user:Female] :- [?y, relationship:hasGranddaughter, ?x] .
+[?x, user:gender, user:Male] :- [?y, relationship:hasBoyFriend, ?x] .
+[?x, user:gender, user:Female] :- [?y, relationship:hasGirlFriend, ?x] .
+
+# unique relation rule
+[?y, relationship:sameAs, ?z]
+ :- [?x, relationship:hasWife, ?y], [?x, relationship:hasWife, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasHusband, ?y], [?x, relationship:hasHusband, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasFather, ?y], [?x, relationship:hasFather, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasMother, ?y], [?x, relationship:hasMother, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasMaternalGrandmother, ?y], [?x, relationship:hasMaternalGrandmother, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasMaternalGrandfather, ?y], [?x, relationship:hasMaternalGrandfather, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasPaternalGrandmother, ?y], [?x, relationship:hasPaternalGrandmother, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasPaternalGrandfather, ?y], [?x, relationship:hasPaternalGrandfather, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasMotherInLawOfWife, ?y], [?x, relationship:hasMotherInLawOfWife, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasFatherInLawOfWife, ?y], [?x, relationship:hasFatherInLawOfWife, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasMotherInLawOfHusband, ?y], [?x, relationship:hasMotherInLawOfHusband, ?z],  FILTER(?y != ?z) .
+
+[?y, relationship:sameAs, ?z]
+  :- [?x, relationship:hasFatherInLawOfHusband, ?y], [?x, relationship:hasFatherInLawOfHusband, ?z],  FILTER(?y != ?z) .

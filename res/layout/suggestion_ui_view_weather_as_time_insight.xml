@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/weather_container" android:tag="layout/suggestion_ui_view_weather_as_time_insight_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/weather_as_time_background" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:clipToOutline="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/weather_as_time_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/weather_as_no_or_morning_time_divider_margin_top" android:layout_marginBottom="@dimen/weather_insight_time_divide_top_padding" android:paddingHorizontal="@dimen/weather_widget_item_padding" />
+        <FrameLayout android:id="@id/weather_divider" android:background="@drawable/horizontal_divider_light_blue" android:layout_width="fill_parent" android:layout_height="@dimen/widget_horizontal_divider_height" android:layout_marginHorizontal="@dimen/weather_divider_margin_horizontal" />
+        <LinearLayout android:orientation="vertical" android:id="@id/weather_as_time_insight_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/weather_as_time_item_container_margin_top" android:paddingHorizontal="@dimen/weather_insight_horizontal_padding" />
+    </LinearLayout>
+</FrameLayout>

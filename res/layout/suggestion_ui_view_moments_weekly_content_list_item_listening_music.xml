@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content_listening_history_view" android:tag="layout/suggestion_ui_view_moments_weekly_content_list_item_listening_music_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/moments_bg_grid_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="@color/moments_detail_grid_listening_music_bg_color" android:paddingHorizontal="@dimen/moments_grid_layout_history_padding_horizontal" android:paddingVertical="@dimen/moments_grid_layout_history_padding_vertical">
+        <TextView android:layout_gravity="start|center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_grid_layout_history_title_textbox_margin_bottom" android:text="@string/moments_listening_to_music_title_multi_line" style="@style/MomentsDetailGridHistoryTitleStyle" />
+        <LinearLayout android:layout_gravity="start|bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_history_item_margin_bottom" android:singleLine="true" style="@style/MomentsDetailGridHistorySubTitleStyle" />
+            <TextView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MomentsDetailGridHistoryDurationStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

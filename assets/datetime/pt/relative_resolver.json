@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "periodAndDurationGroupings": [
+          {
+            "timeDurationGroup": 2,
+            "timePeriodGroup": 3
+          }
+        ]
+      }
+    ],
+    "comment": "próxima semana, próximo mês, semana passada, ano passado, esta semana, este mês, último dia, etc."
+  },
+  {
+    "id": 2,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<month>|<day_of_week>)(?:\\s|$|\\.|,)",
+    "comment": "próximo domingo, segunda-feira passada, este terça-feira, próximo janeiro, fevereiro passado, este março, etc."
+  },
+  {
+    "id": 3,
+    "type": "NUM_TIME_AFTER_REFERENCE",
+    "comment": "dentro de 2 dias, uma semana depois, após uma semana, antes de 3 dias, etc.",
+    "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>|a)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "periodAndDurationGroupings": [
+          {
+            "timeDurationGroup": 1,
+            "timePeriodGroup": 2
+          }
+        ]
+      }
+    ]
+  }
+]
+  

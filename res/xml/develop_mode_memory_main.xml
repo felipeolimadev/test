@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/memory_activity">
+        <EditTextPreference android:title="@string/memory_minimum_staying_time" android:key="key_memory_minimum_staying_time" android:inputType="number" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/memory_past_travel">
+        <EditTextPreference android:title="@string/memory_minimum_past_travel_time" android:key="key_memory_minimum_past_travel_time" android:inputType="number" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+        <EditTextPreference android:title="@string/memory_minimum_ignore_city_threshold" android:key="key_memory_minimum_ignore_city_threshold" android:inputType="numberDecimal" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Configure">
+        <Preference android:title="@string/memory_analyzer_on_off_settings" android:fragment="com.samsung.android.moneta.debugui.developmode.memory.MemoryAnalyzerSwitchFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Source Injection">
+        <Preference android:title="@string/memory_rawdata_injection" android:fragment="com.samsung.android.moneta.debugui.developmode.memory.SourceInjectionFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

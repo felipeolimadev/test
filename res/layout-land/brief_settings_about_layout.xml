@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout-land/brief_settings_about_layout_0" android:background="@color/open_theme_about_page_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlwaysCollapsed|snap" style="@style/CollapsingToolBarStyle">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/AppCompatStyle" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_marginTop="16.0dip" app:layout_collapseMode="pin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/settings_about_land_layout" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                <include android:layout_gravity="center_vertical" android:id="@id/app_version_information_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" layout="@layout/brief_settings_about_app_version_information_layout" />
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="horizontal" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <include android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/brief_settings_about_button_layout" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

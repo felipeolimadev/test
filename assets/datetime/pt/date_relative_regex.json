@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "type": "RELATIVE_TIME_PERIOD",
+      "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>|<day_of_week>)",
+      "comment": "próxima semana, última semana, esta semana, este mês, último dia, etc.",
+      "isRelative": true
+    },
+    {
+      "id": 2,
+      "type": "NUM_TIME_AFTER_REFERENCE",
+      "patternString": "(<num>|<num_suffix>|a)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)",
+      "comment": "dentro de 2 dias, uma semana depois, após uma semana, últimos 2 dias, antes de 3 dias, etc.",
+      "isRelative": true,
+      "isPrefix": true
+    },
+    {
+      "id": 3,
+      "type": "AFTER_REFERENCE_NUM_TIME",
+      "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>)",
+      "comment": "depois de uma semana, últimos 2 dias, antes de 3 dias, últimos 3 dias, último terceiro dia, etc.",
+      "isRelative": true,
+      "isPrefix": true
+    }
+  ]
+  

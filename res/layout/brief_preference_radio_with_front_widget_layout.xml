@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_item_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16.0sp" android:id="@id/radio_button" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="16.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sec_widget_list_item_padding_top" android:layout_marginBottom="@dimen/sec_widget_list_item_padding_bottom" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+        <TextView android:ellipsize="marquee" android:id="@id/map_app_name" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/list_title_text_style" />
+        <TextView android:id="@id/last_used" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" style="@style/list_summary_text_style" />
+    </LinearLayout>
+</LinearLayout>

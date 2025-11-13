@@ -1,0 +1,21 @@
+SELECT ?hour (COUNT(?activity) AS ?activity_count)
+WHERE {
+    ?activity_type rdfs:subClassOf user:Activity .
+    ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+    # VALUES ?activity_type { user:Eating }
+    # VALUES ?activity_type { user:Sleeping }
+    # VALUES ?activity_type { user:Exercising }
+    # VALUES ?activity_type { user:Staying }
+    # VALUES ?activity_type { user:Moving }
+    # VALUES ?activity_type { user:SpeakingOnPhone }
+    <TARGET_ACTIVITY_FILTER>
+
+    ?activity rdf:type ?activity_type .
+    BIND(HOURS(?start_time) AS ?hour)
+
+    <TIME_FILTER>
+}
+GROUP BY ?hour
+ORDER BY DESC(?activity_count)

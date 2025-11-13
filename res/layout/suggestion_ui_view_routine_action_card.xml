@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/routine_action_card_container" android:tag="layout/suggestion_ui_view_routine_action_card_0" android:background="@drawable/rounded_widget_background" android:padding="@dimen/routine_action_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/routine_action_card_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/routine_action_card_title_icon" android:layout_width="@dimen/routine_action_card_title_icon_size" android:layout_height="@dimen/routine_action_card_title_icon_size" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+        <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/action_card_title_text_size" android:layout_gravity="center_vertical" android:id="@id/routine_action_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/routine_action_card_title_margin_start" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/routine_action_card_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/routine_action_card_item_container_margin_top" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/routine_action_card_action_button_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/routine_action_card_actions_container_margin_top" />
+</LinearLayout>

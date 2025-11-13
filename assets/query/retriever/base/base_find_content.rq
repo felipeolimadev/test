@@ -1,0 +1,24 @@
+select <OUTPUT>
+where{
+    {
+        select ?content (MAX(?c_time) AS ?content_time)
+        where {
+            <CONTENT_FILTER>
+            <ONE_HOP_EXPR>
+            FILTER EXISTS {?content rdf:type/rdfs:subClassOf content:Content .}
+            OPTIONAL {
+                ?content time:inXSDCreatedDateTimeStamp|time:inXSDBeginningDateTimeStamp ?c_time .
+            }
+            <PIVOT_TO_TIME>
+            <TIME_FILTER>
+        }
+        GROUP BY ?content
+        <SIMPLE_SORT_METHOD>
+        <LIMIT>
+        <OFFSET_STATEMENT>
+    }
+    <BODY_GET_TARGET_TRIPLE>
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+}
+<COMPLEX_SORT_METHOD>

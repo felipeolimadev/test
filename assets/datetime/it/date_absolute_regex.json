@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)?[\\s]*(?:<<dm_connector>>|[\\/.-])?[\\s]*(<num>)[\\s]*(?:<<my_connector>>|[\\/.-])[\\s]*(<num>)",
+    "comment": "12/03/2025"
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "<<date_keywords_before>>?\\s*(<num>|<num_suffix>)[\\s]*<<dm_connector>>?[\\s]*(<month>)[.]?[\\s]*(?:<<my_connector>>|[,])?[\\s]*(<num>)",
+    "comment": "12 marzo 2025"
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(<num>)[\\s]*(?:<<my_connector>>|[\\/.-])?[\\s]*<<dm_connector>>?[\\s]*(<month>[.]?)[\\s]*(?:<<my_connector>>|[\\/.-])?[\\s]*(<num>|<num_suffix>)",
+    "comment": "2017.Apr.03"
+  },
+  {
+    "id": 3,
+    "type": "DAY_NUM_MONTH_WORD",
+    "patternString": "<<date_keywords_before>>?\\s*(<num_suffix>|<num>)[\\s]*<<dm_connector>>?[\\s]*(<month>[.]?)",
+    "comment": "12 marzo"
+  },
+  {
+    "id": 3,
+    "type": "DAY_NUM_MONTH_WORD",
+    "patternString": "(<month>)[.]?\\s*<<dm_connector>>?[\\s]*(<num>|<num_suffix>)",
+    "comment": "marzo 12"
+  },
+  {
+    "id": 4,
+    "type": "MONTH_WORD_DAY_NUM_OR_YEAR_NUM",
+    "patternString": "(<month>)[\\s]*[.]?[\\s]*<<my_connector>>?[\\s]*(<num>|<num_suffix>)",
+    "comment": "marzo del 2025"
+  },
+  {
+    "id": 4,
+    "type": "TIME_PERIOD_KEYWORD_YEAR_NUM",
+    "patternString": "(<time_period>[\\s]*<<my_connector>>?[\\s]*(<num>))",
+    "comment": "anno 2025, meso 9, girono 21"
+  },
+  {
+    "id": 5,
+    "type": "DAY_OF_WEEK_DAY_NUM_MONTH_WORD_YEAR_OPTIONAL",
+    "patternString": "((<day_of_week>)\\s*[,]?\\s*(<num>|<num_suffix>)[\\s]*<<dm_connector>>?[\\s]*(<month>[.]?)[\\s]*(<<my_connector>>|[,])?[\\s]*(<num>)?)",
+    "comment": "mercoledì 12 marzo 2025"
+  },
+  {
+    "id": 6,
+    "type" : "special_days",
+    "patternString": "(<time_period>)?[\\s]*(<special_day>)",
+    "comment": "giorno dell'Indipendenza"
+  },
+  {
+    "id": 7,
+    "type": "MONTH_OR_DAY_OF_WEEK",
+    "patternString" : "((<month>)[.]?|<day_of_week>)",
+    "comment": "mercoledì"
+  },
+  {
+    "id": 8,
+    "type" : "RELATIVE_TIME_PERIOD_OF_RELATIVE_DAY",
+    "patternString": "(<num>|<num_suffix>)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)\\s*<<ref_rel_connector>>?\\s*(<relative_day>)",
+    "comment": "3° giorno dopo domani"
+  },
+  {
+    "id": 9,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString" : "(?:\\s|^|\\.|,|\\-|!)(<month>|<day_of_week>[.]?)\\s*(<num>)?",
+    "comment": "scorso gennaio, mercoledì scorso"
+  },
+  {
+    "id": 10,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString" : "(<time_period>)[\\s]*<<ref_num_connector>>?[\\s]*(<num>)[\\s]*<<ref_rel_connector>>?[\\s]*(<time_period>)[\\s]*<<ref_num_connector>>?[\\s]*(<num>)?",
+    "comment": "giorno 3 del mese 4"
+  },
+  {
+    "id": 11,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<num>|<num_suffix>)\\s*(?:di)?\\s*(<time_period>|<day_of_week>|<month>)\\s*[,|\\.]?\\s*(<num>)?",
+    "comment": "primo lunedì"
+  },
+  {
+    "id": 12,
+    "type": "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "patternString": "<<date_keywords_before>>?\\s*(<num>|<num_suffix>|<last_reference>\\s*)?(<time_period>|<day_of_week>)\\s*<<ref_rel_connector>>?\\s*(<num>|<num_suffix>|<month>|<last_reference>)\\s*(?:[,])?\\s*(<time_period>)?\\s*<<ref_rel_connector>>?\\s*(<num>|<num_suffix>|<month>|<last_reference>)?\\s*(<time_period>)?",
+    "comment": "primo lunedì del mese"
+  },
+  {
+    "id": 13,
+    "type": "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "patternString": "<<date_keywords_before>>?\\s*(<num>|<num_suffix>|<last_reference>)\\s*(<time_period>|<day_of_week>)?\\s*<<ref_rel_connector>>?\\s*(<num>|<num_suffix>|<month>|<last_reference>)\\s*(?:[,])?\\s*(<time_period>)?\\s*(<num>)?"
+  },
+  {
+    "id": 14,
+    "type": "RELATIVE_DAY",
+    "patternString": "(<relative_day>)"
+  },
+  {
+    "id" : 15,
+    "type" : "DAY_OF_MONTH",
+    "patternString" : "<<date_keywords_before>>?\\s*(<num_suffix>|<num>)\\s*(?!<current_reference>$)(?:<<ref_rel_connector>>)"
+  }
+]

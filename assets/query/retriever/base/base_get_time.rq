@@ -1,0 +1,16 @@
+select distinct ?s ?p ?o
+where
+{
+    VALUES (?iri) {<INPUT_IRI>}
+    ?iri rdf:type/rdfs:subClassOf time:TemporalEntity .
+    {
+        ?iri rdf:unknown? ?s .
+        FILTER(?p IN (time:hasBeginning, time:hasEnd))
+        ?s ?p ?o .
+    } UNION {
+        ?iri time:hasBeginning|time:hasEnd ?s .
+        FILTER(?p IN (time:inXSDDateTimeStamp))
+        ?s ?p ?o .
+    }
+}
+ORDER BY ?iri

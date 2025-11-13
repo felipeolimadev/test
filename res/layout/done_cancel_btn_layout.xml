@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_layout" android:background="@color/widget_setting_round_and_bgcolor" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_landscape_cancel" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/WidgetSettingLandscapeButtonStyle" />
+    <Button android:id="@id/btn_landscape_done" android:layout_height="wrap_content" android:text="@string/app_block_done" style="@style/WidgetSettingLandscapeButtonStyle" />
+</LinearLayout>

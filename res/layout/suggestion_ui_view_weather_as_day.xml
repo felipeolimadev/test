@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:tag="layout/suggestion_ui_view_weather_as_day_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/weather_as_day_background" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="@dimen/weather_as_day_card_height" android:scaleType="centerCrop" android:clipToOutline="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/weather_as_day_card_margin_horizontal">
+        <ImageView android:id="@id/weather_as_day_icon" android:layout_width="@dimen/weather_as_day_icon_size" android:layout_height="@dimen/weather_as_day_icon_size" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/weather_as_day_temperature_margin_start">
+            <TextView android:textSize="@dimen/weather_as_day_temperature_text_size" android:textColor="@color/weather_as_day_temperature_text_color" android:id="@id/weather_as_day_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+            <LinearLayout android:gravity="start|center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/weather_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/weather_as_day_location_text_size" android:textColor="@color/weather_as_day_location_text_color" android:ellipsize="end" android:id="@id/weather_location_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/weather_as_day_location_max_size" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="400" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/weather_as_day_location_margin_start">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/weather_as_day_end_text_size" android:textColor="@color/weather_as_day_upper_text_color" android:ellipsize="end" android:id="@id/weather_day_upper_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="600" />
+                <TextView android:textSize="@dimen/weather_as_day_end_text_size" android:textColor="@color/weather_as_day_upper_text_color" android:ellipsize="end" android:id="@id/weather_day_upper_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec" android:layout_marginStart="@dimen/weather_as_day_upper_text_margin_start" android:textFontWeight="400" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/weather_as_day_end_text_size" android:textColor="@color/weather_as_day_lower_text_color" android:ellipsize="end" android:id="@id/weather_day_lower_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/weather_as_day_lower_max_size" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="400" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

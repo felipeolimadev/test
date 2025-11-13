@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:shape="ring"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape>
+            <size android:height="5.0dip" android:width="5.0dip" />
+            <corners android:radius="4.0dip" />
+            <solid android:color="@color/news_tab_dot_select_color" />
+        </shape>
+    </item>
+</layer-list>

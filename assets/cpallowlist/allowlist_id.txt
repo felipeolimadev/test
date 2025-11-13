@@ -1,0 +1,7 @@
+perjalanan,travel,wisata,trip,bepergian
+menikah,upacara pernikahan,wedding,perkawinan,perayaanpernikahan,acarapernikahan,pernikahan,haripernikahan,marriage ceremony
+upacara masuk,upacarapenerimaan,upacaramatrikulasi,matriculation,upacarapendaftaran,entrance ceremony
+upacaradiploma,permulaan,harikelulusan,kelulusan,graduation,acarakelulusan,commencement,pertemuan,upacarawisuda
+birthday,hari ulang tahun,harikelahiran,ulangtahunkelahiran,tanggallahir,harinatal,birth anniversary
+ulangtahunperkawinan,ulang tahun pernikahan,wedding anniversary,marriage anniversary,peringatanpernikahan
+vacation, liburan

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/main_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/data_monitor_nav_graph" />
+    <include app:graph="@navigation/data_protection_nav_graph" />
+    <include app:graph="@navigation/work_nav_graph" />
+    <include app:graph="@navigation/collector_nav_graph" />
+    <include app:graph="@navigation/event_nav_graph" />
+    <include app:graph="@navigation/configuration_nav_graph" />
+    <include app:graph="@navigation/performance_nav_graph" />
+    <include app:graph="@navigation/util_exit_app_nav_graph" />
+    <include app:graph="@navigation/basic_domain_nav_graph" />
+    <include app:graph="@navigation/preference_nav_graph" />
+    <include app:graph="@navigation/dump_info_nav_graph" />
+    <fragment android:label="@string/moneta" android:name="com.samsung.android.moneta.debugui.developmode.DevelopModeActionFragment" android:id="@id/main_fragment">
+        <action android:id="@id/action_main_to_pde_data_monitor" app:destination="@id/pde_debug_monitor" />
+        <action android:id="@id/action_main_to_data_monitor" app:destination="@id/data_monitor_nav_graph" />
+        <action android:id="@id/action_main_to_data_protection" app:destination="@id/data_protection_nav_graph" />
+        <action android:id="@id/action_main_to_work" app:destination="@id/work_nav_graph" />
+        <action android:id="@id/action_main_to_performance" app:destination="@id/performance_nav_graph" />
+        <action android:id="@id/action_main_to_basic_domain" app:destination="@id/basic_domain_nav_graph" />
+        <action android:id="@id/action_main_to_preference" app:destination="@id/preference_nav_graph" />
+        <action android:id="@id/action_main_to_dump_info" app:destination="@id/dump_info_nav_graph" />
+        <action android:id="@id/action_main_to_collector" app:destination="@id/collector_nav_graph" />
+        <action android:id="@id/action_main_to_event" app:destination="@id/event_nav_graph" />
+        <action android:id="@id/action_main_to_configuration" app:destination="@id/configuration_nav_graph" />
+    </fragment>
+    <fragment android:label="PDE Data Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.PDEMonitorFragment" android:id="@id/pde_debug_monitor" />
+    <action android:id="@id/action_show_exit_app_dialog" app:destination="@id/util_exit_app_nav_graph" />
+    <fragment android:label="Magic Inference Test" android:name="com.samsung.android.moneta.debugui.developmode.search.MagicInferenceTestFragment" android:id="@id/magic_inference_test_fragment">
+        <action android:id="@id/action_main_to_s1_inference" app:destination="@id/s1_inference_detail_fragment" />
+        <action android:id="@id/action_main_to_bert_inference" app:destination="@id/bert_inference_detail_fragment" />
+    </fragment>
+    <fragment android:label="S1 Inference Detail" android:name="com.samsung.android.moneta.debugui.developmode.search.S1InferenceDetailFragment" android:id="@id/s1_inference_detail_fragment" />
+    <fragment android:label="BERT Inference Detail" android:name="com.samsung.android.moneta.debugui.developmode.search.BertInferenceDetailFragment" android:id="@id/bert_inference_detail_fragment" />
+    <action android:id="@id/action_main_to_recall_interface" app:destination="@id/magic_inference_test_fragment" />
+</navigation>

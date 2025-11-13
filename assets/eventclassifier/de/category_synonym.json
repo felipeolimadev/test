@@ -1,0 +1,131 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "Party",
+                    "Geburtstag",
+                    "Jahresabschlussparty",
+                    "Willkommensparty",
+                    "Wiedervereinigung",
+                    "Blind Date",
+                    "Verabredung",
+                    "gemeinsam essen",
+                    "auswärts essen",
+                    "Mahlzeit",
+                    "Einweihungsparty",
+                    "Gesellschaft",
+                    "Hochzeitszeremonie",
+                    "Abschlussfeier",
+                    "Eingangszeremonie",
+                    "Trauerfeier",
+                    "Fest",
+                    "Preisverleihung",
+                    "Ahnenriten",
+                    "Masse",
+                    "Verehrung",
+                    "Kirche",
+                    "Jubiläum",
+                    "Einkäufe",
+                    "Abendessen",
+                    "Mittagessen",
+                    "Brunch",
+                    "feiern",
+                    "Feier",
+                    "Dating",
+                    "Beerdigung",
+                    "Festival",
+                    "Hochzeitstag",
+                    "essen gehen"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "Dharma-Treffen"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "Besprechung",
+                    "Werkstatt",
+                    "Seminar",
+                    "Interview",
+                    "Arbeiten",
+                    "Konferenz",
+                    "Briefing-Sitzung",
+                    "arbeiten",
+                    "Teilzeitbeschäftigung",
+                    "Examen",
+                    "Abtretung",
+                    "Klasse",
+                    "Nehmen Sie am Unterricht teil",
+                    "Büro",
+                    "Forum",
+                    "Präsentation",
+                    "Analyse"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "geh zur Arbeit"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "Arbeit verlassen"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "reisen",
+                    "Camping",
+                    "Angeln",
+                    "Vergnügungspark",
+                    "Zoo",
+                    "Aquarium",
+                    "Bergsteigen",
+                    "Geschäftsreise",
+                    "Reise",
+                    "Tour",
+                    "Disney World",
+                    "Flitterwochen"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "Reservierung",
+                    "Buchung",
+                    "Ticket",
+                    "Termin",
+                    "Anreise",
+                    "Abreise",
+                    "einchecken",
+                    "auschecken"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+SELECT DISTINCT ?location ?place_type
+WHERE {
+    <LOCATION_FILTER>
+    ?location rdf:type ?place_type .
+} ORDER BY DESC(?location)

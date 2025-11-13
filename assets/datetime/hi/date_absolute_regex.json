@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*(\\.)?\\s*(<num>)\\s*(\\.)?\\s*(<num>)",
+    "comment": "25.01.00 | 25 01 00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*(?:-)\\s*(<num>)\\s*(?:-)?\\s*(<num>)",
+    "comment": "25-01-00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*(\/)\\s*(<num>)\\s*(\/)\\s*(<num>)",
+    "comment": "25/01/00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\/|\\.|\\-|,]?\\s*(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(<num>)",
+    "comment": "25th jan 2024",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 3,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(<num>|<num_suffix>)\\s*[\\/|\\.|\\-||,]?\\s*(<num>)",
+    "comment": "jan 2nd 2024"
+  },
+  {
+    "id": 4,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)\\s*[\\/|\\.|\\-]?\\s*(<num>)",
+    "comment": "02/24(mm/yy) | 01/02(dd/mm)",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 5,
+    "type": "MONTH_WORD_DAY_NUM",
+    "patternString": "(<month>[\\.]?)\\s*(<num>|<num_suffix>)",
+    "comment": "jan 25 | jan 25th"
+  },
+  {
+    "id": 5,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\/|\\.|\\-]?\\s*(<month>)",
+    "comment": "25 jan | 25th jan",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 6,
+    "type": "special_days",
+    "patternString": "(<recurring_keyword>|<after_range>)?\\s*(<special_day>)\\s*(<num>)?",
+    "comment": "labors day, independence day, every holi, holi of 2025, next holi"
+  },
+  {
+    "id": 8,
+    "type": "NUM_WORD_OR_NUM_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<num>|<num_suffix>)\\s*(<month>[\\.]?)\\s*[,]?\\s*(<num>)?",
+    "comment": "2nd of october, 2024",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 9,
+    "type": "RELATIVE_DAY",
+    "patternString": "(<relative_day>)",
+    "comment": "today, tmrw"
+  },
+  {
+    "id": 12,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<num>|<num_suffix>)\\s*(<time_period>|<day_of_week>)\\s*[,|\\.]?\\s*(<num>)?",
+    "comment": "2nd monday , 2025 "
+  },
+  {
+    "id": 13,
+    "type": "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "comment" : "जनवरी का पहला दिन, 2025 | जनवरी का पहला दिन | जनवरी 2025 का पहला सोमवार।",
+    "patternString": "(<month>)\\s*(?:[,])?\\s*(<time_period>)?\\s*(<num>)?\\s*(?:का\\s*)?(<num_suffix>|<last_reference>)\\s*(<time_period>|<day_of_week>)"
+  },
+  {
+    "id" : 14,
+    "type" : "",
+    "comment" : "first day of 2025| first monday of 2025",
+    "patternString" : "(<num>)\\s*(?:का\\s*)?(<num_suffix>|<last_reference>)\\s*(<time_period>|<day_of_week>)"
+  },
+  {
+    "id": 14,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString": "(<time_period>)\\s*(<num>|<num_suffix>)\\s*(<num>)?"
+  },
+  {
+    "id": 15,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(<num>)\\s*[,]?\\s*(<num>|<num_suffix>)\\s*(<month>)",
+    "comment" : "2025 2nd jan| 2025 2 jan"
+  },
+  {
+    "id": 16,
+    "type": "YEAR_NUM_MONTH_WORD_DAY_NUM",
+    "patternString": "(<num>)\\s*[,]?\\s*(<month>)\\s*(<num>|<num_suffix>)",
+    "comment" : "2025 jan 2nd| 2025 jan 2"
+  },
+  {
+    "id": 11,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString": "(<month>|<day_of_week>)",
+    "isOnlyDayOfWeek" : true
+  },
+  {
+    "id": 12,
+    "type": "DAY_OF_MONTH",
+    "patternString": "(<num_suffix>|<num>)\\s*(?:का\\s*)?"
+  }
+]

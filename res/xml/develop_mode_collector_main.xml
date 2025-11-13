@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_configuration">
+        <Preference android:title="@string/collector_collection_start_time" android:key="key_collector_collection_start_time" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/collector_notification_listener" android:key="key_collector_notification_listener" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_raw_data">
+        <Preference android:title="@string/collector_data_provider" android:key="key_collector_data_provider" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_signature" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.rawdata.SignatureRawDataHistoryFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_raw_data" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.rawdata.RawDataHistoryFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_raw_data_document" android:key="key_collector_document" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_raw_database_util">
+        <Preference android:title="@string/collector_raw_database_import_export" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.util.RawDatabaseUtilFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="PDC Simulation">
+        <Preference android:title="@string/collector_travel_simulation_tool" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.travelsimulationtool.TravelSimulationToolFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_simulation_scenario" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.travelsimulationscenario.TravelSimulationScenarioFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_context_injector" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.context.ContextInjectorFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_reset_analysis_status">
+        <SwitchPreferenceCompat android:checked="false" android:title="@string/collector_reset_gallery_preferences_analysis_status" android:key="key_collector_reset_gallery_preferences_analysis_status" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

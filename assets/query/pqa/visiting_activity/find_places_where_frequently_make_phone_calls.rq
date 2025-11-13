@@ -1,0 +1,19 @@
+SELECT ?location (COUNT (*) AS ?num_visits)
+WHERE {
+    {
+        ?staying rdf:type/rdfs:subClassOf user:Staying .
+        ?staying time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+        ?staying time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+        ?speaking rdf:type/rdfs:subClassOf user:SpeakingOnPhone .
+        ?staying time:intervalOverlaps ?speaking .
+
+        <TIME_FILTER>
+
+        <PERSON_FILTER>
+
+        ?staying user:atLocation ?location .
+    }
+} GROUP BY ?location
+ORDER BY ?num_visits
+<MAX_NUM_RESULTS>

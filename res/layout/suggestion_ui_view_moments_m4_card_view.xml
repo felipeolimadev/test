@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content" android:tag="layout/suggestion_ui_view_moments_m4_card_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:clipToOutline="true" />
+    <TextView android:id="@id/place" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/m4_type_text_view_margin_horizontal" android:layout_marginEnd="@dimen/m4_type_text_view_margin_horizontal" app:layout_constraintBottom_toTopOf="@id/date" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/MomentsWidgetAddressTextStyle" />
+    <TextView android:id="@id/date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m4_type_date_text_view_margin_bottom" android:layout_marginStart="@dimen/m4_type_text_view_margin_horizontal" android:layout_marginEnd="@dimen/m4_type_text_view_margin_horizontal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/MomentsWidgetDateTextStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

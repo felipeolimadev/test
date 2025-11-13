@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/moments_detail_content_detail_desc_bg_color" />
+    <corners android:radius="@dimen/location_card_address_text_view_content_detail_location_bg_radius" />
+    <stroke android:width="@dimen/moments_content_detail_video_desc_bg_stroke_width" android:color="@color/moments_detail_content_detail_desc_stroke_color" />
+    <padding android:left="@dimen/location_card_address_text_view_content_detail_padding_horizontal" android:top="@dimen/location_card_address_text_view_content_detail_padding_vertical" android:right="@dimen/location_card_address_text_view_content_detail_padding_horizontal" android:bottom="@dimen/location_card_address_text_view_content_detail_padding_vertical" />
+</shape>

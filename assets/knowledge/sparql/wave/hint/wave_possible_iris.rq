@@ -1,0 +1,123 @@
+
+SELECT ?S ?P (COUNT(DISTINCT ?tp2) AS ?O)
+
+WHERE{
+    {
+        SELECT DISTINCT ?tp2 ?person
+        WHERE {
+            {
+                # TravelEngram 이벤트 처리
+                ?eventProperty1 rdfs:subPropertyOf user:event .
+                ?eventProperty2 rdfs:subPropertyOf user:event .
+                ?event a user:TravelEngram ;
+                    ?eventProperty1 ?tp1 ;
+                    ?eventProperty2 ?tp2 .
+
+                FILTER(?tp1 != ?tp2)
+                ?tp1 a user:TakingPictures ;
+                time:hasBeginning/time:inXSDDateTimeStamp ?tp1Time .
+                ?tp2 a user:TakingPictures ;
+                time:hasBeginning/time:inXSDDateTimeStamp ?tp2Time .
+                FILTER(?tp1Time < ?tp2Time)
+
+                BIND(3 AS ?scoreEvent)
+            }UNION{
+                # ScheduledEvent 이벤트 처리
+                ?tp1 a user:TakingPictures ;
+                time:hasBeginning/time:inXSDDateTimeStamp ?tp1_begin ;
+                time:hasEnd/time:inXSDDateTimeStamp ?tp1_end .
+
+                ?tp2 a user:TakingPictures ;
+                time:hasBeginning/time:inXSDDateTimeStamp ?tp2_begin ;
+                time:hasEnd/time:inXSDDateTimeStamp ?tp2_end .
+
+                ?event rdf:type/rdfs:subClassOf user:ScheduledEvent ;
+                time:inXSDBeginningDateTimeStamp ?event_begin ;
+                time:inXSDEndDateTimeStamp ?event_end .
+
+                FILTER(?tp1_end >= ?event_begin && ?event_end >= ?tp1_begin &&
+                ?tp2_end >= ?event_begin && ?event_end >= ?tp2_begin)
+
+                FILTER(?tp1_begin < ?tp2_begin)
+
+                BIND(3 AS ?scoreEvent)
+            }
+
+            OPTIONAL {
+                # 초기 검색 결과에 포함된 사람 존재
+                ?tp1 user:withPerson ?person .
+                ?tp2 user:withPerson ?person .
+
+                # 초기 검색 결과에 포함된 사람 사진만 존재
+                OPTIONAL{
+                    FILTER NOT EXISTS {
+                        ?tp1 user:withPerson ?person .
+                        FILTER NOT EXISTS {
+                            ?tp2 user:withPerson ?person .
+                        }
+                    }
+                }
+
+                BIND(1 AS ?scorePerson)
+            }
+
+            OPTIONAL {
+                ?tp1 user:atLocation ?location .
+                ?tp2 user:atLocation ?location .
+
+
+                FILTER NOT EXISTS {
+                    ?event a/rdfs:subClassOf user:TravelEngram .
+                    ?location a/rdfs:subClassOf ?locationType .
+                    VALUES ?locationType { location:Home location:WorkPlace location:FrequentlyVisitedPlace }
+                }
+
+                BIND(1 AS ?scoreLocation)
+            }
+
+
+            # 총점 계산
+            BIND(COALESCE(?scoreEvent, 0) +
+            COALESCE(?scorePerson, 0) +
+            COALESCE(?scoreLocation, 0) AS ?totalScore)
+
+            FILTER(?totalScore > 3)
+        }
+    }
+    {
+        ?tp2 user:withPerson ?person .
+        VALUES ?P { "personToTPCount" }
+        ?person design:reassign? ?S.
+    }	UNION {
+        ?eventProperty rdfs:subPropertyOf user:event .
+        ?event ?eventProperty ?tp2 .
+        VALUES ?P { "travelToTPCount" }
+        ?event design:reassign? ?S.
+    } UNION{
+        ?tp2	time:hasBeginning/time:inXSDDateTimeStamp ?tp2_begin ;
+            time:hasEnd/time:inXSDDateTimeStamp ?tp2_end .
+        ?event	time:inXSDBeginningDateTimeStamp ?event_begin ;
+            time:inXSDEndDateTimeStamp ?event_end .
+        FILTER(?tp2_end >= ?event_begin && ?event_end >= ?tp2_begin)
+        VALUES ?P { "eventToTPCount" }
+        ?event design:reassign? ?S.
+    } UNION {
+        ?tp2 user:atLocation ?location .
+        ?location a ?locationType2.
+        BIND(
+        COALESCE(
+        IF(?locationType2 = location:Home, "homeLocationToTPCount", 1/0),
+        IF(?locationType2 = location:WorkPlace, "workPlaceLocationToTPCount", 1/0),
+        IF(?locationType2 = location:FrequentlyVisitedPlace, "fvpLocationToTPCount", 1/0),
+        "locationToTPCount") AS ?P)
+        ?location design:reassign? ?S.
+    } UNION {
+        VALUES ?object { contenttag:ice_skating contenttag:jet_skiing contenttag:cycling contenttag:basketball contenttag:volleyball contenttag:golf contenttag:baseball contenttag:hockey contenttag:fog contenttag:rain contenttag:lego contenttag:rock_climbing contenttag:wedding contenttag:graduation contenttag:camping contenttag:amusement_park contenttag:aquarium contenttag:zoo contenttag:christmas }
+
+        ?tp2 user:objectContent/content:objectRecognized ?object
+        VALUES ?P { "objectToTPCount" }
+        ?object design:reassign? ?S.
+
+    }
+
+}GROUP BY ?S ?P

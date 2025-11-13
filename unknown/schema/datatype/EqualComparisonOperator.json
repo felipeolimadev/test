@@ -1,0 +1,25 @@
+{
+  "name": "EqualComparisonOperator",
+  "type": "datatype",
+  "id": "datatype.enumeration.EqualComparisonOperator",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "equalTo",
+      "notEqualTo"
+    ],
+    "descriptions": [
+      {
+        "value": "equalTo",
+        "description": "Equal to"
+      },
+      {
+        "value": "notEqualTo",
+        "description": "Not equal to"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

@@ -1,0 +1,21 @@
+select <OUTPUT>
+where{
+    {
+        select ?engram (Max(?engram_start_time) AS ?last_pivot_time)
+        where {
+            <ONE_HOP_EXPR>
+            <ENGRAM_FILTER>
+            ?engram time:hasBeginning/time:inXSDDateTimeStamp ?engram_start_time .
+            <PIVOT_TO_TIME>
+            <TIME_FILTER>
+        }
+        GROUP BY ?engram
+        <SIMPLE_SORT_METHOD>
+        <LIMIT>
+        <OFFSET_STATEMENT>
+    }
+    <BODY_GET_TARGET_TRIPLE>
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+}
+<COMPLEX_SORT_METHOD>

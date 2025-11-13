@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/location_container" android:tag="layout/suggestion_ui_view_moments_widget_location_full_view_0" android:padding="@dimen/moments_widget_location_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/location_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/location_container" app:layout_constraintEnd_toEndOf="@id/location_container">
+        <ImageView android:layout_gravity="center" android:id="@id/location_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moments_location_bg_oval" />
+        <ImageView android:layout_gravity="center" android:id="@id/location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/moments_widget_ic_location_margin" android:src="@drawable/ic_moments_location_full" />
+    </FrameLayout>
+    <TextView android:layout_gravity="center_vertical" android:id="@id/location_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/location_container" app:layout_constraintTop_toTopOf="@id/location_container" style="@style/MomentsWidgetLocationFullTextStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

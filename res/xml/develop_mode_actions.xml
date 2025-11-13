@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pde_settings" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="@string/constraints_switch" android:key="key_constraints_switch" android:summary="@string/constraints_switch_description" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/force_run_data_processing" android:key="key_start_processing" android:summary="@string/force_run_data_processing_description" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/reset_processing" android:key="key_reset_processing" android:summary="@string/reset_processing_description" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/processing_status" android:key="key_processing_status" android:summary="@string/processing_status_description" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/worker_management" android:key="key_worker_management" android:summary="@string/worker_management_description" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/monitor_history_category" app:iconSpaceReserved="false">
+        <Preference android:title="@string/data_monitor" android:key="key_data_monitor" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/module_category" app:iconSpaceReserved="false">
+        <Preference android:title="@string/avf" android:key="key_avf" android:fragment="com.samsung.android.moneta.debugui.developmode.avf.AvfMainPreference" app:iconSpaceReserved="false" />
+        <Preference android:title="SSE" android:fragment="com.samsung.android.moneta.debugui.developmode.sse.SsePreference" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector" android:key="key_collector" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/basic_domain" android:key="key_basic_domain" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/knowledge" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference" android:key="key_preference" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/memory" android:fragment="com.samsung.android.moneta.debugui.developmode.memory.MemoryFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/search" android:fragment="com.samsung.android.moneta.debugui.developmode.search.SearchMainFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/event" android:key="key_event" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/Notification" android:fragment="com.samsung.android.moneta.debugui.developmode.notification.NotificationFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/email_collector" android:fragment="com.samsung.android.moneta.debugui.developmode.email.EmailCollectorFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/simple_test" app:iconSpaceReserved="false">
+        <Preference android:title="@string/configuration" android:key="key_configuration" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/performance" android:key="key_performance" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/data_protection" android:key="key_data_protection" app:iconSpaceReserved="false" />
+        <Preference android:title="Dump Info" android:key="key_dump_info" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/pde_policy" android:key="policy" app:fragment="com.samsung.android.moneta.debugui.developmode.scpm.SCPMPolicyFragment" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="@string/enable_log_level" android:key="key_extra_log_switch" android:summary="Turn on to enable extra Verbose log" android:defaultValue="false" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/application_info" app:iconSpaceReserved="false">
+        <Preference android:title="@string/version" android:key="key_version" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

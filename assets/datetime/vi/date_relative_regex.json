@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "type": "NUM_TIME_AFTER_REFERENCE",
+    "comment": "2 days from now, a week after, after a week, past 2 days, before 3 days, etc.",
+    "patternString": "(?:của|trong)?\\s*((<num>)?\\s*(<time_period>))\\s*((<num>)?\\s*(<time_period>))?\\s*((<num>)?\\s*(<time_period>))?\\s*(<after_reference>|<before_reference>)\\s*(?:của|trong)?",
+    "isRelative": true,
+    "isPrefix": true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id": 2,
+    "type": "AFTER_REFERENCE_NUM_TIME",
+    "comment": "after a week, before 2 months",
+    "patternString": "(?:của|trong)?\\s*(<after_reference>|<before_reference>)\\s*((<num>)?\\s*(<time_period>))\\s*((<num>)?\\s*(<time_period>))?\\s*((<num>)?\\s*(<time_period>))?\\s*(?:của|trong)?",
+    "isRelative": true,
+    "isPrefix" : true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id" : 3,
+    "type" : "AFTER_REFERENCE_NUM_TIME_ONLY_FOR_PREFIX",
+    "comment" : "next month, next year, this will only serve as a prefix | suffix for cases like 25th jan next year, only next year will be handled by range resolver.",
+    "patternString" : "(?:của|trong)?\\s*(<after_range>|<before_range>|<last_reference>|<current_reference>)\\s*(<time_period>)\\s*(?:của|trong)?",
+    "isOnlyPrefix" : true,
+    "isPrefix" : true,
+    "isRelative" : false
+  },
+  {
+    "id" : 5,
+    "type" : "RELATIVE_DAY_OF_WEEK",
+    "patternString" : "(<after_range>|<before_range>|<current_reference>|<last_reference>)\\s*(<day_of_week>)",
+    "comment" : "last sunday, next sunday",
+    "isRelative" : true
+  },
+  {
+    "id" : 5,
+    "type" : "RELATIVE_DAY_OF_WEEK",
+    "patternString" : "(<day_of_week>)\\s*(<time_period>)?\\s*(<after_reference>|<last_reference>|<after_range>|<before_range>|<current_reference>)",
+    "comment" : "last sunday, next sunday, this sunday",
+    "isRelative" : true
+  }
+]

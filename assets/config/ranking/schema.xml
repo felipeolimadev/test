@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="ranking" package="" prefKey="ranking" version="2">
+    <defaultAnalyzer class="bs.LowerCaseKeywordAnalyzer" />
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="float_stored" dataType="float" class="StoredField"/>
+    <fieldType name="long_stored" dataType="long" class="StoredField"/>
+
+    <field name="_id" type="string" />
+    <field name="query_string" type="string" />
+    <field name="index_name" type="string" />
+    <field name="select_id" type="string" />
+    <field name="usage_score" type="float_stored"/>
+    <field name="usage_timestamp" type="long_stored"/>
+</schema>

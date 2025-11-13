@@ -1,0 +1,23 @@
+select <OUTPUT>
+where{
+    {
+        select ?activity (Max(?activity_start_time) AS ?last_pivot_time)
+        where {
+            <ONE_HOP_EXPR>
+            ?activity (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDBeginningDateTimeStamp ?activity_start_time .
+            FILTER NOT EXISTS { ?something1 time:hasBeginning ?activity }
+            FILTER NOT EXISTS { ?something2 time:hasEnd ?activity }
+            <ACTIVITY_FILTER>
+            <PIVOT_TO_TIME>
+            <TIME_FILTER>
+        }
+        GROUP BY ?activity
+        <SIMPLE_SORT_METHOD>
+        <LIMIT>
+        <OFFSET_STATEMENT>
+    }
+    <BODY_GET_TARGET_TRIPLE>
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+}
+<COMPLEX_SORT_METHOD>

@@ -1,0 +1,232 @@
+{
+  "records": [
+    {
+      "key": "Set Bedtime:com.samsung.clock",
+      "value": {
+        "usageIds": "1400"
+      }
+    },
+    {
+      "key": "Reminder notification:com.samsung.clock",
+      "value": {
+        "usageIds": "1403"
+      }
+    },
+    {
+      "key": "Bedtime Sound on or off:com.samsung.clock",
+      "value": {
+        "usageIds": "1036"
+      }
+    },
+    {
+      "key": "Bedtime Vibration on or off:com.samsung.clock",
+      "value": {
+        "usageIds": "1025"
+      }
+    },
+    {
+      "key": "Bedtime Snooze on or off:com.samsung.clock",
+      "value": {
+        "usageIds": "1023"
+      }
+    },
+    {
+      "key": "Bedtime Cancel:com.samsung.clock",
+      "value": {
+        "usageIds": "1221"
+      }
+    },
+    {
+      "key": "Bedtime Save:com.samsung.clock",
+      "value": {
+        "usageIds": "1222"
+      }
+    },
+    {
+      "key": "BurstShot:com.samsung.camera",
+      "value": {
+        "usageIds": "0006"
+      }
+    },
+    {
+      "key": "Take selfie:com.samsung.camera",
+      "value": {
+        "usageIds": "2002"
+      }
+    },
+    {
+      "key": "Effects:com.samsung.camera",
+      "value": {
+        "usageIds": "0011"
+      }
+    },
+    {
+      "key": "Skin tone level:com.samsung.camera",
+      "value": {
+        "usageIds": "9014"
+      }
+    },
+    {
+      "key": "Macro mode:com.samsung.camera",
+      "value": {
+        "usageIds": "0231"
+      }
+    },
+    {
+      "key": "Wide lens:com.samsung.camera",
+      "value": {
+        "usageIds": "0213"
+      }
+    },
+    {
+      "key": "Tele lens:com.samsung.camera",
+      "value": {
+        "usageIds": "0214"
+      }
+    },
+    {
+      "key": "One handed zoom:com.samsung.camera",
+      "value": {
+        "usageIds": "0217"
+      }
+    },
+    {
+      "key": "View content:com.samsung.gallery",
+      "value": {
+        "usageIds": "1268"
+      }
+    },
+    {
+      "key": "Save content:com.samsung.gallery",
+      "value": {
+        "usageIds": "1270"
+      }
+    },
+    {
+      "key": "Close content:com.samsung.gallery",
+      "value": {
+        "usageIds": "1271"
+      }
+    },
+    {
+      "key": "Share content:com.samsung.gallery",
+      "value": {
+        "usageIds": "1278"
+      }
+    },
+    {
+      "key": "Hide album:com.samsung.gallery",
+      "value": {
+        "usageIds": "1824"
+      }
+    },
+    {
+      "key": "Empty trash:com.samsung.gallery",
+      "value": {
+        "usageIds": "7112"
+      }
+    },
+    {
+      "key": "Share to instagram:com.samsung.gallery",
+      "value": {
+        "usageIds": "4014"
+      }
+    },
+    {
+      "key": "Share to feed:com.samsung.gallery",
+      "value": {
+        "usageIds": "4018"
+      }
+    },
+    {
+      "key": "Share to story:com.samsung.gallery",
+      "value": {
+        "usageIds": "4019"
+      }
+    },
+    {
+      "key": "Share memories:com.samsung.gallery",
+      "value": {
+        "usageIds": "3036"
+      }
+    },
+    {
+      "key": "Save memories:com.samsung.gallery",
+      "value": {
+        "usageIds": "3037"
+      }
+    },
+    {
+      "key": "Picture search:com.samsung.gallery",
+      "value": {
+        "usageIds": "1003"
+      }
+    },
+    {
+      "key": "Mark all as read:com.samsung.messaging",
+      "value": {
+        "usageIds": "1113"
+      }
+    },
+    {
+      "key": "Locked messages:com.samsung.messaging",
+      "value": {
+        "usageIds": "1114"
+      }
+    },
+    {
+      "key": "Video call:com.samsung.messaging",
+      "value": {
+        "usageIds": "1179"
+      }
+    },
+    {
+      "key": "Make a call:com.samsung.phone",
+      "value": {
+        "usageIds": "1109"
+      }
+    },
+    {
+      "key": "Send message:com.samsung.phone",
+      "value": {
+        "usageIds": "1110"
+      }
+    },
+    {
+      "key": "Record a call:com.samsung.phone",
+      "value": {
+        "usageIds": "1118"
+      }
+    },
+    {
+      "key": "Open webpage:com.samsung.internet",
+      "value": {
+        "usageIds": "2037"
+      }
+    },
+    {
+      "key": "Bookmark status:com.samsung.internet",
+      "value": {
+        "usageIds": "2001"
+      }
+    },
+    {
+      "key": "Select search engine:com.samsung.internet",
+      "value": {
+        "usageIds": "2218"
+      }
+    },
+    {
+      "key": "Switch search engine:com.samsung.internet",
+      "value": {
+        "usageIds": "2031"
+      }
+    },
+    {
+      "key": "Share page:com.samsung.internet",
+      "value": {
+        "usageIds": "2461"
+      }
+    }
+  ]
+}

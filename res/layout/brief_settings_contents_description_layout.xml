@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sec_widget_round_and_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/BriefSettingHelpDescription" android:id="@id/brief_settings_contents_description_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/brief_settings_content_to_include_description" android:layout_marginStart="@dimen/brief_settings_top_text_description_margin_start" android:layout_marginEnd="@dimen/brief_settings_top_text_description_margin_end" />
+</LinearLayout>

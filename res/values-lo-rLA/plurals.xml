@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">ຍັງເຫຼືອ %d ວັນ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s ກຳລັງຈະເກີດຂຶ້ນໃນ %2$d ວັນ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d ເຫດການ%3$s ຈະສືບຕໍ່ໃນມື້ອື່ນ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">ທ່ານມີ %1$s%2$d ເຫດການ%3$s ໃນມື້ນີ້.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">ທ່ານມີ %1$d ເຫດການມື້ນີ້. ເຫດການທຳອິດແມ່ນ %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$sຍັງເຫຼືອ %2$d ເຫດການ%3$s ສຳລັບມື້ນີ້.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">ທ່ານມີ %1$s%2$d ເຫດການ%3$s ໃນມື້ອື່ນ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">ທ່ານມີ %1$d ເຫດການມື້ອື່ນ. ເຫດການທຳອິດແມ່ນ %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d ເຫດການ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">ເລີ່ມ​ຕົ້ນໃນ %d ນທ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">ເຫຼືອ %d ຕົວເຕືອນສຳລັບມື້ນີ້</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">ທ່ານໄດ້ຮັບ %d ຂໍ້ຄວາມການຈັດສົ່ງມື້ນີ້. ກວດເບິ່ງເພື່ອໃຫ້ແນ່ໃຈວ່າທ່ານອັບເດດໃນສະຖານະການຈັດສົ່ງຂອງທ່ານ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">ການຈັດສົ່ງ %d ຄັ້ງມື້ນີ້</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">ສູງກວ່າເປົ້າໝາຍ %d ຄັ້ງໃນອາທິດນີ້.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">ບັນລຸ %d ເປົ້າໝາຍກິດຈະກຳແລ້ວ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">ລະດັບຄວາມສູງທັງໝົດຂອງທ່ານທີ່ເພີ່ມຂຶ້ນແມ່ນ %1$s ແລະ ທ່ານເຜົາຜານ %2$,d ແຄລໍຣີ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">ຄວາມໄວກ້າວສະເລ່ຍຂອງທ່ານແມ່ນ %1$s ແລະ ທ່ານເຜົາຜານ %2$,d ແຄລໍຣີ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">ຄວາມໄວສະເລ່ຍຂອງທ່ານແມ່ນ %1$s ແລະ ທ່ານເຜົາຜານ %2$,d ແຄລໍຣີ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">ນີ້ແມ່ນການສະຫຼຸບການອອກກຳລັງກາຍ %1$s ຂອງທ່ານ. ໄລຍະເວລາແມ່ນ %2$s ແລະ ທ່ານເຜົາຜານ %3$,d ແຄລໍຣີ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">ທ່ານພາດຢາທີ່ກຳນົດເວລາໄວ້ %d ລາຍການມື້ນີ້.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ຊົ່ວໂມງ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ຊົ່ວໂມງ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d ນທ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d ນາທີ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">ທ່ານມີ %1$s%2$d ສາຍໂທທີ່ບໍ່ຮັບ%3$s ມື້ນີ້ທີ່ທ່ານຍັງບໍ່ໄດ້ກວດເບິ່ງ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">ທ່ານມີ %d ສາຍໂທທີ່ບໍ່ໄດ້ຮັບໃນມື້ນີ້. ກວດເບິ່ງສາຍໂທທີ່ບໍ່ໄດ້ຮັບເຫຼົ່ານີ້ໃນ Now brief ຂອງທ່ານ. ຖ້າຕ້ອງການ, ທ່ານຍັງສາມາດຕັ້ງຕົວເຕືອນເພື່ອທີ່ທ່ານຈະບໍ່ລືມໂທກັບ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">ອີກ %d ສາຍບໍ່ໄດ້ຮັບ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d ສາຍບໍ່ໄດ້ຮັບ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ຊົ່ວໂມງຜ່ານມາ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d ນາທີຜ່ານມາ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">ທ່ານຈຳເປັນຕ້ອງມີອາຍຸຢ່າງໜ້ອຍ %d ປີ ເພື່ອໃຊ້ຄຸນສົມບັດຄວາມອັດສະລິຍະຂັ້ນສູງຂອງ Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d ຂໍ້ຄວາມ</item>
+        <item quantity="one">%d ຂໍ້ຄວາມ</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d ໄມລ໌</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d ວິນາທີ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">ທ່ານໄດ້ຕັ້ງ %1$s%2$d ໂມງປຸກ%3$s ສໍາລັບຕອນເຊົ້າ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">ທ່ານໄດ້ຕັ້ງ %1$s%2$d ໂມງປຸກ%3$s ສໍາລັບຕອນເຊົ້າມື້ອື່ນ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sອອກເດີນທາງໃນເວລາ %2$s%3$s ເພື່ອໄປເຖິງສະໜາມບິນຢ່າງໜ້ອຍ %4$d ຊົ່ວໂມງກ່ອນການອອກເດີນທາງ. ຕັ້ງໂມງປຸກເພື່ອໃຫ້ທ່ານບໍ່ລືມ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sອອກເດີນທາງໃນເວລາ %2$s%3$s ເພື່ອໄປຮອດສະໜາມບິນຢ່າງໜ້ອຍ %4$d ຊົ່ວໂມງກ່ອນຖ້ຽວບິນຂອງທ່ານ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">ແນະນຳແຜນການເດີນທາງ %1$d-ວັນສຳລັບ %2$s ລວມທັງສະຖານທີ່ທີ່ຈະໄປ, ສິ່ງທີ່ຈະເຮັດ ແລະ ຮ້ານອາຫານທີ່ຄຸ້ມຄ່າທີ່ຈະລອງ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">ກວດເບິ່ງ %1$sແອັບທີ່ແນະນຳ%2$s ເຫຼົ່ານີ້ ທີ່ອາດເປັນປະໂຫຍດໃນລະຫວ່າງການເດີນທາງຂອງທ່ານ.</item>
+        <item quantity="one">ກວດເບິ່ງ %1$sແອັບທີ່ແນະນຳ%2$s ນີ້ ທີ່ອາດເປັນປະໂຫຍດໃນລະຫວ່າງການເດີນທາງຂອງທ່ານ.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sດາວໂຫຼດຊຸດພາສານີ້%2$s ໄວ້ລ່ວງໜ້າເພື່ອໃຫ້ທ່ານພ້ອມໃຊ້ມັນໃນນາຍແປພາສາເມື່ອທ່ານມາເຖິງປາຍທາງຂອງທ່ານ.</item>
+        <item quantity="one">%1$sດາວໂຫຼດຊຸດພາສາເຫຼົ່ານີ້%2$s ໄວ້ລ່ວງໜ້າເພື່ອໃຫ້ທ່ານພ້ອມໃຊ້ພວກມັນໃນນາຍແປພາສາເມື່ອທ່ານມາເຖິງປາຍທາງຂອງທ່ານ.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">ຊຸດພາສາທີ່ຈະດາວໂຫຼດ</item>
+        <item quantity="one">ຊຸດພາສາທີ່ຈະດາວໂຫຼດ</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">ອຸປະກອນ %d ເຄື່ອງເປີດຢູ່</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">ຕິດຕໍ່ຫຼ້າສຸດ %d ວັນຜ່ານມາ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">ຕິດ​ຕໍ່ຫຼ້າສຸດ %d ວັນຜ່ານມາ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">ຕິດ​ຕໍ່ຫຼ້າສຸດ %d ເດືອນຜ່ານມາ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">ຕິດ​ຕໍ່ຫຼ້າສຸດ %d ອາທິດຜ່ານມາ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">ຜູ້ຕິດຕໍ່ອີກ %d ຄົນ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">ທ່ານມີຄູປ່ອງໃນ Samsung Wallet ທີ່ຈະໝົດອາຍຸໃນ %d ວັນ. ໃຫ້ແນ່ໃຈວ່າທ່ານໃຊ້ມັນກ່ອນທີ່ມັນຈະໝົດອາຍຸ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">ລົບ %d ອົງສາສູງ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">ລົບ %d ອົງສາຕ່ຳ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">ທ່ານມີເຫດການໃນປະຕິທິນຂອງທ່ານຊື່ວ່າ %1$s. ມັນຈະມີອຸນຫະພູມ %2$d ອົງສາ %3$s ໃນເວລາ %4$s ໃນ %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">%d ອົງສາສູງ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">%d ອົງສາຕ່ຳ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">ການເບິ່ງ %s</item>
+        <item quantity="one">ມຸມມອງ %s</item>
+    </plurals>
+</resources>

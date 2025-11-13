@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/card_container" android:tag="layout/suggestion_ui_view_qqmusic_authentication_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_nudge_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/card_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/qqmusic_auth_text_margin_start" android:layout_marginVertical="@dimen/qqmusic_auth_margin_vertical">
+        <TextView android:textSize="@dimen/qqmusic_auth_title_text_size" android:textColor="@color/spotify_card_text_color" android:ellipsize="end" android:id="@id/card_title" android:layout_width="fill_parent" android:layout_height="@dimen/qqmusic_auth_title_text_height" android:layout_marginBottom="@dimen/qqmusic_auth_margin_between_text" android:text="@string/qqmusic_authentication_header" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="600" />
+        <TextView android:textSize="@dimen/qqmusic_auth_sub_title_text_size" android:textColor="@color/spotify_card_text_color" android:ellipsize="end" android:id="@id/card_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qqmusic_authentication_body" android:maxLines="3" android:fontFamily="sec" android:textFontWeight="400" />
+    </LinearLayout>
+</LinearLayout>

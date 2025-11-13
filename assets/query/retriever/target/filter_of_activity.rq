@@ -1,0 +1,7 @@
+{
+    ?predicate rdfs:subPropertyOf user:object .
+    ?activity ?predicate ?content .
+    ?content rdf:type ?iri .
+    BIND("content" AS ?iri_type)
+}
+

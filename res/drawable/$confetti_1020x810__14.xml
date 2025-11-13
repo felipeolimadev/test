@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="250" android:valueFrom="0" android:valueTo="0" android:propertyName="translateY" />
+        <objectAnimator android:duration="50" android:valueFrom="427" android:valueTo="427" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__15" android:duration="1050" android:valueFrom="427" android:valueTo="508.163" android:propertyName="translateY" />
+    </set>
+</set>

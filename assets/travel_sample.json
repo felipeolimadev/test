@@ -1,0 +1,83 @@
+{
+  "travelInfo": {
+    "isDomestic": false,
+    "startTime": 1756911600000,
+    "endTime": 1757834100000,
+    "travelDuration": 10,
+    "places": [
+      {
+        "city": "London",
+        "country": "GBR",
+        "name": "",
+        "address": "",
+        "lat": 0.0,
+        "lng": 0.0
+      }
+    ],
+    "isAugmented": true
+  },
+  "dailyItineraries": [
+    {
+      "dayIndex": 1,
+      "transportationList": [
+        {
+          "departure": {
+            "city": "Seoul",
+            "country": "KOR",
+            "name": "인천국제공항 (ICN)",
+            "address": "",
+            "lat": 0.0,
+            "lng": 0.0
+          },
+          "arrival": {
+            "city": "London",
+            "country": "GBR",
+            "name": "히스로국제공항 (LHR)",
+            "address": "",
+            "lat": 0.0,
+            "lng": 0.0
+          },
+          "departureTime": "2025-09-04T10:55:00+09:00[Asia/Seoul]",
+          "arrivalTime": "2025-09-04T17:20:00+01:00[Europe/London]",
+          "transportationNumber": "KE907",
+          "seatInfo": "01A",
+          "type": "FLIGHT",
+          "sourcePackage": ""
+        }
+      ],
+      "reservationList": [],
+      "accommodation": []
+    },
+    {
+      "dayIndex": 10,
+      "transportationList": [
+        {
+          "departure": {
+            "city": "London",
+            "country": "GBR",
+            "name": "히스로국제공항 (LHR)",
+            "address": "",
+            "lat": 0.0,
+            "lng": 0.0
+          },
+          "arrival": {
+            "city": "Seoul",
+            "country": "KOR",
+            "name": "인천국제공항 (ICN)",
+            "address": "",
+            "lat": 0.0,
+            "lng": 0.0
+          },
+          "departureTime": "2025-09-13T19:35:00+01:00[Europe/London]",
+          "arrivalTime": "2025-09-14T16:15:00+09:00[Asia/Seoul]",
+          "transportationNumber": "KE908",
+          "seatInfo": "01B",
+          "type": "FLIGHT",
+          "sourcePackage": ""
+        }
+      ],
+      "reservationList": [],
+      "accommodation": []
+    }
+  ]
+}

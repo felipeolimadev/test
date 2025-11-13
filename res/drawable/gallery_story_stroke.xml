@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/gallery_story_radius" />
+    <gradient android:startColor="@color/transparent" android:endColor="@color/gallery_story_gradient_end" android:angle="270.0" />
+    <stroke android:width="@dimen/gallery_story_border_width" android:color="@color/gallery_story_border_color" />
+</shape>

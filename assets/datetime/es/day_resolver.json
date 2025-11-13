@@ -1,0 +1,95 @@
+[
+  {
+    "id" : 1,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1,
+        "dayOfWeek" : 2
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<num>|<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "día"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "día"
+  },
+  {
+    "id": 3,
+    "patternString": "(?:\\s|^|\\.|,)(<day_of_week>)[.]?\\s*[,]?(<num>)?(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "dayOfWeek": 1
+      },
+      {
+        "dayOfWeek": 1,
+        "year": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "MONTH_WORD_DAY_NUM_KEYWORD_YEAR_NUM",
+    "patternString": "(?:\\s|^|\\.|,)((<month>)\\s*\\(<time_period>[\\s]*(<num>|<num_suffix>)\\)[,]?\\s*(<num>))(?:\\s|$|\\.|,)",
+    "comment": "abril (día 10), 2023",
+    "mapping": [
+      {
+        "day": 2,
+        "month": 1,
+        "year": 3
+      }
+    ],
+    "shouldContainKeyword" : "día"
+  },
+  {
+    "id": 5,
+    "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "weekCount": 1
+      }
+    ],
+    "shouldContainKeyword": "semana",
+    "comment" : "week | weekend"
+  },
+  {
+    "id": 6,
+    "patternString": "(?:\\s|^|\\.|,|\\-)(<relative_day>)(?:\\s|$|\\.|,|\\-)",
+    "isRelative" : true,
+    "comment" : "en = (today | tmrw | yesterday), es = (hoy | mañana | ayer)"
+  },
+  {
+    "id": 7,
+    "patternString" : "(?:\\s|^|\\.|,)(<last_reference>)\\s*(?:del?|de el)?\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "patternString" : "(?:\\s|^|\\.|,)(<last_reference>)\\s*(?:del?|de el)?(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "día"
+  }
+]

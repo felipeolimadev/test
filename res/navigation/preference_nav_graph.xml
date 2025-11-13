@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/preference_nav_graph" app:startDestination="@id/preference_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Preference" android:name="com.samsung.android.moneta.debugui.developmode.preference.PreferenceFragment" android:id="@id/preference_main">
+        <action android:id="@id/action_preference_main_to_status_board" app:destination="@id/status_board" />
+        <action android:id="@id/action_preference_main_to_size_monitor" app:destination="@id/size_monitor" />
+        <action android:id="@id/action_preference_main_to_data_injector" app:destination="@id/data_injector" />
+        <action android:id="@id/action_preference_main_to_lifestyle_social" app:destination="@id/lifestyle_social" />
+        <action android:id="@id/action_preference_main_to_lifecycle_media_entertainment" app:destination="@id/lifecycle_media_entertainment" />
+        <action android:id="@id/action_preference_main_to_lifestyle_exercise" app:destination="@id/lifestyle_exercise" />
+        <action android:id="@id/action_preference_main_to_lifecycle_pet" app:destination="@id/lifecycle_pet" />
+        <action android:id="@id/action_preference_main_to_lifecycle_web_history" app:destination="@id/lifecycle_web_history" />
+        <action android:id="@id/action_preference_main_to_lifestyle_mobility" app:destination="@id/lifestyle_mobility" />
+        <action android:id="@id/action_preference_main_to_lifestyle_place" app:destination="@id/lifestyle_place" />
+        <action android:id="@id/action_preference_main_to_interest" app:destination="@id/lifestyle_interest" />
+        <action android:id="@id/action_preference_main_to_log_view" app:destination="@id/log_view" />
+        <action android:id="@id/action_preference_main_to_trend_report" app:destination="@id/trend_report" />
+    </fragment>
+    <fragment android:label="Status Board" android:name="com.samsung.android.moneta.debugui.developmode.preference.status.StatusBoardFragment" android:id="@id/status_board" />
+    <fragment android:label="Size Monitor" android:name="com.samsung.android.moneta.debugui.developmode.preference.status.SizeMonitorFragment" android:id="@id/size_monitor" />
+    <fragment android:label="Data Injector" android:name="com.samsung.android.moneta.debugui.developmode.preference.datainjection.DataInjectionFragment" android:id="@id/data_injector" />
+    <fragment android:label="Social" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.SocialFragment" android:id="@id/lifestyle_social" />
+    <fragment android:label="MediaEntertainment" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.MediaEntertainmentFragment" android:id="@id/lifecycle_media_entertainment" />
+    <fragment android:label="Exercise Info" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.ExerciseInfoFragment" android:id="@id/lifestyle_exercise" />
+    <fragment android:label="Pet" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.PetFragment" android:id="@id/lifecycle_pet" />
+    <fragment android:label="Web History" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.WebHistoryFragment" android:id="@id/lifecycle_web_history" />
+    <fragment android:label="Mobility" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.MobilityFragment" android:id="@id/lifestyle_mobility" />
+    <fragment android:label="Place" android:name="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.place.PlaceFragment" android:id="@id/lifestyle_place" />
+    <fragment android:label="Interest" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestFragment" android:id="@id/lifestyle_interest">
+        <action android:id="@id/action_interest_to_interest_use_case" app:destination="@id/interest_use_case" />
+        <action android:id="@id/action_interest_to_weekly_interest_use_case" app:destination="@id/weekly_interest_use_case" />
+        <action android:id="@id/action_interest_compare_estimation_methods" app:destination="@id/interest_compare_estimation_methods" />
+        <action android:id="@id/action_interest_app_category_use_case" app:destination="@id/interest_app_category_use_case" />
+        <action android:id="@id/action_interest_to_gallery_interest_detail" app:destination="@id/gallery_interest_detail" />
+    </fragment>
+    <fragment android:label="Interest UseCase" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestUseCaseFragment" android:id="@id/interest_use_case">
+        <action android:id="@id/action_interest_use_case_to_interest_detail" app:destination="@id/interest_summary" />
+    </fragment>
+    <fragment android:label="Weekly Interest UseCase" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.WeeklyInterestUseCaseFragment" android:id="@id/weekly_interest_use_case" />
+    <fragment android:label="Compare Estimation Methods" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestEstimationMethodsFragment" android:id="@id/interest_compare_estimation_methods">
+        <action android:id="@id/action_interest_estimation_methods_to_interest_detail" app:destination="@id/interest_estimation_methods_summary" />
+    </fragment>
+    <fragment android:label="App Category" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestAppCategoryFragment" android:id="@id/interest_app_category_use_case" />
+    <fragment android:label="Gallery Interest Details" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestGalleryDetailsFragment" android:id="@id/gallery_interest_detail" />
+    <fragment android:label="Interest Summary" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestSummaryFragment" android:id="@id/interest_summary" />
+    <fragment android:label="Interest Estimation Methods Summary" android:name="com.samsung.android.moneta.debugui.developmode.preference.interest.InterestEstimationMethodsSummaryFragment" android:id="@id/interest_estimation_methods_summary" />
+    <fragment android:label="App Usage Board" android:name="com.samsung.android.moneta.debugui.developmode.preference.trendreport.TrendReportFragment" android:id="@id/trend_report" />
+    <fragment android:label="Preference Log" android:name="com.samsung.android.moneta.debugui.developmode.preference.PreferenceLogFragment" android:id="@id/log_view" />
+</navigation>

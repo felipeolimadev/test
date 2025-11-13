@@ -1,0 +1,4 @@
+{
+    VALUES (?input{IDX} ?linkingScore{IDX}) {<SCORED_KEYWORDS>}
+    ?instance{IDX} rdf:type/rdfs:subClassOf ?input{IDX} .
+}

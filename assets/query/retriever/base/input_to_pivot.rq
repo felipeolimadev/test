@@ -1,0 +1,7 @@
+{
+    select ?pivot{IDX} (max(?linkingScore{IDX}) as ?max_linkingScore{IDX})
+    where {
+        <INPUT_TO_INSTANCE>
+        ?pivot{IDX} <PIVOT_TO_INSTANCE> ?instance{IDX} .
+    } group by ?pivot{IDX}
+}

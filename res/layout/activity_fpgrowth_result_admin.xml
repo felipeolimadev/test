@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_fpgrowth_result_admin_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/threshold_constant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="min_support: confidence: " />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/calculation_window" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Calculation window: latest 100 context change" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

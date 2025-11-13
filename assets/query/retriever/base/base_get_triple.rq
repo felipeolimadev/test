@@ -1,0 +1,16 @@
+select ?s ?p ?o
+where
+{
+    VALUES (?iri) {<INPUT_IRI>}
+    {
+        ?iri rdf:unknown? ?s .
+        ?s ?p ?o .
+    } UNION {
+        ?iri a user:Person .
+        ?iri rdf:unknown? ?s .
+        GRAPH user:relation {
+            ?s ?p ?o .
+        }
+    }
+}
+ORDER BY ?iri

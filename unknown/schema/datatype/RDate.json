@@ -1,0 +1,10 @@
+{
+  "name": "RDate",
+  "type": "datatype",
+  "id": "datatype.primitive.RDate",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

@@ -1,0 +1,150 @@
+SELECT ?S ?P ?O ?E ?I ?IC
+WHERE{
+    {
+        {
+            SELECT ?person (COUNT(?targetTP) AS ?O)  {
+                ?targetTP a user:TakingPictures;
+                user:withPerson ?person.
+            } GROUP BY ?person ORDER BY DESC (?O) LIMIT 10
+        }
+        {
+            SELECT ?person
+            (GROUP_CONCAT(DISTINCT STR(?image); SEPARATOR=',') AS ?I)
+            (COUNT(?image) AS ?IC)
+            {
+                ?image content:personRecognized ?person.
+            } GROUP BY ?person
+        }
+
+        VALUES ?S { "Person" }
+        ?person design:reassign? ?P.
+        VALUES ?E {""}
+    } UNION {
+        {
+            SELECT ?S ?P ?O (GROUP_CONCAT(DISTINCT STR(?extra); SEPARATOR=',') AS ?E) ?I ?IC {
+                {
+                    SELECT ?location (COUNT(?targetTP) AS ?O) {
+                        ?targetTP a user:TakingPictures;
+                        user:atLocation ?location.
+                    } GROUP BY ?location
+                }
+                {
+                    SELECT ?location
+                    (GROUP_CONCAT(DISTINCT STR(?image); SEPARATOR=',') AS ?I)
+                    (COUNT(?image) AS ?IC)
+                    {
+                        ?targetTP a user:TakingPictures;
+                        user:objectContent ?image;
+                        user:atLocation ?location.
+                    } GROUP BY ?location
+                }
+
+                OPTIONAL
+                {
+                    ?eventProperty rdfs:subPropertyOf user:event .
+                    ?engram a/rdfs:subClassOf user:TravelEngram ;
+                        user:hasTag ?tag ;
+                        ?eventProperty ?targetTP .
+                    ?targetTP user:atLocation ?location .
+
+                    FILTER NOT EXISTS{
+                        ?targetTP user:atLocation ?tpLocation.
+                        ?tpLocation a/rdfs:subClassOf ?tpLocationType.
+                        FILTER(?tpLocationType = location:Home
+                            || ?tpLocationType = location:WorkPlace
+                            || ?tpLocationType = location:FrequentlyVisitedPlace)
+                    }
+
+                    OPTIONAL{
+                        FILTER(?tag = "Travel")
+                        VALUES ?extra{ "Travel" }
+                    }OPTIONAL{
+                        FILTER(?tag = "TravelAbroad")
+                        VALUES ?extra{ "TravelAbroad" }
+                    }OPTIONAL{
+                        VALUES ?extra{ "" }
+                    }
+
+                }
+
+                VALUES ?S { "Location" }
+                ?location design:reassign? ?P.
+            }GROUP BY ?S ?P ?O ?I ?IC ORDER BY DESC (?O) LIMIT 30
+        }
+    } UNION	{
+        {
+            SELECT ?S ?P ?O ?I ?IC{
+                {
+                    SELECT ?event
+                    (COUNT( DISTINCT ?targetTP) AS ?O)
+                    (GROUP_CONCAT(DISTINCT STR(?image); SEPARATOR=',') AS ?I)
+                    (COUNT(?image) AS ?IC) {
+                        ?event a/rdfs:subClassOf user:ScheduledEvent ;
+                        time:inXSDBeginningDateTimeStamp ?eventStartTime ;
+                        time:inXSDEndDateTimeStamp ?eventEndTime .
+
+                        ?image a/rdfs:subClassOf content:MediaObject;
+                        time:inXSDCreatedDateTimeStamp ?time.
+
+                        FILTER (?time > ?eventStartTime && ?eventEndTime > ?time)
+                        ?targetTP user:objectContent ?image .
+                    } GROUP BY ?event ORDER BY DESC (?O) LIMIT 10
+                }
+
+                VALUES ?S { "Event" }
+                ?event design:reassign? ?P.
+            }
+        } UNION {
+            {
+
+                SELECT ?S ?P ?O ?I ?IC {
+                    {
+                        SELECT ?category (COUNT( DISTINCT ?targetTP) AS ?O)
+                        (GROUP_CONCAT(DISTINCT STR(?image); SEPARATOR=',') AS ?I)
+                        (COUNT(?image) AS ?IC) {
+                            ?event a/rdfs:subClassOf user:ScheduledEvent ;
+                            time:inXSDBeginningDateTimeStamp ?eventStartTime ;
+                            time:inXSDEndDateTimeStamp ?eventEndTime ;
+                            user:extractedFrom/content:eventCategory ?category.
+
+                            ?image a/rdfs:subClassOf content:MediaObject;
+                            time:inXSDCreatedDateTimeStamp ?time.
+
+
+                            FILTER (?time > ?eventStartTime && ?eventEndTime > ?time)
+                            ?targetTP user:objectContent ?image .
+                        } GROUP BY ?category ORDER BY DESC (?O) LIMIT 10
+                    }
+
+                    VALUES ?S { "Event_Category" }
+                    ?category design:reassign? ?P.
+                }
+            }
+
+        } UNION {
+            SELECT ?S ?P ?O ?E ?I ?IC{
+                {
+                    SELECT ?object (COUNT(?targetTP) AS ?O)  {
+                        VALUES ?object { contenttag:ice_skating contenttag:jet_skiing contenttag:cycling contenttag:basketball contenttag:volleyball contenttag:golf contenttag:baseball contenttag:hockey contenttag:fog contenttag:rain contenttag:lego contenttag:rock_climbing contenttag:wedding contenttag:graduation contenttag:camping contenttag:amusement_park contenttag:aquarium contenttag:zoo contenttag:christmas }
+
+                        ?targetTP a user:TakingPictures ;
+                        user:objectContent/content:objectRecognized ?object
+
+                    } GROUP BY ?object ORDER BY DESC (?O) LIMIT 30
+                }
+                {
+                    SELECT ?object
+                    (GROUP_CONCAT(DISTINCT STR(?image); SEPARATOR=',') AS ?I)
+                    (COUNT(?image) AS ?IC)
+                    {
+                        ?image content:objectRecognized ?object
+                    } GROUP BY ?object
+                }
+
+                VALUES ?S { "Object" }
+                ?object design:reassign? ?P.
+                VALUES ?E {""}
+            }
+        }
+    }
+}

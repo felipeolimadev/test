@@ -1,0 +1,23 @@
+{
+  "template": {
+    "schema_name": "com.samsung.android.smartsuggestions.notification",
+    "query_template_name": "search_by_semantic_pde_notification"
+  },
+  "query": {
+    "text": "$0",
+    "bool": {
+      "should": [
+        {
+          "semantic": {
+            "fields": [
+              "description"
+            ],
+            "minimum_length": 2,
+            "threshold": "0.3f",
+            "limit": 50
+          }
+        }
+      ]
+    }
+  }
+}

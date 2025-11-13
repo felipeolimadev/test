@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.messaging" version="0" readPermission="android.permission.READ_SMS"
+    writePermission="">
+
+    <!-- By default any index field is indexed="true" stored="true" isSearchField="true" isSuggestField="true",
+     can be turned off by setting false -->
+
+    <!-- MESSAGE_ID -->
+    <indexField name="_id" dataType="String" isSearchField="false" isSuggestField="false"
+        luceneType="StringField" />
+
+    <!-- MESSAGE_BODY -->
+    <indexField name="body" dataType="String" isSuggestField="false" luceneType="TextField">
+
+    </indexField>
+
+    <!-- MESSAGE_PHONE -->
+    <indexField name="address" dataType="String" isSuggestField="false" luceneType="StringField" />
+
+    <!-- MESSAGE_SUBJECT -->
+    <indexField name="subject" dataType="String" isSuggestField="false" luceneType="TextField" />
+
+    <!-- MESSAGE_PARTY_NAME -->
+    <indexField name="person" dataType="String" indexed="false" isSuggestField="false"
+        luceneType="StringField" />
+
+    <!-- MESSAGE_CREATOR_NAME -->
+    <indexField name="creator" dataType="String" indexed="false" isSearchField="false"
+        isSuggestField="false" luceneType="StringField" />
+
+    <!-- MESSAGE_THREAD_ID -->
+    <indexField name="thread_id" dataType="String" indexed="false" isSearchField="false"
+        isSuggestField="false" luceneType="StringField" />
+
+    <!-- MESSAGE_SEND_DATE -->
+    <indexField name="date_sent" dataType="Long" indexed="false" isSearchField="false"
+        isSuggestField="false" luceneType="StoredField" />
+
+    <!-- MESSAGE_RECEIVE_DATE -->
+    <indexField name="date" dataType="Long" indexed="false" isSearchField="false"
+        isSuggestField="false" luceneType="StoredField" />
+
+    <!-- active date -->
+    <indexField name="date_active" dataType="long" luceneType="NumericDocValuesField" />
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="date_active" order="DESC" />
+    </sort>
+
+</schema>

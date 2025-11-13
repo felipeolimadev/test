@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.calendar.synctasks" package="" prefKey="tasks" version="12">
+    <permissions>
+        <readPermission name="android.permission.READ_CALENDAR" />
+        <writePermission name="android.permission.WRITE_CALENDAR" />
+    </permissions>
+
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer"/>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="int_stored_field" dataType="int" class="StoredField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField" />
+    <fieldType name="long_compare_field" dataType="long" class="LongPoint" />
+    <fieldType name="long_numeric_field" dataType="long" class="NumericDocValuesField" />
+
+    <fieldType name="per_language_field" dataType="String" class="TextField" >
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        </analyzer>
+        <analyzer type="search" class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="chosung_field" dataType="String" class="TextField">
+        <analyzer class="bs.korean.ChosungAnalyzer" keepOtherLang="true" removeSpace="true" />
+    </fieldType>
+    <fieldType name="phonetic_field" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="fuzzy_field" dataType="String" class="TextField">
+        <analyzer class="bs.korean.ConsonantAnalyzer"/>
+    </fieldType>
+
+    <fieldType name="pinyin_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" withMixed="true"
+            keepOtherLang="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer"/>
+    </fieldType>
+    <fieldType name="bytes_sorted" dataType="BytesRef" class="SortedDocValuesField"/>
+
+    <fieldType name="transliteration_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="app" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="app" />
+    </fieldType>
+    <fieldType name="korean_decompose" dataType="String" class="TextField">
+        <analyzer class="bs.korean.KoreanDecompositionAnalyzer" morphemeAnalysis="false"
+            mergeOrigin="false" backwardNGram="true" />
+    </fieldType>
+    <fieldType name="no_space_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseNoSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="stemmer_field" dataType="String" class="TextField" >
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" stem="true"/>
+            <subAnalyzer class="core.KeywordAnalyzer" lang="default" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="kana_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer" normalize="true"/>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+
+    <field name="_id" type="string"/>
+    <field name="subject" type="text"/>
+    <field name="subject_per_lang" type="per_language_field" src="subject" stored="false"/>
+    <field name="subject_sorted" type="bytes_sorted" src="subject"/>
+    <field name="subject_chosung" type="chosung_field" src="subject" stored="false"/>
+    <field name="subject_phonetic" type="phonetic_field" src="subject" stored="false"/>
+    <field name="subject_pinyin" type="pinyin_field" stored="false"/>
+    <field name="subject_fuzzy" type="fuzzy_field" src="subject" stored="false" />
+    <field name="subject_transliterated" type="transliteration_field" src="subject" stored="false" />
+    <field name="subject_decomposition" type="korean_decompose" src="subject" stored="false" />
+    <field name="subject_no_space" type="no_space_field" stored="false" />
+    <field name="subject_stemmer" type="stemmer_field" src="subject" stored="false" />
+    <field name="subject_kana" type="kana_field" src="subject" stored="false"/>
+
+    <field name="body" type="text"/>
+
+    <field name="utc_due_date" type="long_stored_field" compare="true" sort="true"/>
+
+    <!-- NULL : cyan / 0 : purple / 1 : skyblue / 2 : yellowgreen / 3 : yellow / 4 : orange -->
+    <field name="secTaskColor" type="int_stored_field"/>
+    <!-- 0 : low / 1 : medium / 2 : high -->
+    <field name="importance" type="int_stored_field"/>
+    <!-- 0 : Not completed / 1 : Completed -->
+    <field name="complete" type="int_stored_field"/>
+    <field name="accountKey" type="int_stored_field" compare="true"/>
+
+    <field name="secAccountColor" type="int_stored_field"/>
+    <field name="_sync_account" type="string" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <sort>
+        <sortedField name="utc_due_date" order="ASC" />
+        <sortedField name="subject_sorted" order="ASC" />
+    </sort>
+</schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_transit_card_0" android:background="@drawable/rounded_widget_background" android:padding="@dimen/action_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/transit_card_image" android:background="@drawable/image_action_card_image_bg" android:visibility="visible" android:layout_width="@dimen/transit_card_image_width" android:layout_height="@dimen/transit_card_image_height" android:scaleType="centerCrop" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/transit_card_image_margin_end" android:clipToOutline="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/transit_card_title_text_size" android:id="@id/transit_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/transit_card_sub_title_text_size" android:id="@id/transit_card_subtitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/transit_card_sub_title_text_size" android:id="@id/transit_card_balance" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

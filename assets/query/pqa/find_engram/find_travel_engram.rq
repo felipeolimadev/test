@@ -1,0 +1,11 @@
+SELECT DISTINCT ?travel_engram ?start_time ?end_time
+WHERE {
+    ?travel_engram rdf:type user:TravelEngram .
+    ?travel_engram time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?travel_engram time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+    <LOCATION_FILTER>
+    <PERSON_FILTER>
+    <TIME_FILTER>
+}
+<OUTPUT_SORT>

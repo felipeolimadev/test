@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="translateX" />
+        <objectAnimator android:duration="666" android:valueFrom="76" android:valueTo="76" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__1212" android:duration="1048" android:pathData="M 76,-645 C155.079,-330.272 42,362 42,362" android:propertyXName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="translateY" />
+        <objectAnimator android:duration="666" android:valueFrom="-645" android:valueTo="-645" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__1213" android:duration="1048" android:pathData="M 76,-645 C155.079,-330.272 42,362 42,362" android:propertyYName="translateY" />
+    </set>
+</set>

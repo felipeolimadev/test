@@ -1,0 +1,42 @@
+[
+  {
+    "patternName": "<<hourly_suffix>>",
+    "patternValue": [
+      "o'clock",
+      "oclock",
+      "o clock",
+      "on the dot"
+    ]
+  },
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "<current_reference>",
+      "at",
+      "in",
+      "on",
+      "around",
+      "in the",
+      "this",
+      "that"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "past",
+      "to"
+    ]
+  },
+  {
+    "patternName": "<<time_keywords_before>>",
+    "patternValue": [
+      "<current_reference>",
+      "at",
+      "around",
+      "on",
+      "time:",
+      "time"
+    ]
+  }
+]

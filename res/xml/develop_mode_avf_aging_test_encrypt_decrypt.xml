@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="AVF Encrypt/Decrypt Test" app:iconSpaceReserved="false">
+        <Preference android:title="Start Test" android:key="encrypt_decrypt_aging_test_run" app:iconSpaceReserved="false" />
+        <Preference android:title="Stop Test" android:key="encrypt_decrypt_aging_test_stop" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/calendar_list_dialog_title_day_background_color_today" />
+    <corners android:radius="@dimen/calendar_list_dialog_title_day_background_radius" />
+</shape>

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.samsung.android.smartsuggestions";
+option java_multiple_files = true;
+
+message MomentsPreferences {
+  string created_story_id_list = 1;
+}

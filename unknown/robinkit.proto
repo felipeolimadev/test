@@ -1,0 +1,65 @@
+syntax = "proto3";
+package com.google.android.apps.search.assistant.surfaces.voice.robin.robinkit.proto;
+import "google/protobuf/empty.proto";
+option java_package = "com.google.android.apps.search.assistant.surfaces.voice.robin.robinkit.proto";
+option java_multiple_files = true;
+message RobinAvailabilityRequest {
+    ClientInfo client_info = 1;
+    // Pass TEXT_QUERY_CAPABILITY here
+    repeated RobinIntegrationCapability requested_capabilities = 2;
+}
+message RobinAvailabilityResponse {
+    oneof status {
+        RobinAvailable available = 1;
+        RobinNotAvailable not_available = 2;
+    }
+}
+message RobinAvailable {
+    repeated RobinIntegrationCapability supported_capabilities = 1;
+}
+message RobinNotAvailable {
+    int64 code = 1;
+}
+enum RobinIntegrationCapability {
+    UNDEFINED_CAPABILITY = 0;
+    TEXT_QUERY_CAPABILITY = 3;
+    TEXT_QUERY_WITH_ATTACHMENTS_CAPABILITY = 5;
+}
+message LaunchRobinRequest {
+    // Information about the client app
+    ClientInfo client_info = 1;
+    // Action that the client app is requesting. Each action corresponds to a
+    // capability. Currently, only the TextQuery action is exposed.
+    oneof requested_action {
+        TextQuery text_query = 5 ;
+    }
+}
+message TextQuery {
+    // The query which will be forwarded to the Gemini model.
+    string query = 1;
+    // This bit to control if we want to autosubmit after invoking Gemini, should be sent true
+    bool should_auto_submit = 2;
+    repeated File files = 3;
+}
+
+message File {
+	string uri = 1;
+	string display_name = 2;
+	string mime_type = 3;
+}
+
+message LaunchRobinResponse {}
+message ClientInfo {
+    // Client app's display name
+    string app_name = 1;
+    // Client app's current version
+    string app_version = 2;
+    // Client app's package name
+    string app_package_name = 3;
+    // If the client app is currently running in work profile, should be sent false
+    bool is_work_profile = 4;
+}
+service RobinKitService {
+    rpc GetRobinAvailability(RobinAvailabilityRequest) returns (RobinAvailabilityResponse);
+    rpc LaunchRobin(LaunchRobinRequest) returns (LaunchRobinResponse);
+}

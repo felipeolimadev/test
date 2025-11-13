@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Virtual Machine Manager" app:iconSpaceReserved="false">
+        <Preference android:title="AVF is available" android:key="avf_control_is_available" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Virtual Machine" app:iconSpaceReserved="false">
+        <Preference android:enabled="false" android:title="Run" android:key="avf_control_run" app:iconSpaceReserved="false" />
+        <Preference android:enabled="false" android:title="Stop" android:key="avf_control_stop" app:iconSpaceReserved="false" />
+        <Preference android:enabled="false" android:title="Touch to check VM is running" android:key="avf_control_is_running" android:summary="VM is running:" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

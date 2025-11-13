@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d dagar kvar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dag kvar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s kommer om %2$d dagar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s kommer om %2$d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d event%3$s fortsätter i morgon.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d event%3$s fortsätter i morgon.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Du har %1$s%2$d händelser%3$s i dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$s%2$d händelse%3$s i dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Du har %1$d händelser i dag. Den första är %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$d händelse i dag. Den första är %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d händelser kvar%3$s för i dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d händelse kvar%3$s för i dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Du har %1$s%2$d händelser%3$s i morgon.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$s%2$d händelse%3$s i morgon.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Du har %1$d händelser i morgon. Den första är %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$d händelse i morgon. Den första är %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d händelser</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d händelse</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Startar om %d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Startar om %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d påminnelser kvar i dag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d påminnelse kvar i dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Du fick %d leveransmeddelanden i dag. Kom ihåg att hålla koll på status för leveranserna.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du fick %d leveransmeddelande i dag. Kom ihåg att hålla koll på status för leveransen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d leveranser i dag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d leverans i dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Över målet %d gånger denna vecka.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Över målet %d gång denna vecka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d aktivitetsmål nådda</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aktivitetsmål nått</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Din totala höjdskillnad var %1$s och du brände %2$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Din totala höjdskillnad var %1$s och du brände %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Ditt snittempo var %1$s och du brände %2$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ditt snittempo var %1$s och du brände %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Din snittfart var %1$s och du brände %2$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Din snittfart var %1$s och du brände %2$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Här är en sammanfattning av träningspasset av typen %1$s. Det varade i %2$s och du brände %3$,d kilokalorier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Här är en sammanfattning av träningspasset av typen %1$s. Det varade i %2$s och du brände %3$,d kilokalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Du missade %d schemalagda läkemedel i dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du missade %d schemalagt läkemedel i dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d timmar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d timme</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d timmar</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d timme</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minuter</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Du har %1$s%2$d missade samtal%3$s i dag som du inte har kollat än.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %1$s%2$d missat samtal%3$s i dag som du inte har kollat än.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Du har %d missade samtal i dag. Granska de missade samtalen i din Now brief. Om du vill kan du också ställa in påminnelser om att ringa upp personerna.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har %d missat samtal i dag. Granska det missade samtalet i din Now brief. Om du vill kan du också ställa in en påminnelse om att ringa upp personen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d till missade samtal</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d till missat samtal</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d miss. samtal</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d missat samtal</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nya aviseringar</item>
+        <item quantity="one">%d ny avisering</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d timmar sedan</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d timme sedan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d minuter sedan</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut sedan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Du måste vara minst %d år för att få använda funktioner med avancerad intelligens från Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du måste vara minst %d år för att få använda funktioner med avancerad intelligens från Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d meddelanden</item>
+        <item quantity="one">%d meddelande</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mile</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekunder</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Du har ställt in %1$s%2$d alarm%3$s för morgonen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har ställt in %1$s%2$d alarm%3$s för morgonen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Du har ställt in %1$s%2$d alarm%3$s för i morgon bitti.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har ställt in %1$s%2$d alarm%3$s för i morgon bitti.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sGe dig av senast %2$s%3$s för att hinna till flygplatsen senast %4$d timmar före avgång. Ställ in ett alarm så att du inte glömmer det.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sGe dig av senast %2$s%3$s för att hinna till flygplatsen senast %4$d timme före avgång. Ställ in ett alarm så att du inte glömmer det.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sGe dig av senast %2$s%3$s för att komma till flygplatsen senast %4$d timmar innan flyget går.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sGe dig av senast %2$s%3$s för att komma till flygplatsen senast %4$d timme innan flyget går.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Föreslå en %1$d dagar lång resplan för %2$s inklusive platser att besöka, saker att göra och restauranger som är värda att testa.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Föreslå en %1$d dag lång resplan för %2$s inklusive platser att besöka, saker att göra och restauranger som är värda att testa.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Kolla dessa %1$srekommenderade appar%2$s som du kan ha glädje av under resan.</item>
+        <item quantity="one">Kolla den här %1$srekommenderade appen%2$s som du kan ha glädje av under resan.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sHämta det här språkpaketet%2$s i förväg så att du kan använda det i Tolk när du anländer till resmålet.</item>
+        <item quantity="one">%1$sHämta dessa språkpaket%2$s i förväg så att du kan använda dem i Tolk när du anländer till resmålet.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Språkpaket att hämta</item>
+        <item quantity="one">Språkpaket att hämta</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d enheter är på</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d enhet är på</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Senast kontaktad för %d dagar sedan</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Senast kontaktad för %d dag sedan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Kontaktad sist för %d dagar sen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktad sist för %d dag sen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Kontaktad sist för %d månader sen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktad sist för %d månad sen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Kontaktad sist för %d veckor sen</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kontaktad sist för %d vecka sen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d kontakter till</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kontakt till</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Du har en kupong i Samsung Wallet som går ut om %d dagar. Använd den innan den går ut.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har en kupong i Samsung Wallet som går ut om %d dag. Använd den innan den går ut.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Högsta temperatur minus %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Högsta temperatur minus %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Lägsta temperatur minus %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lägsta temperatur minus %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Du har en händelse i din kalender med namnet %1$s. Det kommer att vara %2$d grader %3$s klockan %4$s i %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du har en händelse i din kalender med namnet %1$s. Det kommer att vara %2$d grad %3$s klockan %4$s i %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Högsta temperatur %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Högsta temperatur %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Lägsta temperatur %d grader</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lägsta temperatur %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s vyer</item>
+        <item quantity="one">%s vy</item>
+    </plurals>
+</resources>

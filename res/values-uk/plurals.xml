@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">Залиш. %d дня.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Залишився %d дн.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Залиш. %d дні.</item>
+        <item quantity="many">Залиш. %d днів.</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s: наближається через %2$d дня.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s: наближається через %2$d день.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s: наближається через %2$d дні.</item>
+        <item quantity="many">%1$s: наближається через %2$d днів.</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d заходу%3$s продовжаться завтра.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d захід%3$s продовжиться завтра.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s%2$d заходи%3$s продовжаться завтра.</item>
+        <item quantity="many">%1$s%2$d заходів%3$s продовжаться завтра.</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">На сьогодні заплановано %1$s%2$d події%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">На сьогодні заплановано %1$s%2$d подію%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">На сьогодні заплановано %1$s%2$d події%3$s.</item>
+        <item quantity="many">На сьогодні заплановано %1$s%2$d подій%3$s.</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">На сьогодні заплановано %1$d події. Перша з них на %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">На сьогодні заплановано %1$d подію. Перша з них на %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">На сьогодні заплановано %1$d події. Перша з них на %2$s.</item>
+        <item quantity="many">На сьогодні заплановано %1$d подій. Перша з них на %2$s.</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$sЗалишилося %2$d події%3$s на сьогодні.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sЗалишилася %2$d подія%3$s на сьогодні.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sЗалишилося %2$d події%3$s на сьогодні.</item>
+        <item quantity="many">%1$sЗалишилося %2$d подій%3$s на сьогодні.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">На завтра призначено %1$s%2$d заходу%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">На завтра призначено %1$s%2$d захід%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">На завтра призначено %1$s%2$d заходи%3$s.</item>
+        <item quantity="many">На завтра призначено %1$s%2$d заходів%3$s.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">На завтра заплановано %1$d події. Перша з них на %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">На завтра заплановано %1$d подію. Перша з них на %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">На завтра заплановано %1$d події. Перша з них на %2$s.</item>
+        <item quantity="many">На завтра заплановано %1$d подій. Перша з них на %2$s.</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d події</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d подія</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d події</item>
+        <item quantity="many">%d подій</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Початок через %d хв.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Початок через %d хв.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Початок через %d хв.</item>
+        <item quantity="many">Початок через %d хв.</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Ще %d нагадування на сьогодні</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ще %d нагадування на сьогодні</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ще %d нагадування на сьогодні</item>
+        <item quantity="many">Ще %d нагадувань на сьогодні</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Сьогодні ви отримали %d повідомлення про доставку. Перевірте, щоб бути в курсі статусів доставок.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сьогодні ви отримали %d повідомлення про доставку. Перевірте, щоб бути в курсі статусу доставки.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Сьогодні ви отримали %d повідомлення про доставку. Перевірте, щоб бути в курсі статусів доставок.</item>
+        <item quantity="many">Сьогодні ви отримали %d повідомлень про доставку. Перевірте, щоб бути в курсі статусів доставок.</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d доставки сьогодні</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d доставка сьогодні</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d доставки сьогодні</item>
+        <item quantity="many">%d доставок сьогодні</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Вище цілі %d разу цього тижня.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вище цілі %d раз цього тижня.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Вище цілі %d рази цього тижня.</item>
+        <item quantity="many">Вище цілі %d разів цього тижня.</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">Досягн. %d цілі з активн.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Досягн. %d ціль з активн.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Досягн. %d цілі з активн.</item>
+        <item quantity="many">Досягн. %d цілей з активн.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Загальний набір висоти склав %1$s. Ви витратили %2$,d калорії.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Загальний набір висоти склав %1$s. Ви витратили %2$,d калорію.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Загальний набір висоти склав %1$s. Ви витратили %2$,d калорії.</item>
+        <item quantity="many">Загальний набір висоти склав %1$s. Ви витратили %2$,d калорій.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Середній темп склав %1$s. Ви витратили %2$,d калорії.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Середній темп склав %1$s. Ви витратили %2$,d калорію.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Середній темп склав %1$s. Ви витратили %2$,d калорії.</item>
+        <item quantity="many">Середній темп склав %1$s. Ви витратили %2$,d калорій.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Середня швидкість склала %1$s. Ви витратили %2$,d калорії.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Середня швидкість склала %1$s. Ви витратили %2$,d калорію.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Середня швидкість склала %1$s. Ви витратили %2$,d калорії.</item>
+        <item quantity="many">Середня швидкість склала %1$s. Ви витратили %2$,d калорій.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Зведення вашого тренування (%1$s). Воно тривало %2$s. Ви витратили %3$,d калорії.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Зведення вашого тренування (%1$s). Воно тривало %2$s. Ви витратили %3$,d калорію.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Зведення вашого тренування (%1$s). Воно тривало %2$s. Ви витратили %3$,d калорії.</item>
+        <item quantity="many">Зведення вашого тренування (%1$s). Воно тривало %2$s. Ви витратили %3$,d калорій.</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Сьогодні ви пропустили прийом %d виду запланованих ліків.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сьогодні ви пропустили прийом %d виду запланованих ліків.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Сьогодні ви пропустили прийом %d видів запланованих ліків.</item>
+        <item quantity="many">Сьогодні ви пропустили прийом %d видів запланованих ліків.</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d години</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d година</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d години</item>
+        <item quantity="many">%d годин</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d год.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d год.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d год.</item>
+        <item quantity="many">%d год.</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хвилина</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d хвилини</item>
+        <item quantity="many">%d хвилин</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хвилина</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d хвилини</item>
+        <item quantity="many">%d хвилин</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">За сьогодні у вас %1$s%2$d пропущеного виклику%3$s, які ви ще не перевірили.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">За сьогодні у вас %1$s%2$d пропущений виклик%3$s, який ви ще не перевірили.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">За сьогодні у вас %1$s%2$d пропущені виклики%3$s, які ви ще не перевірили.</item>
+        <item quantity="many">За сьогодні у вас %1$s%2$d пропущених викликів%3$s, які ви ще не перевірили.</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Сьогодні ви пропустили %d виклику. Перегляньте інформацію про них у розділі Now brief. Якщо треба, ви також можете встановити нагадування, щоб не забути передзвонити.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сьогодні ви пропустили %d виклик. Перегляньте інформацію про нього в розділі Now brief. Якщо треба, ви також можете встановити нагадування, щоб не забути передзвонити.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Сьогодні ви пропустили %d виклики. Перегляньте інформацію про них у розділі Now brief. Якщо треба, ви також можете встановити нагадування, щоб не забути передзвонити.</item>
+        <item quantity="many">Сьогодні ви пропустили %d викликів. Перегляньте інформацію про них у розділі Now brief. Якщо треба, ви також можете встановити нагадування, щоб не забути передзвонити.</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Ще %d пропущеного виклику</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ще %d пропущений виклик</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ще %d пропущених виклики</item>
+        <item quantity="many">Ще %d пропущених викликів</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d пропущеного</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d пропущений</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d пропущених</item>
+        <item quantity="many">%d пропущених</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового сповіщення</item>
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d години тому</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d годину тому</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d години тому</item>
+        <item quantity="many">%d годин тому</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d хвилини тому</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хвилину тому</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d хвилини тому</item>
+        <item quantity="many">%d хвилин тому</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Використовувати інтелектуальні інструменти Galaxy AI можуть лише користувачі, яким виповнилося %d року.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Використовувати інтелектуальні інструменти Galaxy AI можуть лише користувачі, яким виповнився %d рік.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Використовувати інтелектуальні інструменти Galaxy AI можуть лише користувачі, яким виповнилося %d роки.</item>
+        <item quantity="many">Використовувати інтелектуальні інструменти Galaxy AI можуть лише користувачі, яким виповнилося %d років.</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">Повідомлення: %d</item>
+        <item quantity="one">Повідомлень: %d</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d милі</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d миля</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d милі</item>
+        <item quantity="many">%d миль</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d секунди</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d секунда</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d секунди</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Ви налаштували %1$s%2$d будильника%3$s на ранок.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ви налаштували %1$s%2$d будильник%3$s на ранок.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ви налаштували %1$s%2$d будильники%3$s на ранок.</item>
+        <item quantity="many">Ви налаштували %1$s%2$d будильників%3$s на ранок.</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Ви налаштували %1$s%2$d будильника%3$s на завтрашній ранок.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ви налаштували %1$s%2$d будильник%3$s на завтрашній ранок.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ви налаштували %1$s%2$d будильники%3$s на завтрашній ранок.</item>
+        <item quantity="many">Ви налаштували %1$s%2$d будильників%3$s на завтрашній ранок.</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d години до вильоту. Установіть будильник, щоб не забути.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d годину до вильоту. Установіть будильник, щоб не забути.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d години до вильоту. Установіть будильник, щоб не забути.</item>
+        <item quantity="many">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d годин до вильоту. Установіть будильник, щоб не забути.</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d години до вильоту.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d годину до вильоту.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d години до вильоту.</item>
+        <item quantity="many">%1$sВирушайте до %2$s%3$s, щоб прибути в аеропорт принаймні за %4$d годин до вильоту.</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Запропонуй маршрут подорожі на %1$d дня до міста %2$s та включи пам’ятки, місця розваг і ресторани, які варто відвідати.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Запропонуй маршрут подорожі на %1$d день до міста %2$s та включи пам’ятки, місця розваг і ресторани, які варто відвідати.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Запропонуй маршрут подорожі на %1$d дні до міста %2$s та включи пам’ятки, місця розваг і ресторани, які варто відвідати.</item>
+        <item quantity="many">Запропонуй маршрут подорожі на %1$d днів до міста %2$s та включи пам’ятки, місця розваг і ресторани, які варто відвідати.</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Перегляньте %1$sрекомендовані програми%2$s, які можуть стати в пригоді в поїздці.</item>
+        <item quantity="one">Перегляньте %1$sрекомендовану програму%2$s, яка може стати в пригоді в поїздці.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sЗаздалегідь завантажте мовний пакет%2$s, щоб програма «Перекладач» була вже готова до використання в місці призначення.</item>
+        <item quantity="one">%1$sЗаздалегідь завантажте ці мовні пакети%2$s, щоб програма «Перекладач» була вже готова до використання в місці призначення.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Мовні пакети для завантаження</item>
+        <item quantity="one">Мовний пакет для завантаження</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">Увімкнено %d пристрою</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Увімкнено %d пристрій</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Увімкнено %d пристрої</item>
+        <item quantity="many">Увімкнено %d пристроїв</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Ви останній раз спілкувалися %d дня тому</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ви останній раз спілкувалися %d день тому</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ви останній раз спілкувалися %d дні тому</item>
+        <item quantity="many">Ви останній раз спілкувалися %d днів тому</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Останній контакт: %d дня тому</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Останній контакт: %d день тому</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Останній контакт: %d дні тому</item>
+        <item quantity="many">Останній контакт: %d днів тому</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Останній контакт: %d міс. тому</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Останній контакт: %d міс. тому</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Останній контакт: %d міс. тому</item>
+        <item quantity="many">Останній контакт: %d міс. тому</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Останній контакт: %d тижд. тому</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Останній контакт: %d тижд. тому</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Останній контакт: %d тижд. тому</item>
+        <item quantity="many">Останній контакт: %d тижд. тому</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Ще %d контакту</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ще %d контакт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ще %d контакти</item>
+        <item quantity="many">Ще %d контактів</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Термін дії одного купона в Samsung Wallet минає через %d дня. Використайте його, доки цього не сталося.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Термін дії одного купона в Samsung Wallet минає через %d день. Використайте його, доки цього не сталося.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Термін дії одного купона в Samsung Wallet минає через %d дні. Використайте його, доки цього не сталося.</item>
+        <item quantity="many">Термін дії одного купона в Samsung Wallet минає через %d днів. Використайте його, доки цього не сталося.</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Максимальна: %d градуса нижче нуля</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Максимальна: %d градус нижче нуля</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Максимальна: %d градуси нижче нуля</item>
+        <item quantity="many">Максимальна: %d градусів нижче нуля</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Мінімальна: %d градуса нижче нуля</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Мінімальна: %d градус нижче нуля</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Мінімальна: %d градуси нижче нуля</item>
+        <item quantity="many">Мінімальна: %d градусів нижче нуля</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">У вашому календарі є захід під назвою «%1$s». Температура повітря під час заходу «%4$s» в місці «%5$s» становитиме %2$d градуса (%3$s).</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">У вашому календарі є захід під назвою «%1$s». Температура повітря під час заходу «%4$s» в місці «%5$s» становитиме %2$d градус (%3$s).</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">У вашому календарі є захід під назвою «%1$s». Температура повітря під час заходу «%4$s» в місці «%5$s» становитиме %2$d градуси (%3$s).</item>
+        <item quantity="many">У вашому календарі є захід під назвою «%1$s». Температура повітря під час заходу «%4$s» в місці «%5$s» становитиме %2$d градусів (%3$s).</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Максимальна: %d градуса вище нуля</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Максимальна: %d градус вище нуля</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Максимальна: %d градуси вище нуля</item>
+        <item quantity="many">Максимальна: %d градусів вище нуля</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Мінімальна: %d градуса вище нуля</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Мінімальна: %d градус вище нуля</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Мінімальна: %d градуси вище нуля</item>
+        <item quantity="many">Мінімальна: %d градусів вище нуля</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">Переглядів: %s</item>
+        <item quantity="one">%s перегляд.</item>
+    </plurals>
+</resources>

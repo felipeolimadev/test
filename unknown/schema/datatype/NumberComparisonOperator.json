@@ -1,0 +1,35 @@
+{
+  "name": "NumberComparisonOperator",
+  "type": "datatype",
+  "id": "datatype.enumeration.NumberComparisonOperator",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "greaterThan",
+      "greaterThanOrEqualTo",
+      "lessThan",
+      "lessThanOrEqualTo"
+    ],
+    "descriptions": [
+      {
+        "value": "greaterThan",
+        "description": "Greater than"
+      },
+      {
+        "value": "greaterThanOrEqualTo",
+        "description": "Greater than or equal to"
+      },
+      {
+        "value": "lessThan",
+        "description": "Less than"
+      },
+      {
+        "value": "lessThanOrEqualTo",
+        "description": "Less than or equal to"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

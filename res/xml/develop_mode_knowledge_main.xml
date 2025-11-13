@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:title="Knowledge Integrity Check" android:key="key_knowledge_integrity_check" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeLocationFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Knowledge Extract Dumped Data" android:key="key_knowledge_extract_dumped_data" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeDumpFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Knowledge Statistics" android:key="key_knowledge_statistics" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeStatisticsFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Knowledge Retriever" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeRetrieverFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Import DataStore and Room DB" android:summary="Manually import Room DB and DataStore" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeImportFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Knowledge Decrypted Data" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeDecryptionErrorFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Validate Tuple Tables" android:key="key_validate_tuple_table" app:iconSpaceReserved="false" />
+    <Preference android:title="Export Knowledge Data" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeExportFragment" app:iconSpaceReserved="false" />
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+SELECT ?S ?P ?O {
+    {
+        SELECT DISTINCT ?S {
+            ?activity rdf:type user:ScheduledTravel .
+            ?activity time:inXSDBeginningDateTimeStamp ?start_time .
+            ?activity time:inXSDEndDateTimeStamp ?end_time .
+
+            <TIME_FILTER>
+            <LOCATION_FILTER>
+
+            ?takingpicture rdf:type user:TakingPictures .
+            ?takingpicture time:hasBeginning/time:inXSDDateTimeStamp ?taking_pictures_start_time .
+            ?takingpicture time:hasEnd/time:inXSDDateTimeStamp ?taking_pictures_end_time .
+            FILTER (?taking_pictures_end_time >= ?start_time && ?end_time >= ?taking_pictures_start_time)
+            ?takingpicture user:withPerson ?S .
+        }
+    }
+    ?S ?P ?O .
+}

@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "weekDayCount": 1,
+          "dayOfWeek": 2
+        }
+      ],
+      "comment": "2ª terça-feira"
+    },
+    {
+      "id": 2,
+      "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "dayCount": 1
+        }
+      ],
+      "shouldContainKeyword": "dia",
+      "comment": "2ª day"
+    },
+    {
+      "id": 3,
+      "patternString": "(?:\\s|^|\\.|,)(<day_of_week>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "dayOfWeek": 1
+        }
+      ],
+      "comment": "terça-feira"
+    },
+    {
+      "id": 4,
+      "patternString": "(?:\\s|^|\\.|,|\\-)(<relative_day>)(?:\\s|$|\\.|,|\\-)",
+      "isRelative": true,
+      "comment": "hoje | amanhã | ontem .."
+    },
+    {
+      "id": 5,
+      "patternString": "(?:\\s|^|\\.|,)(<last_reference>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "weekDayCount": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "patternString": "(?:\\s|^|\\.|,)(<last_reference>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "dayCount": 1
+        }
+      ],
+      "shouldContainKeyword": "dia"
+    },
+    {
+      "id": 7,
+      "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "weekCount": 1
+        }
+      ],
+      "shouldContainKeyword": "semana",
+      "comment": "2ª semana"
+    },
+    {
+      "id": 8,
+      "patternString": "(?:\\s|^|\\.|,)((<month>)\\s*\\(<time_period>[\\s]*(<num>|<num_suffix>)\\)[,]?\\s*(<num>))(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "day": 2,
+          "month": 1,
+          "year": 3
+        }
+      ],
+      "shouldContainKeyword": "dia",
+      "comment": "abril (dia 10), 2023"
+    },
+    {
+      "id": 9,
+      "patternString": "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "dayCount": 2
+        }
+      ],
+      "shouldContainKeyword": "dia"
+    },
+    {
+      "id": 10,
+      "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "dayCount": 1
+        }
+      ],
+      "shouldContainKeyword": "dia"
+    },
+    {
+      "id": 11,
+      "patternString": "(?:\\s|^|\\.|,)(<last_reference>)\\s*(?:del?|de el)?\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "weekDayCount": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "patternString": "(?:\\s|^|\\.|,)(<last_reference>)\\s*(?:del?|de el)?(<time_period>)(?:\\s|$|\\.|,)",
+      "mapping": [
+        {
+          "dayCount": 1
+        }
+      ],
+      "shouldContainKeyword": "dia"
+    }
+  ]

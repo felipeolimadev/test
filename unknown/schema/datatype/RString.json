@@ -1,0 +1,10 @@
+{
+  "name": "RString",
+  "type": "datatype",
+  "id": "datatype.primitive.RString",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

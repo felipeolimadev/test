@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ttl_container" android:tag="layout/suggestion_ui_view_travel_near_places_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/map_widget_padding" android:layout_marginBottom="@dimen/map_widget_padding" android:paddingHorizontal="@dimen/map_widget_padding" android:clipToOutline="true">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/map_ttl_text_color" android:id="@id/googleMapViewTitle" android:layout_width="fill_parent" android:layout_height="@dimen/map_widget_title_view_height" android:text="SamsungPlace 주변 장소 추천" android:layout_marginVertical="@dimen/map_widget_layout_margin_vertical" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ListView android:id="@id/place_poi_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:dividerHeight="3.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/googleMapViewTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

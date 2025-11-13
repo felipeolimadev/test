@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.callassistant" package="" prefKey="call_recording" version="12"
+    embConfigUri="content://com.samsung.android.callassistant.callrecordingprovider">
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+        <subAnalyzer class="core.WhitespaceAnalyzer" lang="ko" />
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+        <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+    </defaultAnalyzer>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+    <fieldType name="int_stored_field" dataType="int" class="StoredField" />
+
+    <field name="_id" type="string"/>
+    <field name="transcript_text" type="text"/>
+    <field name="ai_data_id" type="string"/>
+    <field name="path" type="string"/>
+    <field name="transcript_title" type="text"/>
+    <field name="content_uri" type="string"/>
+    <field name="summary" type="text"/>
+    <field name="summary_title" type="text"/>
+    <field name="call_creation_time" type="long_stored_field" compare="true"/>
+    <field name="contact_id" type="string"/>
+    <field name="contact_name" type="string"/>
+    <field name="number" type="string"/>
+    <field name="call_type" type="int_stored_field"/>
+
+    <field name="year" type="string" />
+    <field name="month" type="string" />
+    <field name="num_of_day" type="string" />
+    <field name="day" type="string" />
+    <field name="hour" type="int_compare_field" />
+    <field name="minute" type="int_compare_field" />
+    <field name="second" type="int_compare_field" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="_score" order="DESC" />
+    </sort>
+</schema>

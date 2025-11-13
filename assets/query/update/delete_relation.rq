@@ -1,0 +1,11 @@
+DELETE {
+    GRAPH user:relation {
+        person:TheUser ?p ?o .
+    }
+} WHERE {
+    VALUES(?target) {<Keywords>}
+    BIND(?target AS ?o)
+    GRAPH user:relation {
+        person:TheUser ?p ?o .
+    }
+}

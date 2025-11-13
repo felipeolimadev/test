@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="translateX" />
+        <objectAnimator android:duration="163" android:valueFrom="-200" android:valueTo="-200" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__978" android:duration="209" android:pathData="M -200,-40 C-200,-40 84.025,-195.834 132,-225" android:propertyXName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__979" android:duration="1190" android:pathData="M 132,-225 C199.167,-265.833 198,44 198,44" android:propertyXName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="translateY" />
+        <objectAnimator android:duration="163" android:valueFrom="-40" android:valueTo="-40" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__980" android:duration="209" android:pathData="M -200,-40 C-200,-40 84.025,-195.834 132,-225" android:propertyYName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__981" android:duration="1190" android:pathData="M 132,-225 C199.167,-265.833 198,44 198,44" android:propertyYName="translateY" />
+    </set>
+</set>

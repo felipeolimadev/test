@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:layout_gravity="center" android:orientation="horizontal" android:tag="ttl" android:background="#00000000" android:layout_width="150.0dip" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ttl_icon" android:tag="appIcon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_map_nowbar" android:scaleType="centerCrop" android:layout_marginStart="11.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="93.0dip" android:layout_height="34.0dip" android:layout_marginStart="5.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="#fffafaff" android:ellipsize="marquee" android:id="@id/title" android:layout_width="93.0dip" android:layout_height="18.0dip" android:text="@string/map_now_bar_time_to_go" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="600" />
+        <TextView android:textSize="11.0dip" android:textColor="#fffafaff" android:ellipsize="marquee" android:id="@id/sub_title" android:clipChildren="false" android:clipToPadding="false" android:layout_width="93.0dip" android:layout_height="16.0dip" android:maxLines="1" android:alpha="0.6" android:fontFamily="sec" android:textFontWeight="400" />
+    </LinearLayout>
+</LinearLayout>

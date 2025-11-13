@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/unit_dialog_layout" android:paddingTop="@dimen/ai_generated_dialog_padding_top" android:paddingBottom="@dimen/ai_generated_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/ai_generated_dialog_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.widget.HTextView android:id="@id/dialog_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/ai_generated_content_dialog_desc_line_spacing" app:applyUpToLarge="true" style="@style/BriefDialogDescriptionTextStyle" />
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.widget.HTextButton android:gravity="center" android:id="@id/dialog_positive_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ai_generated_content_dialog_button_margin_top" android:text="@string/ok" app:allowDefaultButtonShape="true" app:applyUpToLarge="true" app:button_type="dialog_action_button" style="@style/BriefDialogPositiveButtonTextStyle" />
+</LinearLayout>

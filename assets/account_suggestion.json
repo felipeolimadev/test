@@ -1,0 +1,485 @@
+{
+  "documentVersion": "1",
+  "routines": [
+    {
+      "routineInfo": {
+        "id": "AS-07",
+        "name": "All Sync On",
+        "packageName": "com.samsung.android.scloud",
+        "priority": "2",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/is_samsung_account_signed_in"
+        },
+        {
+          "tag": "get/auto_sync_for_all_items_off"
+        },
+        {
+          "tag": "get/auto_backup_for_all_items_off"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1&&2&&3"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/is_samsung_account_signed_in",
+                    "value": {
+                      "is_samsung_account_signed_in": true
+                    }
+                  },
+                  {
+                    "variable": "get/auto_sync_for_all_items_off",
+                    "value": {
+                      "is_auto_sync_all_items_on": true
+                    }
+                  },
+                  {
+                    "variable": "get/auto_backup_for_all_items_off",
+                    "value": {
+                      "is_auto_backup_all_items_on": false
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "AS-08",
+        "name": "Auto Backup on",
+        "packageName": "com.samsung.android.scloud",
+        "priority": "2",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/is_samsung_account_signed_in"
+        },
+        {
+          "tag": "get/auto_sync_for_all_items_off"
+        },
+        {
+          "tag": "get/auto_backup_for_all_items_off"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1&&2&&3"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/is_samsung_account_signed_in",
+                    "value": {
+                      "is_samsung_account_signed_in": true
+                    }
+                  },
+                  {
+                    "variable": "get/auto_sync_for_all_items_off",
+                    "value": {
+                      "is_auto_sync_all_items_on": false
+                    }
+                  },
+                  {
+                    "variable": "get/auto_backup_for_all_items_off",
+                    "value": {
+                      "is_auto_backup_all_items_off": true
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "AS-14",
+        "name": "Offline Finding On",
+        "packageName": "com.samsung.android.fmm",
+        "priority": "2",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/is_samsung_account_signed_in"
+        },
+        {
+          "tag": "get/offline_finding_status"
+        },
+        {
+          "tag": "get/is_china_model"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1&&2&&3"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/is_samsung_account_signed_in",
+                    "value": {
+                      "is_samsung_account_signed_in": true
+                    }
+                  },
+                  {
+                    "variable": "get/offline_finding_status",
+                    "value": {
+                      "status": false
+                    }
+                  },
+                  {
+                    "variable": "get/is_china_model",
+                    "value": {
+                      "is_china_model": false
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "SS-01",
+        "name": "Finish setting up your Galaxy",
+        "packageName": "com.osp.app.signin",
+        "priority": "0",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/is_network_connected"
+        },
+        {
+          "tag": "get/is_samsung_account_signed_in"
+        },
+        {
+          "tag": "get/is_google_deferred_setup_completed"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1&&2&&3"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/is_network_connected",
+                    "value": {
+                      "is_network_connected": true
+                    }
+                  },
+                  {
+                    "variable": "get/is_samsung_account_signed_in",
+                    "value": {
+                      "is_samsung_account_signed_in": false
+                    }
+                  },
+                  {
+                    "variable": "get/is_google_deferred_setup_completed",
+                    "value": {
+                      "is_google_deferred_setup_completed": true
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "SS-02",
+        "name": "Convenient login for samsung pass",
+        "packageName": "com.samsung.android.samsungpass",
+        "priority": "1",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/is_samsung_account_signed_in"
+        },
+        {
+          "tag": "get/is_registered_finger_print"
+        },
+        {
+          "tag": "get/after_setting_entry_day"
+        },
+        {
+          "package": "com.samsung.android.samsungpass",
+          "tag": "get/last_used_day"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1&&2&&3&&4"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/is_samsung_account_signed_in",
+                    "value": {
+                      "is_samsung_account_signed_in": true
+                    }
+                  },
+                  {
+                    "variable": "get/is_registered_finger_print",
+                    "value": {
+                      "is_registered_finger_print": true
+                    }
+                  },
+                  {
+                    "variable": "get/after_setting_entry_day",
+                    "operator": ">",
+                    "value": {
+                      "day": 14
+                    }
+                  },
+                  {
+                    "variable": "get/last_used_day",
+                    "operator": ">",
+                    "value": {
+                      "day": 14
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "SS-06",
+        "name": "Samsung Care+",
+        "packageName": "com.samsung.android.settingshelper",
+        "priority": "1",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/has_dynamic_shortcut"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/has_dynamic_shortcut",
+                    "value": {
+                      "has_dynamic_shortcut": true
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "SS-08",
+        "name": "What's new in One UI",
+        "packageName": "com.samsung.android.app.tips",
+        "priority": "1",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/has_dynamic_shortcut"
+        },
+        {
+          "tag": "get/after_fota_completed_day"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1&&2"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/has_dynamic_shortcut",
+                    "value": {
+                      "has_dynamic_shortcut": true
+                    }
+                  },
+                  {
+                    "variable": "get/after_fota_completed_day",
+                    "operator": "<",
+                    "value": {
+                      "day": 7
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    },
+    {
+      "routineInfo": {
+        "id": "SS-10",
+        "name": "Become a Samsung Rewards member and earn points",
+        "packageName": "com.osp.app.signin",
+        "priority": "1",
+        "uiType": "depth_in"
+      },
+      "actions": [
+        {
+          "tag": "get/has_dynamic_shortcut"
+        },
+        {
+          "tag": "flow_control/branch_if",
+          "parameters": {
+            "statement": {
+              "TYPE": "STRING",
+              "VALUE": "1"
+            },
+            "expressions": {
+              "TYPE": "LIST{STRING}",
+              "VALUE": {
+                "val_list": [
+                  {
+                    "variable": "get/has_dynamic_shortcut",
+                    "value": {
+                      "has_dynamic_shortcut": true
+                    }
+                  }
+                ]
+              }
+            },
+            "elseOffset": {
+              "TYPE": "NUMBER",
+              "VALUE": "2"
+            }
+          }
+        },
+        {
+          "tag": "mde_tip_suggestion"
+        },
+        {
+          "tag": "flow_control/branch_endif"
+        }
+      ]
+    }
+  ]
+}

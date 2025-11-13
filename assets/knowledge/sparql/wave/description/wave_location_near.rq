@@ -1,0 +1,12 @@
+SELECT DISTINCT ?targetLocation
+(GROUP_CONCAT(DISTINCT STR(?originLocation); SEPARATOR=',') AS ?originNeighborLocations)
+{
+    VALUES ?targetTP { <TARGET_TAKING_PICTURES_IRI> }
+    ?targetTP user:atLocation ?targetLocation .
+
+    TT find_h3_neighbors_res5 { ?originLocation ?targetLocation } .
+    VALUES ?originTP { <ORIGIN_TAKING_PICTURES_IRI> }
+    ?originTP user:atLocation ?originLocation .
+}
+GROUP BY ?targetLocation
+ORDER BY ?targetLocation

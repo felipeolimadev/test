@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.scs.documents" package="" prefKey="documents" version="5">
+    <fieldType name="string" dataType="String" class="StringField"/>
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+
+    <!-- Content search -->
+    <fieldType name="content_field" class="TextField" dataType="String">
+        <analyzer class="bs.docparser.DocumentIndexPerLanguageAnalyzer" type="index">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" stem="true"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="ja" />
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented" />
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi" />
+            <subAnalyzer class="bs.LowerCaseKeywordAnalyzer" lang="default" />
+        </analyzer>
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="true" type="search">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" stem="true"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="ja" />
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented" />
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi" />
+            <subAnalyzer class="bs.LowerCaseKeywordAnalyzer" lang="default" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+
+    <!-- By default indexed="true" stored="true" -->
+    <!-- "_id" value is from "inode" in media index -->
+    <field name="_id" type="string" isNonNull="true" sort="true"/>
+    <field name="content" type="content_field" termVector="true" />
+    <field name="is_valid" type="int_compare_field" />
+</schema>

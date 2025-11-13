@@ -1,0 +1,101 @@
+[
+  {
+    "id" : 1,
+    "patternString" : "(<num_suffix>)\\s*(<day_of_week>)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1,
+        "dayOfWeek" : 2
+      }
+    ],
+    "comment" : "2nd tuesday"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(<num_suffix>)\\s*(<time_period>)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "day",
+    "comment" : "2nd day"
+  },
+  {
+    "id": 3,
+    "patternString": "(<day_of_week>)",
+    "mapping": [
+        {
+          "dayOfWeek": 1
+        }
+      ],
+      "comment" : "tuesday"
+  },
+  {
+    "id": 3,
+    "patternString": "(<num_suffix>)\\s*(<time_period>)",
+    "mapping": [
+      {
+        "weekCount": 1
+      }
+    ],
+    "shouldContainKeyword": "\\bweek\\b",
+    "comment" : "2nd week"
+  },
+  {
+    "id" : 4,
+    "patternString": "(<relative_day>)",
+    "isRelative" : true,
+    "comment" : "today | tmrw | yesterday .."
+  },
+  {
+    "id" : 5,
+    "patternString" : "(<last_reference>)\\s*(<day_of_week>)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1
+      }
+    ]
+  },
+  {
+    "id" : 5,
+    "patternString" : "(<last_reference>)\\s*(<time_period>)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "day"
+  },
+  {
+    "id" : 6,
+    "patternString" : "(?:the)?\\s*(<num_suffix>|<num>)\\s*(?:of)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ]
+  },
+  {
+    "id" : 7,
+    "patternString" : "(<num_suffix>)\\s*(<time_period>)",
+    "mapping" : [
+      {
+        "weekendCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "\\bweekend\\b",
+    "comment" : "2nd weekend"
+  },
+  {
+    "id": 9,
+    "type": "DAY_OF_WEEK_AND_COUNT",
+    "patternString": "(<day_of_week>)\\s*(<num_suffix>)",
+    "mapping": [
+      {
+        "dayOfWeek": 1,
+        "weekDayCount": 2
+      }
+    ]
+  }
+]

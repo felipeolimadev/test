@@ -1,0 +1,12 @@
+
+
+[?X, rdfs:subClassOf, ?X] , [?Y, rdfs:subClassOf, ?Y]  :- [?X, rdfs:subClassOf, ?Y] , FILTER(isIRI(?X)), FILTER(isIRI(?Y)) .
+[?X, rdfs:subClassOf, ?Z]  :- [?X, rdfs:subClassOf, ?Y] , [?Y, rdfs:subClassOf, ?Z] , FILTER(isIRI(?Z)) .
+[?X, rdfs:subClassOf, ?Y] , [?Y, rdfs:subClassOf, ?X]  :- [?X, owl:equivalentClass, ?Y] , FILTER(isIRI(?X)), FILTER(isIRI(?Y)) .
+
+rdfs:subPropertyOf[owl:bottomDataProperty, ?X], rdfs:subPropertyOf[?X, ?X], rdfs:subPropertyOf[?X, owl:topDataProperty] :- owl:DatatypeProperty[?X] .
+rdfs:subPropertyOf[owl:bottomObjectProperty, ?X], rdfs:subPropertyOf[?X, ?X], rdfs:subPropertyOf[?X, owl:topObjectProperty] :- owl:ObjectProperty[?X] .
+rdfs:subPropertyOf[?X, ?X], rdfs:subPropertyOf[?Y, ?Y] :- rdfs:subPropertyOf[?X, ?Y] .
+rdfs:subPropertyOf[?X, ?Z] :- rdfs:subPropertyOf[?X, ?Y], rdfs:subPropertyOf[?Y, ?Z] .
+rdfs:subPropertyOf[?X, ?Y], rdfs:subPropertyOf[?Y, ?X] :- owl:equivalentProperty[?X, ?Y] .
+owl:equivalentProperty[?X, ?Y] :- rdfs:subPropertyOf[?X, ?Y], rdfs:subPropertyOf[?Y, ?X] .

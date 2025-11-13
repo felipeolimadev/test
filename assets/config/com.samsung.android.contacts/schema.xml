@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.contacts" package="" prefKey="contacts" version="41"
+    readPermission="android.permission.READ_CONTACTS">
+
+    <!-- class -->
+    <!-- [REQ] Name fields should be searched regardless of special characters.-->
+    <fieldType name="display_name_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.contacts.NameSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="name_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="fuzzy_field" dataType="String" class="TextField">
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+    <fieldType name="keyword_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="normalized_keyword_field" dataType="String" class="TextField">
+        <!-- normalization(1) or collation(2) -->
+        <analyzer type="index" class="bs.core.NormalizerAnalyzer" normalizerType="simpleAccent"/>
+    </fieldType>
+    <!-- TODO: This may can be merged to Normalizer... -->
+    <fieldType name="pinyin_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" withMixed="true"
+            keepOtherLang="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="kana_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer"
+            normalize="true" keepUncombinedTokenTokens="true"/>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+    <fieldType name="chosung_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.korean.ChosungAnalyzer" keepOtherLang="true" removeSpace="true" />
+    </fieldType>
+    <fieldType name="string_field" dataType="String" class="StringField"/>
+    <fieldType name="string_text_field" dataType="String" class="TextField" />
+    <fieldType name="multi_string_text_field" dataType="MultiValuedString" class="TextField" />
+    <fieldType name="multi_lower_case_text_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="multi_text_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.contacts.SqliteStyleAnalyzer" />
+    </fieldType>
+    <fieldType name="lower_case_text_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.LowerCaseSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="keyword_multi_text_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="core.KeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="sorting_field" dataType="BytesRef" class="SortedDocValuesField" />
+    <fieldType name="int_stored_field" dataType="int" class="StoredField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField" />
+
+    <fieldType name="name_normalize_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.contacts.ContactsNameAnalyzer"/>
+    </fieldType>
+    <fieldType name="name_normalize_term_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.contacts.ContactsNameAnalyzer" enablePartial="false"/>
+    </fieldType>
+    <fieldType name="phone_number_field" dataType="MultiValuedString" class="StringField"/>
+    <fieldType name="string_stored_field" dataType="String" class="StoredField"/>
+    <fieldType name="phonetic_field" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" neuralPhonetics="true"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="transliteration_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="person" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="person" />
+    </fieldType>
+
+    <fieldType name="initial_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.core.InitialAnalyzer"/>
+    </fieldType>
+
+    <fieldType name="multi_kana_only" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer"
+            normalize="true" keepUncombinedTokens="true"/>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+    <fieldType name="float_numeric_field" dataType="float" class="FloatDocValuesField" />
+    <fieldType name="long_numeric_field" dataType="long" class="NumericDocValuesField" />
+
+    <field name="_id" type="string_field"/>
+    <field name="name_raw_contact_id" type="string_field"/>
+    <field name="display_name" type="display_name_field"/>
+    <field name="display_name_keyword" type="keyword_field" src="display_name"/>
+    <field name="display_name_normalized_keyword" type="normalized_keyword_field"
+        src="display_name"/>
+    <field name="display_name_alt" type="name_field"/>
+    <field name="display_name_alt_keyword" type="keyword_field" src="display_name_alt"/>
+    <field name="display_name_alt_normalized_keyword" type="normalized_keyword_field"
+        src="display_name_alt"/>
+    <field name="chosung" type="chosung_field" src="display_name"/>
+    <field name="display_name_source" type="name_field"/>
+    <field name="display_name_phonetic" type="phonetic_field" src="display_name"/>
+    <field name="phonetic_name" type="string_field"/>
+    <field name="display_name_pinyin" type="pinyin_field"/>
+    <field name="display_name_kana" type="kana_field" src="display_name" stored="false"/>
+    <field name="sort_key" type="string_stored_field"/>
+    <field name="sort_key_alt" type="string_stored_field"/>
+    <field name="sort_key_sorted" type="sorting_field" src="sort_key"/>
+    <field name="sort_key_alt_sorted" type="sorting_field" src="sort_key_alt"/>
+    <field name="display_name_sorted" type="sorting_field"/>
+    <field name="has_phone_number" type="string_field"/>
+    <field name="starred" type="int_stored_field" sort="true"/>
+    <field name="is_sim" type="int_stored_field"/>
+    <field name="photo_id" type="string_field"/>
+    <field name="photo_thumb_uri" type="string_field"/>
+    <field name="photo_uri" type="string_field"/>
+    <field name="account_name" type="keyword_multi_text_field"/>
+    <field name="account_type" type="keyword_multi_text_field"/>
+    <field name="lookup" type="string_field"/>
+    <field name="is_user_profile" type="int_stored_field"/>
+    <field name="contact_presence" type="string_field"/>
+    <field name="contact_status" type="string_field"/>
+    <field name="link" type="string_field"/>
+    <field name="link_count" type="int_stored_field"/>
+    <field name="link_accounts" type="string_text_field"/>
+    <field name="name_initials" type="initial_field" src="display_name"/>
+
+    <!-- data from ContactDataFetcher -->
+    <!-- for search Nickname, Organization, Address, Email, Messenger, Notes-->
+    <field name="contents" type="multi_text_field"/>
+    <field name="contents_kana" type="multi_kana_only" src="contents" stored="false" />
+    <field name="phone_number" type="phone_number_field"/>
+    <field name="phone_number_normalized" type="phone_number_field" />
+    <field name="relation_type" type="string_field"/>
+    <field name="relations" type="multi_lower_case_text_field"/>
+    <field name="relations_kana" type="multi_kana_only" src="relations" stored="false"/>
+    <field name="in_visible_group" type="string_field"/>
+    <field name="nickname" type="name_field"/>
+    <field name="organizations" type="multi_string_text_field"/>
+    <!-- field for displayName, phoneticName -->
+    <field name="normalized_term_name" type="name_normalize_term_field" src="display_name"
+        stored="false"/>
+    <!-- field for displayName, phoneticName -->
+    <field name="normalized_name" type="name_normalize_field"/>
+
+    <field name="display_name_fuzzy" type="fuzzy_field" src="display_name" termVector="true"/>
+    <field name="display_name_alt_fuzzy" type="fuzzy_field" src="display_name_alt"/>
+    <field name="primaryContact" type="string_text_field" />
+
+    <field name="display_name_transliterated" type="transliteration_field" src="display_name"
+        stored="false"/>
+
+    <copyField dest="normalized_name" source="display_name" />
+    <copyField dest="normalized_name" source="phonetic_name" />
+
+    <copyField dest="display_name_sorted" source="display_name_phonetic"/>
+    <copyField dest="display_name_sorted" source="display_name" condition="dest_is_empty"/>
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true" />
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true" />
+
+    <!-- Stores frequently searched contacts -->
+    <field name="usage_score" type="float_numeric_field"/>
+    <field name="usage_timestamp" type="long_numeric_field"/>
+
+    <fieldList type="search">
+        <fieldItem name="display_name" />
+        <fieldItem name="display_name_phonetic" />
+        <fieldItem name="normalized_name"/>
+        <fieldItem name="phone_number_normalized" />
+        <fieldItem name="contents" />
+        <fieldItem name="name_initials"/>
+        <fieldItem name="display_name_pinyin" />
+        <fieldItem name="display_name_transliterated" />
+    </fieldList>
+
+    <fieldList type="projection_search">
+        <fieldItem name="_id" />
+        <fieldItem name="display_name" />
+        <fieldItem name="display_name_phonetic" />
+        <fieldItem name="phone_number" />
+        <fieldItem name="contents" />
+        <fieldItem name="starred"/>
+        <fieldItem name="photo_thumb_uri"/>
+        <fieldItem name="primaryContact"/>
+    </fieldList>
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="display_name_sorted" order="ASC" />
+        <sortedField name="starred" order="DESC" />
+    </sort>
+</schema>

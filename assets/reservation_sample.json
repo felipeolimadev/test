@@ -1,0 +1,177 @@
+[
+  {
+    "eventCategory": "UNKNOWN",
+    "eventSubCategory": "UNKNOWN",
+    "id": 3243,
+    "what": [
+      {
+        "extras": "{\"reserveCategory\":\"RESTAURANT\",\"msgType\":\"CONFIRMED\"}",
+        "sourcePackage": "com.kakao.talk",
+        "sourceUri": "",
+        "tags": [
+          "RESERVATION",
+          "RESTAURANT"
+        ],
+        "title": "연돈 예약"
+      }
+    ],
+    "when": {
+      "endTime": 1758254400000,
+      "isLunar": false,
+      "sourcePackage": "com.kakao.talk",
+      "sourceUri": "",
+      "startTime": 1758250800000,
+      "timeZone": "Asia/Seoul"
+    },
+    "where": [
+      {
+        "address": "제주특별자치도 서귀포시 일주서로 968-10 (색달동, 장위동유성집) 1층",
+        "augmented": false,
+        "city": "",
+        "country": "",
+        "lat": 0.0,
+        "lng": 0.0,
+        "placeName": "연돈",
+        "poi": "",
+        "postalCode": "",
+        "sourcePackage": "com.kakao.talk",
+        "sourceUri": "",
+        "tags": []
+      }
+    ],
+    "who": []
+  },
+  {
+    "eventCategory": "UNKNOWN",
+    "eventSubCategory": "UNKNOWN",
+    "id": 4262,
+    "what": [
+      {
+        "extras": "{\"reserveNumber\":\"97589724\",\"reserveCategory\":\"ACCOMMODATION\",\"msgType\":\"CONFIRMED\"}",
+        "sourcePackage": "com.kakao.talk",
+        "sourceUri": "",
+        "tags": [
+          "RESERVE_NUMBER",
+          "RESERVATION",
+          "ACCOMMODATION"
+        ],
+        "title": "르메르디앙 서울, 명동 예약"
+      }
+    ],
+    "when": {
+      "endTime": 1758423600000,
+      "isLunar": false,
+      "sourcePackage": "com.kakao.talk",
+      "sourceUri": "",
+      "startTime": 1758265200000,
+      "timeZone": "Asia/Seoul"
+    },
+    "where": [
+      {
+        "address": "중구 명동8나길 38 서울 04535 대한민국",
+        "augmented": false,
+        "city": "서울",
+        "country": "KOR",
+        "lat": 0.0,
+        "lng": 0.0,
+        "placeName": "르메르디앙 서울, 명동",
+        "poi": "",
+        "postalCode": "",
+        "sourcePackage": "com.kakao.talk",
+        "sourceUri": "",
+        "tags": []
+      }
+    ],
+    "who": []
+  },
+  {
+    "eventCategory": "UNKNOWN",
+    "eventSubCategory": "UNKNOWN",
+    "id": 4261,
+    "what": [
+      {
+        "extras": "{\"reserveNumber\":\"0257-0713-4539-114\",\"reserveCategory\":\"CULTURE\",\"msgType\":\"CONFIRMED\"}",
+        "sourcePackage": "com.samsung.android.messaging",
+        "sourceUri": "",
+        "tags": [
+          "RESERVE_NUMBER",
+          "RESERVATION",
+          "CULTURE"
+        ],
+        "title": "CGV-광교 쥬라기 월드 예약"
+      }
+    ],
+    "when": {
+      "endTime": 1758269700000,
+      "isLunar": false,
+      "sourcePackage": "com.samsung.android.messaging",
+      "sourceUri": "",
+      "startTime": 1758266100000,
+      "timeZone": "Asia/Seoul"
+    },
+    "where": [
+      {
+        "address": "",
+        "augmented": false,
+        "city": "",
+        "country": "",
+        "lat": 0.0,
+        "lng": 0.0,
+        "placeName": "CGV-광교",
+        "poi": "",
+        "postalCode": "",
+        "sourcePackage": "com.samsung.android.messaging",
+        "sourceUri": "",
+        "tags": []
+      }
+    ],
+    "who": []
+  },
+  {
+    "eventCategory": "UNKNOWN",
+    "eventSubCategory": "UNKNOWN",
+    "id": 202,
+    "what": [
+      {
+        "extras": "{\"reserveCategory\":\"BEAUTY\",\"msgType\":\"CONFIRMED\"}",
+        "sourcePackage": "com.nhn.android.search",
+        "sourceUri": "",
+        "tags": [
+          "RESERVATION",
+          "BEAUTY",
+          "RESERVATION",
+          "BEAUTY",
+          "NOTIFICATION",
+          "RESERVATION",
+          "BEAUTY"
+        ],
+        "title": "지호헤어 예약"
+      }
+    ],
+    "when": {
+      "endTime": 1758427200000,
+      "isLunar": false,
+      "sourcePackage": "com.nhn.android.search",
+      "sourceUri": "",
+      "startTime": 1758423600000,
+      "timeZone": "Asia/Seoul"
+    },
+    "where": [
+      {
+        "address": "",
+        "augmented": false,
+        "city": "",
+        "country": "",
+        "lat": 0.0,
+        "lng": 0.0,
+        "placeName": "지호헤어",
+        "poi": "",
+        "postalCode": "",
+        "sourcePackage": "com.nhn.android.search",
+        "sourceUri": "",
+        "tags": []
+      }
+    ],
+    "who": []
+  }
+]

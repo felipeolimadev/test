@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d күн қалды.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d күн қалды.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s %2$d күннен кейін болады.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s %2$d күннен кейін болады.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d іс-шара%3$s ертең жалғасады.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d іс-шара%3$s ертең жалғасады.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Сізде бүгінге %1$s%2$d іс-шара%3$s бар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сізде бүгінге %1$s%2$d іс-шара%3$s бар.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Сізде бүгін %1$d іс-шара бар. Бірінші іс-шара – бұл %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сізде бүгін %1$d іс-шара бар. Бірінші іс-шара – бұл %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Бүгінге %1$s%2$d іс-шара қалды%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгінге %1$s%2$d іс-шара қалды%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Сізде ертең %1$s%2$d іс-шара%3$s болады.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сізде ертең %1$s%2$d іс-шара%3$s болады.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Сізде ертең %1$d іс-шара бар. Бірінші іс-шара – бұл %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сізде ертең %1$d іс-шара бар. Бірінші іс-шара – бұл %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d оқиға</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d оқиға</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d мин кей басталады</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d мин кей басталады</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Бүгінге %d еске салғыш қалды</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгінге %d еске салғыш қалды</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Сіз бүгін %d жеткізу хабарын алдыңыз. Жеткізу күйлерінен хабардар екеніңізді тексеріңіз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сіз бүгін %d жеткізу хабарын алдыңыз. Жеткізу күйінен хабардар екеніңізді тексеріңіз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">Бүгін %d жеткізу</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгін %d жеткізу</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Осы апта мақс. %d рет жоғары.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Осы апта мақс. %d рет жоғары.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d әрекет мақс. жетті</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d әрекет мақс. жетті</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Жалпы биіктікке көтерілу қарқыны %1$s болды және сіз %2$,d килокалория жақтыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Жалпы биіктікке көтерілу қарқыны %1$s болды және сіз %2$,d килокалория жақтыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Орташа қарқыныңыз %1$s болды және сіз %2$,d килокалория жақтыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Орташа қарқыныңыз %1$s болды және сіз %2$,d килокалория жақтыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Орташа жылдамдығыңыз %1$s болды және сіз %2$,d килокалория жақтыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Орташа жылдамдығыңыз %1$s болды және сіз %2$,d килокалория жақтыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Осында %1$s жаттығуыңыздың қорытындысы берілген. Ұзақтығы %2$s болды және сіз %3$,d килокалория жақтыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Осында %1$s жаттығуыңыздың қорытындысы берілген. Ұзақтығы %2$s болды және сіз %3$,d килокалория жақтыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Сіз бүгін %d жоспарланған дәрі-дәрмекті қабылдамадыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сіз бүгін %d жоспарланған дәрі-дәрмекті қабылдамадыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d сағат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d сағат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d сағат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d сағат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Сізде бүгінге %1$s%2$d қабылданбаған қоңырау%3$s бар, сіз оларды әлі тексермедіңіз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сізде бүгінге %1$s%2$d қабылданбаған қоңырау%3$s бар, сіз оны әлі тексермедіңіз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Бүгін %d қоңырауды қабылдамадыңыз. Осы қабылданбаған қоңырауларды Now brief қызметінде қарап шығыңыз. Қажет болса, қайта қоңырау шалуды ұмытпау үшін еске салғыштарды орнатуға болады.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бүгін %d қоңырауды қабылдамадыңыз. Осы қабылданбаған қоңырауды Now brief қызметінде қарап шығыңыз. Қажет болса, қайта қоңырау шалуды ұмытпау үшін еске салғышты орнатуға болады.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Тағы %d қабылданбаған қоңырау</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Тағы %d қабылданбаған қоңырау</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d жауапсыз қоң</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d жауапсыз қоң</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d сағат бұрын</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d сағат бұрын</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d минут бұрын</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минут бұрын</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI жетілдірілген интеллект мүмкіндіктерін пайдалану үшін, сіз кемінде %d жаста болуыңыз қажет.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AI жетілдірілген интеллект мүмкіндіктерін пайдалану үшін, сіз кемінде %d жаста болуыңыз қажет.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d хабар</item>
+        <item quantity="one">%d хабар</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d ми</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ми</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d секунд</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d секунд</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Сіз таңға %1$s%2$d оятарды%3$s орнаттыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сіз таңға %1$s%2$d оятарды%3$s орнаттыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Ертеңгі таңға %1$s%2$d оятар%3$s орнатылды.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ертеңгі таңға %1$s%2$d оятар%3$s орнатылды.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">Ұшуға дейін кемінде %4$d сағат бұрын әуежайға жету үшін %1$s%2$s дейін шығыңыз.%3$s Ұмытпау үшін оятарды орнатыңыз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ұшуға дейін кемінде %4$d сағат бұрын әуежайға жету үшін %1$s%2$s дейін шығыңыз.%3$s Ұмытпау үшін оятарды орнатыңыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">Ұшу уақытына дейін кемінде %4$d сағат бұрын әуежайға жету үшін %1$s%2$s дейін шығыңыз.%3$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ұшу уақытына дейін кемінде %4$d сағат бұрын әуежайға жету үшін %1$s%2$s дейін шығыңыз.%3$s</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">%2$s үшін %1$d күндік саяхат бағытын ұсыныңыз, соның ішінде баратын жерлер, орындалатын әрекеттер және барып көруге тұрарлық мейрамханалар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s үшін %1$d күндік саяхат бағытын ұсыныңыз, соның ішінде баратын жерлер, орындалатын әрекеттер және барып көруге тұрарлық мейрамханалар.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Сапар кезінде пайдалы болуы мүмкін %1$sұсынылған қолданбаларды%2$s тексеріңіз.</item>
+        <item quantity="one">Сапар кезінде пайдалы болуы мүмкін %1$sұсынылған қолданбаны%2$s тексеріңіз.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">Баратын жерге жеткенде аудармашы қолданбасында пайдалану үшін %1$sосы тіл бумасын жүктеп алыңыз%2$s.</item>
+        <item quantity="one">Баратын жерге жеткенде аудармашы қолданбасында пайдалану үшін %1$sосы тіл бумаларын жүктеп алыңыз%2$s.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Жүктеп алынатын тіл бумалары</item>
+        <item quantity="one">Жүктеп алынатын тіл бумасы</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d құрылғы қосулы</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d құрылғы қосулы</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Соңғы рет %d күн бұрын хабарласқан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Соңғы рет %d күн бұрын хабарласқан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Соңғы рет %d күн бұрын хабар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Соңғы рет %d күн бұрын хабар.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Соңғы рет %d ай бұрын хабар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Соңғы рет %d ай бұрын хабарласты</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Соңғы рет %d апта бұрын хабар.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Соңғы рет %d апта бұрын хабар.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Тағы %d контакт</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Тағы %d контакт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Samsung Wallet әмиянында мерзімі %d күннен кейін аяқталатын купоныңыз бар. Мерзімі бітпес бұрын оны қолданғаныңызға көз жеткізіңіз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Samsung Wallet әмиянында мерзімі %d күннен кейін аяқталатын купоныңыз бар. Мерзімі бітпес бұрын оны қолданғаныңызға көз жеткізіңіз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Минус %d градустан жоғары</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Минус %d градустан жоғары</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Минус %d градустан төмен</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Минус %d градустан төмен</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Күнтізбеңізде %1$s деп аталатын іс-шара бар. %5$s орнындағы %4$s іс-шарасы өткен кезде %2$d %3$s градус болады.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Күнтізбеңізде %1$s деп аталатын іс-шара бар. %5$s орнындағы %4$s іс-шарасы өткен кезде %2$d %3$s градус болады.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">%d градустан жоғары</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d градустан жоғары</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">%d градустан төмен</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d градустан төмен</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s көріністер</item>
+        <item quantity="one">%s көру</item>
+    </plurals>
+</resources>

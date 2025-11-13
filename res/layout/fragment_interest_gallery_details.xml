@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerPadding="8.0dip">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/preference_get_interests_gallery_detail" />
+    </LinearLayout>
+    <EditText android:textColor="@color/black" android:textColorHint="#80ffffff" android:id="@id/filter_edit_text" android:background="@android:drawable/editbox_background" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/preference_interest_gallery_interest_filter_by_text" android:inputType="text" android:layout_marginEnd="2.0dip" android:autofillHints="@string/preference_interest_gallery_interest_autofill_hint" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/time_filter_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/start_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="~" android:layout_marginEnd="2.0dip" />
+        <Button android:id="@id/end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip" />
+        <Button android:id="@id/all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preference_place_all" android:layout_marginEnd="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <Button android:id="@id/execute_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/preference_place_execute" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@id/gallery_interest_table_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <TableLayout android:gravity="center" android:id="@id/gallery_interest_table" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:showDividers="middle" android:dividerPadding="4.0dip" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

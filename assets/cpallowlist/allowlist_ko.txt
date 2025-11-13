@@ -1,0 +1,7 @@
+travel, 소풍, trip, 여행
+혼례식, wedding, 결혼, 혼인, 웨딩, 결혼식, marriage ceremony, 혼례
+입학식, matriculation, entrance ceremony, 입교식, 입학
+graduation, 학위수여식, 졸업식, commencement, 졸업
+생신, 생일, 벌쓰데이, birth anniversary, 탄신일, birthday, 탄생일
+결혼기념일, 결혼 기념일, wedding anniversary, marriage anniversary, 결혼 기념, 결혼기념
+vacation, 휴가

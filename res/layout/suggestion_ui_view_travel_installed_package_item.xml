@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stateListAnimator="?seslLargeTouchAnimator"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/app_icon" android:layout_width="@dimen/travel_package_icon_size" android:layout_height="@dimen/travel_package_icon_size" android:layout_marginBottom="@dimen/travel_package_appIcon_bottom_margin" android:layout_marginHorizontal="@dimen/travel_package_dialog_horizontal_margin" />
+    <TextView android:textSize="@dimen/travel_package_app_name_text_size" android:ellipsize="end" android:gravity="center" android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextAppearance.RobotoRegular" />
+</LinearLayout>

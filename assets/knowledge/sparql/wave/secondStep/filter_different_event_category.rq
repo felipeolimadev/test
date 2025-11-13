@@ -1,0 +1,41 @@
+# 초기 검색 결과 이벤트와 다른 카테고리의 이벤트 존재
+FILTER EXISTS {
+    ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+    ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+
+    {
+        SELECT DISTINCT ?targetEventStartTime ?targetEventEndTime {
+            ?targetEvent a/rdfs:subClassOf user:ScheduledEvent .
+            ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+            ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+        }
+    }
+    FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+}
+FILTER EXISTS {
+    {
+        SELECT DISTINCT ?targetCategory {
+            ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+            ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+
+            ?targetEvent a/rdfs:subClassOf user:ScheduledEvent .
+            ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+            ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+            ?targetEvent content:eventCategory ?targetCategory .
+            FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+        }
+    }
+
+    FILTER NOT EXISTS {
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+        ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+        ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+        ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+        ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+        ?originEvent content:eventCategory ?targetCategory .
+
+        FILTER (?originEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originStartTime)
+    }
+}

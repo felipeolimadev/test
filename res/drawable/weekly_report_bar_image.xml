@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/widget_rounded_background_color" />
+    <corners android:topLeftRadius="@dimen/digital_well_being_report_item_bar_corner_radius" android:topRightRadius="@dimen/digital_well_being_report_item_bar_corner_radius" />
+</shape>

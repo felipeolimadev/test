@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <action name="Set Bedtime" secUsageIdList="1400" />
+    <action name="Reminder notification" secUsageIdList="1403" />
+    <action name="Bedtime Sound on or off" secUsageIdList="1036" />
+    <action name="Bedtime Vibration on or off" secUsageIdList="1025" />
+    <action name="Bedtime Snooze on or off" secUsageIdList="1023" />
+    <action name="Bedtime Cancel" secUsageIdList="1221" />
+    <action name="Bedtime Save" secUsageIdList="1222" />
+    <action name="Save bedtime alarm" secUsageIdList="1409">
+        <parameter name="repeat" secAnalyticsKey="Repeat" type="Number" />
+    </action>
+    <action name="Set Bedtime by circle or picker" secUsageIdList="1401" />
+    <action name="Bedtime usage" secUsageIdList="5005" />
+    <action name="Digital wellbeing bedtime mode" secUsageIdList="5006" />
+    <action name="Bedtime repeat days" secUsageIdList="5007" />
+    <action name="Control devices" secUsageIdList="5008" />
+    <action name="Bedtime reminder confirm" secUsageIdList="1408" />
+    <action name="Set Alarm" secUsageIdList="3000" />
+    <action name="Sound on or off" secUsageIdList="3002" />
+    <action name="Vibration on or off" secUsageIdList="3003" />
+    <action name="Snooze on or off" secUsageIdList="3001" />
+    <action name="Cancel" secUsageIdList="1227" />
+    <action name="Discard" secUsageIdList="1228" />
+    <action name="Save" secUsageIdList="1229" />
+    <action name="Volume level" secUsageIdList="1057" />
+    <action name="Read time aloud" secUsageIdList="1026" />
+    <action name="Alarm type" secUsageIdList="1060" />
+    <action name="BurstShot" secUsageIdList="6" />
+    <action name="Take selfie" secUsageIdList="2002" />
+    <action name="ISO" secUsageIdList="16" />
+    <action name="Skin tone level" secUsageIdList="9014" />
+    <action name="Effects" secUsageIdList="11" />
+    <action name="Macro mode" secUsageIdList="231" />
+    <action name="Ultra wide lens" secUsageIdList="212" />
+    <action name="Wide lens" secUsageIdList="213" />
+    <action name="Tele lens" secUsageIdList="214" />
+    <action name="One handed zoom" secUsageIdList="217" />
+    <action name="Second tele lens" secUsageIdList="229" />
+    <action name="View content" secUsageIdList="1268" />
+    <action name="Save content" secUsageIdList="1270" />
+    <action name="Close content" secUsageIdList="1271" />
+    <action name="Share content" secUsageIdList="1278" />
+    <action name="Hide or unhide albums" secUsageIdList="1816" />
+    <action name="Images with issues" secUsageIdList="1276" />
+    <action name="Images not needed" secUsageIdList="1277" />
+    <action name="Hide album" secUsageIdList="1824" />
+    <action name="Empty trash" secUsageIdList="7112" />
+    <action name="Share to Instagram" secUsageIdList="4014" />
+    <action name="Share to Feed" secUsageIdList="4018" />
+    <action name="Share to Story" secUsageIdList="4019" />
+    <action name="Share memories" secUsageIdList="3036" />
+    <action name="Save memories" secUsageIdList="3037" />
+    <action name="Picture search" secUsageIdList="1003" />
+    <action name="Picture upscale" secUsageIdList="1278" />
+    <action name="Picture pop" secUsageIdList="1279" />
+    <action name="Delete bad quality Picture" secUsageIdList="1276" />
+    <action name="Delete old Picture" secUsageIdList="1277" />
+    <action name="Empty trash" secUsageIdList="7112" />
+    <action name="Mark all as read" secUsageIdList="1113" />
+    <action name="Locked messages" secUsageIdList="1114" />
+    <action name="Video call" secUsageIdList="1179" />
+    <action name="Make a call" secUsageIdList="1109" />
+    <action name="Send message" secUsageIdList="1110" />
+    <action name="Record a call" secUsageIdList="1118" />
+    <action name="Delete Recent Searches" secUsageIdList="1136" />
+    <action name="Clear Search History" secUsageIdList="1137" />
+    <action name="Open webpage" secUsageIdList="2037" />
+    <action name="Bookmark status" secUsageIdList="2001" />
+    <action name="Switch search engine" secUsageIdList="2031" />
+    <action name="Select search engine" secUsageIdList="2218" />
+    <action name="Share page" secUsageIdList="2461" />
+</actions>

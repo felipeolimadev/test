@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/configuration" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat android:title="Screen AI" android:key="key_event_screen_ai" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/debug" app:iconSpaceReserved="false">
+        <Preference android:title="Event Viewer" android:key="key_event_viewer" app:iconSpaceReserved="false" />
+        <Preference android:title="Event Statistics" android:key="key_event_statistics" app:iconSpaceReserved="false" />
+        <Preference android:title="Event Test Mode" android:key="key_event_test_mode" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

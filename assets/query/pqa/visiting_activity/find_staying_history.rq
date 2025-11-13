@@ -1,0 +1,15 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    {
+        ?staying rdf:type/rdfs:subClassOf user:Staying .
+        ?staying time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+        ?staying time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+        <TIME_FILTER>
+        <LOCATION_FILTER>
+        <PERSON_FILTER>
+    }
+    {
+        ?s rdf:unknown? ?staying .
+        ?s ?p ?o EXPLICIT true .
+    }
+} <OUTPUT_SORT>

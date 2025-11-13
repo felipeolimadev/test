@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta-data type="resolver">
+    <input> [
+            {
+                "name":"context",
+                "type":"http://base/deepsky#Context"
+            },
+            {
+                "name":"interaction",
+                "type":"http://base/deepsky#Interaction"
+            },
+            {
+                "name":"uiInteraction",
+                "type":"http://base/deepsky#UIInteraction"
+            }
+        ]</input>
+    <output> [
+            {
+                "name":"value",
+                "type":"http://schema.org/Behavior"
+            }
+        ]</output>
+</meta-data>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/three_unit_dialog_layout" android:background="@drawable/dialog_rounded_corners" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/unit_dialog_text_color" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="12.0dip" android:text="@string/unit_dialog_title" android:layout_marginStart="24.0dip" android:layout_marginEnd="4.0dip" style="@style/UnitBoldText" />
+    <ListView android:id="@id/unitListview" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:layout_weight="1.0" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/unit_dialog_text_color" android:gravity="center_horizontal" android:id="@id/close_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="26.0dip" android:text="@string/unit_converter_cancel" android:layout_weight="1.0" style="@style/UnitBoldText" />
+        <View android:id="@id/listView_start_divider" android:background="@drawable/dialog_button_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="26.0dip" android:layout_marginBottom="30.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/unit_dialog_text_color" android:gravity="center_horizontal" android:id="@id/show_more_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="26.0dip" android:text="@string/unit_converter_show_more" android:layout_weight="1.0" style="@style/UnitBoldText" />
+    </LinearLayout>
+</LinearLayout>

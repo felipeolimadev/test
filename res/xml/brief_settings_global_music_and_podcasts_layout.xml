@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_music_and_podcasts" android:title="@string/brief_settings_contents_music_and_podcasts"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout_width="fill_parent">
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Spotify" android:key="music_spotify" android:defaultValue="true" app:iconType="music_spotify" />
+    </PreferenceCategory>
+</PreferenceScreen>

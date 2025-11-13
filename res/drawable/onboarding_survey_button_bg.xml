@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.util.SeslShapeDrawable
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/basic_token_sys_surface_bright" />
+    <corners android:radius="@dimen/onboarding_survey_button_corner_radius" />
+</androidx.appcompat.util.SeslShapeDrawable>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>)?[\\s]*(?:de|[\\/.-])?[\\s]*<num>[\\s]*(?:del?|[\\/.-])[\\s]*<num>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_YEAR_ALL_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>)[\\s]*[\\/|\\.|-]?[\\s]*<num>[\\s]*[\\/|\\.|-]?[\\s]*<num>)(?:\\s|$|\\.|,|\\-)"
+  },
+  {
+    "id": 3,
+    "type": "DAY_YEAR_YEAR_KEYWORD_PRESENT_ALL_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(<time_period>)\\s*(<num>)[\\s]*[\\/|\\.|-]?[\\s]*(<time_period>)\\s*(<num>)[\\s]*[\\/|\\.|-]?[\\s]*(<time_period>)\\s*(<num>)(?:\\s|^|\\.|,|\\-)",
+    "comment": "año 2025 / mes 02 / día 20"
+  },
+  {
+    "id": 4,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>|<num_suffix>|<num_word>)[\\s]*(?:de)?[\\s]*(<month>)[\\s]*(?:de[l]?|[,])?[\\s]*(<num>))(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 5,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>)[\\s]*(?:del?|[—,-])?[\\s]*(<num>)[\\s]*(?:de[l]?)?[\\s]*(<month>))(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 6,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>|<num_suffix>|<num_word>)[\\s]*(?:del?)?[\\s]*(<num>)[\\s]*(?:de[l]?|[,])?[\\s]*(<month>))(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 7,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>|<num_suffix>)?[\\s]*(<time_period>)[\\s]*(<after_reference>|<before_reference>))?[\\s]*((<month>[\\.]?)[\\s]*(?:|del?|\\/|\\.|,)?[\\s]*(<num>|<num_suffix>)[\\s]*(?:|del?|\\/|\\.|,)?[\\s]*(<num>))(?:\\s|^|\\.|,|\\-)",
+    "comment" : "enero 2, 2024"
+  },
+  {
+    "id": 8,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(<num>[\\s]*(?:de|[\\/\\.-])[\\s]*<num>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 9,
+    "type": "DAY_NUM_MONTH_WORD",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(<num_suffix>|<num_word>|<num>)[\\s]*(?:de)[\\s]*(<month>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 10,
+    "type": "MONTH_WORD_YEAR_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(<month>[\\s]*(?:de[l]?)?[\\s]*(<num>))([,]?[\\s]*<time_period>[\\s]*<num>)?(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 11,
+    "type": "MONTH_WORD_DAY_NUM_KEYWORD_YEAR_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(<month>)[\\s]*\\(<time_period>[\\s]*(<num>|<num_suffix>)\\)[,]?[\\s]*(<num>)(?:\\s|^|\\.|,|\\-)",
+    "comment": "abril (día 10), 2023"
+  },
+  {
+    "id": 12,
+    "type" : "special_days",
+    "patternString": "((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(?:\\s|^|\\.|,|\\-)(<time_period>)?[\\s]*(de l[oa]s?|del?)?[\\s]*(<special_day>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 13,
+    "type" : "RELATIVE_DAY",
+    "patternString": "((<num>|<num_suffix>)?\\s*(?:del|de el)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>))?\\s*(?:\\s|^|\\.|,|\\-)(<relative_day>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 14,
+    "type" : "RELATIVE_TIME_PERIOD",
+    "patternString": "(?:\\s|^|\\.|,|\\-)((<after_reference>|<before_reference>|<last_reference>|<current_reference>)[\\s]*(del?)?(<time_period>))|(<time_period>[\\s]*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)[\\s]*(del?)?)(?:\\s|^|\\.|,|\\-)",
+    "isRelative": true
+  },
+  {
+    "id": 15,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString" : "(?:\\s|^|\\.|,|\\-)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)?[\\s]*(del?)?[\\s]*(<month>[\\.]?|<day_of_week>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 16,
+    "type" : "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH",
+    "patternString" : "(?:\\s|^|\\.|,|\\-)(<num>|<num_suffix>|<after_reference>|<before_reference>|<last_reference>|<current_reference>)[\\s]*(del?)?[\\s]*(<time_period>|<day_of_week>|<month>)(?:\\s|$|\\.|,|\\-)",
+    "isRelative" : true
+  },
+  {
+    "id": 17,
+    "type" : "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "patternString" : "(?:\\s|^|\\.|,|\\-)(<num>|<num_suffix>|<after_reference>|<before_reference>|<last_reference>|<current_reference>)[\\s]*(del?)?[\\s]*(<time_period>|<day_of_week>)?[\\s]*(?:del|de el|en)?[\\s]*(<after_reference>|<before_reference>|<last_reference>|<current_reference>|<num>|<num_suffix>|<month>)[\\s]*(del?|de el)?[\\s]*(<time_period>)?[\\s]*(?:\\w+){0,3}[\\s]*(<num>)?(?:\\s|$|\\.|,|\\-)",
+    "isRelative" : true
+  },
+  {
+    "id": 18,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString" : "(?:\\s|^|\\.|,|\\-)(<time_period>)[\\s]*(<num>)[\\s]*(?:del?|de el|en|en el)?[\\s]*(<time_period>)[\\s]*(?:del?|de el|en)?[\\s]*(<num>)?(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 19,
+    "type": "YEAR_NUM_MONTH_NUM_OR_WORD_DAY_NUM",
+    "patternString": "(?:\\s|^|\\.|,|\\-)(<num>)[\\s]*[,]?[\\s]*(<num>|<month>)[\\s]*(<num>)(?:\\s|^|\\.|,|\\-)"
+  },
+  {
+    "id": 20,
+    "type": "LAST_REFERENCE_NUM_TIME",
+    "comment": "",
+    "patternString": "(?:\\s|^|\\.|,|\\-)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)[\\s]*(?:del?|de el)?[\\s]*(<num>|<num_suffix>)?[\\s]*(<time_period>)(?:\\s|^|\\.|,|\\-)",
+    "isRelative": true
+  },
+  {
+    "id": 21,
+    "type" : "NUM_TIME_AFTER_REFERENCE",
+    "patternString" : "(?:\\s|^|\\.|,|\\-)(<num>|<num_suffix>)?[\\s]*(<time_period>)[\\s]*(?:del?|de el)?[\\s]*(<after_reference>|<before_reference>)(?:\\s|^|\\.|,|\\-)",
+    "isRelative" : true
+  },
+  {
+    "id": 22,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "(?:\\s|^|\\.|,|\\-)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)[\\s]*(?:del?|de el)?[\\s]*(<day_of_week>|<month>)(?:\\s|^|\\.|,|\\-)",
+    "isRelative" : true
+  }
+]

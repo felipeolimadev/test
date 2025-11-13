@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">נותרו %d ימים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">נותר %d יום.</item>
+        <item quantity="two">נותרו %d ימים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">נותרו %d ימים.</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s צפוי בעוד %2$d ימים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s צפוי בעוד יום %2$d.</item>
+        <item quantity="two">%1$s צפוי בעוד %2$d ימים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$s צפוי בעוד %2$d ימים.</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d אירועים%3$s יימשכו מחר.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d אירוע%3$s יימשך מחר.</item>
+        <item quantity="two">%1$s%2$d אירועים%3$s יימשכו מחר.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$s%2$d אירועים%3$s יימשכו מחר.</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">יש לך %1$s%2$d אירועים%3$s היום.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך %1$s%2$d אירוע%3$s היום.</item>
+        <item quantity="two">יש לך %1$s%2$d אירועים%3$s היום.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך %1$s%2$d אירועים%3$s היום.</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">יש לך %1$d אירועים היום. האירוע הראשון הוא %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך אירוע %1$d היום. האירוע הראשון הוא %2$s.</item>
+        <item quantity="two">יש לך %1$d אירועים היום. האירוע הראשון הוא %2$s.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך %1$d אירועים היום. האירוע הראשון הוא %2$s.</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d אירועים נותרו%3$s להיום.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d אירוע נותר%3$s להיום.</item>
+        <item quantity="two">%1$s%2$d אירועים נותרו%3$s להיום.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$s%2$d אירועים נותרו%3$s להיום.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">יש לך %1$s%2$d אירועים%3$s מחר.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך %1$sאירוע %2$d%3$s מחר.</item>
+        <item quantity="two">יש לך %1$s%2$d אירועים%3$s מחר.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך %1$s%2$d אירועים%3$s מחר.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">יש לך %1$d אירועים מחר. האירוע הראשון הוא %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך אירוע %1$d מחר. האירוע הראשון הוא %2$s.</item>
+        <item quantity="two">יש לך %1$d אירועים מחר. האירוע הראשון הוא %2$s.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך %1$d אירועים מחר. האירוע הראשון הוא %2$s.</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">נותרו %d תזכורות להיום</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">נותרה תזכורת %d להיום</item>
+        <item quantity="two">נותרו %d תזכורות להיום</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">נותרו %d תזכורות להיום</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">קיבלת %d הודעות על משלוח היום. בדוק כדי לוודא שאתה מעודכן במצב המשלוחים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">קיבלת הודעה %d על משלוח היום. בדוק כדי לוודא שאתה מעודכן במצב המשלוח.</item>
+        <item quantity="two">קיבלת %d הודעות על משלוח היום. בדוק כדי לוודא שאתה מעודכן במצב המשלוחים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">קיבלת %d הודעות על משלוח היום. בדוק כדי לוודא שאתה מעודכן במצב המשלוחים.</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d משלוחים היום</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">משלוח (%d) היום</item>
+        <item quantity="two">%d משלוחים היום</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d משלוחים היום</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">השבוע עברת את היעד %d פעמים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">השבוע עברת את היעד פעם %d.</item>
+        <item quantity="two">השבוע עברת את היעד %d פעמים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">השבוע עברת את היעד %d פעמים.</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">עמדת ב-%d יעדי פעילות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">עמדת ב-%d יעד פעילות</item>
+        <item quantity="two">עמדת ב-%d יעדי פעילות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">עמדת ב-%d יעדי פעילות</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">העלייה הכוללת בגובה שרשמת הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">העלייה הכוללת בגובה שרשמת הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="two">העלייה הכוללת בגובה שרשמת הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">העלייה הכוללת בגובה שרשמת הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">הקצב הממוצע שלך היה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">הקצב הממוצע שלך היה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="two">הקצב הממוצע שלך היה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">הקצב הממוצע שלך היה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">המהירות הממוצעת שלך הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">המהירות הממוצעת שלך הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="two">המהירות הממוצעת שלך הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">המהירות הממוצעת שלך הייתה %1$s ושרפת %2$,d קילו-קלוריות.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">הנה סיכום של האימון מסוג %1$s. משך הזמן היה %2$s ושרפת %3$,d קילו-קלוריות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">הנה סיכום של האימון מסוג %1$s. משך הזמן היה %2$s ושרפת %3$,d קילו-קלוריות.</item>
+        <item quantity="two">הנה סיכום של האימון מסוג %1$s. משך הזמן היה %2$s ושרפת %3$,d קילו-קלוריות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">הנה סיכום של האימון מסוג %1$s. משך הזמן היה %2$s ושרפת %3$,d קילו-קלוריות.</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">פספסת %d תרופות מתוזמנות היום.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">פספסת תרופה מתוזמנת %d היום.</item>
+        <item quantity="two">פספסת %d תרופות מתוזמנות היום.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">פספסת %d תרופות מתוזמנות היום.</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d שעות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d שעה</item>
+        <item quantity="two">%d שעות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d שעות</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d שעות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d שעה</item>
+        <item quantity="two">%d שעות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d שעות</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">"%d דק'"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"דק' %d"</item>
+        <item quantity="two">"%d דק'"</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">"%d דק'"</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d דקה</item>
+        <item quantity="two">%d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d דקות</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">יש לך %1$s%2$d שיחות שלא נענו%3$s היום שעדיין לא בדקת.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך %1$s%2$d שיחה שלא נענתה%3$s היום שעדיין לא בדקת.</item>
+        <item quantity="two">יש לך %1$s%2$d שיחות שלא נענו%3$s היום שעדיין לא בדקת.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך %1$s%2$d שיחות שלא נענו%3$s היום שעדיין לא בדקת.</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">יש לך %d שיחות שלא נענו מהיום. עבור על פרטי השיחות שלא נענו ב-Now brief. אם צריך, יש לך אפשרות להגדיר תזכורות כדי לא לשכוח להתקשר בחזרה.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך שיחה (‏‎%d‎‏‎‏‎‎‏‎) שלא נענתה מהיום. עבור על פרטי השיחה שלא נענתה ב-Now brief. אם צריך, יש לך אפשרות להגדיר תזכורת כדי לא לשכוח להתקשר בחזרה.</item>
+        <item quantity="two">יש לך %d שיחות שלא נענו מהיום. עבור על פרטי השיחות שלא נענו ב-Now brief. אם צריך, יש לך אפשרות להגדיר תזכורות כדי לא לשכוח להתקשר בחזרה.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך %d שיחות שלא נענו מהיום. עבור על פרטי השיחות שלא נענו ב-Now brief. אם צריך, יש לך אפשרות להגדיר תזכורות כדי לא לשכוח להתקשר בחזרה.</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">עוד %d שיחות שלא נענו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">עוד שיחה %d שלא נענתה</item>
+        <item quantity="two">עוד %d שיחות שלא נענו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">עוד %d שיחות שלא נענו</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d לא נענו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d לא נענתה</item>
+        <item quantity="two">%d לא נענו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d לא נענו</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">לפני %d שעות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">לפני שעה %d</item>
+        <item quantity="two">לפני %d שעות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">לפני %d שעות</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">לפני %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">לפני דקה %d</item>
+        <item quantity="two">לפני %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">לפני %d דקות</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">עליך להיות לפחות בן או בת %d שנים כדי להשתמש בתכונות החכמות המתקדמות של Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">עליך להיות לפחות בן %d שנה כדי להשתמש בתכונות החכמות המתקדמות של Galaxy AI.</item>
+        <item quantity="two">עליך להיות לפחות בן או בת %d שנים כדי להשתמש בתכונות החכמות המתקדמות של Galaxy AI.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">עליך להיות לפחות בן או בת %d שנים כדי להשתמש בתכונות החכמות המתקדמות של Galaxy AI.</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d הודעות</item>
+        <item quantity="one">%d הודעות</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d מייל</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d מייל</item>
+        <item quantity="two">%d מייל</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מייל</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d שניות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d שנייה</item>
+        <item quantity="two">%d שניות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d שניות</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">הגדרת %1$s%2$d התראות%3$s לבוקר.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">הגדרת %1$sהתראה %2$d%3$s לבוקר.</item>
+        <item quantity="two">הגדרת %1$s%2$d התראות%3$s לבוקר.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">הגדרת %1$s%2$d התראות%3$s לבוקר.</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">הגדרת %1$s%2$d שעונים מעוררים%3$s למחר בבוקר.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">הגדרת %1$s%2$d שעון מעורר%3$s למחר בבוקר.</item>
+        <item quantity="two">הגדרת %1$s%2$d שעונים מעוררים%3$s למחר בבוקר.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">הגדרת %1$s%2$d שעונים מעוררים%3$s למחר בבוקר.</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות %4$d שעות לפני ההמראה. הגדר התראה כדי שלא תשכח.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות שעה אחת (%4$d) לפני ההמראה. הגדר התראה כדי שלא תשכח.</item>
+        <item quantity="two">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות %4$d שעות לפני ההמראה. הגדר התראה כדי שלא תשכח.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות %4$d שעות לפני ההמראה. הגדר התראה כדי שלא תשכח.</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות %4$d שעות לפני הטיסה.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות שעה אחת (%4$d) לפני הטיסה.</item>
+        <item quantity="two">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות %4$d שעות לפני הטיסה.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$sכדאי לצאת עד %2$s%3$s כדי להגיע לשדה התעופה לפחות %4$d שעות לפני הטיסה.</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">הצע מסלול טיול בן %1$d ימים עבור %2$s כולל מקומות לבקר בהם, דברים לעשות ומסעדות שכדאי לנסות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">הצע מסלול טיול בן יום %1$d עבור %2$s כולל מקומות לבקר בהם, דברים לעשות ומסעדות שכדאי לנסות.</item>
+        <item quantity="two">הצע מסלול טיול בן %1$d ימים עבור %2$s כולל מקומות לבקר בהם, דברים לעשות ומסעדות שכדאי לנסות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">הצע מסלול טיול בן %1$d ימים עבור %2$s כולל מקומות לבקר בהם, דברים לעשות ומסעדות שכדאי לנסות.</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">בדוק את %1$sהיישומים המומלצים%2$s שעשויים להיות שימושיים במהלך הטיול.</item>
+        <item quantity="one">בדוק את %1$sהיישום המומלץ%2$s שעשוי להיות שימושי במהלך הטיול.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">"%1$sהורד את חבילת השפה הזו%2$s מראש כדי שתהיה מוכן להשתמש בה ב'מתורגמן' כשתגיע ליעד."</item>
+        <item quantity="one">"%1$sהורד את חבילות השפה%2$s מראש כדי שתהיה מוכן להשתמש בהן ב'מתורגמן' כשתגיע ליעד."</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">חבילות שפה לא מקוונות</item>
+        <item quantity="one">חבילת שפה להורדה</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d מכשירים פועלים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d מכשיר פועל</item>
+        <item quantity="two">%d מכשירים פועלים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מכשירים פועלים</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">בוצעה פנייה אחרונה לפני %d ימים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">בוצעה פנייה אחרונה לפני יום %d</item>
+        <item quantity="two">בוצעה פנייה אחרונה לפני %d ימים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">בוצעה פנייה אחרונה לפני %d ימים</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">בוצעה פנייה אחרונה לפני %d ימים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">בוצעה פנייה אחרונה לפני יום %d</item>
+        <item quantity="two">בוצעה פנייה אחרונה לפני %d ימים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">בוצעה פנייה אחרונה לפני %d ימים</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">בוצעה פנייה אחרונה לפני ‏‎%d‎‏‎‏‎‎‏‎ חודשים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">בוצעה פנייה אחרונה לפני חודש ‏‎%d‎‏‏‎‎‏‎</item>
+        <item quantity="two">בוצעה פנייה אחרונה לפני ‏‎%d‎‏‎‏‎‎‏‎ חודשים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">בוצעה פנייה אחרונה לפני ‏‎%d‎‏‎‏‎‎‏‎ חודשים</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">בוצעה פנייה אחרונה לפני ‏‎%d‎‏‎‏‎‎‏‎ שבועות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">בוצעה פנייה אחרונה לפני שבוע %d</item>
+        <item quantity="two">בוצעה פנייה אחרונה לפני ‏‎%d‎‏‎‏‎‎‏‎ שבועות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">בוצעה פנייה אחרונה לפני ‏‎%d‎‏‎‏‎‎‏‎ שבועות</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d אנשי קשר נוספים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">איש קשר %d נוסף</item>
+        <item quantity="two">%d אנשי קשר נוספים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d אנשי קשר נוספים</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">יש לך שובר ב-Samsung Wallet שתוקפו יפוג בעוד %d ימים. יש לנצל אותו לפני התפוגה.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך שובר ב-Samsung Wallet שתוקפו יפוג בעוד %d יום. יש לנצל אותו לפני התפוגה.</item>
+        <item quantity="two">יש לך שובר ב-Samsung Wallet שתוקפו יפוג בעוד %d ימים. יש לנצל אותו לפני התפוגה.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך שובר ב-Samsung Wallet שתוקפו יפוג בעוד %d ימים. יש לנצל אותו לפני התפוגה.</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">מינוס %d מעלות יותר</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מינוס מעלה %d יותר</item>
+        <item quantity="two">מינוס %d מעלות יותר</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מינוס %d מעלות יותר</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">מינוס %d מעלות פחות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מינוס מעלה %d פחות</item>
+        <item quantity="two">מינוס %d מעלות פחות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">מינוס %d מעלות פחות</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">יש לך אירוע בלוח השנה שנקרא %1$s. הטמפרטורה תהיה %2$d מעלות %3$s בשעה %4$s ב-%5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">יש לך אירוע בלוח השנה שנקרא %1$s. הטמפרטורה תהיה %2$d מעלות %3$s בשעה %4$s ב-%5$s.</item>
+        <item quantity="two">יש לך אירוע בלוח השנה שנקרא %1$s. הטמפרטורה תהיה %2$d מעלות %3$s בשעה %4$s ב-%5$s.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">יש לך אירוע בלוח השנה שנקרא %1$s. הטמפרטורה תהיה %2$d מעלות %3$s בשעה %4$s ב-%5$s.</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">%d מעלות יותר</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעלה %d יותר</item>
+        <item quantity="two">%d מעלות יותר</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מעלות יותר</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">%d מעלות פחות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">מעלה %d פחות</item>
+        <item quantity="two">%d מעלות פחות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d מעלות פחות</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s צפיות</item>
+        <item quantity="one">%s צפייה</item>
+    </plurals>
+</resources>

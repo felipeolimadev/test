@@ -1,0 +1,91 @@
+[
+  {
+    "id" : 1,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1,
+        "dayOfWeek" : 2
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(le\\s*)?(<num>|<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "jour"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "jour"
+  },
+  {
+    "id": 3,
+    "patternString": "(?:\\s|^|\\.|,)(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "dayOfWeek": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "MONTH_WORD_DAY_NUM_KEYWORD_YEAR_NUM",
+    "patternString": "(?:\\s|^|\\.|,)((<month>)\\s*\\(<time_period>[\\s]*(<num>|<num_suffix>)\\)[,]?\\s*(<num>))(?:\\s|$|\\.|,)",
+    "comment": "abril (día 10), 2023",
+    "mapping": [
+      {
+        "day": 2,
+        "month": 1,
+        "year": 3
+      }
+    ],
+    "shouldContainKeyword" : "jour"
+  },
+  {
+    "id": 5,
+    "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "weekCount": 1
+      }
+    ],
+    "shouldContainKeyword": "semaine",
+    "comment" : "week | weekend"
+  },
+  {
+    "id": 6,
+    "patternString": "(?:\\s|^|\\.|,|\\-)(<relative_day>)(?:\\s|$|\\.|,|\\-)",
+    "isRelative" : true,
+    "comment" : "en = (today | tmrw | yesterday), es = (hoy | mañana | ayer), fr = (aujourd'hui | demain | hier)"
+  },
+  {
+    "id": 7,
+    "patternString" : "(?:\\s|^|\\.|,)(<day_of_week>)\\s*(<last_reference>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 2
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "patternString" : "(?:\\s|^|\\.|,)(<last_reference>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "jour"
+  }
+]

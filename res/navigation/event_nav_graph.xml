@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/event_nav_graph" app:startDestination="@id/event_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Event" android:name="com.samsung.android.moneta.debugui.developmode.event.EventMainFragment" android:id="@id/event_main">
+        <action android:id="@id/action_event_main_to_viewer" app:destination="@id/event_viewer" />
+        <action android:id="@id/action_event_main_to_statistics" app:destination="@id/event_statistics" />
+        <action android:id="@id/action_event_main_to_test_mode" app:destination="@id/event_test_mode" />
+    </fragment>
+    <fragment android:label="Event Viewer" android:name="com.samsung.android.moneta.debugui.developmode.event.EventViewerFragment" android:id="@id/event_viewer" />
+    <fragment android:label="Event Statistics" android:name="com.samsung.android.moneta.debugui.developmode.event.statistics.EventStatisticsFragment" android:id="@id/event_statistics" />
+    <fragment android:label="Event Test Mode" android:name="com.samsung.android.moneta.debugui.developmode.event.EventTestModeFragment" android:id="@id/event_test_mode" />
+</navigation>

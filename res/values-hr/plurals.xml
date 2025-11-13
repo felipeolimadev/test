@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d dana preost.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dan preostao.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dana preost.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s slijedi za %2$d dana.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s slijedi za %2$d dan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s slijedi za %2$d dana.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d događaja%3$s nastavit će se sutra.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d događaj%3$s nastavit će se sutra.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s%2$d događaja%3$s nastavit će se sutra.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Imate %1$s%2$d događaja%3$s danas.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Imate %1$s%2$d događaj%3$s danas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Imate %1$s%2$d događaja%3$s danas.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Danas imate %1$d događaja. Prvi događaj je %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Danas imate %1$d događaj. Prvi događaj je %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Danas imate %1$d događaja. Prvi događaj je %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d događaja preostalo%3$s za danas.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d događaj preostao%3$s za danas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s%2$d događaja preostala%3$s za danas.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Sutra imate %1$s%2$d događaja%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sutra imate %1$s%2$d događaj%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Sutra imate %1$s%2$d događaja%3$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Sutra imate %1$d događaja. Prvi događaj je %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sutra imate %1$d događaj. Prvi događaj je %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Sutra imate %1$d događaja. Prvi događaj je %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d događaja</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d događaj</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d događaja</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Počinje za %d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Počinje za %d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Počinje za %d min</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Još %d podsjetnika za danas</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Još %d podsjetnik za danas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Još %d podsjetnika za danas</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Danas ste primili %d poruka o isporuci. Provjerite kako biste bili sigurni da ste u toku sa statusom svojih isporuka.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Danas ste primili %d poruku o isporuci. Provjerite kako biste bili sigurni da ste u toku sa statusom svoje isporuke.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Danas ste primili %d poruke o isporuci. Provjerite kako biste bili sigurni da ste u toku sa statusom svojih isporuka.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d dostava danas</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dostava danas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dostave danas</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Iznad cilja %d puta ovaj tjedan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Iznad cilja %d put ovaj tjedan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Iznad cilja %d puta ovaj tjedan.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d ciljeva akt. ispunj.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d cilj aktiv. ispunjen</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d cilja aktiv. ispunj.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Vaš je ukupni svladani uspon %1$s i potrošili ste %2$,d kalorija.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vaš je ukupni svladani uspon %1$s i potrošili ste %2$,d kaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vaš je ukupni svladani uspon %1$s i potrošili ste %2$,d kalorije.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Prosječni je tempo iznosio %1$s i potrošili ste %2$,d kalorija.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prosječni je tempo iznosio %1$s i potrošili ste %2$,d kaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prosječni je tempo iznosio %1$s i potrošili ste %2$,d kalorije.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Vaša je prosječna brzina bila %1$s i potrošili ste %2$,d kalorija.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vaša je prosječna brzina bila %1$s i potrošili ste %2$,d kaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vaša je prosječna brzina bila %1$s i potrošili ste %2$,d kalorije.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">U nastavku je sažetak treninga %1$s. Trajao je %2$s i potrošili ste %3$,d kalorija.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">U nastavku je sažetak treninga %1$s. Trajao je %2$s i potrošili ste %3$,d kaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">U nastavku je sažetak treninga %1$s. Trajao je %2$s i potrošili ste %3$,d kalorije.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Danas ste propustili uzeti %d zakazanih lijekova.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Danas ste propustili uzeti %d zakazani lijek.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Danas ste propustili uzeti %d zakazana lijeka.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d sati</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d sata</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d sati</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d sata</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Danas imate %1$s%2$d propuštenih poziva%3$s koje još niste provjerili.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Danas imate %1$s%2$d propušteni poziv%3$s koji još niste provjerili.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Danas imate %1$s%2$d propuštena poziva%3$s koji još niste provjerili.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Danas ste propustili %d poziva. Pogledajte te propuštene pozive u izvješću Now brief. Po potrebi možete i postaviti podsjetnike kako ne biste zaboravili uzvratiti poziv.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Danas ste propustili %d poziv. Pogledajte taj propušteni poziv u izvješću Now brief. Po potrebi možete i postaviti podsjetnik kako ne biste zaboravili uzvratiti poziv.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Danas ste propustili %d poziva. Pogledajte te propuštene pozive u izvješću Now brief. Po potrebi možete i postaviti podsjetnike kako ne biste zaboravili uzvratiti poziv.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Još %d propuštenih poziva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Još %d propušteni poziv</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Još %d propuštena poziva</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d prop. poziva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d prop. poziv</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d prop. poziva</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obavijesti</item>
+        <item quantity="one">%d nova obavijest</item>
+        <item quantity="few">%d nove obavijesti</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Prije %d sati</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prije %d sat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prije %d sata</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Prije %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prije %d minute</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prije %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Morate imati najmanje %d godina da biste upotrebljavali značajke napredne inteligencije Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Morate imati najmanje %d godinu da biste upotrebljavali značajke napredne inteligencije Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Morate imati najmanje %d godine da biste upotrebljavali značajke napredne inteligencije Galaxy AI.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d poruka</item>
+        <item quantity="one">%d poruka/e</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d mi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekundi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekunda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d sekunde</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Postavili ste %1$s%2$d alarma%3$s za jutro.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Postavili ste %1$s%2$d alarm%3$s za jutro.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Postavili ste %1$s%2$d alarma%3$s za jutro.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Postavili ste %1$s%2$d alarma%3$s za sutra ujutro.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Postavili ste %1$s%2$d alarm%3$s za sutra ujutro.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Postavili ste %1$s%2$d alarma%3$s za sutra ujutro.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sKrenite najkasnije u %2$s%3$s kako biste stigli u zračnu luku najmanje %4$d sati prije polijetanja. Postavite alarm da ne zaboravite.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sKrenite najkasnije u %2$s%3$s kako biste stigli u zračnu luku najmanje %4$d sat prije polijetanja. Postavite alarm da ne zaboravite.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sKrenite najkasnije u %2$s%3$s kako biste stigli u zračnu luku najmanje %4$d sata prije polijetanja. Postavite alarm da ne zaboravite.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sKrenite najkasnije u %2$s%3$s kako biste stigli u zračnu luku najmanje %4$d sati prije leta.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sKrenite najkasnije u %2$s%3$s kako biste stigli u zračnu luku najmanje %4$d sat prije leta.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sKrenite najkasnije u %2$s%3$s kako biste stigli u zračnu luku najmanje %4$d sata prije leta.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Predloži %1$d-dnevni plan putovanja za %2$s, koji uključuje mjesta koja treba posjetiti, aktivnosti i restorane koje vrijedi isprobati.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Predloži %1$d-dnevni plan putovanja za %2$s, koji uključuje mjesta koja treba posjetiti, aktivnosti i restorane koje vrijedi isprobati.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Predloži %1$d-dnevni plan putovanja za %2$s, koji uključuje mjesta koja treba posjetiti, aktivnosti i restorane koje vrijedi isprobati.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Pogledajte ove %1$spreporučene aplikacije%2$s koje bi mogle biti korisne tijekom putovanja.</item>
+        <item quantity="one">Pogledajte %1$spreporučenu aplikaciju%2$s koja bi mogla biti korisna tijekom putovanja.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sPreuzmite ovaj jezični paket%2$s unaprijed kako bi bio spreman za korištenje u Prevoditelju kad stignete na odredište.</item>
+        <item quantity="one">%1$sPreuzmite ove jezične pakete%2$s unaprijed kako bi bili spremni za korištenje u Prevoditelju kad stignete na odredište.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Jezični paketi za preuzimanje</item>
+        <item quantity="one">Jezični paket za preuzimanje</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">Uključeno je %d uređaja</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uključen je %d uređaj</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Uključena su %d uređaja</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Posljednji kontakt prije %d dana</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Posljednji kontakt prije %d dan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Posljednji kontakt prije %d dana</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Posljednji kontakt prije %d dana</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Posljednji kontakt prije %d dan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Posljednji kontakt prije %d dana</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Poslj. kontakt prije %d mjeseca</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poslj. kontakt prije %d mjesec</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Poslj. kontakt prije %d mjeseca</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Poslj. kontakt prije %d tjedana</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Poslj. kontakt prije %d tjedan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Poslj. kontakt prije %d tjedna</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">još %d kontakata</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">još %d kontakt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">još %d kontakta</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Imate kupon u aplikaciji Samsung Wallet koji istječe za %d dana. Obavezno ga iskoristite prije nego što istekne.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Imate kupon u aplikaciji Samsung Wallet koji istječe za %d dan. Obavezno ga iskoristite prije nego što istekne.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Imate kupon u aplikaciji Samsung Wallet koji istječe za %d dana. Obavezno ga iskoristite prije nego što istekne.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Najviše minus %d stupnjeva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Najviše minus %d stupanj</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Najviše minus %d stupnja</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Najniže minus %d stupnjeva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Najniže minus %d stupanj</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Najniže minus %d stupnja</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Imate događaj u kalendaru pod nazivom %1$s. Temperatura će iznositi %2$d stupnjeva %3$s u %4$s na lokaciji %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Imate događaj u kalendaru pod nazivom %1$s. Temperatura će iznositi %2$d stupanj %3$s u %4$s na lokaciji %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Imate događaj u kalendaru pod nazivom %1$s. Temperatura će iznositi %2$d stupnja %3$s u %4$s na lokaciji %5$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Najviše %d stupnjeva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Najviše %d stupanj</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Najviše %d stupnja</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Najniže %d stupnjeva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Najniže %d stupanj</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Najniže %d stupnja</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">Broj prikaza: %s</item>
+        <item quantity="one">%s prikaz</item>
+    </plurals>
+</resources>

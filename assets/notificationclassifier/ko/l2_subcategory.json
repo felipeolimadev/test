@@ -1,0 +1,411 @@
+[
+  {
+    "category": "restaurant",
+    "rules": [
+      {
+        "name": "restaurant_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "식당", "레스토랑", "음식점", "다이닝", "오마카세", "뷔페", "브런치", "런치", "디너", "캐치테이블",
+              "테이블링", "POING", "포잉", "포장주문", "이자카야", "음식", "요리", "식사"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "accommodation",
+    "rules": [
+      {
+        "name": "accommodation_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "호텔", "모텔", "리조트", "콘도", "펜션", "게스트하우스", "민박", "숙소", "숙박", "캠핑", "글램핑",
+              "야영장", "입실", "퇴실", "객실", "빌라"
+            ]
+          }
+        ],
+        "excludes": [
+          "애버랜드"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "flight",
+    "rules": [
+      {
+        "name": "flight_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "항공", "비행", "국제선", "국내선", "공항", "출국", "입국", "여정"
+            ]
+          }
+        ],
+        "excludes": ["주차"]
+      }
+    ]
+  },
+  {
+    "category": "transportation",
+    "rules": [
+      {
+        "name": "transportation_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "기차", "KTX", "SRT", "열차", "버스", "고속버스", "시외버스", "여객선", "승선권", "승차권", "페리"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "culture",
+    "rules": [
+      {
+        "name": "culture_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "워터파크", "오션월드", "캐리비안베이", "애버랜드", "롯데월드", "서울랜드", "영화", "CGV",
+              "롯데시네마", "메가박스", "공연", "콘서트", "뮤지컬", "연극", "전시회", "박물관", "미술관",
+              "놀이공원", "테마파크", "방탈출", "경기장", "관람", "투어", "케이블카", "동물원", "액티비티",
+              "수목원", "팜랜드", "박람회"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "education",
+    "rules": [
+      {
+        "name": "education_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "학원", "강의", "강좌", "수업", "스터디", "시험", "수강", "보강", "개강", "클래스", "육아교실",
+              "레벨테스트", "튜터", "교육"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "beauty",
+    "rules": [
+      {
+        "name": "beauty_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "미용실", "헤어샵", "네일", "페디", "스파", "에스테틱", "마사지", "피부관리", "왁싱", "속눈썹",
+              "펌", "염색", "커트", "시술", "살롱"
+            ]
+          }
+        ],
+        "excludes": ["의원","병원"]
+      }
+    ]
+  },
+  {
+    "category": "medical",
+    "rules": [
+      {
+        "name": "medical_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "병원", "의원", "치과", "한의원", "내원", "진료", "검진", "건강검진", "진찰", "상담", "예방접종",
+              "처방", "스케일링", "피부과", "의원", "이비인후과", "진료", "안과", "외과", "내과", "소아과"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "equipment_rental",
+    "rules": [
+      {
+        "name": "equipment_rental_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "렌탈", "대여", "렌트", "렌터카", "카셰어링", "쏘카", "그린카", "스튜디오", "연습실", "대출", "대관"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "fitness_sports",
+    "rules": [
+      {
+        "name": "fitness_sports_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "헬스", "PT", "피티", "필라테스", "요가", "수영", "골프", "클라이밍", "테니스", "운동", "GX",
+              "피트니스"
+            ]
+          }
+        ],
+        "excludes": ["의원", "병원"]
+      }
+    ]
+  },
+  {
+    "category": "government_public",
+    "rules": [
+      {
+        "name": "government_public_keywords",
+        "pattern": [
+          {
+            "name": "keywords_pattern",
+            "keywords": [
+              "민원", "관공서", "주민센터", "구청", "시청", "국세청", "도청", "보건소", "청와대", "공단"
+            ]
+          }
+        ],
+        "excludes": ["청점"]
+      }
+    ]
+  },
+  {
+    "category": "payment",
+    "rules": [
+      {
+        "name": "payment_billing",
+        "pattern": [
+          {
+            "name": "payment_billing",
+            "keywords": [
+              "결제", "납부", "출금", "입금", "송금", "이체", "정산", "미납", "청구", "환불", "승인", "취소", "완료", "충전"
+            ]
+          },
+          {
+            "name": "postfix",
+            "keywords": [
+              "원", "₩", "krw", "달러", "$", "usd", "요금", "보험료", "관리비", "월세", "후원금", "대금", "카드", "계좌", "은행", "페이", "체크"
+            ]
+          }
+        ],
+        "excludes": ["매매", "체결", "매수", "매도"]
+      },
+      {
+        "name": "single_word",
+        "pattern": [
+          {
+            "name": "single_word",
+            "keywords": [
+              "결제 내역 확인", "결제완료", "결제 완료", "결제 알림", "결제알림", "매출접수", "매출 접수",
+              "카카오페이", "네이버페이", "스마일페이"
+            ]
+          }
+        ],
+        "excludes": ["매매", "체결", "매수", "매도"]
+      },
+      {
+        "name": "card_payment",
+        "pattern": [
+          {
+            "name": "card",
+            "keywords": [
+              "카드"
+            ]
+          },
+          {
+            "name": "subject",
+            "keywords": [
+              "결제대금"
+            ]
+          },
+          {
+            "name": "action",
+            "keywords": [
+              "안내"
+            ]
+          }
+        ],
+        "excludes": ["매매", "체결", "매수", "매도"]
+      }
+    ]
+  },
+  {
+    "category": "trading",
+    "rules": [
+      {
+        "name": "general_trading",
+        "pattern": [
+          {
+            "name": "action",
+            "keywords": [
+              "매수", "매도", "체결", "주문", "배당", "손절", "수익률", "공매도", "거래정지", "상한가", "하한가", "종가",
+              "돌파", "하락", "급등", "VI", "만기", "도달", "공시", "실적", "수급", "잔고", "배당락", "리밸런싱",
+              "알림", "업데이트", "갱신", "경보", "취소", "미체결", "구매", "판매", "신고가", "신저가", "공모주"
+            ]
+          },
+          {
+            "name": "context",
+            "keywords": [
+              "주식", "종목", "선물", "옵션", "ETF", "코스피", "코스닥", "환율", "계좌", "펀드", "증시",
+              "원/달러", "국고채", "금리", "증권", "지정가", "시장가", "전량", "부분", "잔량", "계약",
+              "목표가", "손절가", "시간외", "수익금", "완료", "주당"
+            ]
+          }
+        ],
+        "excludes": ["카드", "페이", "결제 내역 확인", "결제 알림", "결제알림", "결제 완료", "결제완료", "매출접수", "매출 접수"]
+      },
+      {
+        "name": "market_event_notice",
+        "pattern": [
+          {
+            "name": "event",
+            "keywords": [
+              "VI", "변동성완화장치", "거래정지", "단기과열", "배당락", "공시", "자사주", "유상증자", "시간외",
+              "단일가", "프리마켓", "실적", "배당", "분배금", "만기", "트레일링 스탑", "프로그램 매매", "신용거래",
+              "공매도", "지표"
+            ]
+          },
+          {
+            "name": "action",
+            "keywords": [
+              "발동", "해제", "적용", "지정", "결정", "안내", "철회", "근접", "전환", "재개", "관련", "발표",
+              "주의", "유의", "경고", "조정", "상향", "하향", "기준일"
+            ]
+          }
+        ],
+        "excludes": ["카드", "페이", "결제 내역 확인", "결제 알림", "결제알림", "결제 완료", "결제완료", "매출접수", "매출 접수"]
+      },
+      {
+        "name": "market_and_portfolio_update",
+        "pattern": [
+          {
+            "name": "subject",
+            "keywords": [
+              "상한가", "하한가", "신고가", "수익률",
+              "손익", "평가손익", "거래대금", "영업이익", "매출", "주가", "고점", "저점", "현재가", "기준가",
+              "목표가", "단일가", "호가", "코스피", "코스닥", "KOSPI", "KOSDAQ", "지수", "선물", "ETF",
+              "환율", "USD", "KRW", "금리", "유가", "WTI", "유지비율", "증거금", "괴리율", "잔고", "비중",
+              "신용거래", "대차잔고", "보유"
+            ]
+          },
+          {
+            "name": "context",
+            "keywords": [
+              "원", "%", "+", "-", "→", "달러", "$", "조", "억", "상승", "하락", "급등", "급락", "돌파",
+              "하회", "이탈", "회복", "강세", "약세", "장마감", "경신", "알림", "경고", "안내",
+              "증가", "감소", "부족", "초과", "도달", "확인", "급증", "상회"
+            ]
+          }
+        ],
+        "excludes": ["카드", "페이", "결제 내역 확인", "결제 알림", "결제알림", "결제 완료", "결제완료", "매출접수", "매출 접수"]
+      },
+      {
+        "name": "single_word",
+        "pattern": [
+          {
+            "name": "single_word",
+            "keywords": [
+              "주식 구매", "주식구매", "매수 체결", "매도 체결", "매수주문", "매수 주문", "매도주문", "매도주문",
+              "코인", "빗썸", "업비트", "코인원", "고팍스", "코빗", "이더리움"
+            ]
+          }
+        ],
+        "excludes": ["카드", "페이", "결제 내역 확인", "결제 알림", "결제알림", "결제 완료", "결제완료", "매출접수", "매출 접수"]
+      }
+    ]
+  },
+  {
+    "category": "order",
+    "rules": [
+      {
+        "name": "order_confirmation",
+        "pattern": [
+          {
+            "name": "order_term",
+            "keywords": [
+              "주문", "구매", "결제"
+            ]
+          },
+          {
+            "name": "order_status",
+            "keywords": [
+              "완료", "확인", "성공", "접수", "감사"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  },
+  {
+    "category": "delivery",
+    "rules": [
+      {
+        "name": "parcel_keyword",
+        "pattern": [
+          {
+            "name": "parcel_company_or_term",
+            "keywords": [
+              "택배", "운송장", "송장", "소포", "등기", "로켓배송", "샛별배송", "쓱배송",
+              "CJ대한통운", "우체국택배", "한진택배", "롯데택배", "로젠택배", "경동택배", "대신택배",
+              "편의점택배", "쿠팡", "마켓컬리", "SSG", "오늘의집", "DHL", "FedEx", "UPS", "일양로지스"
+            ]
+          },
+          {
+            "name": "parcel_status",
+            "keywords": [
+              "배송", "발송", "출고", "도착", "완료", "출발", "집하", "인수", "인계", "전달", "수령"
+            ]
+          }
+        ],
+        "excludes": []
+      },
+      {
+        "name": "food_delivery",
+        "pattern": [
+          {
+            "name": "food_platform_or_term",
+            "keywords": [
+              "배달", "배달의민족", "배민", "B마트", "요기요", "쿠팡이츠", "땡겨요", "배달특급"
+            ]
+          },
+          {
+            "name": "food_status",
+            "keywords": [
+              "주문", "접수", "완료", "출발", "도착", "픽업", "지연", "예정", "라이더"
+            ]
+          }
+        ],
+        "excludes": []
+      }
+    ]
+  }
+]

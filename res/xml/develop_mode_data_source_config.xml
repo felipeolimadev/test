@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:key="key_category_data_source" app:title="@string/develop_mode_data_source">
+        <SwitchPreference android:title="@string/develop_mode_select_all" android:key="key_select_all" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

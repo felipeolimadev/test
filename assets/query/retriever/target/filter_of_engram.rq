@@ -1,0 +1,6 @@
+{
+    ?engram user:event ?activity .
+    ?activity rdf:type ?iri .
+    BIND("activity" AS ?iri_type)
+}
+

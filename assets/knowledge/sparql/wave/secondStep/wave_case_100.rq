@@ -1,0 +1,36 @@
+SELECT DISTINCT ?targetTP {
+    ?targetTP rdf:type user:TakingPictures .
+
+    # (1) 초기 검색 결과 이벤트와 동일한 카테고리의 이벤트 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+
+    FILTER EXISTS {
+        {
+            SELECT DISTINCT ?targetEvent {
+                {
+                    SELECT DISTINCT ?originEvent {
+                        VALUES ?origin { <TAKING_PICTURES_IRI> }
+                        ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                        ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                        ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+                        ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+                        ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+                        FILTER (?originEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originStartTime)
+                    }
+                }
+                ?originEvent content:eventCategory/^content:eventCategory ?targetEvent .
+            }
+        }
+        ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+        ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+        ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+        ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+
+        FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+    }
+
+    # (2) 초기 검색 결과와 떨어진 장소에서 찍은 사진 존재 (H3 사용)
+    # <DISTANT_TAKING_PICTURES_IRI_COMMA> = "IRI_1, IRI_2, ..., IRI_N"
+    FILTER (?targetTP IN ( <DISTANT_TAKING_PICTURES_IRI_COMMA> )) .
+}

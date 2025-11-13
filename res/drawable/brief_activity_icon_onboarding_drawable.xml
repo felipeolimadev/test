@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/brief_activity_icon_size" android:width="@dimen/brief_activity_icon_size" android:drawable="@drawable/suggestion_ui_app_widget_preview_icon_background" />
+    <item android:gravity="center" android:height="@dimen/brief_activity_icon_size" android:width="@dimen/brief_activity_icon_size" android:drawable="@drawable/now_brief_icon" />
+</layer-list>

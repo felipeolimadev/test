@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/card_background" app:cardCornerRadius="@dimen/card_radius_large" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_subtitle" android:textStyle="bold" android:textColor="@color/text_primary" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Triple Metrics" />
+        <View android:background="@color/divider_gray" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:id="@id/first_metric_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔹" />
+                <TextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/purple_accent" android:gravity="center" android:id="@id/first_metric_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:text="--" />
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/first_metric_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:text="First" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:id="@id/second_metric_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔸" />
+                <TextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/deep_orange" android:gravity="center" android:id="@id/second_metric_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:text="--" />
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/second_metric_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:text="Second" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:id="@id/third_metric_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔺" />
+                <TextView android:textSize="@dimen/text_size_body" android:textStyle="bold" android:textColor="@color/blue_gray" android:gravity="center" android:id="@id/third_metric_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:text="--" />
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/third_metric_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_tiny" android:text="Third" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

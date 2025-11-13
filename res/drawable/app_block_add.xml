@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:translateX="3.625" android:translateY="3.625">
+        <path android:pathData="M8.375 16.75L8.375 0M0 8.375L16.75 8.375" android:strokeColor="@color/hide_apps_button_color" android:strokeWidth="1.7" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    </group>
+</vector>

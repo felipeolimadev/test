@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_place_usecase">
+        <Preference android:title="@string/preference_place_usecase" android:fragment="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.place.PlaceByLocationUseCaseFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_place_usecase_legacy" android:fragment="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.place.PlaceUseCaseFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_place_mapping_usecase">
+        <Preference android:title="@string/preference_place_poi_category_mapping_json_import" android:key="key_poi_category_mapping_json_import" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_place_mapping_usecase" android:fragment="com.samsung.android.moneta.debugui.developmode.preference.lifestyle.place.PlaceMappingUseCaseFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

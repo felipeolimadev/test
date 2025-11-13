@@ -1,0 +1,16 @@
+DELETE {
+    ?s ?p ?o .
+    ?ss ?sp ?s .
+    ?so ?sop ?soo .
+} WHERE {
+    ?s rdf:type/rdfs:subClassOf user:Staying .
+    FILTER NOT EXISTS { ?s user:atLocation ?loc . }
+    {
+        ?s ?p ?o .
+    } UNION {
+        ?ss ?sp ?s .
+    } UNION {
+        ?s time:hasBeginning|time:hasEnd ?so .
+        ?so ?sop ?soo .
+    }
+}

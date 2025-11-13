@@ -1,0 +1,69 @@
+[
+  {
+    "patternName": "<<event_keywords_start>>",
+    "patternValue": [
+      "début(?:era)?",
+      "va commencer",
+      "ouvr(?:ir|rture)",
+      "démarre",
+      "active"
+    ]
+  },
+  {
+    "patternName": "<<event_keywords_end>>",
+    "patternValue": [
+      "(?:a\\s*pris)?\\s*fin(?:alise|it)",
+      "conclut",
+      "ferme(?:ra)?",
+      "suspend",
+      "(?:se\\s*)?termine"
+    ]
+  },
+  {
+    "patternName": "<<date_keywords_before>>",
+    "patternValue": [
+      "de(?:\\sla)?",
+      "il",
+      "le",
+      "autour"
+    ]
+  },
+  {
+    "patternName": "<<date_keywords_before_others>>",
+    "patternValue": [
+      "(?:dans|pour)\\s*le",
+      "lui"
+    ]
+  },
+  {
+    "patternName": "<<range_connector>>",
+    "patternValue": [
+      "jusqu(?:'|’)(?:à|au)",
+      "au",
+      "à",
+      "et"
+    ]
+  },
+  {
+    "patternName": "<<from>>",
+    "patternValue": [
+      "depuis",
+      "partir",
+      "de(?:\\s*la)?"
+    ]
+  },
+  {
+    "patternName": "<<between>>",
+    "patternValue": [
+      "entre"
+    ]
+  },
+  {
+    "patternName": "<<valid>>",
+    "patternValue": [
+      "valide",
+      "efficaces?",
+      "en vigueur"
+    ]
+  }
+]

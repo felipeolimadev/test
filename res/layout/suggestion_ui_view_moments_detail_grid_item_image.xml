@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:tag="layout/suggestion_ui_view_moments_detail_grid_item_image_0" android:padding="@dimen/moments_now_brief_detail_grid_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stateListAnimator="?seslLargeTouchAnimator" style="@style/Base.Theme.MomentsDetailGridItemStyle">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/content_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/moments_fg_grid_card_content_view" android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

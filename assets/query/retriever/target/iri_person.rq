@@ -1,0 +1,3 @@
+OPTIONAL {
+    ?person user:birthDate ?repr_time .
+}

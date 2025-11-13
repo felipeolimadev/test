@@ -1,0 +1,8 @@
+[
+  {
+    "_id": "gallery_recycle_bin",
+    "title": "recycle_bin",
+    "action_type": "open",
+    "target": "gallery"
+  }
+]

@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.samsung.android.smartsuggestions" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <permission android:name="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="Feedback provider Access Permission" android:name="com.samsung.android.smartsuggestions.permission.MANAGE_MLKIT_DATA" android:protectionLevel="signature"/>
+    <permission android:label="Backup and restore provider access permission" android:name="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA" android:protectionLevel="signature"/>
+    <permission android:label="app suggestions access permission for AppSuggestionContentProvider" android:name="com.samsung.android.smartsuggestions.permission.APP_SUGGESTION" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.android.app.sketchbook.permission.GET_CONTENT" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.sec.android.diagmonagent.permission.DIAGMON"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_SHORTCUTS"/>
+    <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
+    <uses-permission android:name="com.samsung.android.settings.permission.MANAGE_LANGUAGE_PACK"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.search.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.search.permission.WRITE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="com.samsung.android.settings.permission.ACCESS_EPISODE"/>
+    <uses-permission android:name="com.samsung.android.honeyboard.permission.KEYBOARD_SETTING"/>
+    <uses-permission android:name="com.samsung.sea.retailagent.permission.RETAILMODE"/>
+    <uses-permission android:name="com.samsung.android.app.moments.ACCESS_MOMENTS"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.ROUTINE_HOST"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.RECEIVE_SUGGESTION"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.search.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.search.permission.WRITE"/>
+    <uses-permission android:name="com.samsung.android.permission.GENAI_RECLAIM"/>
+    <uses-permission android:name="com.samsung.android.settings.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK"/>
+    <queries>
+        <package android:name="com.samsung.android.scloud.config"/>
+        <package android:name="com.spotify.music"/>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <package android:name="me.lyft.android"/>
+        <package android:name="com.ubercab"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.samsung.android.scsp.configurator"/>
+        <package android:name="com.samsung.android.oneconnect"/>
+        <package android:name="com.samsung.android.intellivoiceservice"/>
+        <intent>
+            <action android:name="com.samsung.android.scs.asr.action.SEARCH_LANGPACK"/>
+        </intent>
+        <intent>
+            <action android:name="com.samsung.android.utils.asset.action.REMOTE_ASSETS_INFO"/>
+        </intent>
+        <package android:name="com.samsung.android.smartsuggestions"/>
+        <package android:name="com.samsung.android.moneta"/>
+        <package android:name="com.locnall.KimGiSa"/>
+        <package android:name="com.lguplus.navi"/>
+        <package android:name="com.sec.android.daemonapp"/>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.kakao.talk.alpha"/>
+        <package android:name="com.kakao.talk.sandbox"/>
+        <package android:name="com.kakao.onetalk"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <provider android:authorities="com.samsung.android.sdk.ocr.resourcemanager" android:exported="false"/>
+        <intent>
+            <action android:name="com.samsung.android.ia.action.SEND_EVENT"/>
+        </intent>
+        <package android:name="com.samsung.android.ia.agent"/>
+    </queries>
+    <uses-permission android:name="com.sec.android.daemonapp.ap.accuweather.ACCUWEATHER_DAEMON_ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.weather.permission.FORECAST_REFRESH"/>
+    <uses-permission android:name="com.samsung.android.weather.permission.START_ACTIVITY"/>
+    <uses-permission android:name="com.samsung.android.stickercenter.permission.sticker.READ"/>
+    <uses-permission android:name="com.samsung.android.calendar.permission.READ_STICKERS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="com.sec.android.app.calendar.permission.READ_CALENDAR_SETTINGS"/>
+    <uses-permission android:name="com.samsung.systemui.permission.AI_BRIEF"/>
+    <uses-permission android:name="com.samsung.android.app.cocktailbarservice.permission.ACCESS_PANEL"/>
+    <uses-permission android:name="com.samsung.android.settings.analyzestorage.permission"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.launcher.permission.WRITE_SETTINGS" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.app.reminder.permission.action.REGISTER"/>
+    <uses-permission android:name="com.samsung.android.app.reminder.permission.WRITE"/>
+    <uses-permission android:name="com.samsung.android.app.clockpack.LOCK_PROVIDER"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.samsung.android.callassistant.permission.READ_CALL_RECORDING_PROVIDER"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="com.samsung.android.permission.SEM_BATTERY_INFO"/>
+    <uses-permission android:name="com.samsung.cmh.data.WRITE"/>
+    <uses-permission android:name="com.samsung.android.app.sketchbook.permission.GET_CONTENT"/>
+    <uses-permission android:name="com.samsung.android.moneta.permission.READ_FEATURE"/>
+    <uses-permission android:name="com.samsung.android.app.tips.permission.USE_INTENT_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES"/>
+    <uses-permission android:name="com.samsung.android.holiday.permission.READ_HOLIDAY"/>
+    <uses-permission android:name="com.samsung.android.softsim.permission.RECEIVE"/>
+    <permission android:name="com.samsung.android.smartsuggestions.permission.PARKING" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.android.smartsuggestions.permission.BRIEF_LIFECYCLE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.BRIEF_LIFECYCLE"/>
+    <uses-permission android:name="android.permission.START_TASKS_FROM_RECENTS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.sec.pcw.device.contentprovider.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.ce.permission.ACCESS_DUMP_PROVIDER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.samsung.android.app.moments.permission.START_ACTIVITY"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.samsung.android.ce.permission.CHANGED_EVENT_INTENT"/>
+    <permission android:name="com.samsung.android.smartsuggestions.permission.onscreen" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.onscreen"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="com.samsung.android.app.deepsky.GET_ROUTINE"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.SUGGESTION_INFO"/>
+    <uses-permission android:name="com.samsung.android.app.aodservice.permission.NOW_BAR_CONTENTS"/>
+    <uses-permission android:name="com.samsung.android.samsungaccount.permission.ACCESS_SASETTINGS"/>
+    <uses-permission android:name="com.samsung.android.bixby.agent.permission.READ_SETTINGS"/>
+    <permission android:name="com.samsung.android.app.deepsky.GET_ROUTINE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="com.samsung.android.dialer.permission.CALL_LOG_PICKER"/>
+    <uses-permission android:name="android.permission.READ_BLOCKED_NUMBERS"/>
+    <uses-permission android:name="com.samsung.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="android.permission.MANAGE_NOTIFICATIONS"/>
+    <permission android:name="com.samsung.android.moneta.permission.MONETA_COMMUNICATOR" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.android.moneta.permission.LAUNCH_DEVELOP_MODE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.search.permission.WRITE"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.search.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.image.permission.IMAGE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.cmh.data.READ"/>
+    <uses-permission android:name="com.samsung.android.permission.SEM_MEDIA_CONTENTS"/>
+    <uses-permission android:name="com.samsung.android.permission.SEM_MEDIA_CONTENTS"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="com.samsung.android.providers.media.READ"/>
+    <uses-permission android:name="com.samsung.android.providers.media.WRITE"/>
+    <uses-permission android:name="com.samsung.permission.CAPTURE"/>
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/>
+    <uses-permission android:name="android.permission.ACCESS_CONTEXTUAL_SEARCH"/>
+    <permission android:name="com.samsung.android.permission.SMART_SUGGESTIONS_OTP" android:protectionLevel="privileged|signature"/>
+    <permission android:name="com.samsung.android.permission.SUGGESTED_REPLIES" android:protectionLevel="privileged|signature"/>
+    <permission android:name="com.samsung.sr.nmt.core.t2t.languagepack.permission.USE_LANGUAGE_PACK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.smartsuggestions.permission.COMPOSE_SUGGESTED_REPLIES" android:protectionLevel="privileged|signature"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.text.permission.TEXT_PROVIDER"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="com.samsung.permission.READ_SEC_COMMON_POLICY"/>
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT"/>
+    <uses-permission android:name="com.samsung.android.permission.SMART_SUGGESTIONS_OTP"/>
+    <uses-permission android:name="com.samsung.android.permission.SUGGESTED_REPLIES"/>
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS"/>
+    <uses-permission android:name="android.permission.MANAGE_SMARTSPACE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.SUPPORT_LANGUAGE_UPDATED"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
+    <uses-permission android:name="android.permission.LOG_COMPAT_CHANGE"/>
+    <uses-permission android:name="android.permission.MANAGE_APP_OPS_MODES"/>
+    <uses-permission android:name="android.permission.MANAGE_UI_TRANSLATION"/>
+    <uses-permission android:name="com.samsung.android.samsungaccount.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.samsung.android.honeyboard.permission.EDIT_FIELD_INFO"/>
+    <permission android:label="Permission to access changed data" android:name="com.samsung.android.smartsuggestions.commonobserver.permission.DATA_CHANGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.rubin.context.permission.READ_CONTEXT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.commonobserver.permission.DATA_CHANGE"/>
+    <uses-permission android:name="android.permission.READ_CLIPBOARD_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.GET_INTENT_SENDER_INTENT"/>
+    <uses-permission android:name="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    <uses-permission android:name="com.samsung.android.permission.SEND_SPLIT_STATE_CHANGED"/>
+    <uses-permission android:name="com.samsung.android.app.deepsky.donation.provider.permission.DONATE_ACTION"/>
+    <uses-permission android:name="com.samsung.android.messaging.permission.READ_MESSAGE_QUICK_NOTE"/>
+    <uses-permission android:name="com.samsung.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="com.samsung.android.spay.permission.READ_SPAY_SHARE"/>
+    <uses-permission android:name="com.samsung.android.weather.permission.READ_SYSTEM_PROVIDER"/>
+    <permission android:label="Donation provider Access Permission" android:name="com.samsung.android.app.deepsky.donation.provider.permission.DONATE_ACTION" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.samsung.android.permission.WRITE_SCPM"/>
+    <uses-permission android:name="com.samsung.android.permission.READ_SCPM"/>
+    <uses-permission android:name="com.samsung.android.permission.EXTRACT_SMARTCLIP_DATA"/>
+    <uses-permission android:name="com.samsung.android.rubin.persona.permission.READ_PERSONA_MANAGER"/>
+    <permission android:label="Samsung Search Experience Access Permission" android:name="com.samsung.android.smartsuggestions.search.permission.WRITE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="Samsung Search Experience Read Permission" android:name="com.samsung.android.smartsuggestions.search.permission.READ" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="Samsung Search Update index Permission" android:name="com.samsung.android.smartsuggestions.search.permission.UPDATE_INDEX" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.samsung.android.calendar.permission.READ_CALENDAR_DATA"/>
+    <uses-permission android:name="com.samsung.android.providers.media.CMH"/>
+    <uses-permission android:name="android.permission.MANAGE_ROLE_HOLDERS"/>
+    <uses-permission android:name="com.sec.android.gallery3d.provider2.READ" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.app.reminder.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.search.permission.UPDATE_INDEX"/>
+    <uses-permission android:name="com.sec.android.app.servicemodeapp.permission.WRITE_FILE"/>
+    <uses-permission android:name="com.samsung.android.moneta.memory.permission.SEARCH"/>
+    <uses-permission android:name="com.samsung.android.app.notes.READ"/>
+    <uses-permission android:name="com.sec.android.app.voicenote.data.VNAIProvider.READ_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.ssco.models.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.ssco.models.permission.WRITE"/>
+    <uses-permission android:name="com.samsung.android.ssco.models.permission.UPDATE_MODEL"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.search.permission.UPDATE_INDEX"/>
+    <permission android:name="com.samsung.android.pde.sdk.permission.BIND_NOTIFICATION_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.samsung.android.pde.feature.notification.permission.READ_KNOWLEDGE_SOURCE"/>
+    <uses-permission android:name="com.samsung.android.pde.feature.notification.permission.WRITE_KNOWLEDGE_SOURCE"/>
+    <permission android:name="com.samsung.android.pde.feature.notification.permission.READ_KNOWLEDGE_SOURCE"/>
+    <permission android:name="com.samsung.android.pde.feature.notification.permission.WRITE_KNOWLEDGE_SOURCE"/>
+    <permission android:name="com.samsung.android.moneta.sdk.permission.BIND_BASIC_DOMAIN_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.relationship.permission.FAMILY_RELATIONSHIP" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.basicdomain.permission.READ_BASIC_DOMAIN" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.preference.permission.READ_LIFESTYLE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.preference.permission.READ_PREFERENCE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.sdk.permission.BIND_MEMORY_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.sdk.permission.BIND_MEMORY_SEARCH_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.sdk.permission.BIND_EVENT_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.sdk.permission.WRITE_EVENT_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.WRITE"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.UPDATE_INDEX"/>
+    <permission android:name="com.samsung.android.moneta.memory.permission.SEARCH" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.pde.pdetesting.permission.BIND_PDE_TESTING_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.pde.pdetesting.permission.BIND_MLKIT_TEST_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.permission.READ_FEATURE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.permission.WRITE_FEATURE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.samsung.android.provider.screencallprovider.permission.READ_SCREEN_CALL_HISTORY"/>
+    <uses-permission android:name="com.samsung.android.samsungaccount.permission.PROFILE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.dp.provider.READ_DATABASE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.samsung.android.messaging.permission.READ_MESSAGE"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.datacollector.sdkv1.permission.ACCESS_PROVIDER_DATA"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS"/>
+    <uses-permission android:name="com.samsung.android.mobileservice.permission.RECEIVE_SEMS_BROADCAST"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <permission android:name="com.samsung.android.smartsuggestions.datacollector.sdkv1.permission.ACCESS_PROVIDER_DATA" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.datacollector.reception.permission.EXTERNAL_DATA" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.permission.READ_DEVELOP_MODE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.moneta.permission.WRITE_DEVELOP_MODE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.android.pde.fusioninference.permission.READ" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.samsung.android.scs.permission.SUPPORTED_FEATURE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.suggestion.permission.SUGGESTION_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.image.permission.BIND_IMAGE_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.asr.permission.BIND_SPEECH_RECOGNITION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.asr.permission.SPEECH_RECOGNITION_SERVICE_CONFIG_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.asr.permission.SYSTEM_BIND_SPEECH_RECOGNITION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.asr.permission.SYSTEM_SPEECH_RECOGNITION_SERVICE_CONFIG_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.SUPPORTED_FEATURE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.ai.asr.permission.BIND_SPEECH_RECOGNITION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.ai.asr.permission.SPEECH_RECOGNITION_SERVICE_CONFIG_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.ai.asr.permission.SYSTEM_BIND_SPEECH_RECOGNITION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.ai.asr.permission.SYSTEM_SPEECH_RECOGNITION_SERVICE_CONFIG_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_TONECONVERT_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_TRANSLATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_SUMMARIZATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_CORRECTION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_SUGGESTION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_SUGGESTION_SERVICE_FOR_EXTERNAL"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_SMART_COVER_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_SMART_REPLY_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_EMOJI_AUGMENTATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_NOTES_ORGANIZATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_SMART_CAPTURE_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_CLASSIFICATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_EXTRACTION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_WRITING_COMPOSER_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_FORMAT_CONVERSION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_CONFIGURATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_GENERIC_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.permission.BIND_USAGE_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.aitranslator.permission.BIND_TRANSLATION"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.aitranslator.permission.BIND_TRANSLATION_FOR_EXTERNAL"/>
+    <uses-permission android:name="com.samsung.android.aicore.permission.BIND_WALLPAPER_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.aicore.permission.BIND_ON_DEVICE_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.aicore.permission.BIND_DOWNLOAD_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.aicore.permission.SUPPORTED_FEATURE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.visual.cloudcore.permission.BIND_PORTRAIT_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.visual.cloudcore.permission.SUPPORTED_FEATURE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.visual.cloudcore.permission.BIND_IMAGE_EDITOR_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.visual.cloudcore.permission.BIND_DOWNLOAD_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.common.permission.SYSTEM_CONFIG_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.intellivoiceservice.common.permission.CONFIG_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scloud.permission.STATUS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="com.samsung.android.scloud.permission.RPC_SYNC_SETTING"/>
+    <uses-permission android:name="com.samsung.android.sharelive.permission.READ_EXTERNAL_SETTINGS_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.sharelive.permission.WRITE_EXTERNAL_SETTINGS_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.sharelive.permission.SHARE_LIVE_UPDATE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <permission android:name="com.samsung.android.smartsuggestions.mde.MDE_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.READ_ALARM"/>
+    <uses-permission android:name="sec.android.permission.READ_MSG_PREF"/>
+    <uses-permission android:name="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.app.deepsky.feedback.provider.permission.SUBMIT_FEEDBACK"/>
+    <uses-permission android:name="com.samsung.android.moneta.sdk.permission.BIND_MEMORY_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.moneta.sdk.permission.BIND_MEMORY_SEARCH_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.moneta.sdk.permission.BIND_EVENT_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.moneta.sdk.permission.BIND_BASIC_DOMAIN_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.moneta.preference.permission.READ_LIFESTYLE"/>
+    <uses-permission android:name="com.samsung.android.moneta.basicdomain.permission.READ_BASIC_DOMAIN"/>
+    <uses-permission android:name="com.samsung.android.weather.DATA_SERVICE"/>
+    <uses-permission android:name="android.permission.MANAGE_VIRTUAL_MACHINE"/>
+    <uses-permission android:name="android.permission.USE_CUSTOM_VIRTUAL_MACHINE"/>
+    <permission android:name="com.samsung.android.smartsuggestions.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.samsung.android.pde.sdk.permission.BIND_NOTIFICATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.pde.feature.notification.sdk.permission.BIND_NOTIFICATION_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.sdk.ocr.permission.PROVIDE_OCR_RESOURCE"/>
+    <uses-permission android:name="com.samsung.android.app.interpreter.permission.READ_TRANSLATION_SETTINGS"/>
+    <uses-permission android:name="com.samsung.aimodelprovider.objectremovalmodels.AIProvider.READ"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.READ_ROUTINE_INFO"/>
+    <uses-permission android:name="com.samsung.android.ce.permission.START_SERVICE_CE"/>
+    <permission android:label="@string/hello_kv_read_secure_values" android:name="com.samsung.android.smartsuggestions.permission.READ_SECURE_VALUES" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/hello_kv_write_secure_values" android:name="com.samsung.android.smartsuggestions.permission.WRITE_SECURE_VALUES" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/hello_kv_read_values" android:name="com.samsung.android.smartsuggestions.permission.READ_VALUES" android:protectionLevel="normal"/>
+    <permission android:label="@string/hello_kv_write_values" android:name="com.samsung.android.smartsuggestions.permission.WRITE_VALUES" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.READ_SECURE_VALUES"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.WRITE_SECURE_VALUES"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.READ_VALUES"/>
+    <uses-permission android:name="com.samsung.android.smartsuggestions.permission.WRITE_VALUES"/>
+    <uses-permission android:name="com.samsung.android.dqagent.permission.READ_CS_DB"/>
+    <uses-permission android:name="com.samsung.android.security.permission.SAMSUNG_KEYSTORE_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.knox.permission.KNOX_CCM_KEYSTORE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="keyboard|locale" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/personal_data_intelligence" android:largeHeap="true" android:name="com.samsung.android.smartsuggestions.App" android:networkSecurityConfig="@xml/network_security_config_release" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.samsung.android.foldable.cover_launcher_inner_app" android:value="true"/>
+        <meta-data android:name="theming-meta" android:value="meta_205_smart_suggestion"/>
+        <meta-data android:name="theming-meta-define1" android:value="@xml/meta_205_smart_suggestion"/>
+        <meta-data android:name="DisplayCutoutBackground" android:value="true"/>
+        <provider android:authorities="com.sec.android.log.lwoc1pz74b" android:exported="true" android:name="com.sec.android.diagmonagent.log.provider.DiagMonProvider" android:permission="com.sec.android.diagmonagent.permission.PROVIDER"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.service.translation.provider.ChatTranslationContentProvider" android:exported="true" android:name="com.samsung.android.smartsuggestions.service.translation.provider.ChatTranslationContentProvider"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.translation.language.provider" android:exported="true" android:name="com.samsung.android.smartsuggestions.service.translation.provider.ChatTranslationLanguageProvider" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.briefsettings.provider" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.provider.BriefSettingsProvider" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.userpreference.provider" android:exported="true" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.userpref.keyboard.UserPreferenceProvider" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.startup.StartupReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.LAZY_BOOT_COMPLETE"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.startup.FotaCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.secsetupwizard.FOTA_SUW_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.samsung.android.smartsuggestions.startup.StartupJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.pregrant.PregrantPermissionActivity">
+            <intent-filter>
+                <action android:name="com.sec.android.app.secsetupwizard.ACTION_ALTERNATIVE_PERMISSION_VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="alt_permission_description" android:resource="@string/alt_permission_description"/>
+            <meta-data android:name="alt_tablet_permission_description" android:resource="@string/alt_tablet_permission_description"/>
+        </activity>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.bnr.receiver.BnrReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_SMART_SUGGESTIONS"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_SMART_SUGGESTIONS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.android.smartsuggestions.settings.provider.SmartSuggestionIndexableSearchProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.android.smartsuggestions.settings.provider.SmartSuggestionIndexableSearchProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES" android:protectionLevel="signatureOrSystem">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.settings.require_settings_key" android:value="top_level_personal_data_intelligence_settings_main"/>
+            <meta-data android:name="com.samsung.android.settings.require_settings_title" android:value="@string/personal_data_intelligence"/>
+        </provider>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.settings.SmartSuggestionsSettingActivity" android:theme="@style/ExpandAppBar">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.LAUNCH_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category" android:value="com.android.settings.category.ia.privacy"/>
+            <meta-data android:name="com.android.settings.keyhint" android:value="key_smart_suggestions_setting"/>
+            <meta-data android:name="com.android.settings.title" android:resource="@string/personal_data_intelligence"/>
+            <meta-data android:name="com.android.settings.PREFERENCE_TYPE" android:value="SwitchPreferenceScreen"/>
+            <meta-data android:name="com.android.settings.order" android:value="-965"/>
+            <meta-data android:name="com.samsung.android.settings.support_summary_uri" android:value="true"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:label="@string/permissions" android:name="com.samsung.android.smartsuggestions.settings.permission.PermissionListActivity" android:theme="@style/SettingPermissionListActivityAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.SmartSuggestionsAboutActivity" android:theme="@style/SettingAboutActivityAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.SmartSuggestionsLearnMoreActivity" android:theme="@style/ExpandAppBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.provider.SmartSuggestionDialogActivity" android:noHistory="true" android:resizeableActivity="false" android:theme="@style/DummyDialogActivityTheme">
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.SmartSuggestionsOpenSourceLicencesActivity" android:theme="@style/ExpandAppBar"/>
+        <activity android:allowTaskReparenting="false" android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:label="@string/chat_translation" android:name="com.samsung.android.smartsuggestions.translation.settings.ChatTranslationSettingMainActivity" android:theme="@style/customSettingsMainTheme">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.translate.settings.LAUNCH_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.title" android:resource="@string/chat_translation"/>
+            <meta-data android:name="com.android.settings.summary" android:resource="@string/chat_translation_summary"/>
+            <meta-data android:name="com.android.settings.icon" android:resource="@mipmap/ic_chat_translation"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@mipmap/ic_chat_translation" android:label="@string/chat_translation_manage_apps" android:name="com.samsung.android.smartsuggestions.translation.settings.ChatTranslationManageAppsSettings" android:theme="@style/customSettingsMainTheme"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.backup" android:exported="true" android:name="com.samsung.android.smartsuggestions.bnr.provider.BackupRestoreEpisodeProvider" android:permission="com.samsung.android.settings.permission.ACCESS_EPISODE">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.SCENE"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.eternal.unsupported_solution" android:value="SCloud"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.smartsuggestions.settings.SmartSuggestionsSettingBnrContentProvider" android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.SmartSuggestionsSettingBnrContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_SSS"/>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_ITS"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.samsung.android.smartsuggestions.briefsettings.BriefSettingsBnrContentProvider" android:exported="false" android:name="com.samsung.android.smartsuggestions.briefsettings.BriefSettingsBnrContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_SSS"/>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_ITS"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.samsung.android.smartsuggestions.briefsettings.utils.BriefSettingsSearchProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.android.smartsuggestions.briefsettings.utils.BriefSettingsSearchProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.settings.require_settings_key" android:value="top_level_brief_main_screen"/>
+            <meta-data android:name="com.samsung.android.settings.require_settings_title" android:value="@string/brief_settings_title"/>
+        </provider>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.DeveloperModeActivity" android:theme="@style/ExpandAppBar"/>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.DeveloperModeActivityAlias" android:targetActivity="com.samsung.android.smartsuggestions.settings.about.developermode.DeveloperModeActivity">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity-alias>
+        <provider android:authorities="com.samsung.android.smartsuggestions.dynamic_setting_provider" android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.settings.provider.SettingsAppMenuProvider" android:permission="com.samsung.android.permission.SEC_DYNAMIC_MENU_PROVIDER">
+            <intent-filter>
+                <action android:name="com.samsung.android.settings.DYNAMIC_MENU_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.samsung.android.smartsuggestions.sss_file_provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.service.translation.component.RetailRestReceiver" android:permission="com.samsung.sea.retailagent.permission.RETAILMODE">
+            <intent-filter>
+                <action android:name="com.samsung.sea.rm.DEMO_RESET_STARTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.widget.ShortcutContributionTestWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/shortcut_contribution_test_widget"/>
+        </receiver>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.ThingRepositoryActivity" android:theme="@style/ExpandAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.ITSDataStorageActivity" android:theme="@style/ExpandAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.personalcontext.PersonalContextActivity" android:theme="@style/Theme.Material3.DayNight"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.DiagnosisActivity" android:theme="@style/Theme.Material3.DayNight"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.DiagnosisBottomSheet" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.routinesuggestionadmin.RoutineSuggestionAdminActivity" android:taskAffinity="com.samsung.android.smartsuggestions.RoutineDeveloperTask" android:theme="@style/ExpandAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.routinesuggestionadmin.RoutineSuggestTracerActivity" android:taskAffinity="com.samsung.android.smartsuggestions.RoutineDeveloperTask" android:theme="@style/ExpandAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.FPGrowthTestActivity" android:taskAffinity="com.samsung.android.smartsuggestions.RoutineDeveloperTask" android:theme="@style/ExpandAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.FPGrowthResultAdminActivity" android:taskAffinity="com.samsung.android.smartsuggestions.RoutineDeveloperTask" android:theme="@style/ExpandAppBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.pcs.PcsTestActivity"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.userpref.dashboard.searchterm.UserPreferenceDashBoardActivity" android:taskAffinity="com.samsung.android.smartsuggestions.DeveloperTask" android:theme="@style/AppCompatStyleNoActionBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.userpref.dashboard.chat.UserPreferenceDashBoardActivity" android:taskAffinity="com.samsung.android.smartsuggestions.DeveloperTask" android:theme="@style/AppCompatStyleNoActionBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.userpref.timeline.UserPreferenceTimelineActivity" android:taskAffinity="com.samsung.android.smartsuggestions.DeveloperTask" android:theme="@style/AppCompatStyle"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.userpref.keyboard.UserPreferenceKeyboardTimelineActivity" android:taskAffinity="com.samsung.android.smartsuggestions.DeveloperTask" android:theme="@style/AppCompatStyle"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.settings.about.developermode.activity.userpref.mainpage.UserPreferenceMainPageActivity" android:taskAffinity="com.samsung.android.smartsuggestions.DeveloperTask" android:theme="@style/AppCompatStyleNoActionBar"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:exported="true" android:label="@string/brief_settings_main_title" android:name="com.samsung.android.smartsuggestions.briefsettings.BriefMainSettingsActivity" android:theme="@style/BriefSettingsTheme">
+            <intent-filter>
+                <action android:name="com.samsung.android.settings.action.INTELLIGENCE_SERVICE_SETTINGS"/>
+                <action android:name="com.android.settings.MANUFACTURER_APPLICATION_SETTING"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.title" android:resource="@string/now_brief_title"/>
+            <meta-data android:name="com.android.settings.summary" android:resource="@string/now_brief_summary"/>
+            <meta-data android:name="com.android.settings.icon" android:resource="@mipmap/ic_suggestion_icon"/>
+            <meta-data android:name="com.android.settings.category" android:value="com.samsung.android.settings.category.ia.intelligenceservice"/>
+            <meta-data android:name="com.samsung.android.settings.is.order" android:value="380000"/>
+            <meta-data android:name="com.android.settings.keyhint" android:value="key_smart_suggestions_ai_brief"/>
+            <meta-data android:name="com.samsung.android.settings.is.category" android:value="com.samsung.android.settings.is.category.personalized"/>
+            <meta-data android:name="com.samsung.android.settings.galaxy_ai_supported_mode" android:value="online|offline"/>
+            <meta-data android:name="com.samsung.android.settings.online_ai_features" android:resource="@array/online_ai_features"/>
+            <meta-data android:name="com.samsung.android.settings.offline_ai_features" android:resource="@array/offline_ai_features"/>
+        </activity>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.permissions.BriefPermissionsSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.about.BriefAboutSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.about.BriefOpenSourceLicencesSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:exported="true" android:label="@string/brief_settings_content_to_include_title" android:name="com.samsung.android.smartsuggestions.briefsettings.contents.BriefContentsSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.interests.BriefInterestsSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.ttl.BriefTimeToLeaveSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.aiagent.BriefAIAgentSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.music.BriefMusicAndPodcastsSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.sports.BriefSportsSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.briefsettings.entertainment.BriefEntertainmentSettingsActivity" android:theme="@style/BriefSettingsTheme"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_map_api_key"/>
+        <meta-data android:name="com.samsung.android.bixby.pdssync.launchable" android:value="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.activity.SuggestionUiActivity"/>
+        <meta-data android:name="com.samsung.android.smartsuggestions.weather.key" android:value="3008"/>
+        <meta-data android:name="briefsettings.provider.version" android:value="1"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.cp.AiSuggestionUiContentProvider" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.cp.AiSuggestionUiContentProvider"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.appwidget.bnr.NowBriefWidgetContentProvider" android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.appwidget.bnr.NowBriefWidgetContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_SSS"/>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_ITS"/>
+            </intent-filter>
+        </provider>
+        <activity android:excludeFromRecents="true" android:exported="true" android:icon="@mipmap/suggestion_ui_activity_icon" android:label="@string/now_brief_app_title" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.activity.SuggestionUiActivity" android:taskAffinity=".briefSplashActivity" android:theme="@style/Base.Theme.SuggestionUiActivity">
+            <meta-data android:name="LiveIconSupport" android:value="true"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:excludeFromRecents="true" android:exported="true" android:icon="@mipmap/suggestion_ui_activity_icon" android:label="@string/now_brief_app_name" android:launchMode="singleTop" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.activity.SuggestionUiContentActivity" android:theme="@style/Base.Theme.SuggestionUiContentActivity"/>
+        <activity android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.activity.GenUiAutomationConfirmActivity" android:theme="@style/GenUiAutomationConfirmActivityTheme"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:excludeFromRecents="true" android:exported="true" android:icon="@mipmap/suggestion_ui_activity_icon" android:label="@string/now_brief_app_name" android:launchMode="singleTop" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.activity.SuggestionUiContentFloatingActivity" android:resizeableActivity="false" android:theme="@style/Base.Theme.Floating.SuggestionUiContentActivity">
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.test.BriefComposeTestActivity" android:theme="@style/Base.Theme.SuggestionUiContentActivity"/>
+        <activity android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.test.BriefSynapseCardTestActivity" android:theme="@style/Base.Theme.SuggestionUiContentActivity"/>
+        <activity android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.test.GenUITestActivity" android:theme="@style/Base.Theme.SuggestionUiActivity"/>
+        <activity android:configChanges="screenLayout|smallestScreenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.issuereporting.ReportAnIssueActivity" android:theme="@style/ReportActivityTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.moments.weekly.MomentsWeeklyListActivity" android:theme="@style/Base.Theme.MomentsWeeklyListUiActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.moments.detail.MomentsDetailActivity" android:theme="@style/Base.Theme.MomentsDetailUiActivity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:excludeFromRecents="true" android:exported="false" android:icon="@mipmap/suggestion_ui_activity_icon" android:launchMode="singleTop" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.onboarding.OnboardingActivity" android:theme="@style/Base.Theme.SuggestionUiContentActivity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:enableOnBackInvokedCallback="true" android:excludeFromRecents="true" android:exported="false" android:icon="@mipmap/suggestion_ui_activity_icon" android:launchMode="singleTop" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.onboarding.OnboardingFloatingActivity" android:resizeableActivity="false" android:theme="@style/Base.Theme.Floating.SuggestionUiContentActivity">
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.app.developermode.ContextAgentHistoryActivity"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.app.developermode.NowBriefWidgetSettingDeveloperActivity"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.app.developermode.SamsungNewsSettingDeveloperActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.app.developermode.ParkingCardTestItemActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.map.TTLExecuteActivity" android:theme="@style/QQMusicTransparent"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:icon="@mipmap/suggestion_ui_activity_icon" android:launchMode="singleInstance" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.appwidget.settings.NowBriefWidgetSettingActivity" android:resizeableActivity="false" android:theme="@style/Theme.WidgetBackgroundSetting">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+            <meta-data android:name="android.supports_size_changes" android:value="true"/>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.genui.service.GenUIService">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.genui.BIND"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.com.samsung.android.smartsuggestions.feature.aisuggestion.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.utils.AiSuggestionFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:enabled="false" android:exported="true" android:icon="@mipmap/suggestion_ui_activity_icon" android:label="@string/now_brief_app_title" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.appwidget.AiSuggestionAppWidgetReceiver">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/ai_suggestion_widget_provider_info"/>
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:icon="@mipmap/suggestion_ui_activity_icon" android:label="@string/now_brief_app_title" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.appwidget.AiSuggestionCoverAppWidgetReceiver">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/ai_suggestion_widget_cover_provider_info"/>
+            <meta-data android:name="com.samsung.android.appwidget.provider" android:resource="@xml/ai_suggestion_widget_samsung_cover_provider_info"/>
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.core.worker.AiSuggestionWeatherReceiver" android:permission="com.samsung.android.weather.DATA_SERVICE">
+            <intent-filter>
+                <action android:name="com.samsung.android.weather.action.FORECAST_CHANGE_SYNC"/>
+                <action android:name="com.samsung.android.weather.action.WEATHER_DATA_SYNC"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:label="@string/debug_context_agent_app_widget" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.contextagent.appwidget.ContextAgentAppWidgetReceiver">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/context_agent_widget_provider_info"/>
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.receiver.SuggestionReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_TMAP"/>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_GOOGLEMAP"/>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_KAKAOMAP"/>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_NAVERMAP"/>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_AMAP"/>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_TTL"/>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_NOWBRIEF"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.receiver.AiSuggestionStartActivityReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.intent.action.START_BRIEF_ACTIVITY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.receiver.AiSuggestionSamsungAccountSignReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.receiver.AiSuggestionSettingReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.app.deepsky.action.MAIN_SWITCH_STATE"/>
+                <action android:name="com.samsung.android.app.deepsky.action.BRIEF_SWITCH_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.ui.receiver.AiSuggestionRetailResetReceiver" android:permission="com.samsung.sea.retailagent.permission.RETAILMODE">
+            <intent-filter>
+                <action android:name="com.samsung.sea.rm.DEMO_RESET_STARTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.core.updatescheduler.TimeChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.core.worker.AiSuggestionTimeChangedReceiver"/>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.policy.AiSuggestionPolicyUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.AI_SUGGESTION_POLICY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.core.updatescheduler.LocaleChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.contextagent.impl.builtinagent.SpatialBehaviorContextAgent$ContextEngineReceiver" android:permission="com.samsung.android.ce.permission.CHANGED_EVENT_INTENT">
+            <intent-filter>
+                <action android:name="com.samsung.android.ce.sdk.api.action.HOME_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.WORK_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.HOME_COUNTRY_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.SLEEP_CONTEXT_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.EXERCISE_CONTEXT_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.DRIVE_CONTEXT_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.contextagent.impl.builtinagent.TemporalContextAgent$DailyReceiver"/>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.contextagent.impl.builtinagent.ContextAgentRepositoryHelper$Receiver"/>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.core.ranker.WidgetNowBarAgent$WidgetNowBarReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.taskreceiver.OnScreenNudgeReceiver" android:permission="com.samsung.android.smartsuggestions.permission.onscreen">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.onscreen.nudge"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.android.smartsuggestions.feature.onscreen" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.taskprovider.OnScreenContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.onscreen"/>
+        <meta-data android:name="onscreen.provider.version" android:value="1"/>
+        <activity android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.aisuggestion.app.developermode.NowBriefTestItemActivity" android:taskAffinity="com.samsung.android.smartsuggestions.DeveloperTask" android:theme="@style/Theme.AppCompat.DayNight"/>
+        <meta-data android:name="com.samsung.android.smartsuggestions.contextualinsight.document-schema-capability" android:value="ewogICJ2ZXJzaW9uIjogOTcsCiAgImNvcmVTY2hlbWFDYXBhYmlsaXR5IjogewogICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgInZlcnNpb25NaW4iOiAxLAogICAgInZlcnNpb25FeGNsdWRlZCI6IFtdCiAgfSwKICAiYXBwRG9tYWluU2NoZW1hQ2FwYWJpbGl0aWVzIjogewogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpDYXB0dXJlZEltbWluZW50Q291cG9uIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpDYXB0dXJlZEltbWluZW50RXZlbnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkNhcHR1cmVkVG9kYXlUcmFuc3BvcnRhdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6QmxvY2tNZXNzYWdlUmVwb3J0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDUsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpCbG9ja01lc3NhZ2VTdWdnZXN0aW9uIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDUsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpHYWxsZXJ5U3RvcnlTdWdnZXN0aW9uIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhEYWlseUFjdGl2aXR5IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhFbmVyZ3lTY29yZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA2LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SGVhbHRoRXhlcmNpc2VXZWVrbHlSZXBvcnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkhlYWx0aEV4ZXJjaXNlV29ya291dFJlc3VsdCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SGVhbHRoTWVkaXRhdGlvblN1Z2dlc3Rpb24iOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkhlYWx0aE1pbmRmdWxuZXNzU3VnZ2VzdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SGVhbHRoU2xlZXBCZWR0aW1lIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhTbGVlcENvYWNoaW5nIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDUsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhTbGVlcFNjb3JlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhNZWRpY2F0aW9uIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhXYXRlciI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SGVhbHRoQklBIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpIZWFsdGhCbG9vZFByZXNzdXJlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpLbm94Q29tcGxpYW5jZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6U0Fzc2lzdGFudEV4cHJlc3NQYWNrYWdlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTQXNzaXN0YW50UmVwYXltZW50UmVwb3J0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTQXNzaXN0YW50VHJhdmVsVGlja2V0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpUaW1lVG9MZWF2ZVN1Z2dlc3Rpb24iOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkRlbGl2ZXJ5TWVzc2FnZURhaWx5UmVwb3J0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTdXNwaWNpb3VzTWVzc2FnZUJsb2NrUmVwb3J0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDQsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTdXNwaWNpb3VzTWVzc2FnZUJsb2NrU3VnZ2VzdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA0LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6RGFpbHlNb21lbnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogOCwKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkFmdGVyUGFya2luZ1N1Z2dlc3Rpb24iOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlJlbWluZGVyUm91dGluZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6UmVtaW5kZXJDYXJkUm91dGluZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6TnVkZ2VSb3V0aW5lU3VnZ2VzdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6Um91dGluZUFjdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6Um91dGluZURldmljZURldmlhdGlvbkFsZXJ0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpVc2VmdWxSb3V0aW5lU3VnZ2VzdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6Um91dGluZUdlbmVyYXRpb25TdWdnZXN0aW9uIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDUsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpSZWFkQXJ0aWNsZXMiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOklvVERldmljZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA0LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SW9URW5lcmd5U2F2aW5nU3VnZ2VzdGlvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA0LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SW9URW52RmFjdG9yIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpJb1RTZWN1cml0eVN1Z2dlc3Rpb24iOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOklvVFNlcnZpY2VSZXBvcnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOklvVFNsZWVwRW52aXJvbm1lbnRTdWdnZXN0aW9uIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTbGVlcGluZ0Vudmlyb25tZW50UmVwb3J0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpVbmF0dGVuZGVkSW9URGV2aWNlQWxlcnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkltbWluZW50Q291cG9uQWxlcnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlJlY2VpdmVkR2lmdCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6RXZlbnRUaWNrZXQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogMywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNjAwMDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlRyYXZlbFRpY2tldCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6VHJhbnNpdEJhbGFuY2VSZW1pbmRlciI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiAzLAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE2MDAwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6VHJhbnNpdEtyIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpQaG9uZVdlZWtseUNvbWZvcnRDYXJlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpQaG9uZVdlZWtseVVzYWdlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDMsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTYwMDAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpWZWhpY2xlTWFpbnRlbmFuY2VJbmZvIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpWZWhpY2xlQ29uc3VtYWJsZVN0YXR1cyI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6U3RvY2tXYXRjaGxpc3QiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlN0b2NrUHJpY2UiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkhlYWx0aE1lZGljYXRpb25NaXNzZWRTY2hlZHVsZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SGVhbHRoTWVkaWNhdGlvblNjaGVkdWxlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpEYWlseVJlbWluZGVyUmV2aWV3IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpSZW1pbmRlciI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6UGVycGxleGl0eU5ld3MiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlBlcnBsZXhpdHlOZXdzU2VhcmNoIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTZXJ2aWNlVG9kYXlOZXdzIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTZXJ2aWNlVG9kYXlOZXdzSXRlbSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6SGVhbHRoQmxvb2RHbHVjb3NlQmdtIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpBcHBJdGVtIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpBcHBTdWdnZXN0aW9uV2lkZ2V0IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpLYWthb0RyaXZpbmdSZXBvcnQiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkZvcmVjYXN0Q2hhbmdlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpGYW1pbHlDYXJlQWN0aXZpdHkiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkZhbWlseUNhcmVTY2hlZHVsZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6UGV0Q2FyZVdhbGtpbmciOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlN0RmFtaWx5Q2FyZUFjdGl2aXR5IjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTdEZhbWlseUNhcmVTY2hlZHVsZSI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6U3RQZXRXYWxrIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpTdFBldFdhbGtQcm9ncmVzcyI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6U3RQcm9maWxlIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpNeUZpbGVzVW51c2VkQXBwIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpFdkJhdHRlcnlJbmZvIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpFdkNoYXJnZXIiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOkV2Q2hhcmdlclZhbHVlVW5pdCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6UGFya2luZ0ZlZUluZm8iOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOlBhcmtpbmdJbmZvIjogewogICAgICAidmVyc2lvblRhcmdldCI6IDcsCiAgICAgICJ2ZXJzaW9uTWluIjogMSwKICAgICAgInZlcnNpb25FeGNsdWRlZCI6IFtdLAogICAgICAib25lVWlWZXJzaW9uTWluIjogMTcwNTAwLAogICAgICAia2lsbFN3aXRjaCI6IGZhbHNlCiAgICB9LAogICAgIkNvbnRleHR1YWxJbnNpZ2h0RGF0YTpEcml2aW5nU2Vzc2lvblJlcG9ydCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6V2Vla2x5RHJpdmluZ1JlcG9ydCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6TW9tZW50RXhlcmNpc2UiOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOk1vbWVudE11c2ljU2Vzc2lvbiI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfSwKICAgICJDb250ZXh0dWFsSW5zaWdodERhdGE6TW9tZW50VHJhbnNwb3J0YXRpb24iOiB7CiAgICAgICJ2ZXJzaW9uVGFyZ2V0IjogNywKICAgICAgInZlcnNpb25NaW4iOiAxLAogICAgICAidmVyc2lvbkV4Y2x1ZGVkIjogW10sCiAgICAgICJvbmVVaVZlcnNpb25NaW4iOiAxNzA1MDAsCiAgICAgICJraWxsU3dpdGNoIjogZmFsc2UKICAgIH0sCiAgICAiQ29udGV4dHVhbEluc2lnaHREYXRhOk1vbWVudFRyYXZlbCI6IHsKICAgICAgInZlcnNpb25UYXJnZXQiOiA3LAogICAgICAidmVyc2lvbk1pbiI6IDEsCiAgICAgICJ2ZXJzaW9uRXhjbHVkZWQiOiBbXSwKICAgICAgIm9uZVVpVmVyc2lvbk1pbiI6IDE3MDUwMCwKICAgICAgImtpbGxTd2l0Y2giOiBmYWxzZQogICAgfQogIH0KfQ=="/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.emailcollector.presentation.gmail.GmailSubjectListActivity">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.feature.emailcollector.presentation.ACTION_GMAIL_LOGIN_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:name="com.samsung.android.smartsuggestions.feature.emailcollector.presentation.gmail.GoogleAuthProxyActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.recall.provider" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.recall.RecallProvider" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
+        <provider android:authorities="com.samsung.android.app.deepsky.routine" android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.recommender.RoutineRecommender" android:permission="com.samsung.android.app.deepsky.GET_ROUTINE"/>
+        <receiver android:enabled="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.settings.SystemUsageReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.SpecificWifiSettingCollector$SpecificWifiChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.SpecificBTSettingCollector$SpecificBTChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.HotspotSettingCollector$HotspotChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.NFCSettingCollector$NFCSettingReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.LocationSettingCollector$LocationChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.VolumeSettingCollector$VolumeChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.MediaVolumeSettingCollector$MediaVolumeChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.monitor.actioncollectors.general.BixbyWakeupCollector$BixbyWakeupContentObserver"/>
+        <receiver android:enabled="false" android:exported="false" android:label="context switch" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.debug.widget.ContextChangeProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/context_change_widget_info"/>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:label="persona switch" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.debug.widget.PersonaChangeProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/persona_change_widget_info"/>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:label="Observer context" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.debug.widget.CurrentContextProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/current_context_widget_info"/>
+        </receiver>
+        <activity android:exported="false" android:label="ContextSelectActivity" android:launchMode="singleInstance" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.debug.widget.ContextSelectActivity" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="false" android:label="PersonaSelectActivity" android:launchMode="singleInstance" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.debug.widget.PersonaSelectActivity" android:theme="@style/Theme.AppCompat"/>
+        <service android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.association.FPGrowthUpdaterJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.debug.status.SuggestionStatusJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.routinesuggestion.presenter.RoutineNudgeRegisterService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REGISTER_ROUTINE_NUDGE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.widget.appwidget.receiver.DataClearReceiver"/>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.widget.appwidget.receiver.MyPackageReplaceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.widget.workmanager.PcsUpdateReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.samsung.android.app.deepsky.data.dataobserver.notification.CommonNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.widget.setting.WidgetSettingActivity" android:resizeableActivity="false" android:taskAffinity="com.samsung.android.smartsuggestions.WidgetSettingsTask" android:theme="@style/Theme.WidgetBackgroundSetting">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:configChanges="screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.widget.setting.feedback.app.AppBlockActivity" android:resizeableActivity="false" android:taskAffinity="com.samsung.android.smartsuggestions.WidgetSettingsTask" android:theme="@style/Theme.NotShowWallpaper"/>
+        <activity android:configChanges="screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.widget.setting.feedback.app.AppBlockPreviewActivity" android:permission="com.samsung.android.smartsuggestions.permission.APP_SUGGESTION" android:resizeableActivity="false" android:taskAffinity="com.samsung.android.smartsuggestions.WidgetSettingsTask" android:theme="@style/Theme.NotShowWallpaper">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.action.APP_SUGGESTION_APP_BLOCK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.samsung.android.smartsuggestions.widget.WidgetBnrContentProvider" android:exported="false" android:name="com.samsung.android.smartsuggestions.widget.WidgetBnrContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_SSS"/>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_ITS"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.samsung.android.smartsuggestions.appsuggestion.provider" android:exported="true" android:name="com.samsung.android.smartsuggestions.widget.provider.AppSuggestionContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.APP_SUGGESTION"/>
+        <meta-data android:name="appsuggestion.provider.version" android:value="1"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.moneta.receiver.EventReceiver" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.moneta.action.WIPE_MODE_REQUESTED"/>
+                <action android:name="com.samsung.intent.action.LAZY_BOOT_COMPLETE"/>
+                <action android:name="com.samsung.intent.action.TEST_BOOT_COMPLETE"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.receiver.CpuUsageStatusReceiver" android:permission="android.permission.BATTERY_STATS" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.sec.android.sdhms.action.EXCESSIVE_CPU_USAGE_WARNING"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.sdhms.action.EXCESSIVE_CPU_USAGE_CRITICAL"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.android.moneta.app.MonetaInitializationProvider" android:exported="false" android:initOrder="2147483647" android:name="com.samsung.android.moneta.app.MonetaInitializationProvider" android:process=":moneta"/>
+        <provider android:authorities="com.samsung.android.moneta.app.MonetaCommunicator" android:enabled="true" android:exported="false" android:name="com.samsung.android.moneta.app.MonetaCommunicator" android:permission="com.samsung.android.moneta.permission.MONETA_COMMUNICATOR" android:process=":moneta"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.samsung.android.moneta.debugui.developmode.MonetaDevelopModeActivity" android:permission="com.samsung.android.moneta.permission.LAUNCH_DEVELOP_MODE" android:process=":moneta" android:theme="@style/Theme.Moneta" android:windowSoftInputMode="adjustResize"/>
+        <uses-library android:name="saiv" android:required="false"/>
+        <provider android:authorities="com.samsung.android.app.deepsky.DeepSkyQuery.provider" android:exported="true" android:name="com.samsung.android.app.deepsky.domain.usecase.provider.DeepSkyProvider" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE">
+            <meta-data android:name="com.samsung.android.oneconnect.setting_version" android:value="1"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.app.deepsky.donation.donateaction" android:exported="true" android:name="com.samsung.android.app.deepsky.domain.usecase.donation.DonationProvider" android:permission="com.samsung.android.app.deepsky.donation.provider.permission.DONATE_ACTION"/>
+        <service android:exported="true" android:name="com.samsung.android.app.deepsky.service.suggestion.view.SuggestionViewService" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.samsung.android.app.deepsky.domain.usecase.permission.FeaturePermissionHandlerActivity" android:noHistory="true" android:resizeableActivity="false" android:taskAffinity="com.samsung.android.smartsuggestions.FeaturePermissionTask" android:theme="@style/DummyActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="feature" android:path="/permission" android:scheme="smartsuggestions"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.samsung.android.app.deepsky.domain.actionexecutor.AppActionResolveActivity" android:noHistory="true" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="applink" android:pathPrefix="/action" android:scheme="gi"/>
+                <data android:host="applink" android:pathPrefix="/shortcut" android:scheme="gi"/>
+                <data android:host="applink" android:pathPrefix="/notification" android:scheme="gi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.app.deepsky.domain.actionexecutor.TransferBankSelectionActivity" android:noHistory="true" android:permission="com.samsung.android.app.deepsky.permission.ACCESS_SERVICE" android:theme="@style/DummyActivityTheme"/>
+        <meta-data android:name="com.samsung.android.multidisplay.keep_process_alive" android:value="true"/>
+        <receiver android:exported="false" android:name="com.samsung.android.app.deepsky.domain.usecase.receiver.RecoveryBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.app.deepsky.data.construction.dataobserver.action.DATA_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.service.entity.entityTextExtraction.sms.MarkSmsReceiver"/>
+        <meta-data android:name="com.samsung.android.smartsuggestions.feature.smartreply.revision" android:value="1"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.service.test.InstrumentationTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.service.inlinesuggestions.AuthenticationActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.service.screenintelligence.OverlayTranslationActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/TransparentTheme"/>
+        <service android:exported="true" android:name="com.samsung.android.smartsuggestions.extservice.services.CustomTextClassifierService" android:permission="android.permission.BIND_TEXTCLASSIFIER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.textclassifier.TextClassifierService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:label="Basic ContentCapture Service" android:name="com.samsung.android.smartsuggestions.extservice.services.ContentCaptureService" android:permission="android.permission.BIND_CONTENT_CAPTURE_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.contentcapture.ContentCaptureService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.android.smartsuggestions.extservice.services.AugmentedAutofillService" android:permission="android.permission.BIND_AUGMENTED_AUTOFILL_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.autofill.augmented.AugmentedAutofillService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.android.smartsuggestions.extservice.services.CustomTranslationService" android:permission="android.permission.BIND_TRANSLATION_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.translation.TranslationService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.android.smartsuggestions.extservice.services.CustomSmartspaceService" android:permission="android.permission.MANAGE_SMARTSPACE">
+            <intent-filter>
+                <action android:name="android.service.smartspace.SmartspaceService"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.service.policy.PolicyManager$PolicyUpdateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.EXTSERVICE_POLICYLIST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.service.broadcastreceiver.SamsungAccountBroadcastReceiver" android:permission="com.osp.app.signin.BROADCAST_PERMISSION">
+            <intent-filter>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNIN_COMPLETED"/>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.samsung.android.samsungaccount.b2b.CLIENT_ID" android:value="74w1j8cie2"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.service.broadcastreceiver.SupportedLanguageListChangedBroadcastReceiver" android:permission="com.samsung.android.intellivoiceservice.permission.SUPPORT_LANGUAGE_UPDATED">
+            <intent-filter>
+                <action android:name="com.samsung.android.intellivoiceservice.action.SUPPORT_LANGUAGE_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.service.smartreply.MessageReceiver" android:permission="com.samsung.android.smartsuggestions.permission.COMPOSE_SUGGESTED_REPLIES">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.action.TEXT_CALL_REPLIES"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.android.smartsuggestions.CapsuleProvider" android:exported="true" android:name="com.samsung.android.sdk.bixby2.provider.CapsuleProvider"/>
+        <meta-data android:name="com.samsung.android.rubin.runestone_enabled" android:value="true"/>
+        <meta-data android:name="com.google.android.actions" android:resource="@xml/actions"/>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.samsung.android.app.deepsky.data.dataobserver.service.DeepSkyService">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="User Context Detection"/>
+        </service>
+        <receiver android:exported="false" android:name="com.samsung.android.app.deepsky.data.appaction.policy.AppShortcutPolicyUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SHORTCUT_FILTERING"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.samsung.android.app.deepsky.data.construction.knowledgeconstructor.giconstructor.DataCleanupJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.app.deepsky.data.construction.datacollector.gicollector.donation.receiver.PackageChangeReceiver"/>
+        <service android:label="PackageChangeJobService" android:name="com.samsung.android.app.deepsky.data.construction.datacollector.gicollector.donation.receiver.PackageChangeJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.samsung.android.app.deepsky.scpmpolicy.provider" android:exported="false" android:name="com.samsung.android.app.deepsky.data.policy.scpmv2.provider.SCPMPolicyContentProvider"/>
+        <receiver android:exported="true" android:name="com.samsung.android.app.deepsky.data.policy.scpmv2.SCPMPolicyUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.EXTSERVICE_POLICYLIST"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.GENERAL_CONFIG"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.SHORTCUT_FILTERING"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-en"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-ko"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-fr"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-ja"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-de"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-es"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-pt"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-it"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.smart-capture-app-allowlist"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.ai-suggestion-policy-e8a9"/>
+                <action android:name="com.samsung.android.scpm.policy.UPDATE.pde-policy-ed63"/>
+                <action android:name="com.samsung.android.scpm.policy.CLEAR_DATA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.app.deepsky.data.policy.generalconfig.GeneralConfigPolicyUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.GENERAL_CONFIG"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.app.deepsky.data.policy.smartcapture.SmartCapturePolicyUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_EN"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_KO"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_FR"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_JA"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_DE"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_ES"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_PT"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_IT"/>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.SMART_CAPTURE_APP_ALLOWLIST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.app.deepsky.data.dataobserver.DeviceInteractiveStateDetector$ScreenStateChangeReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartSuggestions.ACTION_SCREEN_ON"/>
+                <action android:name="com.samsung.android.smartSuggestions.ACTION_SCREEN_OFF"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.android.app.deepsky.data.thing.ThingBnrContentProvider" android:exported="false" android:name="com.samsung.android.app.deepsky.data.thing.ThingBnrContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_SSS"/>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_ITS"/>
+            </intent-filter>
+        </provider>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="firebase_performance_collection_deactivated" android:value="true"/>
+        <uses-native-library android:name="libQREngine.camera.samsung.so" android:required="false"/>
+        <service android:exported="false" android:name="com.samsung.android.smartsuggestions.search.util.worker.SearchWorkerService" android:process=":search"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.search" android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.search.provider.SearchProvider" android:process=":search" android:readPermission="com.samsung.android.smartsuggestions.search.permission.READ" android:writePermission="com.samsung.android.smartsuggestions.search.permission.WRITE"/>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.search.data.receiver.PackageBroadcastReceiver" android:process=":search">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.smartsuggestions.search.scheduling.recevier.WakeUpProcessReceiver" android:process=":search">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.LAZY_BOOT_COMPLETE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.app.action.ENTER_KNOX_DESKTOP_MODE"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.search.scheduling.recevier.BackupRestoreReceiver" android:permission="com.wssnps.permission.COM_WSSNPS" android:process=":search">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_FREQUENTLY_SEARCHED_CONTACTS"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_FREQUENTLY_SEARCHED_CONTACTS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.search.scheduling.recevier.EmbeddingVersionUpdateReceiver" android:permission="com.samsung.android.ssco.models.permission.UPDATE_MODEL" android:process=":search">
+            <intent-filter>
+                <action android:name="com.samsung.android.ssco.models.ACTION_EMBEDDING_MODEL_VERSION_MISMATCH"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="notification_inference_version" android:value="37"/>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.pde.feature.notification.service.NotificationService" android:permission="com.samsung.android.pde.sdk.permission.BIND_NOTIFICATION_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.pde.service.intent.action.BIND_NOTIFICATION_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.samsung.android.pde.feature.notification.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.pde.feature.notification.provider.NotificationFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/noti_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.pde.feature.notification" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.android.pde.feature.notification.provider.KnowledgeSourceProvider" android:readPermission="com.samsung.android.pde.feature.notification.permission.READ_KNOWLEDGE_SOURCE" android:writePermission="com.samsung.android.pde.feature.notification.permission.WRITE_KNOWLEDGE_SOURCE"/>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.feature.basicdomain.service.BasicDomainService" android:permission="com.samsung.android.moneta.sdk.permission.BIND_BASIC_DOMAIN_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.moneta.service.intent.action.BIND_BASIC_DOMAIN_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.samsung.android.moneta.feature.basicdomain.BasicDomainProvider" android:exported="true" android:name="com.samsung.android.moneta.feature.basicdomain.service.provider.BasicDomainProvider" android:permission="com.samsung.android.moneta.basicdomain.permission.READ_BASIC_DOMAIN" android:process=":moneta"/>
+        <provider android:authorities="com.samsung.android.moneta.feature.preference.LifeStyleProvider" android:exported="true" android:name="com.samsung.android.moneta.feature.preference.service.provider.LifeStyleProvider" android:permission="com.samsung.android.moneta.preference.permission.READ_LIFESTYLE" android:process=":moneta"/>
+        <provider android:authorities="com.samsung.android.moneta.feature.preference.PreferenceProvider" android:exported="true" android:name="com.samsung.android.moneta.feature.preference.service.provider.PreferenceProvider" android:permission="com.samsung.android.moneta.preference.permission.READ_PREFERENCE" android:process=":moneta"/>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.feature.memory.service.MemoryService" android:permission="com.samsung.android.moneta.sdk.permission.BIND_MEMORY_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.moneta.service.intent.action.BIND_MEMORY_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.feature.memory.service.MemorySearchService" android:permission="com.samsung.android.moneta.sdk.permission.BIND_MEMORY_SEARCH_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.moneta.service.intent.action.BIND_MEMORY_SEARCH_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.samsung.android.moneta.feature.fourwevent.provider" android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.feature.fourwevent.externalinterface.provider.EventProvider" android:process=":moneta" android:readPermission="com.samsung.android.moneta.sdk.permission.BIND_EVENT_SERVICE" android:writePermission="com.samsung.android.moneta.sdk.permission.WRITE_EVENT_SERVICE"/>
+        <provider android:authorities="com.samsung.android.moneta.memory.search" android:exported="true" android:name="com.samsung.android.moneta.search.provider.DataProvider" android:process=":moneta" android:readPermission="com.samsung.android.moneta.memory.permission.SEARCH"/>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.pdetesting.PdeTestingService" android:permission="com.samsung.android.pde.pdetesting.permission.BIND_PDE_TESTING_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.pde.service.intent.action.BIND_PDE_TESTING_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.samsung.android.pde.pdetesting.MlKitTestService" android:permission="com.samsung.android.pde.pdetesting.permission.BIND_MLKIT_TEST_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.pde.service.intent.action.BIND_MLKIT_TEST_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.samsung.android.moneta.feature" android:exported="true" android:name="com.samsung.android.moneta.feature.analysiscore.featurepublisher.CallbackContentProvider" android:process=":moneta" android:readPermission="com.samsung.android.moneta.permission.READ_FEATURE" android:writePermission="com.samsung.android.moneta.permission.WRITE_FEATURE"/>
+        <meta-data android:name="com.samsung.android.moneta.datacollector.sdkv1.meta.ACTION" android:resource="@xml/action_moneta_meta"/>
+        <meta-data android:name="com.samsung.android.samsungaccount.CLIENT_ID" android:value="@string/samsung_account_client_id"/>
+        <meta-data android:name="com.samsung.android.mobileservice.IntentRequest" android:value="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.moneta.datacollector.builtin.countrytimezone.CountryTimeZoneDataReceiver" android:process=":moneta">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.moneta.datacollector.builtin.samsungaccount.SamsungAccountDataReceiver" android:permission="com.samsung.android.mobileservice.permission.RECEIVE_SEMS_BROADCAST" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+                <action android:name="com.samsung.android.mobileservice.profile.ACTION_PROFILE_LOGIN_MERGE_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.moneta.datacollector.builtin.context.ContextEngineEventReceiver" android:permission="com.samsung.android.ce.permission.CHANGED_EVENT_INTENT" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.ce.sdk.api.action.HOME_COUNTRY_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.DRIVE_CONTEXT_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.HOME_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.FAMILIAR_AREAS_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.COUNTRY_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.SLEEP_CONTEXTS_DELETED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.EXERCISE_CONTEXTS_DELETED"/>
+                <action android:name="com.samsung.android.moneta.intent.action.TEST_TRAVEL_CONTEXT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.moneta.datacollector.sdk.receiver.AppInstallReceiver" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.moneta.intent.action.PACKAGE_UPDATE"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.android.moneta.datacollector.reception.external.data" android:enabled="true" android:exported="true" android:name="com.samsung.android.moneta.datacollector.reception.external.ExternalDataContentProvider" android:permission="com.samsung.android.moneta.datacollector.reception.permission.EXTERNAL_DATA" android:process=":moneta"/>
+        <service android:enabled="false" android:exported="false" android:name="com.samsung.android.moneta.datacollector.application.notification.PdeNotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" android:process=":moneta">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.samsung.android.moneta.developmode" android:exported="true" android:name="com.samsung.android.moneta.developmode.provider.DevelopModeContentProvider" android:process=":moneta" android:readPermission="com.samsung.android.moneta.permission.READ_DEVELOP_MODE" android:writePermission="com.samsung.android.moneta.permission.WRITE_DEVELOP_MODE"/>
+        <provider android:authorities="com.samsung.android.pde.fusioninference;com.samsung.android.pde.feature.capability" android:enabled="true" android:exported="true" android:name="com.samsung.android.pde.fusioninference.provider.FusionInferenceProvider" android:permission="com.samsung.android.pde.fusioninference.permission.READ" android:process=":moneta"/>
+        <provider android:authorities="com.samsung.android.pde.datacore" android:enabled="true" android:exported="true" android:name="com.samsung.android.pde.data.provider.PdeDataContentProvider" android:permission="com.samsung.android.pde.datacore.permission.READ" android:process=":moneta"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.feature.appsuggestion.data.db.AppSuggestionBnrContentProvider" android:exported="false" android:name="com.samsung.android.smartsuggestions.feature.appsuggestion.data.db.AppSuggestionBnrContentProvider" android:permission="com.samsung.android.smartsuggestions.permission.BACKUP_RESTORE_SSS_DATA">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_SSS"/>
+                <action android:name="com.samsung.android.smartsuggestions.BACKUP_RESTORE_PROVIDER_INTENT_ITS"/>
+            </intent-filter>
+        </provider>
+        <service android:exported="true" android:name="com.samsung.android.smartsuggestions.mde.MDEService" android:permission="com.samsung.android.smartsuggestions.mde.MDE_SERVICE"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.nudge.MDEReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNIN_COMPLETED"/>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.mde.MDENotifyReceiver" android:permission="com.samsung.android.smartsuggestions.mde.MDE_SERVICE">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.MDE_SUGGESTION_NOTIFY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:label="Context Provider" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.appwidget.ContextProviderAppWidgetReceiver">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/context_provider_widget_provider_info"/>
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.ContextRepositoryHelper$Receiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.RunestonePlaceContextProvider$RuneStoneReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:host="com.samsung.android.rubin.context.tpocontext" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.RunestoneOccasionContextProvider$RuneStoneReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:host="com.samsung.android.rubin.context.tpocontext" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.RunestoneTimeContextProvider$DailyReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.ContextEngineContextProvider$ContextEngineReceiver" android:permission="com.samsung.android.ce.permission.CHANGED_EVENT_INTENT">
+            <intent-filter>
+                <action android:name="com.samsung.android.ce.sdk.api.action.HOME_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.WORK_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.FREQUENTLY_VISITED_PLACE_EVENT"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.HOME_COUNTRY_GEOFENCE_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.SLEEP_CONTEXT_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.EXERCISE_CONTEXT_CHANGED"/>
+                <action android:name="com.samsung.android.ce.sdk.api.action.DRIVE_CONTEXT_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.ContextEnginePatternContextProvider$DailyReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.ChargingContextProvider$ChargingStatusChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.LowBatteryContextProvider$LowBatteryReceiver"/>
+        <receiver android:enabled="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.HearableContextProvider$SpecificBTContextChangeReceiver"/>
+        <receiver android:exported="false" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.AbsoluteTimeContextProvider$TimeReceiver"/>
+        <receiver android:exported="true" android:name="com.samsung.android.smartsuggestions.infra.contextprovider.impl.builtinproviderimpl.ClockContextProvider$SamsungClockReceiver"/>
+        <service android:exported="false" android:name="com.samsung.android.app.deepsky.baseutil.worker.SSSWorkerService"/>
+        <meta-data android:name="com.samsung.android.app.sdk.deepsky.versionName" android:value="6.1.0"/>
+        <meta-data android:name="com.samsung.android.sdk.moneta.versionName" android:value="1.0.30"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.samsung.android.smartsuggestions.unitconverter.ShowUnitActivity" android:theme="@style/ShowDialogTheme">
+            <intent-filter>
+                <action android:name="sec.actions.intent.convert.CONVERT_UNIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.samsung.android.smartsuggestions.core.dump" android:enabled="true" android:exported="false" android:name="com.samsung.android.moneta.core.dump.DumpProvider" android:process=":moneta"/>
+        <receiver android:exported="true" android:name="com.samsung.android.moneta.core.scpm.ScpmReceiver" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.smartsuggestions.UPDATE.PDE_POLICY"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.samsung.android.moneta.core.worker.MonetaWorkerService" android:process=":moneta"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.samsung.android.moneta.core.mainswitch.MainSwitchStateReceiver" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.app.deepsky.action.MAIN_SWITCH_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.moneta.baseutils.backupandrestore.BackupAndRestoreReceiver" android:permission="com.wssnps.permission.COM_WSSNPS" android:process=":moneta">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_PERSONAL_DATA_CORE"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_PERSONAL_DATA_CORE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionTrampolineActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:enabled="true" android:exported="false" android:launchMode="singleInstance" android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" android:noHistory="true" android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.UnmanagedSessionReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.TEMPLATE_WIDGET_FORCE_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="androidx.glance.appwidget.GlanceRemoteViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="androidx.work.multiprocess.RemoteWorkManagerService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.thin.ThinLabelRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.bundled.internal.ThickLanguageIdRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.samsung.android.smartsuggestions.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-native-library android:name="libSDKRecognitionOCR.spenocr.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libSDKMoireDetector.spenocr.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libStride.camera.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCv.camera.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libLttEngine_RR.so" android:required="false"/>
+        <uses-native-library android:name="libimagecodec.quram.so" android:required="false"/>
+        <uses-native-library android:name="libsavscmn.so" android:required="false"/>
+        <uses-native-library android:name="libLttEngine.camera.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCL.so" android:required="false"/>
+        <uses-native-library android:name="libcommon-jni.vexfwk.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libsdk-jni.vexfwk.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libsdk-v2-jni.vexfwk.samsung.so" android:required="false"/>
+        <meta-data android:name="com.samsung.android.app.sdk.deepsky.textextraction.versionName" android:value="8.0.19"/>
+        <uses-native-library android:name="libcommon-jni.vexfwk.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libsdk-jni.vexfwk.samsung.so" android:required="false"/>
+        <uses-native-library android:name="libsdk-v2-jni.vexfwk.samsung.so" android:required="false"/>
+        <provider android:authorities="com.samsung.android.smartsuggestions.provider.routines.v3" android:exported="true" android:name="com.samsung.android.sdk.routines.v3.internal.RoutineSdkContentProvider" android:permission="com.samsung.android.permission.sdk.routines.v3.ACCESS_ROUTINES">
+            <intent-filter>
+                <action android:name="com.samsung.android.sdk.routines.v3.ROUTINE_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.sdk.routines.v3.version" android:value="3.1.9"/>
+            <meta-data android:name="com.samsung.android.sdk.routines.v3.version_code" android:value="30109"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.smartsuggestions.hello.kv" android:exported="false" android:name="com.samsung.android.hello.kv.KeyValueProvider" android:readPermission="com.samsung.android.smartsuggestions.permission.READ_VALUES" android:writePermission="com.samsung.android.smartsuggestions.permission.WRITE_VALUES"/>
+        <uses-library android:name="samsungkeystoreutils" android:required="false"/>
+        <receiver android:exported="false" android:name="com.samsung.android.app.ruleengine.runtime.timer.RuleEngineAlarmReceiver"/>
+        <uses-native-library android:name="libQREngine.camera.samsung.so" android:required="false"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.companionApp" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.version" android:value="@string/sdk_version"/>
+        <meta-data android:name="SPDE.build.signature" android:value="f64b178c14286538b104daa5e5066b3d7079ad7d/173587996/full-global-release/SamsungSmartSuggestions-740000-7.2.00"/>
+        <meta-data android:name="SPDE.env.version" android:value="8.7.3/G36.1.14/1.2.8"/>
+    </application>
+</manifest>

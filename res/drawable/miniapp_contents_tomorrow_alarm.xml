@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="42.0dip" android:width="42.0dip" android:viewportWidth="42.0" android:viewportHeight="42.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_contents_tomorrow_alarm__0" android:pathData="M21,42C32.598,42 42,32.598 42,21C42,9.402 32.598,0 21,0C9.402,0 0,9.402 0,21C0,32.598 9.402,42 21,42Z" />
+    <path android:fillColor="#fffcfcff" android:pathData="M21,12.604C25.936,12.604 29.938,16.605 29.938,21.542C29.938,26.478 25.936,30.479 21,30.479C16.064,30.479 12.063,26.478 12.063,21.542C12.063,16.605 16.064,12.604 21,12.604ZM20.775,16.066C20.326,16.066 19.963,16.43 19.963,16.879V21.099C19.963,21.547 20.326,21.911 20.775,21.911H24.059C24.507,21.911 24.871,21.547 24.871,21.099L24.864,20.988C24.81,20.592 24.47,20.286 24.059,20.286L21.588,20.285V16.879C21.588,16.43 21.224,16.066 20.775,16.066Z" />
+    <path android:fillColor="#00000000" android:pathData="M14.298,30.204L15.875,28.299" android:strokeColor="#fffcfcff" android:strokeWidth="1.625" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M27.711,30.204L26.135,28.299" android:strokeColor="#fffcfcff" android:strokeWidth="1.625" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M29.012,13.767C28.37,12.946 27.569,12.273 26.665,11.797" android:strokeColor="#fffcfcff" android:strokeWidth="1.625" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M12.972,13.767C13.644,12.948 14.484,12.279 15.435,11.807" android:strokeColor="#fffcfcff" android:strokeWidth="1.625" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

@@ -1,0 +1,32 @@
+SELECT distinct ?S ?P ?O
+WHERE {
+    VALUES ?engram {<ENGRAM_VALUE_LIST>} .
+
+    ?engram user:event ?S .
+    ?S user:withPerson ?person . # filter only when the object of user:withPerson exists.
+
+    {
+        VALUES ?P {rdf:type} .
+        ?S ?P ?O .
+    }
+    UNION
+    {
+        VALUES ?P {time:inXSDBeginningDateTimeStamp} .
+        ?S time:hasBeginning/time:inXSDDateTimeStamp ?O .
+    }
+    UNION
+    {
+        VALUES ?P {time:inXSDEndDateTimeStamp} .
+        ?S time:hasEnd/time:inXSDDateTimeStamp ?O .
+    }
+    UNION
+    {
+        VALUES ?P {user:withPerson} .
+        ?S ?P ?O .
+    }
+    UNION
+    {
+        VALUES ?P {user:event} .
+        ?engram rdf:unknown? ?O .
+    }
+}

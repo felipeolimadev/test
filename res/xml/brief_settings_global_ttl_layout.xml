@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_ttl" android:title="@string/brief_settings_contents_traffic_updates"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout_width="fill_parent">
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Google map" android:key="google_map" android:defaultValue="true" app:iconType="google_map" />
+    </PreferenceCategory>
+</PreferenceScreen>

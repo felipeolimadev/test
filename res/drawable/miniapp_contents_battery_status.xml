@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="46.0dip" android:width="46.0dip" android:viewportWidth="46.0" android:viewportHeight="46.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_contents_battery_status__0" android:pathData="M23,23m-23,0a23,23 0,1 1,46 0a23,23 0,1 1,-46 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffafaff" android:pathData="M29.804,17.123L29.804,29.609C29.804,31.176 28.545,32.445 26.968,32.445L19.03,32.445C17.463,32.445 16.194,31.176 16.194,29.609L16.194,17.123C16.194,15.558 17.463,14.288 19.03,14.288L20.164,14.288L20.164,12.881C20.164,12.405 20.549,12.031 21.014,12.031L24.984,12.031C25.46,12.031 25.834,12.405 25.834,12.881L25.834,14.288L26.968,14.288C28.545,14.288 29.804,15.558 29.804,17.123" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#fffafaff" android:pathData="M19.143,14.798L26.855,14.798A2.359,2.359 0,0 1,29.214 17.157L29.214,30.313A2.359,2.359 0,0 1,26.855 32.672L19.143,32.672A2.359,2.359 0,0 1,16.784 30.313L16.784,17.157A2.359,2.359 0,0 1,19.143 14.798z" android:strokeColor="#fffafaff" android:strokeWidth="1.1794872" android:fillType="evenOdd" />
+</vector>

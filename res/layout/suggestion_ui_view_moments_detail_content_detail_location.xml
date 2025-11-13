@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:gravity="center" android:id="@id/container" android:tag="layout/suggestion_ui_view_moments_detail_content_detail_location_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.moments.contents.location.LocationCardDetailView android:layout_gravity="bottom" android:id="@id/content_location_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MomentsLocationDescriptionContentDetailStyle" />
+</LinearLayout>

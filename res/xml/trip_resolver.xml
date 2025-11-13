@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta-data type="resolver">
+    <input> [
+            {
+                "name":"from",
+                "type":"http://schema.org/Place"
+            },
+            {
+                "name":"to",
+                "type":"http://schema.org/Place",
+                "require":true
+            }
+        ] </input>
+    <output> [
+            {
+                "name":"value",
+                "type":"http://schema.org/Trip"
+            }
+        ]</output>
+</meta-data>

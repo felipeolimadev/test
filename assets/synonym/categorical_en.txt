@@ -1,0 +1,2 @@
+family=>Brother,Child,Daughter,Daughter-in-law,Family,Father,Father-in-law of husband,Father-in-law of wife,Grandchild,Grandfather,Grandmother,Grandparent,Grandchild,Grandson,Husband,Maternal grandfather,Maternal grandmother,Mother,Mother-in-law of husband,Mother-in-law of wife,Older brother,Older brother of female,Older brother of male,Older sister,Older sister of female,Older sister of male,Parent,Paternal grandfather,Paternal grandmother,Relative,Sister,Son,Son-in-law,Spouse,Wife,Younger brother,Younger sister
+travel=>travel,travelAbroad

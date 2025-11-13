@@ -1,0 +1,6 @@
+DELETE { ?s ?p ?o }
+WHERE {
+    VALUES (?target) {<Keywords>}
+    BIND(?target AS ?s)
+    ?s ?p ?o .
+}

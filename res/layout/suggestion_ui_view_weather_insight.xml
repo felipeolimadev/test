@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/weather_item_container" android:tag="layout/suggestion_ui_view_weather_insight_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/weather_as_time_item_container_margin_bottom" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/weather_insight_text_size" android:textColor="@color/weather_insight_title_color" android:id="@id/weather_insight_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="400" />
+    <TextView android:textSize="@dimen/weather_insight_text_size" android:textColor="@color/weather_insight_description_color" android:id="@id/weather_insight_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+</LinearLayout>

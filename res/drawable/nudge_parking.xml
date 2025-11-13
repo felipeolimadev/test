@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="68.0dip" android:width="68.0dip" android:viewportWidth="68.0" android:viewportHeight="68.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$nudge_parking__0" android:pathData="M8,0L60,0A8,8 0,0 1,68 8L68,60A8,8 0,0 1,60 68L8,68A8,8 0,0 1,0 60L0,8A8,8 0,0 1,8 0z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffcfcff" android:pathData="M33.571,16.821C42.809,16.821 50.321,24.335 50.321,33.571C50.321,42.807 42.809,50.321 33.571,50.321C24.335,50.321 16.821,42.807 16.821,33.571C16.821,24.335 24.335,16.821 33.571,16.821ZM35.079,24.139L27.715,24.139L27.715,42.629L31.421,42.629L31.421,35.925L35.079,35.925C37.205,35.925 38.877,35.387 40.095,34.311C41.313,33.237 41.923,31.815 41.923,30.045C41.923,28.275 41.313,26.849 40.095,25.765C38.877,24.683 37.205,24.139 35.079,24.139ZM35.08,26.997C36.122,26.997 36.906,27.289 37.436,27.869C37.964,28.447 38.228,29.181 38.228,30.071C38.228,30.943 37.962,31.659 37.43,32.223C36.894,32.787 36.112,33.067 35.08,33.067L31.422,33.067L31.422,26.997Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

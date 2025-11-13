@@ -1,0 +1,7 @@
+visning,travel,resa,trip
+vigsel,wedding,gängasig,vigselceremoni,bröllopsceremoni,bröllopsfest,äktenskap,bröllop,bröllopsdag,giftasig,marriage ceremony
+immatrikulation,inträdesceremoni,matriculation,inskrivningsceremoni,antagningsceremoni,entrance ceremony
+studenten,diplomutdelning,examensceremoni,graduation,sammankallande,början,examensdag,commencement
+birthday,födelsedatum,födelsedagen,birth anniversary,födelsedag
+marriage anniversary,wedding anniversary,bröllopsdag
+vacation, semester

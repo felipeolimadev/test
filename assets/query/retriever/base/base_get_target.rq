@@ -1,0 +1,13 @@
+select distinct ?entity
+where
+{
+    VALUES (?iri) {<INPUT_IRI>}
+    ?iri <TO_SUBGRAPH_PROPERTY> ?entity .
+    ?entity rdf:type/rdfs:subClassOf <CLASS_IRI> .
+    FILTER NOT EXISTS { ?something1 time:hasBeginning ?entity }
+    FILTER NOT EXISTS { ?something2 time:hasEnd ?entity }
+    OPTIONAL {
+        ?entity (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDCreatedDateTimeStamp|time:inXSDBeginningDateTimeStamp ?start_time .
+    }
+}
+<SIMPLE_SORT_METHOD>

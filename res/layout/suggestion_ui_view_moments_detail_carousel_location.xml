@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:gravity="center" android:id="@id/container" android:tag="layout/suggestion_ui_view_moments_detail_carousel_location_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stateListAnimator="?seslLargeTouchAnimator" style="@style/Base.Theme.MomentsDetailCarouselItemStyle">
+        <com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.moments.contents.location.LocationCardDetailView android:id="@id/content_location_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/moments_bg_carousel_card_content_view" style="@style/MomentsLocationDescriptionCarouselStyle" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

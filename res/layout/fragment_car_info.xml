@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/textview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="15.0dip" android:layout_marginVertical="10.0dip" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select days" />
+        <Button android:id="@id/button_30_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:layout_marginHorizontal="5.0dip" />
+        <Button android:id="@id/button_60_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60" android:layout_marginHorizontal="5.0dip" />
+        <Button android:id="@id/button_90_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="90" android:layout_marginHorizontal="5.0dip" />
+        <Button android:id="@id/button_180_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="180" android:layout_marginHorizontal="5.0dip" />
+    </LinearLayout>
+    <ListView android:id="@id/carInfoListView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/textview_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

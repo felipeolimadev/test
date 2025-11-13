@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.widget.HTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="띠는 어떻게 정해지나요?" app:applyUpToLarge="true" style="@style/BriefDialogTitleTextStyle" />
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.widget.HTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="입춘 이후에 태어나면 태어난 해의 띠, 입춘 전에 태어났다면 그 전 해의 띠를 따릅니다." android:letterSpacing="0.0" app:applyUpToLarge="true" style="@style/BriefDialogDescriptionTextStyle" />
+    <CheckBox android:id="@id/checkUseBirth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:text="내 생년월일 및 띠 표시" android:paddingStart="18.0dip" style="@style/BriefDialogDescriptionTextStyle" />
+    <com.samsung.android.smartsuggestions.feature.aisuggestion.widget.HTextButton android:layout_gravity="center" android:id="@id/btnConfirm" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="확인" android:textAlignment="center" app:allowDefaultButtonShape="true" app:applyUpToLarge="true" app:button_type="dialog_action_button" style="@style/BriefDialogPositiveButtonTextStyle" />
+</LinearLayout>

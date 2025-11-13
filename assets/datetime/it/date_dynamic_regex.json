@@ -1,0 +1,116 @@
+[
+  {
+    "patternName": "<<event_keywords_start>>",
+    "patternValue": [
+      "inizi(?:[oa]|are|er[aà]|at[oaài])",
+      "avvi(?:[oa]|are|at[oaài])",
+      "lanci(?:[oa]|are|at[oaài])",
+      "apr(?:e|ire)",
+      "attiv(?:a|are|at[oai]|azione)",
+      "apert(?:[oai]|uràa)",
+      "(?:a\\s)?partire"
+    ]
+  },
+  {
+    "patternName": "<<event_keywords_end>>",
+    "patternValue": [
+      "fin(?:e|ire|isce|it[oaài])",
+      "termin(?:e|are|a|at[oaià])",
+      "chiu(?:sura|dere|de|s[oaài])",
+      "scad(?:enza|ere|e|ut[oaài])",
+      "conclu(?:sione|dere|de|s[oaài])",
+      "cess(?:azione|are|a|at[oaài])"
+    ]
+  },
+  {
+    "patternName": "<<date_keywords_before>>",
+    "patternValue": [
+      "il",
+      "del",
+      "[d]?alle",
+      "dal",
+      "l'"
+    ]
+  },
+  {
+    "patternName": "<<range_connector>>",
+    "patternValue": [
+      "dalle",
+      "fino a(?:lle|l)?",
+      "alle",
+      "a",
+      "e",
+      "al",
+      "-",
+      "~"
+    ]
+  },
+  {
+    "patternName": "<<from>>",
+    "patternValue": [
+      "da(?:lle|l)?"
+    ]
+  },
+  {
+    "patternName": "<<between>>",
+    "patternValue": [
+      "tra",
+      "fra",
+      "compreso tra"
+    ]
+  },
+  {
+    "patternName": "<<valid>>",
+    "patternValue": [
+      "valid[oa]",
+      "effecttiv[oa]",
+      "applicabile"
+    ]
+  },
+  {
+    "patternName" : "<<ref_num_connector>>",
+    "patternValue" : [
+      "d[ia]",
+      "per"
+    ]
+  },
+  {
+    "patternName": "<<ref_rel_connector>>",
+    "patternValue": [
+      "di",
+      "[dn]el",
+      "dell(?:[ao'e])",
+      "de[li]",
+      "<current_reference>",
+      "nel(?:la)?",
+      "all[oa]",
+      "entro",
+      "verso",
+      "a"
+    ]
+  },
+  {
+    "patternName": "<<dm_connector>>",
+    "patternValue": [
+      "di"
+    ]
+  },
+  {
+    "patternName": "<<my_connector>>",
+    "patternValue": [
+      "del"
+    ]
+  },
+  {
+    "patternName": "<<on>>",
+    "patternValue": [
+      "del"
+    ]
+  },
+  {
+    "patternName": "<<at>>",
+    "patternValue": [
+      "alle"
+    ]
+  }
+]

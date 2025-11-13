@@ -1,0 +1,4 @@
+OPTIONAL {
+    ?content time:inXSDCreatedDateTimeStamp|time:inXSDBeginningDateTimeStamp ?repr_time .
+}
+

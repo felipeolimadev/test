@@ -1,0 +1,59 @@
+[
+    {
+      "patternName": "<<hourly_suffix>>",
+      "patternValue": [
+        "horas",
+        "exatamente",
+        "precisamente",
+        "hora",
+        "pontualmente"
+      ]
+    },
+    {
+      "patternName": "<<important_prepositions>>",
+      "patternValue": [
+        "<current_reference>",
+        "hoje",
+        "às",
+        "em",
+        "da",
+        "n[oa]",
+        "pel[oa]",
+        "deste[a]?",
+        "dessa[s]?"
+      ]
+    },
+    {
+      "patternName": "<<time_specific_prepositions>>",
+      "patternValue": [
+        "e",
+        "menos",
+        "para"
+      ]
+    },
+    {
+      "patternName": "<<time_keywords_before>>",
+      "patternValue": [
+        "<current_reference>",
+        "as",
+        "às",
+        "em",
+        "por volta de",
+        "hora",
+        "horas"
+      ]
+    },
+    {
+      "patternName": "<<around_time>>",
+      "patternValue": [
+        "por volta de"
+      ]
+    },
+    {
+      "patternName": "<<time_connector>>",
+      "patternValue": [
+        "e"
+      ]
+    }
+  ]
+

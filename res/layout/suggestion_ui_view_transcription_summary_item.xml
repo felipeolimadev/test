@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/text_container" android:tag="layout/suggestion_ui_view_transcription_summary_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/card_text_margin_start" android:layout_marginVertical="@dimen/card_margin_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/card_title_text_size" android:textColor="@color/card_text_color" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sec" android:textFontWeight="600" />
+    <TextView android:textSize="@dimen/card_title_text_size" android:textColor="@color/card_text_color" android:ellipsize="end" android:id="@id/subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sec" android:textFontWeight="400" />
+</LinearLayout>

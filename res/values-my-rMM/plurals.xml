@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d ရက် ကျန်သေးသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s သည် %2$d ရက်အကြာတွင် ပေါ်လာတော့မည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$sဖြစ်စဉ် %2$d ခု%3$sကို မနက်ဖြန် ဆက်လုပ်မည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">ယနေ့ %1$sအစီအစဉ် %2$d%3$s ခု သင့်တွင် ရှိသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">သင့်တွင် ယနေ့ ဖြစ်ရပ် %1$d ခု ရှိသည်။ ပထမဖြစ်ရပ်မှာ %2$s ဖြစ်သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">ယနေ့ %1$sအစီအစဉ် %2$d%3$s ခု ကျန်ရှိသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">မနက်ဖြန် သင့်တွင် %1$sအစီအစဉ် %2$d ခု%3$s ရှိသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">သင့်တွင် မနက်ဖြန် ဖြစ်ရပ် %1$d ခု ရှိသည်။ ပထမဖြစ်ရပ်မှာ %2$s ဖြစ်သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">ဖြစ်ရပ် %d ခု</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d မိနစ် အကြာမှာ စတင်မည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">ယနေ့အတွက် သတိပေးချက် %d ခု ကျန်သည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">သင်သည် ယနေ့ ပစ္စည်းပို့မှု မက်ဆေ့ချ် %d ခု လက်ခံရရှိထားသည်။ သင့်ပစ္စည်းပို့မှုများ၏ အခြေအနေကို အပ်ဒိတ်သိကြောင်း သေချာစေရန် စစ်ဆေးပါ။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">ယနေ့ ပစ္စည်းပို့ဆောင်မှု %d ခု</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">ဤအပတ်တွင် ရည်မှန်းချက်အထက် %d ဆ။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">လှုပ်ရှားမှု ရည်မှန်းချက် %d ခု ပြည့်ပါပြီ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">သင်၏စုစုပေါင်း တောင်ကုန်းတက်မှုသည် %1$s ဖြစ်ပြီး သင်သည် %2$,d ကယ်လိုရီ လောင်ကျွမ်းခဲ့သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">သင်၏ပျမ်းမျှ ခြေလှမ်းအရှိန်သည် %1$s ဖြစ်ပြီး သင်သည် %2$,d ကယ်လိုရီ လောင်ကျွမ်းခဲ့သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">သင်၏ပျမ်းမျှ မြန်နှုန်းသည် %1$s ဖြစ်ပြီး သင်သည် %2$,d ကယ်လိုရီ လောင်ကျွမ်းခဲ့သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">သင်၏ %1$s ကာယလေ့ကျင့်ခန်း အကျဉ်းချုပ် ရပါပြီ။ ကြာမြင့်ချိန်သည် %2$s ဖြစ်ပြီး သင်သည် %3$,d ကယ်လိုရီ လောင်ကျွမ်းခဲ့သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">သင်သည် ယနေ့တွင် အချိန်ဇယားစီစဉ်ထားသော ဆေး %d ခု လွတ်သွားသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d နာရီ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d နာရီ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d မိနစ်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d မိနစ်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">ယနေ့ သင် မစစ်ဆေးရသေးသည့် %1$sလွဲချော်သွားသော ဖုန်းခေါ်ဆိုမှု %2$d ခု%3$s ရှိပါသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">သင်သည် ယနေ့ ဖုန်းခေါ်ဆိုမှု %d ခု လွတ်သွားသည်။ ထိုလွတ်သွားသည့် ဖုန်းခေါ်ဆိုမှုများကို သင်၏ Now brief တွင် သုံးသပ်ပါ။ လိုအပ်ပါက သတိပေးချက်များလည်း သင် သတ်မှတ်နိုင်သည်၊ သို့မှသာ ဖုန်းပြန်ခေါ်ရန် မမေ့မည်ဖြစ်သည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">လွဲသွားသော ဖုန်းခေါ်ဆိုမှု %d ခု</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">လွတ်သွားသည့် ဖုန်းခေါ်ဆိုမှု %d ခု</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">လွန်ခဲ့သော %d နာရီက</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">လွန်ခဲ့သော %d မိနစ်က</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI ၏ အဆင့်မြင့်ဉာဏ်ရည်လုပ်ဆောင်ချက်များကို သုံးရန်အတွက် သင်သည် အနည်းဆုံး အသက် %d နှစ် ပြည့်ရန် လိုသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">မက်ဆေ့ချ် %d စောင်</item>
+        <item quantity="one">မက်ဆေ့ချ် %d စောင်</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d မိုင်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d စက္ကန့်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">မနက်ခင်းအတွက် %1$s%2$d နှိုးစက်%3$s ကို သင်သတ်မှတ်ထားပါသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">မနက်ဖြန်မနက်ခင်းအတွက် %1$sနှိုးစက် %2$d ခု%3$s သတ်မှတ်ပြီးပါပြီ။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">လေယာဉ်မထွက်မီ အနည်းဆုံး %4$d နာရီစော၍ လေဆိပ်သို့ရောက်ရန် %1$s%2$s မတိုင်မီ ထွက်ခွာပါ။%3$s မမေ့စေရန် နှိုးစက်ပေးထားပါ။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">သင့်လေယာဉ်ချိန်မတိုင်မီ အနည်းဆုံး %4$d နာရီစော၍ လေဆိပ်သို့ရောက်ရန် %1$s%2$s မတိုင်မီ ထွက်ခွာပါ။%3$s</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">လည်ပတ်စရာနေရာ၊ လုပ်စရာနှင့် မြည်းစမ်းစားကြည့်သင့်သည့် စားသောက်ဆိုင်များ အပါအဝင် %2$s အတွက် %1$d ရက်စာ ခရီးစဉ်ကို အကြံပြုပေးသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">သင့်ခရီးစဉ်အတွင်း အသုံးဝင်နိုင်သည့် ဤ%1$sအကြံပြုအက်ပ်များ%2$sကို စစ်ဆေးပါ။</item>
+        <item quantity="one">သင့်ခရီးစဉ်အတွင်း အသုံးဝင်နိုင်သည့် ဤ%1$sအကြံပြုအက်ပ်%2$sကို စစ်ဆေးပါ။</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">သွားမည့်နေရာသို့ ရောက်သည့်အခါ စကားပြန်တွင် အဆင်သင့်အသုံးပြုနိုင်စေရန် ကြိုတင်၍ %1$sဤဘာသာစကားပက်ကေ့ချ်ကို ဒေါင်းလုတ်လုပ်ပါ%2$s။</item>
+        <item quantity="one">သွားမည့်နေရာသို့ ရောက်သည့်အခါ စကားပြန်တွင် အဆင်သင့်အသုံးပြုနိုင်စေရန် ကြိုတင်၍ %1$sဤဘာသာစကားပက်ကေ့ချ်များကို ဒေါင်းလုတ်လုပ်ပါ%2$s။</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">ဒေါင်းလုတ်လုပ်မည့် ဘာသာစကားဖိုင်များ</item>
+        <item quantity="one">ဒေါင်းလုတ်လုပ်မည့် ဘာသာစကားဖိုင်</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">စက် %d ခုကို ဖွင့်ထားသည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">လွန်ခဲ့သော %d ရက်က နောက်ဆုံး ဆက်သွယ်ခဲ့သည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">လွန်ခဲ့သော %d ရက်က နောက်ဆုံး ဆက်သွယ်ခဲ့သည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">လွန်ခဲ့သော %d လက နောက်ဆုံး ဆက်သွယ်ခဲ့သည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">လွန်ခဲ့သော %d ပတ်က နောက်ဆုံး ဆက်သွယ်ခဲ့သည်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">နောက်ထပ်အဆက်အသွယ် %d ခု</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">သင့်တွင် %d ရက်အကြာတွင် သက်တမ်းကုန်မည့် ကူပွန်တစ်ခု Samsung Wallet တွင် ရှိသည်။ ၎င်းကို သက်တမ်းမကုန်မီ အသုံးပြုပါ။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">အနှုတ် %d ဒီဂရီ အမြင့်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">အနှုတ် %d ဒီဂရီ အနိမ့်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">သင့်ပြက္ခဒိန်တွင် %1$s ဟုခေါ်သည့် ဖြစ်ရပ်တစ်ခု ရှိသည်။ ၎င်းသည် %5$s တွင် %4$s တွင် %2$d ဒီဂရီ %3$s ရှိပါမည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">%d ဒီဂရီ အမြင့်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">%d ဒီဂရီ အနိမ့်</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">ကြည့်ရှုသူ %s ဦး</item>
+        <item quantity="one">%s မြင်ကွင်း</item>
+    </plurals>
+</resources>

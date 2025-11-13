@@ -1,0 +1,16 @@
+{
+    select distinct ?activity ?pivot{IDX} ?p_score{IDX} ?max_linkingScore{IDX}
+    where {
+        <INPUT_TO_PIVOT>
+        {
+            ?pivot{IDX} user:event ?activity .
+            BIND(<SCORE_ENGRAM_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} (user:capturedToScheduled|user:scheduledToCaptured)? ?activity .
+            BIND(<SCORE_ACTIVITY_PIVOT> AS ?p_score{IDX})
+        }
+
+        <PIVOT_TO_TIME>
+        <TIME_FILTER>
+    }
+}

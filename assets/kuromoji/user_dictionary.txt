@@ -1,0 +1,2 @@
+# Add customing reading or segmentation
+日本,日本,ニホン,名詞-固有名詞-地域-国

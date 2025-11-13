@@ -1,0 +1,7 @@
+travel,رحلة,يسافر,trip
+الحصولعلىالارتباط,مراسمالزواج,مراسم الزفاف,wedding,حفلاتالزفاف,حفلقران,حدثالزفاف,محاولةعقدالقران,احتفالالزفاف,الزواج,يومالزفاف,marriage ceremony
+حفلالقبول,matriculation,احتفالالتسجيل,حفلالتسجيل,حفل الدخول,entrance ceremony
+حفلالدبلوم,يومالتخرج,graduation,تخرج,دعوة,حفلالتخرج,حدثالتخرج,commencement
+birthday,تاريخالميلاد,ذكرىميلاد,ذكرىالميلاد,يومالميلاد,تاريخالولادة,يومالولادة,عيد ميلاد,birth anniversary
+marriage anniversary,ذكرى زواج,wedding anniversary,ذكرىالزواج
+vacation, جازة

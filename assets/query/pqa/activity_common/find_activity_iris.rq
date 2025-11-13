@@ -1,0 +1,18 @@
+SELECT DISTINCT ?activity
+WHERE {
+    {
+        <TARGET_TYPES_FILTER>
+
+        ?activity rdf:type/rdfs:subClassOf ?activity_type .
+        ?activity (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDBeginningDateTimeStamp|time:inXSDCreatedDateTimeStamp ?start_time .
+        ?activity (time:hasEnd/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDEndDateTimeStamp|time:inXSDCreatedDateTimeStamp ?end_time .
+
+        <TIME_FILTER>
+
+        <LOCATION_FILTER>
+
+    }
+}
+<OUTPUT_SORT>
+<OFFSET>
+<LIMIT>

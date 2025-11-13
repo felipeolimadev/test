@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/suggestion_ui_view_gallery_story_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,312:188.24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:layout_gravity="center" android:id="@id/gallery_story_image_container" android:background="@drawable/gallery_story_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gallery_story_border_width" android:clipToOutline="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gallery_story_stroke" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gallery_story_text_margin_bottom" android:layout_marginHorizontal="@dimen/gallery_story_text_margin_horizontal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0">
+        <TextView android:textSize="@dimen/gallery_story_title_text_size" android:textColor="@color/gallery_story_text_color" android:gravity="center" android:id="@id/gallery_story_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gallery_story_text_gap_vertical" android:fontFamily="sec" android:textFontWeight="700" />
+        <TextView android:textSize="@dimen/gallery_story_period_text_size" android:textColor="@color/gallery_story_text_color" android:gravity="center" android:id="@id/gallery_story_period" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="400" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

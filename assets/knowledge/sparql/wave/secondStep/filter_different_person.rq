@@ -1,0 +1,8 @@
+# 다른 사람이 같이 나온 사진이나 다른 사람만 나온 사진이 같은 TakingPictures 안에 있는 경우
+FILTER EXISTS {
+    ?target user:withPerson ?person .
+    FILTER NOT EXISTS {
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        ?origin user:withPerson ?person .
+    }
+}

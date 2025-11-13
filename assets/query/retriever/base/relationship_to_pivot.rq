@@ -1,0 +1,6 @@
+{
+    VALUES (?input{IDX} ?linkingScore{IDX}) {<SCORED_KEYWORDS>}
+    GRAPH user:relation {
+        person:TheUser ?input{IDX} ?instance{IDX} .
+    }
+}

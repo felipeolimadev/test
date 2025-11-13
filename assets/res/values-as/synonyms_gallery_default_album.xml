@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DREAM_GALLERY_BODY_CAMERA -->
+    <string name="camera">কেমেৰা</string>
+    <!-- IDS_GALLERY_HEADER_DOWNLOADS -->
+    <string name="download">ডাউনলোড</string>
+    <!-- DREAM_GALLERY_BODY_SCREENSHOTS_M_CATEGORY -->
+    <string name="screenshots">স্ক্ৰীণশ্ব\'টসমূহ</string>
+</resources>

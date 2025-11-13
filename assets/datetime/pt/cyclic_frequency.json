@@ -1,0 +1,25 @@
+{
+    "data": {
+      "DAILY": {
+        "DAY_CYCLE": 1
+      },
+      "MONTHLY": {
+        "MONTH_CYCLE": 1
+      },
+      "YEARLY": {
+        "YEAR_CYCLE": 1
+      },
+      "BIWEEKLY": {
+        "DAY_CYCLE": 14
+      },
+      "ANNUALLY": {
+        "YEAR_CYCLE": 1
+      },
+      "WEEKLY": {
+        "DAY_CYCLE": 7
+      },
+      "EVERYDAY": {
+        "DAY_CYCLE": 1
+      }
+    }
+  }

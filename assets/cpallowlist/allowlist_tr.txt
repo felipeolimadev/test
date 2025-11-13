@@ -1,0 +1,7 @@
+trip,seyahat,tur,travel
+evlilikler,wedding,düğümüdenemek,marriage ceremony,düğün,düğünolayı,evlenmek,düğünkutlaması,birleştiriliyor,düğün töreni,düğüngünü,evliliktöreni,evlilik
+giriş töreni,entrance ceremony,matriculation,kabultöreni,kayıttöreni
+mezuniyet,mezuniyetgünü,başlangıç,toplantı,diplomatöreni,graduation,commencement,mezuniyettöreni,mezuniyetetkinliği
+doğumtarihi,birth anniversary,doğumyıldönümü,doğum günü,birthday
+evlilikanması,evlilik yıldönümü,wedding anniversary,marriage anniversary
+vacation, tatil

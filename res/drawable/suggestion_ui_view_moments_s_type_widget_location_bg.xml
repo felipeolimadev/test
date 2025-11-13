@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/transparent" />
+    <corners android:radius="@dimen/moments_widget_location_overlay_corner_radius" />
+    <stroke android:width="@dimen/s1_1_type_overlay_location_stroke_width" android:color="@color/moments_widget_s1_1_type_overlay_location_stroke_color" />
+</shape>

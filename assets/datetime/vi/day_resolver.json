@@ -1,0 +1,105 @@
+[
+  {
+    "id": 0,
+    "patternString" : "(<time_period>)\\s*(?:\\:)?\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword": "ngày",
+    "comment" : "day 2, first day"
+  },
+  {
+    "id" : 1,
+    "patternString" : "(<day_of_week>)\\s*(<time_period>)\\s*(<num>)\\s*(?:của)?\\s*[,]?\\s*(<time_period>)?\\s*(<num>)?",
+    "mapping" : [
+      {
+        "weekDayCount" : 3,
+        "dayOfWeek" : 1
+      }
+    ],
+    "comment" : "tuesday week 3",
+    "shouldContainKeyword": "tuần"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<time_period>)\\s*(?:thứ)\\s*(<num>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "ngày",
+    "comment" : "2nd day"
+  },
+  {
+    "id": 3,
+    "patternString": "(?:\\s|^|\\.|,)(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "dayOfWeek": 1
+      }
+    ],
+    "comment" : "tuesday"
+  },
+  {
+    "id": 3,
+    "patternString": "(<time_period>)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "weekCount": 2
+      }
+    ],
+    "shouldContainKeyword": "tuần",
+    "comment" : "2nd week"
+  },
+  {
+    "id" : 4,
+    "patternString": "(?:\\s|^|\\.|,|\\-|\\?)(<relative_day>)(?:\\s|$|\\.|,|\\-|\\?)",
+    "isRelative" : true,
+    "comment" : "today | tmrw | yesterday .."
+  },
+  {
+    "id" : 5,
+    "patternString" : "(?:\\s|^|\\.|,)(<day_of_week>)\\s*(<time_period>)\\s*(<last_reference>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 3
+      }
+    ],
+    "shouldContainKeyword": "tuần",
+    "comment": "last monday"
+  },
+  {
+    "id" : 5,
+    "patternString" : "(?:\\s|^|\\.|,)(<time_period>)\\s*(<last_reference>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "ngày",
+    "comment": "last day"
+  },
+  {
+    "id" : 6,
+    "patternString" : "(?:\\s|^|\\.|,)\\s*(<num_suffix>|<num>)\\s*(?:của)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ]
+  },
+  {
+    "id" : 7,
+    "patternString" : "(?:\\s|^|\\.|,)\\s*(<time_period>)\\s*(?:thứ)?\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekendCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "cuối tuần",
+    "comment" : "2nd weekend"
+  }
+]

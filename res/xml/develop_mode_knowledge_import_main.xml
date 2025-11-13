@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:title="Import Using .enc file" android:key="key_knowledge_engram" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeEncImportFragment" app:iconSpaceReserved="false" />
+    <Preference android:title="Import Using .ttl, .dlog, .owl files" android:key="key_knowledge_activity" android:fragment="com.samsung.android.moneta.debugui.developmode.knowledge.KnowledgeTtlImportFragment" app:iconSpaceReserved="false" />
+</PreferenceScreen>

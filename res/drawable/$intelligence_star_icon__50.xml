@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="883" android:valueFrom="0.115" android:valueTo="0.115" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__51" android:duration="616" android:valueFrom="0.115" android:valueTo="0.263" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="883" android:valueFrom="0.115" android:valueTo="0.115" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__52" android:duration="616" android:valueFrom="0.115" android:valueTo="0.263" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="883" android:valueFrom="0.948" android:valueTo="0.948" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__53" android:duration="616" android:valueFrom="0.948" android:valueTo="8.27" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="883" android:valueFrom="19.415" android:valueTo="19.415" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__54" android:duration="616" android:valueFrom="19.415" android:valueTo="23.612" android:propertyName="translateY" />
+    </set>
+</set>

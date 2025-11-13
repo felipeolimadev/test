@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_entertainment" android:title="@string/brief_settings_contents_entertainment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout_width="fill_parent">
+        <SwitchPreferenceCompat android:title="@string/brief_settings_contents_music_and_podcasts" android:key="contents_music_and_podcasts" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:title="@string/brief_settings_contents_youtube_shorts" android:key="contents_youtube_shorts" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:title="@string/brief_settings_contents_fortune" android:key="contents_fortune" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:title="@string/brief_settings_contents_nano_banana" android:key="contents_nano_banana" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:title="@string/brief_settings_contents_youtube" android:key="contents_youtube" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

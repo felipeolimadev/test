@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="preview_icon_ratio_fold_main">0.082</item>
+    <item type="dimen" name="preview_icon_ratio_fold_main_10x6">0.068</item>
+    <item type="dimen" name="preview_icon_ratio_fold_main_8x6">0.079</item>
+</resources>

@@ -1,0 +1,16 @@
+DELETE { ?s ?p ?o }
+WHERE {
+    {
+        VALUES (?target) {<Keywords>}
+        BIND(?target AS ?s)
+        ?s ?p ?o .
+    } UNION {
+        VALUES (?target) {<Keywords>}
+        ?target time:hasBeginning ?s .
+        ?s ?p ?o .
+    } UNION {
+        VALUES (?target) {<Keywords>}
+        ?target time:hasEnd ?s .
+        ?s ?p ?o .
+    }
+}

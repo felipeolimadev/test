@@ -1,0 +1,428 @@
+{
+    "masks": [
+        {
+            "id": 1,
+            "mask": "<day_of_week>",
+            "keywords": [
+                "segunda-feira",
+                "segunda",
+                "seg",
+                "2ª-feira",
+                "2ª",
+                "terça-feira",
+                "terca",
+                "ter",
+                "3ª-feira",
+                "3ª",
+                "quarta-feira",
+                "quarta",
+                "qua",
+                "4ª-feira",
+                "4ª",
+                "quinta-feira",
+                "quinta",
+                "qui",
+                "5ª-feira",
+                "5ª",
+                "sexta-feira",
+                "sexta",
+                "sex",
+                "6ª-feira",
+                "6ª",
+                "sábado",
+                "sabado",
+                "sáb",
+                "domingo",
+                "dom"
+            ]
+        },
+        {
+            "id": 2,
+            "mask": "<month>",
+            "keywords": [
+                "janeiro",
+                "jan",
+                "fevereiro",
+                "fev",
+                "março",
+                "mar",
+                "abril",
+                "abr",
+                "maio",
+                "mai",
+                "junho",
+                "jun",
+                "julho",
+                "jul",
+                "agosto",
+                "ago",
+                "setembro",
+                "set",
+                "outubro",
+                "out",
+                "novembro",
+                "nov",
+                "dezembro",
+                "dez"
+            ]
+        },
+        {
+            "id": 3,
+            "mask": "<relative>",
+            "keywords": [
+              "ultim[oa]",
+              "prossim[oa]",
+              "precedente",
+              "successivo",
+              "inizi(?:o|ale)",
+              "fin(?:e|ale)",
+              "quest[oa]",
+              "passato"
+            ]
+        },
+        {
+            "id": 4,
+            "mask": "<special_day>",
+            "keywords": [
+                "ano novo",
+                "carnaval",
+                "páscoa",
+                "trabalhador",
+                "mães",
+                "pais",
+                "independência",
+                "halloween",
+                "natal",
+                "réveillon",
+                "ação de graças",
+                "internacional da mulher",
+                "crianças",
+                "finados",
+                "são joão",
+                "são pedro",
+                "soldado",
+                "professor",
+                "estudante",
+                "nacional da música",
+                "reis",
+                "quarta-feirra de cinzas",
+                "sexta-feira santa",
+                "domingo de páscoa",
+                "portugal",
+                "corpo de deus",
+                "namorados"
+            ]
+        },
+        {
+            "id": 5,
+            "mask": "<time_format>",
+            "keywords": [
+               "a[.]?m[.]?",
+               "p[.]?m[.]?"
+             ]
+        },
+        {
+            "id": 6,
+            "mask": "<relative_time_format>",
+            "keywords": [
+               "amanhecer",
+               "anoitecer",
+               "noite",
+               "tarde",
+               "manhã",
+               "tarde da noite",
+               "cedo pela manhã",
+               "cedo à noite",
+               "meia-noite",
+               "madrugada",
+               "meio-dia",
+               "nascer do sol",
+               "pôr do sol"
+            ]
+        },
+        {
+            "id": 7,
+            "mask": "<time_h>",
+            "keywords": [
+                "h",
+                "hrs",
+                "hora",
+                "horas",
+                "em ponto"
+            ]
+        },
+        {
+            "id": 8,
+            "mask": "<time_m>",
+            "keywords": [
+              "minutos",
+              "um minuto",
+              "minuto",
+              "min",
+              "m"
+            ]
+        },
+        {
+            "id": 9,
+            "mask": "<time_s>",
+            "keywords": [
+              "segundos?",
+              "seg",
+              "s"
+            ]
+        },
+        {
+            "id": 10,
+            "mask": "<special_time>",
+            "keywords": [
+                "(meia-noite|meio-dia|agora)"
+            ]
+        },
+        {
+            "id": 22,
+            "mask": "<special_time_relative>",
+            "keywords": [
+                "meia hora",
+                "(uma)?\\s*meia\\s*hora",
+                "um minuto"
+            ]
+        },
+        {
+            "id": 23,
+            "mask": "<special_num>",
+            "keywords": [
+                "meia",
+                "quinze"
+            ]
+        },
+        {
+            "id": 18,
+            "mask": "<range_relative_connector>",
+            "keywords": [
+                "para as"
+            ]
+        },
+        {
+            "id": 11,
+            "mask": "<num_word>",
+            "keywords": [
+                "um", "uma",
+                "dois", "duas",
+                "três",
+                "quatro",
+                "cinco",
+                "seis",
+                "sete",
+                "oito",
+                "nove",
+                "dez",
+                "onze",
+                "doze",
+                "treze",
+                "quatorze",
+                "quinze",
+                "dezesseis",
+                "dezessete",
+                "dezoito",
+                "dezenove",
+                "vinte",
+                "(vinte e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "trinta",
+                "(trinta e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "quarenta",
+                "(quarenta e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "cinquenta",
+                "(cinquenta e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "sessenta",
+                "(sessenta e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "setenta",
+                "(setenta e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "oitenta",
+                "(oitenta e )(um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove)",
+                "noventa",
+                "(noventa e )(um|uma|dois|duas|três|quatro|cinco|cincosete)",
+                "um quarto",
+                "três quartos",
+                "3 quartos",
+                "meia"
+            ]
+        },
+        {
+            "id": 12,
+            "mask": "<cyclic_keyword>",
+            "keywords": [
+                "cada",
+                "anualmente",
+                "mensalmente",
+                "semanalmente",
+                "diariamente",
+                "por hora",
+                "cada hora"
+            ]
+
+        },
+        {
+            "id": 13,
+            "mask": "<temporal_adjective>",
+            "keywords": [
+            ]
+        },
+        {
+            "id": 14,
+            "mask": "<time_period>",
+            "keywords": [
+              "dia",
+              "dias",
+              "semana",
+              "mês",
+              "ano",
+              "trimestre",
+              "quinzena",
+              "década",
+              "século",
+              "dia útil",
+              "fim de semana"
+            ]
+          },
+        {
+            "id": 15,
+            "mask": "<relative_day>",
+            "keywords": [
+              "hoje",
+              "amanhã",
+              "ontem"
+            ]
+        },
+        {
+            "id": 16,
+            "mask": "<num_suffix>",
+            "keywords": [
+                "\\d{1,4}(º|ª|\\.ª|.o|a|mo|ma|ndo|nda|zo|za|to|ta)",
+                "primeir[oa]",
+                "segundo",
+                "terceira",
+                "quarto",
+                "quinto",
+                "décimo segundo",
+                "cem",
+                "mil",
+                "primeiro",
+                "segunda",
+                "terceiro",
+                "quinta",
+                "sexto",
+                "sétimo",
+                "oitavo",
+                "nono",
+                "décimo",
+                "décimo primeiro",
+                "décimo segundo"
+            ]
+        },
+        {
+            "id": 17,
+            "mask": "<num>",
+            "keywords": [
+              "\\d{1,4}"
+            ]
+        },
+        {
+            "id": 18,
+            "mask": "<after_reference>",
+            "keywords": [
+              "da hora",
+              "após",
+              "depois",
+              "que vem",
+              "entre",
+              "dentro de",
+              "mais tarde",
+              "próxim[ao]",
+              "seguinte",
+              "em breve",
+              "adiante",
+              "ao lado de",
+              "a partir de agora"
+            ]
+        },
+        {
+            "id": 19,
+            "mask" : "<before_reference>",
+            "keywords" : [
+                "passado",
+                "faz",
+                "anterior",
+                "mais cedo",
+                "antes"
+                ]
+        },
+        {
+            "id": 20,
+            "mask" : "<current_reference>",
+            "keywords" : [
+                "atual",
+                "sobre",
+                "deste",
+                "em torno",
+                "est[ea]",
+                "aquele",
+                "corrente",
+                "neste",
+                "hoje à",
+                "nesse",
+                "neste momento",
+                "neste instante",
+                "atualmente",
+                "presentemente"
+            ]
+        },
+        {
+            "id" : 21,
+            "mask" : "<last_reference>",
+            "keywords" : [
+                "último",
+                "final",
+                "termino"
+            ]
+        },
+        {
+            "id" : 22,
+            "mask" : "<recurring_event>",
+            "keywords" : [
+                "diário",
+                "mensal",
+                "anual",
+                "trimestral",
+                "semanal",
+                "quinzena[l]?",
+                "quinzenário",
+                "anualmente",
+                "diariamente"
+            ]
+          },
+          {
+            "id" : 23,
+            "mask" : "<recurring_keyword>",
+            "keywords" : [
+                "tod[ao][s]?",
+                "cada",
+                "algum[a]?[s]?",
+                "alguns",
+                "each"
+            ]
+          },
+          {
+            "id" : 24,
+            "mask" : "<day_of_week_recurring>",
+            "keywords": [
+                "domingos",
+                "segundas-feiras",
+                "terças-feiras",
+                "quartas-feiras",
+                "quintas-feiras",
+                "sextas-feiras",
+                "sábados"
+            ]
+          }
+    ]
+}

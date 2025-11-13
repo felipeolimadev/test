@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter support threshold: " />
+        <EditText android:id="@id/supportThreshold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter confidence threshold: " />
+        <EditText android:id="@id/confidenceThreshold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter context changes count: " />
+        <EditText android:id="@id/calculationWindow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+</LinearLayout>

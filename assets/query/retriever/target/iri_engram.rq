@@ -1,0 +1,3 @@
+OPTIONAL {
+    ?engram time:hasBeginning ?repr_time .
+}

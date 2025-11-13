@@ -1,0 +1,6 @@
+org.apache.tika.detect.microsoft.ooxml.OPCPackageDetector
+org.apache.tika.detect.zip.IPADetector
+org.apache.tika.detect.zip.JarDetector
+org.apache.tika.detect.zip.KMZDetector
+org.apache.tika.detect.zip.OpenDocumentDetector
+org.apache.tika.detect.zip.StarOfficeDetector

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="logs.call" package="" prefKey="calllog" version="23"
+    readPermission="android.permission.READ_CALL_LOG">
+
+    <!-- By default any index field is indexed="true" stored="true"
+    isSearchField="false" isSuggestField="false",
+    isSuggestProjectField="false" isTaskSuggestProjectField="false"
+    can be turned off by setting false or on by setting true -->
+
+    <fieldType name="number_field" dataType="String" class="TextField">
+        <analyzer class="bs.calllog.NumberAnalyzer" />
+    </fieldType>
+    <fieldType name="multi_name_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="string_field" dataType="String" class="StringField" />
+    <fieldType name="string_text_field" dataType="String" class="TextField" />
+    <fieldType name="lower_case_text_field" dataType="String" class="TextField">
+        <analyzer class="bs.LowerCaseSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="int_stored_field" dataType="int" class="StoredField"/>
+    <fieldType name="long_numeric_field" dataType="long" class="NumericDocValuesField" />
+    <fieldType name="long_compare_field" dataType="long" class="LongPoint" />
+    <fieldType name="keyword_field" dataType="String" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="fuzzy_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+    <fieldType name="pinyin_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" withMixed="true"
+            keepOtherLang="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="kana_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer"
+            normalize="true" keepUncombinedTokenTokens="true"/>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+    <fieldType name="chosung_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.korean.ChosungAnalyzer" keepOtherLang="true" removeSpace="true" />
+    </fieldType>
+    <fieldType name="phonetic_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" neuralPhonetics="true"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="transliteration_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="person" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="person" />
+    </fieldType>
+    <fieldType name="initial_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.core.InitialAnalyzer"/>
+    </fieldType>
+    <fieldType name="name_normalize_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.contacts.ContactsNameAnalyzer"/>
+    </fieldType>
+
+
+    <field name="_id" type="string_field"/>
+    <field name="_id_sorted" type="long_numeric_field" stored="false"/>
+    <field name="number" type="number_field"/>
+    <field name="date" type="string_text_field"/>
+    <field name="date_sorted" type="long_numeric_field" stored="false"/>
+    <field name="duration" type="long_stored_field" indexed="false"/>
+    <field name="type" type="string_text_field"/>
+    <field name="countryiso" type="string_field" indexed="false"/>
+    <field name="geocoded_location" type="string_field" indexed="false"/>
+    <field name="logtype" type="string_text_field" />
+    <field name="contactid" type="string_text_field" />
+    <field name="voicemail_uri" type="string_field" indexed="false"/>
+
+    <field name="name" type="number_field"/>
+    <field name="names" type="multi_name_field" stored="false"/>
+    <field name="name_phonetic" type="phonetic_field" src="names" stored="false"/>
+    <field name="name_initials" type="initial_field" src="names" stored="false"/>
+    <field name="name_fuzzy" type="fuzzy_field" src="names" stored="false"/>
+    <field name="name_transliterated" type="transliteration_field" src="names" stored="false"/>
+    <field name="name_chosung" type="chosung_field" src="names" stored="false"/>
+    <field name="name_pinyin" type="pinyin_field" stored="false"/>
+    <field name="name_kana" type="kana_field" src="names" stored="false"/>
+    <field name="name_normalized" type="name_normalize_field" src="names" stored="false"/>
+
+    <field name="numbertype" type="int_stored_field" indexed="false"/>
+    <field name="numberlabel" type="string_field" indexed="false"/>
+    <field name="lookup_uri" type="string_field" indexed="false"/>
+    <field name="matched_number" type="string_field" indexed="false"/>
+    <field name="normalized_number" type="string_field" indexed="false"/>
+    <field name="photo_id" type="string_field" indexed="false"/>
+    <field name="messageid" type="string_field" indexed="false"/>
+    <field name="sec_custom1" type="string_field" indexed="false"/>
+    <field name="sec_record" type="string_field" indexed="false"/>
+    <field name="e164_number" type="string_field" indexed="false"/>
+    <field name="formatted_number" type="number_field"/>
+    <field name="remind_me_later_set" type="int_stored_field" indexed="false"/>
+    <field name="vvm_id" type="int_stored_field" indexed="false"/>
+    <field name="is_read" type="int_stored_field" indexed="false"/>
+    <field name="cnap_name" type="string_field" indexed="false"/>
+    <field name="sim_id" type="string_text_field"/>
+    <field name="service_type" type="int_stored_field" indexed="false"/>
+    <field name="cdnip_number" type="string_field" indexed="false"/>
+    <field name="photoring_uri" type="string_field" indexed="false"/>
+    <field name="sec_smartcall" type="string_field" indexed="false"/>
+    <field name="callplus" type="string_field" indexed="false"/>
+    <field name="spam_report" type="int_stored_field" indexed="false"/>
+    <field name="fname" type="string_field" indexed="false"/>
+    <field name="lname" type="string_field" indexed="false"/>
+    <field name="bname" type="string_field" indexed="false"/>
+    <field name="cityid" type="string_field" indexed="false"/>
+    <field name="sec_line_status" type="string_text_field"/>
+    <field name="sec_memo" type="number_field"/>
+    <field name="sec_rtt" type="string_field" indexed="false"/>
+    <field name="photo_uri" type="string_field" indexed="false"/>
+    <field name="m_subject" type="string_field" indexed="false"/>
+    <field name="m_content" type="string_field" indexed="false"/>
+    <field name="data_usage" type="long_stored_field" indexed="false"/>
+    <field name="sec_groupid" type="int_stored_field" indexed="false"/>
+    <field name="sec_subid" type="string_field" indexed="false"/>
+    <field name="sec_phishing" type="string_field"/>
+    <field name="presentation" type="int_stored_field" indexed="false"/>
+    <field name="sec_cmc_device" type="string_field" indexed="false"/>
+    <field name="sec_ringing_time" type="int_stored_field" indexed="false"/>
+    <field name="reject_flag" type="string_text_field" />
+    <field name="hit" type="int_stored_field" indexed="false"/>
+    <field name="features" type="int_stored_field" indexed="false"/>
+    <field name="subscription_component_name" type="string_field" indexed="false"/>
+    <field name="subscription_id" type="string_field" indexed="false"/>
+    <field name="data1" type="string_field" indexed="false"/>
+    <field name="data2" type="string_field" indexed="false"/>
+    <field name="data3" type="string_field" indexed="false"/>
+    <field name="data4" type="string_field" indexed="false"/>
+    <field name="block_reason" type="int_stored_field" indexed="false"/>
+    <field name="call_screening_app_name" type="string_field" indexed="false"/>
+    <field name="post_dial_digits" type="string_field" indexed="false"/>
+    <field name="sec_screen_call" type="string_field" indexed="false"/>
+    <field name="sec_call_forwarding" type="string_field" indexed="false" />
+    <field name="sec_icc_id" type="string_field" indexed="false" />
+    <field name="sec_call_summary_title" type="lower_case_text_field" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <fieldList type="search">
+        <fieldItem name="number" />
+        <fieldItem name="sec_call_summary_title" />
+        <fieldItem name="names" />
+        <fieldItem name="formatted_number" />
+    </fieldList>
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="date_sorted" order="DESC" />
+    </sort>
+</schema>

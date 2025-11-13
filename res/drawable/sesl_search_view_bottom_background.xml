@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="52.0dip" android:width="340.0dip" />
+    <corners android:radius="@dimen/sesl_search_plate_radius_size" />
+    <solid android:color="@color/sesl_search_view_bottom_background_color" />
+    <padding android:left="16.0dip" android:top="8.0dip" android:right="16.0dip" android:bottom="8.0dip" />
+</shape>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="583" android:valueFrom="0.082" android:valueTo="0.082" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__65" android:duration="750" android:valueFrom="0.082" android:valueTo="0.357" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__66" android:duration="166" android:valueFrom="0.357" android:valueTo="0.33" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="583" android:valueFrom="0.082" android:valueTo="0.082" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__67" android:duration="750" android:valueFrom="0.082" android:valueTo="0.357" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__68" android:duration="166" android:valueFrom="0.357" android:valueTo="0.33" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="583" android:valueFrom="7.952" android:valueTo="7.952" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__69" android:duration="916" android:valueFrom="7.952" android:valueTo="23.994" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="583" android:valueFrom="5.214" android:valueTo="5.214" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__70" android:duration="916" android:valueFrom="5.214" android:valueTo="17.63" android:propertyName="translateY" />
+    </set>
+</set>

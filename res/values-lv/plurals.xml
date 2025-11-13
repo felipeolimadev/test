@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">Atlikušas %d d.</item>
+        <item quantity="zero">Atlikušas %d d.</item>
+        <item quantity="one">Atlikusi %d d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s pēc %2$d dienām.</item>
+        <item quantity="zero">%1$s pēc %2$d dienām.</item>
+        <item quantity="one">%1$s pēc %2$d dienas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d notikumi%3$s turpināsies rīt.</item>
+        <item quantity="zero">%1$s%2$d notikumi%3$s turpināsies rīt.</item>
+        <item quantity="one">%1$s%2$d notikums%3$s turpināsies rīt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Šodien jums ir ieplānoti %1$s%2$d notikumi%3$s.</item>
+        <item quantity="zero">Šodien jums ir ieplānoti %1$s%2$d notikumi%3$s.</item>
+        <item quantity="one">Šodien jums ir ieplānots %1$s%2$d notikums%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Šodien ieplānoti %1$d notikumi. Pirmais notikums ir %2$s.</item>
+        <item quantity="zero">Šodien ieplānoti %1$d notikumi. Pirmais notikums ir %2$s.</item>
+        <item quantity="one">Šodien ieplānots %1$d notikums. Pirmais notikums ir %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Šodien atlikuši %1$s%2$d notikumi%3$s.</item>
+        <item quantity="zero">Šodien atlikuši %1$s%2$d notikumi%3$s.</item>
+        <item quantity="one">Šodien atlicis %1$s%2$d notikums%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Rīt jums ir ieplānoti %1$s%2$d notikumi%3$s.</item>
+        <item quantity="zero">Rīt jums ir ieplānoti %1$s%2$d notikumi%3$s.</item>
+        <item quantity="one">Rīt jums ir ieplānots %1$s%2$d notikums%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Rīt ieplānoti %1$d notikumi. Pirmais notikums ir %2$s.</item>
+        <item quantity="zero">Rīt ieplānoti %1$d notikumi. Pirmais notikums ir %2$s.</item>
+        <item quantity="one">Rīt ieplānots %1$d notikums. Pirmais notikums ir %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d notik.</item>
+        <item quantity="zero">%d notik.</item>
+        <item quantity="one">%d notik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Sāk. pēc %d min</item>
+        <item quantity="zero">Sāk. pēc %d min</item>
+        <item quantity="one">Sāk. pēc %d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Šodien atlikuši %d atgādin.</item>
+        <item quantity="zero">Šodien atlikuši %d atgādin.</item>
+        <item quantity="one">Šodien atlicis %d atgādin.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Šodien saņēmāt %d piegādes ziņas. Apskatiet tās, lai būtu informēts par piegāžu statusu.</item>
+        <item quantity="zero">Šodien saņēmāt %d piegādes ziņas. Apskatiet tās, lai būtu informēts par piegāžu statusu.</item>
+        <item quantity="one">Šodien saņēmāt %d piegādes ziņu. Apskatiet to, lai būtu informēts par piegādes statusu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">Šodien %d piegādes</item>
+        <item quantity="zero">Šodien %d piegādes</item>
+        <item quantity="one">Šodien %d piegāde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Šonedēļ mērķis pārsn. %d reizes.</item>
+        <item quantity="zero">Šonedēļ mērķis pārsn. %d reizes.</item>
+        <item quantity="one">Šonedēļ mērķis pārsn. %d reizi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">Sasn. %d akt. mērķi</item>
+        <item quantity="zero">Sasn. %d akt. mērķi</item>
+        <item quantity="one">Sasn. %d akt. mērķis</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Jūsu kopējais sasniegtais kāpums bija %1$s, un jūs sadedzinājāt %2$,d kilokalorijas.</item>
+        <item quantity="zero">Jūsu kopējais sasniegtais kāpums bija %1$s, un jūs sadedzinājāt %2$,d kilokalorijas.</item>
+        <item quantity="one">Jūsu kopējais sasniegtais kāpums bija %1$s, un jūs sadedzinājāt %2$,d kilokaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Jūsu vidējais temps bija %1$s, un jūs sadedzinājāt %2$,d kilokalorijas.</item>
+        <item quantity="zero">Jūsu vidējais temps bija %1$s, un jūs sadedzinājāt %2$,d kilokalorijas.</item>
+        <item quantity="one">Jūsu vidējais temps bija %1$s, un jūs sadedzinājāt %2$,d kilokaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Jūsu vidējais ātrums bija %1$s, un jūs sadedzinājāt %2$,d kilokalorijas.</item>
+        <item quantity="zero">Jūsu vidējais ātrums bija %1$s, un jūs sadedzinājāt %2$,d kilokalorijas.</item>
+        <item quantity="one">Jūsu vidējais ātrums bija %1$s, un jūs sadedzinājāt %2$,d kilokaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Lūk, jūsu treniņa %1$s kopsavilkums. Ilgums bija %2$s, un jūs sadedzinājāt %3$,d kilokalorijas.</item>
+        <item quantity="zero">Lūk, jūsu treniņa %1$s kopsavilkums. Ilgums bija %2$s, un jūs sadedzinājāt %3$,d kilokalorijas.</item>
+        <item quantity="one">Lūk, jūsu treniņa %1$s kopsavilkums. Ilgums bija %2$s, un jūs sadedzinājāt %3$,d kilokaloriju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Šodien jūs izlaidāt %d ieplānotos medikamentus.</item>
+        <item quantity="zero">Šodien jūs izlaidāt %d ieplānotos medikamentus.</item>
+        <item quantity="one">Šodien jūs izlaidāt %d ieplānoto medikamentu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d stundas</item>
+        <item quantity="zero">%d stundas</item>
+        <item quantity="one">%d stunda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d stundas</item>
+        <item quantity="zero">%d stundas</item>
+        <item quantity="one">%d stunda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d min</item>
+        <item quantity="zero">%d min</item>
+        <item quantity="one">%d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minūtes</item>
+        <item quantity="zero">%d minūtes</item>
+        <item quantity="one">%d minūte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Šodien jums ir %1$s%2$d neatbildēti zvani%3$s, kas vēl nav apskatīti.</item>
+        <item quantity="zero">Šodien jums ir %1$s%2$d neatbildēti zvani%3$s, kas vēl nav apskatīti.</item>
+        <item quantity="one">Šodien jums ir %1$s%2$d neatbildēts zvans%3$s, kas vēl nav apskatīts.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Jūs šodien neatbildējāt uz %d zvaniem. Apskatiet šos neatbildētos zvanus sadaļā Now brief. Ja nepieciešams, varat arī iestatīt atgādinājumus, lai neaizmirstu atzvanīt.</item>
+        <item quantity="zero">Jūs šodien neatbildējāt uz %d zvaniem. Apskatiet šos neatbildētos zvanus sadaļā Now brief. Ja nepieciešams, varat arī iestatīt atgādinājumus, lai neaizmirstu atzvanīt.</item>
+        <item quantity="one">Jūs šodien neatbildējāt uz %d zvanu. Apskatiet šo neatbildēto zvanu sadaļā Now brief. Ja nepieciešams, varat arī iestatīt atgādinājumu, lai neaizmirstu atzvanīt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Vēl %d neatbildēti zvani</item>
+        <item quantity="zero">Vēl %d neatbildēti zvani</item>
+        <item quantity="one">Vēl %d neatbildēts zvans</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d neatb. zvani</item>
+        <item quantity="zero">%d neatb. zvani</item>
+        <item quantity="one">%d neatb. zvans</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d jauni paziņojumi</item>
+        <item quantity="zero">%d jaunu paziņojumu</item>
+        <item quantity="one">%d jauns paziņojums</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Pirms %d h</item>
+        <item quantity="zero">Pirms %d h</item>
+        <item quantity="one">Pirms %d h</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Pirms %d min</item>
+        <item quantity="zero">Pirms %d min</item>
+        <item quantity="one">Pirms %d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Lai izmantotu Galaxy AI paplašinātā intelekta funkcijas, tev jābūt vismaz %d gadus vecam.</item>
+        <item quantity="zero">Lai izmantotu Galaxy AI paplašinātā intelekta funkcijas, tev jābūt vismaz %d gadus vecam.</item>
+        <item quantity="one">Lai izmantotu Galaxy AI paplašinātā intelekta funkcijas, tev jābūt vismaz %d gadu vecam.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d ziņas</item>
+        <item quantity="one">%d ziņa</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d jūdzes</item>
+        <item quantity="zero">%d jūdzes</item>
+        <item quantity="one">%d jūdze</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekundes</item>
+        <item quantity="zero">%d sekundes</item>
+        <item quantity="one">%d sekunde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Uz rītu ir iestatīti %1$s%2$d signāli%3$s.</item>
+        <item quantity="zero">Uz rītu ir iestatīti %1$s%2$d signāli%3$s.</item>
+        <item quantity="one">Uz rītu ir iestatīts %1$s%2$d signāls%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Uz rītdienas rītu ir iestatīti %1$s%2$d signāli%3$s.</item>
+        <item quantity="zero">Uz rītdienas rītu ir iestatīti %1$s%2$d signāli%3$s.</item>
+        <item quantity="one">Uz rītdienas rītu ir iestatīts %1$s%2$d signāls%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sDodieties ceļā pirms %2$s%3$s, lai ierastos lidostā vismaz %4$d stundas pirms izlidošanas. Iestatiet signālu, lai neaizmirstu.</item>
+        <item quantity="zero">%1$sDodieties ceļā pirms %2$s%3$s, lai ierastos lidostā vismaz %4$d stundas pirms izlidošanas. Iestatiet signālu, lai neaizmirstu.</item>
+        <item quantity="one">%1$sDodieties ceļā pirms %2$s%3$s, lai ierastos lidostā vismaz %4$d stundu pirms izlidošanas. Iestatiet signālu, lai neaizmirstu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sDodieties ceļā pirms %2$s%3$s, lai nokļūtu lidostā vismaz %4$d stundas pirms lidojuma.</item>
+        <item quantity="zero">%1$sDodieties ceļā pirms %2$s%3$s, lai nokļūtu lidostā vismaz %4$d stundas pirms lidojuma.</item>
+        <item quantity="one">%1$sDodieties ceļā pirms %2$s%3$s, lai nokļūtu lidostā vismaz %4$d stundu pirms lidojuma.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Iesakiet %1$d dienu ceļojuma maršrutu uz %2$s, iekļaujot apskates vietas, aktivitātes un restorānus, kurus vērts izmēģināt.</item>
+        <item quantity="zero">Iesakiet %1$d dienu ceļojuma maršrutu uz %2$s, iekļaujot apskates vietas, aktivitātes un restorānus, kurus vērts izmēģināt.</item>
+        <item quantity="one">Iesakiet %1$d dienas ceļojuma maršrutu uz %2$s, iekļaujot apskates vietas, aktivitātes un restorānus, kurus vērts izmēģināt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Skatiet šīs %1$sieteicamās programmas%2$s, kas var būt noderīgas jūsu ceļojuma laikā.</item>
+        <item quantity="one">Skatiet šo %1$sieteicamo programmu%2$s, kas var būt noderīga jūsu ceļojuma laikā.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sLejupielādējiet šo valodas pakotni%2$s jau iepriekš, lai, ierodoties galamērķī, varētu to izmantot programmā Tulks.</item>
+        <item quantity="one">%1$sLejupielādējiet šīs valodu pakotnes%2$s jau iepriekš, lai, ierodoties galamērķī, varētu tās izmantot programmā Tulks.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Lejupielādējamās valodu pakotnes</item>
+        <item quantity="one">Lejupielādējamā valodu pakotne</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">Ieslēgtas %d ierīces</item>
+        <item quantity="zero">Ieslēgtas %d ierīces</item>
+        <item quantity="one">Ieslēgta %d ierīce</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Pēdējā saziņa pirms %d dienām</item>
+        <item quantity="zero">Pēdējā saziņa pirms %d dienām</item>
+        <item quantity="one">Pēdējā saziņa pirms %d dienas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Pēdējā saziņa pirms %d dienām</item>
+        <item quantity="zero">Pēdējā saziņa pirms %d dienām</item>
+        <item quantity="one">Pēdējā saziņa pirms %d dienas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Pēdējā saziņa pirms %d mēnešiem</item>
+        <item quantity="zero">Pēdējā saziņa pirms %d mēnešiem</item>
+        <item quantity="one">Pēdējā saziņa pirms %d mēneša</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Pēdējā saziņa pirms %d nedēļām</item>
+        <item quantity="zero">Pēdējā saziņa pirms %d nedēļām</item>
+        <item quantity="one">Pēdējā saziņa pirms %d nedēļas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Vēl %d kontakti</item>
+        <item quantity="zero">Vēl %d kontakti</item>
+        <item quantity="one">Vēl %d kontakts</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Programmā Samsung Wallet ir kupons, kura derīguma termiņš beigsies pēc %d dienām. Noteikti izmantojiet to, kamēr tas vēl ir derīgs.</item>
+        <item quantity="zero">Programmā Samsung Wallet ir kupons, kura derīguma termiņš beigsies pēc %d dienām. Noteikti izmantojiet to, kamēr tas vēl ir derīgs.</item>
+        <item quantity="one">Programmā Samsung Wallet ir kupons, kura derīguma termiņš beigsies pēc %d dienas. Noteikti izmantojiet to, kamēr tas vēl ir derīgs.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Augstākā mīnus %d grādi</item>
+        <item quantity="zero">Augstākā mīnus %d grādi</item>
+        <item quantity="one">Augstākā mīnus %d grāds</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Zemākā mīnus %d grādi</item>
+        <item quantity="zero">Zemākā mīnus %d grādi</item>
+        <item quantity="one">Zemākā mīnus %d grāds</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Jūsu kalendārā ir notikums %1$s. Vietā %4$s pulksten %5$s būs %2$d grādi %3$s.</item>
+        <item quantity="zero">Jūsu kalendārā ir notikums %1$s. Vietā %4$s pulksten %5$s būs %2$d grādi %3$s.</item>
+        <item quantity="one">Jūsu kalendārā ir notikums %1$s. Vietā %4$s pulksten %5$s būs %2$d grāds %3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Augstākā %d grādi</item>
+        <item quantity="zero">Augstākā %d grādi</item>
+        <item quantity="one">Augstākā %d grāds</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Zemākā %d grādi</item>
+        <item quantity="zero">Zemākā %d grādi</item>
+        <item quantity="one">Zemākā %d grāds</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s skatījumi</item>
+        <item quantity="one">%s skats</item>
+    </plurals>
+</resources>

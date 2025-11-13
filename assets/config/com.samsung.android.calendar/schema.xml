@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.calendar" package="" prefKey="calendar" version="34"
+    embConfigUri="content://com.android.calendar/events">
+    <permissions>
+        <readPermission name="android.permission.READ_CALENDAR" />
+        <writePermission name="android.permission.WRITE_CALENDAR" />
+    </permissions>
+
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer"/>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="int_stored_field" dataType="int" class="StoredField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField" />
+    <fieldType name="long_numeric_field" dataType="long" class="NumericDocValuesField" />
+
+    <fieldType name="keyword_field" dataType="String" class="TextField">
+        <analyzer type="index" class="core.KeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="per_language_field" dataType="String" class="TextField" >
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        </analyzer>
+        <analyzer type="search" class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="name_field" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.contacts.NameSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="chosung_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.korean.ChosungAnalyzer" keepOtherLang="true"
+            removeSpace="true"/>
+    </fieldType>
+    <fieldType name="fuzzy_field" dataType="MultiValuedString" class="TextField" >
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+    <fieldType name="no_space_field" dataType="String" class="TextField">
+        <analyzer class="bs.LowerCaseNoSpaceAnalyzer" />
+    </fieldType>
+
+    <fieldType name="stemmer_field" dataType="String" class="TextField" >
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" stem="true"/>
+            <subAnalyzer class="core.KeywordAnalyzer" lang="default" />
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="phonetic_field" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="phonetic_multi_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" />
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="pinyin_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" withMixed="true"
+            keepOtherLang="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="transliteration_app_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="app" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="app" />
+    </fieldType>
+    <fieldType name="transliteration_person_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="person" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="person" />
+    </fieldType>
+    <fieldType name="email_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="korean_decompose" dataType="String" class="TextField">
+        <analyzer class="bs.korean.KoreanDecompositionAnalyzer" morphemeAnalysis="false"
+            mergeOrigin="false" backwardNGram="true" />
+    </fieldType>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+
+    <field name="_id" type="string" />
+    <field name="title" type="text" sort="true" />
+    <field name="title_per_lang" type="per_language_field" src="title" stored="false" />
+    <field name="title_chosung" type="chosung_field" src="title" stored="false"/>
+    <field name="title_phonetic" type="phonetic_field" src="title" stored="false"/>
+    <field name="title_pinyin" type="pinyin_field" stored="false"/>
+    <field name="title_fuzzy" type="fuzzy_field" src="title" stored="false" />
+    <field name="title_transliterated" type="transliteration_app_field" src="title" stored="false" />
+    <field name="title_decomposition" type="korean_decompose" src="title" stored="false" />
+    <field name="title_no_space" type="no_space_field" stored="false" />
+    <field name="title_stemmer" type="stemmer_field" src="title" stored="false" />
+
+    <!-- Date start -->
+    <field name="dtstart" type="long_stored_field" sort="true" compare="true" />
+
+    <!-- Date end -->
+    <field name="dtend" type="long_stored_field" compare="true" />
+
+    <field name="eventColor" type="int_stored_field" />
+    <!-- TO Do : there are too many test cases related to set this. Need to remove later -->
+    <field name="eventLocation" type="text" />
+
+    <!-- 1 : allday, 0 : time-based -->
+    <field name="allDay" type="int_stored_field" />
+    <field name="secExtra4" type="string" />
+    <field name="secExtraCal" type="string" />
+    <field name="duration" type="string" />
+    <field name="secExtra5" type="string" />
+
+    <field name="description" type="text" />
+    <field name="description_stemmer" type="stemmer_field" src="description" stored="false" />
+    <field name="eventStatus" type="int_stored_field" compare="true" />
+    <field name="rrule" type="keyword_field" />
+    <field name="rdate" type="keyword_field" />
+
+    <field name="calendar_color" type="int_stored_field" />
+    <field name="account_name" type="string" />
+    <field name="account_type" type="string" />
+    <field name="visible" type="int_compare_field" />
+    <field name="attendeeName" type="name_field" />
+    <field name="attendeeName_phonetic" type="phonetic_multi_field" src="attendeeName"
+        stored="false" />
+    <field name="attendeeName_transliterated" type="transliteration_person_field" src="attendeeName"
+        stored="false" />
+    <field name="attendeeEmail" type="email_field" />
+    <field name="selfAttendeeStatus" type="int_stored_field" compare="true" />
+    <field name="contact_id" type="long_stored_field" compare="true" />
+    <field name="calendar_access_level" type="int_stored_field" />
+    <field name="calendar_id" type="long_stored_field" compare="true" />
+    <field name="original_sync_id" type="string" />
+    <field name="ownerAccount" type="string" />
+    <field name="organizer" type="string" />
+    <!-- For new client : End -->
+
+    <!-- This's different by client. 0 is used for calendar and 1 is used for finder -->
+    <field name="hasInstance" type="int_stored_field" compare="true" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <fieldList type="projection_suggestion">
+        <fieldItem name="title"/>
+    </fieldList>
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="_score" order="DESC" />
+        <sortedField name="dtstart" order="ASC" />
+        <sortedField name="title" order="ASC" />
+    </sort>
+</schema>

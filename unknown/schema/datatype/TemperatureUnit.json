@@ -1,0 +1,25 @@
+{
+  "name": "TemperatureUnit",
+  "type": "datatype",
+  "id": "datatype.enumeration.TemperatureUnit",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "C",
+      "F"
+    ],
+    "descriptions": [
+      {
+        "value": "C",
+        "description": "C"
+      },
+      {
+        "value": "F",
+        "description": "F"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

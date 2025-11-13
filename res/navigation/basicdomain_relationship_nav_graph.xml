@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/basicdomain_relationship_nav_graph" app:startDestination="@id/family_relationship"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Relationship" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.base.MainPrefFragment" android:id="@id/family_relationship">
+        <action android:id="@id/action_relationship_main_to_gallery_main" app:destination="@id/gallery_main" />
+        <action android:id="@id/action_relationship_main_to_contact_main" app:destination="@id/contact_main" />
+        <action android:id="@id/action_relationship_main_to_gae_engine" app:destination="@id/gae_engine" />
+    </fragment>
+    <fragment android:label="Gallery Family" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.GalleryMainPrefFragment" android:id="@id/gallery_main">
+        <action android:id="@id/action_relationship_gallery_main_to_family_interface" app:destination="@id/gallery_family_interface" />
+        <action android:id="@id/action_relationship_gallery_main_to_reasoning" app:destination="@id/gallery_reasoning" />
+        <action android:id="@id/action_relationship_gallery_main_to_co_occurrence_faces" app:destination="@id/gallery_co_occurrence_faces" />
+        <action android:id="@id/action_relationship_gallery_main_to_festive_faces" app:destination="@id/gallery_festive_faces" />
+        <action android:id="@id/action_relationship_gallery_main_to_event_faces" app:destination="@id/gallery_event_faces" />
+        <action android:id="@id/action_relationship_gallery_main_to_periodic_faces" app:destination="@id/gallery_periodic_faces" />
+        <action android:id="@id/action_relationship_gallery_main_to_top_faces" app:destination="@id/gallery_top_faces" />
+        <action android:id="@id/action_relationship_gallery_main_to_me_faces" app:destination="@id/gallery_me_faces" />
+        <action android:id="@id/action_relationship_gallery_main_to_me_coc" app:destination="@id/gallery_me_coc" />
+    </fragment>
+    <fragment android:label="Final Interface" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryFamilyInterfaceFragment" android:id="@id/gallery_family_interface">
+        <action android:id="@id/action_relationship_gallery_family_interface_to_gae_engine" app:destination="@id/gae_engine" />
+    </fragment>
+    <fragment android:label="Reasoning" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryReasoningFragment" android:id="@id/gallery_reasoning" />
+    <fragment android:label="Co-Occurrence" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryCoOccurrenceFacesFragment" android:id="@id/gallery_co_occurrence_faces" />
+    <fragment android:label="Event Faces" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryEventFaceFragment" android:id="@id/gallery_event_faces" />
+    <fragment android:label="Festive Faces" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryFestiveFaceFragment" android:id="@id/gallery_festive_faces" />
+    <fragment android:label="Periodic Faces" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryPeriodicFacesFragment" android:id="@id/gallery_periodic_faces" />
+    <fragment android:label="Top Faces" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryTopFaceFragment" android:id="@id/gallery_top_faces" />
+    <fragment android:label="Me Faces" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryMeFacesFragment" android:id="@id/gallery_me_faces">
+        <action android:id="@id/action_relationship_gallery_me_face_to_me_selfie_images" app:destination="@id/me_selfie_images" />
+    </fragment>
+    <fragment android:label="Me Co-Occurrence" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryMeCOCFragment" android:id="@id/gallery_me_coc">
+        <action android:id="@id/action_relationship_gallery_me_face_to_me_selfie_images" app:destination="@id/me_selfie_images" />
+    </fragment>
+    <fragment android:label="Contact Family" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.contact.ContactMainPrefFragment" android:id="@id/contact_main">
+        <action android:id="@id/action_relationship_contact_main_to_family_interface" app:destination="@id/contact_family_interface" />
+        <action android:id="@id/action_relationship_contact_main_to_reasoning" app:destination="@id/contact_reasoning" />
+        <action android:id="@id/action_relationship_contact_main_to_name_analysis" app:destination="@id/contact_name_analysis" />
+        <action android:id="@id/action_relationship_contact_main_to_close_people" app:destination="@id/contact_close_people" />
+        <action android:id="@id/action_relationship_contact_main_to_people_behaviour" app:destination="@id/contact_people_behaviour" />
+    </fragment>
+    <fragment android:label="Final Interface" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.contact.screen.ContactFamilyInterfaceFragment" android:id="@id/contact_family_interface" />
+    <fragment android:label="Reasoning" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.contact.screen.ContactReasoningFragment" android:id="@id/contact_reasoning" />
+    <fragment android:label="Name Analysis" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.contact.screen.ContactNameAnalysisFragment" android:id="@id/contact_name_analysis" />
+    <fragment android:label="Close People" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.contact.screen.ContactClosePeopleFragment" android:id="@id/contact_close_people" />
+    <fragment android:label="People Behaviour" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.contact.screen.ContactPeopleBehaviourFragment" android:id="@id/contact_people_behaviour" />
+    <fragment android:label="GAE" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.engine.gae.screen.GAEFragment" android:id="@id/gae_engine" />
+    <fragment android:label="Me Selfie Images" android:name="com.samsung.android.moneta.debugui.developmode.preference.relationship.gallery.screen.GalleryMeSelfieImagesFragment" android:id="@id/me_selfie_images" />
+</navigation>

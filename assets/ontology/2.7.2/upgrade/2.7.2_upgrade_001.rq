@@ -1,0 +1,8 @@
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix design: <http://pkg.samsung.com/design#>
+
+DELETE {
+    design:migration ?p ?o .
+} WHERE {
+    design:migration ?p ?o .
+}

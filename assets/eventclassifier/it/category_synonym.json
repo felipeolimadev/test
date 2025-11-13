@@ -1,0 +1,139 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "festa",
+                    "compleanno",
+                    "riunione",
+                    "raduno",
+                    "funebre",
+                    "massa",
+                    "culto",
+                    "Chiesa",
+                    "anniversario",
+                    "shopping",
+                    "cena",
+                    "pranzo",
+                    "brunch",
+                    "celebrare",
+                    "celebrazione",
+                    "funerale",
+                    "festival"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "festa di fine anno",
+                    "festa di benvenuto",
+                    "appuntamento al buio",
+                    "cenare insieme",
+                    "mangiare fuori",
+                    "inaugurazione della casa",
+                    "cerimonia di nozze",
+                    "cerimonia di laurea",
+                    "cerimonia d'ingresso",
+                    "cerimonia di premiazione",
+                    "riti ancestrali",
+                    "Incontro di Dharma"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "giorno del matrimonio"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "incontro",
+                    "officina",
+                    "seminario",
+                    "colloquio",
+                    "lavorando",
+                    "conferenza",
+                    "lavoro",
+                    "esame",
+                    "incarico",
+                    "classe",
+                    "ufficio",
+                    "forum",
+                    "presentazione",
+                    "analisi"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "Sessione informativa",
+                    "lavoro part-time"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "andare a lavorare",
+                    "lasciare il lavoro",
+                    "Partecipa alla lezione"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "viaggio",
+                    "campeggio",
+                    "Parco divertimenti",
+                    "zoo",
+                    "acquario",
+                    "alpinismo",
+                    "tour",
+                    "Disney World",
+                    "luna di miele"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "viaggio d'affari"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "prenotazione",
+                    "Prenotazione",
+                    "biglietto",
+                    "appuntamento",
+                    "check-in",
+                    "check-out",
+                    "partire"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "fare il check-in"
+                ]
+            }
+        ]
+    }
+]

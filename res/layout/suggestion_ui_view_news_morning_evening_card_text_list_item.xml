@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/cardContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/news_morning_evening_text_color" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="•" android:maxLines="2" android:fontFamily="sec" android:layout_marginEnd="8.0dip" android:letterSpacing="0.0" android:textFontWeight="400" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/news_morning_evening_text_color" android:ellipsize="end" android:id="@id/sectionSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="sec" android:letterSpacing="0.0" android:textFontWeight="400" />
+</LinearLayout>

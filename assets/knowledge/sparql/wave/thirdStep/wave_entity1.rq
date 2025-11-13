@@ -1,0 +1,75 @@
+SELECT ?imageIris ?personIris ?locationIris ?times ?objectIds ?targetTP ?engram
+WHERE{
+    VALUES ?targetTP { <TAKING_PICTURES_IRI> }
+
+    {
+        SELECT ?targetTP (GROUP_CONCAT(DISTINCT STR(?imageIri); SEPARATOR=',') AS ?imageIris) {
+            {
+                VALUES ?targetTP { <TAKING_PICTURES_IRI> }
+            } OPTIONAL {
+                ?targetTP user:objectContent ?imageIri .
+            } OPTIONAL {
+                VALUES ?imageIri { "" }
+            }
+        } GROUP BY ?targetTP
+    }
+
+    {
+        SELECT ?targetTP (GROUP_CONCAT(DISTINCT STR(?personIri); SEPARATOR=',') AS ?personIris) {
+            {
+                VALUES ?targetTP { <TAKING_PICTURES_IRI> }
+            } OPTIONAL {
+                ?targetTP user:withPerson ?personIri .
+            } OPTIONAL {
+                VALUES ?personIri { "" }
+            }
+        } GROUP BY ?targetTP
+    }
+
+    {
+        SELECT ?targetTP (GROUP_CONCAT(DISTINCT STR(?locationIri); SEPARATOR=',') AS ?locationIris) {
+            {
+                VALUES ?targetTP { <TAKING_PICTURES_IRI> }
+            } OPTIONAL {
+                ?targetTP user:atLocation ?locationIri .
+            } OPTIONAL {
+                VALUES ?locationIri { "" }
+            }
+        } GROUP BY ?targetTP
+    }
+
+    {
+        SELECT ?targetTP (GROUP_CONCAT(DISTINCT STR(?time); SEPARATOR=',') AS ?times) {
+            {
+                VALUES ?targetTP { <TAKING_PICTURES_IRI> }
+            } OPTIONAL {
+                ?targetTP time:hasBeginning/time:inXSDDateTimeStamp ?startTime;
+                          time:hasEnd/time:inXSDDateTimeStamp ?endTime.
+                BIND(CONCAT(STR(?startTime), "-->",STR(?endTime)) AS ?time)
+            } OPTIONAL {
+                VALUES ?time { "" }
+            }
+        } GROUP BY ?targetTP
+    }
+
+    {
+        SELECT ?targetTP (GROUP_CONCAT(STR(?objectId); SEPARATOR=',') AS ?objectIds) {
+            {
+                VALUES ?targetTP { <TAKING_PICTURES_IRI> }
+            } OPTIONAL {
+                {
+                    SELECT DISTINCT ?targetTP ?object {
+                        VALUES ?object { contenttag:ice_skating contenttag:jet_skiing contenttag:cycling contenttag:basketball contenttag:volleyball contenttag:golf contenttag:baseball contenttag:hockey contenttag:fog contenttag:rain contenttag:lego contenttag:rock_climbing contenttag:wedding contenttag:graduation contenttag:camping contenttag:amusement_park contenttag:aquarium contenttag:zoo contenttag:christmas }
+                        ?targetTP user:objectContent ?imageIri .
+                        ?imageIri content:objectRecognized ?object.
+                    }
+                }
+                BIND(STRAFTER(STR(?object),str(contenttag:)) as ?objectId).
+            } OPTIONAL {
+                VALUES ?objectId { "" }
+            }
+        } GROUP BY ?targetTP
+    }
+    ?eventProperty rdfs:subPropertyOf user:event .
+    ?engram ?eventProperty ?targetTP .
+}

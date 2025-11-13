@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:icon="@android:drawable/ic_menu_manage" android:title="Magic Inference Test">
+        <Preference android:icon="@android:drawable/ic_menu_upload" android:title="Load Models" android:key="key_load_models" android:summary="Load S1, BERT, and T5 models from assets" />
+        <Preference android:icon="@android:drawable/ic_menu_search" android:title="Run S1 Inference" android:key="key_run_s1_inference" android:summary="Test S1 model for intent detection" android:fragment="com.samsung.android.moneta.debugui.developmode.search.S1InferenceDetailFragment" />
+        <Preference android:icon="@android:drawable/ic_menu_my_calendar" android:title="Run BERT Inference" android:key="key_run_bert_inference" android:summary="Test BERT model for action prediction" android:fragment="com.samsung.android.moneta.debugui.developmode.search.BertInferenceDetailFragment" />
+        <Preference android:icon="@android:drawable/ic_menu_edit" android:title="Run T5 Inference" android:key="key_run_t5_inference" android:summary="Test T5 model for parameter extraction" />
+        <Preference android:icon="@android:drawable/ic_menu_share" android:title="Run Full Pipeline" android:key="key_run_full_pipeline" android:summary="Test complete inference pipeline (S1 + BERT + T5)" />
+    </PreferenceCategory>
+    <PreferenceCategory android:icon="@android:drawable/ic_menu_info_details" android:title="Model Information">
+        <Preference android:title="S1 Model" android:selectable="false" android:summary="s1_model.tflite - Intent detection (has_intention_action, has_intention_query, is_unsafe)" />
+        <Preference android:title="BERT Model" android:selectable="false" android:summary="bert_model.tflite - Action prediction (Browse Location, Create Calendar, etc.)" />
+        <Preference android:title="T5 Model" android:selectable="false" android:summary="t5_model_with_tokenization.tflite - Parameter extraction and query generation" />
+    </PreferenceCategory>
+    <PreferenceCategory android:icon="@android:drawable/ic_menu_view" android:title="Test Scenarios">
+        <Preference android:title="Chat Intent Detection" android:selectable="false" android:summary="Tests if chat messages contain actionable intents" />
+        <Preference android:title="Action Classification" android:selectable="false" android:summary="Classifies user intent into specific actions" />
+        <Preference android:title="Parameter Extraction" android:selectable="false" android:summary="Extracts parameters from text for each action" />
+        <Preference android:title="Query Generation" android:selectable="false" android:summary="Generates search queries from chat messages" />
+    </PreferenceCategory>
+</PreferenceScreen>

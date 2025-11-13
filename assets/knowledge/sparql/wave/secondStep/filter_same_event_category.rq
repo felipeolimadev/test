@@ -1,0 +1,26 @@
+# 초기 검색 결과 이벤트와 동일한 카테고리의 이벤트 존재
+FILTER EXISTS {
+    {
+        SELECT DISTINCT ?targetEvent {
+            {
+                SELECT DISTINCT ?originEvent {
+                    VALUES ?origin { <TAKING_PICTURES_IRI> }
+                    ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                    ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                    ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+                    ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+                    ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+                    FILTER (?originEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originStartTime)
+                }
+            }
+            ?originEvent content:eventCategory/^content:eventCategory ?targetEvent .
+        }
+    }
+    ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+    ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+    ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+    ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+
+    FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "patternName": "<<hourly_suffix>>",
+    "patternValue": [
+      "in punto"
+    ]
+  },
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "<current_reference>",
+      "a",
+      "in",
+      "su",
+      "intorno",
+      "nel",
+      "questo",
+      "quello",
+      "alle"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "passato",
+      "a"
+    ]
+  },
+  {
+    "patternName": "<<num_time_connector>>",
+    "patternValue": [
+      "di",
+      "del",
+      "la",
+      "al"
+    ]
+  },
+  {
+    "patternName": "<<time_keywords_before>>",
+    "patternValue": [
+      "<current_reference>",
+      "[d]?alle",
+      "le",
+      "intorno a",
+      "su",
+      "l'",
+      "a",
+      "ore"
+    ]
+  },
+  {
+    "patternName": "<<time_connector>>",
+    "patternValue": [
+      "e"
+    ]
+  }
+]

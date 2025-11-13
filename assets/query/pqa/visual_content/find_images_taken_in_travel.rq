@@ -1,0 +1,24 @@
+SELECT DISTINCT ?s ?p ?o {
+    {
+        SELECT DISTINCT ?travel_engram ?start_time
+        WHERE {
+            ?travel_engram rdf:type/rdfs:subClassOf user:TravelEngram .
+            ?travel_engram time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+            ?travel_engram time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+            <TIME_FILTER>
+            <LOCATION_FILTER>
+        }
+    }
+    ?travel_engram user:event ?taking_pictures .
+    ?taking_pictures rdf:type/rdfs:subClassOf user:TakingPictures .
+    ?taking_pictures user:objectContent ?image .
+    ?image rdf:type/rdfs:subClassOf content:ImageFile .
+    <CONTENT_TIME>
+
+    <CONTENT_FILTER>
+    <PERSON_FILTER>
+
+    ?s rdf:unknown? ?image .
+    ?s ?p ?o EXPLICIT true .
+}
+<OUTPUT_SORT>

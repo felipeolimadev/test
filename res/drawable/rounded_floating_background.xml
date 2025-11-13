@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/sesl_dialog_background" android:insetTop="@dimen/floating_activity_dim_elevation" android:insetBottom="@dimen/floating_activity_dim_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

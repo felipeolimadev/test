@@ -1,0 +1,96 @@
+[
+  {
+    "id" : 1,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1,
+        "dayOfWeek" : 2
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "giorn[io]"
+  },
+  {
+    "id": 4,
+    "patternString": "(?:\\s|^|\\.|,)(<num_suffix>)\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "weekCount": 1
+      }
+    ],
+    "shouldContainKeyword": "settiman[ae]",
+    "comment" : "fine settimana"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 2
+      }
+    ],
+    "shouldContainKeyword" : "giorn[io]"
+  },
+  {
+    "id" : 2,
+    "patternString" : "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "settiman[ae]"
+  },
+  {
+    "id": 3,
+    "patternString": "(?:\\s|^|\\.|,)(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "dayOfWeek": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "patternString": "(?:\\s|^|\\.|,|\\-)(<relative_day>)(?:\\s|$|\\.|,|\\-)",
+    "isRelative" : true,
+    "comment" : "oggi, domani, ieri"
+  },
+  {
+    "id": 7,
+    "patternString" : "(?:\\s|^|\\.|,|l')(<last_reference>)\\s*<<ref_rel_connector>>?\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "weekDayCount" : 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "patternString" : "(?:\\s|^|\\.|,|l')(<last_reference>)\\s*<<ref_rel_connector>>?\\s*(<time_period>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ],
+    "shouldContainKeyword" : "giorn[oi]"
+  },
+  {
+    "id" : 9,
+    "patternString" : "(?:\\s|^|\\.|,)(?:l')?\\s*(<num_suffix>|<num>)\\s*(?!<current_reference>$)(?:<<ref_rel_connector>>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayCount" : 1
+      }
+    ]
+  }
+]

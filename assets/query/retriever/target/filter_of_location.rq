@@ -1,0 +1,5 @@
+{
+    ?location rdf:type ?iri .
+    BIND("poi" AS ?iri_type)
+}
+

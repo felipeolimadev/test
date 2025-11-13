@@ -1,0 +1,30 @@
+# 초기 검색 결과와 다른 시간에 발생한 이벤트 존재
+FILTER EXISTS {
+    {
+        SELECT DISTINCT ?targetEvent ?targetEventStartTime ?targetEventEndTime {
+            ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+            ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+
+            ?targetEvent a/rdfs:subClassOf user:ScheduledEvent .
+            ?targetEvent time:inXSDBeginningDateTimeStamp ?targetEventStartTime .
+            ?targetEvent time:inXSDEndDateTimeStamp ?targetEventEndTime .
+            FILTER (?targetEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?targetStartTime)
+        }
+    }
+
+    FILTER NOT EXISTS {
+        {
+            SELECT DISTINCT ?originEvent ?originEventStartTime ?originEventEndTime {
+                VALUES ?origin { <TAKING_PICTURES_IRI> }
+                ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                ?originEvent a/rdfs:subClassOf user:ScheduledEvent .
+                ?originEvent time:inXSDBeginningDateTimeStamp ?originEventStartTime .
+                ?originEvent time:inXSDEndDateTimeStamp ?originEventEndTime .
+                FILTER (?originEndTime >= ?originEventStartTime && ?originEventEndTime >= ?originStartTime)
+            }
+        }
+        FILTER (?originEventEndTime >= ?targetEventStartTime && ?targetEventEndTime >= ?originEventStartTime)
+    }
+}

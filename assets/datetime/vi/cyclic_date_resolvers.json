@@ -1,0 +1,93 @@
+[
+  {
+    "id" : 1,
+    "type" : "RECURRING_KEYWORD",
+    "patternString" : "(?:\\s|^|\\.|,)(<recurring_event>)(?:\\s|$|\\.|,)",
+    "comment" : "daily, weekly "
+  },
+  {
+    "id" : 2,
+    "type" : "RECURRING_DAY_OF_WEEKS",
+    "patternString" : "(?:\\s|^|\\.|,)(?:vào|vào\\s*các\\s*ngày)?\\s*(<day_of_week>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+      {
+        "dayOfWeekRecurring" : 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type" : "RECURRING_KEYWORD_WITH_TIME_PERIOD",
+    "patternString" : "(?:\\s|^|\\.|,)(?:vào)?\\s*(<day_of_week_recurring>)?\\s*(<recurring_keyword>)\\s*(<num>|<num_suffix>)?\\s*(<time_period>)\\s*[,]?\\s*(?:vào)?\\s*(<day_of_week_recurring>|<num_suffix>|<num>)?(?:\\s|$|\\.|,)",
+    "comment" : "every 2nd day, every 2nd week on sundays",
+    "mapping" : [
+      {
+        "timePeriod": 4,
+        "day": 1,
+        "dayOfWeek" : 5,
+        "timeDuration" : 3
+      },
+      {
+        "timePeriod": 4,
+        "day": 5,
+        "dayOfWeek" : 1,
+        "timeDuration" : 3
+      },
+      {
+        "month" : 4,
+        "timeDuration" : 3
+      }
+    ]
+  },
+  {
+    "id" : 4,
+    "type" : "EVERY_DAY_OF_WEEK",
+    "patternString" : "(<recurring_keyword>)\\s*(<day_of_week>)\\s*(<time_period>)?\\s*(<num>|<num_suffix>)?",
+    "mapping" : [
+      {
+        "dayOfWeek" : 2,
+        "timeDuration" : 4
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "SPECIAL_DAY_RECURRING",
+    "patternString": "(?:\\s|^|\\.|,)(<recurring_keyword>)\\s*(<special_day>)(?:\\s|$|\\.|,)",
+    "isSpecialDay": true
+  },
+  {
+    "id": 7,
+    "patternString": "(<recurring_keyword>)\\s*(<time_period>)",
+    "mapping": [
+      {
+        "timePeriod": 2
+      }
+    ],
+    "isCyclic": true
+  },
+  {
+    "id": 8,
+    "comment": "day 28 every month",
+    "patternString": "(<time_period>)\\s*(<num>|<num_suffix>)\\s*(<recurring_keyword>)\\s*(<time_period>)",
+    "mapping": [
+      {
+        "day": 2,
+        "timePeriod": 4
+      }
+    ],
+    "isCyclic": true
+  },
+  {
+    "id": 8,
+    "comment": "every month day 28",
+    "patternString": "(<recurring_keyword>)\\s*(<time_period>)\\s*(<time_period>)\\s*(<num>|<num_suffix>)",
+    "mapping": [
+      {
+        "day": 4,
+        "timePeriod": 2
+      }
+    ],
+    "isCyclic": true
+  }
+]

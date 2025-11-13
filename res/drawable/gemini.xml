@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="21.0dip" android:width="21.0dip" android:viewportWidth="21.0" android:viewportHeight="21.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#fffafaff" android:pathData="M10.5,10.5m-10.5,0a10.5,10.5 0,1 1,21 0a10.5,10.5 0,1 1,-21 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$gemini__0" android:pathData="M9.9,15.075C10.3,15.987 10.5,16.963 10.5,18C10.5,16.963 10.694,15.987 11.081,15.075C11.481,14.162 12.019,13.369 12.694,12.694C13.369,12.019 14.162,11.488 15.075,11.1C15.988,10.7 16.963,10.5 18,10.5C16.963,10.5 15.988,10.306 15.075,9.919C14.162,9.519 13.369,8.981 12.694,8.306C12.019,7.631 11.481,6.838 11.081,5.925C10.694,5.012 10.5,4.037 10.5,3C10.5,4.037 10.3,5.012 9.9,5.925C9.513,6.838 8.981,7.631 8.306,8.306C7.631,8.981 6.838,9.519 5.925,9.919C5.012,10.306 4.038,10.5 3,10.5C4.038,10.5 5.012,10.7 5.925,11.1C6.838,11.488 7.631,12.019 8.306,12.694C8.981,13.369 9.513,14.162 9.9,15.075Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

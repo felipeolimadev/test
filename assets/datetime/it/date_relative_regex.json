@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "<<ref_rel_connector>>?\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<day_of_week>|<month>)\\s*<<ref_rel_connector>>?",
+    "comment" : "la prossima settimana, il mese prossimo, la settimana scorsa, l'anno scorso, questa settimana, questo mese, l'ultimo giorno, ecc.",
+    "isRelative": true
+  },
+  {
+    "id" : 2,
+    "type" : "NUM_TIME_AFTER_REFERENCE",
+    "patternString" : "<<ref_rel_connector>>?\\s*(<num>|<num_suffix>)?\\s*(<time_period>)\\s*<<ref_num_connector>>?\\s*(<after_reference>|<before_reference>)\\s*<<ref_rel_connector>>?",
+    "comment": "una settimana dopo",
+    "isRelative": true,
+    "isPrefix" : true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id": 3,
+    "type": "AFTER_REFERENCE_NUM_TIME",
+    "comment": "dopo una settimana, ultimi 2 giorni, prima di 3 giorni, ultimi 3 giorni, ultimi 3 giorni",
+    "patternString": "<<ref_rel_connector>>?\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*<<ref_rel_connector>>?\\s*(<num>|<num_suffix>)?\\s*<<ref_num_connector>>?\\s*(<time_period>)\\s*<<ref_rel_connector>>?",
+    "isRelative": true,
+    "isPrefix" : true
+  }
+]

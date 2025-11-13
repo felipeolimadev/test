@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "type": "YEAR_WITH_YEAR_KEYWORD_AS_SUFFIX_OR_PREFIX",
+    "patternString": "(?:\\s|^|\\.|,)(<time_period>)?\\s*(?:el)?\\s*(<num>)\\s*(?:,|del|de el)?\\s*(<time_period>)?(?:\\s|$|\\.|,)",
+    "comment": "year 2002 | 2002 year, año 2002 | el num año | num, año de | del año num | num del año)",
+    "mapping": [
+      {
+        "year": 1,
+        "timePeriod" : 2
+      },
+      {
+        "year" : 2,
+        "timePeriod" : 1
+      }
+    ],
+    "shouldContainKeyword" : "año"
+  }
+]

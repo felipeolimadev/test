@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.sec.android.gallery3d.provider2.album_group" package="" keyFieldName="_id" prefKey="album_groups" version="1">
+    <fieldType name="string" dataType="String" class="StringField"/>
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="keep_other_lang_text" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer" type="index" connectingWord="false" removeSpecialChar="false">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" hasOrigin="true" originCNoun="true"/>
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true" />
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        </analyzer>
+        <analyzer class="bs.core.PerLanguageAnalyzer" type="search" connectingWord="false" removeSpecialChar="false">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" hasOrigin="false" originCNoun="false"/>
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented"/>
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        </analyzer>
+    </fieldType>
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <!-- unique id   -->
+    <field name="_id" type="string"/>
+    <!-- bucket_id of this group   -->
+    <field name="bucket_id" type="string"/>
+    <!-- group display name   -->
+    <field name="bucket_display_name" type="string" />
+    <field name="bucket_display_name_token" src="bucket_display_name" stored="false"
+        type="keep_other_lang_text" />
+    <field name="modified_time" type="long_stored_field" />
+    <field name="bucket_id_list" type="multi_value_string" />
+</schema>

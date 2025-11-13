@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="analogy" package="" prefKey="alias" version="32">
+    <defaultAnalyzer class="core.WhitespaceAnalyzer" />
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="type_field" dataType="MultiValuedString" class="TextField" />
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="TextField" >
+        <analyzer type="index" class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <analyzer type="search" class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+    </fieldType>
+    <fieldType name="spell" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+    <fieldType name="pinyin" dataType="MultiValuedString" class="TextField" >
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer" />
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="kana" dataType="MultiValuedString" class="TextField" >
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer"
+            normalize="true" keepKanji="true" />
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true" />
+    </fieldType>
+    <fieldType name="keyword_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.LowerCaseKeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="synonym_exact" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.synonym.SynonymAnalyzer"/>
+        <analyzer type="search" class="bs.latin.AccentSimpleAnalyzer" />
+    </fieldType>
+
+    <field name="_id" type="string" />
+    <field name="name" type="keyword_field" stored="true"/>
+    <field name="type" type="type_field" />
+    <field name="alias_prefix" type="multi_value_string" stored="false" />
+    <field name="alias_partial" type="multi_value_string" stored="false" />
+    <field name="alias_exact" type="multi_value_string" stored="false" />
+    <field name="synonym" type="synonym_exact" stored="true" />
+    <field name="is_original_resource" type="string" stored="false" />
+    <field name="alias_keyword" type="keyword_field" stored="true" />
+    <field name="related_keywords" type="keyword_field" stored="true" />
+    <field name="Spell" type="spell" stored="false" termVector="true"/>
+    <!-- analogy pinyin(s) for Gallery -->
+    <field name="pinyin" type="pinyin" stored="false" />
+    <!-- analogy kana(s) for Gallery : For Japanese -->
+    <field name="kana" type="kana" stored="false" />
+    <field name="locale" type="string" stored="false" />
+
+    <copyField dest="Spell" source="alias_prefix"/>
+    <copyField dest="Spell" source="pinyin"/>
+
+    <fieldList type="search">
+        <fieldItem name="type" />
+        <fieldItem name="alias_prefix" />
+        <fieldItem name="alias_exact" />
+        <fieldItem name="Spell" />
+        <fieldItem name="pinyin" />
+    </fieldList>
+</schema>

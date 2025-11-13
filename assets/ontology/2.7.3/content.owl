@@ -1,0 +1,259 @@
+@prefix : <http://pkg.samsung.com/content#> .
+@prefix design: <http://pkg.samsung.com/design#> .
+@prefix location: <http://pkg.samsung.com/location#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix user: <http://pkg.samsung.com/user#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://pkg.samsung.com/content> a owl:Ontology ;
+    owl:versionIRI <http://pkg.samsung.com/content/2.7.2> .
+
+:AudioFile a owl:Class ;
+    rdfs:subClassOf :MediaObject .
+
+:CallLog a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:Email a owl:Class ;
+    rdfs:subClassOf :Message .
+
+:Entertainment a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:Food a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:FoodTag a owl:Class ;
+    rdfs:subClassOf :ContentTag .
+
+:FourWEvent a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:Game a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:HealthAndWellness a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:ImageFile a owl:Class ;
+    rdfs:subClassOf :MediaObject .
+
+:IncomingCall a :CallType .
+
+:Keyword a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:MobileApplication a owl:Class .
+
+:MusicPlayback a owl:Class ;
+    rdfs:subClassOf :MediaPlayback .
+
+:OutgoingCall a :CallType .
+
+:PdfFile a owl:Class ;
+    rdfs:subClassOf :DocumentObject .
+
+:Pets a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:PresentationFile a owl:Class ;
+    rdfs:subClassOf :DocumentObject .
+
+:ReceivedMessageBox a :MessageBoxType .
+
+:SentMessageBox a :MessageBoxType .
+
+:SheetFile a owl:Class ;
+    rdfs:subClassOf :DocumentObject .
+
+:Sports a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:StyleAndFashion a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:TextFile a owl:Class ;
+    rdfs:subClassOf :DocumentObject .
+
+:TextMessage a owl:Class ;
+    rdfs:subClassOf :Message .
+
+:Travel a owl:Class ;
+    rdfs:subClassOf :ContentCategory .
+
+:VideoFile a owl:Class ;
+    rdfs:subClassOf :MediaObject .
+
+:VideoPlayback a owl:Class ;
+    rdfs:subClassOf :MediaPlayback .
+
+:WebPage a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:WordFile a owl:Class ;
+    rdfs:subClassOf :DocumentObject .
+
+:albumTitle a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+:allDay a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+:altName a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+:appCategory a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    rdfs:subPropertyOf :category .
+
+:artist a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+:attendee a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participant .
+
+:callType a owl:ObjectProperty .
+
+:caller a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participant .
+
+:contactId a owl:DatatypeProperty .
+
+:creator a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+:description a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+:duration a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+:eventCategory a owl:ObjectProperty .
+
+:hasPart a owl:ObjectProperty .
+
+:iconicMediaId a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+:locationCreated a owl:ObjectProperty .
+
+:locationRegistered a owl:ObjectProperty .
+
+:mediaId a owl:DatatypeProperty .
+
+:messageBoxType a owl:ObjectProperty .
+
+:name a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+:objectRecognized a owl:ObjectProperty ;
+    rdfs:subPropertyOf :recognized .
+
+:package a owl:DatatypeProperty .
+
+:pageCategory a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    rdfs:subPropertyOf :category .
+
+:personIdRecognized a owl:DatatypeProperty .
+
+:personRecognized a owl:ObjectProperty ;
+    rdfs:subPropertyOf :person,
+        :recognized .
+
+:receiver a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participant .
+
+:recipient a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participant .
+
+:searchKeyword a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    rdfs:subPropertyOf :keyword .
+
+:sender a owl:ObjectProperty ;
+    rdfs:subPropertyOf :participant .
+
+:summary a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+:summaryKeyword a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    rdfs:subPropertyOf :keyword .
+
+:summaryTitle a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    rdfs:subPropertyOf :title .
+
+:textBody a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+:textRecognized a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+:thumnail a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+:thumnailUri a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+:timeMills a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+:url a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+location:Location a owl:Class .
+
+user:Event a owl:Class .
+
+user:Person a owl:Class .
+
+:ContentTag a owl:Class .
+
+:title a owl:DatatypeProperty ;
+    design:isIndexableProperty true ;
+    design:isSubgraphProperty true .
+
+:CallType a owl:Class .
+
+:ContentObject a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:MediaPlayback a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:Message a owl:Class ;
+    rdfs:subClassOf :Content .
+
+:MessageBoxType a owl:Class .
+
+:category a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+:keyword a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+:person a owl:ObjectProperty .
+
+:recognized a owl:ObjectProperty .
+
+:MediaObject a owl:Class ;
+    rdfs:subClassOf :ContentObject .
+
+:DocumentObject a owl:Class ;
+    rdfs:subClassOf :ContentObject .
+
+:participant a owl:ObjectProperty ;
+    rdfs:subPropertyOf :person .
+
+:Content a owl:Class .
+
+:ContentCategory a owl:Class .
+

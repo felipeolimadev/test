@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.smartsuggestions.feature.aisuggestion.ui.decoration.FadingBottomScrollView android:id="@id/full_view_container" android:tag="layout/suggestion_ui_view_moments_detail_view_0" android:scrollbars="none" android:fadingEdgeLength="@dimen/scroll_view_fading_edge_length" android:layout_width="fill_parent" android:layout_height="fill_parent" android:requiresFadingEdge="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="wrap_content" android:layout_height="@dimen/moments_now_brief_detail_grid_margin_top" />
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MomentsDetailTitleTextStyle" />
+        <TextView android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moments_now_brief_detail_description_margin_top" style="@style/MomentsDetailDescriptionTextStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/detail_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moments_now_brief_detail_time_location_margin_top">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/time_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/time_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moments_detail_time" android:layout_marginEnd="@dimen/moments_now_brief_detail_time_location_icon_margin_end" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/time_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MomentsDetailTimeLocationTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/location_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moments_now_brief_detail_location_margin_top">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/location_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moments_detail_location" android:layout_marginEnd="@dimen/moments_now_brief_detail_time_location_icon_margin_end" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/location_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MomentsDetailTimeLocationTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/content_detail_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moments_now_brief_detail_container_margin_top" app:layout_constraintTop_toBottomOf="@id/detail_info_container">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_now_brief_detail_grid_margin_bottom" android:overScrollMode="never" android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</com.samsung.android.smartsuggestions.feature.aisuggestion.ui.decoration.FadingBottomScrollView>

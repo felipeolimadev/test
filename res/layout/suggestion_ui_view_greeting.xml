@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/greeting_container" android:tag="layout/suggestion_ui_view_greeting_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/greeting_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/greeting_four_star_image" android:layout_width="@dimen/greeting_four_star_image_size" android:layout_height="@dimen/greeting_four_star_image_size" app:lottie_rawRes="@raw/intelligence_progress_color" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/greeting_title_text_size" android:textColor="@color/greeting_title_color" android:id="@id/greeting_title_invisible_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+            <com.samsung.android.vanillavibes.motion.text.view.MotionTextView android:textSize="@dimen/greeting_title_text_size" android:textColor="@color/greeting_title_color" android:id="@id/greeting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

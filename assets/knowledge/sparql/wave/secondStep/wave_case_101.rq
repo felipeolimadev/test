@@ -1,0 +1,20 @@
+SELECT DISTINCT ?targetTP {
+    ?targetTP rdf:type user:TakingPictures .
+    
+    # (1) 초기 검색 결과와 물리적으로 구분 가능한 시간 구간을 가지는 여행 기간에 찍은 사진 존재 (= 다른 여행 Engram)
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    ?targetEventProperty rdfs:subPropertyOf user:event .
+    ?targetTravelEngram ?targetEventProperty ?targetTP .
+    ?targetTravelEngram a user:TravelEngram .
+    FILTER EXISTS {
+        VALUES ?originTPInExists { <TAKING_PICTURES_IRI> }
+        ?originEventProperty rdfs:subPropertyOf user:event .
+        ?originTravelEngram ?originEventProperty ?originTPInExists .
+        ?originTravelEngram a user:TravelEngram .
+        FILTER (?originTravelEngram != ?targetTravelEngram)
+    }
+
+    # (2) 초기 검색 결과와 떨어진 장소에서 찍은 사진 존재 (H3 사용)
+    # <DISTANT_TAKING_PICTURES_IRI_COMMA> = "IRI_1, IRI_2, ..., IRI_N"
+    FILTER (?targetTP IN ( <DISTANT_TAKING_PICTURES_IRI_COMMA> )) .
+}

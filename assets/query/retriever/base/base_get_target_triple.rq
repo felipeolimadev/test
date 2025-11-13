@@ -1,0 +1,31 @@
+select ?s ?p ?o
+where
+{
+    {
+        select distinct ?iri
+        where
+        {
+            VALUES (?source_iri) {<INPUT_IRI>}
+            ?source_iri <TO_SUBGRAPH_PROPERTY> ?iri .
+            ?iri rdf:type/rdfs:subClassOf <CLASS_IRI> .
+            FILTER NOT EXISTS { ?something1 time:hasBeginning ?iri }
+            FILTER NOT EXISTS { ?something2 time:hasEnd ?iri }
+        }
+    }
+
+    {
+        ?iri rdf:unknown? ?s .
+        ?s ?p ?o .
+    } UNION {
+        ?iri a user:Person .
+        ?iri rdf:unknown? ?s .
+        GRAPH user:relation {
+            ?s ?p ?o .
+        }
+    }
+
+    OPTIONAL {
+        ?iri (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDCreatedDateTimeStamp|time:inXSDBeginningDateTimeStamp ?start_time .
+    }
+}
+<SIMPLE_SORT_METHOD>

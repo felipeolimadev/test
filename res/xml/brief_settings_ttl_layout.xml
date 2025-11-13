@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_ttl" android:title="@string/brief_settings_contents_traffic_updates"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout_width="fill_parent">
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="T map" android:key="t_map" android:defaultValue="false" app:iconType="t_map" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Naver map" android:key="naver_map" android:defaultValue="false" app:iconType="naver_map" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Kakao map" android:key="kakao_map" android:defaultValue="false" app:iconType="kakao_map" />
+    </PreferenceCategory>
+</PreferenceScreen>

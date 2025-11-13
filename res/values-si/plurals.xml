@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">දින %dක් ඉතිරියි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d දිනයක් ඉතිරියි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s දින %2$dකින් පැමිණේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s %2$d දිනකින් පැමිණේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$sසිද්ධි %2$dක්%3$s හෙට දිගටම පවතිනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d සිද්ධියක්%3$s හෙට දිගටම පවතිනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">ඔබට අද %1$sසිද්ධි %2$dක්%3$s ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට අද %1$s%2$d සිද්ධියක්%3$s ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">ඔබට අද සිද්ධි %1$dක් තිබේ. පළමු සිද්ධිය %2$s වේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට අද %1$d සිද්ධියක් තිබේ. පළමු සිද්ධිය %2$s වේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">අදට %1$sසිද්ධි %2$dක්%3$s ඉතිරිව ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අදට %1$s%2$d සිද්ධියක්%3$s ඉතිරිව ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">ඔබට හෙට %1$sසිද්ධි %2$dක්%3$s ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට හෙට %1$s%2$d සිද්ධියක්%3$s ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">ඔබට හෙට සිද්ධි %1$dක් තිබේ. පළමු සිද්ධිය %2$s වේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට හෙට %1$d සිද්ධියක් තිබේ. පළමු සිද්ධිය %2$s වේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">සිද්ධි %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">සිද්ධි %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">විනා %dකින් ඇරඹේ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනා %dකින් ඇරඹේ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">අදට සිහිකැඳවීම් %dක් ඉතිරිව ඇත</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අදට %d සිහිකැඳවීමක් ඉතිරිව ඇත</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">ඔබට අද බෙදා හැරීමේ පණිවිඩ %dක් ලැබුණා. ඔබේ බෙදා හැරීම්වල තත්වය පිළිබඳව ඔබ යාවත්කාලීනව සිටින බව සහතික කර ගැනීමට පරීක්ෂා කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට අද %d බෙදා හැරීමේ පණිවිඩයක් ලැබුණා. ඔබේ බෙදා හැරීමෙහි තත්වය පිළිබඳව ඔබ යාවත්කාලීනව සිටින බව සහතික කර ගැනීමට පරීක්ෂා කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">අද බෙදා හැරීම් %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අද %d බෙදා හැරීමක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">මෙම සතියේ ඉලක්කයට වඩා %d වරක්.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">මෙම සතියේ ඉලක්කයට වඩා %d වතාවක්.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">ක්‍රියාකාරකම් ඉලක්ක %dක් සපුරා ගන්නා ලදි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ක්‍රියාකාරකම් ඉලක්කයක් සපුරා ගන්නා ලදි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">ඔබේ මුළු උන්නතාංශ වැඩිවීම %1$s වූ අතර ඔබ කැලරි %2$,dක් දහනය කළා.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ මුළු උන්නතාංශ වැඩිවීම %1$s වූ අතර ඔබ කැලරි %2$,dක් දහනය කළා.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">ඔබේ සාමාන්‍යය ගමන් වේගය %1$s වූ අතර ඔබ කැලරි %2$,dක් දහනය කළා.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ සාමාන්‍යය ගමන් වේගය %1$s වූ අතර ඔබ කැලරි %2$,dක් දහනය කළා.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">ඔබේ සාමාන්‍යය වේගය %1$s වූ අතර ඔබ කැලරි %2$,dක් දහනය කළා.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ සාමාන්‍යය වේගය %1$s වූ අතර ඔබ කැලරි %2$,dක් දහනය කළා.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">ඔබේ %1$s ව්‍යායාමයක සාරාංශයක් මෙන්න. කාලසීමාව %2$s වූ අතර ඔබ කැලරි %3$,dක් දහනය කළා.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ %1$s ව්‍යායාමයක සාරාංශයක් මෙන්න. කාලසීමාව %2$s වූ අතර ඔබ කැලරි %3$,dක් දහනය කළා.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">අද ඔබට නියමිත ඖෂධ %dක් මඟ හැරුණා.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අද ඔබට %d නියමිත ඖෂධයක් මඟ හැරුණා.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">පැය %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පැය %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">පැය %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පැය %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">විනා %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනා %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">විනාඩි %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">අද ඔබට ඔබ තවමත් පරීක්ෂා නොකළ %1$sමඟ හැරුණු ඇමතුම් %2$dක්%3$s ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අද ඔබට ඔබ තවමත් පරීක්ෂා නොකළ %1$s%2$d මඟ හැරුණු ඇමතුමක්%3$s ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">ඔබට අද දින ඇමතුම් %dක් මඟ හැරී ඇත. ඔබේ Now brief තුළ මෙම මඟ හැරුණු ඇමතුම් සමාලෝචනය කරන්න. අවශ්‍ය නම්, නැවත ඇමතීමට අමතක නොවන පරිදි ඔබට සිහිකැඳවීම් ද සැකසිය හැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට අද දින %d ඇමතුමක් මඟ හැරී ඇත. ඔබේ Now brief තුළ මෙම මඟ හැරුණු ඇමතුම සමාලෝචනය කරන්න. අවශ්‍ය නම්, නැවත ඇමතීමට අමතක නොවන පරිදි ඔබට සිහිකැඳවීමක් ද සැකසිය හැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">තව මඟහැරුණු ඇමතුම් %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තව %d මඟහැරුණු ඇමතුමක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">මඟහැරුණු ඇමතුම් %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d මඟහැරුණු ඇමතුමක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">නව දැනුම්දීම් %dක්</item>
+        <item quantity="one">නව දැනුම්දීම් %dක්</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">පැය %dකට පෙර</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පැය %dකට පෙර</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">විනාඩි %dකට පෙර</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dකට පෙර</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI හි උසස් බුද්ධි විශේෂාංග භාවිතය සඳහා ඔබට අඩු තරමින් වයස අවුරුදු %dක් වීමට අවශ්‍ය වේ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AI හි උසස් බුද්ධි විශේෂාංග භාවිතය සඳහා ඔබට අඩු තරමින් වයස අවුරුදු %dක් වීමට අවශ්‍ය වේ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">පණිවිඩ %d</item>
+        <item quantity="one">පණිවිඩ %d</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">සැත %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">සැත %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">තත්පර %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තත්පර %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">ඔබ උදෑසන සඳහා %1$sඑලාම් %2$dක්%3$s සකසා ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබ උදෑසන සඳහා %1$s%2$d එලාමයක්%3$s සකසා ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">ඔබ හෙට උදෑසන සඳහා %1$sඑලාම් %2$dක්%3$s සකසා ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබ හෙට උදෑසන සඳහා %1$s%2$d එලාමයක්%3$s සකසා ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">පිටත් වීමට අවම වශයෙන් පැය %4$dකට පෙර ගුවන් තොටුපළට පැමිණීමට %1$s%2$s වන විට පිටත් වන්න%3$s. ඔබට අමතක නොවන ලෙස එලාමයක් සකසන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පිටත් වීමට අවම වශයෙන් පැය %4$dකට පෙර ගුවන් තොටුපළට පැමිණීමට %1$s%2$s වන විට පිටත් වන්න%3$s. ඔබට අමතක නොවන ලෙස එලාමයක් සකසන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">ඔබේ පියාසැරියට අවම වශයෙන් පැය %4$dකට පෙර ගුවන් තොටුපළට යාමට %1$s%2$s වන විට පිටත් වන්න%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ පියාසැරියට අවම වශයෙන් පැය %4$dකට පෙර ගුවන් තොටුපළට යාමට %1$s%2$s වන විට පිටත් වන්න%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">%2$s සඳහා පැමිණිය යුතු ස්ථාන, කළ යුතු දේවල්, සහ උත්සාහ කිරීමට වටින අවන්හල් ඇතුළුව දින %1$dක සංචාරක ගමන් විස්තරයක් යෝජනා කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s සඳහා පැමිණිය යුතු ස්ථාන, කළ යුතු දේවල්, සහ උත්සාහ කිරීමට වටින අවන්හල් ඇතුළුව දින %1$dක සංචාරක ගමන් විස්තරයක් යෝජනා කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">ඔබේ සංචාරය අතරතුර ප්‍රයෝජනවත් විය හැකි මෙම %1$sනිර්දේශිත යෙදුම්%2$s පරීක්ෂා කරන්න.</item>
+        <item quantity="one">ඔබේ සංචාරය අතරතුර ප්‍රයෝජනවත් විය හැකි මෙම %1$sනිර්දේශිත යෙදුම%2$s පරීක්ෂා කරන්න.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">ඔබ ඔබේ ගමනාන්තයට පැමිණි විට එය භාෂණ පරිවර්තක තුළ භාවිතා කිරීමට ඔබ සූදානම් වන පරිදි %1$sමෙම භාෂා ඇසුරුම%2$s කල්තියා බාගන්න.</item>
+        <item quantity="one">ඔබ ඔබේ ගමනාන්තයට පැමිණි විට ඒවා භාෂණ පරිවර්තක තුළ භාවිතා කිරීමට ඔබ සූදානම් වන පරිදි %1$sමෙම භාෂා ඇසුරුම්%2$s කල්තියා බාගන්න.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">බාගැනීමට භාෂා ඇසුරුම්</item>
+        <item quantity="one">බාගැනීමට භාෂා ඇසුරුම</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">උපාංග %dක් ක්‍රියාත්මකයි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d උපාංගයක් ක්‍රියාත්මකයි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">අවසන් වරට සම්බන්ධ වූයේ දින %dකට පෙර</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අවසන් වරට සම්බන්ධ වූයේ %d දිනකට පෙර</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">අවසන් වරට සම්බන්ධ වූයේ දින %dකට පෙර</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අවසන් වරට සම්බන්ධ වූයේ %d දිනකට පෙර</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">අවසන් වරට සම්බන්ධ වූයේ මාස %dකට පෙර</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අවසන් වරට සම්බන්ධ වූයේ මාස %dකට පෙර</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">අවසන් වරට සම්බන්ධ වූයේ සති %dකට පෙර</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අවසන් වරට සම්බන්ධ වූයේ සති %dකට පෙර</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">තව සබඳතා %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තව %d සබඳතාවක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">ඔබට Samsung Wallet තුළ දින %dකින් කල් ඉකුත් වන කූපනයක් තිබේ. එය කල් ඉකුත් වීමට පෙර ඔබ එය භාවිතා කරන බවට වග බලා ගන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට Samsung Wallet තුළ %d දිනකින් කල් ඉකුත් වන කූපනයක් තිබේ. එය කල් ඉකුත් වීමට පෙර ඔබ එය භාවිතා කරන බවට වග බලා ගන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">ඉහළ සෘණ අංශක %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඉහළ සෘණ අංශක %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">පහළ සෘණ අංශක %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පහළ සෘණ අංශක %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">ඔබේ දින දසුනෙහි %1$s නමින් සිද්ධියක් තිබේ. එය %5$s හි %4$sට %3$s අංශක %2$d වනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබේ දින දසුනෙහි %1$s නමින් සිද්ධියක් තිබේ. එය %5$s හි %4$sට %3$s අංශක %2$d වනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">ඉහළ අංශක %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඉහළ අංශක %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">පහළ අංශක %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පහළ අංශක %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">බැලීම් %s</item>
+        <item quantity="one">%s දසුන</item>
+    </plurals>
+</resources>

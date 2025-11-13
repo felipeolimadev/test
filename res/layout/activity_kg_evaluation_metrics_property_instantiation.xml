@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:gravity="center" android:background="@drawable/table_row_boarder" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Category" android:layout_weight="1.0" />
+            <TextView android:background="@color/white" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="PI" android:layout_weight="1.0" />
+            <TextView android:background="@color/white" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="N(IP)" android:layout_weight="1.0" />
+            <TextView android:background="@color/white" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="N(P)" android:layout_weight="1.0" />
+        </TableRow>
+    </TableLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.7">
+        <TableLayout android:id="@id/tabQuery" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <TextView android:textSize="16.0sp" android:id="@id/tvInfo" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" android:showDividers="middle" android:dividerPadding="4.0dip" />
+</LinearLayout>

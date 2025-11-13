@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.sec.android.app.voicenote" package="" prefKey="voice_recorder" version="10"
+    embConfigUri="content://com.sec.android.app.voicenote.data.VNAIProvider">
+
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+        <subAnalyzer class="core.WhitespaceAnalyzer" lang="ko" />
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+        <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+    </defaultAnalyzer>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="int_stored_field" dataType="int" class="StoredField"/>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+    <fieldType name="multi_value_text" dataType="MultiValuedString" class="TextField"/>
+    <fieldType name="transliteration_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="common" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="common" />
+    </fieldType>
+    <fieldType name="transliteration_field_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="common" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="common" />
+    </fieldType>
+    <fieldType name="phonetic_field" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" neuralPhonetics="true"/>
+        </analyzer>
+    </fieldType>
+    <fieldType name="phonetic_field_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" neuralPhonetics="true"/>
+        </analyzer>
+    </fieldType>
+
+    <field name="_id" type="string"/>
+    <field name="title" type="text"/>
+    <field name="title_transliterate" type="transliteration_field" src="title" stored="false" />
+    <field name="title_phonetic" type="phonetic_field" src="title" stored="false" />
+    <field name="transcript_title" type="text"/>
+    <field name="transcript_title_transliterate" type="transliteration_field" src="transcript_title" stored="false" />
+    <field name="transcript_title_phonetic" type="phonetic_field" src="transcript_title" stored="false" />
+    <field name="transcript_text" type="text"/>
+    <field name="summary" type="text"/>
+    <field name="keyword" type="text"/>
+    <field name="content_uri" type="string"/>
+    <field name="recording_mode" type="int_compare_field"/>
+    <field name="keyword_transliterate" type="transliteration_field_multi" src="keyword" stored="false"/>
+    <field name="keyword_phonetic" type="phonetic_field_multi" src="keyword" stored="false"/>
+    <field name="action_item" type="multi_value_text"/>
+    <field name="CATEGORY_ID" type="int_compare_field" />
+    <field name="timestamp" type="long_stored_field" compare="true"/>
+    <field name="recording_begin_date" type="long_stored_field" compare="true"/>
+    <field name="duration" type="long_stored_field"/>
+    <field name="IS_FAVORITE" type="int_compare_field" />
+    <field name="PATH" type="string" stored="false" />
+    <field name="device_type" type="string" stored="false" />
+
+    <field name="year" type="string" />
+    <field name="month" type="string" />
+    <field name="num_of_day" type="string" />
+    <field name="day" type="string" />
+    <field name="hour" type="int_compare_field" />
+    <field name="minute" type="int_compare_field" />
+    <field name="second" type="int_compare_field" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="_score" order="DESC" />
+    </sort>
+</schema>

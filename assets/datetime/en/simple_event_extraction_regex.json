@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "pattern": "(<date-time>)\\s?till\\s?(<date-time>)\\s?(?:-|~|to|till)?\\s?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 2,
+      "endTime": 3,
+      "startDateTime": 1,
+      "endDateTime": 3
+    }
+  },
+  {
+    "id": "2",
+    "pattern": "(?:from)?\\s*(<date-time>)\\s*(?:-|~|to|till|(?:(?:and|&)?\\s*ends?\\s*(?:at)?))?\\s*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    }
+  },
+  {
+    "id": "3",
+    "pattern": "starts at (<date-time>)\\s?ends? (?:at|on)\\s?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    }
+  },
+  {
+    "id": "4",
+    "pattern": "(<date-time>)(?:\\s?and\\s?)?\\s?end(?:s|ing)? (?:at|on)\\s?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    }
+  },
+  {
+    "id": "5",
+    "pattern": "(<date-time>)\\s?until\\s?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    }
+  },
+  {
+    "id": "6",
+    "pattern": "(?:between\\s*)(<date-time>)\\s?(?:to|and)\\s?(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    }
+  }
+]
+

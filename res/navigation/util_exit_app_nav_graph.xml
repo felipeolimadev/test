@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/util_exit_app_nav_graph" app:startDestination="@id/exit_app_dialog"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <dialog android:label="Exit App" android:name="com.samsung.android.moneta.debugui.developmode.util.ExitAppDialogFragment" android:id="@id/exit_app_dialog" />
+</navigation>

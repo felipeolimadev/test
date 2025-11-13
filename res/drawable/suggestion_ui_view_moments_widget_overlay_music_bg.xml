@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/moments_widget_s2_1_type_overlay_music_layout_color" />
+    <corners android:radius="@dimen/moments_widget_location_overlay_corner_radius" />
+</shape>

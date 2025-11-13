@@ -1,0 +1,35 @@
+{
+  "name": "TimeIntervalUnit",
+  "type": "datatype",
+  "id": "datatype.enumeration.TimeIntervalUnit",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "millisecond",
+      "second",
+      "minute",
+      "hour"
+    ],
+    "descriptions": [
+      {
+        "value": "millisecond",
+        "description": "Millisecond"
+      },
+      {
+        "value": "second",
+        "description": "Second"
+      },
+      {
+        "value": "minute",
+        "description": "Minute"
+      },
+      {
+        "value": "hour",
+        "description": "Hour"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">يتبقى %d يوم.</item>
+        <item quantity="zero">يتبقى %d يوم.</item>
+        <item quantity="one">يتبقى يوم واحد.</item>
+        <item quantity="two">يتبقى يومان.</item>
+        <item quantity="few">يتبقى %d أيام.</item>
+        <item quantity="many">يتبقى %d يوماً.</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">سيتوفر %1$s في غضون %2$d يوم.</item>
+        <item quantity="zero">سيتوفر %1$s في غضون %2$d يوم.</item>
+        <item quantity="one">سيتوفر %1$s في غضون يوم واحد.</item>
+        <item quantity="two">سيتوفر %1$s في غضون يومين.</item>
+        <item quantity="few">سيتوفر %1$s في غضون %2$d أيام.</item>
+        <item quantity="many">سيتوفر %1$s في غضون %2$d يوماً.</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">سيستمر %1$s%2$d حدث%3$s غداً.</item>
+        <item quantity="zero">سيستمر %1$s%2$d حدث%3$s غداً.</item>
+        <item quantity="one">سيستمر %1$s حدث واحد%3$s غداً.</item>
+        <item quantity="two">سيستمر %1$s حدثين%3$s غداً.</item>
+        <item quantity="few">سيستمر %1$s%2$d أحداث%3$s غداً.</item>
+        <item quantity="many">سيستمر %1$s%2$d حدثاً%3$s غداً.</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">لديك %1$s%2$d حدث%3$s اليوم.</item>
+        <item quantity="zero">لديك %1$s%2$d حدث%3$s اليوم.</item>
+        <item quantity="one">لديك %1$s حدث واحد%3$s اليوم.</item>
+        <item quantity="two">لديك %1$s حدثين%3$s اليوم.</item>
+        <item quantity="few">لديك %1$s%2$d أحداث%3$s اليوم.</item>
+        <item quantity="many">لديك %1$s%2$d حدثاً%3$s اليوم.</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">لديك %1$d حدث اليوم. الحدث الأول هو %2$s.</item>
+        <item quantity="zero">لديك %1$d حدث اليوم. الحدث الأول هو %2$s.</item>
+        <item quantity="one">لديك حدث واحد اليوم. الحدث الأول هو %2$s.</item>
+        <item quantity="two">لديك حدثان اليوم. الحدث الأول هو %2$s.</item>
+        <item quantity="few">لديك %1$d أحداث اليوم. الحدث الأول هو %2$s.</item>
+        <item quantity="many">لديك %1$d حدثاً اليوم. الحدث الأول هو %2$s.</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">باقٍ %1$s%2$d حدث%3$s لليوم‬.</item>
+        <item quantity="zero">باقٍ %1$s%2$d حدث%3$s لليوم‬.</item>
+        <item quantity="one">باقٍ %1$sحدث واحد%3$s لليوم‬.</item>
+        <item quantity="two">باقٍ %1$sحدثين%3$s لليوم‬.</item>
+        <item quantity="few">باقٍ %1$s%2$d أحداث%3$s لليوم‬.</item>
+        <item quantity="many">باقٍ %1$s%2$d حدثاً%3$s لليوم‬.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">لديك %1$s%2$d حدث%3$s غداً.</item>
+        <item quantity="zero">لديك %1$s%2$d حدث%3$s غداً.</item>
+        <item quantity="one">لديك %1$sحدث%3$s واحد غداً.</item>
+        <item quantity="two">لديك %1$sحدثين%3$s غداً.</item>
+        <item quantity="few">لديك %1$s%2$d أحداث%3$s غداً.</item>
+        <item quantity="many">لديك %1$s%2$d حدثاً%3$s غداً.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">لديك %1$d حدث غداً. الحدث الأول هو %2$s.</item>
+        <item quantity="zero">لديك %1$d حدث غداً. الحدث الأول هو %2$s.</item>
+        <item quantity="one">لديك حدث واحد غداً. الحدث الأول هو %2$s.</item>
+        <item quantity="two">لديك حدثان غداً. الحدث الأول هو %2$s.</item>
+        <item quantity="few">لديك %1$d أحداث غداً. الحدث الأول هو %2$s.</item>
+        <item quantity="many">لديك %1$d حدثاً غداً. الحدث الأول هو %2$s.</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d حدث</item>
+        <item quantity="zero">%d حدث</item>
+        <item quantity="one">حدث واحد</item>
+        <item quantity="two">حدثان</item>
+        <item quantity="few">%d أحداث</item>
+        <item quantity="many">%d حدثاً</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">يبدأ بعد %d دقيقة</item>
+        <item quantity="zero">يبدأ بعد %d دقيقة</item>
+        <item quantity="one">يبدأ بعد دقيقة واحدة</item>
+        <item quantity="two">يبدأ بعد دقيقتان</item>
+        <item quantity="few">يبدأ بعد %d دقائق</item>
+        <item quantity="many">يبدأ بعد %d دقيقةً</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">باقٍ %d تذكير لليوم</item>
+        <item quantity="zero">باقٍ %d تذكير لليوم</item>
+        <item quantity="one">باقٍ تذكير واحد لليوم</item>
+        <item quantity="two">باقٍ تذكيران لليوم</item>
+        <item quantity="few">باقٍ %d تذكيرات لليوم</item>
+        <item quantity="many">باقٍ %d تذكيراً لليوم</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">لقد تلقيت %d رسالة تسليم اليوم. تحقق للتأكد من أنك على اطلاع دائم بحالة عمليات التسليم الخاصة بك.</item>
+        <item quantity="zero">لقد تلقيت %d رسالة تسليم اليوم. تحقق للتأكد من أنك على اطلاع دائم بحالة عمليات التسليم الخاصة بك.</item>
+        <item quantity="one">لقد تلقيت رسالة تسليم واحدة اليوم. تحقق للتأكد من أنك على اطلاع دائم بحالة عملية التسليم الخاصة بك.</item>
+        <item quantity="two">لقد تلقيت رسالتي تسليم اليوم. تحقق للتأكد من أنك على اطلاع دائم بحالة عمليتي التسليم الخاصة بك.</item>
+        <item quantity="few">لقد تلقيت %d رسائل تسليم اليوم. تحقق للتأكد من أنك على اطلاع دائم بحالة عمليات التسليم الخاصة بك.</item>
+        <item quantity="many">لقد تلقيت %d رسالة تسليم اليوم. تحقق للتأكد من أنك على اطلاع دائم بحالة عمليات التسليم الخاصة بك.</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d عملية تسليم اليوم</item>
+        <item quantity="zero">%d عملية تسليم اليوم</item>
+        <item quantity="one">عملية تسليم واحدة اليوم</item>
+        <item quantity="two">عمليتا تسليم اليوم</item>
+        <item quantity="few">%d عمليات تسليم اليوم</item>
+        <item quantity="many">%d عملية تسليم اليوم</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">تجاوز الهدف %d مرة هذا الأسبوع.</item>
+        <item quantity="zero">تجاوز الهدف %d مرة هذا الأسبوع.</item>
+        <item quantity="one">تجاوز الهدف مرة واحدة هذا الأسبوع.</item>
+        <item quantity="two">تجاوز الهدف مرتين هذا الأسبوع.</item>
+        <item quantity="few">تجاوز الهدف %d مرات هذا الأسبوع.</item>
+        <item quantity="many">تجاوز الهدف %d مرةً هذا الأسبوع.</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">تم تحقيق %d هدف نشاط</item>
+        <item quantity="zero">تم تحقيق %d هدف نشاط</item>
+        <item quantity="one">تم تحقيق هدف نشاط واحد</item>
+        <item quantity="two">تم تحقيق هدفي نشاط</item>
+        <item quantity="few">تم تحقيق %d أهداف نشاط</item>
+        <item quantity="many">تم تحقيق %d هدف نشاط</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">كان إجمالي نسبة الارتفاع لديك %1$s ولقد حرقت %2$,d سعر حراري.</item>
+        <item quantity="zero">كان إجمالي نسبة الارتفاع لديك %1$s ولقد حرقت %2$,d سعر حراري.</item>
+        <item quantity="one">كان إجمالي نسبة الارتفاع لديك %1$s ولقد حرقت سعر حراري واحد.</item>
+        <item quantity="two">كان إجمالي نسبة الارتفاع لديك %1$s ولقد حرقت سعرين حراريين.</item>
+        <item quantity="few">كان إجمالي نسبة الارتفاع لديك %1$s ولقد حرقت %2$,d سعرات حرارية.</item>
+        <item quantity="many">كان إجمالي نسبة الارتفاع لديك %1$s ولقد حرقت %2$,d سعراً حرارياً.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">كان متوسط وتيرتك %1$s ولقد حرقت %2$,d سعر حراري.</item>
+        <item quantity="zero">كان متوسط وتيرتك %1$s ولقد حرقت %2$,d سعر حراري.</item>
+        <item quantity="one">كان متوسط وتيرتك %1$s ولقد حرقت سعر حراري واحد.</item>
+        <item quantity="two">كان متوسط وتيرتك %1$s ولقد حرقت سعرين حراريين.</item>
+        <item quantity="few">كان متوسط وتيرتك %1$s ولقد حرقت %2$,d سعرات حرارية.</item>
+        <item quantity="many">كان متوسط وتيرتك %1$s ولقد حرقت %2$,d سعراً حرارياً.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">كان متوسط سرعتك %1$s ولقد حرقت %2$,d سعر حراري.</item>
+        <item quantity="zero">كان متوسط سرعتك %1$s ولقد حرقت %2$,d سعر حراري.</item>
+        <item quantity="one">كان متوسط سرعتك %1$s ولقد حرقت سعر حراري واحد.</item>
+        <item quantity="two">كان متوسط سرعتك %1$s ولقد حرقت سعرين حراريين.</item>
+        <item quantity="few">كان متوسط سرعتك %1$s ولقد حرقت %2$,d سعرات حرارية.</item>
+        <item quantity="many">كان متوسط سرعتك %1$s ولقد حرقت %2$,d سعراً حرارياً.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">فيما يلي ملخص تدريب %1$s الخاص بك. كانت المدة %2$s ولقد حرقت %3$,d سعر حراري.</item>
+        <item quantity="zero">فيما يلي ملخص تدريب %1$s الخاص بك. كانت المدة %2$s ولقد حرقت %3$,d سعر حراري.</item>
+        <item quantity="one">فيما يلي ملخص تدريب %1$s الخاص بك. كانت المدة %2$s ولقد حرقت سعر حراري واحد.</item>
+        <item quantity="two">فيما يلي ملخص تدريب %1$s الخاص بك. كانت المدة %2$s ولقد حرقت سعرين حراريين.</item>
+        <item quantity="few">فيما يلي ملخص تدريب %1$s الخاص بك. كانت المدة %2$s ولقد حرقت %3$,d سعرات حرارية.</item>
+        <item quantity="many">فيما يلي ملخص تدريب %1$s الخاص بك. كانت المدة %2$s ولقد حرقت %3$,d سعراً حرارياً.</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">لقد فاتك تناول %d دواء مجدول اليوم.</item>
+        <item quantity="zero">لقد فاتك تناول %d دواء مجدول اليوم.</item>
+        <item quantity="one">لقد فاتك تناول دواء واحد مجدول اليوم.</item>
+        <item quantity="two">لقد فاتك تناول دواءين مجدولين اليوم.</item>
+        <item quantity="few">لقد فاتك تناول %d أدوية مجدولة اليوم.</item>
+        <item quantity="many">لقد فاتك تناول %d دواءً مجدولاً اليوم.</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ساعة</item>
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">ساعتان</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ساعة</item>
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">ساعتان</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d دقيقة</item>
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">%d دقيقة</item>
+        <item quantity="two">%d دقيقتان</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d دقيقة</item>
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="two">دقيقتان</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">لديك %1$s%2$d مكالمة فائتة%3$s اليوم لم تتحقق منها بعد.</item>
+        <item quantity="zero">لديك %1$s%2$d مكالمة فائتة%3$s اليوم لم تتحقق منها بعد.</item>
+        <item quantity="one">لديك %1$sمكالمة فائتة واحدة%3$s اليوم لم تتحقق منها بعد.</item>
+        <item quantity="two">لديك %1$sمكالمتين فائتتين%3$s اليوم لم تتحقق منهما بعد.</item>
+        <item quantity="few">لديك %1$s%2$d مكالمات فائتة%3$s اليوم لم تتحقق منها بعد.</item>
+        <item quantity="many">لديك %1$s%2$d مكالمةً فائتةً%3$s اليوم لم تتحقق منها بعد.</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">لقد فاتتك %d مكالمة اليوم. قم بمراجعة هذه المكالمات الفائتة في Now brief الخاص بك. إذا لزم الأمر، يمكنك أيضًا ضبط تذكيرات حتى لا تنسى معاودة الاتصال.</item>
+        <item quantity="zero">لقد فاتتك %d مكالمة اليوم. قم بمراجعة هذه المكالمات الفائتة في Now brief الخاص بك. إذا لزم الأمر، يمكنك أيضًا ضبط تذكيرات حتى لا تنسى معاودة الاتصال.</item>
+        <item quantity="one">لقد فاتتك مكالمة واحدة اليوم. قم بمراجعة هذه المكالمة الفائتة في Now brief الخاص بك. إذا لزم الأمر، يمكنك أيضًا ضبط تذكير حتى لا تنسى معاودة الاتصال.</item>
+        <item quantity="two">لقد فاتتك مكالمتان اليوم. قم بمراجعة هاتين المكالمتين الفائتتين في Now brief الخاص بك. إذا لزم الأمر، يمكنك أيضًا ضبط تذكيرات حتى لا تنسى معاودة الاتصال.</item>
+        <item quantity="few">لقد فاتتك %d مكالمات اليوم. قم بمراجعة هذه المكالمات الفائتة في Now brief الخاص بك. إذا لزم الأمر، يمكنك أيضًا ضبط تذكيرات حتى لا تنسى معاودة الاتصال.</item>
+        <item quantity="many">لقد فاتتك %d مكالمةً اليوم. قم بمراجعة هذه المكالمات الفائتة في Now brief الخاص بك. إذا لزم الأمر، يمكنك أيضًا ضبط تذكيرات حتى لا تنسى معاودة الاتصال.</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d مكالمة فائتة إضافية</item>
+        <item quantity="zero">%d مكالمة فائتة إضافية</item>
+        <item quantity="one">مكالمة فائتة واحدة إضافية</item>
+        <item quantity="two">مكالمتان فائتتان إضافيتان</item>
+        <item quantity="few">%d مكالمات فائتة إضافية</item>
+        <item quantity="many">%d مكالمةً فائتةً إضافية</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d مكالمة فائتة</item>
+        <item quantity="zero">%d مكالمة فائتة</item>
+        <item quantity="one">مكالمة فائتة واحدة</item>
+        <item quantity="two">مكالمتان فائتتان</item>
+        <item quantity="few">%d مكالمات فائتة</item>
+        <item quantity="many">%d مكالمةً فائتةً</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">منذ %d ساعة</item>
+        <item quantity="zero">منذ %d ساعة</item>
+        <item quantity="one">منذ ساعة واحدة</item>
+        <item quantity="two">منذ ساعتين</item>
+        <item quantity="few">منذ %d ساعات</item>
+        <item quantity="many">منذ %d ساعةً</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">منذ %d دقيقة</item>
+        <item quantity="zero">منذ %d دقيقة</item>
+        <item quantity="one">منذ دقيقة واحدة</item>
+        <item quantity="two">منذ دقيقتين</item>
+        <item quantity="few">منذ %d دقائق</item>
+        <item quantity="many">منذ %d دقيقةً</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">يجب أن يكون عمرك %d سنة على الأقل لاستخدام ميزات الذكاء المتقدم‬ في Galaxy AI.</item>
+        <item quantity="zero">يجب أن يكون عمرك %d سنة على الأقل لاستخدام ميزات الذكاء المتقدم‬ في Galaxy AI.</item>
+        <item quantity="one">يجب أن يكون عمرك سنة واحدة على الأقل لاستخدام ميزات الذكاء المتقدم‬ في Galaxy AI.</item>
+        <item quantity="two">يجب أن يكون عمرك سنتين على الأقل لاستخدام ميزات الذكاء المتقدم‬ في Galaxy AI.</item>
+        <item quantity="few">يجب أن يكون عمرك %d سنوات على الأقل لاستخدام ميزات الذكاء المتقدم‬ في Galaxy AI.</item>
+        <item quantity="many">يجب أن يكون عمرك %d سنةً على الأقل لاستخدام ميزات الذكاء المتقدم‬ في Galaxy AI.</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d من الرسائل</item>
+        <item quantity="one">%d من الرسائل</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d ميل</item>
+        <item quantity="zero">%d ميل</item>
+        <item quantity="one">ميل واحد</item>
+        <item quantity="two">ميلان</item>
+        <item quantity="few">%d أميال</item>
+        <item quantity="many">%d ميلاً</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d ثانية</item>
+        <item quantity="zero">%d ثانية</item>
+        <item quantity="one">ثانية واحدة</item>
+        <item quantity="two">ثانيتان</item>
+        <item quantity="few">%d ثوانٍ</item>
+        <item quantity="many">%d ثانية</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">لقد قمت بضبط %1$s%2$d منبه%3$s للصباح.</item>
+        <item quantity="zero">لقد قمت بضبط %1$s%2$d منبه%3$s للصباح.</item>
+        <item quantity="one">لقد قمت بضبط %1$sمنبه واحد%3$s للصباح.</item>
+        <item quantity="two">لقد قمت بضبط %1$sمنبهين%3$s للصباح.</item>
+        <item quantity="few">لقد قمت بضبط %1$s%2$d منبهات%3$s للصباح.</item>
+        <item quantity="many">لقد قمت بضبط %1$s%2$d منبهاً%3$s للصباح.</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">لقد قمت بضبط %1$s%2$d منبه%3$s لصباح الغد.</item>
+        <item quantity="zero">لقد قمت بضبط %1$s%2$d منبه%3$s لصباح الغد.</item>
+        <item quantity="one">لقد قمت بضبط %1$sمنبه واحد%3$s لصباح الغد.</item>
+        <item quantity="two">لقد قمت بضبط %1$sمنبهين%3$s لصباح الغد.</item>
+        <item quantity="few">لقد قمت بضبط %1$s%2$d منبهات%3$s لصباح الغد.</item>
+        <item quantity="many">لقد قمت بضبط %1$s%2$d منبهاً%3$s لصباح الغد.</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعة على الأقل من موعد الإقلاع. اضبط منبهاً حتى لا تنسى.</item>
+        <item quantity="zero">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعة على الأقل من موعد الإقلاع. اضبط منبهاً حتى لا تنسى.</item>
+        <item quantity="one">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل ساعة واحدة على الأقل من موعد الإقلاع. اضبط منبهاً حتى لا تنسى.</item>
+        <item quantity="two">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل ساعتين على الأقل من موعد الإقلاع. اضبط منبهاً حتى لا تنسى.</item>
+        <item quantity="few">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعات على الأقل من موعد الإقلاع. اضبط منبهاً حتى لا تنسى.</item>
+        <item quantity="many">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعةً على الأقل من موعد الإقلاع. اضبط منبهاً حتى لا تنسى.</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعة على الأقل من موعد رحلتك.</item>
+        <item quantity="zero">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعة على الأقل من موعد رحلتك.</item>
+        <item quantity="one">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل ساعة واحدة على الأقل من موعد رحلتك.</item>
+        <item quantity="two">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل ساعتين على الأقل من موعد رحلتك.</item>
+        <item quantity="few">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعات على الأقل من موعد رحلتك.</item>
+        <item quantity="many">%1$sيمكنك المغادرة في الساعة %2$s%3$s للوصول إلى المطار قبل %4$d ساعةً على الأقل من موعد رحلتك.</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">اقترح خط رحلة لمدة %1$d يوم إلى %2$s بما في ذلك الأماكن التي يمكن زيارتها والأشياء التي يمكن القيام بها والمطاعم التي تستحق التجربة.</item>
+        <item quantity="zero">اقترح خط رحلة لمدة %1$d يوم إلى %2$s بما في ذلك الأماكن التي يمكن زيارتها والأشياء التي يمكن القيام بها والمطاعم التي تستحق التجربة.</item>
+        <item quantity="one">اقترح خط رحلة لمدة يوم واحد إلى %2$s بما في ذلك الأماكن التي يمكن زيارتها والأشياء التي يمكن القيام بها والمطاعم التي تستحق التجربة.</item>
+        <item quantity="two">اقترح خط رحلة لمدة يومين إلى %2$s بما في ذلك الأماكن التي يمكن زيارتها والأشياء التي يمكن القيام بها والمطاعم التي تستحق التجربة.</item>
+        <item quantity="few">اقترح خط رحلة لمدة %1$d أيام إلى %2$s بما في ذلك الأماكن التي يمكن زيارتها والأشياء التي يمكن القيام بها والمطاعم التي تستحق التجربة.</item>
+        <item quantity="many">اقترح خط رحلة لمدة %1$d يوماً إلى %2$s بما في ذلك الأماكن التي يمكن زيارتها والأشياء التي يمكن القيام بها والمطاعم التي تستحق التجربة.</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">تحقق من %1$sالتطبيقات الموصى بها%2$s هذه والتي قد تكون مفيدة أثناء رحلتك.</item>
+        <item quantity="one">تحقق من %1$sالتطبيق الموصى به%2$s هذا والذي قد يكون مفيداً أثناء رحلتك.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sقم بتنزيل حزمة اللغة هذه%2$s مسبقاً حتى تتمكن من استخدامها في ‏‫المترجم الفوري‬ عند وصولك إلى وجهتك.</item>
+        <item quantity="one">%1$sقم بتنزيل حزم اللغات هذه%2$s مسبقاً حتى تتمكن من استخدامها في ‏‫المترجم الفوري‬ عند وصولك إلى وجهتك.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">حزم اللغات المراد تنزيلها</item>
+        <item quantity="one">حزمة اللغة المراد تنزيلها</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d جهاز قيد التشغيل</item>
+        <item quantity="zero">%d جهاز قيد التشغيل</item>
+        <item quantity="one">جهاز واحد قيد التشغيل</item>
+        <item quantity="two">جهازان قيد التشغيل</item>
+        <item quantity="few">%d أجهزة قيد التشغيل</item>
+        <item quantity="many">%d جهازاً قيد التشغيل</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">تم آخر اتصال منذ %d يوم</item>
+        <item quantity="zero">تم آخر اتصال منذ %d يوم</item>
+        <item quantity="one">تم آخر اتصال منذ يوم واحد</item>
+        <item quantity="two">تم آخر اتصال منذ يومين</item>
+        <item quantity="few">تم آخر اتصال منذ %d أيام</item>
+        <item quantity="many">تم آخر اتصال منذ %d يوماً</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">تم آخر اتصال منذ %d يوم</item>
+        <item quantity="zero">تم آخر اتصال منذ %d يوم</item>
+        <item quantity="one">تم آخر اتصال منذ يوم واحد</item>
+        <item quantity="two">تم آخر اتصال منذ يومين</item>
+        <item quantity="few">تم آخر اتصال منذ %d أيام</item>
+        <item quantity="many">تم آخر اتصال منذ %d يوماً</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">تم آخر اتصال منذ %d شهر</item>
+        <item quantity="zero">تم آخر اتصال منذ %d شهر</item>
+        <item quantity="one">تم آخر اتصال منذ شهر واحد</item>
+        <item quantity="two">تم آخر اتصال منذ شهرين</item>
+        <item quantity="few">تم آخر اتصال منذ %d أشهر</item>
+        <item quantity="many">تم آخر اتصال منذ %d شهراً</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">تم آخر اتصال منذ %d أسبوع</item>
+        <item quantity="zero">تم آخر اتصال منذ %d أسبوع</item>
+        <item quantity="one">تم آخر اتصال منذ أسبوع واحد</item>
+        <item quantity="two">تم آخر اتصال منذ أسبوعين</item>
+        <item quantity="few">تم آخر اتصال منذ %d أسابيع</item>
+        <item quantity="many">تم آخر اتصال منذ %d أسبوعاً</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d جهة اتصال إضافية</item>
+        <item quantity="zero">%d جهة اتصال إضافية</item>
+        <item quantity="one">جهة اتصال واحدة إضافية</item>
+        <item quantity="two">جهتا اتصال إضافيتان</item>
+        <item quantity="few">%d جهات اتصال إضافية</item>
+        <item quantity="many">%d جهة اتصال إضافية</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">لديك قسيمة في Samsung Wallet تنتهي صلاحيتها خلال %d يوم. تأكد من استخدامها قبل انتهاء صلاحيتها.</item>
+        <item quantity="zero">لديك قسيمة في Samsung Wallet تنتهي صلاحيتها خلال %d يوم. تأكد من استخدامها قبل انتهاء صلاحيتها.</item>
+        <item quantity="one">لديك قسيمة في Samsung Wallet تنتهي صلاحيتها خلال يوم واحد. تأكد من استخدامها قبل انتهاء صلاحيتها.</item>
+        <item quantity="two">لديك قسيمة في Samsung Wallet تنتهي صلاحيتها خلال يومين. تأكد من استخدامها قبل انتهاء صلاحيتها.</item>
+        <item quantity="few">لديك قسيمة في Samsung Wallet تنتهي صلاحيتها خلال %d أيام. تأكد من استخدامها قبل انتهاء صلاحيتها.</item>
+        <item quantity="many">لديك قسيمة في Samsung Wallet تنتهي صلاحيتها خلال %d يوماً. تأكد من استخدامها قبل انتهاء صلاحيتها.</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">العليا ناقص %d درجة</item>
+        <item quantity="zero">العليا ناقص %d درجة</item>
+        <item quantity="one">العليا ناقص درجة واحدة</item>
+        <item quantity="two">العليا ناقص درجتين</item>
+        <item quantity="few">العليا ناقص %d درجات</item>
+        <item quantity="many">العليا ناقص %d درجةً</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">الدنيا ناقص %d درجة</item>
+        <item quantity="zero">الدنيا ناقص %d درجة</item>
+        <item quantity="one">الدنيا ناقص درجة واحدة</item>
+        <item quantity="two">الدنيا ناقص درجتان</item>
+        <item quantity="few">الدنيا ناقص %d درجات</item>
+        <item quantity="many">الدنيا ناقص %d درجةً</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">لديك حدث في التقويم الخاص بك باسم %1$s. سيكون %2$d درجة %3$s في %4$s في %5$s.</item>
+        <item quantity="zero">لديك حدث في التقويم الخاص بك باسم %1$s. سيكون %2$d درجة %3$s في %4$s في %5$s.</item>
+        <item quantity="one">لديك حدث في التقويم الخاص بك باسم %1$s. سيكون درجة واحدة %3$s في %4$s في %5$s.</item>
+        <item quantity="two">لديك حدث في التقويم الخاص بك باسم %1$s. سيكون درجتين %3$s في %4$s في %5$s.</item>
+        <item quantity="few">لديك حدث في التقويم الخاص بك باسم %1$s. سيكون %2$d درجات %3$s في %4$s في %5$s.</item>
+        <item quantity="many">لديك حدث في التقويم الخاص بك باسم %1$s. سيكون %2$d درجةً %3$s في %4$s في %5$s.</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">العليا %d درجة</item>
+        <item quantity="zero">العليا %d درجة</item>
+        <item quantity="one">العليا درجة واحدة</item>
+        <item quantity="two">العليا درجتان</item>
+        <item quantity="few">العليا %d درجات</item>
+        <item quantity="many">العليا %d درجةً</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">الدنيا %d درجة</item>
+        <item quantity="zero">الدنيا %d درجة</item>
+        <item quantity="one">الدنيا درجة واحدة</item>
+        <item quantity="two">الدنيا درجتان</item>
+        <item quantity="few">الدنيا %d درجات</item>
+        <item quantity="many">الدنيا %d درجةً</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s مشاهدة</item>
+        <item quantity="one">%s مشاهدة</item>
+    </plurals>
+</resources>

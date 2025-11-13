@@ -1,0 +1,3 @@
+org.apache.lucene.codecs.lucene90.Lucene90DocValuesFormat
+org.apache.lucene.backward_codecs.lucene70.Lucene70DocValuesFormat
+org.apache.lucene.backward_codecs.lucene80.Lucene80DocValuesFormat

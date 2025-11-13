@@ -1,0 +1,86 @@
+{
+  "languages": {
+    "la_ko_address": {
+      "input_language": "la",
+      "output_language": "ko",
+      "category": "address",
+      "tokenize_pattern": "[\\,]",
+      "allowed_special_chars": [
+        " ",
+        "-",
+        "`",
+        "'",
+        ".",
+        "&"
+      ],
+      "postfix_stop_words": [
+        " qu",
+        " shi",
+        " sheng",
+        "-to",
+        "-do",
+        "-si",
+        "-ku"
+      ],
+      "support_phonetic": true,
+      "extra_none_whitespace_term": true
+    },
+    "la_ko_app": {
+      "input_language": "la",
+      "output_language": "ko",
+      "category": "app",
+      "tokenize_pattern": "[\\p{Space}[[^'&]&&\\p{Punct}]]",
+      "allowed_special_chars": [
+        "&",
+        "'"
+      ],
+      "keep_and_split_invalid_token": true,
+      "support_phonetic": true,
+      "extra_merged_term": true
+    },
+    "la_ko_person": {
+      "input_language": "la",
+      "output_language": "ko",
+      "category": "person",
+      "tokenize_pattern": "[\\p{Space}[[^'&]&&\\p{Punct}]]",
+      "allowed_special_chars": [
+        "&",
+        "'"
+      ],
+      "keep_and_split_invalid_token": true,
+      "support_phonetic": true,
+      "extra_merged_term": true
+    },
+    "la_ko_common": {
+      "input_language": "la",
+      "output_language": "ko",
+      "category": "common",
+      "tokenize_pattern": "[\\p{Space}]",
+      "support_phonetic": true
+    },
+    "la_hi_app": {
+      "input_language": "la",
+      "output_language": "hi",
+      "category": "app",
+      "tokenize_pattern": "[\\,]",
+      "allowed_special_chars": [
+        " ",
+        "-",
+        "'",
+        "."
+      ]
+    },
+    "la_pt_app": {
+      "input_language": "la",
+      "output_language": "pt",
+      "category": "app",
+      "tokenize_pattern": "[\\,]",
+      "allowed_special_chars": [
+        " ",
+        "-",
+        "'",
+        "."
+      ]
+    }
+  }
+}

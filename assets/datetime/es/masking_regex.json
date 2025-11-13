@@ -1,0 +1,334 @@
+{
+  "masks": [
+    {
+      "id": 1,
+      "mask": "<day_of_week>",
+      "keywords": [
+        "domingo",
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "dom",
+        "lun",
+        "mar",
+        "mié",
+        "jue",
+        "vie",
+        "sáb"
+      ]
+    },
+    {
+      "id": 2,
+      "mask": "<month>",
+      "keywords": [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre",
+        "ene",
+        "feb",
+        "mar",
+        "abr",
+        "may",
+        "jun",
+        "jul",
+        "ago",
+        "sep",
+        "oct",
+        "nov",
+        "dic"
+      ]
+    },
+    {
+      "id": 4,
+      "mask": "<special_day>",
+      "keywords": [
+        "Año Nuevo",
+        "San Valentín",
+        "Pascua",
+        "Trabajo",
+        "Madre",
+        "Padre",
+        "Independencia",
+        "Halloween",
+        "Nochebuena",
+        "Navidad",
+        "Nochevieja",
+        "Acción de Gracias",
+        "Mujeres",
+        "Niños",
+        "Todos los Santos",
+        "Trabajo",
+        "San Patricio",
+        "Recuerdo",
+        "Madre",
+        "Padre",
+        "San Juan",
+        "Muertos",
+        "Nacional"
+      ]
+    },
+    {
+      "id": 5,
+      "mask": "<time_format>",
+      "keywords": [
+        "a[.]?[\\s]*m[.]?",
+        "p[.]?[\\s]*m[.]?"
+      ]
+    },
+    {
+      "id": 6,
+      "mask": "<relative_time_format>",
+      "keywords": [
+        "(?:tarde|temprano\\s*)?(?:de|en|por) la noche",
+        "(?:tarde|temprano\\s*)?(?:de|en|por) la mañana",
+        "(?:tarde|temprano\\s*)?(?:de|en|por) la tarde",
+        "anochecer",
+        "noche",
+        "tarde",
+        "(?:las?)\\s*mañana",
+        "(?:las?)\\s*tarde",
+        "(?:las?)\\s*noche",
+        "atardecer",
+        "crepúsculo",
+        "amanecer"
+      ]
+    },
+    {
+      "id": 7,
+      "mask": "<time_h>",
+      "keywords": [
+        "hora[s]?",
+        "hrs",
+        "en punto"
+      ]
+    },
+    {
+      "id": 8,
+      "mask": "<time_m>",
+      "keywords": [
+        "minuto[s]?",
+        "min"
+      ]
+    },
+    {
+      "id": 9,
+      "mask": "<time_s>",
+      "keywords": [
+        "segundo[s]?"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time_relative>",
+      "keywords": [
+        "(?:un[a]?\\s*)?media\\s*hora",
+        "un\\s*minuto"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time>",
+      "keywords": [
+        "medianoche",
+        "mediodía",
+        "es la una"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<num_word>",
+      "keywords": [
+        "un[oa]?",
+        "(?:un[ao]?|dos|tres|1|2|3 )?cuarto[s]?",
+        "dos",
+        "tres",
+        "cuatro",
+        "cinco",
+        "seis",
+        "siete",
+        "ocho",
+        "nueve",
+        "diez",
+        "once",
+        "doce",
+        "trece",
+        "catorce",
+        "quince",
+        "dieciséis",
+        "diecisiete",
+        "dieciocho",
+        "diecinueve",
+        "veinte",
+        "veintiuno", "veintiuna",
+        "veintidós",
+        "veintitrés",
+        "veinticuatro",
+        "veinticinco",
+        "veintiséis",
+        "veintisiete",
+        "veintiocho",
+        "veintinueve",
+        "treinta",
+        "cuarenta",
+        "cincuenta",
+        "sesenta",
+        "setenta",
+        "ochenta",
+        "noventa",
+        "cien", "ciento",
+        "doscientos",
+        "trescientos",
+        "cuatrocientos",
+        "quinientos",
+        "seiscientos",
+        "setecientos",
+        "ochocientos",
+        "novecientos",
+        "mil",
+        "primer",
+        "primero",
+        "segundo",
+        "tercer",
+        "tercero",
+        "quinto",
+        "duodécimo",
+        "cien",
+        "mil",
+        "medi[oa][s]?",
+        "mitad",
+        "media",
+        "cuarto"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<cyclic_keyword>",
+      "keywords": [
+        "cada",
+        "anualmente",
+        "mensualmente",
+        "semanalmente",
+        "diariamente",
+        "por hara",
+        "cada hara"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<temporal_adjective>",
+      "keywords": [
+      ]
+    },
+    {
+      "id": 12,
+      "mask": "<time_period>",
+      "keywords": [
+        "d[íi]as?",
+        "semanas?",
+        "mese?s?",
+        "años?",
+        "trimestres?",
+        "quincenas?",
+        "décadas?",
+        "siglos?",
+        "d[íi]as laborables?",
+        "fin(es)? de semana"
+      ]
+    },
+    {
+      "id": 13,
+      "mask": "<relative_day>",
+      "keywords": [
+        "hoy",
+        "mañana",
+        "pasado mañana",
+        "ayer",
+        "ant(?:ier|eayer)"
+      ]
+    },
+    {
+      "id": 15,
+      "mask": "<num_suffix>",
+      "keywords": [
+        "\\d{1,4}(?:º|\\.[oa]|d[oa]|er|t[oa]|m[oa]|n[oa]|r[ao]|ª)"
+      ]
+    },
+    {
+      "id": 16,
+      "mask": "<num>",
+      "keywords": [
+        "\\d{1,4}"
+      ]
+    },
+    {
+      "id": 17,
+      "mask": "<after_reference>",
+      "keywords": [
+        "después(?:\\s*de)?",
+        "tras(?:\\s*el)?",
+        "posterior[a]?(?:\\s*a)?",
+        "dentro(?:\\s*de)?",
+        "más tarde",
+        "siguien(?:te|do)",
+        "viniendo",
+        "que viene",
+        "pronto",
+        "próxim[oa]",
+        "en",
+        "(?:a\\s*)?partir de ahora",
+        "(?:a\\s*)?partir de"
+      ]
+    },
+    {
+      "id" : 18,
+      "mask" : "<before_reference>",
+      "keywords" : [
+        "menos",
+        "(?:más\\s*)?temprano",
+        "hace",
+        "pasado",
+        "antes(?:\\s*de|que)?",
+        "anterior(?:\\s*a)",
+        "previ[oa](?:\\s*a)?"
+      ]
+    },
+    {
+      "id": 18,
+      "mask": "<before_reference_MtoH>",
+      "keywords": [
+        "para"
+      ]
+    },
+    {
+      "id" : 19,
+      "mask" : "<current_reference>",
+      "keywords" : [
+        "est[ea]",
+        "actual",
+        "presente"
+      ]
+    },
+    {
+      "id" : 20,
+      "mask" : "<last_reference>",
+      "keywords" : [
+        "últim[oa]",
+        "pasad[oa]",
+        "fin(?:al)?",
+        "anterior"
+      ]
+    }
+  ]
+}

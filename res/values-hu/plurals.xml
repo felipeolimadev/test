@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d nap van hátra.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nap van hátra.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%2$d nap múlva lesz a következő: %1$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$d nap múlva lesz a következő: %1$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d esemény%3$s folytatódik holnap.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d esemény%3$s folytatódik holnap.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Ma %1$s%2$d eseménye%3$s lesz.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ma %1$s%2$d eseménye%3$s lesz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Mára %1$d eseménye van. Az első: %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mára %1$d eseménye van. Az első: %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d esemény maradt%3$s mára.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d esemény maradt%3$s mára.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Holnap %1$s %2$deseménye%3$s lesz.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Holnap %1$s %2$deseménye%3$s lesz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Holnapra %1$d eseménye van. Az első: %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Holnapra %1$d eseménye van. Az első: %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d esemény</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d esemény</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d perc múlva kezdődik</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perc múlva kezdődik</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d emlékeztető maradt mára</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d emlékeztető maradt mára</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Ma %d kézbesítéssel kapcsolatos üzenetet kapott. Ellenőrizze, hogy naprakész a kézbesítések állapotát illetően.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ma %d kézbesítéssel kapcsolatos üzenetet kapott. Ellenőrizze, hogy naprakész a kézbesítés állapotát illetően.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d kiszállítás ma</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kiszállítás ma</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">E héten %d esetben a cél felett.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">E héten %d esetben a cél felett.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d mozgáscél teljesítve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mozgáscél teljesítve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">A teljes szintkülönbség %1$s volt, és %2$,d kilokalóriát égetett el.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A teljes szintkülönbség %1$s volt, és %2$,d kilokalóriát égetett el.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Az átlagos tempója %1$s volt, és %2$,d kilokalóriát égetett el.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Az átlagos tempója %1$s volt, és %2$,d kilokalóriát égetett el.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Az átlagos sebessége %1$s volt, és %2$,d kilokalóriát égetett el.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Az átlagos sebessége %1$s volt, és %2$,d kilokalóriát égetett el.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Íme %1$s edzésének összefoglalója. Az időtartama %2$s volt, melynek során %3$,d kilokalóriát égetett el.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Íme %1$s edzésének összefoglalója. Az időtartama %2$s volt, melynek során %3$,d kilokalóriát égetett el.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Ma nem vett be %d ütemezett gyógyszert.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ma nem vett be %d ütemezett gyógyszert.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d óra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d óra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d óra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d óra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d perc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d perc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Ma %1$s%2$d nem fogadott hívása%3$s volt, melyet nem tekintett meg.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ma %1$s%2$d nem fogadott hívása%3$s volt, melyet nem tekintett meg.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Ma %d nem fogadott hívása volt. Tekintse meg ezeket a nem fogadott hívásokat a Now briefben. Ha szükséges emlékeztetőket is beállíthat, hogy ne felejtse el visszahívni őket.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ma %d nem fogadott hívása volt. Tekintse meg ezt a nem fogadott hívást a Now briefben. Ha szükséges emlékeztetőt is beállíthat, hogy ne felejtse el visszahívni.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d további nem fogadott hívás</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d további nem fogadott hívás</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d nem f. hívás</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nem f. hívás</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d új értesítés</item>
+        <item quantity="one">%d új értesítés</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d órája</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d órája</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d perce</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perce</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Legalább %d évesnek kell lennie a Galaxy AI fejlett intelligenciát alkalmazó funkcióinak használatához.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legalább %d évesnek kell lennie a Galaxy AI fejlett intelligenciát alkalmazó funkcióinak használatához.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d üzenet</item>
+        <item quantity="one">%d üzenet</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mérföld</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mérföld</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d másodperc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d másodperc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Beállított %1$s%2$d ébresztőt%3$s reggelre.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Beállított %1$s%2$d ébresztőt%3$s reggelre.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Beállított %1$s%2$d ébresztőt%3$s holnap reggelre.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Beállított %1$s%2$d ébresztőt%3$s holnap reggelre.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sInduljon el %2$s%3$s előtt, hogy az indulás előtt legalább %4$d órával a repülőtérre érjen. Állítson be jelzést, hogy ne felejtse el.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sInduljon el %2$s%3$s előtt, hogy az indulás előtt legalább %4$d órával a repülőtérre érjen. Állítson be jelzést, hogy ne felejtse el.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sInduljon el %2$s%3$s előtt, hogy a járat előtt legalább %4$d órával a repülőtérre érjen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sInduljon el %2$s%3$s előtt, hogy a járat előtt legalább %4$d órával a repülőtérre érjen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Javasolj egy %1$d napos útitervet %2$s felfedezéséhez, amely tartalmazza a meglátogatandó helyeket, a programlehetőségeket és az éttermeket, amelyeket érdemes kipróbálni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Javasolj egy %1$d napos útitervet %2$s felfedezéséhez, amely tartalmazza a meglátogatandó helyeket, a programlehetőségeket és az éttermeket, amelyeket érdemes kipróbálni.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Nézze meg ezeket az %1$sajánlott alkalmazásokat%2$s, amelyek hasznos lehetnek az utazása során.</item>
+        <item quantity="one">Nézze meg ezt az %1$sajánlott alkalmazást%2$s, amely hasznos lehet az utazása során.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sTöltse le ezt a nyelvi csomagot%2$s előre, hogy készen álljon a Tolmácsban való használatra, amikor megérkezik az úti céljára.</item>
+        <item quantity="one">%1$sTöltse le ezeket a nyelvi csomagot%2$s előre, hogy készen álljanak a Tolmácsban való használatra, amikor megérkezik az úti céljára.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Letölthető nyelvi csomagok</item>
+        <item quantity="one">Letölthető nyelvi csomag</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d eszköz bekapcsolva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d eszköz bekapcsolva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Legutóbb %d napja lépett kapcsolatba vele</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legutóbb %d napja lépett kapcsolatba vele</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Legutóbbi kapcs.felvétel: %d napja</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legutóbbi kapcs.felvétel: %d napja</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Legutóbbi kapcs.felv.: %d hónapja</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legutóbbi kapcs.felv.: %d hónapja</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Legutóbbi kapcs.felvétel: %d hete</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legutóbbi kapcs.felvétel: %d hete</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d további névjegy</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d további névjegy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Van egy olyan kuponja a Samsung Walletben, amely %d nap múlva lejár. Ne felejtse el felhasználni, mielőtt lejár.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Van egy olyan kuponja a Samsung Walletben, amely %d nap múlva lejár. Ne felejtse el felhasználni, mielőtt lejár.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Magas mínusz %d fok</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magas mínusz %d fok</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Alacsony mínusz %d fok</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alacsony mínusz %d fok</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">A naptárában szerepel egy %1$s nevű esemény. %2$d %3$s-fok lesz %4$s-kor itt: %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A naptárában szerepel egy %1$s nevű esemény. %2$d %3$s-fok lesz %4$s-kor itt: %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Magas %d fok</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Magas %d fok</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Alacsony %d fok</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alacsony %d fok</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s megtekintés</item>
+        <item quantity="one">%s megtekintés</item>
+    </plurals>
+</resources>

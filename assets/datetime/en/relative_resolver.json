@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "type": "RELATIVE_TIME_PERIOD",
+      "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>|<after_range>|<before_range>)\\s*(<num>|<num_suffix>)?\\s*(<time_period>)\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>)?\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>)?\\s*(?:\\s|$|\\.|,)",
+      "mapping" : [
+          {
+            "periodAndDurationGroupings" : [
+              {
+                "timeDurationGroup": 2,
+                "timePeriodGroup": 3
+              },
+              {
+                "timeDurationGroup": 4,
+                "timePeriodGroup": 5
+              },
+              {
+                "timeDurationGroup": 6,
+                "timePeriodGroup": 7
+              }
+            ]
+        }
+      ],
+      "comment" : "after 2 days"
+    },
+    {
+      "id" : 2,
+      "type" : "NUM_TIME_AFTER_REFERENCE",
+      "comment": "2 days after. 2 days from",
+      "patternString" : "(?:\\s|^|\\.|,)\\s*(<num>|<num_suffix>)?\\s*(?:a)?\\s*(<time_period>)\\s*(<num>|<num_suffix>)?\\s*(?:a)?\\s*(<time_period>)?\\s*(<num>|<num_suffix>)?\\s*(?:a)?\\s*(<time_period>)?\\s*(<after_reference>|<before_reference>|<starts_from>)(?:\\s|$|\\.|,)",
+      "mapping" : [
+        {
+          "periodAndDurationGroupings" : [
+            {
+              "timeDurationGroup": 1,
+              "timePeriodGroup": 2
+            },
+            {
+              "timeDurationGroup": 3,
+              "timePeriodGroup": 4
+            },
+            {
+              "timeDurationGroup": 5,
+              "timePeriodGroup": 6
+            }
+          ]
+        }
+      ]
+    },
+  {
+    "id" : 3,
+    "type" : "RELATIVE_REFERENCE_DAY_OF_WEEK",
+    "comment" : "next monday, previous friday",
+    "patternString" : "(?:\\s|^|\\.|,)\\s*(<last_reference>|<current_reference>|<after_range>|<before_range>)\\s*(<day_of_week>)"
+  },
+  {
+    "id": 4,
+    "type": "RELATIVE_SPECIAL_DAY",
+    "comment": "next republic day",
+    "patternString": "(?:\\s|^|\\.|,)\\s*(<last_reference>|<current_reference>|<after_range>|<before_range>)\\s*(<special_day>)",
+    "isSpecialDay": true
+  }
+]

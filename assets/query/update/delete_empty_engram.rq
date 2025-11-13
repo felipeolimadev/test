@@ -1,0 +1,17 @@
+DELETE {
+    ?s ?p ?o .
+    ?ss ?sp ?s .
+    ?so ?sop ?soo .
+} WHERE {
+    ?s rdf:type/rdfs:subClassOf user:SpecialEngram .
+    FILTER NOT EXISTS { ?s user:event ?something EXPLICIT true. }
+    FILTER NOT EXISTS { ?s user:specialEvent ?something EXPLICIT true. }
+    {
+        ?s ?p ?o .
+    } UNION {
+        ?ss ?sp ?s .
+    } UNION {
+        ?s time:hasBeginning|time:hasEnd ?so .
+        ?so ?sop ?soo .
+    }
+}

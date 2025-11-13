@@ -1,0 +1,10 @@
+{
+  "name": "RSet",
+  "type": "datatype",
+  "id": "datatype.primitive.RSet",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

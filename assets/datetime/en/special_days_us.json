@@ -1,0 +1,30 @@
+{
+  "new years day": {
+    "day": 1,
+    "month": 1
+  },
+  "valentine's day": {
+    "day": 14,
+    "month": 2
+  },
+  "st. patrick's day": {
+    "day": 17,
+    "month": 3
+  },
+  "independence day": {
+    "day": 4,
+    "month": 7
+  },
+  "halloween": {
+    "day": 31,
+    "month": 10
+  },
+  "veterans day": {
+    "day": 11,
+    "month": 11
+  },
+  "christmas": {
+    "day": 25,
+    "month": 12
+  }
+}

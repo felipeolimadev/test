@@ -1,0 +1,25 @@
+{
+  "name": "RRawBytes",
+  "type": "datatype",
+  "id": "datatype.composite.RRawBytes",
+  "version": "",
+  "description": "",
+  "schema": {
+    "properties": {
+      "identifier": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "bytes": {
+        "dataType": "datatype.primitive.RBytes",
+        "description": ""
+      },
+      "displayName": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      }
+    },
+    "required": [],
+    "type": "object"
+  }
+}

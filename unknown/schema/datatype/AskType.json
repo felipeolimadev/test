@@ -1,0 +1,30 @@
+{
+  "name": "AskType",
+  "type": "datatype",
+  "id": "datatype.enumeration.AskType",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "RecoveryAction",
+      "CancelAction",
+      "ConfirmAction"
+    ],
+    "descriptions": [
+      {
+        "value": "RecoveryAction",
+        "description": ""
+      },
+      {
+        "value": "CancelAction",
+        "description": ""
+      },
+      {
+        "value": "ConfirmAction",
+        "description": ""
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

@@ -1,0 +1,12 @@
+DELETE {
+    ?s ?p ?o .
+    ?ss ?sp ?s .
+} WHERE {
+    VALUES (?signature) {<Signatures>}
+    ?s design:identifier ?signature .
+    {
+        ?s ?p ?o .
+    } UNION {
+        ?ss ?sp ?s .
+    }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "type": "YEAR_WITH_YEAR_KEYWORD_AS_SUFFIX_OR_PREFIX",
+    "patternString": "(?:\\s|^|\\.|,)(<time_period>)?\\s*(<num>)\\s*(<time_period>)?(?:\\s|$|\\.|,)",
+    "comment": "anno 2020",
+    "mapping": [
+      {
+        "year": 2,
+        "timePeriod" : 1
+      },
+      {
+        "year" : 2,
+        "timePeriod" : 3
+      }
+    ],
+    "shouldContainKeyword" : "anno"
+  },
+  {
+    "id": 2,
+    "type": "YEAR_WITH_SUPPORTING_KEYWORDS",
+    "patternString": "(?:\\s|^|\\.|,)<<ref_rel_connector>>\\s*(<num>|<num_suffix>)(?:\\s|$|\\.|,)",
+    "mapping": [
+      {
+        "year": 1
+      }
+    ]
+  }
+]

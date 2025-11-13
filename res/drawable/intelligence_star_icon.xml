@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$intelligence_star_icon__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s9" android:animation="@drawable/$intelligence_star_icon__10" />
+    <target android:name="s9pg1p10" android:animation="@drawable/$intelligence_star_icon__15" />
+    <target android:name="s8" android:animation="@drawable/$intelligence_star_icon__17" />
+    <target android:name="s8pg1p10" android:animation="@drawable/$intelligence_star_icon__22" />
+    <target android:name="s7" android:animation="@drawable/$intelligence_star_icon__24" />
+    <target android:name="s7pg1p10" android:animation="@drawable/$intelligence_star_icon__35" />
+    <target android:name="s6" android:animation="@drawable/$intelligence_star_icon__37" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$intelligence_star_icon__48" />
+    <target android:name="s5" android:animation="@drawable/$intelligence_star_icon__50" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$intelligence_star_icon__55" />
+    <target android:name="s4" android:animation="@drawable/$intelligence_star_icon__56" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$intelligence_star_icon__63" />
+    <target android:name="s3" android:animation="@drawable/$intelligence_star_icon__64" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$intelligence_star_icon__71" />
+    <target android:name="s2" android:animation="@drawable/$intelligence_star_icon__72" />
+    <target android:name="s2pg1p10" android:animation="@drawable/$intelligence_star_icon__83" />
+    <target android:name="s1" android:animation="@drawable/$intelligence_star_icon__84" />
+    <target android:name="s1pg1p10" android:animation="@drawable/$intelligence_star_icon__89" />
+</animated-vector>

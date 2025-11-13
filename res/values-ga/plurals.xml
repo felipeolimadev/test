@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d lá fágtha.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d lá fágtha.</item>
+        <item quantity="two">%d lá fágtha.</item>
+        <item quantity="few">%d lá fágtha.</item>
+        <item quantity="many">%d lá fágtha.</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">Tá %1$s ag teacht aníos i gceann %2$d lá.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %1$s ag teacht aníos i gceann %2$d lae.</item>
+        <item quantity="two">Tá %1$s ag teacht aníos i gceann %2$d lá.</item>
+        <item quantity="few">Tá %1$s ag teacht aníos i gceann %2$d lá.</item>
+        <item quantity="many">Tá %1$s ag teacht aníos i gceann %2$d lá.</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">Leanfar le %1$s%2$d imeacht%3$s amárach.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Leanfar le %1$s%2$d imeacht%3$s amárach.</item>
+        <item quantity="two">Leanfar le %1$s%2$d imeacht%3$s amárach.</item>
+        <item quantity="few">Leanfar le %1$s%2$d imeacht%3$s amárach.</item>
+        <item quantity="many">Leanfar le %1$s%2$d n-imeacht%3$s amárach.</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Beidh %1$s%2$d imeacht%3$s agat inniu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Beidh %1$s%2$d imeacht%3$s agat inniu.</item>
+        <item quantity="two">Beidh %1$s%2$d imeacht%3$s agat inniu.</item>
+        <item quantity="few">Beidh %1$s%2$d imeacht%3$s agat inniu.</item>
+        <item quantity="many">Beidh %1$s%2$d n-imeacht%3$s agat inniu.</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Tá %1$d imeacht agat inniu. An chéad imeacht: %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %1$d imeacht agat inniu. An chéad imeacht: %2$s.</item>
+        <item quantity="two">Tá %1$d imeacht agat inniu. An chéad imeacht: %2$s.</item>
+        <item quantity="few">Tá %1$d imeacht agat inniu. An chéad imeacht: %2$s.</item>
+        <item quantity="many">Tá %1$d n-imeacht agat inniu. An chéad imeacht: %2$s.</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d imeacht fágtha%3$s don lá inniu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d imeacht fágtha%3$s don lá inniu.</item>
+        <item quantity="two">%1$s%2$d imeacht fágtha%3$s don lá inniu.</item>
+        <item quantity="few">%1$s%2$d imeacht fágtha%3$s don lá inniu.</item>
+        <item quantity="many">%1$s%2$d n-imeacht fágtha%3$s don lá inniu.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Beidh %1$s%2$d imeacht%3$s agat amárach.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Beidh %1$s%2$d imeacht%3$s agat amárach.</item>
+        <item quantity="two">Beidh %1$s%2$d imeacht%3$s agat amárach.</item>
+        <item quantity="few">Beidh %1$s%2$d imeacht%3$s agat amárach.</item>
+        <item quantity="many">Beidh %1$s%2$d n-imeacht%3$s agat amárach.</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Tá %1$d imeacht agat amárach. An chéad imeacht: %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %1$d imeacht agat amárach. An chéad imeacht: %2$s.</item>
+        <item quantity="two">Tá %1$d imeacht agat amárach. An chéad imeacht: %2$s.</item>
+        <item quantity="few">Tá %1$d imeacht agat amárach. An chéad imeacht: %2$s.</item>
+        <item quantity="many">Tá %1$d n-imeacht agat amárach. An chéad imeacht: %2$s.</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d imeacht</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d imeacht</item>
+        <item quantity="two">%d imeacht</item>
+        <item quantity="few">%d imeacht</item>
+        <item quantity="many">%d n-imeacht</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Le tosú: %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Le tosú: %d nóiméad</item>
+        <item quantity="two">Le tosú: %d nóiméad</item>
+        <item quantity="few">Le tosú: %d nóiméad</item>
+        <item quantity="many">Le tosú: %d nóiméad</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d meabhrúchán fágtha inniu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mheabhrúchán fágtha inniu</item>
+        <item quantity="two">%d mheabhrúchán fágtha inniu</item>
+        <item quantity="few">%d mheabhrúchán fágtha inniu</item>
+        <item quantity="many">%d meabhrúchán fágtha inniu</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Fuair tú %d teachtaireacht faoi sheachadadh inniu. Seiceáil lena chinntiú go bhfuil tú suas chun dáta faoi stádas do sheachadtaí.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fuair tú %d teachtaireacht faoi sheachadadh inniu. Seiceáil lena chinntiú go bhfuil tú suas chun dáta faoi stádas do sheachadta.</item>
+        <item quantity="two">Fuair tú %d theachtaireacht faoi sheachadadh inniu. Seiceáil lena chinntiú go bhfuil tú suas chun dáta faoi stádas do sheachadtaí.</item>
+        <item quantity="few">Fuair tú %d theachtaireacht faoi sheachadadh inniu. Seiceáil lena chinntiú go bhfuil tú suas chun dáta faoi stádas do sheachadtaí.</item>
+        <item quantity="many">Fuair tú %d dteachtaireacht faoi sheachadadh inniu. Seiceáil lena chinntiú go bhfuil tú suas chun dáta faoi stádas do sheachadtaí.</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d seachadadh inniu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seachadadh inniu</item>
+        <item quantity="two">%d sheachadadh inniu</item>
+        <item quantity="few">%d sheachadadh inniu</item>
+        <item quantity="many">%d seachadadh inniu</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Os c. sprice %d uair le seacht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Os c. sprice %d uair le seachtain.</item>
+        <item quantity="two">Os c. sprice %d uair le seachtain.</item>
+        <item quantity="few">Os c. sprice %d huaire le seacht.</item>
+        <item quantity="many">Os c. sprice %d n-uaire le seacht.</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d sprioc gníomh. déanta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sprioc gníomh. déanta</item>
+        <item quantity="two">%d sprioc gníomh. déanta</item>
+        <item quantity="few">%d sprioc gníomh. déanta</item>
+        <item quantity="many">%d sprioc gníomh. déanta</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">"Ba é %1$s d'ingearchló carnach san iomlán agus d'ídigh tú %2$,d cileacalra."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Ba é %1$s d'ingearchló carnach san iomlán agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="two">"Ba é %1$s d'ingearchló carnach san iomlán agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="few">"Ba é %1$s d'ingearchló carnach san iomlán agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="many">"Ba é %1$s d'ingearchló carnach san iomlán agus d'ídigh tú %2$,d gcileacalra."</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">"Ba é %1$s do mheánráta luais agus d'ídigh tú %2$,d cileacalra."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Ba é %1$s do mheánráta luais agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="two">"Ba é %1$s do mheánráta luais agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="few">"Ba é %1$s do mheánráta luais agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="many">"Ba é %1$s do mheánráta luais agus d'ídigh tú %2$,d gcileacalra."</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">"Ba é %1$s do mheánluas agus d'ídigh tú %2$,d cileacalra."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Ba é %1$s do mheánluas agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="two">"Ba é %1$s do mheánluas agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="few">"Ba é %1$s do mheánluas agus d'ídigh tú %2$,d chileacalra."</item>
+        <item quantity="many">"Ba é %1$s do mheánluas agus d'ídigh tú %2$,d gcileacalra."</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">"Seo achoimre ar do bhabhta traenála %1$s. Ba é %2$s an fad ama agus d'ídigh tú %3$,d cileacalra."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Seo achoimre ar do bhabhta traenála %1$s. Ba é %2$s an fad ama agus d'ídigh tú %3$,d chileacalra."</item>
+        <item quantity="two">"Seo achoimre ar do bhabhta traenála %1$s. Ba é %2$s an fad ama agus d'ídigh tú %3$,d chileacalra."</item>
+        <item quantity="few">"Seo achoimre ar do bhabhta traenála %1$s. Ba é %2$s an fad ama agus d'ídigh tú %3$,d chileacalra."</item>
+        <item quantity="many">"Seo achoimre ar do bhabhta traenála %1$s. Ba é %2$s an fad ama agus d'ídigh tú %3$,d gcileacalra."</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Chaill tú %d cógas sceidealaithe inniu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Chaill tú %d chógas sceidealaithe inniu.</item>
+        <item quantity="two">Chaill tú %d chógas sceidealaithe inniu.</item>
+        <item quantity="few">Chaill tú %d chógas sceidealaithe inniu.</item>
+        <item quantity="many">Chaill tú %d gcógas sceidealaithe inniu.</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d uair an chloig</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uair an chloig</item>
+        <item quantity="two">%d uair an chloig</item>
+        <item quantity="few">%d uair an chloig</item>
+        <item quantity="many">%d n-uair an chloig</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d uair an chloig</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d uair an chloig</item>
+        <item quantity="two">%d uair an chloig</item>
+        <item quantity="few">%d uair an chloig</item>
+        <item quantity="many">%d n-uair an chloig</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d nóim</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nóim</item>
+        <item quantity="two">%d nóim</item>
+        <item quantity="few">%d nóim</item>
+        <item quantity="many">%d nóim</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nóiméad</item>
+        <item quantity="two">%d nóiméad</item>
+        <item quantity="few">%d nóiméad</item>
+        <item quantity="many">%d nóiméad</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Tá %1$s%2$d glao caillte%3$s agat inniu nár sheiceáil tú go fóill.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %1$s%2$d ghlao caillte%3$s agat inniu nár sheiceáil tú go fóill.</item>
+        <item quantity="two">Tá %1$s%2$d ghlao chaillte%3$s agat inniu nár sheiceáil tú go fóill.</item>
+        <item quantity="few">Tá %1$s%2$d ghlao chaillte%3$s agat inniu nár sheiceáil tú go fóill.</item>
+        <item quantity="many">Tá %1$s%2$d nglao chaillte%3$s agat inniu nár sheiceáil tú go fóill.</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Chaill tú %d glao inniu. Athbhreithnigh na glaonna caillte sin i do Now brief. Más gá, is féidir leat meabhrúcháin a shocrú ionas nach ndearmadfaidh tú glao a chur ar ais.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Chaill tú %d ghlao inniu. Athbhreithnigh an glao caillte sin i do Now brief. Más gá, is féidir leat meabhrúchán a shocrú ionas nach ndearmadfaidh tú glao a chur ar ais.</item>
+        <item quantity="two">Chaill tú %d ghlao inniu. Athbhreithnigh na glaonna caillte sin i do Now brief. Más gá, is féidir leat meabhrúcháin a shocrú ionas nach ndearmadfaidh tú glao a chur ar ais.</item>
+        <item quantity="few">Chaill tú %d ghlao inniu. Athbhreithnigh na glaonna caillte sin i do Now brief. Más gá, is féidir leat meabhrúcháin a shocrú ionas nach ndearmadfaidh tú glao a chur ar ais.</item>
+        <item quantity="many">Chaill tú %d nglao inniu. Athbhreithnigh na glaonna caillte sin i do Now brief. Más gá, is féidir leat meabhrúcháin a shocrú ionas nach ndearmadfaidh tú glao a chur ar ais.</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d glao caillte eile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ghlao caillte eile</item>
+        <item quantity="two">%d ghlao chaillte eile</item>
+        <item quantity="few">%d ghlao chaillte eile</item>
+        <item quantity="many">%d nglao chaillte eile</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d glao caillte</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ghlao caillte</item>
+        <item quantity="two">%d ghlao chaillte</item>
+        <item quantity="few">%d ghlao chaillte</item>
+        <item quantity="many">%d nglao chaillte</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ur ó shin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ur ó shin</item>
+        <item quantity="two">%d ur ó shin</item>
+        <item quantity="few">%d ur ó shin</item>
+        <item quantity="many">%d ur ó shin</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d nóim ó shin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nóim ó shin</item>
+        <item quantity="two">%d nóim ó shin</item>
+        <item quantity="few">%d nóim ó shin</item>
+        <item quantity="many">%d nóim ó shin</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">"Ní foláir duit a bheith %d bliain d'aois ar a laghad le gnéithe ardintleachta Galaxy AI a úsáid."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Ní foláir duit a bheith %d bhliain d'aois ar a laghad le gnéithe ardintleachta Galaxy AI a úsáid."</item>
+        <item quantity="two">"Ní foláir duit a bheith %d bhliain d'aois ar a laghad le gnéithe ardintleachta Galaxy AI a úsáid."</item>
+        <item quantity="few">"Ní foláir duit a bheith %d bliana d'aois ar a laghad le gnéithe ardintleachta Galaxy AI a úsáid."</item>
+        <item quantity="many">"Ní foláir duit a bheith %d mbliana d'aois ar a laghad le gnéithe ardintleachta Galaxy AI a úsáid."</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d teachtaireacht</item>
+        <item quantity="one">%d teachtaireacht</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d míle</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mhíle</item>
+        <item quantity="two">%d mhíle</item>
+        <item quantity="few">%d mhíle</item>
+        <item quantity="many">%d míle</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d soicind</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d soicind</item>
+        <item quantity="two">%d shoicind</item>
+        <item quantity="few">%d shoicind</item>
+        <item quantity="many">%d soicind</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin.</item>
+        <item quantity="two">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin.</item>
+        <item quantity="few">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin.</item>
+        <item quantity="many">Tá %1$s%2$d n-aláram%3$s socraithe agat don mhaidin.</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin amárach.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin amárach.</item>
+        <item quantity="two">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin amárach.</item>
+        <item quantity="few">Tá %1$s%2$d aláram%3$s socraithe agat don mhaidin amárach.</item>
+        <item quantity="many">Tá %1$s%2$d n-aláram%3$s socraithe agat don mhaidin amárach.</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sImigh faoi %2$s%3$s le teacht ag an aerfort ar a laghad %4$d uair an chloig roimh imeacht. Socraigh aláram ionas nach ndéanfaidh tú dearmad air.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sImigh faoi %2$s%3$s le teacht ag an aerfort ar a laghad %4$d uair an chloig roimh imeacht. Socraigh aláram ionas nach ndéanfaidh tú dearmad air.</item>
+        <item quantity="two">%1$sImigh faoi %2$s%3$s le teacht ag an aerfort ar a laghad %4$d uair an chloig roimh imeacht. Socraigh aláram ionas nach ndéanfaidh tú dearmad air.</item>
+        <item quantity="few">%1$sImigh faoi %2$s%3$s le teacht ag an aerfort ar a laghad %4$d uair an chloig roimh imeacht. Socraigh aláram ionas nach ndéanfaidh tú dearmad air.</item>
+        <item quantity="many">%1$sImigh faoi %2$s%3$s le teacht ag an aerfort ar a laghad %4$d n-uair an chloig roimh imeacht. Socraigh aláram ionas nach ndéanfaidh tú dearmad air.</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">"%1$sImigh faoi %2$s%3$s leis an aerfort a shroicheadh ar a laghad %4$d uair an chloig roimh d'eitilt."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%1$sImigh faoi %2$s%3$s leis an aerfort a shroicheadh ar a laghad %4$d uair an chloig roimh d'eitilt."</item>
+        <item quantity="two">"%1$sImigh faoi %2$s%3$s leis an aerfort a shroicheadh ar a laghad %4$d uair an chloig roimh d'eitilt."</item>
+        <item quantity="few">"%1$sImigh faoi %2$s%3$s leis an aerfort a shroicheadh ar a laghad %4$d uair an chloig roimh d'eitilt."</item>
+        <item quantity="many">"%1$sImigh faoi %2$s%3$s leis an aerfort a shroicheadh ar a laghad %4$d n-uair an chloig roimh d'eitilt."</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Mol cúrsa taistil %1$d lá do %2$s, lena n-áirítear áiteanna le cuairt a thabhairt orthu, rudaí le déanamh, agus bialanna ar fiú iad a thriall.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mol cúrsa taistil %1$d lae do %2$s, lena n-áirítear áiteanna le cuairt a thabhairt orthu, rudaí le déanamh, agus bialanna ar fiú iad a thriall.</item>
+        <item quantity="two">Mol cúrsa taistil %1$d lá do %2$s, lena n-áirítear áiteanna le cuairt a thabhairt orthu, rudaí le déanamh, agus bialanna ar fiú iad a thriall.</item>
+        <item quantity="few">Mol cúrsa taistil %1$d lá do %2$s, lena n-áirítear áiteanna le cuairt a thabhairt orthu, rudaí le déanamh, agus bialanna ar fiú iad a thriall.</item>
+        <item quantity="many">Mol cúrsa taistil %1$d lá do %2$s, lena n-áirítear áiteanna le cuairt a thabhairt orthu, rudaí le déanamh, agus bialanna ar fiú iad a thriall.</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">"Seiceáil na %1$sfeidhmchláir mholta%2$s seo a d'fhéadfadh a bheith áisiúil le linn do thurais."</item>
+        <item quantity="one">"Seiceáil an %1$sfeidhmchlár molta%2$s seo a d'fhéadfadh a bheith áisiúil le linn do thurais."</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sÍoslódáil an pacáiste teanga seo%2$s roimh ré ionas go mbeidh tú réidh lena úsáid in Ateangaire ar bhaint amach do chinn scríbe duit.</item>
+        <item quantity="one">%1$sÍoslódáil na pacáistí teanga seo%2$s roimh ré ionas go mbeidh tú réidh lena n-úsáid in Ateangaire ar bhaint amach do chinn scríbe duit.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Pacáistí teanga le híoslódáil</item>
+        <item quantity="one">Pacáiste teanga le híoslódáil</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">Tá %d gléas air</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá %d ghléas air</item>
+        <item quantity="two">Tá %d ghléas air</item>
+        <item quantity="few">Tá %d ghléas air</item>
+        <item quantity="many">Tá %d ngléas air</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Teagmháil dheireanach %d lá ó shin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teagmháil dheireanach %d lá ó shin</item>
+        <item quantity="two">Teagmháil dheireanach %d lá ó shin</item>
+        <item quantity="few">Teagmháil dheireanach %d lá ó shin</item>
+        <item quantity="many">Teagmháil dheireanach %d lá ó shin</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">An teagmháil dheiridh %d lá ó shin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teagmháil dheiridh %d lá ó shin</item>
+        <item quantity="two">An teagmháil dheiridh %d lá ó shin</item>
+        <item quantity="few">An teagmháil dheiridh %d lá ó shin</item>
+        <item quantity="many">An teagmháil dheiridh %d lá ó shin</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">An teagmháil dheiridh %d mí ó shin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teagmháil dheiridh %d mhí ó shin</item>
+        <item quantity="two">An teagmháil dheiridh %d mhí ó shin</item>
+        <item quantity="few">An teagmháil dheiridh %d mhí ó shin</item>
+        <item quantity="many">An teagmháil dheiridh %d mí ó shin</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">An teagmháil dheiridh %d seachtain ó shin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teagmháil dheiridh %d seachtain ó shin</item>
+        <item quantity="two">An teagmháil dheiridh %d sheachtain ó shin</item>
+        <item quantity="few">An teagmháil dheiridh %d seachtaine ó shin</item>
+        <item quantity="many">An teagmháil dheiridh %d seachtaine ó shin</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d teagmhálaí eile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d teagmhálaí eile</item>
+        <item quantity="two">%d theagmhálaí eile</item>
+        <item quantity="few">%d theagmhálaí eile</item>
+        <item quantity="many">%d dteagmhálaí eile</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Tá cúpón agat in Samsung Wallet a rachaidh as feidhm i gceann %d lá. Cinntigh go n-úsáidfidh tú é sula rachaidh sé as feidhm.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tá cúpón agat in Samsung Wallet a rachaidh as feidhm i gceann %d lae. Cinntigh go n-úsáidfidh tú é sula rachaidh sé as feidhm.</item>
+        <item quantity="two">Tá cúpón agat in Samsung Wallet a rachaidh as feidhm i gceann %d lá. Cinntigh go n-úsáidfidh tú é sula rachaidh sé as feidhm.</item>
+        <item quantity="few">Tá cúpón agat in Samsung Wallet a rachaidh as feidhm i gceann %d lá. Cinntigh go n-úsáidfidh tú é sula rachaidh sé as feidhm.</item>
+        <item quantity="many">Tá cúpón agat in Samsung Wallet a rachaidh as feidhm i gceann %d lá. Cinntigh go n-úsáidfidh tú é sula rachaidh sé as feidhm.</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">An teocht is airde lúide %d céim</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teocht is airde lúide %d chéim</item>
+        <item quantity="two">An teocht is airde lúide %d chéim</item>
+        <item quantity="few">An teocht is airde lúide %d chéim</item>
+        <item quantity="many">An teocht is airde lúide %d gcéim</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">An teocht is ísle lúide %d céim</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teocht is ísle lúide %d chéim</item>
+        <item quantity="two">An teocht is ísle lúide %d chéim</item>
+        <item quantity="few">An teocht is ísle lúide %d chéim</item>
+        <item quantity="many">An teocht is ísle lúide %d gcéim</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">"Tá imeacht agat ar d'fhéilire ar a dtugtar %1$s. Beidh sé %2$d céim %3$s ag %4$s in %5$s."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Tá imeacht agat ar d'fhéilire ar a dtugtar %1$s. Beidh sé %2$d chéim %3$s ag %4$s in %5$s."</item>
+        <item quantity="two">"Tá imeacht agat ar d'fhéilire ar a dtugtar %1$s. Beidh sé %2$d chéim %3$s ag %4$s in %5$s."</item>
+        <item quantity="few">"Tá imeacht agat ar d'fhéilire ar a dtugtar %1$s. Beidh sé %2$d chéim %3$s ag %4$s in %5$s."</item>
+        <item quantity="many">"Tá imeacht agat ar d'fhéilire ar a dtugtar %1$s. Beidh sé %2$d gcéim %3$s ag %4$s in %5$s."</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">An teocht is airde %d céim</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teocht is airde %d chéim</item>
+        <item quantity="two">An teocht is airde %d chéim</item>
+        <item quantity="few">An teocht is airde %d chéim</item>
+        <item quantity="many">An teocht is airde %d gcéim</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">An teocht is ísle %d céim</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">An teocht is ísle %d chéim</item>
+        <item quantity="two">An teocht is ísle %d chéim</item>
+        <item quantity="few">An teocht is ísle %d chéim</item>
+        <item quantity="many">An teocht is ísle %d gcéim</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s amharc</item>
+        <item quantity="one">%s amharc</item>
+    </plurals>
+</resources>

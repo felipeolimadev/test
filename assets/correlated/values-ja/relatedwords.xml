@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resource>
+    <string name="bees">ハチ,スズメバチ</string>
+    <string name="buildings">建築物,ビル</string>
+    <string name="burst_shot">連続写真,連続撮影</string>
+    <string name="cabbages">レタス,アブラナ科の野菜</string>
+    <string name="camels">砂漠動物,ヒトコブラクダ</string>
+    <string name="cereal_bars">グラノーラバー,エナジーバー,プロテインバー</string>
+    <string name="concertinas">アコーディオン</string>
+    <string name="crockery">皿,キッチン用品,ボウル,鍋</string>
+    <string name="cupcakes">ケーキ,マフィン</string>
+    <string name="dogs">子犬</string>
+    <string name="drones">クウッドコプター</string>
+    <string name="drums">コンガ,マラカス,パーカッション</string>
+    <string name="gladiolas">グラジオラス,ソードリリー</string>
+    <string name="jerseys">スポーツドレス,スポーツウェア</string>
+</resource>

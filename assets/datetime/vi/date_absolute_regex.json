@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)\\s*(\\.)?\\s*(<num>)\\s*(\\.)?\\s*(<num>)",
+    "comment": "25.01.00 | 25 01 00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)\\s*(?:-)\\s*(<num>)\\s*(?:-)\\s*(<num>)",
+    "comment": "25-01-00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM_2",
+    "patternString": "(?:<time_period>\\s*)?(<num>)\\s*(?:\/)\\s*(<num>)\\s*(?:\/)\\s*(<num>)",
+    "comment": "25/01/00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 4,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)\\s*[\\/|\\.|\\-]?\\s*(<num>)",
+    "comment": "02/24(mm/yy) | 01/02(dd/mm)",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 5,
+    "type": "MONTH_WORD_DAY_NUM",
+    "patternString": "(<time_period>)\\s*(<num>)\\s*[\\/|\\.|\\-|,]?\\s*(<time_period>)\\s*(<num>)",
+    "comment": "day 25 month 1"
+  },
+  {
+    "id": 5,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(<num>)\\s*[\\/|\\.|\\-|,]?\\s*(<time_period>)?\\s*(<num>)\\s*[\\/|\\.|\\-|,]?\\s*(<time_period>)\\s*(<num>)",
+    "comment": "2024 25 jan | 2024 25th jan",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 6,
+    "type": "special_days",
+    "patternString": "(<special_day>)\\s*(<time_period>)?",
+    "comment": "labors day, independence day etc"
+  },
+  {
+    "id": 9,
+    "type": "RELATIVE_DAY",
+    "patternString": "(<relative_day>)",
+    "comment": "today, tomorrow, yesterday, right now"
+  },
+  {
+    "id": 12,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<day_of_week>)\\s*(<time_period>)\\s*(<num>)\\s*(?:của)?\\s*[,]?\\s*(<time_period>)?\\s*(<num>)?",
+    "comment": "Monday week 2, year 2025"
+  },
+  {
+    "id": 13,
+    "type": "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "comment" : "first day of jan, 2025 | first day of jan |  first monday of jan 2025.",
+    "patternString": "(<time_period>|<day_of_week>)\\s*(<num_suffix>|<current_reference>|<last_reference>)\\s*(?:của|trong)?\\s*(<time_period>)?\\s*(<num>)?\\s*(?:[,])?\\s*(<time_period>)?\\s*(<num>)?"
+  },
+  {
+    "id": 16,
+    "type": "day x month y year z",
+    "patternString": "(<time_period>)\\s*(?:\\:)?\\s*(<num>)\\s*(<time_period>)\\s*(<num>)\\s*(<time_period>)\\s*(<num>)",
+    "comment": "Ngày 2 tháng 1 năm 2025"
+  },
+  {
+    "id": 11,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString": "(<month>|<day_of_week>)",
+    "isOnlyDayOfWeek" : true
+  }
+]

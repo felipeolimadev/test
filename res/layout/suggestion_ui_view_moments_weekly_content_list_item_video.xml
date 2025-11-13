@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:id="@id/container" android:tag="layout/suggestion_ui_view_moments_weekly_content_list_item_video_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stateListAnimator="?seslMediumTouchAnimator" style="@style/Base.Theme.MomentsWeeklyCardItemStyle">
+        <ImageView android:id="@id/preview_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:id="@id/content_video_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/moments_fg_grid_card_content_view" android:contentDescription="@string/moments_content_type_video" android:clipToOutline="true" />
+        <LinearLayout android:gravity="center" android:layout_gravity="start|bottom|center" android:orientation="horizontal" android:background="@drawable/moments_bg_grid_media_content_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_card_video_desc_margin" android:layout_marginStart="@dimen/moments_card_video_desc_margin" android:paddingHorizontal="@dimen/grid_layout_video_padding_horizontal" android:paddingVertical="@dimen/grid_layout_video_padding_vertical">
+            <ImageView android:layout_width="@dimen/grid_content_video_play_icon_size" android:layout_height="@dimen/grid_content_video_play_icon_size" android:src="@drawable/moments_ic_appdata_video" />
+            <TextView android:textSize="@dimen/grid_content_video_desc_font_size" android:textColor="@android:color/white" android:id="@id/duration_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginStart="@dimen/grid_layout_video_play_icon_inner_margin" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

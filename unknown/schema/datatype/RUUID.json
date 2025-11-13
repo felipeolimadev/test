@@ -1,0 +1,23 @@
+{
+  "name": "RUUID",
+  "type": "datatype",
+  "id": "datatype.composite.RUUID",
+  "version": "",
+  "description": "",
+  "schema": {
+    "properties": {
+      "displayName": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "uuid": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      }
+    },
+    "required": [
+      "uuid"
+    ],
+    "type": "object"
+  }
+}

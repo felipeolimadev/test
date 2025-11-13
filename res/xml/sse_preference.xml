@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Search" app:iconSpaceReserved="false">
+        <Preference android:title="Search SSE" android:fragment="com.samsung.android.moneta.debugui.developmode.sse.fragment.SseSearchFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="Search Synonym" android:fragment="com.samsung.android.moneta.debugui.developmode.sse.fragment.SseSynonymSearchFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="Search All" android:fragment="com.samsung.android.moneta.debugui.developmode.sse.fragment.SseSearchAllFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="Search Semantic" android:fragment="com.samsung.android.moneta.debugui.developmode.sse.fragment.SseSemanticSearchFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Simulate" app:iconSpaceReserved="false">
+        <Preference android:title="Unregister SSE Schema" android:key="unregister_schema" app:iconSpaceReserved="false" />
+        <Preference android:title="Toggle Semantic Search" android:key="toggle_semantic_search" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

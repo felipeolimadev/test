@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d zile rămase.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d zi rămasă.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d zile rămase.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">Urmează %1$s peste %2$d zile.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Urmează %1$s peste %2$d zi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Urmează %1$s peste %2$d zile.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d evenimente%3$s vor continua mâine.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d eveniment%3$s va continua mâine.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s%2$d evenimente%3$s vor continua mâine.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Aveți %1$s%2$d evenimente%3$s astăzi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți %1$s%2$d eveniment%3$s astăzi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți %1$s%2$d evenimente%3$s astăzi.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Aveți %1$d evenimente astăzi. Primul eveniment este %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți %1$d eveniment astăzi. Primul eveniment este %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți %1$d evenimente astăzi. Primul eveniment este %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d evenimente rămase%3$s pentru astăzi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d eveniment rămas%3$s pentru astăzi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s%2$d evenimente rămase%3$s pentru astăzi.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Aveți %1$s%2$d evenimente%3$s mâine.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți %1$s%2$d eveniment%3$s mâine.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți %1$s%2$d evenimente%3$s mâine.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Aveți %1$d evenimente mâine. Primul eveniment este %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți %1$d eveniment mâine. Primul eveniment este %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți %1$d evenimente mâine. Primul eveniment este %2$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d evenim.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d evenim.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d evenim.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Începe peste %d min.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Începe peste %d min.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Începe peste %d min.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d memen. rămase pentru astăzi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d memento rămas pentru astăzi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d memen. rămase pentru astăzi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Ați primit %d mesaje de livrare azi. Verificați pentru a vă asigura că știți starea curentă a livrărilor.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ați primit %d mesaj de livrare azi. Verificați pentru a vă asigura că știți starea curentă a livrării.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ați primit %d mesaje de livrare azi. Verificați pentru a vă asigura că știți starea curentă a livrărilor.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d livrări astăzi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d livrare astăzi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d livrări astăzi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Peste țintă de %d ori săp. aceas.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Peste țintă %d dată săp. aceas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Peste țintă de %d ori săp. aceas.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d ob. activ. atinse</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ob. activ. atins</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ob. activ. atinse</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Câștigul total de altitudine a fost de %1$s și ați ars %2$,d calorii.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Câștigul total de altitudine a fost de %1$s și ați ars %2$,d calorie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Câștigul total de altitudine a fost de %1$s și ați ars %2$,d calorii.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Ritmul mediu a fost de %1$s și ați ars %2$,d calorii.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ritmul mediu a fost de %1$s și ați ars %2$,d calorie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ritmul mediu a fost de %1$s și ați ars %2$,d calorii.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Viteza medie a fost de %1$s și ați ars %2$,d calorii.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viteza medie a fost de %1$s și ați ars %2$,d calorie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Viteza medie a fost de %1$s și ați ars %2$,d calorii.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Iată un rezumat al antrenamentului %1$s. Durata a fost de %2$s și ați ars %3$,d calorii.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Iată un rezumat al antrenamentului %1$s. Durata a fost de %2$s și ați ars %3$,d calorie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Iată un rezumat al antrenamentului %1$s. Durata a fost de %2$s și ați ars %3$,d calorii.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Ați ratat %d medicamente programate astăzi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ați ratat %d medicament programat astăzi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ați ratat %d medicamente programate astăzi.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d oră</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ore</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d oră</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ore</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Aveți %1$s%2$d apeluri pierdute%3$s astăzi pe care nu le-ați verificat încă.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți %1$s%2$d apel pierdut%3$s astăzi pe care nu l-ați verificat încă.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți %1$s%2$d apeluri pierdute%3$s astăzi pe care nu le-ați verificat încă.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Ați pierdut %d apeluri astăzi. Consultați aceste apeluri pierdute în Now brief. Dacă este necesar, puteți să setați, de asemenea, mementouri pentru a nu uita să reveniți cu un apel.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ați pierdut %d apel astăzi. Consultați acest apel pierdut în Now brief. Dacă este necesar, puteți să setați, de asemenea, un memento pentru a nu uita să reveniți cu un apel.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ați pierdut %d apeluri astăzi. Consultați aceste apeluri pierdute în Now brief. Dacă este necesar, puteți să setați, de asemenea, mementouri pentru a nu uita să reveniți cu un apel.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Încă %d apeluri pierdute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Încă %d apel pierdut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Încă %d apeluri pierdute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d apel. pier.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d apel pierdut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d apel. pier.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d de notificări noi</item>
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Acum %d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Acum %d oră</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Acum %d ore</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Acum %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Acum %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Acum %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Trebuie să aveți cel puțin %d ani pentru a utiliza instrumentele inteligente avansate ale Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Trebuie să aveți cel puțin %d an pentru a utiliza instrumentele inteligente avansate ale Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Trebuie să aveți cel puțin %d ani pentru a utiliza instrumentele inteligente avansate ale Galaxy AI.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d mesaje</item>
+        <item quantity="one">%d mesaj</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d mi</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d secunde</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d secundă</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d secunde</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Ați setat %1$s%2$d alarme%3$s pentru dimineață.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ați setat %1$s%2$d alarmă%3$s pentru dimineață.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ați setat %1$s%2$d alarme%3$s pentru dimineață.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Ați setat %1$s%2$d alarme%3$s pentru mâine dimineață.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ați setat %1$s%2$d alarmă%3$s pentru mâine dimineață.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ați setat %1$s%2$d alarme%3$s pentru mâine dimineață.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sPlecați până la %2$s%3$s pentru a ajunge la aeroport cu cel puțin %4$d ore înainte de decolare. Setați o alarmă pentru a nu uita.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sPlecați până la %2$s%3$s pentru a ajunge la aeroport cu cel puțin %4$d oră înainte de decolare. Setați o alarmă pentru a nu uita.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sPlecați până la %2$s%3$s pentru a ajunge la aeroport cu cel puțin %4$d ore înainte de decolare. Setați o alarmă pentru a nu uita.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sPlecați până la %2$s%3$s pentru a ajunge la aeroport cu cel puțin %4$d ore înainte de zbor.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sPlecați până la %2$s%3$s pentru a ajunge la aeroport cu cel puțin %4$d oră înainte de zbor.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$sPlecați până la %2$s%3$s pentru a ajunge la aeroport cu cel puțin %4$d ore înainte de zbor.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Sugerează un itinerar de călătorie de %1$d zile pentru %2$s incluzând locuri de vizitat, lucruri de făcut și restaurante care merită să fie încercate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sugerează un itinerar de călătorie de %1$d zi pentru %2$s incluzând locuri de vizitat, lucruri de făcut și restaurante care merită să fie încercate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Sugerează un itinerar de călătorie de %1$d zile pentru %2$s incluzând locuri de vizitat, lucruri de făcut și restaurante care merită să fie încercate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Consultați aceste %1$saplicații recomandate%2$s care pot fi utile în timpul călătoriei.</item>
+        <item quantity="one">Consultați această %1$saplicație recomandată%2$s care poate fi utilă în timpul călătoriei.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sDescărcați acest pachet lingvistic%2$s din timp pentru a fi gata să îl utilizați în aplicația Interpret când ajungeți la destinație.</item>
+        <item quantity="one">%1$sDescărcați aceste pachete lingvistice%2$s din timp pentru a fi gata să le utilizați în aplicația Interpret când ajungeți la destinație.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Pachete lingvistice de descărcat</item>
+        <item quantity="one">Pachet lingvistic de descărcat</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d disp. sunt pornite</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d disp. este pornit</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d disp. sunt pornite</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Ultimul contact în urmă cu %d zile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimul contact în urmă cu %d zi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ultimul contact în urmă cu %d zile</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Ultimul contact acum %d zile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimul contact acum %d zi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ultimul contact acum %d zile</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Ultimul contact acum %d luni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimul contact acum %d lună</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ultimul contact acum %d luni</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Ultimul contact acum %d săpt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimul contact acum %d săpt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ultimul contact acum %d săpt.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d alte contacte</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d alt contact</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d alte contacte</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Aveți un cupon în Samsung Wallet care expiră peste %d zile. Nu uitați să-l folosiți înainte de expirare.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți un cupon în Samsung Wallet care expiră este %d zi. Nu uitați să-l folosiți înainte de expirare.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți un cupon în Samsung Wallet care expiră peste %d zile. Nu uitați să-l folosiți înainte de expirare.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Temperatură maximă minus %d grade</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Temperatură maximă minus %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Temperatură maximă minus %d grade</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Temperatură minimă minus %d grade</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Temperatură minimă minus %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Temperatură minimă minus %d grade</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Aveți un eveniment în calendar denumit %1$s. Va fi o temperatură de %2$d grade %3$s la %4$s în %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aveți un eveniment în calendar denumit %1$s. Va fi o temperatură de %2$d grad %3$s la %4$s în %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Aveți un eveniment în calendar denumit %1$s. Va fi o temperatură de %2$d grade %3$s la %4$s în %5$s.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Temperatură maximă %d grade</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Temperatură maximă %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Temperatură maximă %d grade</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Temperatură minimă %d grade</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Temperatură minimă %d grad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Temperatură minimă %d grade</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s vizualizări</item>
+        <item quantity="one">%s vizualizare</item>
+    </plurals>
+</resources>

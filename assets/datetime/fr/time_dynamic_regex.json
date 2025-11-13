@@ -1,0 +1,42 @@
+[
+  {
+    "patternName": "<<hourly_suffix>>",
+    "patternValue": [
+      "(?:l')?heure",
+      "o\\s*horloge"
+    ]
+  },
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "sur",
+      "autour",
+      "dans(?:\\s*le)?",
+      "ce(?:la)?",
+      "du",
+      "de"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "passé",
+      "et"
+    ]
+  },
+  {
+    "patternName": "<<time_keywords_before>>",
+    "patternValue": [
+      "à",
+      "autour de",
+      "sur"
+    ]
+  },
+  {
+    "patternName": "<<around_time>>",
+    "patternValue": [
+      "à propos de",
+      "autour"
+    ]
+  }
+]

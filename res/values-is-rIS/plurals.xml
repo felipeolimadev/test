@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d dagar eftir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dagur eftir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">„%1$s“ er eftir %2$d daga.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">„%1$s“ er eftir %2$d dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d viðburðir%3$s halda áfram á morgun.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d viðburður%3$s heldur áfram á morgun.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Þú ert að fara á %1$s%2$d viðburði%3$s í dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert að fara á %1$s%2$d viðburð%3$s í dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Þú ert að fara á %1$d viðburði í dag. Fyrsti viðburðurinn er %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert að fara á %1$d viðburð í dag. Fyrsti viðburðurinn er %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d viðburðir eftir%3$s í dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d viðburður eftir%3$s í dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Þú ert að fara á %1$s%2$d viðburði%3$s á morgun.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert að fara á %1$s%2$d viðburð%3$s á morgun.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Þú ert að fara á %1$d viðburði á morgun. Fyrsti viðburðurinn er %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert að fara á %1$d viðburð á morgun. Fyrsti viðburðurinn er %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d viðb.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d viðb.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Byrjar eftir %d mín.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Byrjar eftir %d mín.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d áminningar eftir í dag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d áminning eftir í dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Þú fékkst %d skilaboð um sendingu í dag. Gakktu úr skugga um að staða sendinganna sé rétt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú fékkst %d skilaboð um sendingu í dag. Gakktu úr skugga um að staða sendingarinnar sé rétt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d sendingar í dag</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sending í dag</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Yfir markmiði %d í vikunni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Yfir markmiði %d í vikunni.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d hreyfimarkm. náð</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hreyfimarkm. náð</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Heildarhækkunin þín var %1$s og þú brenndir %2$,d hitaeiningum.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Heildarhækkunin þín var %1$s og þú brenndir %2$,d hitaeiningu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Meðaltakturinn þinn var %1$s og þú brenndir %2$,d hitaeiningum.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Meðaltakturinn þinn var %1$s og þú brenndir %2$,d hitaeiningu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Meðalhraðinn þinn var %1$s og þú brenndir %2$,d hitaeiningum.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Meðalhraðinn þinn var %1$s og þú brenndir %2$,d hitaeiningu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Hér er samantekt fyrir æfinguna þína í flokknum „%1$s“. Tímalengdin var %2$s og þú brenndir %3$,d hitaeiningum.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hér er samantekt fyrir æfinguna þína í flokknum „%1$s“. Tímalengdin var %2$s og þú brenndir %3$,d hitaeiningu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Þú misstir af %d lyfjum á áætlun í dag.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú misstir af %d lyfi á áætlun í dag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d klukkustundir</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klukkustund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d klukkustundir</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d klukkustund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d mínútur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mínúta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d mínútur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mínúta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Þú ert með %1$s%2$d ósvöruð símtöl%3$s í dag sem þú hefur ekki skoðað enn.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert með %1$s%2$d ósvarað símtal%3$s í dag sem þú hefur ekki skoðað enn.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Þú ert með %d ósvöruð símtöl í dag. Skoðaðu þessi ósvöruðu símtöl í Now brief. Ef þörf er á getur þú einnig stillt áminningu svo að þú gleymir ekki að hringja til baka.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert með %d ósvarað símtal í dag. Skoðaðu þetta ósvaraða símtal í Now brief. Ef þörf er á getur þú einnig stillt áminningu svo að þú gleymir ekki að hringja til baka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d ósvöruð símtöl í viðbót</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ósvarað símtal í viðbót</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d ósv. símtöl</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ósv. símtal</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Fyrir %d klst.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fyrir %d klst.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Fyrir %d mín.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fyrir %d mínútu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Þú verður að hafa náð minnst %d ára aldri til að nota háþróaða gervigreindareiginleika Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú verður að hafa náð minnst %d árs aldri til að nota háþróaða gervigreindareiginleika Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d skilaboð</item>
+        <item quantity="one">%d skilaboð</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d míl.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d míl.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekúndur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekúnda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Þú hefur stillt %1$s%2$d vekjara%3$s í fyrramálið.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú hefur stillt %1$s%2$d vekjara%3$s í fyrramálið.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Þú hefur stillt %1$s%2$d vekjara%3$s í fyrramálið.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú hefur stillt %1$s%2$d vekjara%3$s í fyrramálið.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sLeggðu af stað fyrir kl. %2$s%3$s til að koma á flugvöllinn a.m.k. %4$d klukkustundum fyrir brottför. Stilltu vekjara svo þú gleymir því ekki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sLeggðu af stað fyrir kl. %2$s%3$s til að koma á flugvöllinn a.m.k. %4$d klukkustund fyrir brottför. Stilltu vekjara svo þú gleymir því ekki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sLeggðu af stað fyrir kl. %2$s%3$s til að vera komin(n) á flugvöllinn a.m.k. %4$d klukkustundum fyrir flugið.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sLeggðu af stað fyrir kl. %2$s%3$s til að vera komin(n) á flugvöllinn a.m.k. %4$d klukkustund fyrir flugið.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Komdu með tillögu að %1$d daga ferðaáætlun fyrir %2$s sem inniheldur staði til að heimsækja, afþreyingu og veitingastaði sem mælt er með.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Komdu með tillögu að %1$d dags ferðaáætlun fyrir %2$s sem inniheldur staði til að heimsækja, afþreyingu og veitingastaði sem mælt er með.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Skoðaðu þessi %1$sráðlögðu forrit%2$s sem gætu komið að gagni meðan á ferð þinni stendur.</item>
+        <item quantity="one">Skoðaðu þetta %1$sráðlagða forrit%2$s sem gæti komið að gagni meðan á ferð þinni stendur.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sSæktu þennan tungumálapakka%2$s fyrirfram svo að þú getir notað hann í túlkinum þegar þú kemur á áfangastaðinn.</item>
+        <item quantity="one">%1$sSæktu þessa tungumálapakka%2$s fyrirfram svo að þú getir notað þá í túlkinum þegar þú kemur á áfangastaðinn.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Tungumálapakkar til að sækja</item>
+        <item quantity="one">Tungumálapakki til að sækja</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">Kveikt er á %d tækjum</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kveikt er á %d tæki</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Síðustu samskipti voru fyrir %d dögum</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Síðustu samskipti voru fyrir %d degi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Síðustu samskipti fyrir %d dögum</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Síðustu samskipti fyrir %d degi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Síðustu samskipti fyrir %d mán.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Síðustu samskipti fyrir %d mán.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Síðustu samskipti fyrir %d vikum</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Síðustu samskipti fyrir %d viku</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d tengiliðir í viðbót</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tengiliður í viðbót</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Þú átt afsláttarmiða í Samsung Wallet sem rennur út eftir %d daga. Notaðu hann áður en hann rennur út.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú átt afsláttarmiða í Samsung Wallet sem rennur út eftir %d dag. Notaðu hann áður en hann rennur út.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Hæst mínus %d gráður</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hæst mínus %d gráða</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Lægst mínus %d gráður</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lægst mínus %d gráða</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Þú ert með viðburð í dagatalinu þínu sem kallast „%1$s“. Það verða %2$d gráður á %3$s klukkan %4$s í %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Þú ert með viðburð í dagatalinu þínu sem kallast „%1$s“. Það verður %2$d gráða á %3$s klukkan %4$s í %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Hæst %d gráður</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hæst %d gráða</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Lægst %d gráður</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lægst %d gráða</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">Skoðað %s sinnum</item>
+        <item quantity="one">Skoðað %s sinni</item>
+    </plurals>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/user_preference_transparent_text_box" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <inset android:drawable="@drawable/up_ic_heart_gray" android:insetLeft="12.0dip" android:insetRight="12.0dip" android:insetTop="13.0dip" android:insetBottom="13.0dip" />
+    </item>
+</layer-list>

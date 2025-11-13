@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "pattern": "(?:entre|de|de)\\s?(?:le)?\\s?(<date>)\\s?(?:et|à|jusqu'à)\\s?(?:le)?\\s?(<date>)\\s?(?:de|de)?\\s?(?:à?|le)?\\s*(<time>)\\s?(?:jusqu'à|à|et)\\s?(?:le)?\\s?(<time>)",
+    "groupings": [[1,2],[3,4]],
+    "comment": "between (<date>) and (<date>) from (<time>) to (<time>) | entre le 10 avril et le 17 avril de 22h à 23h"
+  },
+  {
+    "id": "2",
+    "pattern": "(?:de\\s*|du\\s*)?(<date>)\\s?(?:à)\\s?(<date>)\\s?(?:de\\s*|du\\s*)?\\s*(<time>)\\s?(?:à)\\s?(<time>)",
+    "groupings": [[1,2],[3,4]],
+    "comment": "from (<date>) to (<date>) from (<time>) to (<time>) | de (<date>) à (<date>) de (<time>) à (<time>)"
+  },
+  {
+    "id": "3",
+    "pattern": "(?:de\\s*|du\\s*)?(<date>)(?:\\s?(?:au)\\s?)?(<date>)(?:\\s?(?:à)\\s?)?(<time>)",
+    "groupings": [[1,2],[3,-1]],
+    "comment": "from (<date>) to (<date>) at (<time>)"
+  },
+  {
+    "id": "4",
+    "pattern": "(?:de\\s*|du\\s*)?(<date>)(?:\\s?(?:à)\\s?)?(<date>)(?:\\s?(?:à)\\s?)?(<time>)",
+    "groupings": [[1,-1],[2,3]],
+    "comment": "from (<date>) at (<time>) to (<time>)"
+  },
+  {
+    "id": "5",
+    "pattern": "(?:de\\s*|du\\s*)?(<date>)(?:\\s?(?:au)\\s?)?(<date>)(?:\\s?(?:et après|avant)\\s?)?(<time>)",
+    "groupings": [[1,2],[3,-1]],
+    "comment": "from (<date>) to (<date>) onwards/before  (<time>)"
+  }
+]

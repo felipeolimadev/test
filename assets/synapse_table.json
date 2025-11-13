@@ -1,0 +1,564 @@
+[
+  {
+    "id": "2",
+    "briefContext": [
+      "SNOWY"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**눈오는 날** 유용한 정보를 확인해보세요.",
+    "title": "날씨에 맞는 활동 추천",
+    "subTitle": "",
+    "prompt": [
+      {
+        "prompt": "눈이 오는 날씨 고려해서 기분 전환할 수 있는 활동 알려줘.",
+        "text": "기분 전환에 좋은 활동"
+      }
+    ],
+    "backgroundStyle": "weather"
+  },
+  {
+    "id": "2",
+    "briefContext": [
+      "RAINY"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**비오는 날** 유용한 정보를 확인해보세요.",
+    "title": "날씨에 맞는 활동 추천",
+    "subTitle": "",
+    "prompt": [
+      {
+        "prompt": "비가 오는 날씨 고려해서 실내에서 할 수 있는 활동 추천해줘.",
+        "text": "기분 전환에 좋은 실내 활동"
+      }
+    ],
+    "backgroundStyle": "weather"
+  },
+  {
+    "id": "20",
+    "briefContext": [
+      "BEFORE_EXERCISE_PATTERN"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**운동 전 스트레칭** 을 알아볼까요?",
+    "title": "운동 전 스트레칭",
+    "subTitle": "",
+    "prompt": [
+      {
+        "prompt": "운동 전에 스트레칭 뭐가 좋아?",
+        "text": "사무실 오후 집중 활동 추천"
+      }
+    ],
+    "backgroundStyle": "exercise"
+  },
+  {
+    "id": "11",
+    "briefContext": [],
+    "ceContext": [
+      "HOME"
+    ],
+    "pdeContext": [],
+    "timeContext": [
+      "Evening"
+    ],
+    "insight": "**영상 컨텐츠** 정보를 확인해 보세요.",
+    "title": "영상 컨텐츠 추천",
+    "prompt": [
+      {
+        "prompt": "최근 인기있는 영화나 드라마 뭐 있을까? 간략한 요약과 함께 추천해줘.",
+        "text": "편안하게 하루를 마무리하는 영상 추천"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "3",
+    "briefContext": [],
+    "ceContext": [
+      "OFFICE"
+    ],
+    "pdeContext": [],
+    "timeContext": [
+      "EarlyAfternoon"
+    ],
+    "insight": "**점심 후 활동** 을 알아볼까요?",
+    "title": "점심 후 활동 추천",
+    "prompt": [
+      {
+        "prompt": "점심 먹고 졸릴 때 할 수 있는 활동 뭐 있을까?",
+        "text": "사무실 오후 집중 활동 추천"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "7",
+    "briefContext": [],
+    "ceContext": [
+      "HOME"
+    ],
+    "pdeContext": [
+      "INDOOR_EXERCISE"
+    ],
+    "timeContext": [
+      "EarlyMorning",
+      "Weekend"
+    ],
+    "insight": "**홈트** 에 유용한 정보를 확인해보세요.",
+    "title": "홈트 추천",
+    "subTitle": "",
+    "prompt": [
+      {
+        "prompt": "나는 평소에 %s을 자주 해. 최근 SNS에서 화제가 된 간단하게 하기 좋은 홈트 알려줘. 영상 링크와 간단한 설명도 부탁해.",
+        "promptParams": [
+          "indoor_exercise"
+        ],
+        "text": "주말 아침에 하기 좋은 간단 홈트 추천"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "35",
+    "briefContext": [
+      "WALKED_A_LOT"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "None"
+    ],
+    "insight": "**회복 스트레칭** 해보세요",
+    "title": "회복 스트레칭",
+    "prompt": [
+      {
+        "prompt": "오늘 목표치 이상으로 걸었어. 회복을 위한 스트레칭 추천해줘. 관련 동영상이 있다면 링크와 요약과 함께 추천해줘.",
+        "text": "운동목표 달성 후 회복을 위한 스트레칭 추천"
+      }
+    ],
+    "backgroundStyle": "exercise"
+  },
+  {
+    "id": "6",
+    "briefContext": [
+      "BEFORE_GO_TO_WORK_PATTERN"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**출근길 팟캐스트** 확인해 보세요",
+    "title": "출근길 팟캐스트",
+    "prompt": [
+      {
+        "prompt": "출근길에 듣기 좋은 팟캐스트 추천해줘.",
+        "text": "출근길 팟캐스트 추천"
+      }
+    ],
+    "backgroundStyle": "commute"
+  },
+  {
+    "id": "6",
+    "briefContext": [
+      "BEFORE_LEAVE_WORK_PATTERN"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**퇴근길 팟캐스트** 확인해 보세요",
+    "title": "퇴근길 팟캐스트",
+    "prompt": [
+      {
+        "prompt": "퇴근길에 듣기 좋은 팟캐스트 추천해줘.",
+        "text": "퇴근길 팟캐스트 추천"
+      }
+    ],
+    "backgroundStyle": "commute"
+  },
+  {
+    "id": "13",
+    "briefContext": [],
+    "ceContext": [
+      "BEFORE_SLEEPING_TIME"
+    ],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**수면 루틴** 에 유용한 정보를 확인해 보세요.",
+    "title": "수면 루틴 추천",
+    "prompt": [
+      {
+        "prompt": "요즘 SNS 등에서 인기를 끄는 숙면 루틴을 추천해줘. 숙면에 도움이 되는 이유를 같이 포함해서 설명해줘.",
+        "text": "하루를 마무리하는 숙면 루틴 추천"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "22",
+    "briefContext": [
+      "TOMORROW_SCHEDULE_ALARM"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**기상 팁** 을 확인해 보세요.",
+    "title": "기상 팁",
+    "prompt": [
+      {
+        "prompt": "내일 평소보다 일찍 일어나야 해. 혹시 요즘 SNS에서 인기있는 빠른 기상법이 있을까? 아니면 수면 전문가가 추천하는 조기 기상 팁이 있으면 알려줘.",
+        "text": "평소보다 빠른 기상 팁 추천"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "9",
+    "briefContext": [
+      "BEFORE_LEAVE_WORK_PATTERN"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**퇴근 후 활동** 에 유용한 정보를 확인해 보세요.",
+    "title": "퇴근 후 활동 추천",
+    "prompt": [
+      {
+        "prompt": "퇴근 후 간단하게 할 만한 활동 있을까?",
+        "text": "퇴근 후 활동 추천"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "37",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [
+      "BUSINESS"
+    ],
+    "timeContext": [],
+    "insight": "**회의 준비** 에 유용한 정보를 확인해 보세요.",
+    "title": "회의 준비 체크리스트",
+    "prompt": [
+      {
+        "prompt": "내일 회의 준비를 위해 미리 준비해둘 것 알려줘",
+        "text": "내일 회의 준비"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "event_1",
+    "briefContext": [
+      "EVENT_TICKET"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**공연/영화** 관련 유용한 정보를 확인해 보세요",
+    "title": "공연/영화 더 알아보기",
+    "prompt": [
+      {
+        "prompt": "곧 %s 볼 예정이야. 알고 보면 더 재미있는 정보가 있을까? 스포일러 없이 알려줘.",
+        "promptParams": [
+          "event_ticket"
+        ],
+        "text": "%s 더 알아보기",
+        "textParams": [
+          "event_ticket"
+        ]
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "travel_1",
+    "briefContext": [
+      "TRAVEL_TICKET"
+    ],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [],
+    "insight": "**도착 장소** 에 대한 정보를 확인해 보세요",
+    "title": "도착 장소 더 알아보기",
+    "prompt": [
+      {
+        "prompt": "곧 %s 도착할 예정이야. 맛집이나 여행 코스 추천해줘.",
+        "promptParams": [
+          "travel_ticket"
+        ],
+        "text": "%s 더 알아보기",
+        "textParams": [
+          "travel_ticket"
+        ]
+      }
+    ],
+    "backgroundStyle": "travel"
+  },
+  {
+    "id": "brief_1",
+    "briefContext": [
+      "RAINY"
+    ],
+    "ceContext": [],
+    "pdeContext": [
+      "OUTDOOR_EXERCISE"
+    ],
+    "timeContext": [],
+    "insight": "**운동, 날씨별 활동** 에 유용한 정보를 확인해 보세요.",
+    "title": "운동, 날씨별 활동 추천",
+    "prompt": [
+      {
+        "prompt": "%s을(를) 좋아하는데 비가 오니 안에서 할 수 있는 활동 추천해줘.",
+        "promptParams": [
+          "outdoor_exercise"
+        ],
+        "text": "%s을(를) 좋아하는데 비가 오니 안에서 할 수 있는 활동 추천해줘.",
+        "textParams": [
+          "outdoor_exercise"
+        ]
+      }
+    ],
+    "backgroundStyle": "exercise"
+  },
+  {
+    "id": "cuj_1",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [
+      "STOCK"
+    ],
+    "timeContext": [],
+    "insight": "오늘의 **최신 업데이트**를 확인해 보세요.",
+    "title": "주요 증시 인사이트",
+    "subTitle": "밤사이 %s 주가에 움직임이 있었습니다. 최신 %s 주가를 확인해 보시고 글로벌 증시에 어떤 변화가 있었는지 체크해 보시겠어요?",
+    "subTitleParams": [
+      "stock",
+      "stock"
+    ],
+    "prompt": [
+      {
+        "prompt": "지금 주식 시장에서 %s의 주가와 향후 전망을 분석해줘",
+        "promptParams": [
+          "stock"
+        ],
+        "text": "%s 주식 마감 동향",
+        "textParams": [
+          "stock"
+        ]
+      }
+    ],
+    "taskType": "STOCK",
+    "backgroundStyle": "stock"
+  },
+  {
+    "id": "cuj_2",
+    "briefContext": [
+      "SCHEDULE_WITH_LOCATION_INFORMATION"
+    ],
+    "ceContext": [],
+    "pdeContext": [
+      "TRANSPORTATION"
+    ],
+    "timeContext": [],
+    "insight": "**%s 장소**로 출발할 시간입니다.",
+    "insightParams": [
+      "schedule_title"
+    ],
+    "title": "%s 장소까지 이동할까요?",
+    "titleParams": [
+      "schedule_title"
+    ],
+    "subTitle": "%s '%s'에서 %s(이)가 예정되어 있습니다. 지금 출발하시는 것이 좋을 것 같습니다. %s 예약을 도와드릴까요?",
+    "subTitleParams": [
+      "time",
+      "destination",
+      "schedule_title",
+      "transportation_package"
+    ],
+    "prompt": [
+      {
+        "prompt": "%s(으)로 %s예약",
+        "promptParams": [
+          "schedule_title",
+          "transportation_package"
+        ],
+        "text": "%s(으)로 %s예약",
+        "textParams": [
+          "schedule_title",
+          "transportation_package"
+        ]
+      }
+    ],
+    "taskType": "TRANSPORTATION",
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_1",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "목과 어깨 긴장을 완화해주는 간단한 스트레칭을 추천해줘. 관련 동영상을 링크와 함께 알려줘",
+        "text": "긴장 완화 스트레칭"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_2",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "10분안에 할 수 있는 간단한 스트레칭이나 운동 루틴 만들어줘. 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "간단한 운동"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_3",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Weekend"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "30분동안 할 수 있는 유산소 홈트레이닝을 자세한 동작 설명과 함께 운동 루틴 만들어줘. 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "유산소 트레이닝"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_4",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "스트레스를 줄이는데 도움이 되는 습관과 팁을 알려줘. 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "스트레스 완화 팁"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_5",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "근골격 통증을 예방 할 수 있는 스트레칭이나 운동 루틴을 만들어줘. 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "근골격 통증 예방"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_6",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Evening",
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "숙면을 위한 유용한 팁과 수면 루틴 만들어줘. 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "숙면을 위한 유용한 팁"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_7",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "LateAfternoon",
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "나른한 오후 활력을 보충하기 위한 팁과 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "나른한 오후를 위한 팁"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_8",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Week"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "최근 건강과 관련된 사람들이 관심 갖는 키워드나 트랜드를 추천해줘. 관련 동영상이 있다면 링크와 함께 알려줘",
+        "text": "건강 핫 트랜드"
+      }
+    ],
+    "backgroundStyle": "default"
+  },
+  {
+    "id": "notable_9",
+    "briefContext": [],
+    "ceContext": [],
+    "pdeContext": [],
+    "timeContext": [
+      "Weekend"
+    ],
+    "insight": "**건강**을 위한 유용한 정보 알려 드려요.",
+    "title": "유용한 건강 정보를 알려 드려요.",
+    "prompt": [
+      {
+        "prompt": "오늘부터 할 수 있는 활력을 위한 일주일 건강 루틴 만들어줘",
+        "text": "건강 루틴"
+      }
+    ],
+    "backgroundStyle": "default"
+  }
+]

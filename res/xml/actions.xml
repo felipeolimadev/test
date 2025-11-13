@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions secVersion="9">
+    <action intentName="actions.intent.CREATE_MESSAGE" secDescription="@string/compose_email_title" secTitle="@string/compose_email_title">
+        <fulfillment urlTemplate="gi://applink/action/email/composer{?email,body}">
+            <parameter-mapping intentParameter="message.recipient.email" required="true" urlParameter="email" />
+            <parameter-mapping intentParameter="message.text" urlParameter="body" />
+            <internal urlResolver="mailto:deepsky@samsung.com" />
+        </fulfillment>
+    </action>
+    <action intentName="sec.actions.intent.CREATE_EVENT" secDescription="@string/create_event_title" secTitle="@string/create_event_title">
+        <fulfillment urlTemplate="gi://applink/action/calendar/composer{?name,startDate,endDate,address,attendee,allDay,cyclicTime}">
+            <parameter-mapping intentParameter="event.name" urlParameter="name" />
+            <parameter-mapping intentParameter="event.startDate" urlParameter="startDate" />
+            <parameter-mapping intentParameter="event.endDate" urlParameter="endDate" />
+            <parameter-mapping intentParameter="event.location.name" urlParameter="address" />
+            <parameter-mapping intentParameter="event.attendee.email" urlParameter="attendee" />
+            <parameter-mapping intentParameter="event.allDay" urlParameter="allDay" />
+            <parameter-mapping intentParameter="event.cyclicTime" urlParameter="cyclicTime" />
+            <internal urlResolver="intent://com.android.calendar/events#Intent;scheme=content;action=android.intent.action.INSERT;S.title=deepsky;end" />
+        </fulfillment>
+    </action>
+    <action intentName="sec.actions.intent.CREATE_REMINDER" secDescription="@string/add_to_reminder_description" secTitle="@string/add_to_reminder_description">
+        <fulfillment urlTemplate="gi://applink/action/reminder/composer{?name,startDate,endDate,address,attendee,allDay,cyclicTime}">
+            <parameter-mapping intentParameter="event.name" urlParameter="name" />
+            <parameter-mapping intentParameter="event.startDate" urlParameter="startDate" />
+            <parameter-mapping intentParameter="event.endDate" urlParameter="endDate" />
+            <parameter-mapping intentParameter="event.location.name" urlParameter="address" />
+            <parameter-mapping intentParameter="event.attendee.email" urlParameter="attendee" />
+            <parameter-mapping intentParameter="event.allDay" urlParameter="allDay" />
+            <parameter-mapping intentParameter="event.cyclicTime" urlParameter="cyclicTime" />
+        </fulfillment>
+    </action>
+    <action intentName="actions.intent.CREATE_MESSAGE" secDescription="@string/send_message_title" secTitle="@string/send_message_title">
+        <fulfillment urlTemplate="gi://applink/action/messages/composer{?telephone}">
+            <parameter-mapping intentParameter="message.recipient.telephone" required="true" urlParameter="telephone" />
+            <internal urlResolver="intent:01011112222#Intent;scheme=smsto;action=android.intent.action.SENDTO;end" />
+        </fulfillment>
+    </action>
+    <action intentName="actions.intent.CREATE_CALL" secDescription="@string/create_call_title" secTitle="@string/create_call_title">
+        <fulfillment urlTemplate="intent:tel:{telephone}#Intent;action=android.intent.action.DIAL;end">
+            <parameter-mapping intentParameter="call.participant.telephone" required="true" urlParameter="telephone" />
+        </fulfillment>
+    </action>
+    <action intentName="actions.intent.CREATE_CONTACT_POINT" secDescription="@string/add_contact_title" secTitle="@string/add_contact_title">
+        <fulfillment urlTemplate="intent:#Intent;action=android.intent.action.INSERT;type=vnd.android.cursor.dir/contact{;S.phone,S.name};end">
+            <parameter-mapping intentParameter="contactPoint.telephone" required="true" urlParameter="S.phone" />
+            <parameter-mapping intentParameter="contactPoint.contact.name" urlParameter="S.name" />
+        </fulfillment>
+    </action>
+    <action intentName="sec.actions.intent.OPEN_URL" secDescription="@string/navigate_web_description" secTitle="@string/navigate_web_title">
+        <fulfillment urlTemplate="gi://applink/action/web/navigate{?url}">
+            <parameter-mapping intentParameter="webPage.contentUrl" urlParameter="url" />
+            <internal urlResolver="intent://www.deepsky.com#Intent;scheme=http;end" />
+        </fulfillment>
+    </action>
+    <action intentName="sec.actions.intent.SEARCH_PLACE" secDescription="@string/search_map_description" secTitle="@string/search_map_title">
+        <fulfillment urlTemplate="gi://applink/action/map/navigate{?address}">
+            <parameter-mapping intentParameter="place.name" urlParameter="address" />
+            <internal urlResolver="geo:0,0?q=deepsky" />
+        </fulfillment>
+    </action>
+    <action intentName="sec.actions.intent.CONVERT_UNIT" secDescription="@string/convert_unit_title" secTitle="@string/convert_unit_title">
+        <fulfillment urlTemplate="gi://applink/action/convert{?inputUnitText,convertedUnitCode,convertedUnitText,convertedUnitValue}">
+            <parameter-mapping intentParameter="text" urlParameter="inputUnitText" />
+            <parameter-mapping intentParameter="quantitativeValue.unitCode" urlParameter="convertedUnitCode" />
+            <parameter-mapping intentParameter="quantitativeValue.unitText" urlParameter="convertedUnitText" />
+            <parameter-mapping intentParameter="quantitativeValue.value" urlParameter="convertedUnitValue" />
+        </fulfillment>
+    </action>
+    <action intentName="actions.intent.CREATE_MONEY_TRANSFER" secDescription="@string/transfer_money_title" secTitle="@string/transfer_money_title">
+        <fulfillment urlTemplate="gi://applink/action/money/transfer{?accountNo,bank,amount,transferMode}">
+            <parameter-mapping intentParameter="moneyTransfer.transferMode" required="false" urlParameter="transferMode" />
+            <parameter-mapping intentParameter="moneyTransfer.moneyTransferDestination.name" required="true" urlParameter="accountNo" />
+            <parameter-mapping intentParameter="moneyTransfer.moneyTransferDestination.provider.name" required="false" urlParameter="bank" />
+            <parameter-mapping intentParameter="moneyTransfer.amount.value" required="false" urlParameter="amount" />
+        </fulfillment>
+    </action>
+</actions>

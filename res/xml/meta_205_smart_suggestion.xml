@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThemeMetaData FormatVersion="1.3" GuideVersion="1.4">
+    <AppMetaData Name="Smart suggestions" TargetApi="30" TargetPackageName="com.samsung.android.smartsuggestions" VersionCode="1" VersionName="">
+        <Include RefName="SESL" />
+        <Property Comment="Description text color" DefaultValue="#ff252525" DestAttribName="open_theme_description_text_color" UID="205-1-1" ValueRef="1-1-3" ValueType="TextColor" />
+        <Property Comment="Background tint color" DefaultValue="#fff56a0d" DestAttribName="open_theme_new_badge_background" UID="205-2-1" ValueRef="1-33-1" ValueType="TintColor" />
+        <Property Comment="Background image" DefaultValue="" DestAttribName="open_theme_new_badge_background_mtrl" DestQualifiers="" UID="205-2-2" ValueRef="1-33-2" ValueType="BgImage" />
+        <Property Comment="Text color" DefaultValue="#fffafafa" DestAttribName="open_theme_new_badge_text_color" UID="205-2-3" ValueRef="1-33-3" ValueType="TintColor" />
+        <Property Comment="About page BG color" DefaultValue="#fffcfcfc" DestAttribName="open_theme_about_page_background" UID="205-3-1" ValueRef="1-1-1" ValueType="BgColor" />
+        <Property Comment="Info icon tint color" DefaultValue="#ffffffff" DestAttribName="open_theme_info_icon_tint_color" UID="205-3-2" ValueRef="1-1-3" ValueType="TextColor" />
+        <Property Comment="Main text color" DefaultValue="#ff010101" DestAttribName="open_theme_about_app_name_color" UID="205-3-3" ValueRef="1-1-3" ValueType="TextColor" />
+        <Property Comment="Sub text color" DefaultValue="#ff8c8c8c" DestAttribName="open_theme_version_info_text_color" UID="205-3-4" ValueRef="1-1-4" ValueType="TextColor" />
+        <Property Comment="Update btn text color" DefaultValue="#fffafafa" DestAttribName="open_theme_update_text_color" UID="205-3-5" ValueRef="1-E" ValueType="Color" />
+        <Property Comment="Update btn BG color" DefaultValue="#ff0381fe" DestAttribName="open_theme_update_button_color" UID="205-3-6" ValueRef="1-A" ValueType="Color" />
+        <Property Comment="Btn BG color" DefaultValue="#ffebebeb" DestAttribName="open_theme_open_source_button_color" UID="205-3-7" ValueRef="1-7-1-D" ValueType="Color" />
+        <Property Comment="Btn text color" DefaultValue="#ff252525" DestAttribName="open_theme_open_source_text_color" UID="205-3-8" ValueRef="1-7-2-D" ValueType="Color" />
+        <Property Comment="Main On text color" DefaultValue="#ff0072de" DestAttribName="switch_on_state_text_color" UID="205-4-1" ValueRef="1-40-3" ValueType="Color" />
+        <Property Comment="Main Off text color" DefaultValue="#ff252525" DestAttribName="switch_off_state_text_color" UID="205-4-2" ValueRef="1-40-4" ValueType="Color" />
+        <Property Comment="Background bar color" DefaultValue="#66c9c9cc" DestAttribName="widget_setting_progress_color_control_normal" UID="205-6-2" ValueRef="1-22-1" ValueType="Color" />
+        <Property Comment="Dot color" DefaultValue="#ffa6a6a9" DestAttribName="widget_setting_seek_bar_tick_mark_solid_color" UID="205-6-3" ValueRef="1-22-10" ValueType="Color" />
+        <Property Comment="Thumb BG color" DefaultValue="#fffcfcff" DestAttribName="widget_setting_percent_seek_bar_thumb_background_tint" UID="205-6-4" ValueRef="1-22-5" ValueType="Color" />
+        <Property Comment="Thumb Stroke color" DefaultValue="#ff387aff" DestAttribName="widget_setting_percent_seek_bar_thumb_tint" UID="205-6-5" ValueRef="1-22-5-1" ValueType="Color" />
+        <Property Comment="Button text icon color" DefaultValue="#ff010102" DestAttribName="hide_apps_button_color" UID="205-7-5" ValueRef="1-7-2" ValueType="Color" />
+        <Property Comment="Button BG color" DefaultValue="#fff2f2f3" DestAttribName="hide_apps_button_background_color" UID="205-7-6" ValueRef="1-7-1" ValueType="Color" />
+        <Property Comment="App label text color" DefaultValue="#ff252528" DestAttribName="app_suggestion_preview_app_label_text_color" UID="205-7-7" ValueRef="24-A" ValueType="TextColor" />
+        <Property Comment="Description text color" DefaultValue="#ff252528" DestAttribName="description_text_color" UID="205-7-9" ValueRef="1-1-4" ValueType="Color" />
+        <Property Comment="All text color" DefaultValue="#ff252528" DestAttribName="select_all_text_color" UID="205-7-10" ValueRef="1-1-3" ValueType="Color" />
+        <Property Comment="Opensource background color" DefaultValue="#fffcfcff" DestAttribName="opensource_bg_color" UID="205-3-9" ValueRef="1-18-1" ValueType="BgColor" />
+        <Property Comment="Opensource text color" DefaultValue="#ff010102" DestAttribName="opensource_text_color" UID="205-3-10" ValueRef="1-3-1" ValueType="Color" />
+        <Property Comment="Status bar background color" DefaultValue="#fff1f1f3" DestAttribName="status_bar_bg_color" UID="205-S-1" ValueRef="1-51" ValueType="BgColor" />
+        <Property Comment="Status bar icon color (Light/Dark)" DefaultValue="true" DestAttribName="status_bar_light_flag" UID="205-S-2" ValueRef="1-51-1" ValueType="Bool" />
+        <Property Comment="bottom navigation bar background color" DefaultValue="#fff1f1f3" DestAttribName="navigation_bar_bg_color" UID="205-4-3" ValueRef="1-69-1" ValueType="BgColor" />
+        <Property Comment="bottom navigation bar icon color (Light/Dark)" DefaultValue="true" DestAttribName="navigation_bar_light_flag" UID="205-4-4" ValueRef="1-69-2" ValueType="Bool" />
+        <Property Comment="Widget Setting Selected Shape Background" DefaultValue="#80000000" DestAttribName="widget_setting_bg_shape_selected_color,now_brief_widget_setting_shape_selected_color" UID="205-9-1" ValueRef="1-A" ValueType="Color" />
+        <Property Comment="Widget Setting Unselected Shape Background" DefaultValue="#ffdedee1" DestAttribName="widget_setting_bg_shape_color,now_brief_widget_setting_shape_color" UID="205-9-2" ValueRef="1-7-1" ValueType="Color" />
+        <Property Comment="Selected Shape Check" DefaultValue="#fffcfcff" DestAttribName="widget_setting_bg_shape_check_button_color,now_brief_widget_setting_bg_shape_check_button_color" UID="205-9-3" ValueRef="1-E" ValueType="Color" />
+    </AppMetaData>
+</ThemeMetaData>

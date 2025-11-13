@@ -1,0 +1,41 @@
+{
+  "type_1": {
+    "properties": {
+      "field_1": {
+        "type": "text",
+        "ignore_above": 256,
+        "store": true
+      },
+      "field_2": {
+        "type": "text",
+        "ignore_above": 256,
+        "store": true
+      },
+      "field_3": {
+        "type": "text",
+        "ignore_above": 256,
+        "store": true
+      }
+    }
+  },
+  "type_2": {
+    "properties": {
+      "field_1": {
+        "type": "text",
+        "ignore_above": 256,
+        "store": true
+      },
+      "field_2": {
+        "type": "text",
+        "ignore_above": 256,
+        "store": true
+      },
+      "field_3": {
+        "type": "text",
+        "ignore_above": 256,
+        "store": true
+      }
+    }
+  }
+}
+

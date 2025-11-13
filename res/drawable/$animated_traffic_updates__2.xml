@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="1833" android:valueFrom="1" android:valueTo="0.85" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="2183" android:valueFrom="0.85" android:valueTo="1" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="1833" android:valueFrom="1" android:valueTo="0.85" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="2183" android:valueFrom="0.85" android:valueTo="1" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="500" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="0" android:valueTo="3" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="3" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="0" android:valueTo="-3" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="-3" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:startOffset="1600" android:valueFrom="0" android:valueTo="-3" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="-3" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="99" android:valueFrom="0" android:valueTo="3" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="3" android:valueTo="0" android:propertyName="rotation" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="500" android:valueFrom="50" android:valueTo="50" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="50" android:valueTo="48" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="48" android:valueTo="50" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="50" android:valueTo="48" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="48" android:valueTo="50" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:startOffset="1600" android:valueFrom="50" android:valueTo="48" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="48" android:valueTo="50" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="99" android:valueFrom="50" android:valueTo="48" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="100" android:valueFrom="48" android:valueTo="50" android:propertyName="translateY" />
+    </set>
+</set>

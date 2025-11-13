@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/suggestion_ui_view_anniversary_item_0" android:layout_width="fill_parent" android:layout_height="@dimen/anniversary_card_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wedding_card_background" android:scaleType="centerCrop" android:clipToOutline="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/anniversary_item_container" android:padding="@dimen/wedding_container_padding" android:layout_width="fill_parent" android:layout_height="@dimen/anniversary_card_size" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/anniversary_title_size" android:textColor="@color/wedding_text_color" android:ellipsize="end" android:id="@id/anniversary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="600" />
+            <TextView android:textSize="@dimen/anniversary_subtitle_size" android:textColor="@color/wedding_subtext_color" android:ellipsize="end" android:id="@id/anniversary_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="400" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/anniversary_d_day_text_size" android:textColor="@color/wedding_text_color" android:id="@id/anniversary_d_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="600" />
+            <TextView android:textSize="@dimen/anniversary_d_day_subtext_size" android:textColor="@color/wedding_text_color" android:id="@id/anniversary_d_day_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_left" android:fontFamily="sec" android:layout_marginStart="@dimen/anniversary_d_day_margin_size" android:textFontWeight="600" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+SELECT ?start_time ?end_time ?total_seconds
+WHERE {
+    ?activity rdf:type user:Sleeping .
+    ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+    BIND(STR(?end_time - ?start_time) AS ?duration_str)
+    BIND(IF(CONTAINS(?duration_str, "H"), xsd:decimal(STRBEFORE(STRAFTER(?duration_str, "PT"), "H")), 0) * 3600 AS ?hours)
+    BIND(IF(CONTAINS(?duration_str, "M"), xsd:decimal(STRBEFORE(STRAFTER(?duration_str, "H"), "M")), 0) * 60 AS ?minutes)
+    BIND(IF(CONTAINS(?duration_str, "S"), xsd:decimal(STRBEFORE(STRAFTER(?duration_str, "M"), "S")), 0) AS ?seconds)
+    BIND((?hours + ?minutes + ?seconds) AS ?total_seconds)
+    <TIME_FILTER>
+}
+ORDER by ASC(?start_time)

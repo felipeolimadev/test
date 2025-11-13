@@ -1,0 +1,3 @@
+OPTIONAL {
+    ?location time:inXSDCreatedDateTimeStamp ?repr_time .
+}

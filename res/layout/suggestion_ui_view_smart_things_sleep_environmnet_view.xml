@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/widgetContainerLayout" android:tag="layout/suggestion_ui_view_smart_things_sleep_environmnet_view_0" android:background="@drawable/rounded_widget_background" android:padding="@dimen/smart_things_title_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/card_text_color" android:layout_gravity="center_vertical" android:id="@id/suggestion_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+    <TextView android:textSize="@dimen/smart_things_subtitle_text_size" android:textColor="@color/energy_score_description_text_color" android:layout_gravity="center_vertical" android:id="@id/location_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:fontFamily="sec" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/smartThingsWidgetContainerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/smartThingsActionContainerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

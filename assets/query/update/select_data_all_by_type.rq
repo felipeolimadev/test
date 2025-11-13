@@ -1,0 +1,6 @@
+SELECT distinct ?s
+WHERE {
+    VALUES (?dataType) {<DataType>}
+    ?s rdf:type/rdfs:subClassOf ?dataType .
+    FILTER (?s != person:TheUser)
+}

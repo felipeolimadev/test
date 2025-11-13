@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="46.0dip" android:width="46.0dip" android:viewportWidth="46.0" android:viewportHeight="46.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_finance__0" android:pathData="M23,23m-23,0a23,23 0,1 1,46 0a23,23 0,1 1,-46 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#00000000" android:pathData="M28.419,19.306C28.397,18.884 28.296,18.053 27.749,17.23C27.09,16.241 26.176,15.844 25.641,15.612C24.553,15.141 23.615,15.14 22.895,15.139C22.118,15.137 21.215,15.135 20.182,15.58C19.513,15.867 18.188,16.436 17.715,17.835C17.681,17.935 17.267,19.222 17.944,20.45C18.47,21.404 19.355,21.777 20.59,22.296C21.456,22.66 21.6,22.593 24.121,23.326C25.732,23.794 26.009,23.919 26.311,24.095C26.925,24.451 28.012,25.083 28.354,26.35C28.603,27.275 28.324,28.06 28.239,28.277C27.789,29.427 26.772,29.94 26.114,30.272C24.208,31.233 22.345,30.892 21.849,30.794C20.994,30.626 19.064,30.245 18.09,28.571C17.675,27.858 17.574,27.153 17.551,26.708M22.98,12.974L22.98,33.026" android:strokeColor="#fffafaff" android:strokeWidth="1.7692307" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd" />
+</vector>

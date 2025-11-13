@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:tag="layout/suggestion_ui_view_weather_severe_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/weather_severe_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:clipToOutline="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/weather_severe_padding" android:importantForAccessibility="noHideDescendants">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/weather_severe_warning_image" android:layout_width="@dimen/weather_severe_image_size" android:layout_height="@dimen/weather_severe_image_size" android:src="@drawable/warning" />
+                <TextView android:textSize="@dimen/weather_severe_title_text_size" android:textColor="@color/weather_severe_title_text_color" android:layout_gravity="center_vertical" android:id="@id/weather_severe_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weather_severe_title" android:alpha="0.7" android:fontFamily="sec" android:layout_marginStart="@dimen/weather_severe_title_text_margin_start" android:textFontWeight="400" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/weather_severe_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/widgetContainerLayout" android:tag="layout/suggestion_ui_view_smart_things_home_security_view_0" android:background="@drawable/rounded_widget_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/card_text_color" android:id="@id/suggestion_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextStyleMedium" />
+    <TextView android:textSize="@dimen/smart_things_subtitle_text_size" android:textColor="@color/energy_score_description_text_color" android:id="@id/location_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:fontFamily="sec" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/smartThingSubLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <ImageView android:id="@id/arm_mode_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_summary_shm_security_security_monitoring_disarm" />
+        <TextView android:textAppearance="@style/TextStyleMedium" android:textSize="16.0dip" android:layout_gravity="center" android:id="@id/arm_mode_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disarmed" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/smartThingsWidgetContainerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/smartThingsActionContainerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

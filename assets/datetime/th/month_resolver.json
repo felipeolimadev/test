@@ -1,0 +1,143 @@
+[
+  {
+    "id": 2,
+    "type": "MONTH_WITH_NUM_AS_PREFIX",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\p{Punct}\\s]*\\s*(?:of)?\\s*(<month>)\\s*[\\p{Punct}\\s]*\\s*(<num>|<num_suffix>)",
+    "comment": "2nd january, 2024 | 2024, jan 2nd",
+    "mapping": [
+      {
+        "day": 1,
+        "month": 2,
+        "year": 3
+      },
+      {
+        "year": 1,
+        "month": 2,
+        "day": 3
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 3,
+    "type": "MONTH_WITH_NUM_AS_SUFFIX",
+    "patternString": "(<month>)\\s*[\\-|,|\\.]?\\s*(?:the)?\\s*(<num>|<num_suffix>)\\s*[\\-|,|\\.]?\\s*(<num>|<num_suffix>)",
+    "comment": "january 2, 2024 | jan 2nd | january the 2nd",
+    "mapping": [
+      {
+        "month": 1,
+        "day": 2,
+        "year" : 3
+      },
+      {
+        "month": 1,
+        "year" : 2,
+        "day" : 3
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 10,
+    "type": "YEAR_NUM_MONTH",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\-|,|\\.]?\\s*(<num>|<num_suffix>)\\s*[\\-|,|\\.]?\\s*(<month>)",
+    "comment": "2024, 24th march",
+    "mapping": [
+      {
+        "month": 3,
+        "day": 1,
+        "year" : 2
+      },
+      {
+        "month": 3,
+        "year" : 1,
+        "day" : 2
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 8,
+    "type": "MONTH_DAY_OR_MONTH_YEAR",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\-|,|\\.]?\\s*(?:of)?\\s*[\\-|,|\\.]?\\s*(<month>)",
+    "comment": "2nd january | 2024 jan",
+    "mapping": [
+      {
+        "day" : 1,
+        "month" : 2
+      },
+      {
+        "year": 1,
+        "month": 2
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 9,
+    "type": "MONTH_WITH_NUM_AS_SUFFIX",
+    "patternString": "(<month>)\\s*[\\-|,|\\.]?\\s*(?:the)?\\s*(?:[\\-|,|\\.])?\\s*(<num>|<num_suffix>)",
+    "comment": "january 2 | jan 2024",
+    "mapping": [
+      {
+        "month" : 1,
+        "day": 2
+      },
+      {
+        "month" : 1,
+        "year" : 2
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 4,
+    "type": "MONTH_WITH_NUM_AS_SUFFIX",
+    "patternString": "(<time_period>)\\s*[\\-|,|\\.]?\\s*(<num>|<num_suffix>)\\s*[\\-|,|\\.]?\\s*(<num>)?",
+    "comment": "month 2nd | month 2",
+    "mapping": [
+      {
+        "timePeriod" : 1,
+        "month" : 2,
+        "year" : 3
+      },
+      {
+        "timePeriod" : 1,
+        "month" : 2
+      }
+    ],
+    "isMonthNum" : true,
+    "shouldContainKeyword" : "month"
+  },
+  {
+    "id": 6,
+    "type": "MONTH_WITH_ITS_NUMBER",
+    "comment": "2nd month second month ",
+    "patternString": "(<num_suffix>)\\s*[\\-|,|\\.]?\\s*(<time_period>)",
+    "mapping": [
+      {
+        "month": 1
+      }
+    ],
+    "isMonthNum": true,
+    "shouldContainKeyword" : "month"
+  },
+  {
+    "id": 7,
+    "type": "MONTH_NAME_EXACT_MATCH",
+    "patternString": "(<month>)",
+    "comment": "march",
+    "mapping": [
+      {
+        "month": 1
+      }
+    ],
+    "isMonthNum" : false
+  },
+  {
+    "id": 8,
+    "type": "SPECIAL_DAY",
+    "patternString": "(<special_day>)",
+    "isSpecialDay": true
+  }
+]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_ai" android:title="AI Agent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout_width="fill_parent">
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Gemini" android:key="ai_gemini" android:defaultValue="true" app:iconType="ai_gemini" />
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Perplexity" android:key="ai_perplexity" android:defaultValue="false" app:iconType="ai_perplexity" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="133" android:valueFrom="0" android:valueTo="0" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__11" android:duration="750" android:valueFrom="0" android:valueTo="0.115" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="133" android:valueFrom="0" android:valueTo="0" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__12" android:duration="750" android:valueFrom="0" android:valueTo="0.115" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__13" android:duration="883" android:valueFrom="15.216" android:valueTo="0.948" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__14" android:duration="883" android:valueFrom="27.593" android:valueTo="19.415" android:propertyName="translateY" />
+    </set>
+</set>

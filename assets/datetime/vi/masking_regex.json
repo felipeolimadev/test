@@ -1,0 +1,343 @@
+{
+  "masks": [
+    {
+      "id": 1,
+      "mask": "<day_of_week>",
+      "keywords": [
+        "chủ\\s*nhật",
+        "thứ\\s*hai",
+        "thứ\\s*ba",
+        "thứ\\s*tư",
+        "thứ\\s*năm",
+        "thứ\\s*sáu",
+        "thứ\\s*bảy"
+      ]
+    },
+    {
+      "id": 2,
+      "mask": "<month>",
+      "keywords": [
+        "tháng\\s*một",
+        "tháng\\*Giêng",
+        "tháng\\s*hai",
+        "tháng\\s*ba",
+        "tháng\\s*tư",
+        "tháng\\s*năm",
+        "tháng\\s*sáu",
+        "tháng\\s*bảy",
+        "tháng\\s*tám",
+        "tháng\\s*chín",
+        "tháng\\s*mười",
+        "tháng\\s+mười\\s*một",
+        "tháng\\s*mười\\s+một",
+        "tháng\\s+mười\\s*hai",
+        "tháng\\s*mười\\s+hai"
+      ]
+    },
+    {
+      "id": 4,
+      "mask": "<special_day>",
+      "keywords": [
+        "ngày_cảm_ơn",
+        "ngày_quốc_khánh",
+        "ngày_lao_động",
+        "tết_mới",
+        "giáng_sinh"
+      ]
+    },
+    {
+      "id": 5,
+      "mask":"<time_format>",
+      "keywords": [
+        "sáng",
+        "chiều",
+        "tối",
+        "giờ\\s*sáng",
+        "giờ\\s*chiều",
+        "giờ\\s*tối"
+      ]
+    },
+    {
+      "id": 6,
+      "mask":"<relative_time_format>",
+      "keywords": [
+        "bữa\\s*tối",
+        "bữa\\s*trưa",
+        "bữa\\s*sáng",
+        "sáng\\s*sớm",
+        "chiều\\s*tối",
+        "buổi\\s*tối",
+        "buổi\\s*sáng",
+        "buổi\\s*chiều",
+        "trong\\s*đêm",
+        "đêm\\s*trong",
+        "đêm",
+        "trưa",
+        "đêm\\s+muộn",
+        "buổi\\s*sáng\\s*sớm",
+        "buổi\\s*chiều\\s*muộn",
+        "buổi\\s*tối\\s*muộn",
+        "giữa\\s*đêm",
+        "sáng\\s*nữa",
+        "bình\\s*minh",
+        "hoàng\\s*hôn",
+        "chạng\\s*vạng"
+      ]
+    },
+    {
+      "id": 7,
+      "mask": "<time_h>",
+      "keywords": [
+        "giờ",
+        "vài\\s*giờ"
+      ]
+    },
+    {
+      "id": 8,
+      "mask": "<time_m>",
+      "keywords": [
+        "phúts?",
+        "vài\\s*phúts"
+      ]
+    },
+    {
+      "id": 9,
+      "mask": "<time_s>",
+      "keywords": [
+        "giây",
+        "giây s",
+        "vài\\s*giây"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time_relative>",
+      "keywords": [
+        "nửa\\s+giờ",
+        "một\\s*phút",
+        "một\\s*giờ"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time>",
+      "keywords": [
+        "buổi\\s*trưa",
+        "nửa\\s*đêm",
+        "giữa\\s*trưa",
+        "bây\\s*giờ",
+        "ngay\\s*bây\\s*giờ",
+        "từ\\s*bây\\s*giờ",
+        "thời\\s*gian\\s*này",
+        "cùng\\s*thời\\s*gian",
+        "thời\\s*điểm\\s*này"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<num_word>",
+      "keywords": [
+        "một",
+        "hai",
+        "ba",
+        "bốn",
+        "năm",
+        "sáu",
+        "bảy",
+        "tám",
+        "chín",
+        "mười",
+        "mười\\s*một",
+        "mười\\s*hai",
+        "mười\\s*ba",
+        "mười\\s*bốn",
+        "mười\\s+lăm",
+        "mười\\s+sáu",
+        "mười\\s+bảy",
+        "mười\\s+tám",
+        "mười\\s+chín",
+        "hai\\s+mươi",
+        "ba\\s*mươi",
+        "bốn\\s*mươi",
+        "năm\\s*mươi"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<special_num>",
+      "keywords": [
+        "quý",
+        "một\\s*phần\\s*tư",
+        "một\\s*nửa"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<cyclic_keyword>",
+      "keywords": [
+        "mỗi",
+        "mỗi",
+        "cứ"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<temporal_adjective>",
+      "keywords": [
+      ]
+    },
+
+    {
+      "id": 12,
+      "mask": "<time_period>",
+      "keywords": [
+        "ngày",
+        "tuần",
+        "tuần\\s*thứ",
+        "tháng",
+        "tháng\\s*thứ",
+        "năm",
+        "ngàys",
+        "tuầns",
+        "thángs",
+        "năms",
+        "cuối\\s*tuần",
+        "quý"
+      ]
+    },
+    {
+      "id": 13,
+      "mask": "<relative_day>",
+      "keywords": [
+        "mai",
+        "hôm\\s*nay",
+        "ngày\\s*mai",
+        "ngày\\s*kia",
+        "ngày\\s*qua",
+        "ngay\\s*bây\\s*giờ"
+      ]
+    },
+    {
+      "id": 16,
+      "mask": "<num_suffix>",
+      "keywords": [
+        "\\d{1,4}",
+        "Thứ nhất",
+        "đầu\\s*tiên",
+        "giây",
+        "tám",
+        "thứ chín"
+      ]
+    },
+    {
+      "id": 17,
+      "mask": "<num>",
+      "keywords": [
+        "\\d{1,4}"
+      ]
+    },
+    {
+      "mask": "<before_reference>",
+      "keywords": [
+        "sớm",
+        "qua"
+      ]
+    },
+    {
+      "mask": "<current_reference>",
+      "keywords": [
+        "nay",
+        "này"
+      ]
+    },
+    {
+      "id" : 15,
+      "mask" : "<last_reference>",
+      "keywords": [
+        "trước",
+        "cuối",
+        "cuối\\s*cùng"
+      ]
+    },
+    {
+      "id": 14,
+      "mask": "<after_reference>",
+      "keywords": [
+        "sau",
+        "từ\\s*bây\\s*giờ",
+        "sau\\s*đó",
+        "kể\\s*từ",
+        "kể\\s*từ\\s*bây\\s*giờ",
+        "nữa"
+      ]
+    },
+    {
+      "id" : 16,
+      "mask" : "<recurring_event>",
+      "keywords": [
+        "hai\\s*tuần\\s*mỗi\\s*lần"
+      ]
+    },
+    {
+      "id" : 17,
+      "mask" : "<recurring_keyword>",
+      "keywords": [
+        "mỗi",
+        "hàng",
+        "hằng",
+        "cứ",
+        "cứ\\s*sau"
+      ]
+    },
+    {
+      "id" : 17,
+      "mask" : "<day_of_week_recurring>",
+      "keywords": [
+      ]
+    },
+    {
+      "id" : 18,
+      "mask" : "<after_range>",
+      "keywords": [
+        "trong\\s*vòng ",
+        "tiếp\\s*theo",
+        "tới"
+      ]
+    },
+    {
+      "id" : 19,
+      "mask" : "<before_range>",
+      "keywords": [
+      ]
+    },
+    {
+      "id" : 20,
+      "mask" : "<starts_from>",
+      "keywords" : [
+        "từ"
+      ]
+    },
+    {
+      "id" : 21,
+      "mask" : "<ends_on>",
+      "keywords" : [
+        "cho\\s*den",
+        "cho\\s*đến"
+      ]
+    },
+    {
+      "id": 22,
+      "mask": "<range_relative_connector>",
+      "keywords": [
+        "đến"
+      ]
+    },
+    {
+      "id" : 23,
+      "mask" : "<start_of_duration>",
+      "keywords": [
+        "cho"
+      ]
+    }
+  ]
+}

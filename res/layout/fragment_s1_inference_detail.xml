@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/input_section_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="📝 S1 Model Input" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤 Enter User: " android:layout_marginEnd="8.0dip" />
+                <EditText android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/edit_text_user" android:background="@drawable/edit_text_background" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="Lisa" android:hint="Enter user name" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPersonName" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="💬 Conversation:" />
+            <EditText android:textSize="13.0sp" android:textColor="@android:color/black" android:gravity="start|center|top" android:id="@id/edit_text_conversation" android:background="@drawable/edit_text_background" android:padding="12.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="150.0dip" android:hint="Enter conversation here..." android:inputType="textMultiLine" android:fontFamily="monospace" />
+            <Button android:enabled="false" android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_run_inference" android:background="@drawable/button_primary_background" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:text="🚀 Run S1 Inference" />
+        </LinearLayout>
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="8.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/output_section_background" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="📊 S1 Model Output" />
+            <ScrollView android:id="@id/scroll_view_result" android:background="@drawable/result_background" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="250.0dip" android:fillViewport="true" android:nestedScrollingEnabled="true">
+                <TextView android:textSize="13.0sp" android:textColor="@color/result_text" android:id="@id/text_view_result" android:padding="12.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Click 'Run S1 Inference' to see results..." android:lineSpacingExtra="2.0dip" android:fontFamily="monospace" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

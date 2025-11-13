@@ -1,0 +1,11 @@
+DELETE {
+    ?target time:hasBeginning ?s .
+    ?target time:hasEnd ?s .
+    ?target time:inXSDBeginningDateTimeStamp ?s .
+    ?target time:inXSDEndDateTimeStamp ?s .
+    ?s ?p ?o .
+} WHERE {
+    VALUES (?target) {<Keywords>}
+    ?target time:hasBeginning|time:hasEnd|time:inXSDBeginningDateTimeStamp|time:inXSDEndDateTimeStamp ?s .
+    OPTIONAL { ?s ?p ?o . }
+}

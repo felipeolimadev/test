@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/magic_inference_test_nav_graph" app:startDestination="@id/magic_inference_test_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Magic Inference Test" android:name="com.samsung.android.moneta.debugui.developmode.search.MagicInferenceTestFragment" android:id="@id/magic_inference_test_main">
+        <action android:id="@id/action_main_to_s1_inference_detail" app:destination="@id/s1_inference_detail" />
+        <action android:id="@id/action_main_to_bert_inference_detail" app:destination="@id/bert_inference_detail" />
+    </fragment>
+    <fragment android:label="S1 Inference Detail" android:name="com.samsung.android.moneta.debugui.developmode.search.S1InferenceDetailFragment" android:id="@id/s1_inference_detail" />
+    <fragment android:label="BERT Inference Detail" android:name="com.samsung.android.moneta.debugui.developmode.search.BertInferenceDetailFragment" android:id="@id/bert_inference_detail" />
+</navigation>

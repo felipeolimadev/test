@@ -1,0 +1,4 @@
+select (COUNT(*) AS ?cnt)
+where {
+	<QUERY>
+}

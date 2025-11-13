@@ -1,0 +1,50 @@
+{
+  "name": "DataSource",
+  "type": "datatype",
+  "id": "datatype.enumeration.DataSource",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "Custom",
+      "Output",
+      "AskEachTime",
+      "CurrentLocation",
+      "CurrentTime",
+      "FromClipboard",
+      "ActionFlowInput"
+    ],
+    "descriptions": [
+      {
+        "value": "Custom",
+        "description": "Custom"
+      },
+      {
+        "value": "Output",
+        "description": "Output"
+      },
+      {
+        "value": "AskEachTime",
+        "description": "AskType each time"
+      },
+      {
+        "value": "CurrentLocation",
+        "description": "Current location"
+      },
+      {
+        "value": "CurrentTime",
+        "description": "Current time"
+      },
+      {
+        "value": "FromClipboard",
+        "description": "From clipboard"
+      },
+      {
+        "value": "ActionFlowInput",
+        "description": "Action flow input"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

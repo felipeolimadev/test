@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "type": "RELATIVE_TIME_PERIOD",
+      "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>)?\\s*(<time_period>)(?:\\s|$|\\.|,)",
+      "mapping" : [
+        {
+          "timeDuration" : 2
+        }
+      ],
+      "comment" : "nächste Woche, letzte Woche, diese Woche, diesen Monat, letzter Tag etc."
+    },
+    {
+      "id": 2,
+      "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+      "comment" : "nächsten Montag, letzten Dienstag, diesen Mittwoch, nächsten Januar, letzten Februar, diesen März, etc.",
+      "patternString": "(?:\\s|^|\\.|,)(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<month>|<day_of_week>)(?:\\s|$|\\.|,)"
+    },
+    {
+      "id" : 4,
+      "type" : "NUM_TIME_AFTER_REFERENCE",
+      "comment": "1 week after, 2 Tage später, etc.",
+      "patternString" : "(?:\\s|^|\\.|,)(<num>|<num_suffix>)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)(?:\\s|$|\\.|,)",
+      "mapping" : [
+        {
+          "timeDuration" : 1
+        }
+      ]
+    }
+]

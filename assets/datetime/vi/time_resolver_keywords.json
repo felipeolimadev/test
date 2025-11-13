@@ -1,0 +1,103 @@
+{
+  "absolute": [
+    {
+      "id": 1,
+      "key": "am_present",
+      "keywords":[
+        "buổi sáng",
+        "sáng sớm",
+        "cuối buổi sáng",
+        "vào buổi sáng",
+        "bình minh",
+        "bữa sáng"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "pm_present",
+      "keywords":[
+        "buổi chiều",
+        "vào buổi chiều",
+        "buổi trưa",
+        "buổi tối",
+        "đêm",
+        "vào ban đêm",
+        "vào buổi tối",
+        "đêm muộn",
+        "chiều muộn",
+        "buổi tối muộn",
+        "đầu buổi tối",
+        "hoàng hôn",
+        "bữa tối",
+        "bữa trưa"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "key": "00:00:00:AM",
+      "keywords": [
+        "nửa đêm",
+        "giữa đêm"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "12:00:00:PM",
+      "keywords": [
+        "buổi trưa",
+        "giữa trưa"
+      ]
+    },
+    {
+      "id": 3,
+      "key": "00:30:00:DELTA",
+      "keywords": [
+        "nửa giờ"
+      ]
+    },
+    {
+      "id": 4,
+      "key": "00:01:00:DELTA",
+      "keywords": [
+        "một phút"
+      ]
+    },
+    {
+      "id": 4,
+      "key": "01:00:00:DELTA",
+      "keywords": [
+        "một giờ"
+      ]
+    },
+    {
+      "id": 5,
+      "key": "-1:-1:-1:24-hr",
+      "keywords": [
+        "bây giờ",
+        "ngay bây giờ",
+        "bây giờ trở đi",
+        "thời điểm này",
+        "cùng thời điểm"
+      ]
+    },
+    {
+      "id": 6,
+      "key": "06:00:00:AM",
+      "keywords": [
+        "buổi sáng",
+        "vào buổi sáng",
+        "sáng sớm"
+      ]
+    },
+    {
+      "id": 7,
+      "key": "06:00:00:PM",
+      "keywords": [
+        "buổi tối",
+        "vào buổi tối"
+      ]
+    }
+  ]
+}

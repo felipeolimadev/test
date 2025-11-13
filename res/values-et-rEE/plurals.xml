@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d päeva jäänud.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d päev jäänud.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s toimub %2$d päeva pärast.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s toimub %2$d päeva pärast.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d sündmust%3$s jätkuvad homme.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d sündmus%3$s jätkub homme.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Teil on täna %1$s%2$d sündmust%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on täna %1$s%2$d sündmus%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Teil on täna %1$d sündmust. Esimene sündmus on %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on täna %1$d sündmus. Esimene sündmus on %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Tänaseks on jäänud %1$s%2$d sündmust%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tänaseks on jäänud %1$s%2$d sündmus%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Teil on homme %1$s%2$d sündmust%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on homme %1$s%2$d sündmus%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Teil on homme %1$d sündmust. Esimene sündmus on %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on homme %1$d sündmus. Esimene sündmus on %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d sün.-st</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sündmus</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Algab %d min pärast</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Algab %d min pärast</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">Tänaseks jäänud %d meeldetul.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tänaseks jäänud %d meeldetul.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Saite täna %d sõnumit saadetiste kohta. Vaadake neid, veendumaks, et olete oma saadetiste olekuga kursis.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Saite täna %d sõnumi saadetise kohta. Vaadake seda, veendumaks, et olete oma saadetise olekuga kursis.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d saadetist täna</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d saadetis täna</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Üle sihtmärgi %d korda see nädal.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Üle sihtmärgi %d korra see nädal.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d aktiiv. eesm. täidet.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aktiiv. eesm. täidet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Teie tõusu kasv kokku oli %1$s ja te põletasite %2$,d kalorit.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie tõusu kasv kokku oli %1$s ja te põletasite %2$,d kalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Teie keskmine tempo oli %1$s ja te põletasite %2$,d kalorit.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie keskmine tempo oli %1$s ja te põletasite %2$,d kalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Teie keskmine kiirus oli %1$s ja te põletasite %2$,d kalorit.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie keskmine kiirus oli %1$s ja te põletasite %2$,d kalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Siin on kokkuvõte teie treeningust (%1$s). See kestis %2$s ja te põletasite %3$,d kalorit.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siin on kokkuvõte teie treeningust (%1$s). See kestis %2$s ja te põletasite %3$,d kalori.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Jätsite täna %d plaanilist ravimit võtmata.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jätsite täna %d plaanilise ravimi võtmata.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d tundi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d tundi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minutit</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Teil on täna %1$s%2$d vastamata kõnet%3$s, mida te pole veel kontrollinud.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on täna %1$s%2$d vastamata kõne%3$s, mida te pole veel kontrollinud.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Teil on täna jäänud vastamata %d kõnet. Vaadake seda vastamata kõnet oma Now briefis. Vajadusel saate määrata ka meeldetuletuse, et te ei unustaks tagasi helistada.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on täna jäänud vastamata %d kõne. Vaadake seda vastamata kõnet oma Now briefis. Vajadusel saate määrata ka meeldetuletuse, et te ei unustaks tagasi helistada.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Veel %d vastamata kõnet</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Veel %d vastamata kõne</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d vast.-ta kõnet</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d vastamata kõne</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d tundi tagasi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tund tagasi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d min tagasi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d min tagasi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI täiustatud nutifunktsioonide kasutamiseks peate olema vähemalt %d-aastane.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AI täiustatud nutifunktsioonide kasutamiseks peate olema vähemalt %d-aastane.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d sõnumit</item>
+        <item quantity="one">%d sõnum</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d miili</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d miili</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d sekundit</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Olete hommikuks seadnud %1$s%2$d alarmi%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Olete hommikuks seadnud %1$s%2$d alarmi%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Olete homseks hommikuks seadnud %1$s%2$d alarmi%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Olete homseks hommikuks seadnud %1$s%2$d alarmi%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sLahkuge kell %2$s%3$s, et jõuda lennujaama vähemalt %4$d tundi enne väljumist. Seadke alam, et te ei unustaks.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sLahkuge kell %2$s%3$s, et jõuda lennujaama vähemalt %4$d tund enne väljumist. Seadke alam, et te ei unustaks.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sLahkuge kell %2$s%3$s, et jõuda lennujaama vähemalt %4$d tundi enne lendu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sLahkuge kell %2$s%3$s, et jõuda lennujaama vähemalt %4$d tund enne lendu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Soovita sihtkohale %2$s %1$d-päevast reisiplaani, mis hõlmab huvitavaid kohti, tegevusi ja proovimisväärseid restorane.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Soovita sihtkohale %2$s %1$d-päevast reisiplaani, mis hõlmab huvitavaid kohti, tegevusi ja proovimisväärseid restorane.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Vaadake neid %1$ssoovitatud rakendusi%2$s, mis võivad teie reisi ajal kasulikud olla.</item>
+        <item quantity="one">Vaadake seda %1$ssoovitatud rakendust%2$s, mis võib teie reisi ajal kasulik olla.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sLaadige see keelepakett eelnevalt alla%2$s, et oleksite valmis seda sihtpunkti jõudes funktsioonis Tõlk kasutama.</item>
+        <item quantity="one">%1$sLaadige need keelepaketid eelnevalt alla%2$s, et oleksite valmis neid sihtpunkti jõudes funktsioonis Tõlk kasutama.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Allalaaditavad keelepaketid</item>
+        <item quantity="one">Allalaaditav keelepakett</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d seadet sisse lül.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seade sisse lülitatud</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Viimati ühendust võetud %d päeva tagasi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viimati ühendust võetud %d päev tagasi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Viimane kontakt %d päeva tagasi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viimane kontakt %d päev tagasi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Viimane kontakt %d kuud tagasi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viimane kontakt %d kuu tagasi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Viimane kontakt %d nädalat tagasi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Viimane kontakt %d nädal tagasi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Veel %d kontakti</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Veel %d kontakt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Teil on Samsung Walletis kupong, mis aegub %d päeva pärast. Kasutage seda kindlasti enne selle aegumist.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teil on Samsung Walletis kupong, mis aegub %d päeva pärast. Kasutage seda kindlasti enne selle aegumist.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Kõrge miinus %d kraadi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kõrge miinus %d kraad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Madal miinus %d kraadi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Madal miinus %d kraad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Teie kalendris on sündmus nimega %1$s. Kell %4$s on asukohas %5$s %2$d kraadi %3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Teie kalendris on sündmus nimega %1$s. Kell %4$s on asukohas %5$s %2$d kraadi %3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Kõrge %d kraadi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kõrge %d kraad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Madal %d kraadi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Madal %d kraad</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s vaatamist</item>
+        <item quantity="one">%s vaade</item>
+    </plurals>
+</resources>

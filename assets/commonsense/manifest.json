@@ -1,0 +1,33 @@
+{
+  "version": "0",
+  "domains": {
+    "COUNTRY": {
+      "file": "commonsense/country_linked.csv",
+      "schema": "entity,country_code"
+    },
+    "CITY": {
+      "file": "commonsense/city_linked.csv",
+      "schema": "entity,country_code"
+    },
+    "GLOBALSPOT": {
+      "file": "commonsense/global_spot_linked.csv",
+      "schema": "entity,country_code,extra_info"
+    },
+    "LOCALSPOT": {
+      "file": "commonsense/local_spot_linked.csv",
+      "schema": "entity,country_code,extra_info"
+    },
+    "AIRPORT": {
+      "file": "commonsense/airport_linked.csv",
+      "schema": "entity,country_code,extra_info"
+    },
+    "SPORTS": {
+      "file": "commonsense/sports_linked.csv",
+      "schema": "entity,extra_info"
+    },
+    "FOOD": {
+      "file": "commonsense/food_linked.csv",
+      "schema": "entity,extra_info"
+    }
+  }
+}

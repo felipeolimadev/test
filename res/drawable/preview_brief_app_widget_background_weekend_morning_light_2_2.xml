@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="500.0dip" android:width="500.0dip" />
+    <gradient android:startColor="@color/preview_brief_app_widget_background_weekend_morning_light_start" android:endColor="@color/preview_brief_app_widget_background_weekend_morning_light_end" android:angle="@integer/ai_suggestion_app_widget_angle" android:type="linear" />
+</shape>

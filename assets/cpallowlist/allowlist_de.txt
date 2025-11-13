@@ -1,0 +1,7 @@
+tour,travel,trip,reisen,reise
+heiraten,wedding,Hochzeitszeremonie,indenhafendereheeinlaufen,eheschließung,hochzeitsveranstaltung,hochzeit,imhafenderehelanden,ehe,trauungszeremonie,hochzeitstag,hochzeitsfeier,marriage ceremony
+matriculation,Eingangszeremonie,immatrikulationszeremonie,aufnahmezeremonie,einschreibungszeremonie,entrance ceremony
+tagderabschlussfeier,abschlussfeier,entlassungsfeier,graduation,einberufung,Abschluss,commencement,diplomfeier
+birthday,Geburtstag,jahrestagdergeburt,geburtsdatum,tagdergeburt,geburtstag,birth anniversary
+Hochzeitstag,jahrestagderhochzeit,jahrestagdereheschließung,wedding anniversary,marriage anniversary,hochzeitsfeier
+vacation, Urlaub

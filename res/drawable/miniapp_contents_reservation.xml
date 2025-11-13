@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="38.0dip" android:width="38.0dip" android:viewportWidth="38.0" android:viewportHeight="38.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_contents_reservation__0" android:pathData="M19,19m-19,0a19,19 0,1 1,38 0a19,19 0,1 1,-38 0" />
+    <path android:fillColor="#fff5f5f5" android:pathData="M26.211,22.365C26.346,22.65 26.327,22.975 26.157,23.242C25.987,23.51 25.702,23.667 25.386,23.667H12.075C11.758,23.667 11.47,23.509 11.299,23.241C11.134,22.977 11.114,22.65 11.25,22.364L12.949,18.795L12.948,15.8L12.948,15.81L12.946,15.825C13.08,12.612 15.615,10.18 18.729,10.18C21.844,10.18 24.378,12.611 24.504,15.721L24.504,15.722C24.507,15.762 24.507,15.762 24.508,15.778L24.51,15.8L24.51,18.795L26.211,22.365ZM18.725,27.801C17.253,27.801 16.06,26.608 16.06,25.137H21.389C21.389,26.608 20.196,27.801 18.725,27.801Z" android:fillType="evenOdd" />
+</vector>

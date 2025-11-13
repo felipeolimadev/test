@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*(\\.)?\\s*(<num>)\\s*(\\.)?\\s*(<num>)",
+    "comment": "25.01.00 | 25 01 00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*(?:-)\\s*(<num>)\\s*(?:-)?\\s*(<num>)",
+    "comment": "25-01-00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*(\/)\\s*(<num>)\\s*(\/)\\s*(<num>)",
+    "comment": "25/01/00",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(วันที่)?\\s*(<num>|<num_suffix>)\\s*[\\/|\\.|\\-|,]?\\s*(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(<num>)",
+    "comment": "25th jan 2024 วันที่ = date",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 3,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(วันที่)?\\s*(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(?:the)?\\s*(<num>|<num_suffix>)\\s*[\\/|\\.|\\-||,]?\\s*(<num>)",
+    "comment": "jan 2nd 2024"
+  },
+  {
+    "id": 4,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)\\s*[\\/|\\.|\\-]?\\s*(<num>)",
+    "comment": "02/24(mm/yy) | 01/02(dd/mm)",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 5,
+    "type": "MONTH_WORD_DAY_NUM",
+    "patternString": "(วันที่)?\\s*(<month>[\\.]?)\\s*(?:on)?\\s*[\\/|\\.|\\-|,]?\\s*(<num>|<num_suffix>)",
+    "comment": "jan 25 | jan 25th"
+  },
+  {
+    "id": 5,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(วันที่)?\\s*(<num>|<num_suffix>)\\s*[\\/|\\.|\\-]?\\s*(<month>)",
+    "comment": "25 jan | 25th jan",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 6,
+    "type": "special_days",
+    "patternString": "(<recurring_keyword>|<after_range>)?\\s*(<special_day>)\\s*(?:of|in)?\\s*(<num>)?",
+    "comment": "labors day, independence day, every holi, holi of 2025, next holi"
+  },
+  {
+    "id": 8,
+    "type": "NUM_WORD_OR_NUM_MONTH_YEAR_OPTIONAL",
+    "patternString": "(?:the|The)?\\s*(<num>|<num_suffix>)\\s*(?:of|Of)?\\s*(<month>[\\.]?)\\s*[,]?\\s*(<num>)?",
+    "comment": "2nd of october, 2024",
+    "isPartOfRange" : true
+  },
+  {
+    "id": 9,
+    "type": "RELATIVE_DAY",
+    "patternString": "(<relative_day>)",
+    "comment": "today, tmrw"
+  },
+  {
+    "id": 12,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<num_suffix>)\\s*(?:of|in)?\\s*(<time_period>|<day_of_week>)\\s*[,|\\.]?\\s*(<num>)?",
+    "comment": "2nd monday , 2025 "
+  },
+  {
+    "id": 13,
+    "type": "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "comment" : "first day of jan, 2025 | first day of jan |  first monday of jan 2025.",
+    "patternString": "(<num_suffix>|<last_reference>)\\s*(<time_period>|<day_of_week>)\\s*(?:of|in)?\\s*(<month>)\\s*(?:[,])?\\s*(<time_period>)?\\s*(<num>)?"
+  },
+  {
+    "id" : 14,
+    "type" : "",
+    "comment" : "first day of 2025| first monday of 2025",
+    "patternString" : "(<num_suffix>|<last_reference>)\\s*(<time_period>|<day_of_week>)\\s*(?:of|in)?\\s*(?:[,])?\\s*(<time_period>)?\\s*(<num>)"
+  },
+  {
+    "id": 14,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString": "(<time_period>)\\s*(<num>|<num_suffix>)\\s*(<num>)?"
+  },
+  {
+    "id": 15,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(<num>)\\s*[,]?\\s*(<num>|<num_suffix>)\\s*(<month>)",
+    "comment" : "2025 2nd jan| 2025 2 jan"
+  },
+  {
+    "id": 16,
+    "type": "YEAR_NUM_MONTH_WORD_DAY_NUM",
+    "patternString": "(<num>)\\s*[,]?\\s*(<month>)\\s*(<num>|<num_suffix>)",
+    "comment" : "2025 jan 2nd| 2025 jan 2"
+  },
+  {
+    "id": 11,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString": "(<month>|<day_of_week>)",
+    "isOnlyDayOfWeek" : true
+  },
+  {
+    "id": 12,
+    "type": "DAY_OF_MONTH",
+    "patternString": "(?:the)?\\s*(<num_suffix>|<num>)\\s*(?:of)"
+  },
+  {
+    "id": 13,
+    "type": "DAY_OF_WEEK_NUMBER",
+    "patternString": "(<day_of_week>)\\s*(<num_suffix>)"
+  }
+]

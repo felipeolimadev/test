@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.util.SeslShapeDrawable android:shape="rectangle">
+        <corners android:radius="@dimen/sesl_projection_bg_radius" />
+        <solid android:color="@color/sesl_floating_toolbar_background_selector_light" />
+    </androidx.appcompat.util.SeslShapeDrawable>
+</inset>

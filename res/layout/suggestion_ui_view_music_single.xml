@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/card_container" android:tag="layout/suggestion_ui_view_music_single_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/card_image" android:background="@drawable/rounded_music_image_background" android:layout_width="@dimen/spotify_card_image_size" android:layout_height="@dimen/spotify_card_image_size" android:scaleType="centerCrop" android:importantForAccessibility="no" android:layout_marginStart="@dimen/action_card_padding" android:layout_marginVertical="@dimen/spotify_card_image_margin" android:clipToOutline="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/spotify_card_image_size" android:layout_marginStart="@dimen/spotify_card_text_margin_start" android:layout_marginEnd="@dimen/action_card_padding" android:layout_marginVertical="@dimen/spotify_card_image_margin">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/card_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:maxHeight="@dimen/spotify_text_container_size">
+            <TextView android:textSize="@dimen/spotify_card_title_text_size" android:textColor="@color/spotify_card_text_color" android:ellipsize="end" android:id="@id/card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="sec" android:textFontWeight="600" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/spotify_card_sub_title_text_size" android:textColor="@color/spotify_card_subtext_color" android:id="@id/card_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="400" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/card_group_divider" android:background="@drawable/suggestion_ui_view_music_divider" android:visibility="gone" android:layout_width="@dimen/spotify_card_divider_size" android:layout_height="@dimen/spotify_card_divider_size" android:layout_marginHorizontal="@dimen/spotify_card_divider_margin" android:textFontWeight="400" />
+                <TextView android:textSize="@dimen/spotify_card_sub_title_text_size" android:textColor="@color/spotify_card_subtext_color" android:ellipsize="end" android:id="@id/card_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec" android:textFontWeight="400" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/clickableButton" android:background="@drawable/suggestion_ui_view_music_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/spotify_card_button_text_size" android:textColor="@color/spotify_card_button_text_color" android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spotify_card_button_text_margin" android:layout_marginRight="@dimen/spotify_card_button_text_margin" android:fontFamily="sec" android:textFontWeight="600" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end|center|top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/card_logo" android:background="@drawable/spotify_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/spotify_card_logo_color" android:importantForAccessibility="no" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

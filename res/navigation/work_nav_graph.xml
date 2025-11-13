@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/work_nav_graph" app:startDestination="@id/work_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/util_data_source_chooser" />
+    <fragment android:label="Work" android:name="com.samsung.android.moneta.debugui.developmode.work.WorkFragment" android:id="@id/work_main">
+        <action android:id="@id/action_work_main_to_worker_launcher" app:destination="@id/worker_launcher" />
+        <action android:id="@id/action_work_main_to_work_monitor" app:destination="@id/work_monitor" />
+        <action android:id="@id/action_work_main_to_work_history" app:destination="@id/work_history" />
+    </fragment>
+    <fragment android:label="Worker Launcher" android:name="com.samsung.android.moneta.debugui.developmode.work.WorkerLauncherFragment" android:id="@id/worker_launcher">
+        <action android:id="@id/action_worker_launcher_to_data_source_chooser" app:destination="@id/util_data_source_chooser" />
+    </fragment>
+    <fragment android:label="Work Monitor" android:name="com.samsung.android.moneta.debugui.developmode.work.WorkMonitorFragment" android:id="@id/work_monitor" />
+    <fragment android:label="Work History" android:name="com.samsung.android.moneta.debugui.developmode.work.WorkHistoryFragment" android:id="@id/work_history" />
+</navigation>

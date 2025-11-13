@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Gallery Family APIs">
+        <Preference android:title="Gallery Family Interface" android:key="KEY_RELATIONSHIP_GALLERY_FAMILY_INTERFACE_FINAL" app:iconSpaceReserved="false" />
+        <Preference android:title="Reasoning (Face Id, Score, Filter)" android:key="KEY_RELATIONSHIP_GALLERY_REASONING" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Gallery Signal Candidates">
+        <Preference android:title="Co-Occurrence Faces" android:key="KEY_RELATIONSHIP_GALLERY_CO_OCCURRENCE_FACES" app:iconSpaceReserved="false" />
+        <Preference android:title="Festive Faces" android:key="KEY_RELATIONSHIP_GALLERY_FESTIVE_FACES" app:iconSpaceReserved="false" />
+        <Preference android:title="Event Faces" android:key="KEY_RELATIONSHIP_GALLERY_EVENT_FACE" app:iconSpaceReserved="false" />
+        <Preference android:title="Periodic Faces" android:key="KEY_RELATIONSHIP_GALLERY_PERIODIC_FACES" app:iconSpaceReserved="false" />
+        <Preference android:title="Top Faces" android:key="KEY_RELATIONSHIP_GALLERY_TOP_FACES" app:iconSpaceReserved="false" />
+        <Preference android:title="Me Faces" android:key="KEY_RELATIONSHIP_GALLERY_ME_FACES" app:iconSpaceReserved="false" />
+        <Preference android:title="Co-Occurrence with Me" android:key="KEY_RELATIONSHIP_GALLERY_ME_COC" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

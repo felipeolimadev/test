@@ -1,0 +1,5 @@
+<http://pkg.samsung.com/content#FourWEvent>,<http://www.w3.org/2004/02/skos/core#altLabel>,"Calendar"
+<http://pkg.samsung.com/content#FourWEvent>,<http://www.w3.org/2004/02/skos/core#altLabel>,"Event"
+<http://pkg.samsung.com/content#ImageFile>,<http://www.w3.org/2004/02/skos/core#altLabel>,"Image file"
+<http://pkg.samsung.com/content#Message>,<http://www.w3.org/2004/02/skos/core#altLabel>,"Msg"
+<http://pkg.samsung.com/user#Person>,<http://www.w3.org/2004/02/skos/core#altLabel>,"Contact list"

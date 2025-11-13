@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pde_settings" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="Run Travel Simulation Tool" android:key="key_collector_travel_switch" android:defaultValue="false" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_travel_sim_show">
+        <Preference android:title="@string/collector_travel_sim_show_visited_place" android:key="key_collector_travel_sim_show_visited_place" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.travelsimulationtool.ShowVpEntitiesFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_sim_show_visited_place_record" android:key="key_collector_travel_sim_show_visited_place_record" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.travelsimulationtool.ShowVprEntitiesFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_travel_sim_change">
+        <Preference android:title="@string/collector_travel_sim_insert_visited_place" android:key="key_collector_travel_sim_insert_visited_place" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.travelsimulationtool.InsertVisitedPlaceFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_sim_insert_visited_place_record" android:key="key_collector_travel_sim_insert_visited_place_record" android:fragment="com.samsung.android.moneta.debugui.developmode.collector.travelsimulationtool.InsertVisitedPlaceRecordFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_sim_change_device_time" android:key="key_collector_travel_sim_change_device_time" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/collector_travel_sim_notify">
+        <Preference android:title="@string/collector_travel_sim_notify_home_country_in_out_event" android:key="key_collector_travel_sim_notify_home_country_in_out_event" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_sim_notify_familiar_area_in_out_event" android:key="key_collector_travel_sim_notify_familiar_area_in_out_event" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_sim_notify_home_in_event" android:key="key_collector_travel_sim_notify_home_in_event" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_travel_sim_notify_country_code_changed_event" android:key="key_collector_travel_sim_notify_country_code_changed_event" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

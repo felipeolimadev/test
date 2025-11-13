@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:orientation="vertical" android:tag="layout/suggestion_ui_view_moments_weekly_list_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/date" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moments_weekly_card_date_margin_top" android:layout_marginBottom="@dimen/moments_weekly_card_date_margin_bottom" android:layout_marginHorizontal="@dimen/moments_weekly_card_date_margin_horizontal" style="@style/MomentsWeeklyCardDateTextStyle" />
+    <View android:id="@id/spacer" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="@dimen/moments_weekly_card_spacer_height" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="?seslLargeTouchAnimator" style="@style/Base.Theme.MomentsWeeklyCardStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/moments_fg_grid_card_content_view">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/weekly_content_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/moments_weekly_card_list_margin_top" android:layout_marginBottom="@dimen/moments_weekly_card_list_margin_bottom" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_weekly_card_description_margin_bottom" android:layout_marginHorizontal="@dimen/moments_weekly_card_description_margin_horizontal">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_weekly_card_description_margin_line_spacing">
+                    <ImageView android:id="@id/time_icon" android:layout_width="@dimen/moments_weekly_card_description_icon_size" android:layout_height="@dimen/moments_weekly_card_description_icon_size" android:src="@drawable/ic_moments_detail_time" android:layout_marginEnd="@dimen/moments_weekly_card_description_icon_margin_end" />
+                    <TextView android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MomentsWeeklyCardDescriptionTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/location_icon" android:layout_width="@dimen/moments_weekly_card_description_icon_size" android:layout_height="@dimen/moments_weekly_card_description_icon_size" android:src="@drawable/ic_moments_detail_location" android:layout_marginEnd="@dimen/moments_weekly_card_description_icon_margin_end" />
+                    <TextView android:id="@id/location" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MomentsWeeklyCardDescriptionTextStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <View android:id="@id/spacer_bottom" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="@dimen/moments_weekly_card_spacer_height" />
+</LinearLayout>

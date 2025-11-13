@@ -1,0 +1,3 @@
+org.apache.tika.detect.microsoft.POIFSContainerDetector
+org.apache.tika.detect.zip.DefaultZipContainerDetector
+org.apache.tika.detect.OverrideDetector

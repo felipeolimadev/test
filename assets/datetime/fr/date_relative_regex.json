@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "type": "RELATIVE_DAY_OF_THE_WEEK_MONTH",
+    "patternString": "(<day_of_week>|<month>)\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)",
+    "comment" : "jeudi dernier",
+    "isRelative": true
+  },
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>)",
+    "comment" : "dans les 2 jours | après une semaine | avant 3 jours,",
+    "isRelative": true
+  },
+  {
+    "id" : 4,
+    "type" : "NUM_TIME_AFTER_REFERENCE",
+    "patternString" : "(<num>|<num_suffix>|une)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)(?:[-])?\\s*",
+    "comment": "une semaine plus tard",
+    "isRelative": true,
+    "isPrefix" : true,
+    "isOnlyDelta" :  true
+  },
+  {
+    "id": 3,
+    "type": "AFTER_REFERENCE_NUM_TIME",
+    "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>)",
+    "comment": "después de una semana, últimos 2 días, antes de 3 días, últimos 3 días, último tercer día, etc.",
+    "isRelative": true,
+    "isPrefix" : true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id": 4,
+    "type": "BEFORE_REFERENCE_NUM_TIME_PERIOD",
+    "patternString": "(<before_reference>)\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>)(?:\\s*(?:\\s*et)?\\s*(<num>|<num_suffix>|une)?\\s*(<time_period>))?",
+    "comment": "il y a deux ans et cinq mois",
+    "isRelative": true,
+    "isPrefix" : true
+  }
+]

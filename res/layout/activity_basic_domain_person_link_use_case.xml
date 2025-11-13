@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/use_case_spinner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/use_case_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_view_top_margin" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/raw_contact_uuid_channel_filter_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/raw_contact_uuid_channel_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/person_link_use_case_raw_contact_uuid" />
+        <EditText android:textSize="14.0sp" android:id="@id/raw_contact_uuid" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/gallery_person_uuid_filter_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/gallery_person_uuid_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/person_link_use_case_gallery_person_uuid" />
+        <EditText android:textSize="14.0sp" android:id="@id/gallery_person_uuid" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/name_filter_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/person_link_use_case_name" />
+        <EditText android:textSize="14.0sp" android:id="@id/name" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/user_feedback_type_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/user_feedback_type_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/person_link_use_case_user_feedback_type_label" />
+        <Spinner android:id="@id/user_feedback_type_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/execute_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/person_link_use_case_execute" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/execute_result_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/result_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

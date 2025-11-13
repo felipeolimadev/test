@@ -1,0 +1,22 @@
+select <OUTPUT>
+where{
+    {
+        select ?location (MAX(?p_score) AS ?pivot_score) (MAX_ARGMAX(?p_class_score, ?p_score) AS ?pivot_class_score)
+        where {
+            <BODY_SEARCH_PIVOT>
+            ?location rdf:type/rdfs:subClassOf location:Location .
+            <PIVOT_CONNECT>
+            <PIVOT_SCORE_SUM>
+            <PIVOT_RANK_SCORE>
+            <LOCATION_FILTER>
+        }
+        GROUP BY ?location
+        <SIMPLE_SORT_METHOD>
+        <LIMIT>
+        <OFFSET_STATEMENT>
+    }
+    <BODY_GET_TARGET_TRIPLE>
+}
+<COMPLEX_SORT_METHOD>
+
+

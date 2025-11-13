@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_status">
+        <Preference android:title="@string/preference_status_board" android:key="key_status_board" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_database_viewer" android:key="key_size_monitor" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_injector" android:key="key_data_injector" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_lifestyle">
+        <Preference android:title="@string/preference_lifestyle_social" android:key="key_lifestyle_social" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_lifecycle_media_entertainment" android:key="key_lifecycle_media_entertainment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_lifestyle_exercise" android:key="key_lifestyle_exercise" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_lifecycle_pet" android:key="key_lifecycle_pet" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_lifestyle_web_history" android:key="key_lifecycle_web_history" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_lifestyle_mobility" android:key="key__lifestyle_mobility" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_lifestyle_place" android:key="key_lifestyle_place" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_interest" android:key="key_interest" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_trend_report" android:key="key_trend_report" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_log">
+        <Preference android:title="@string/preference_log_view" android:key="key_log_view" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_export_log" android:key="key_preference_export_log" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+{
+  "name": "RNumber",
+  "type": "datatype",
+  "id": "datatype.primitive.RNumber",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

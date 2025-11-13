@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textStyle="bold" android:id="@id/thresholdConstant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current support:  confidence: " />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="5.0dip">
+        <TextView android:textStyle="bold" android:id="@id/calculation_window" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="current calculation window: " />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:id="@id/changeThreshold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change hyperparameter" />
+        <Button android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Insert data" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Extract sequences" />
+        <Button android:id="@id/clearall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear all" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get suggestion" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/showContextDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Details" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/injectPersonas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inject Personas" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/clearLastUpdatedTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear last updated time" />
+    </LinearLayout>
+    <TextView android:id="@id/display" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+</LinearLayout>

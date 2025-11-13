@@ -1,0 +1,7 @@
+travel,ツアー,旅行,trip
+結婚式の日,結婚する,結婚祝い,wedding,結婚式,結婚式のイベント,婚姻,marriage ceremony
+入学式,entrance ceremony,matriculation
+卒業イベント,招集,卒業式,卒業,graduation,卒業証書授与式,開始,commencement,卒業式の日
+birthday,生年月日,生まれた日,誕生記念日,誕生日,birth anniversary
+marriage anniversary,wedding anniversary,結婚記念,結婚記念日
+vacation, 休暇

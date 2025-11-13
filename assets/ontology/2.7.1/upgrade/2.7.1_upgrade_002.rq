@@ -1,0 +1,17 @@
+prefix content: <http://pkg.samsung.com/content#>
+prefix user: <http://pkg.samsung.com/user#>
+
+INSERT {
+    ?fourwevent content:contactId ?contactId .
+} WHERE {
+    ?fourwevent a content:FourWEvent .
+    ?fourwevent content:attendee ?person explicit true .
+    ?person user:contactId ?contactId .
+}
+
+DELETE {
+    ?fourwevent content:attendee ?person .
+} WHERE {
+    ?fourwevent a content:FourWEvent .
+    ?fourwevent content:attendee ?person explicit true .
+}

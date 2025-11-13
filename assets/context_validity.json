@@ -1,0 +1,69 @@
+{
+  "version": "1",
+  "contextValidityMap": {
+    "home_ce" : {
+      "start": 30,
+      "end": 20
+    },
+    "office_ce" : {
+      "start": 30,
+      "end": 20
+    },
+    "car_ce" : {
+      "start": 5,
+      "end": 5
+    },
+    "sleeping_ce" : {
+      "start": 30,
+      "end": 13
+    },
+    "before_sleeping_time_ce" : {
+      "start": 30
+    },
+    "wakeup_ce" : {
+      "start": 30,
+      "end": 20
+    },
+    "exercising_ce" : {
+      "start": 5
+    },
+    "specific_bt_connected" : {
+      "start": 5
+    },
+    "launch_app" : {
+      "start": 1,
+      "end": 5
+    },
+    "plugged_battery" : {
+      "start": 5
+    },
+    "battery_condition": {
+      "start": 5
+    },
+    "charging" : {
+      "start": 5
+    },
+    "commuting_to_home_time_ce" : {
+      "start": 5
+    },
+    "before_commuting_to_home_time_ce" : {
+      "start": 30
+    },
+    "commuting_to_office_time_ce" : {
+      "start": 5
+    },
+    "before_commuting_to_office_time_ce" : {
+      "start": 30
+    },
+    "low_battery": {
+      "start": 30
+    }
+  },
+  "contextNudgeActivateTime": {
+    "home_ce": 20,
+    "office_ce": 20,
+    "car_ce": 5,
+    "wakeup_ce": 20,
+    "launch_app": 5
+  }
+}

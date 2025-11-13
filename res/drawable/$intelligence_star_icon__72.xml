@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__73" android:duration="600" android:valueFrom="0.135" android:valueTo="0.212" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__74" android:duration="750" android:valueFrom="0.212" android:valueTo="0.063" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__75" android:duration="149" android:valueFrom="0.063" android:valueTo="0.037" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__76" android:duration="600" android:valueFrom="0.135" android:valueTo="0.212" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__77" android:duration="750" android:valueFrom="0.212" android:valueTo="0.063" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__78" android:duration="149" android:valueFrom="0.063" android:valueTo="0.037" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__79" android:duration="1350" android:valueFrom="28.452" android:valueTo="47.183" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__80" android:duration="149" android:valueFrom="47.183" android:valueTo="46.638" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__81" android:duration="1350" android:valueFrom="17.254" android:valueTo="39" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$intelligence_star_icon__82" android:duration="149" android:valueFrom="39" android:valueTo="38.367" android:propertyName="translateY" />
+    </set>
+</set>

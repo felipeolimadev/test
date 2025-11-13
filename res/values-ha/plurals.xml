@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">Kwanaki %d ya rage.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d rana ɗaya ya rage.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s yana zuwa a cikin %2$d kwanaki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s yana zuwa a cikin %2$d kwana.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d tarokan%3$s za su ci gaba gobe.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d taron%3$s zai ci gaba gobe.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Ka samu %1$s%2$d aukuwanni%3$s yau.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka samu %1$s%2$d aukuwa%3$s yau.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Kana da aukuwa %1$d a yau. Aukuwar farko shine %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kana da aukuwa %1$d a yau. Aukuwar farko shine %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d aukuwanni ya rage%3$s na yau.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d aukuwa ya rage%3$s na yau.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Ka samu %1$s%2$d aukuwanni%3$s gobe.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka samu %1$s%2$d aukuwa%3$s gobe.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Kana da aukuwa %1$d gobe. Aukuwar farko shine %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kana da aukuwa %1$d gobe. Aukuwar farko shine %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d tunatarwa da suka rage yau</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tunatarwa da ya rage yau</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Ka amshi %d saƙonnin da aka isar yau. Duba don tabbatar cewa ka cimma kwanan wata kan matsayinka na lokacin isarwa da yawa.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka amshi %d saƙon da aka isar yau. Duba don tabbatar cewa ka cimma kwanan wata kan matsayinka na lokacin isarwa.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d isarwar mai yawa yau</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d isarwar yau</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Saman manufar lokuta %d wannan makon.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Saman manufar lokaci %d wannan makon.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d isa ayyukan manufa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d cimma aikin manufa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Jimilar tsawon da ka hau shine %1$s kuma ka ƙona kilon kalori %2$,d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jimilar tsawon da ka hau shine %1$s kuma ka ƙona kilon kalori %2$,d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Matsakaicin tafiyarka cikin sauri shine %1$s kuma ka ƙona kilon kalori %2$,d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Matsakaicin tafiyarka cikin sauri shine %1$s kuma ka ƙona kilon kalori %2$,d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Matsakaicin gudu shine %1$s kuma ka ƙona kilon kalori %2$,d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Matsakaicin gudu shine %1$s kuma ka ƙona kilon kalori %2$,d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Anan ga taƙaitaccen bayanin motsa jikin ka na %1$s . Tsawon lokacin shine %2$s kuma ka ƙona kilon kalori %3$,d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Anan ga taƙaitaccen bayanin motsa jikin ka na %1$s . Tsawon lokacin shine %2$s kuma ka ƙona kilon kalori %3$,d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Kun rasa %d magunan da aka yi jadawali yau.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kun rasa %d maganin da aka yi jadawali yau.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">Awanni %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Awa %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">Awanni %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Awa %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d mintoci</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minti</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d mintoci</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minti</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Ka na da %1$s%2$d ƙirar da aka rasa%3$s yau wanda baka duba ba tukuna.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka na da %1$s%2$d ƙirar da aka rasa%3$s yau wanda baka duba ba tukuna.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Ka rasa kire-kire %d yau. Sake duba waɗanan kire-kire da aka rasa a cikin naka Now brief. Idan ana buata, kana iya kuma sake saita tunatarwa masu yawa domin kar ku manta ku sake kira.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka rasa kira %d yau. Sake duba wannan kiran da aka rasa a cikin naka Now brief. Idan ana buata, kana iya kuma sake saita tunatarwa domin kar ku manta ku sake kira.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Karin ƙira da yawa da aka rasa na %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karin ƙirar da aka rasa na %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d ƙire-kire da aka rasa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ƙirar da aka rasa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">Awanni %d baya</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Awa %d baya</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">Mintuna %d baya</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minti %d baya</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Kana buƙata ka kasance a kalla %d shekaru domin sifofi ingantacciyar basira na amfani da Galaxy AI.</item>
+        <item quantity="zero">Kana buƙata ka kasance a kalla %d shekaru domin sifofi ingantacciyar basira na amfani da Galaxy AI.</item>
+        <item quantity="one">Kana buƙata ka kasance a kalla %d shekara ɗaya domin sifofi ingantacciyar basira na amfani da Galaxy AI.</item>
+        <item quantity="two">Kana buƙata ka kasance a kalla %d shekaru domin sifofi ingantacciyar basira na amfani da Galaxy AI.</item>
+        <item quantity="few">Kana buƙata ka kasance a kalla %d shekaru domin sifofi ingantacciyar basira na amfani da Galaxy AI.</item>
+        <item quantity="many">Kana buƙata ka kasance a kalla %d shekaru domin sifofi ingantacciyar basira na amfani da Galaxy AI.</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d saƙonni</item>
+        <item quantity="one">%d saƙo</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">Daƙiƙu %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Daƙiƙa %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Ka saita %1$s%2$d alam-alam%3$s na safiyar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka saita %1$s%2$d alam%3$s na safiyar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Ka saita %1$s%2$d alam-alam%3$s don gobe da safe.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ka saita %1$s%2$d alam%3$s don gobe da safe.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">"%1$sLeave by %2$s%3$s to arrive at the airport at least %4$d hours before departure. Set an alarm so you don't forget."</item>
+        <item quantity="zero">"%1$sLeave by %2$s%3$s to arrive at the airport at least %4$d hours before departure. Set an alarm so you don't forget."</item>
+        <item quantity="one">"%1$sLeave by %2$s%3$s to arrive at the airport at least %4$d hour before departure. Set an alarm so you don't forget."</item>
+        <item quantity="two">"%1$sLeave by %2$s%3$s to arrive at the airport at least %4$d hours before departure. Set an alarm so you don't forget."</item>
+        <item quantity="few">"%1$sLeave by %2$s%3$s to arrive at the airport at least %4$d hours before departure. Set an alarm so you don't forget."</item>
+        <item quantity="many">"%1$sLeave by %2$s%3$s to arrive at the airport at least %4$d hours before departure. Set an alarm so you don't forget."</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sLeave by %2$s%3$s to get to the airport at least %4$d hours before your flight.</item>
+        <item quantity="zero">%1$sLeave by %2$s%3$s to get to the airport at least %4$d hours before your flight.</item>
+        <item quantity="one">%1$sLeave by %2$s%3$s to get to the airport at least %4$d hour before your flight.</item>
+        <item quantity="two">%1$sLeave by %2$s%3$s to get to the airport at least %4$d hours before your flight.</item>
+        <item quantity="few">%1$sLeave by %2$s%3$s to get to the airport at least %4$d hours before your flight.</item>
+        <item quantity="many">%1$sLeave by %2$s%3$s to get to the airport at least %4$d hours before your flight.</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Ba da shawarar %1$dhanyar tafiya ta rana don %2$s gami da wuraren da za a ziyarta, abubuwan da za a yi, da gidajen cin abinci masu dacewa a gwada.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ba da shawarar %1$dhanyar tafiya ta rana don %2$s gami da wuraren da za a ziyarta, abubuwan da za a yi, da gidajen cin abinci masu dacewa a gwada.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Check these %1$srecommended apps%2$s that may be useful during your trip.</item>
+        <item quantity="one">Check this %1$srecommended app%2$s that may be useful during your trip.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">"%1$sDownload this language pack%2$s in advance so you're ready to use it in Interpreter when you arrive at your destination."</item>
+        <item quantity="one">"%1$sDownload these language packs%2$s in advance so you're ready to use them in Interpreter when you arrive at your destination."</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Fakitun harshe don saukewa</item>
+        <item quantity="one">Fakitin harshe don saukewa</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">"%d na'urori na kunne"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d na'ura na kunne"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Lambar ƙarshe da aka adana %d kwanaki da suka gabata</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lambar ƙarshe da aka adana %d kwana da ta gabata</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Lambar ƙarshen tuntuɓa %d kwanaki da suka gabata</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lambar ƙarshen tuntuɓa %d jiya</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Lambar ƙarshen tuntuɓa %d watanni da suka gabata</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lambar ƙarshen tuntuɓa %d watan da ya gabata</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Lambar ƙarshen tuntuɓa %d makonni da suka gabata</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lambar ƙarshen tuntuɓa %d makon da ya gabata</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d ƙarin lambar tuntuɓa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ƙarin lambobin tuntuɓa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Kuna da kufon a cikin Samsung Wallet da zai kare a cikin kwanaki %d. Tabbatar da cewa ka yi amfani da shi kafun ya kare.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kuna da kufon a cikin Samsung Wallet da zai kare a cikin kwana %d. Tabbatar da cewa ka yi amfani da shi kafun ya kare.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Babban ragin digiri %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Babban ragin digiri %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Karancin ragin digiri %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Karancin ragin digiri %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Kana da wani abu mai faruwa a kalandarka da ala kira da %1$s. Zai zama %2$d digiri masu yawa %3$s a %4$s a cikin %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kana da wani abu mai faruwa a kalandarka da ala kira da %1$s. Zai zama %2$d digiri %3$s a %4$s a cikin %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Babban digiri %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Babban digiri %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Ƙarancin digiri %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ƙarancin digiri %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s dubi</item>
+        <item quantity="one">%s duba</item>
+    </plurals>
+</resources>

@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\/|\\.|\\-]?\\s*(<num>)\\s*[\\/|\\.|\\-]?\\s*(<num>)",
+    "comment": "25.01.00"
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\/|\\.|\\-|,]?\\s*(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(<num>)",
+    "comment": "25. jan 2024"
+  },
+  {
+    "id": 3,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(<num>|<num_suffix>)\\s*[\\/|\\.|\\-||,]?\\s*(<num>)",
+    "comment": "jan. 2 2024"
+  },
+  {
+    "id": 4,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>)\\s*[\\/|\\.|\\-]?\\s*(<num>)",
+    "comment": "02/24(mm/yy) | 01/02(dd/mm)"
+  },
+  {
+    "id": 5,
+    "type": "MONTH_WORD_DAY_NUM",
+    "patternString": "(<month>[\\.]?)\\s*[\\/|\\.|\\-|,]?\\s*(<num>|<num_suffix>)",
+    "comment": "jan 25 | jan 25."
+  },
+  {
+    "id": 5,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(<num>|<num_suffix>)\\s*[\\/|\\.|\\-]?\\s*(<month>)",
+    "comment": "25 jan | 25. jan"
+  },
+  {
+    "id": 6,
+    "type": "special_days",
+    "patternString": "(<special_day>)\\s*(<time_period>)",
+    "comment": "labors day, independence day etc"
+  },
+  {
+    "id": 9,
+    "type": "RELATIVE_DAY",
+    "patternString": "(<relative_day>)",
+    "comment": "today, tmrw"
+  },
+  {
+    "id": 11,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString": "(?:\\s|^|\\.|,|\\-|!)(<month>|<day_of_week>)\\s*(<num>)?(?:\\s|$|\\.|,|\\-|!)",
+    "comment": "monday tuesday, january, february etc"
+  },
+  {
+    "id": 12,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<num>|<num_suffix>)[\\.]?\\s*(<time_period>|<day_of_week>|<month>)\\s*[,|\\.]?\\s*(?:in|im)?\\s*(<num>)?",
+    "comment": "erste Tag in 2009"
+  },
+  {
+    "id": 13,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_AND_MONTH_YEAR_OPTIONAL",
+    "patternString": "(<num>|<num_suffix>)[\\.]?\\s*(<time_period>|<day_of_week>)\\s*[,|\\.]?\\s*(?:in|im)?\\s*(<month>)?[,|\\.]?\\s*(<num>)?",
+    "comment": "erste Tag im Dezember"
+  },
+  {
+    "id": 14,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString": "(<time_period>)\\s*(<num>|<num_suffix>)\\s*(<num>)?"
+  },
+  {
+    "id": 15,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "(<num>)\\s*[,]?\\s*(<num>|<num_suffix>)\\s*(<month>)"
+  },
+  {
+    "id": 16,
+    "type": "YEAR_NUM_MONTH_WORD_DAY_NUM",
+    "patternString": "(<num>)\\s*[,]?\\s*(<month>)\\s*(<num>|<num_suffix>)"
+  },
+  {
+    "id": 17,
+    "type": "DAY_NUM",
+    "patternString": "(<num>)[\\.]"
+  }
+]

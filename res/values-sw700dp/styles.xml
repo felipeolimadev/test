@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Skeleton.ListText.Body.Medium" parent="">
+        <item name="android:background">@drawable/skeleton_text_17</item>
+    </style>
+    <style name="Skeleton.ListText.Body.Small" parent="">
+        <item name="android:background">@drawable/skeleton_text_17</item>
+    </style>
+    <style name="Skeleton.ListText.Body.Small.3Items" parent="">
+        <item name="android:background">@drawable/skeleton_text_13</item>
+    </style>
+    <style name="Skeleton.ListText.Description.Medium" parent="">
+        <item name="android:background">@drawable/skeleton_text_14</item>
+    </style>
+    <style name="Skeleton.ListText.Display.Large" parent="">
+        <item name="android:background">@drawable/skeleton_text_17</item>
+    </style>
+    <style name="Skeleton.ListText.Display.Medium" parent="">
+        <item name="android:background">@drawable/skeleton_text_17</item>
+    </style>
+    <style name="Skeleton.ListText.Label.Large" parent="">
+        <item name="android:background">@drawable/skeleton_text_13</item>
+    </style>
+    <style name="Skeleton.ListText.Label.Medium" parent="">
+        <item name="android:background">@drawable/skeleton_text_13</item>
+    </style>
+    <style name="Skeleton.ListText.Title.Medium" parent="">
+        <item name="android:background">@drawable/skeleton_text_14</item>
+    </style>
+    <style name="Skeleton.TextBlockText.Multiple.Display.Medium" parent="">
+        <item name="android:background">@drawable/skeleton_text_32</item>
+    </style>
+    <style name="Skeleton.TextBlockText.Multiple.Display.Small" parent="">
+        <item name="android:background">@drawable/skeleton_text_18</item>
+    </style>
+</resources>

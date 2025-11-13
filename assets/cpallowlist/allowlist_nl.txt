@@ -1,0 +1,7 @@
+trip,reis,tour,travel
+huwelijk,hetja-woordgeven,wedding,bruiloft,marriage ceremony,huwelijksceremonie,trouwdag,trouwen,bruiloftsfeest,trouwerij,bruiloftsevenement
+inwijdingsceremonie,entrance ceremony,inschrijvingsceremonie,matriculation,immatriculatie,toelatingsceremonie
+afstuderen,afstudeerplechtigheid,afstudeerevenement,afstudeerdag,start,graduation,diploma-uitreiking,commencement
+birth anniversary,geboortedag,verjaardag,geboorteherdenking,geboortedatum,b-day,verjaardagsjubileum,birthday
+huwelijksverjaardag,huwelijksjubileum,huwelijksherdenking,wedding anniversary,marriage anniversary
+vacation, vakantie

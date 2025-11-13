@@ -1,0 +1,22 @@
+{
+    select distinct ?content ?pivot{IDX} ?p_score{IDX} ?max_linkingScore{IDX}
+    where {
+        <INPUT_TO_PIVOT>
+
+        {
+            ?pivot{IDX} user:event/(user:objectContent|user:extractedFrom) ?content .
+            BIND(<SCORE_ENGRAM_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} (user:capturedToScheduled|user:scheduledToCaptured)?/(user:objectContent|user:extractedFrom) ?content .
+            BIND(<SCORE_ACTIVITY_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?content rdf:type/rdfs:subClassOf content:Content .
+            ?pivot{IDX} rdf:unknown? ?content .
+            BIND(<SCORE_CONTENT_PIVOT> AS ?p_score{IDX})
+        }
+
+        <PIVOT_TO_TIME>
+        <CONTENT_FILTER>
+        <TIME_FILTER>
+    }
+}

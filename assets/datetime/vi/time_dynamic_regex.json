@@ -1,0 +1,39 @@
+[
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "<current_reference>",
+      "tại",
+      "vào lúc",
+      "trong",
+      "trên",
+      "khoảng",
+      "vào khoảng",
+      "nay",
+      "điều nay",
+      "điều đó"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "trước",
+      "đến"
+    ]
+  },
+  {
+    "patternName": "<<time_keywords_before>>",
+    "patternValue": [
+      "<current_reference>",
+      "tại",
+      "lúc",
+      "vào lúc",
+      "khoảng",
+      "trên",
+      "thời gian",
+      "thời gian:",
+      "Thời gian:",
+      "Thời gian"
+    ]
+  }
+]

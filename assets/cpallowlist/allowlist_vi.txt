@@ -1,0 +1,7 @@
+chuyếndulịch,travel,chuyếnđi,du lịch,trip
+lễkếthôn,wedding,lễkỷniệmđámcưới,sựkiệnđámcưới,lễ cưới,thànhhôn,hônnhân,ngàycưới,marriage ceremony
+matriculation,lễtuyểnsinh,lễ khai giảng,lễtrúngtuyển,lễnhậphọc,entrance ceremony
+sựkiệntốtnghiệp,graduation,lễtốtnghiệp,ngàytốtnghiệp,tốt nghiệp,commencement
+birthday,sinh nhật,kỷniệmngàysinh,ngàysinhnhật,ngàysinh,ngàykỷniệmsinhnhật,birth anniversary
+marriage anniversary,kỷ niệm ngày cưới,wedding anniversary
+vacation, kỳ nghỉ

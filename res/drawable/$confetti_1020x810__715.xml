@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="1648" android:startOffset="34" android:valueFrom="0" android:valueTo="-360" android:propertyName="rotation" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="translateX" />
+        <objectAnimator android:duration="34" android:valueFrom="-200" android:valueTo="-200" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__716" android:duration="268" android:pathData="M -200,-40 C-200,-40 262.855,-401.951 355,-477" android:propertyXName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__717" android:duration="1380" android:pathData="M 355,-477 C408,-520.167 433,238 433,238" android:propertyXName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1" android:startOffset="15" android:valueFrom="0" android:valueTo="0" android:propertyName="translateY" />
+        <objectAnimator android:duration="34" android:valueFrom="-40" android:valueTo="-40" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__718" android:duration="268" android:pathData="M -200,-40 C-200,-40 262.855,-401.951 355,-477" android:propertyYName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$confetti_1020x810__719" android:duration="1380" android:pathData="M 355,-477 C408,-520.167 433,238 433,238" android:propertyYName="translateY" />
+    </set>
+</set>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="400.0dip" android:minHeight="50.0dip" android:updatePeriodMillis="3600000" android:initialLayout="@layout/view_shortcut_contribution_test_widget" android:previewImage="@drawable/sss_ic_suggestion" android:widgetFeatures="hide_from_picker"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

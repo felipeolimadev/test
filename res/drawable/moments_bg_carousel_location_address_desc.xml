@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/moments_detail_address_content_bg_color" />
+    <corners android:radius="@dimen/moments_now_brief_detail_carousel_location_bg_radius" />
+    <padding android:left="@dimen/location_card_address_text_view_carousel_padding_horizontal" android:top="@dimen/location_card_address_text_view_carousel_padding_vertical" android:right="@dimen/location_card_address_text_view_carousel_padding_horizontal" android:bottom="@dimen/location_card_address_text_view_carousel_padding_vertical" />
+</shape>

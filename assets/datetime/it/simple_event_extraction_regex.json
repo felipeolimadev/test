@@ -1,0 +1,108 @@
+[
+  {
+    "id": "1",
+    "pattern": "<<from>>[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)[\\s]*(?:<<range_connector>>)[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "dal 5 gennaio alle 10:00 al 10 gennaio alle 18:00"
+  },
+  {
+    "id": "2",
+    "pattern": "<<between>>[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)[\\s]*<<range_connector>>[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "tra il 10 maggio alle 6:30 e il 12 maggio alle 8:45"
+  },
+  {
+    "id": "3",
+    "pattern": "<<event_keywords_start>>[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)[\\s]*[,]?(?:[\\w\\sÀàÈèÉéÌìÒòÓóÙùÇç']{0,25})?<<range_connector>>?[\\s]*<<event_keywords_end>>?[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "a partire dal 5 gennaio 2024 alle 9:00 AM fino al 6 gennaio 2024 alle 6:00 PM"
+  },
+  {
+    "id": "4",
+    "pattern": "(?:<<event_keywords_end>>)[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)[\\s]*[,]?[\\s]*(?:[\\w\\sÀàÈèÉéÌìÒòÓóÙùÇç']{0,25})?<<range_connector>>?[\\s]*<<event_keywords_start>>?[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "terminerà il 5 gennaio 2024 alle 9:00 AM a partire dal 6 gennaio 2024 alle 6:00 PM"
+  },
+  {
+    "id": "5",
+    "pattern": "<<valid>>[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)[\\s]*<<range_connector>>?[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "valido dal 1 maggio 2024 alle 07:00 AM al 2 maggio 2024 alle 8:30 PM"
+  },
+  {
+    "id": "6",
+    "pattern": "(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*(<date-time>)[\\s]*[,]?[\\s]*<<range_connector>>[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*[,]?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "12 febbraio 2024, ore 10:30 - 13 febbraio 2024, ore 18:45"
+  },
+  {
+    "id": "7",
+    "pattern": "(?:<<time_keywords_before>>|<<date_keywords_before>>)?[\\s]*(<date-time>)[\\s]*[,]?[\\s]*(?:[\\w\\sÀàÈèÉéÌìÒòÓóÙùÇça-zA-Z]{0,50})?[\\s]*(?:<<event_keywords_end>>)[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*[,]?[\\s]*(<date-time>)",
+    "groupMappings": {
+      "startDate": 1,
+      "endDate": 2,
+      "startTime": 1,
+      "endTime": 2,
+      "startDateTime": 1,
+      "endDateTime": 2
+    },
+    "comment": "La fiera della scienza inizierà alle 10:30 del 18 aprile 2026 e terminerà alle 21:30 del 19 aprile 2026"
+  },
+  {
+    "id": "8",
+    "pattern": "(?:<<time_keywords_before>>|<<date_keywords_before>>)?[\\s]*(<date-time>)[\\s]*[,]?[\\s]*(?:[\\w\\sÀàÈèÉéÌìÒòÓóÙùÇça-zA-Z]{0,50})?[\\s]*(?:<<event_keywords_start>>)[\\s]*(?:<<date_keywords_before>>|<<time_keywords_before>>)?[\\s]*[,]?[\\s]*(<date-time>)",
+    "groupings" : [[2,1],[1,1],[2,2],[1,2]],
+    "mainGrouping" : [[2,1]],
+    "groupMappings": {
+      "startDate": 2,
+      "endDate": 1,
+      "startTime": 2,
+      "endTime": 1,
+      "startDateTime": 2,
+      "endDateTime": 1
+    },
+    "comment": "La fiera della scienza terminerà alle 17:00 del 19 aprile 2026 e terminerà alle 10:30 del 18 aprile 2026"
+  }
+]

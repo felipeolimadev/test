@@ -1,0 +1,10 @@
+{
+  "name": "RBytes",
+  "type": "datatype",
+  "id": "datatype.primitive.RBytes",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

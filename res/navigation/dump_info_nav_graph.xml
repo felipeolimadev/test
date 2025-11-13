@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/dump_info_nav_graph" app:startDestination="@id/dump_info_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Dump" android:name="com.samsung.android.moneta.debugui.developmode.dump.DumpInfoMainFragment" android:id="@id/dump_info_main">
+        <action android:id="@id/action_dump_info_main_to_dump_logs" app:destination="@id/dump_logs_viewer" />
+        <action android:id="@id/action_dump_info_main_to_dumpsys_viewer" app:destination="@id/dumpsys_viewer" />
+    </fragment>
+    <fragment android:label="Dump logs viewer" android:name="com.samsung.android.moneta.debugui.developmode.dump.DumpLogsViewerFragment" android:id="@id/dump_logs_viewer" />
+    <fragment android:label="Dumpsys viewer" android:name="com.samsung.android.moneta.debugui.developmode.dump.DumpsysViewerFragment" android:id="@id/dumpsys_viewer" />
+</navigation>

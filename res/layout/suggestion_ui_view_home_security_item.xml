@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/action_card_item_container" android:tag="layout/suggestion_ui_view_home_security_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/device_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/card_text_color" android:ellipsize="end" android:layout_gravity="center" android:id="@id/device_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/map_title_ttl" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:paddingHorizontal="2.0dip" style="@style/TextStyleRegular" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/iot_card_description_text_color" android:layout_gravity="center" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" style="@style/TextStyleRegular" />
+</LinearLayout>

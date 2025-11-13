@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/suggestion_ui_view_sleep_score_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="@drawable/rounded_widget_background" android:paddingTop="@dimen/sleep_score_padding" android:paddingBottom="@dimen/sleep_score_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:paddingHorizontal="@dimen/action_card_padding">
+        <include android:id="@id/sleep_score_view_score" layout="@layout/suggestion_ui_health_score_container" />
+        <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/sleep_score_item_container_margin_vertical" app:flexWrap="wrap" app:justifyContent="space_between">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/sleep_score_item_margin_vertical">
+                <FrameLayout android:background="@drawable/sleep_score_item_icon_background" android:layout_width="@dimen/sleep_score_item_icon_container_size" android:layout_height="@dimen/sleep_score_item_icon_container_size">
+                    <ImageView android:layout_gravity="center" android:id="@id/sleep_score_bed_time_icon" android:layout_width="@dimen/sleep_score_item_icon_size" android:layout_height="@dimen/sleep_score_item_icon_size" android:tint="@color/health_score_text_color" />
+                </FrameLayout>
+                <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/sleep_score_bed_time_text_size" android:textColor="@color/health_score_text_color" android:id="@id/sleep_score_bed_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/sleep_score_item_text_margin_horizontal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/sleep_score_item_margin_vertical">
+                <FrameLayout android:background="@drawable/sleep_score_item_icon_background" android:layout_width="@dimen/sleep_score_item_icon_container_size" android:layout_height="@dimen/sleep_score_item_icon_container_size">
+                    <ImageView android:layout_gravity="center" android:id="@id/sleep_score_wakeup_time_icon" android:layout_width="@dimen/sleep_score_item_icon_size" android:layout_height="@dimen/sleep_score_item_icon_size" android:tint="@color/health_score_text_color" />
+                </FrameLayout>
+                <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/sleep_score_wakeup_time_text_size" android:textColor="@color/health_score_text_color" android:id="@id/sleep_score_wakeup_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/sleep_score_item_text_margin_horizontal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/sleep_score_item_margin_vertical">
+                <FrameLayout android:background="@drawable/sleep_score_item_icon_background" android:layout_width="@dimen/sleep_score_item_icon_container_size" android:layout_height="@dimen/sleep_score_item_icon_container_size">
+                    <ImageView android:layout_gravity="center" android:id="@id/sleep_score_sleep_duration_icon" android:layout_width="@dimen/sleep_score_item_icon_size" android:layout_height="@dimen/sleep_score_item_icon_size" android:tint="@color/health_score_text_color" />
+                </FrameLayout>
+                <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/sleep_score_sleep_duration_text_size" android:textColor="@color/health_score_text_color" android:id="@id/sleep_score_sleep_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/sleep_score_item_text_margin_horizontal" />
+            </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+        <ImageView android:id="@id/sleep_score_graph" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/sleep_score_icon" android:layout_width="@dimen/sleep_score_icon_size" android:layout_height="@dimen/sleep_score_icon_size" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

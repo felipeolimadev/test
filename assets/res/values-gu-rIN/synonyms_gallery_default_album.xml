@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- DREAM_GALLERY_BODY_CAMERA -->
+    <string name="camera">કૅમેરા</string>
+    <!-- IDS_GALLERY_HEADER_DOWNLOADS -->
+    <string name="download">ડાઉનલોડ્સ</string>
+    <!-- DREAM_GALLERY_BODY_SCREENSHOTS_M_CATEGORY -->
+    <string name="screenshots">સ્ક્રીનશૉટ્સ</string>
+</resources>

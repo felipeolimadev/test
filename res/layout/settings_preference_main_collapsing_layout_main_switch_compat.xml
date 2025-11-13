@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/col" android:background="@color/app_theme_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/settings_preference_collapsing_layout" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/setting_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.appcompat.widget.SeslSwitchBar android:id="@id/primary_switch_bar" android:background="@color/app_theme_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/switch_bar_margin" android:layout_marginEnd="@dimen/switch_bar_margin" />
+        <androidx.core.widget.NestedScrollView android:background="@color/default_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <include layout="@layout/settings_preference_content_layout" />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,367 @@
+{
+  "masks": [
+    {
+      "id": 1,
+      "mask": "<day_of_week>",
+      "keywords": [
+        "domenica",
+        "lunedì",
+        "martedì",
+        "mercoledì",
+        "giovedì",
+        "venerdì",
+        "sabato",
+        "dom",
+        "lun",
+        "mar",
+        "mer",
+        "gio",
+        "ven",
+        "sab"
+      ]
+    },
+    {
+      "id": 2,
+      "mask": "<month>",
+      "keywords": [
+        "gennaio",
+        "febbraio",
+        "marzo",
+        "aprile",
+        "maggio",
+        "giugno",
+        "luglio",
+        "agosto",
+        "settembre",
+        "ottobre",
+        "novembre",
+        "dicembre",
+        "gen",
+        "feb",
+        "mar",
+        "apr",
+        "mag",
+        "giu",
+        "lug",
+        "ago",
+        "sett",
+        "ott",
+        "nov",
+        "dic"
+      ]
+    },
+    {
+      "id": 3,
+      "mask": "<relative>",
+      "keywords": [
+        "ultim[oa]",
+        "prossim[oa]",
+        "precedente",
+        "successivo",
+        "inizi(?:o|ale)",
+        "fin(?:e|ale)",
+        "quest[oa]",
+        "passato"
+      ]
+    },
+    {
+      "id": 4,
+      "mask": "<special_day>",
+      "keywords": [
+        "capodanno",
+        "san valentino",
+        "pasqua",
+        "lavoro",
+        "madre",
+        "padre",
+        "indipendenza",
+        "halloween",
+        "natale",
+        "vigilia di Natale",
+        "capodanno",
+        "grazie",
+        "donne",
+        "bambini",
+        "ognissanti",
+        "san patrizio",
+        "memoria",
+        "san giovanni",
+        "defunti",
+        "nazionale"
+      ]
+    },
+   {
+     "id": 5,
+     "mask": "<time_format>",
+     "keywords": [
+        "a[.]?[\\s]*m[.]?",
+        "p[.]?[\\s]*m[.]?"
+      ]
+    },
+    {
+      "id": 6,
+      "mask": "<relative_time_format>",
+      "keywords": [
+        "tarda notte",
+        "mattina presto",
+        "tardo pomeriggio",
+        "prima serata",
+        "tarda serata",
+        "alba",
+        "sera",
+        "notte",
+        "tramonto",
+        "crepuscolo",
+        "mattina",
+        "pomeriggio",
+        "stasera",
+        "stamattina"
+      ]
+    },
+    {
+      "id": 7,
+      "mask": "<time_h>",
+      "keywords": [
+        "or[ea]",
+        "horas?"
+      ]
+    },
+    {
+      "id": 8,
+      "mask": "<time_m>",
+      "keywords": [
+        "min(?:uti|uto|[.])?"
+      ]
+    },
+    {
+      "id": 9,
+      "mask": "<time_s>",
+      "keywords": [
+        "second[io]"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time_relative>",
+      "keywords": [
+        "half\\s*an\\s*hour",
+        "a minute"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time>",
+      "keywords": [
+        "mezza[ ]?notte",
+        "mezzogiorno",
+        "adesso"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<num_word>",
+      "keywords": [
+        "un quarto",
+        "uno",
+        "una",
+        "un",
+        "due",
+        "tre",
+        "quattro",
+        "cinque",
+        "sei",
+        "sette",
+        "otto",
+        "nove",
+        "dieci",
+        "undici",
+        "dodici",
+        "tredici",
+        "quattordici",
+        "quindici",
+        "sedici",
+        "diciassette",
+        "diciotto",
+        "diciannove",
+        "venti",
+        "ventuno",
+        "ventidue",
+        "ventitré",
+        "ventiquattro",
+        "venticinque",
+        "ventisei",
+        "ventisette",
+        "ventotto",
+        "ventinove",
+        "trenta",
+        "trentuno",
+        "trentadue",
+        "trentatré",
+        "trentaquattro",
+        "trentacinque",
+        "trentasei",
+        "trentasette",
+        "trentotto",
+        "trentanove",
+        "quaranta",
+        "quarantuno",
+        "quarantadue",
+        "quarantatré",
+        "quarantaquattro",
+        "quarantacinque",
+        "quarantasei",
+        "quarantasette",
+        "quarantotto",
+        "quarantanove",
+        "cinquanta",
+        "cinquantuno",
+        "cinquantadue",
+        "cinquantatré",
+        "cinquantaquattro",
+        "cinquantacinque",
+        "cinquantasei",
+        "cinquantasette",
+        "cinquantotto",
+        "cinquantanove",
+        "sessanta",
+        "mezz[ao]"
+      ]
+    },
+    {
+      "id": 12,
+      "mask": "<cyclic_keyword>",
+      "keywords": [
+        "ogni",
+        "ciascuno",
+        "mensile",
+        "settimanale",
+        "giornaliero",
+        "oraria",
+        "annuale"
+      ]
+    },
+    {
+      "id": 13,
+      "mask": "<temporal_adjective>",
+      "keywords": [
+      ]
+    },
+    {
+      "id": 14,
+      "mask": "<time_period>",
+      "keywords": [
+        "giorn[oi]",
+        "settiman[ae]",
+        "mes[eio]",
+        "ann[eio]",
+        "quart[oi]",
+        "quindicin[ae]",
+        "decenni[o]?",
+        "secol[oi]",
+        "giorn[oi] ferial[ei]",
+        "fine settiman[ae]"
+      ]
+    },
+    {
+      "id": 15,
+      "mask": "<relative_day>",
+      "keywords": [
+        "oggi",
+        "domani",
+        "ieri",
+        "dopodomani"
+      ]
+    },
+    {
+      "id": 16,
+      "mask": "<num_suffix>",
+      "keywords": [
+        "\\d{1,4}(?:° |ª|i|e|mo|ma|ndo|nda|zo|za|to|ta)",
+        "prim[oa]",
+        "second[oa]",
+        "terz[oa]",
+        "quart[oa]",
+        "quint[oa]",
+        "sest[oa]",
+        "settim[oa]",
+        "ottav[oa]",
+        "non[oa]"
+      ]
+    },
+    {
+      "id": 17,
+      "mask": "<num>",
+      "keywords": [
+        "\\d{1,4}"
+      ]
+    },
+    {
+      "id": 18,
+      "mask": "<after_reference>",
+      "keywords": [
+        "(?:più\\s*)?tardi",
+        "seguente",
+        "in arrivo",
+        "presto",
+        "imminente",
+        "quindi",
+        "prossim[oa]",
+        "successiv[ao]",
+        "avanti",
+        "accanto",
+        "da ora",
+        "da adesso",
+        "dopo",
+        "in",
+        "tra",
+        "fra",
+        "da",
+        "entro",
+        "dal"
+      ]
+    },
+    {
+      "id": 19,
+      "mask" : "<before_reference>",
+      "keywords" : [
+        "meno",
+        "prima(?:\\s*di)?",
+        "passato",
+        "fa",
+        "precedente"
+      ]
+    },
+    {
+      "id": 20,
+      "mask" : "<current_reference>",
+      "keywords" : [
+        "attuale",
+        "alle",
+        "intorno",
+        "in",
+        "su",
+        "nel",
+        "quest[oa]",
+        "quello",
+        "corrente"
+      ]
+    },
+    {
+      "id": 21,
+      "mask" : "<last_reference>",
+      "keywords" : [
+        "ultim[oai]",
+        "fine",
+        "scors[ao]",
+        "passat[ao]"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time_relative>",
+      "keywords": [
+        "mezz[']?ora"
+      ]
+    }
+  ]
+}

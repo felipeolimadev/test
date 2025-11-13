@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_ttl_radio_btn_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitCenter" android:layout_marginStart="10.0dip" android:layout_marginVertical="6.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/suspicious_message_suggestion_card_description_text_color" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:layout_marginStart="8.0dip" android:layout_marginEnd="2.0dip" android:textFontWeight="400" />
+</LinearLayout>

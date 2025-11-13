@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_tomorrow_alarm_list_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/tomorrow_morning_alarm_list_item_min_height" android:paddingVertical="@dimen/tomorrow_morning_alarm_view_item_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/calendar_list_items_text_color" android:id="@id/alarm_time" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec" android:textFontWeight="700" />
+    <TextView android:textSize="@dimen/tomorrow_morning_alarm_view_item_title_text_size" android:textColor="@color/alarm_title_color" android:ellipsize="end" android:id="@id/alarm_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="sec" android:layout_marginStart="@dimen/tomorrow_morning_alarm_view_item_title_padding" android:textFontWeight="500" />
+</LinearLayout>

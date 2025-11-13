@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/action_card_action_button" android:tag="layout/suggestion_ui_view_action_image_card_action_0" android:background="@drawable/rounded_widget_image_button_background" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginEnd="2.0dip" />
+    <TextView android:textAppearance="@style/TextStyleMedium" android:textSize="15.0dip" android:textColor="@color/card_text_color" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="28.0dip" />
+</LinearLayout>

@@ -1,0 +1,134 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "faire la fête",
+                    "fête de bienvenue",
+                    "cérémonie de mariage",
+                    "cérémonie d'entrée",
+                    "funéraire",
+                    "jour de mariage"
+                ]
+            },
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "anniversaire",
+                    "fête de fin d'année",
+                    "réunion",
+                    "rendez-vous à l'aveugle",
+                    "dîner ensemble",
+                    "manger dehors",
+                    "repas",
+                    "pendaison de crémaillère",
+                    "cérémonie de remise des diplômes",
+                    "festin",
+                    "cérémonie de remise des prix",
+                    "culte",
+                    "église",
+                    "shopping",
+                    "dîner",
+                    "déjeuner",
+                    "brunch",
+                    "célébrer",
+                    "célébration",
+                    "funérailles",
+                    "festival",
+                    "manger au restaurant"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "rendez-vous amoureux"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "rencontre",
+                    "atelier",
+                    "séminaire",
+                    "entretien",
+                    "conférence",
+                    "séance d'information",
+                    "travail",
+                    "travail à temps partiel",
+                    "examen",
+                    "affectation",
+                    "classe",
+                    "assister au cours",
+                    "bureau",
+                    "forum",
+                    "présentation",
+                    "analyse"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "aller travailler"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "quitter le travail"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "voyage",
+                    "camping",
+                    "pêche",
+                    "parc d'attractions",
+                    "zoo",
+                    "aquarium",
+                    "escalade",
+                    "voyage d'affaires",
+                    "excursion",
+                    "visite",
+                    "Disney World",
+                    "lune de miel"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "réservation",
+                    "Réservation",
+                    "billet",
+                    "rendez-vous",
+                    "enregistrement",
+                    "départ",
+                    "s'enregistrer"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "quitter la chambre"
+                ]
+            }
+        ]
+    }
+]

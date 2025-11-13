@@ -1,0 +1,57 @@
+{
+  "name": "RSuggestionData",
+  "type": "datatype",
+  "id": "datatype.composite.RSuggestionData",
+  "version": "",
+  "description": "",
+  "schema": {
+    "properties": {
+      "creationTime": {
+        "dataType": "datatype.primitive.RNumber",
+        "description": ""
+      },
+      "displayName": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "suggestionFrom": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "description": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "extras": {
+        "dataType": "datatype.primitive.RDictionary",
+        "description": ""
+      },
+      "id": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "title": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "iconUri": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "structuredData": {
+        "dataType": "datatype.composite.RStructuredData",
+        "description": ""
+      },
+      "url": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "backgroundUri": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      }
+    },
+    "required": [],
+    "type": "object"
+  }
+}

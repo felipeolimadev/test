@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_domain">
+        <Preference android:title="@string/preference_domain_my_profile" android:key="KEY_BASICDOMAIN_MY_PROFILE" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_domain_person" android:key="KEY_BASICDOMAIN_CONTACT_PERSON" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_domain_usages" android:key="KEY_BASICDOMAIN_USAGE" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/preference_family">
+        <Preference android:title="Relationship" android:key="KEY_BASICDOMAIN_FAMILY_RELATIONSHIP" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/person_link">
+        <Preference android:title="@string/person_link_viewer" android:key="KEY_BASICDOMAIN_PERSON_LINK" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/person_link_user_feedback_viewer" android:key="KEY_BASICDOMAIN_USER_FEEDBACK" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/person_link_use_case" android:key="KEY_BASICDOMAIN_PERSON_LINK_USECASE" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/pet">
+        <Preference android:title="@string/pet" android:key="KEY_BASICDOMAIN_PET" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

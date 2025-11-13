@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:useLevel="false" android:innerRadius="36.0dip" android:thickness="@dimen/medication_card_progressBar_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/medication_card_progress_bar_bg_color" />
+</shape>

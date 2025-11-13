@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_stock_watchlist_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:layout_marginBottom="@dimen/widget_margin_top" android:layout_weight="1.0" android:layout_marginStart="@dimen/widget_margin_top">
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/stock_watchlist_item_icon" android:background="@drawable/suggestion_ui_body_icon_background" android:layout_width="@dimen/stock_watchlist_item_icon_size" android:layout_height="@dimen/stock_watchlist_item_icon_size" android:clipToOutline="true" />
+            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/stock_watchlist_item_hot_icon" android:background="@drawable/suggestion_ui_body_icon_background" android:layout_width="@dimen/stock_watchlist_item_hot_icon_size" android:layout_height="@dimen/stock_watchlist_item_hot_icon_size" android:clipToOutline="true" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:layout_marginBottom="@dimen/widget_margin_top" android:layout_weight="2.0" android:layout_marginStart="@dimen/widget_margin_top">
+        <TextView android:textSize="@dimen/stock_watchlist_item_name_main_text_size" android:id="@id/stock_watchlist_item_name_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.RobotoMedium" />
+        <TextView android:textSize="@dimen/stock_watchlist_item_name_sub_text_size" android:id="@id/stock_watchlist_item_name_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.RobotoRegular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:layout_marginBottom="@dimen/widget_margin_top" android:layout_weight="2.0" android:layout_marginStart="@dimen/widget_margin_top">
+        <TextView android:textSize="@dimen/stock_watchlist_item_name_main_text_size" android:id="@id/stock_watchlist_item_price_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.RobotoMedium" />
+        <TextView android:textSize="@dimen/stock_watchlist_item_name_sub_text_size" android:id="@id/stock_watchlist_item_price_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.RobotoRegular" />
+    </LinearLayout>
+</LinearLayout>

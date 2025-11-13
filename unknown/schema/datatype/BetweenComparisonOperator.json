@@ -1,0 +1,25 @@
+{
+  "name": "BetweenComparisonOperator",
+  "type": "datatype",
+  "id": "datatype.enumeration.BetweenComparisonOperator",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "between",
+      "notBetween"
+    ],
+    "descriptions": [
+      {
+        "value": "between",
+        "description": "Between"
+      },
+      {
+        "value": "notBetween",
+        "description": "Not Between"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

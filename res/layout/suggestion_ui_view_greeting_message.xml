@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/greeting_subtitle_container" android:tag="layout/suggestion_ui_view_greeting_message_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/greeting_subtitle_text_size" android:textColor="@color/greeting_subtitle_color" android:id="@id/greeting_subtitle_invisible_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/greeting_subtitle_margin_top" android:fontFamily="sec" android:textFontWeight="400" />
+        <TextView android:textSize="@dimen/greeting_subtitle_text_size" android:textColor="@color/greeting_subtitle_color" android:id="@id/greeting_ai_watermark_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/greeting_subtitle_margin_top" android:includeFontPadding="false" android:fontFamily="sec" android:fallbackLineSpacing="false" android:textFontWeight="400" />
+        <com.samsung.android.vanillavibes.motion.text.view.MotionTextView android:textSize="@dimen/greeting_subtitle_text_size" android:textColor="@color/greeting_subtitle_color" android:id="@id/greeting_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/greeting_subtitle_margin_top" android:fontFamily="sec" android:textFontWeight="400" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/m4_type_stroke_width" android:color="@color/moments_widget_m4_type_stroke_color" />
+    <corners android:topLeftRadius="@dimen/m4_type_card_corner_radius" android:topRightRadius="@dimen/m4_type_card_corner_radius" android:bottomLeftRadius="@dimen/m4_type_card_corner_radius" android:bottomRightRadius="@dimen/m4_type_card_corner_radius" />
+    <gradient android:startColor="#00000000" android:endColor="#4d000000" android:angle="270.0" android:type="linear" android:startY="0.68" android:endY="1.0" />
+</shape>

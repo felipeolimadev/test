@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/email_collector">
+        <SwitchPreference android:title="@string/preference_gmail_feature_on_off" android:key="key_gmail_collector_on_off" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_gmail" android:key="key_gmail" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/preference_gmail_collect_worker" android:key="key_run_gmail_collect_worker" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

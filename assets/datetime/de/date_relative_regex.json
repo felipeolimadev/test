@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>)",
+    "comment" : "nächste Woche, letzte Woche, diese Woche, diesen Monat, letzter Tag etc.",
+    "isRelative": true
+  },
+  {
+    "id": 2,
+    "type": "NUM_TIME_AFTER_REFERENCE",
+    "comment": "eine Woche danach, eine Woche vorher, 2 days from now etc.",
+    "patternString": "(<num>|<num_suffix>|a)?\\s*(<time_period>)\\s*(<after_reference>|<before_reference>)",
+    "isRelative": true,
+    "isPrefix": true
+  },
+  {
+    "id": 3,
+    "type": "AFTER_REFERENCE_NUM_TIME",
+    "comment": "nach 4 Tagen, nächsten 5 Tagen, letzten 2 Wochen etc.",
+    "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<num>|<num_suffix>|a)?\\s*(<time_period>)",
+    "isRelative": true,
+    "isPrefix" : true
+  }
+]

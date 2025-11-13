@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/data_monitor_nav_graph" app:startDestination="@id/data_monitor_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Debug History" android:name="com.samsung.android.moneta.debugui.developmode.monitor.MonetaMonitorFragment" android:id="@id/data_monitor_main">
+        <action android:id="@id/action_data_monitor_main_to_collector" app:destination="@id/collector_debug_monitor" />
+        <action android:id="@id/action_data_monitor_main_to_analyzer" app:destination="@id/analysis_debug_monitor" />
+        <action android:id="@id/action_data_monitor_main_to_knowledge" app:destination="@id/knowledge_debug_monitor" />
+        <action android:id="@id/action_data_monitor_main_to_search" app:destination="@id/search_debug_monitor" />
+        <action android:id="@id/action_data_monitor_main_to_mlkit" app:destination="@id/mlkit_debug_monitor" />
+    </fragment>
+    <fragment android:label="Collector Data Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.CollectorMonitorFragment" android:id="@id/collector_debug_monitor" />
+    <fragment android:label="Analysis Data Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.AnalysisDebugMonitorFragment" android:id="@id/analysis_debug_monitor" />
+    <fragment android:label="Knowledge Data Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.KnowledgeDebugMonitorFragment" android:id="@id/knowledge_debug_monitor" />
+    <fragment android:label="Search Data Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.SearchDebugMonitorFragment" android:id="@id/search_debug_monitor" />
+    <fragment android:label="MLKit Data Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.MLKitDebugMonitorFragment" android:id="@id/mlkit_debug_monitor" />
+    <fragment android:label="Wave Log Monitor" android:name="com.samsung.android.moneta.debugui.developmode.monitor.impl.WaveEventLogFragment" android:id="@id/wave_log_monitor" />
+</navigation>

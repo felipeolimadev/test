@@ -1,0 +1,9 @@
+# 초기 검색 결과와 동일한 여행 기간 내 찍은 사진만 존재
+FILTER EXISTS {
+    VALUES ?origin { <TAKING_PICTURES_IRI> }
+    ?originEventProperty rdfs:subPropertyOf user:event .
+    ?targetEventProperty rdfs:subPropertyOf user:event .
+    ?travelEngram a user:TravelEngram .
+    ?travelEngram ?originEventProperty ?origin .
+    ?travelEngram ?targetEventProperty ?target .
+}

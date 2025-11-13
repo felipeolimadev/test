@@ -1,0 +1,6 @@
+<http://pkg.samsung.com/content#FourWEvent>,<http://www.w3.org/2004/02/skos/core#altLabel>,"캘린더"
+<http://pkg.samsung.com/content#ImageFile>,<http://www.w3.org/2004/02/skos/core#altLabel>,"이미지 파일"
+<http://pkg.samsung.com/content#Message>,<http://www.w3.org/2004/02/skos/core#altLabel>,"메세지"
+<http://pkg.samsung.com/user#Person>,<http://www.w3.org/2004/02/skos/core#altLabel>,"연락처"
+<http://pkg.samsung.com/user#PlayingGame>,<http://www.w3.org/2004/02/skos/core#altLabel>,"게임 플레이"
+<http://pkg.samsung.com/user#Staying>,<http://www.w3.org/2004/02/skos/core#altLabel>,"체류"

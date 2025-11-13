@@ -1,0 +1,25 @@
+SELECT DISTINCT ?travelEngram ?begin ?end ?location{
+    VALUES ?image {<IMAGE_FILE_IRI>}
+    ?tp user:objectContent ?image .
+    ?tp a user:TakingPictures .
+
+    ?eventProperty rdfs:subPropertyOf user:event .
+    ?travelEngram ?eventProperty ?tp .
+    ?travelEngram a/rdfs:subClassOf user:TravelEngram .
+    ?travelEngram time:hasBeginning/time:inXSDDateTimeStamp ?begin .
+    ?travelEngram time:hasEnd/time:inXSDDateTimeStamp ?end .
+
+    {
+        SELECT ?tp ?location {
+            ?tp user:atLocation ?location.
+            FILTER NOT EXISTS{
+                ?tp user:atLocation ?tpLocation.
+                ?tpLocation a/rdfs:subClassOf ?tpLocationType.
+                FILTER(?tpLocationType = location:Home
+                || ?tpLocationType = location:WorkPlace
+                || ?tpLocationType = location:FrequentlyVisitedPlace)
+            }
+
+        } LIMIT 1
+    }
+}

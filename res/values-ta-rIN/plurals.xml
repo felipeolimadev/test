@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d நாட்கள் மீதமுள்ளன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நாள் மீதமுள்ளது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%1$s இன்னும் %2$d நாட்களில் வரவுள்ளது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s இன்னும் %2$d நாளில் வரவுள்ளது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d நிகழ்வுகள்%3$s நாளை தொடரும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d நிகழ்வு%3$s நாளை தொடரும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">இன்றைய தினத்திற்கு %1$s%2$d நிகழ்வுகள் உள்ளன%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்றைய தினத்திற்கு %1$s%2$d நிகழ்வு உள்ளது%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">இன்று %1$d நிகழ்வுகளை கொண்டுள்ளீர்கள். %2$s முதல் நிகழ்வாகும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று %1$d நிகழ்வைக் கொண்டுள்ளீர்கள். %2$s முதல் நிகழ்வாகும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">இன்றைய தினத்திற்கு %1$s%2$d நிகழ்வுகள் மீதமுள்ளன%3$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்றைய தினத்திற்கு %1$s%2$d நிகழ்வு மீதமுள்ளது%3$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">நாளை %1$s%2$d நிகழ்வுகளை%3$s கொண்டுள்ளீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">நாளை %1$s%2$d நிகழ்வை%3$s கொண்டுள்ளீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">நாளை %1$d நிகழ்வுகளை கொண்டுள்ளீர்கள். %2$s முதல் நிகழ்வாகும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">நாளை %1$d நிகழ்வைக் கொண்டுள்ளீர்கள். %2$s முதல் நிகழ்வாகும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d நிகழ்வுகள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிகழ்வு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d நிமிடங்களில் துவங்குகிறது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடத்தில் துவங்குகிறது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">இன்று %d நினைவூட்டல்கள் மீதமுள்ளன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று %d நினைவூட்டல் மீதமுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">இன்று நீங்கள் %d டெலிவரி தகவல்களை பெற்றுள்ளீர்கள். உங்கள் டெலிவரி நிலை குறித்து நீங்கள் அறிந்துகொண்ட நிலையில் இருப்பதை உறுதிசெய்து கொள்ளவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று நீங்கள் %d டெலிவரி தகவலைப் பெற்றுள்ளீர்கள். உங்கள் டெலிவரி நிலை குறித்து நீங்கள் அறிந்துகொண்ட நிலையில் இருப்பதை உறுதிசெய்து கொள்ளவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">இன்று %d டெலிவரிகள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று %d டெலிவரி</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">இந்த வாரம் %d முறை இலக்கிற்கு மேல் இருந்துள்ளீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இந்த வாரம் %d முறை இலக்கிற்கு மேல் இருந்துள்ளீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d செயல்பாடு இலக்குகள் அடையப்பட்டன</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d செயல்பாடு இலக்கு அடையப்பட்டது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">மொத்தம் %1$s உயரத்திற்கு சென்று %2$,d கலோரிகளை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">மொத்தம் %1$s உயரத்திற்கு சென்று %2$,d கலோரியை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">உங்கள் சராசரி நடைவேகம் %1$s, நீங்கள் %2$,d கலோரிகளை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் சராசரி நடைவேகம் %1$s, நீங்கள் %2$,d கலோரியை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">உங்கள் சராசரி வேகம் %1$s, நீங்கள் %2$,d கலோரிகளை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் சராசரி வேகம் %1$s, நீங்கள் %2$,d கலோரியை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">உங்கள் %1$s உடற்பயிற்சியின் சுருக்கவுரை இங்கே உள்ளது. %2$s காலஅளவில் நீங்கள் %3$,d கலோரிகளை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் %1$s உடற்பயிற்சியின் சுருக்கவுரை இங்கே உள்ளது. %2$s காலஅளவில் நீங்கள் %3$,d கலோரியை எரித்துவிட்டீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">இன்று நீங்கள் %d திட்டமிடப்பட்ட மருந்துகளை தவறவிட்டுள்ளீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று நீங்கள் %d திட்டமிடப்பட்ட மருந்தை தவறவிட்டுள்ளீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d மணிநேரம்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d மணிநேரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d மணிநேரங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d மணிநேரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d நிமி</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமி</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d நிமிடங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">இன்று இன்னும் சரிபார்க்கப்படாத %1$s%2$d தவறிய அழைப்புகளை%3$s கொண்டுள்ளீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று இன்னும் சரிபார்க்கப்படாத %1$s%2$d தவறிய அழைப்பை%3$s கொண்டுள்ளீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">இன்று %d அழைப்புகளை தவறவிட்டுள்ளீர்கள். உங்கள் Now brief-இல் இந்த தவறவிட்ட அழைப்புகளை சரிபார்க்கவும். தேவையானால், நீங்கள் திரும்ப அழைப்பதற்கு மறவாதவாறு நினைவூட்டல்களையும் அமைக்கலாம்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">இன்று %d அழைப்பைத் தவறவிட்டுள்ளீர்கள். உங்கள் Now brief-இல் இந்த தவறவிட்ட அழைப்பை சரிபார்க்கவும். தேவையானால், நீங்கள் திரும்ப அழைப்பதற்கு மறவாதவாறு ஒரு நினைவூட்டலையும் அமைக்கலாம்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d-க்கும் மேற்பட்ட தவறிய அழைப்புகள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-க்கும் மேற்பட்ட தவறிய அழைப்பு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d தவறிய அழைப்புகள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d தவறிய அழைப்பு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ம.நே முன்பு</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ம.நே முன்பு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d நிமி. முன்பு</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமி. முன்பு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI மேம்பட்ட நுண்ணறிவு அம்சங்களைப் பயன்படுத்த, நீங்கள் குறைந்தது %d வயதுடையவராக இருக்க வேண்டும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AI மேம்பட்ட நுண்ணறிவு அம்சங்களைப் பயன்படுத்த, நீங்கள் குறைந்தது %d வயதுடையவராக இருக்க வேண்டும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d தகவல்கள்</item>
+        <item quantity="one">%d தகவல்</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d வினாடிகள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d வினாடி</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">காலைப்பொழுதிற்காக %1$s%2$d அலாரங்களை%3$s அமைத்துள்ளீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">காலைப்பொழுதிற்காக %1$s%2$d அலாரத்தை%3$s அமைத்துள்ளீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">நாளைய காலை நேரத்திற்கான %1$s%2$d அலாரங்களை%3$s அமைத்துள்ளீர்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">நாளைய காலை நேரத்திற்கான %1$s%2$d அலாரத்தை%3$s அமைத்துள்ளீர்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$s%2$s மணிக்குள் புறப்பட்டு%3$s, விமானம் புறப்படுவதற்கு குறைந்தது %4$d மணிநேரத்திற்கு முன் விமான நிலையத்தை அடைய வேண்டும். மறக்காமல் அலாரம் வைத்துக்கொள்ளவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$s மணிக்குள் புறப்பட்டு%3$s, விமானம் புறப்படுவதற்கு குறைந்தது %4$d மணிநேரத்திற்கு முன் விமான நிலையத்தை அடைய வேண்டும். மறக்காமல் அலாரம் வைத்துக்கொள்ளவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">விமான நிலையத்தை குறைந்தது %4$d மணிநேரத்திற்கு முன்பு அடைய %1$s%2$s மணிக்குள் புறப்பட%3$s வேண்டும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">விமான நிலையத்தை குறைந்தது %4$d மணிநேரத்திற்கு முன்பு அடைய %1$s%2$s மணிக்குள் புறப்பட%3$s வேண்டும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">%2$s-க்கான %1$d-நாள் பயணத் திட்டத்தைப் பரிந்துரைக்கவும், அதில் பார்க்க வேண்டிய இடங்கள், செய்ய வேண்டிய விஷயங்கள் மற்றும் சுவையான உணவகங்கள் ஆகியவை அடங்கும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s-க்கான %1$d-நாள் பயணத் திட்டத்தைப் பரிந்துரைக்கவும், அதில் பார்க்க வேண்டிய இடங்கள், செய்ய வேண்டிய விஷயங்கள் மற்றும் சுவையான உணவகங்கள் ஆகியவை அடங்கும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">உங்கள் பயணத்தின் போது பயனுள்ளதாக இருக்கும் இந்த %1$sபரிந்துரைக்கப்பட்ட பயன்பாடுகளை%2$s சரிபார்க்கவும்.</item>
+        <item quantity="one">உங்கள் பயணத்தின் போது பயனுள்ளதாக இருக்கும் இந்த %1$sபரிந்துரைக்கப்பட்ட பயன்பாட்டை%2$s சரிபார்க்கவும்.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">முன்கூட்டியே %1$sஇந்த மொழிப் பொதியைப் பதிவிறக்கவும்%2$s, எனவே நீங்கள் செல்லுமிடத்தை அடையும் போது, மொழிபெயர்ப்பு அம்சம் பயன்படுத்தும் வகையில் தயாராக இருக்கும்.</item>
+        <item quantity="one">முன்கூட்டியே %1$sஇந்த மொழிப் பொதிகளைப் பதிவிறக்கவும்%2$s, எனவே நீங்கள் செல்லுமிடத்தை அடையும் போது, மொழிபெயர்ப்பு அம்சம் பயன்படுத்தும் வகையில் தயாராக இருக்கும்.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">பதிவிறக்க வேண்டிய மொழித் தொகுப்புகள்</item>
+        <item quantity="one">பதிவிறக்க வேண்டிய மொழித் தொகுப்பு</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d சாதனங்கள் ஆன்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d சாதனம் ஆன்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">கடைசியாக %d நாட்களுக்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">கடைசியாக %d நாளுக்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">கடைசியாக %d நாட்களுக்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">கடைசியாக %d நாளுக்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">கடைசியாக %d மாதங்களுக்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">கடைசியாக %d மாதத்திற்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">கடைசியாக %d வாரங்களுக்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">கடைசியாக %d வாரத்திற்கு முன்பு தொடர்பு கொள்ளப்பட்டது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">மேலும் %d தொடர்புகள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">மேலும் %d தொடர்பு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Samsung Wallet-இல் உங்களுக்கு ஒரு கூப்பன் உள்ளது, அது இன்னும் %d நாட்களில் காலாவதியாகிவிடும். அது காலாவதியாகும் முன் பயன்படுத்துவதை உறுதிப்படுத்திக் கொள்ளுங்கள்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Samsung Wallet-இல் உங்களுக்கு ஒரு கூப்பன் உள்ளது, அது இன்னும் %d நாளில் காலாவதியாகிவிடும். அது காலாவதியாகும் முன் பயன்படுத்துவதை உறுதிப்படுத்திக் கொள்ளுங்கள்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">மைனஸ் %d டிகிரிகள் அதிகம்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">மைனஸ் %d டிகிரி அதிகம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">மைனஸ் %d டிகிரிகள் குறைவு</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">மைனஸ் %d டிகிரி குறைவு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">உங்கள் நாட்காட்டியில் %1$s என்று அழைக்கப்படும் நிகழ்வு உள்ளது. %5$s-இல் %4$s-க்கு %2$d டிகிரி %3$s என்ற அளவில் இருக்கும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உங்கள் நாட்காட்டியில் %1$s என்று அழைக்கப்படும் நிகழ்வு உள்ளது. %5$s-இல் %4$s-க்கு %2$d டிகிரி %3$s என்ற அளவில் இருக்கும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">%d டிகிரிகள் அதிகம்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d டிகிரி அதிகம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">%d டிகிரிகள் குறைவு</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d டிகிரி குறைவு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s காட்சிகள்</item>
+        <item quantity="one">%s பார்வை</item>
+    </plurals>
+</resources>

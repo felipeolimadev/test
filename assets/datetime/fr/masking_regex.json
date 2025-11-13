@@ -1,0 +1,294 @@
+{
+  "masks": [
+    {
+      "id": 1,
+      "mask": "<day_of_week>",
+      "keywords": [
+        "lundi",
+        "mardi",
+        "mercredi",
+        "jeudi",
+        "vendredi",
+        "samedi",
+        "dimanche",
+        "lun.",
+        "mar.",
+        "mer.",
+        "jeu.",
+        "ven.",
+        "sam.",
+        "dim."
+      ]
+    },
+    {
+      "id": 2,
+      "mask": "<month>",
+      "keywords": [
+        "janvier",
+        "février",
+        "mars",
+        "avril",
+        "mai",
+        "juin",
+        "juillet",
+        "août",
+        "septembre",
+        "octobre",
+        "novembre",
+        "décembre",
+        "jan",
+        "fév",
+        "mars",
+        "avr",
+        "avr,",
+        "mai",
+        "juin",
+        "juillet",
+        "aout",
+        "sep(?:t\\.)?",
+        "oct",
+        "nov",
+        "déc"
+      ]
+    },
+    {
+      "id": 3,
+      "mask": "<relative>",
+      "keywords": [
+        "último",
+        "anterior",
+        "sucesivo",
+        "comenzar",
+        "inicial",
+        "final",
+        "prochain",
+        "précédent",
+        "suivant"
+      ]
+    },
+    {
+      "id": 4,
+      "mask": "<special_day>",
+      "keywords": [
+        "Saint-Valentin",
+        "mère",
+        "père",
+        "indépendance",
+        "Halloween",
+        "Saint-Patrick",
+        "Saint-Jean",
+        "national"
+      ]
+    },
+    {
+      "id": 5,
+      "mask": "<time_format>",
+      "keywords": [
+        "a\\.?m\\.?",
+        "p\\.?m\\.?",
+      ]
+    },
+    {
+      "id": 6,
+      "mask": "<relative_time_format>",
+      "keywords": [
+        "aube",
+        "crépuscule",
+        "matin",
+        "(?:l')?apr(?:è|ã¨)s-midi",
+        "soir"
+      ]
+    },
+    {
+      "id": 7,
+      "mask": "<time_h>",
+      "keywords": [
+        "heures?"
+      ]
+    },
+    {
+      "id": 8,
+      "mask": "<time_m>",
+      "keywords": [
+        "min(utes?)?"
+      ]
+    },
+    {
+      "id": 9,
+      "mask": "<time_s>",
+      "keywords": [
+        "second(?:e)?s",
+        "sec",
+        "s"
+      ]
+    },
+    {
+      "id": 10,
+      "mask": "<special_time>",
+      "keywords": [
+        "minuit",
+        "midi",
+        "maintenant"
+      ]
+    },
+    {
+      "id": 11,
+      "mask": "<num_word>",
+      "keywords": [
+        "douze",
+        "treize",
+        "quatorze",
+        "quinze",
+        "seize",
+        "dix-sept",
+        "dix-huit",
+        "dix-neuf",
+        "vingt",
+        "trente",
+        "quarante",
+        "cinquante",
+        "une?",
+        "deux",
+        "trois",
+        "quatre",
+        "cinq",
+        "six",
+        "sept",
+        "huit",
+        "neuf",
+        "dix",
+        "onze",
+        "quart",
+        "demie"
+      ]
+    },
+    {
+      "id": 12,
+      "mask": "<cyclic_keyword>",
+      "keywords": [
+        "cada",
+        "anual",
+        "mensual",
+        "semanal",
+        "diariamente",
+        "por hora",
+        "anualmente"
+      ]
+    },
+    {
+      "id": 13,
+      "mask": "<temporal_adjective>",
+      "keywords": [
+      ]
+    },
+    {
+      "id": 14,
+      "mask": "<time_period>",
+      "keywords": [
+        "jours?",
+        "siècle",
+        "((de\\s+)?l')?année",
+        "âge",
+        "(l')?an(s|née|nã©e)?",
+        "semaines?",
+        "mois(?:-ci)?",
+        "quinze jours?",
+        "fin de semaine"
+      ]
+    },
+    {
+      "id": 15,
+      "mask": "<relative_day>",
+      "keywords": [
+        "aujourd'hui",
+        "demain",
+        "après-demain",
+        "aprã¨s-demain",
+        "hier",
+        "avant-hier"
+      ]
+    },
+    {
+      "id": 16,
+      "mask": "<num_suffix>",
+      "keywords": [
+        "\\d{1,4}(e|er)",
+        "premier",
+        "deuxième",
+        "troisi(?:ème|ã¨me)",
+        "3(?:ème|ã¨me)",
+        "quatrième",
+        "cinquièmement",
+        "sixième",
+        "septième",
+        "huitième",
+        "neuvième",
+        "dixième",
+        "événement",
+        "douzième",
+        ]
+    },
+    {
+      "id": 17,
+      "mask": "<num>",
+      "keywords": [
+        "\\d{1,4}"
+      ]
+    },
+    {
+      "id": 18,
+      "mask": "<after_reference>",
+      "keywords": [
+        "en",
+        "à partir de maintenant",
+        "après",
+        "aprã¨s",
+        "d(an|ã¨|è)s",
+        "plus tard",
+        "prochain",
+        "suivante?",
+        "à venir",
+        "bientôt",
+        "par(?:\\s*conséquent)?",
+        "depuis"
+      ]
+    },
+    {
+      "id": 19,
+      "mask" : "<before_reference>",
+      "keywords" : [
+        "avant",
+        "plus tôt(?:\\s*par)?",
+        "il y a(?: longtemps)?",
+        "fait",
+        "passé",
+        "ancien",
+        "précédent",
+        "moins"
+      ]
+    },
+    {
+      "id": 20,
+      "mask" : "<current_reference>",
+      "keywords" : [
+        "ce(?:tte)?",
+        "sur",
+        "autour",
+        "dans(?:\\s*le)",
+        "ce(?:la)?",
+        "actuel",
+        "présent"
+      ]
+    },
+    {
+      "id": 21,
+      "mask" : "<last_reference>",
+      "keywords" : [
+        "dernier",
+        "pass(?:é|er)",
+        "fin",
+        "ancien"
+      ]
+    }
+  ]
+}

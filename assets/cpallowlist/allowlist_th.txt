@@ -1,0 +1,7 @@
+การเดินทาง,travel,การท่องเที่ยว,trip
+พิธีแต่งงาน,งานแต่งงาน,การแต่งงาน,wedding,การเฉลิมฉลองงานแต่งงาน,การสมรส,วันแต่งงาน,marriage ceremony
+พิธีลงทะเบียน,matriculation,พิธีการเข้า,พิธีรับเข้าเรียน,พิธีบวช,entrance ceremony
+graduation,การประชุม,การสำเร็จการศึกษา,พิธีรับปริญญา,พิธีสำเร็จการศึกษา,การเริ่มต้น,commencement,วันสำเร็จการศึกษา
+ด๊อบ,birthday,วันเกิด,วันครบรอบวันเกิด,วันนาตาล,birth anniversary
+marriage anniversary,wedding anniversary,รำลึกวันวิวาห์,วันครบรอบแต่งงาน
+vacation, พักผ่อน

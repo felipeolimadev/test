@@ -1,0 +1,603 @@
+[
+
+  {
+    "id": 1,
+    "type": "HOUR_MIN_SEC_OPTIONAL_ALL_NUMERAL_AM_PM_OPTIONAL",
+    "patternType": "<num><sep><num><sep><num>",
+    "patternString": "(?<=\\s|.|,)(<num>)\\s*[\\:\\.]\\s*(<num>)\\s*[\\:\\.]?\\s*(<num>)?\\s*(<time_format>)?(?=\\s|$|.|,)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "timeFormat" : 4
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "HOUR_WITH_SUFFIX",
+    "patternType": "<num><hourly_suffix>",
+    "patternString": "(<num>)\\s*<<hourly_suffix>>\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "timeFormat" : 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "HOUR_WITH_SUFFIX_2",
+    "patternType": "<num>:<num> <time_h>",
+    "patternString": "(<num>):?(<num>|<num_word>)?\\s*<time_h>\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "type": "HOUR_MIN_NUM_SUFFIX_RELATIVE_TIME",
+    "patternType": "<num_word><sep><num><num_suffix><sep><relative_time_format>",
+    "patternString": "(?:as)?\\s*(<num>|<num_word>)\\s*(?:e)\\s*(<num_suffix>)\\s*(?:da)?\\s*(<relative_time_format>)?",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping": [
+      {
+        "hours": 1,
+        "minutes": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_TIME_FORMAT",
+    "patternType": "<num><relative_time_format><num>",
+    "patternString": "(<num>):?(<num>)?\\s*<<important_prepositions>>?\\s*(<relative_time_format>)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_TIME_FORMAT",
+    "patternType": "<num><relative_time_format><num>",
+    "patternString": "(<relative_time_format>)\\s*<<important_prepositions>>?\\s*(<num>)\\s*:?\\s*(num)?(?:\\s|$|.|,)",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3,
+        "timeFormat" : 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "SPECIAL_NUM_PAST_TO",
+    "patternType": "<special_num><past|to><num>",
+    "patternString": "(<special_num>)\\s*(<range_relative_connector>)\\s*((<num>)\\s*(<time_format>)?|<special_time>)(?:\\s|$|.|,)",
+    "isRelative": true,
+    "checkDateOverlap": true,
+    "mapping" : [
+      {
+        "minuteDelta": 1,
+        "hours" : 4,
+        "timeFormat": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "NUM_WORD_PAST_TO",
+    "patternType": "<num_word><past|to><num>",
+    "patternString": "(<num>)\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<after_reference>)\\s*((<num>)\\s*(<time_format>)?|<special_time>)(?:\\s|$|.|,)",
+    "mapping" : [
+      {
+        "minuteDelta": 1,
+        "secondDelta": 3,
+        "hours" : 7,
+        "timeFormat": 8
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "NUM_WORD_PAST_TO",
+    "patternType": "<num_word><past|to><num>",
+    "patternString": "(<num>)\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<after_reference>)\\s*((<num>)\\s*(<time_format>)?|<special_time>)(?:\\s|$|.|,)",
+    "mapping" : [
+      {
+        "minutes": 1,
+        "secondDelta": 3,
+        "hours" : 7,
+        "timeFormat": 8
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "NUM_WORD_PAST_TO",
+    "patternType": "<num_word><past|to><num>",
+    "patternString": "(<num>)?\\s*(<time_h>)\\s*(<num>|<special_num>)?\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<before_reference>|<after_reference>)\\s*((<num>)\\s*(<time_format>)?|<special_time>)(?:\\s|$|.|,)",
+    "mapping" : [
+      {
+        "hourDelta": 1,
+        "minuteDelta": 3,
+        "secondDelta": 5,
+        "hours" : 9,
+        "timeFormat": 10
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "SPECIAL_TIME",
+    "patternType": "<special_time>",
+    "patternString": "<special_time>"
+  },
+  {
+    "id": 7,
+    "type": "HOUR_MIN_AM_PM",
+    "patternType": "<num><sep><num><am_pm>",
+    "patternString": "(<num>)\\s*[\\:\\.]?\\s*(<num>)?\\s*[\\:\\.]?\\s*(<num>)?\\s*(<time_format>)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "timeFormat" : 4
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "HOUR_MIN_AM_PM",
+    "patternType": "<num><sep><num><am_pm>",
+    "patternString": "(<time_format>)\\s*(<num>)\\s*[\\:\\.]?\\s*(<num>)?\\s*[\\:\\.]?\\s*(<num>)?",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3,
+        "seconds" : 4,
+        "timeFormat" : 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "HOUR_MIN",
+    "patternType": "<num><sep><num>",
+    "patternString": "(<num>)[\\:](<num>)\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat": 3
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "HOUR_MIN_SEC_WORDS",
+    "patternType": "<num><word><num><word><num><word>",
+    "patternString": "(<num>)\\s*<time_h>,?\\s*(<num>)?\\s*(<time_m>)?,?\\s*(<num>)?\\s*(<time_s>)?\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 4,
+        "timeFormat": 6
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "NEXT_PREV",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<current_reference>|<before_reference>|<after_reference>|em)\\s*((<num>|<num_word>)\\s*(<time_m>)|(<num>|<num_word>)\\s*(<time_s>))",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "minuteDelta": 3,
+        "secondDelta": 6
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "NEXT_PREV",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<current_reference>|<before_reference>|<after_reference>|em\\s*(um|uma)?)\\s*(<num>|<num_word>)?\\s*(<time_h>)\\s*(e)?\\s*(((<num>|<num_word>)?\\s*(<time_m>)?)?\\s*(((<num>|<num_word>)\\s*(<time_s>))?))?$",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "hourDelta": 3,
+        "minuteDelta": 8,
+        "secondDelta": 13
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "NEXT_PREV_SUFFIX",
+    "patternType": "<num><time_period><next_prev>",
+    "patternString": "((<num>)\\s*<time_m>)\\s*((<num>)\\s*<time_s>)?\\s*(<before_reference>|<after_reference>)",
+    "isRelative": true,
+    "isPurelyRelative" : true,
+    "mapping" : [
+      {
+        "minuteDelta": 2,
+        "secondDelta": 4
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "NEXT_PREV_SUFFIX",
+    "patternType": "<num><time_period><next_prev>",
+    "patternString": "((<num>)?\\s*<time_h>)\\s*(?:e)?\\s*((<num>)?\\s*(?:<time_m>)?)?\\s*((<num>)\\s*<time_s>)?\\s*(<before_reference>|<after_reference>)",
+    "isRelative": true,
+    "isPurelyRelative" : true,
+    "mapping" : [
+      {
+        "hourDelta": 2,
+        "minuteDelta": 4,
+        "secondDelta": 6
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "NEXT_PREV_WITHOUT_NUM",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<current_reference>|<before_reference>|<after_reference>)\\s*(<time_h>|<time_m>|<time_s>)",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping": [
+      {
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "NEXT_PREV_SUFFIX_WITHOUT_NUM",
+    "patternType": "<time_period><next_prev>",
+    "patternString": "((<time_h>|<time_m>|<time_s>))\\s*(<current_reference>|<before_reference>|<after_reference>|agora|a)",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping": [
+      {
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "NUM_H_NUM_M_NUM_S",
+    "patternType": "<num><h><num><m><num><s>",
+    "patternString": "(<num>)\\s*(h)\\s*(<num>)\\s*(m)\\s*(<num>)?\\s*s?\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 3,
+        "seconds" : 5,
+        "timeFormat": 6
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "SPECIAL_TIME_RELATIVE",
+    "patternType": "<special_time_relative><after_ref>",
+    "patternString": "(em)?\\s*(<special_time_relative>)\\s*(<before_reference>|<after_reference>)?",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping": [
+      {
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "SPECIAL_TIME_RELATIVE",
+    "patternType": "<num>e<num>",
+    "patternString": "(as|às)?\\s*(<num>|<num_word>)\\s*(<time_h>)?\\s*(e)\\s*(<num>|<num_word>)\\s*(<time_m>)?\\s*(da)?\\s*(<relative_time_format>)?",
+    "mapping": [
+      {
+        "hours" : 2,
+        "minutes" : 5,
+        "timeFormat": 8
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "AFTER_REFERENCE_HOUR",
+    "patternType": "<num><time_h><after_reference>",
+    "patternString": "(<num>|<num_word>)\\s*(<time_h>)\\s*(<after_reference>)",
+    "mapping": [
+      {
+        "hours": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "AFTER_REFERENCE_MIN",
+    "patternType": "<num><time_m><after_reference>",
+    "patternString": "(<num>|<num_word>)\\s*(<time_m>)\\s*(<after_reference>)",
+    "mapping": [
+      {
+        "minutes": 1
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "type": "HOUR_MIN_NUM_SUFFIX",
+    "patternType": "<num_word><sep><num><num_suffix>",
+    "patternString": "(as)?\\s*(<num>|<num_word>)\\s*(e)\\s*(<num_suffix>)",
+    "mapping": [
+      {
+        "hours": 2,
+        "minutes": 5
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "type": "HOUR",
+    "patternType": "às<num>",
+    "patternString": "(às|<after_reference>)\\s*(<num>|<num_word>)",
+    "mapping": [
+      {
+        "hours": 2
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "type": "HOUR_TIME_H",
+    "patternType": "<num>",
+    "patternString": "(<num>|<num_word>)\\s*(<time_h>)",
+    "mapping": [
+      {
+        "hours": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "type": "MIN",
+    "patternType": "<num>",
+    "patternString": " (?:<after_reference>)?\\s*(<num>|<num_word>)\\s*(?:<time_m>)",
+    "isRelative":true,
+    "isPurelyRelative": true,
+    "mapping": [
+      {
+        "minutes": 1
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "type": "HOUR_MIN",
+    "patternType": "<num_word><sep><num><num_suffix>",
+    "patternString": "(<after_reference>)\\s*(<num>|<num_word>)\\s*(<time_h>)\\s*(<<time_connector>>)\\s*(<num>|<num_word>)\\s*(<time_m>)",
+    "mapping": [
+      {
+        "hours": 2,
+        "minutes": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "BEFORE_REFERENCE_HOUR_MIN",
+    "patternType": "<num><before_reference><num>",
+    "patternString": "(<num>|<num_word>)\\s*(<before_reference>)\\s*(<num>|<num_word>)",
+    "mapping": [
+      {
+        "hourDelta": 1,
+        "hours": 3
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "type": "CYCLIC_HOUR_OPTIONAL_MINUTE_DELTA",
+    "patternType": "<recurring_keyword> <time_h>",
+    "patternString": "(?:(?:no|em|a|arroba)\\s*(<num>)\\s*<time_m>\\s*)?(<recurring_keyword>)\\s*<time_h>",
+    "isCyclic": true,
+    "mapping": [
+      {
+        "minutes": 1
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "type": "CYCLIC_TIME_HOUR_AND_MIN_OPTIONAL_MINUTE_DELTA",
+    "patternType": "<recurring_keyword> <num> <time_h> <num> <time_m>",
+    "patternString": "(?:(?:no|em|a|arroba)\\s*(<num>)\\s*<time_m>\\s*)?(<recurring_keyword>)(?:\\s*(<num>)\\s*<time_h>)(?:\\s*(<num>)\\s*<time_m>)?(?:\\s*(<num>)\\s*<time_s>)?",
+    "isCyclic": true,
+    "mapping": [
+      {
+        "minutes": 1,
+        "hourCycle" : 3,
+        "minuteCycle" : 4,
+        "secondCycle" : 5
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "type": "CYCLIC_HOUR_RANGE",
+    "patternType": "<recurring_keyword> <time_h> <after_reference> <num> <range_relative_connector> <num>",
+    "patternString": "(?:<recurring_keyword>)\\s*(<num>)?\\s*<time_h>\\s*<after_reference>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>))\\s*<range_relative_connector>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>))",
+    "isCyclic": true,
+    "isRange": true,
+    "mapping": [
+      {
+        "hourCycle": 1,
+        "hours": 2,
+        "minutes": 3,
+        "timeFormat": 4,
+        "endHours": 5,
+        "endMinutes": 6,
+        "endTimeFormat": 7
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "type": "CYCLIC_HOUR_RANGE",
+    "patternType": "<recurring_keyword> <time_h>",
+    "patternString": "(?:<recurring_keyword>)\\s*(<num>)?\\s*<time_h>\\s*<after_reference>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>))",
+    "isCyclic": true,
+    "isRange": true,
+    "mapping": [
+      {
+        "hourCycle": 1,
+        "hours": 2,
+        "minutes": 3,
+        "timeFormat": 4
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "type": "CYCLIC_TIME_HOUR_AND_MIN_OPTIONAL_MINUTE_DELTA",
+    "patternType": "<recurring_keyword> <num> <time_h> <num> <time_m>",
+    "patternString": "(<recurring_keyword>)(?:\\s*(<num>)\\s*<time_m>)(?:\\s*(<num>)\\s*<time_s>)?(?:\\s*<after_reference>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>))\\s*<range_relative_connector>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>)))",
+    "isCyclic": true,
+    "isRange": true,
+    "mapping": [
+      {
+        "minuteCycle" : 2,
+        "secondCycle" : 3,
+        "hours": 4,
+        "minutes": 5,
+        "timeFormat": 6,
+        "endHours": 7,
+        "endMinutes": 8,
+        "endTimeFormat": 9
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "type": "CYCLIC_TIME_HOUR_AND_MIN_OPTIONAL_MINUTE_DELTA",
+    "patternType": "<recurring_keyword> <num> <time_h> <num> <time_m>",
+    "patternString": "(<recurring_keyword>)(?:\\s*(<num>)\\s*<time_h>)(?:\\s*(<num>)\\s*<time_m>)?(?:\\s*(<num>)\\s*<time_s>)?(?:\\s*<after_reference>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>))\\s*<range_relative_connector>\\s*(?:(<num>)\\s*(?:(?:\\:(<num>)|<<hourly_suffix>>)?\\s*(<time_format>|<relative_time_format>)?|<special_time>)))?",
+    "isCyclic": true,
+    "isRange": true,
+    "mapping": [
+      {
+        "hourCycle" : 2,
+        "minuteCycle" : 3,
+        "secondCycle" : 4,
+        "hours": 5,
+        "minutes": 6,
+        "timeFormat": 7,
+        "endHours": 8,
+        "endMinutes": 9,
+        "endTimeFormat": 10
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "type": "CYCLIC_TIME_HOUR_OR_MIN_OPTIONAL_MINUTE_DELTA_OPTIONAL_MINUTE_DELTA",
+    "patternType": "<recurring_keyword> <num> <time_h> <num> <time_m>",
+    "patternString": "(?:(?:no|em|a|arroba)\\s*(<num>)\\s*<time_m>\\s*)?(<recurring_keyword>)\\s*(?:(<num>)\\s*<time_h>|(<num>)\\s*<time_m>)(?:\\s*(<num>)\\s*<time_s>)?",
+    "isCyclic": true,
+    "mapping": [
+      {
+        "minutes": 1,
+        "hourCycle" : 3,
+        "minuteCycle" : 4,
+        "secondCycle" : 5
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "type": "TIME_RANGE",
+    "patternType": "<num> <sep> <num> <time_format>",
+    "patternString": "(<num>)\\s*(?:\\:\\s*(<num>))\\s*(?:\\:\\s*(<num>))?\\s*(?:<range_relative_connector>)\\s*(<num>)\\s*(?:\\:\\s*(<num>))?\\s*(?:\\:\\s*(<num>))?\\s*(<time_format>|<relative_time_format>)?",
+    "isRange": true,
+    "mapping": [
+      {
+        "hours": 1,
+        "minutes": 2,
+        "seconds": 3,
+        "endHours": 4,
+        "endMinutes": 5,
+        "endSeconds": 6,
+        "timeFormat": 7,
+        "endTimeFormat": 7
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "type": "TIME_RANGE",
+    "patternType": "<num> <sep> <num> <time_format>",
+    "patternString": "(<num>)\\s*(?:\\:\\s*(<num>))?\\s*(?:\\:\\s*(<num>))?\\s*-\\s*(<num>)\\s*(?:\\:\\s*(<num>))?\\s*(?:\\:\\s*(<num>))?\\s*(<time_format>|<relative_time_format>)",
+    "isRange": true,
+    "mapping": [
+      {
+        "hours": 1,
+        "minutes": 2,
+        "seconds": 3,
+        "endHours": 4,
+        "endMinutes": 5,
+        "endSeconds": 6,
+        "timeFormat": 7,
+        "endTimeFormat": 7
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "type": "TIME_RANGE_2",
+    "patternType": "<time_format> <num> <sep> <num>",
+    "patternString": "(<time_format>|<relative_time_format>)\\s*(<num>)\\s*(?:\\:\\s*(<num>))?\\s*(?:\\:\\s*(<num>))?\\s*(?:-|<range_relative_connector>)\\s*(<num>)\\s*(?:\\:\\s*(<num>))?\\s*(?:\\:\\s*(<num>))?",
+    "isRange": true,
+    "mapping": [
+      {
+        "hours": 1,
+        "minutes": 2,
+        "seconds": 3,
+        "endHours": 4,
+        "endMinutes": 5,
+        "endSeconds": 6,
+        "timeFormat": 7,
+        "endTimeFormat": 7
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "type": "QUARTER_TO_TIME",
+    "patternType": "<num> <time_m> <range_relative_connector> <num> <time_h>",
+    "patternString": "(<num>|<num_word>)\\s*(<time_m>)?\\s*(<range_relative_connector>)\\s*(<num>|<num_word>)\\s*(<time_h>)?",
+    "isRelative": true,
+    "mapping": [
+      {
+        "minuteDelta": 1,
+        "hours": 4
+      }
+    ]
+  }
+]

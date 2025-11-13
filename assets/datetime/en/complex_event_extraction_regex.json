@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "pattern" : "from (<date>)\\s?till\\s?(<date>)\\s?(?:from)?\\s?(<time>)\\s?(?:-|~|to)?\\s?(<time>)",
+    "groupings" : [[1,2],[3,4]]
+  }, {
+    "id": "2",
+    "pattern" : "(<date>)\\(?:-|~)?\\s?(<date>)\\s?(?:,|at)?\\s?(<time>)",
+    "groupings" : [[1,2],[3,-1]]
+  },{
+    "id": "3",
+    "pattern" : "(<date>)\\s?(?:from|,)?\\s?(<time>)\\s?(?:-|~|to)?\\s?(<time>)",
+    "groupings" : [[1,-1],[2,3]]
+  }
+]
+

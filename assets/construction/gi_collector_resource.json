@@ -1,0 +1,33 @@
+{
+  "id": "gi_collector_resource",
+  "version": "0.0.4",
+  "elements": [
+    {
+      "id": "AppActionGICollector"
+    },
+    {
+      "id": "CCSDataGICollector"
+    },
+    {
+      "id": "ClipboardGICollector"
+    },
+    {
+      "id": "DeviceIdleGICollector"
+    },
+    {
+      "id": "DonationGICollector"
+    },
+    {
+      "id": "RuneStoneGICollector"
+    },
+    {
+      "id": "TimeGICollector"
+    },
+    {
+      "id": "WearableGICollector"
+    },
+    {
+      "id": "MediaUsageGICollector"
+    }
+  ]
+}

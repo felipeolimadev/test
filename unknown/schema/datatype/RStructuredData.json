@@ -1,0 +1,23 @@
+{
+  "name": "RStructuredData",
+  "type": "datatype",
+  "id": "datatype.composite.RStructuredData",
+  "version": "",
+  "description": "",
+  "schema": {
+    "properties": {
+      "displayName": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "structuredData": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      }
+    },
+    "required": [
+      "structuredData"
+    ],
+    "type": "object"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    VALUES (?input{IDX}) {<Keywords>}
+    ?instance{IDX} rdf:type/rdfs:subClassOf ?input{IDX} .
+}

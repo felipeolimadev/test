@@ -1,0 +1,219 @@
+[
+    {
+        "category": "SOCIAL",
+        "synonyms": [
+            {
+                "event": "BIRTHDAY",
+                "words": [
+                    "Geburtstag",
+                    "Tag der Geburt",
+                    "Jahrestag der Geburt",
+                    "Geburtsdatum"
+                ],
+                "excludes": [
+                    "Geschenk",
+                    "Präsent",
+                    "Angebot",
+                    "vorbereiten",
+                    "verpacken",
+                    "wählen",
+                    "kaufen",
+                    "laden",
+                    "auswählen",
+                    "erwerben",
+                    "bestellen",
+                    "briefing",
+                    "überprüfung",
+                    "präsentation",
+                    "besprechung",
+                    "party"
+                ]
+            },
+            {
+                "event": "WEDDING_ANNIVERSARY",
+                "words": [
+                    "Hochzeitstag",
+                    "Jahrestag der Hochzeit",
+                    "Hochzeitsfeier",
+                    "Jahrestag der Eheschließung"
+                ]
+            },
+            {
+                "event": "WEDDING",
+                "words": [
+                    "Hochzeitszeremonie",
+                    "Trauungszeremonie",
+                    "Hochzeitsveranstaltung",
+                    "Hochzeit",
+                    "Ehe",
+                    "Eheschließung",
+                    "heiraten",
+                    "in den Hafen der Ehe einlaufen",
+                    "im Hafen der Ehe landen"
+                ]
+            },
+            {
+                "event": "ENTRANCE_CEREMONY",
+                "words": [
+                    "Eingangszeremonie",
+                    "Aufnahmezeremonie",
+                    "Einschreibungszeremonie",
+                    "Immatrikulationszeremonie"
+                ]
+            },
+            {
+                "event": "GRADUATION",
+                "words": [
+                    "Entlassungsfeier",
+                    "Abschlussfeier",
+                    "Einberufung",
+                    "Tag der Abschlussfeier",
+                    "Diplomfeier",
+                    "Abschluss"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "RESERVATION",
+        "synonyms": [
+            {
+                "event": "ACCOMMODATION",
+                "words": [
+                    "Hotel",
+                    "Motel",
+                    "Gasthof",
+                    "Airbnb",
+                    "Resort",
+                    "Pension",
+                    "Ferienhaus",
+                    "Herberge",
+                    "Lodge",
+                    "Unterkunft",
+                    "Campingplatz",
+                    "Marriott",
+                    "Hilton",
+                    "Accor",
+                    "InterContinental",
+                    "Wyndham",
+                    "Hyatt",
+                    "Rosewood",
+                    "Four Seasons",
+                    "Chase",
+                    "Sheraton",
+                    "ibis",
+                    "Trident",
+                    "Mandarin Oriental",
+                    "Vantage",
+                    "Baccarat",
+                    "Bianco",
+                    "The Langham",
+                    "The Jefferson",
+                    "Montage",
+                    "Radisson",
+                    "Hostelling International",
+                    "Aman",
+                    "The Brando",
+                    "Six Senses Douro Valley",
+                    "Soneva Fushi",
+                    "One&Only Reethi Rah",
+                    "Anantara",
+                    "The Ritz-Carlton",
+                    "Doppelzimmer",
+                    "Einzelzimmer",
+                    "Zweibettzimmer",
+                    "Raucherzimmer",
+                    "Nichtraucherzimmer",
+                    "Meerblick",
+                    "Stadtblick",
+                    "Gartenblick"
+                ]
+            },
+            {
+                "event": "TRANSPORTATION",
+                "words": [
+                    "Bus",
+                    "U-Bahn",
+                    "Zug",
+                    "Tram",
+                    "Taxi",
+                    "Fähre",
+                    "Schiff",
+                    "Kreuzfahrt",
+                    "Flugzeug",
+                    "Flug",
+                    "Flüge",
+                    "Seilbahn",
+                    "Transporter",
+                    "Uber",
+                    "Lyft",
+                    "Greyhound",
+                    "Amtrak",
+                    "Yellow Cab",
+                    "MUNI-Passport",
+                    "Shuttle",
+                    "Skyscanner",
+                    "Fähren",
+                    "Straßenbahn",
+                    "Eurostar",
+                    "Autovermietung",
+                    "Limousine",
+                    "Transport",
+                    "Luftverkehrslinien",
+                    "Fluggesellschaft",
+                    "Verkehrsflugzeug",
+                    "Flughafen",
+                    "Air Canada",
+                    "Emirates",
+                    "Allegiant Air",
+                    "Endeavor Air",
+                    "Ecomony Class",
+                    "Business-Klasse",
+                    "First Class",
+                    "Boarding",
+                    "Abfahrt",
+                    "Ankunft",
+                    "Start",
+                    "Landung",
+                    "Gepäck",
+                    "Transit",
+                    "Nonstopflug",
+                    "Zwischenstopp",
+                    "Fahrpreis",
+                    "Rundreise",
+                    "One-Way-Flug",
+                    "Autoverleih",
+                    "Passagierflugzeug"
+                ]
+            },
+            {
+                "event": "RESTAURANT",
+                "words": [
+                    "Restaurant",
+                    "Speisen",
+                    "Café",
+                    "Bistro",
+                    "Diner",
+                    "Kneipe",
+                    "Lounge",
+                    "Kantine",
+                    "Cafeteria",
+                    "Trattoria",
+                    "Brasserie",
+                    "Bar",
+                    "Pizzeria",
+                    "Rotisserie",
+                    "Steakhaus",
+                    "Speisesaal",
+                    "Büfett",
+                    "Durchfahrtsbedienung",
+                    "Drive-in",
+                    "Brunch",
+                    "Frühstück",
+                    "Yelp",
+                    "OpenTable"
+                ]
+            }
+        ]
+    }
+]

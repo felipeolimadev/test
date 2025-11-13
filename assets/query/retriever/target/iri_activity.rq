@@ -1,0 +1,4 @@
+OPTIONAL {
+    ?activity time:hasBeginning/time:inXSDDateTimeStamp|time:inXSDDateTimeStamp ?repr_time .
+}
+

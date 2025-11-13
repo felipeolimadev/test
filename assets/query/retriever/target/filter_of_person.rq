@@ -1,0 +1,7 @@
+{
+    GRAPH user:relation {
+        person:TheUser ?iri ?person .
+        BIND("relationship" AS ?iri_type)
+    }
+}
+

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d ημέρες ακόμη.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ημέρα ακόμη.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">Το συμβάν %1$s είναι σε %2$d ημέρες.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Το συμβάν %1$s είναι σε %2$d ημέρα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d συμβάντα%3$s θα συνεχιστούν αύριο.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d συμβάν%3$s θα συνεχιστεί αύριο.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Έχετε %1$s%2$d συμβάντα%3$s σήμερα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Έχετε %1$s%2$d συμβάν%3$s σήμερα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Σήμερα, έχετε %1$d συμβάντα. Το πρώτο συμβάν είναι το %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Σήμερα, έχετε %1$d συμβάν. Το πρώτο συμβάν είναι το %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">Απομένουν %1$s%2$d συμβάντα%3$s για σήμερα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Απομένει %1$s%2$d συμβάν%3$s για σήμερα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Έχετε %1$s%2$d συμβάντα%3$s αύριο.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Έχετε %1$s%2$d συμβάν%3$s αύριο.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Αύριο, έχετε %1$d συμβάντα. Το πρώτο συμβάν είναι το %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Αύριο, έχετε %1$d συμβάν. Το πρώτο συμβάν είναι το %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d συμβάν.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d συμβάν</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Ξεκινά σε %d λεπτά</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ξεκινά σε %d λεπτό</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d υπενθυμίσ. ακόμα για σήμ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d υπενθύμιση ακόμα για σήμ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Λάβατε %d μηνύματα για παράδοση σήμερα. Ελέγξτε για να βεβαιωθείτε ότι έχετε ενημερωθεί για την κατάσταση των παραδόσεων.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Λάβατε %d μήνυμα για παράδοση σήμερα. Ελέγξτε για να βεβαιωθείτε ότι έχετε ενημερωθεί για την κατάσταση της παράδοσης.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d παραδόσεις σήμερα</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d παράδοση σήμερα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Άνω του στ. %d φορ. αυτή την εβ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Άνω του στ. %d φορά αυτή την εβ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">Πετ. %d στόχους δραστ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Πετύχ. %d στόχο δραστ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Η συνολική αύξηση υψομέτρου ήταν %1$s και κάψατε %2$,d χιλιοθερμίδες.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Η συνολική αύξηση υψομέτρου ήταν %1$s και κάψατε %2$,d χιλιοθερμίδα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Ο μέσος ρυθμός σας ήταν %1$s και κάψατε %2$,d χιλιοθερμίδες.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ο μέσος ρυθμός σας ήταν %1$s και κάψατε %2$,d χιλιοθερμίδα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Η μέση ταχύτητά σας ήταν %1$s και κάψατε %2$,d χιλιοθερμίδες.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Η μέση ταχύτητά σας ήταν %1$s και κάψατε %2$,d χιλιοθερμίδα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Αυτή είναι μια σύνοψη της προπόνησης %1$s. Η διάρκειά της ήταν %2$s και κάψατε %3$,d χιλιοθερμίδες.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Αυτή είναι μια σύνοψη της προπόνησης %1$s. Η διάρκειά της ήταν %2$s και κάψατε %3$,d χιλιοθερμίδα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Σήμερα, δεν πήρατε %d προγραμματισμένα φάρμακα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Σήμερα, δεν πήρατε %d προγραμματισμένο φάρμακο.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ώρες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ώρα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ώρες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ώρα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d λεπτά</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d λεπτό</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d λεπτά</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d λεπτό</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Σήμερα, είχατε %1$s%2$d αναπάντητες κλήσεις%3$s τις οποίες δεν έχετε δει ακόμα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Σήμερα, είχατε %1$s%2$d αναπάντητη κλήση%3$s την οποία δεν έχετε δει ακόμα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Είχατε %d αναπάντητες κλήσεις σήμερα. Δείτε τις αναπάντητες κλήσεις στο Now brief σας. Αν το χρειάζεστε, μπορείτε να ορίσετε επίσης υπενθυμίσεις για να μην ξεχάσετε να επιστρέψετε τις κλήσεις.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Είχατε %d αναπάντητη κλήση σήμερα. Δείτε την αναπάντητη κλήση στο Now brief σας. Αν το χρειάζεστε, μπορείτε να ορίσετε επίσης μια υπενθύμιση για να μην ξεχάσετε να επιστρέψετε την κλήση.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d ακόμη αναπάντητες κλήσεις</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ακόμη αναπάντητη κλήση</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d αναπ.κλήσεις</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d αναπ. κλήση</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+        <item quantity="one">%d νέα ειδοποίηση</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ώρες πριν</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ώρα πριν</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d λεπτά πριν</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d λεπτό πριν</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Θα πρέπει να είστε τουλάχιστον %d ετών για να χρησιμοποιήσετε τις δυνατότητες προηγμένης νοημοσύνης του Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Θα πρέπει να είστε τουλάχιστον %d έτους για να χρησιμοποιήσετε τις δυνατότητες προηγμένης νοημοσύνης του Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d μηνύματα</item>
+        <item quantity="one">%d μήνυμα</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d μιλ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d μιλ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d δευτερόλεπτα</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d δευτερόλεπτο</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Έχετε ρυθμίσει %1$s%2$d ξυπνητήρια%3$s για το πρωί.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Έχετε ρυθμίσει %1$s%2$d ξυπνητήρι%3$s για το πρωί.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Έχετε ρυθμίσει %1$s%2$d ξυπνητήρια%3$s για αύριο το πρωί.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Έχετε ρυθμίσει %1$s%2$d ξυπνητήρι%3$s για αύριο το πρωί.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sΑναχωρήστε έως τις %2$s%3$s για να φτάσετε στο αεροδρόμιο τουλάχιστον %4$d ώρες πριν από την αναχώρηση. Ορίστε κάποιο ξυπνητήρι, για να μην ξεχαστείτε.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sΑναχωρήστε έως τις %2$s%3$s για να φτάσετε στο αεροδρόμιο τουλάχιστον %4$d ώρα πριν από την αναχώρηση. Ορίστε κάποιο ξυπνητήρι, για να μην ξεχαστείτε.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sΑναχωρήστε έως τις %2$s%3$s για να είστε στο αεροδρόμιο τουλάχιστον %4$d ώρες πριν από την πτήση σας.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sΑναχωρήστε έως τις %2$s%3$s για να είστε στο αεροδρόμιο τουλάχιστον %4$d ώρα πριν από την πτήση σας.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Πρότεινε ένα πρόγραμμα ταξιδιού %1$d ημερών για την τοποθεσία %2$s με μέρη που πρέπει να επισκεφτώ, πράγματα να κάνω και εστιατόρια που αξίζει να δοκιμάσω.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Πρότεινε ένα πρόγραμμα ταξιδιού %1$d ημέρας για την τοποθεσία %2$s με μέρη που πρέπει να επισκεφτώ, πράγματα να κάνω και εστιατόρια που αξίζει να δοκιμάσω.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Ελέγξτε αυτές τις %1$sπροτεινόμενες εφαρμογές%2$s που μπορεί να σας φανούν χρήσιμες κατά τη διάρκεια του ταξιδιού σας.</item>
+        <item quantity="one">Ελέγξτε αυτήν την %1$sπροτεινόμενη εφαρμογή%2$s που μπορεί να σας φανεί χρήσιμη κατά τη διάρκεια του ταξιδιού σας.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sΚατεβάστε αυτό το πακέτο γλώσσας%2$s εκ των προτέρων, ώστε να είστε έτοιμοι να το χρησιμοποιήσετε στη Διερμηνεία όταν φτάσετε στον προορισμό σας.</item>
+        <item quantity="one">%1$sΚατεβάστε αυτά τα πακέτα γλωσσών%2$s εκ των προτέρων, ώστε να είστε έτοιμοι να τα χρησιμοποιήσετε στη Διερμηνεία όταν φτάσετε στον προορισμό σας.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Πακέτα γλωσσών για λήψη</item>
+        <item quantity="one">Πακέτο γλώσσας για λήψη</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d ενεργές συσκευές</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ενεργή συσκευή</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Τελευταία επικοινωνία πριν από %d ημέρες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Τελευταία επικοινωνία πριν από %d ημέρα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Τελ. επικοιν. πριν από %d ημέρες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Τελ. επικοιν. πριν από %d ημέρα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Τελ. επικοιν. πριν από %d μήνες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Τελ. επικοιν. πριν από %d μήνα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Τελ. επικ. πριν από %d εβδομάδες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Τελ. επικ. πριν από %d εβδομάδα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d ακόμα επαφές</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ακόμα επαφή</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Έχετε ένα κουπόνι στο Samsung Wallet το οποίο λήγει σε %d ημέρες. Φροντίστε να το χρησιμοποιήσετε προτού λήξει.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Έχετε ένα κουπόνι στο Samsung Wallet το οποίο λήγει σε %d ημέρα. Φροντίστε να το χρησιμοποιήσετε προτού λήξει.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Μέγιστη, μείον %d βαθμοί</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Μέγιστη, μείον %d βαθμός</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Ελάχιστη, μείον %d βαθμοί</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ελάχιστη, μείον %d βαθμός</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Έχετε ένα συμβάν στο ημερολόγιό σας με τίτλο %1$s. Θα έχει %2$d βαθμούς %3$s στις %4$s στις %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Έχετε ένα συμβάν στο ημερολόγιό σας με τίτλο %1$s. Θα έχει %2$d βαθμό %3$s στις %4$s στις %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Μέγιστη, %d βαθμοί</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Μέγιστη, %d βαθμός</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Ελάχιστη, %d βαθμοί</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ελάχιστη, %d βαθμός</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s προβολές</item>
+        <item quantity="one">Προβολή %s</item>
+    </plurals>
+</resources>

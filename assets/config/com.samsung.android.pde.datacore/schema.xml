@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.pde.datacore" package="" prefKey="pde_event" version="1"
+    embConfigUri="content://com.samsung.android.pde.datacore">
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="long_compare_field" dataType="long" class="LongPoint" />
+
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" type="index" removeSpecialChar="false">
+        <subAnalyzer class="core.WhitespaceAnalyzer" lang="ko" />
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+        <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+    </defaultAnalyzer>
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" type="search" removeSpecialChar="false">
+        <subAnalyzer class="core.WhitespaceAnalyzer" lang="ko" />
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+        <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+    </defaultAnalyzer>
+
+    <field name="_id" type="string"/>
+    <field name="identifier" type="string" indexed="false"/>
+    <field name="what_title" type="text" stored="false"/>
+    <field name="when_startTime" type="long_compare_field"/>
+    <field name="when_endTime" type="long_compare_field"/>
+    <field name="who_identity" type="text" stored="false"/>
+    <field name="who_contact" type="text" stored="false"/>
+    <field name="who_relation" type="text" stored="false"/>
+    <field name="where_identity" type="text" stored="false"/>
+    <field name="category" type="text" stored="false"/>
+    <field name="source_app_labels" type="text" stored="false"/>
+    <field name="source_package" type="string" indexed="false"/>
+    <field name="last_updated_time" type="long_stored_field" indexed="false"/>
+    <field name="description" type="string" indexed="false"/>
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+</schema>

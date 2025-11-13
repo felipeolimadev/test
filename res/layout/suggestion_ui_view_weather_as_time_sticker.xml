@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/weather_as_time_sticker_container" android:tag="layout/suggestion_ui_view_weather_as_time_sticker_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/weather_as_time_sticker_container_margin_end" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/weather_as_time_sticker_item_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/weather_as_time_sticker_container_padding_horizontal" />
+</FrameLayout>

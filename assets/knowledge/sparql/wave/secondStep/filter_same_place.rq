@@ -1,0 +1,6 @@
+# 물리적으로 동일한 장소에서 찍은 사진만 존재
+FILTER EXISTS {
+    ?target user:atLocation ?location .
+    VALUES ?origin { <TAKING_PICTURES_IRI> }
+    ?origin user:atLocation ?location .
+}

@@ -1,0 +1,35 @@
+SELECT DISTINCT ?target {
+    ?target a user:TakingPictures .
+
+    # (1) 초기 검색 결과 이벤트와 동일한 카테고리의 이벤트 존재
+    # (2) 초기 검색 결과와 동일한 이벤트만 존재
+    FILTER EXISTS {
+        {
+            SELECT DISTINCT ?event ?eventStartTime ?eventEndTime {
+                VALUES ?origin { <TAKING_PICTURES_IRI> }
+                ?origin time:hasBeginning/time:inXSDDateTimeStamp ?originStartTime .
+                ?origin time:hasEnd/time:inXSDDateTimeStamp ?originEndTime .
+
+                ?event a/rdfs:subClassOf user:ScheduledEvent .
+                ?event time:inXSDBeginningDateTimeStamp ?eventStartTime .
+                ?event time:inXSDEndDateTimeStamp ?eventEndTime .
+                FILTER (?originEndTime >= ?eventStartTime && ?eventEndTime >= ?originStartTime)
+            }
+        }
+        ?target time:hasBeginning/time:inXSDDateTimeStamp ?targetStartTime .
+        ?target time:hasEnd/time:inXSDDateTimeStamp ?targetEndTime .
+
+        FILTER (?targetEndTime >= ?eventStartTime && ?eventEndTime >= ?targetStartTime)
+    }
+    # (3) 물리적으로 동일한 장소에서 찍은 사진만 존재
+    FILTER EXISTS {
+        ?target user:atLocation ?location .
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        ?origin user:atLocation ?location .
+    }
+    # (4) 연관 검색 결과가 초기 검색 결과 외의 사진 보유
+    FILTER NOT EXISTS {
+        VALUES ?origin { <TAKING_PICTURES_IRI> }
+        FILTER (?target = ?origin)
+    }
+}

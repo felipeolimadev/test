@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggestion_ui_view_energy_score_detail_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/energy_score_detail_container" android:background="@drawable/rounded_widget_background" android:paddingTop="@dimen/energy_score_detail_padding_top" android:paddingBottom="@dimen/energy_score_detail_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/energy_score_detail_padding_horizontal">
+        <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/energy_score_detail_view_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" layout="@layout/suggestion_ui_health_score_container" />
+            <ImageView android:id="@id/energy_score_detail_icon" android:layout_width="@dimen/energy_score_detail_icon_size" android:layout_height="@dimen/energy_score_detail_icon_size" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/energy_score_detail_title_margin_top">
+            <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/energy_score_detail_status_text_size" android:textColor="@color/energy_score_detail_status_text_color" android:id="@id/energy_score_detail_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/energy_score_detail_status_info_icon" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/energy_score_detail_status_info_icon" android:layout_width="@dimen/energy_score_detail_status_info_icon_size" android:layout_height="@dimen/energy_score_detail_status_info_icon_size" android:src="@drawable/disclaimer_info_detail" android:scaleType="fitCenter" android:tint="@color/energy_score_detail_status_text_color" android:layout_alignParentEnd="true" android:layout_marginVertical="@dimen/energy_score_detail_status_info_icon_margin_vertical" />
+        </RelativeLayout>
+        <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/energy_score_detail_subject_text_size" android:textColor="@color/energy_score_description_text_color" android:id="@id/energy_score_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/energy_score_detail_status_margin_top" />
+    </LinearLayout>
+</LinearLayout>

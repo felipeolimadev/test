@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/routine_action_card_container" android:tag="layout/suggestion_ui_view_routine_action_card2_0" android:background="@drawable/rounded_widget_background" android:padding="@dimen/routine_action_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/routine_action_card2_icon" android:background="@drawable/card_image_rounded_corner_8dp" android:layout_width="@dimen/routine_action_card2_icon_size" android:layout_height="@dimen/routine_action_card2_icon_size" android:scaleType="centerCrop" android:importantForAccessibility="no" android:clipToOutline="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/routine_action_card2_text_margin_start">
+            <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/routine_action_card2_text_size" android:id="@id/routine_action_card2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/routine_action_card2_text_size" android:id="@id/routine_action_card2_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/routine_action_card2_text_size" android:id="@id/routine_action_card2_time_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/routine_action_card2_action_button_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/routine_action_card2_actions_container_margin_top" />
+</LinearLayout>

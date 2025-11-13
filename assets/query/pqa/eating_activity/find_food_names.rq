@@ -1,0 +1,13 @@
+SELECT DISTINCT ?tag
+WHERE {
+    ?activity rdf:type user:Eating .
+    ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+<PERSON_FILTER>
+<LOCATION_FILTER>
+<TIME_FILTER>
+
+    ?activity user:extractedFrom ?content.
+    ?content content:objectRecognized ?tag .
+}

@@ -1,0 +1,99 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "party",
+                    "birthday",
+                    "dinner",
+                    "lunch",
+                    "brunch"
+                ]
+            },
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "shopping",
+                    "celebrate",
+                    "celebration",
+                    "dating",
+                    "funeral",
+                    "festival",
+                    "eat out",
+                    "wedding",
+                    "ceremony",
+                    "anniversary",
+                    "matriculation",
+                    "graduation",
+                    "commencement"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "office",
+                    "forum",
+                    "conference",
+                    "presentation",
+                    "analysis",
+                    "course",
+                    "class",
+                    "lesson",
+                    "seminar"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "reservation",
+                    "appointment",
+                    "ticket",
+                    "checkin",
+                    "checkout",
+                    "check in",
+                    "check out"
+                ]
+            },
+            {
+                "type": "STARTS_WITH",
+                "words": [
+                    "booking"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "travel",
+                    "disney world",
+                    "zoo",
+                    "aquarium",
+                    "honeymoon"
+                ]
+            },
+            {
+                "type": "ENDS_WITH",
+                "words": [
+                    "trip",
+                    "tour"
+                ]
+            }
+        ]
+    }
+]

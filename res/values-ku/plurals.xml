@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d days left.</item>
+        <item quantity="zero">%d days left.</item>
+        <item quantity="one">%d day left.</item>
+        <item quantity="two">%d days left.</item>
+        <item quantity="few">%d days left.</item>
+        <item quantity="many">%d days left.</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%2$d لە %1$s ڕۆژدا دێت.</item>
+        <item quantity="zero">%1$s is coming up in %2$d days.</item>
+        <item quantity="one">%2$d لە %1$s ڕۆژدا دێت.</item>
+        <item quantity="two">%1$s is coming up in %2$d days.</item>
+        <item quantity="few">%1$s is coming up in %2$d days.</item>
+        <item quantity="many">%1$s is coming up in %2$d days.</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d بۆنە%3$s بەیانی بردەوام دەبن.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d بۆنە%3$s بەیانی بردەوام دەبێت.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">ئەمڕۆ %1$s%2$d بۆنە%3$sت هەیە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ئەمڕۆ %1$s%2$d بۆنەت%3$s هەیە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">ئەمڕۆ %1$d بۆنەت هەیە. یەکەم بۆنە بریتییە لە %2$s.</item>
+        <item quantity="zero">You have %1$d events today. The first event is %2$s.</item>
+        <item quantity="one">ئەمڕۆ %1$d بۆنەت هەیە. یەکەم بۆنە بریتییە لە %2$s.</item>
+        <item quantity="two">You have %1$d events today. The first event is %2$s.</item>
+        <item quantity="few">You have %1$d events today. The first event is %2$s.</item>
+        <item quantity="many">You have %1$d events today. The first event is %2$s.</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d بۆنە ماوە%3$s بۆ ئەمڕۆ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d بۆنە ماوە%3$s بۆ ئەمڕۆ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">سبەی %1$s%2$d بۆنە%3$sت هەیە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">سبەی %1$s%2$d بۆنە%3$sت هەیە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">سبەی %1$d بۆنەت هەیە. یەکەم بۆنە بریتییە لە %2$s.</item>
+        <item quantity="zero">You have %1$d events tomorrow. The first event is %2$s.</item>
+        <item quantity="one">سبەی %1$d بۆنەت هەیە. یەکەم بۆنە بریتییە لە %2$s.</item>
+        <item quantity="two">You have %1$d events tomorrow. The first event is %2$s.</item>
+        <item quantity="few">You have %1$d events tomorrow. The first event is %2$s.</item>
+        <item quantity="many">You have %1$d events tomorrow. The first event is %2$s.</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d بیرخەرەوە بۆ ئەمڕۆ ماوە</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d بیرخەرەوە بۆ ئەمڕۆ ماوە</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">ئەمڕۆ %d نامەی گەیاندنت پێگەیشت. بۆ ئەوەی دڵنیا بیت کە لە دۆخی گەیاندنەکەت بەئاگایت، بیپشکنە.</item>
+        <item quantity="zero">"You received %d delivery messages today. Check to make sure you're up to date on the status of your deliveries."</item>
+        <item quantity="one">ئەمڕۆ %d نامەی گەیاندنت پێگەیشت. بۆ ئەوەی دڵنیا بیت کە لە دۆخی گەیاندنەکەت بەئاگایت، بیپشکنە.</item>
+        <item quantity="two">"You received %d delivery messages today. Check to make sure you're up to date on the status of your deliveries."</item>
+        <item quantity="few">"You received %d delivery messages today. Check to make sure you're up to date on the status of your deliveries."</item>
+        <item quantity="many">"You received %d delivery messages today. Check to make sure you're up to date on the status of your deliveries."</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">ئەمڕۆ %d گەیاندن</item>
+        <item quantity="zero">%d deliveries today</item>
+        <item quantity="one">ئەمڕۆ %d گەیاندن</item>
+        <item quantity="two">%d deliveries today</item>
+        <item quantity="few">%d deliveries today</item>
+        <item quantity="many">%d deliveries today</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">لەم هەفتەیەدا %d جار لە سەرەوەی ئامانجەوە بوو.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">لەم هەفتەیەدا %d جار لە سەرەوەی ئامانجەوە بوو.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d ئامانجی چالاکی بەدیهات</item>
+        <item quantity="zero">%d activity goals met</item>
+        <item quantity="one">%d ئامانجی چالاکی بەدیهات</item>
+        <item quantity="two">%d activity goals met</item>
+        <item quantity="few">%d activity goals met</item>
+        <item quantity="many">%d activity goals met</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">کۆی گشتی بەرزبوونەوەی سوودت %1$s بوو و %2$,d کالۆریت سووتاند.</item>
+        <item quantity="zero">Your total elevation gain was %1$s and you burned %2$,d calories.</item>
+        <item quantity="one">کۆی گشتی بەرزبوونەوەی سوودت %1$s بوو و %2$,d کالۆریت سووتاند.</item>
+        <item quantity="two">Your total elevation gain was %1$s and you burned %2$,d calories.</item>
+        <item quantity="few">Your total elevation gain was %1$s and you burned %2$,d calories.</item>
+        <item quantity="many">Your total elevation gain was %1$s and you burned %2$,d calories.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">تێکڕای خێرایی ڕۆیشتنەکەت %1$s بوو و %2$,d کالۆریت سووتاند.</item>
+        <item quantity="zero">Your average pace was %1$s and you burned %2$,d calories.</item>
+        <item quantity="one">تێکڕای خێرایی ڕۆیشتنەکەت %1$s بوو و %2$,d کالۆریت سووتاند.</item>
+        <item quantity="two">Your average pace was %1$s and you burned %2$,d calories.</item>
+        <item quantity="few">Your average pace was %1$s and you burned %2$,d calories.</item>
+        <item quantity="many">Your average pace was %1$s and you burned %2$,d calories.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">تێکڕای خێراییەکەت %1$s بوو و %2$,d کالۆریت سووتاند.</item>
+        <item quantity="zero">Your average speed was %1$s and you burned %2$,d calories.</item>
+        <item quantity="one">تێکڕای خێراییەکەت %1$s بوو و %2$,d کالۆریت سووتاند.</item>
+        <item quantity="two">Your average speed was %1$s and you burned %2$,d calories.</item>
+        <item quantity="few">Your average speed was %1$s and you burned %2$,d calories.</item>
+        <item quantity="many">Your average speed was %1$s and you burned %2$,d calories.</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">لێرەدا کورتەیەک لە ڕاهێنانی %1$sـت دەخەینەڕوو. ماوەکەی %2$s بوو و %3$,d کالۆریت سووتاند.</item>
+        <item quantity="zero">"Here's a summary of your %1$s workout. The duration was %2$s and you burned %3$,d calories."</item>
+        <item quantity="one">لێرەدا کورتەیەک لە ڕاهێنانی %1$sـت دەخەینەڕوو. ماوەکەی %2$s بوو و %3$,d کالۆریت سووتاند.</item>
+        <item quantity="two">"Here's a summary of your %1$s workout. The duration was %2$s and you burned %3$,d calories."</item>
+        <item quantity="few">"Here's a summary of your %1$s workout. The duration was %2$s and you burned %3$,d calories."</item>
+        <item quantity="many">"Here's a summary of your %1$s workout. The duration was %2$s and you burned %3$,d calories."</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">You missed %d scheduled medications today.</item>
+        <item quantity="zero">You missed %d scheduled medications today.</item>
+        <item quantity="one">You missed %d scheduled medication today.</item>
+        <item quantity="two">You missed %d scheduled medications today.</item>
+        <item quantity="few">You missed %d scheduled medications today.</item>
+        <item quantity="many">You missed %d scheduled medications today.</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d کاتژمێر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d کاتژمێر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d کاتژمێر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d کاتژمێر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d خولەک</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d خولەک</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d خولەک</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d خولەک</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">ئەمڕۆ %1$s%2$d پەیوەندکردنی لەدەسچوو%3$sت هەیە کە هێشتا سەیریانت نەکردووە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ئەمڕۆ %1$s%2$d پەیوەندکردنی لەدەسچوو%3$sت هەیە کە هێشتا سەیریانت نەکردووە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">ئەمڕۆ %d پەیوەندیت لەدەستداوە. لە Now briefـی خۆتدا پێداچوونەوە بەم پەیوەندییە لەدەستچووانە بکە. هەروەها ئەگەر پێویست بوو، دەتوانیت بیرخەرەوەیەک دابنێیت بۆ ئەوەی لەبیرت نەچێت پەیوەندی بکەیتەوە.</item>
+        <item quantity="zero">"You've missed %d calls today. Review these missed calls in your Now brief. If needed, you can also set reminders so you don't forget to call back."</item>
+        <item quantity="one">ئەمڕۆ %d پەیوەندیت لەدەستداوە. لە Now briefـی خۆتدا پێداچوونەوە بەم پەیوەندییە لەدەستچووە بکە. هەروەها ئەگەر پێویست بوو، دەتوانیت بیرخەرەوەیەک دابنێیت بۆ ئەوەی لەبیرت نەچێت پەیوەندی بکەیتەوە.</item>
+        <item quantity="two">"You've missed %d calls today. Review these missed calls in your Now brief. If needed, you can also set reminders so you don't forget to call back."</item>
+        <item quantity="few">"You've missed %d calls today. Review these missed calls in your Now brief. If needed, you can also set reminders so you don't forget to call back."</item>
+        <item quantity="many">"You've missed %d calls today. Review these missed calls in your Now brief. If needed, you can also set reminders so you don't forget to call back."</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%d پەیوەندیکردنی لەدەستچووی زیاتر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پەیوەندیکردنی لەدەستچووی زیاتر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d پەیوەندیی لەدەستچوو</item>
+        <item quantity="zero">%d missed calls</item>
+        <item quantity="one">%d پەیوەندیی لەدەستچوو</item>
+        <item quantity="two">%d missed calls</item>
+        <item quantity="few">%d missed calls</item>
+        <item quantity="many">%d missed calls</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d کاتژمێر لەمەوبەر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d کاتژمێر لەمەوبەر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d خولەک لەمەوبەر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d خولەک لەمەوبەر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">پێویستە لانیکەم تەمەنت %d ساڵ بێت بۆ بەکارھێنانی تایبەتمەندییەکانی ژیریی پێشکەوتووی Galaxy AI.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پێویستە لانیکەم تەمەنت %d ساڵ بێت بۆ بەکارھێنانی تایبەتمەندییەکانی ژیریی پێشکەوتووی Galaxy AI.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">%d mi</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">%d mi</item>
+        <item quantity="few">%d mi</item>
+        <item quantity="many">%d mi</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d چرکە</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d چرکە</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">تۆ %1$s%2$d زەنگی وریاکەرەوە%3$sت بۆ بەیانی داناوە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تۆ %1$s%2$d زەنگی وریاکەرەوە%3$sت بۆ بەیانی داناوە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">تۆ %1$s%2$d زەنگی وریاکەرەوە%3$sت بۆ سبەی بەیانی داناوە.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تۆ %1$s%2$d زەنگی وریاکەرەوە%3$sت بۆ سبەی بەیانی داناوە.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">بەرنامەیەکی گەشتی %1$d_ڕۆژە بۆ %2$s پێشنیار بکە کە شوێنەکانی سەردانکردن، ئەو شتانەی کە پێویستە ئەنجامی بدەیت، و چێشتخانەکان کە شایەنی تاقیکردنەوەن لەخۆ بگرێت.</item>
+        <item quantity="zero">Suggest a %1$d-day travel itinerary for %2$s including places to visit, things to do, and restaurants worth trying.</item>
+        <item quantity="one">بەرنامەیەکی گەشتی %1$d_ڕۆژە بۆ %2$s پێشنیار بکە کە شوێنەکانی سەردانکردن، ئەو شتانەی کە پێویستە ئەنجامی بدەیت، و چێشتخانەکان کە شایەنی تاقیکردنەوەن لەخۆ بگرێت.</item>
+        <item quantity="two">Suggest a %1$d-day travel itinerary for %2$s including places to visit, things to do, and restaurants worth trying.</item>
+        <item quantity="few">Suggest a %1$d-day travel itinerary for %2$s including places to visit, things to do, and restaurants worth trying.</item>
+        <item quantity="many">Suggest a %1$d-day travel itinerary for %2$s including places to visit, things to do, and restaurants worth trying.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">پاکێجی زمان بۆ داگرتن</item>
+        <item quantity="one">پاکێجی زمان بۆ داگرتن</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d ئامێر داگیرساون</item>
+        <item quantity="zero">%d devices are on</item>
+        <item quantity="one">%d ئامێر داگیرساوە</item>
+        <item quantity="two">%d devices are on</item>
+        <item quantity="few">%d devices are on</item>
+        <item quantity="many">%d devices are on</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">دوایین پەیوەندیکردن %d ڕۆژ لەمەوبەر</item>
+        <item quantity="zero">Last contacted %d days ago</item>
+        <item quantity="one">دوایین پەیوەندیکردن %d ڕۆژ لەمەوبەر</item>
+        <item quantity="two">Last contacted %d days ago</item>
+        <item quantity="few">Last contacted %d days ago</item>
+        <item quantity="many">Last contacted %d days ago</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">دوایین پەیوەندیکردن %d ڕۆژ لەمەوبەر</item>
+        <item quantity="zero">Last contacted %d days ago</item>
+        <item quantity="one">دوایین پەیوەندیکردن %d ڕۆژ لەمەوبەر</item>
+        <item quantity="two">Last contacted %d days ago</item>
+        <item quantity="few">Last contacted %d days ago</item>
+        <item quantity="many">Last contacted %d days ago</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">دوایین پەیوەندیکردن %d مانگ لەمەوبەر</item>
+        <item quantity="zero">Last contacted %d months ago</item>
+        <item quantity="one">دوایین پەیوەندیکردن %d مانگ لەمەوبەر</item>
+        <item quantity="two">Last contacted %d months ago</item>
+        <item quantity="few">Last contacted %d months ago</item>
+        <item quantity="many">Last contacted %d months ago</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">دوایین پەیوەندی %dهەفتە لەمەوبەر</item>
+        <item quantity="zero">Last contacted %d weeks ago</item>
+        <item quantity="one">دوایین پەیوەندیکردن %dهەفتە لەمەوبەر</item>
+        <item quantity="two">Last contacted %d weeks ago</item>
+        <item quantity="few">Last contacted %d weeks ago</item>
+        <item quantity="many">Last contacted %d weeks ago</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%d پەیوەندی زیاتر</item>
+        <item quantity="zero">%d more contacts</item>
+        <item quantity="one">%d پەیوەندی زیاتر</item>
+        <item quantity="two">%d more contacts</item>
+        <item quantity="few">%d more contacts</item>
+        <item quantity="many">%d more contacts</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">لە جزدانی سامسۆنگەکەتدا کۆپۆنێکت هەیە کە لە %d ڕۆژدا بەسەردەچێت. دڵنیابە پێش ئەوەی بەسەر بچێت بەکاری بهێنیت.</item>
+        <item quantity="zero">You have a coupon in Samsung Wallet that expires in %d days. Make sure you use it before it expires.</item>
+        <item quantity="one">لە جزدانی سامسۆنگەکەتدا کۆپۆنێکت هەیە کە لە %d ڕۆژدا بەسەردەچێت. دڵنیابە پێش ئەوەی بەسەر بچێت بەکاری بهێنیت.</item>
+        <item quantity="two">You have a coupon in Samsung Wallet that expires in %d days. Make sure you use it before it expires.</item>
+        <item quantity="few">You have a coupon in Samsung Wallet that expires in %d days. Make sure you use it before it expires.</item>
+        <item quantity="many">You have a coupon in Samsung Wallet that expires in %d days. Make sure you use it before it expires.</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">پلەی بەرزی %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پلەی بەرزی %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">پلەی نزمی %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پلەی نزمی %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">لە ساڵنامەکەتدا بۆنەیەکت هەیە بە ناوی %1$s. دەبێتە %2$d پلە %3$s لە %4$s لە %5$s.</item>
+        <item quantity="zero">You have an event on your calendar called %1$s. It will be %2$d degrees %3$s at %4$s in %5$s.</item>
+        <item quantity="one">لە ساڵنامەکەتدا بۆنەیەکت هەیە بە ناوی %1$s. دەبێتە %2$d پلە %3$s لە %4$s لە %5$s.</item>
+        <item quantity="two">You have an event on your calendar called %1$s. It will be %2$d degrees %3$s at %4$s in %5$s.</item>
+        <item quantity="few">You have an event on your calendar called %1$s. It will be %2$d degrees %3$s at %4$s in %5$s.</item>
+        <item quantity="many">You have an event on your calendar called %1$s. It will be %2$d degrees %3$s at %4$s in %5$s.</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">بەرز %d پلە</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پلەی بەرزی %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">پلەی نزمی %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پلەی نزمی %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s بینین</item>
+        <item quantity="one">%s بینین</item>
+    </plurals>
+</resources>

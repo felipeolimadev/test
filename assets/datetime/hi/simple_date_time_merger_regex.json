@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "pattern" : "(<date>)\\s?(?:को|,|@|\\s)\\s*(<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "2",
+    "pattern" : "(<time>)\\s?,?\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },{
+    "id": "3",
+    "pattern" : "(<date>)t(<time>)z",
+    "groupings" : [[1,2]]
+  }
+]

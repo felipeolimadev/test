@@ -1,0 +1,109 @@
+[
+    {
+        "category": "social",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "buổi tiệc",
+                    "sinh nhật",
+                    "bữa tiệc cuối năm",
+                    "tiệc chào mừng",
+                    "đoàn tụ",
+                    "ăn tối cùng nhau",
+                    "đi ăn ngoài",
+                    "bữa ăn",
+                    "tân gia",
+                    "lễ cưới",
+                    "lễ tốt nghiệp",
+                    "lễ khai giảng",
+                    "dịch vụ tang lễ",
+                    "lễ trao giải",
+                    "nghi lễ tổ tiên",
+                    "tôn thờ",
+                    "Pháp hội",
+                    "nhà thờ",
+                    "dịp kỉ niệm",
+                    "mua sắm",
+                    "bữa tối",
+                    "bữa trưa",
+                    "bữa nửa buổi",
+                    "kỉ niệm",
+                    "lễ ăn mừng",
+                    "hẹn hò",
+                    "tang lễ",
+                    "lễ hội",
+                    "ngày cưới"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "biz",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "cuộc họp",
+                    "Xưởng",
+                    "hội thảo",
+                    "phỏng vấn",
+                    "đang làm việc",
+                    "hội nghị",
+                    "Phiên họp giao ban",
+                    "công việc",
+                    "công việc bán thời gian",
+                    "đi làm",
+                    "nghỉ làm",
+                    "bài thi",
+                    "phân công",
+                    "lớp học",
+                    "Tham dự lớp học",
+                    "văn phòng",
+                    "diễn đàn",
+                    "bài thuyết trình",
+                    "Phân tích"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "travel",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "chuyến đi",
+                    "cắm trại",
+                    "câu cá",
+                    "công viên giải trí",
+                    "sở thú",
+                    "bể cá",
+                    "leo núi",
+                    "chuyến công tác",
+                    "du lịch",
+                    "chuyến du lịch",
+                    "thế giới Disney",
+                    "tuần trăng mật"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "reservation",
+        "synonyms": [
+            {
+                "type": "CONTAINS",
+                "words": [
+                    "đặt chỗ",
+                    "vé",
+                    "đặt phòng",
+                    "cuộc hẹn",
+                    "đăng ký vào",
+                    "thanh toán",
+                    "kiểm tra"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_sports" android:title="@string/brief_settings_contents_music_and_podcasts"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout_width="fill_parent">
+        <com.samsung.android.smartsuggestions.briefsettings.widget.RadioPreferenceWithFrontWidget android:title="Naver" android:key="sports_naver" android:defaultValue="true" app:iconType="sports_naver" />
+    </PreferenceCategory>
+</PreferenceScreen>

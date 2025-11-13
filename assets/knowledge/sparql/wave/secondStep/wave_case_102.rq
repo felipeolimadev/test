@@ -1,0 +1,15 @@
+SELECT DISTINCT ?targetTP {
+    ?targetTP rdf:type user:TakingPictures .
+
+    # (1) 초기 검색 결과에 포함된 사람이 나온 사진 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    ?targetTP user:withPerson ?person .
+    FILTER EXISTS {
+        VALUES ?originTPInExists { <TAKING_PICTURES_IRI> }
+        ?originTPInExists user:withPerson ?person .
+    }
+
+    # (2) 초기 검색 결과와 떨어진 장소에서 찍은 사진 존재 (H3 사용)
+    # <DISTANT_TAKING_PICTURES_IRI_COMMA> = "IRI_1, IRI_2, ..., IRI_N"
+    FILTER (?targetTP IN ( <DISTANT_TAKING_PICTURES_IRI_COMMA> )) .
+}

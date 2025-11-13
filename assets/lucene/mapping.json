@@ -1,0 +1,125 @@
+{
+  "tbox_en": {
+    "properties": {
+      "iri": {
+        "index": true,
+        "ignore_above": 256,
+        "store": true
+      },
+      "path": {
+        "index": false,
+        "ignore_above": 256,
+        "store": true
+      },
+      "label": {
+        "ignore_above": 256,
+        "store": true,
+        "index": false
+      },
+      "label_keyword": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      },
+      "label_nouns": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      }
+    }
+  },
+  "tbox_curlang": {
+    "properties": {
+      "iri": {
+        "index": true,
+        "ignore_above": 256,
+        "store": true
+      },
+      "path": {
+        "index": false,
+        "tokenize": false,
+        "ignore_above": 256,
+        "store": true
+      },
+      "label": {
+        "ignore_above": 256,
+        "store": true,
+        "index": false
+      },
+      "label_keyword": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      },
+      "label_nouns": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      }
+    }
+  },
+  "private": {
+    "properties": {
+      "iri": {
+        "index": true,
+        "ignore_above": 256,
+        "store": true
+      },
+      "path": {
+        "index": false,
+        "tokenize": false,
+        "ignore_above": 256,
+        "store": true
+      },
+      "label": {
+        "ignore_above": 256,
+        "store": true,
+        "index": false
+      },
+      "label_ngram": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      },
+      "label_keyword": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      },
+      "label_nouns": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      },
+      "label_addr": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      },
+      "label_contact": {
+        "ignore_above": 256,
+        "store": false,
+        "index": true
+      }
+    }
+  },
+  "calendar_title": {
+    "properties": {
+      "calendar_title": {
+        "ignore_above": 256,
+        "store": true,
+        "index": true
+      }
+    }
+  },
+  "semantic_time_word": {
+    "properties": {
+      "semantic_time_word": {
+        "ignore_above": 256,
+        "store": true,
+        "index": true
+      }
+    }
+  }
+}
+

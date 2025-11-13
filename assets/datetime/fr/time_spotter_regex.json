@@ -1,0 +1,265 @@
+[
+  {
+    "id": 1,
+    "type": "NUM_H_NUM",
+    "comment": "11h30 , 11h",
+    "patternType": "<num>h(?:<num>)?",
+    "patternString": "(?:<<time_keywords_before>>\\s*)?(<num>)h(<num>)?(?:\\s*(<time_format>))?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "HOUR_MIN_AM_PM",
+    "comment": "11:10 PM",
+    "patternType": "<num><sep><num><am_pm>",
+    "patternString": "(<num>):\\s*[\\:\\.]\\s*(<num>)(?:\\s*[\\:\\.]\\s*(<num>))?\\s*(<time_format>)(?:<time_h>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "timeFormat" : 4
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "HOUR_MIN_AM_PM_REVERSED",
+    "comment": "AM 11:10",
+    "patternString": "(<time_format>)\\s*(<num>)\\s*[\\:\\.]\\s*(<num>)(?:\\s*[\\:\\.]\\s*(<num>))?",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3,
+        "seconds" : 4,
+        "timeFormat" : 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "HOUR_MIN_AM_PM",
+    "patternType": "<num><sep><num><am_pm>",
+    "patternString": "(<num>)(?:\\s*[\\:\\.]\\s*(<num>))?(?:\\s*[\\:\\.]\\s*(<num>))?\\s*(<time_format>|<time_h>)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "timeFormat" : 4
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "HOUR_NUM_OR_WORD_AM_PM",
+    "comment": "6 pm, dix pm",
+    "patternType": "<num> <time_format>|<time_h>",
+    "patternString": "<<time_keywords_before>>\\s*(<num>)\\s*(?:(<time_format>)|<time_h>)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "time_format" : 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "KEYWORD_NUM",
+    "patternType": "<keyword><num>",
+    "comment": "at 6,at dix",
+    "patternString": "<<time_keywords_before>>\\s*(<num>)(?:\\s*(<num>))?\\s*(<time_format>)?\\s?(<<time_keywords_after>>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "time_format" : 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "HOUR_MIN_SEC_NUM",
+    "patternType": "<num><sep><num><sep><num>",
+    "comment": "6:10:22",
+    "patternString": "(<num>)(?:\\s*[\\:\\.]\\s*(<num>))(?:\\s*[\\:\\.]\\s*(<num>))?\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "time_format" : 4
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "RELATIVE_TIME_FORMAT",
+    "patternType": "<num><relative_time_format><num>",
+    "patternString": "(<num>)\\s*(?:<time_h>|<time_format>)?\\s*(?:(?:[:]\\s*)?(<num>)?)?(?:\\s*<<important_prepositions>>)?\\s*(?:<current_reference>|<before_reference>|<after_reference>)?\\s*(<relative_time_format>)",
+    "isRelative": true,
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "RELATIVE_TIME_FORMAT",
+    "patternType": "<num><relative_time_format><num>",
+    "patternString": "(<relative_time_format>)\\s*<<important_prepositions>>?\\s*(<num>)\\s*:?\\s*(num)?",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3,
+        "timeFormat" : 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "NUM_PAST_TO",
+    "patternType": "<num><past|to><num>",
+    "comment": "10 min after 5 pm | vingt apres cinq heures",
+    "patternString": "(<num>)\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<after_reference>)\\s*((<num>)\\s*(?:(<time_format>)|(?:<time_h>))|<special_time>)",
+    "isRelative": true,
+    "mapping" : [
+      {
+        "minuteDelta": 1,
+        "secondDelta": 3,
+        "hours" : 7,
+        "timeFormat": 8
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "NUM_PAST_TO",
+    "patternType": "<num><past|to><num>",
+    "patternString": "(<num>)\\s*(<time_h>)\\s*(<num>)?\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<after_reference>)\\s*(?:(<num>)\\s*(?:(<time_format>)|(?:<time_h>))|<special_time>)",
+    "isRelative": true,
+    "mapping" : [
+      {
+        "hourDelta": 1,
+        "minuteDelta": 3,
+        "secondDelta": 5,
+        "hours" : 9,
+        "timeFormat": 10
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "NUM_TO_TIME",
+    "patternType": "<time> <before_reference> <delta_time>",
+    "comment": "10 min to 5 pm | Il est cinq heures moins vingt",
+    "patternString": "((<num>)\\s*(?:(<time_format>)|<time_h>)|<special_time>)\\s*(<before_reference>)\\s*(?:le\\s*)?(<num>)",
+    "isRelative": true,
+    "mapping" : [
+      {
+        "minuteDelta": 5,
+        "hours" : 2,
+        "timeFormat": 3
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "HOUR_MIN_WITH_OR_WITHOUT_TIME_PREPOSITIONS",
+    "comment": "quatre heures et dix minutes",
+    "patternType": "",
+    "patternString": "(?:<<time_keywords_before>>\\s*)?(<num>)\\s*(<time_h>)\\s*<<time_specific_prepositions>>?\\s*(<num>)\\s*(<time_m>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 3
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "SPECIAL_TIME",
+    "patternType": "<special_time>",
+    "patternString": "<special_time>"
+  },
+  {
+    "id": 15,
+    "type": "AFTER_REFERENCE_RELATIVE_TIME_1",
+    "patternType": "<num><sep>(<num>|<num><sep><num>)",
+    "comment": "After 10 hours",
+    "patternString": "(?:<current_reference>|<before_reference>|<after_reference>)\\s*(?:la|le|du)?\\s*(?:(?:(<num>)\\s*<time_h>)(?:\\s*(?:et\\s*)?(<num>)\\s*<time_m>)?(?:\\s*(?:et\\s*)?(<num>)\\s*<time_s>)?)",
+    "isRelative" : true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "hourDelta": 1,
+        "minuteDelta": 2,
+        "secondDelta": 3
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "ABSOLUTE_TIME_IN_SPOKEN_NUMERAL_FORM",
+    "comment": "à quatre heures quarante-cinq (à quatre heures quarante-cinq)",
+    "patternType": "<num><sep>(<num>|<num><sep><num>)",
+    "patternString": "(?:<<time_keywords_before>>\\s*)?(<num>)\\s*(<time_h>)\\s*(?:et\\s*)?(<num>)\\s*(<time_m>)?(?:\\s*(?:et)?\\s*(<num>)\\s*(<time_s>)?)?",
+    "mapping" : [
+      {
+        "hourDelta": 1,
+        "minuteDelta": 3,
+        "secondDelta": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "AFTER_REFERENCE_RELATIVE_TIME_2",
+    "patternType": "<num><sep>(<num>|<num><sep><num>)",
+    "patternString": "(<num>)\\s*<time_h>(?:\\s*(?:et\\s*)?(<num>)\\s*(<time_m>)?)?\\s*<after_reference>",
+    "isRelative" : true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "hourDelta": 1,
+        "minuteDelta": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "HOUR_MIN_SEC_WORDS",
+    "patternType": "<num><word><num><word><num><word>",
+    "patternString": "(<num>)\\s*<time_h>\\s*(?:(<num>)\\s*<time_m>?)\\s*(?:(<num>)\\s*<time_s>)?",
+    "mapping": [
+      {
+        "hours": 1,
+        "minutes": 2,
+        "seconds": 3
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "NEXT_PREV_EN",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<current_reference>|<before_reference>|<after_reference>)\\s*((<num>)\\s*(<time_m>)|(<num>)\\s*(<time_s>))",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "minuteDelta": 3,
+        "secondDelta": 6
+      }
+    ]
+  }
+]

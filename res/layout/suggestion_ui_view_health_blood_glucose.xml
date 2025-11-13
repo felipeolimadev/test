@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_health_blood_glucose_0" android:background="@drawable/rounded_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_margin_top" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/action_card_padding">
+        <TextView android:textSize="@dimen/health_blood_glucose_title_text_size" android:id="@id/blood_glucose_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.RobotoMedium" />
+        <TextView android:textSize="@dimen/health_blood_glucose_description_text_size" android:textColor="@color/health_blood_glucose_description_text_color" android:id="@id/blood_glucose_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/health_blood_glucose_description_text_margin_top" style="@style/TextAppearance.RobotoRegular" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/health_blood_glucose_image_margin_start" android:layout_marginEnd="@dimen/action_card_padding" android:layout_marginVertical="@dimen/action_card_padding" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/health_blood_glucose_image_corner_radius" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/blood_glucose_image" android:layout_width="@dimen/health_blood_glucose_image_size" android:layout_height="@dimen/health_blood_glucose_image_size" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

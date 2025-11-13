@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d ଦିନ ବାକି ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଦିନ ବାକି ଅଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">%2$d ଦିନରେ %1$s ଆସୁଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$d ଦିନରେ %1$s ଆସୁଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$dଟି ଇଭେଣ୍ଟ%3$s ଆସନ୍ତାକାଲି ମଧ୍ୟ ଜାରି ରହିବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$dଟି ଇଭେଣ୍ଟ%3$s ଆସନ୍ତାକାଲି ମଧ୍ୟ ଜାରି ରହିବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">ଆପଣଙ୍କ ପାଖରେ ଆଜି %1$s%2$dଟି ଇଭେଣ୍ଟ%3$s ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ପାଖରେ ଆଜି %1$s%2$dଟି ଇଭେଣ୍ଟ%3$s ଅଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">ଆପଣଙ୍କ ପାଖରେ ଆଜି %1$dଟି ଇଭେଣ୍ଟ ଅଛି। ପ୍ରଥମ ଇଭେଣ୍ଟ ହେଉଛି %2$s।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ପାଖରେ ଆଜି %1$dଟି ଇଭେଣ୍ଟ ଅଛି। ପ୍ରଥମ ଇଭେଣ୍ଟ ହେଉଛି %2$s।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">ଆଜି ପାଇଁ %1$s%2$dଟି ଇଭେଣ୍ଟ ବାକି%3$s ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆଜି ପାଇଁ %1$s%2$dଟି ଇଭେଣ୍ଟ ବାକି%3$s ଅଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">ଆସନ୍ତାକାଲି ଆପଣଙ୍କ %1$s%2$dଟି ଇଭେଣ୍ଟ%3$s ଅଛି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆସନ୍ତାକାଲି ଆପଣଙ୍କ %1$s%2$dଟି ଇଭେଣ୍ଟ%3$s ଅଛି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">ଆପଣଙ୍କ ପାଖରେ ଆସନ୍ତାକାଲି %1$dଟି ଇଭେଣ୍ଟ ଅଛି। ପ୍ରଥମ ଇଭେଣ୍ଟ ହେଉଛି %2$s।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ପାଖରେ ଆସନ୍ତାକାଲି %1$dଟି ଇଭେଣ୍ଟ ଅଛି। ପ୍ରଥମ ଇଭେଣ୍ଟ ହେଉଛି %2$s।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%dଟି ଇଭେଣ୍ଟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଇଭେଣ୍ଟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">%d ମିନିଟରେ ଆରମ୍ଭ ହେବ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟରେ ଆରମ୍ଭ ହେବ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">ଆଜି ପାଇଁ %dଟି ରିମାଇଣ୍ଡର୍ ବାକି ଅଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆଜି ପାଇଁ %dଟି ରିମାଇଣ୍ଡର୍ ବାକି ଅଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">ଆପଣ ଆଜି %dଟି ବିତରଣ ମେସେଜ୍ ରିସିଭ୍ କରିଛନ୍ତି। ଆପଣଙ୍କ ବିତରଣଗୁଡିକର ସ୍ଥିତି ଉପରେ ଆପଣ ଅପ୍ ଟୁ ଡେଟ୍ ଅଛନ୍ତି କି ନାହିଁ ନିଶ୍ଚିତ କରିବାକୁ ଯାଞ୍ଚ କରନ୍ତୁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣ ଆଜି %dଟି ବିତରଣ ମେସେଜ୍ ରିସିଭ୍ କରିଛନ୍ତି। ଆପଣଙ୍କ ବିତରଣ ସ୍ଥିତି ଉପରେ ଆପଣ ଅପ ଟୁ ଡେଟ୍ ଅଛନ୍ତି କି ନାହିଁ ନିଶ୍ଚିତ କରିବାକୁ ଯାଞ୍ଚ କରନ୍ତୁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">ଆଜି %dଟି ବିତରଣ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆଜି %dଟି ବିତରଣ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">ଏହି ସପ୍ତାହରେ ଲକ୍ଷ୍ୟ ଠାରୁ %d ଥର ଅଧିକ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଏହି ସପ୍ତାହରେ ଲକ୍ଷ୍ୟ ଠାରୁ %d ଥର ଅଧିକ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%dଟି କାର୍ଯ୍ୟକଳାପ ଲକ୍ଷ୍ୟ ପୂରଣ ହୋଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି କାର୍ଯ୍ୟକଳାପ ଲକ୍ଷ୍ୟ ପୂରଣ ହୋଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">ଆପଣଙ୍କ ମୋଟ ଏଲୋଭେଟର୍ ଅର୍ଜନ %1$s ଥିଲା ଏବଂ ଆପଣ %2$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ମୋଟ ଏଲୋଭେଟର୍ ଅର୍ଜନ %1$s ଥିଲା ଏବଂ ଆପଣ %2$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">ଆପଣଙ୍କ ହାରାହାରି ଗତି %1$s ଥିଲା ଏବଂ ଆପଣ %2$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ହାରାହାରି ଗତି %1$s ଥିଲା ଏବଂ ଆପଣ %2$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">ଆପଣଙ୍କ ହାରାହାରି ବେଗ %1$s ଥିଲା ଏବଂ ଆପଣ %2$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ହାରାହାରି ବେଗ %1$s ଥିଲା ଏବଂ ଆପଣ %2$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">ଏଠାରେ ଆପଣଙ୍କ %1$s କସରତର ଏକ ସାରାଂଶ ଅଛି। ଅବଧି %2$s ଥିଲା ଏବଂ ଆପଣ %3$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଏଠାରେ ଆପଣଙ୍କ %1$s କସରତର ଏକ ସାରାଂଶ ଅଛି। ଅବଧି %2$s ଥିଲା ଏବଂ ଆପଣ %3$,d କ୍ୟାଲୋରୀ କମ କରିଥିଲେ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">ଆପଣ ଆଜି %dଟି ନିର୍ଦ୍ଧାରିତ ଔଷଧ ଭୁଲିଯାଇଛନ୍ତି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣ ଆଜି %dଟି ନିର୍ଦ୍ଧାରିତ ଔଷଧ ଭୁଲିଯାଇଛନ୍ତି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ଘଣ୍ଟା</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଘଣ୍ଟା</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ଘଣ୍ଟା</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଘଣ୍ଟା</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d ମିନିଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d ମିନିଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">ଆପଣଙ୍କ ଆଜି %1$s%2$dଟି ମିସଡ୍ କଲ୍%3$s ଅଛି ଯାହା ଆପଣ ଏପର୍ଯ୍ୟନ୍ତ ଯାଞ୍ଚ କରିନାହାଁନ୍ତି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଆଜି %1$s%2$dଟି ମିସଡ୍ କଲ୍%3$s ଅଛି ଯାହା ଆପଣ ଏପର୍ଯ୍ୟନ୍ତ ଯାଞ୍ଚ କରିନାହାଁନ୍ତି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">ଆପଣ ଆଜି %d କଲ୍ ହରାଇଛନ୍ତି। ଏହି ମିସଡ୍ କଲକୁ ଆପଣଙ୍କ Now briefରେ ରିଭିୟୁ କରନ୍ତୁ। ଯଦି ଆବଶ୍ୟକ ହୁଏ, ଆପଣ ଏକ ରିମାଇଣ୍ତର୍ ସେଟ୍ ମଧ୍ୟ କରିପାରିବେ ଯାହା ଦ୍ୱାରା ଆପଣ ପୁନଃ କଲ୍ କରିବାକୁ ଭୁଲି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣ ଆଜି %d କଲ୍ ହରାଇଛନ୍ତି। ଏହି ମିସଡ୍ କଲକୁ ଆପଣଙ୍କ Now briefରେ ରିଭିୟୁ କରନ୍ତୁ। ଯଦି ଆବଶ୍ୟକ ହୁଏ, ଆପଣ ଏକ ରିମାଇଣ୍ତର୍ ସେଟ୍ ମଧ୍ୟ କରିପାରିବେ ଯାହା ଦ୍ୱାରା ଆପଣ ପୁନଃ କଲ୍ କରିବାକୁ ଭୁଲି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">%dଟି ଅଧିକ ମିସଡ୍ କଲ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଅଧିକ ମିସଡ୍ କଲ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%dଟି ମିସଡ୍ କଲ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ମିସଡ୍ କଲ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ଘଣ୍ଟା ପୂର୍ବେ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଘଣ୍ଟା ପୂର୍ବେ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d ମିନିଟ୍ ପୂର୍ବେ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟ୍‌ ପୂର୍ବେ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AIର ଆଡଭାନ୍ସ ଇଣ୍ଟେଲିଜେନ୍ସ ଫିଚର୍ସ ବ୍ୟବହାର କରିବାକୁ ଆପଣଙ୍କ ବୟସ ଅତି କମରେ %d ବର୍ଷ ହେବା ଆବଶ୍ୟକ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AIର ଆଡଭାନ୍ସ ଇଣ୍ଟେଲିଜେନ୍ସ ଫିଚର୍ସ ବ୍ୟବହାର କରିବାକୁ ଆପଣଙ୍କ ବୟସ ଅତି କମରେ %d ବର୍ଷ ହେବା ଆବଶ୍ୟକ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%dଟି ସନ୍ଦେଶ</item>
+        <item quantity="one">%dଟି ସନ୍ଦେଶ</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d ମାଇଲ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମାଇଲ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d ସେକେଣ୍ଡ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ସେକେଣ୍ଡ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">ଆପଣ ସକାଳ ପାଇଁ %1$s%2$dଟି ଆଲରାମ୍%3$s ସେଟ୍ କରିଛନ୍ତି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣ ସକାଳ ପାଇଁ %1$s%2$dଟି ଆଲରାମ୍%3$s ସେଟ୍ କରିଛନ୍ତି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">ଆପଣ ଆସନ୍ତାକାଲି ସକାଳ ପାଇଁ %1$s%2$dଟି ଆଲରାମ୍%3$s ସେଟ୍ କରିଛନ୍ତି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣ ଆସନ୍ତାକାଲି ସକାଳ ପାଇଁ %1$s%2$dଟି ଆଲରାମ୍%3$s ସେଟ୍ କରିଛନ୍ତି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">ପ୍ରସ୍ଥାନର ଅତି କମରେ %4$d ଘଣ୍ଟା ପୂର୍ବରୁ ବିମାନବନ୍ଦରରେ ପହଁଚିବାକୁ %1$s%2$sଟା ରେ ବାହାରି ଯାଆନ୍ତୁ%3$s। ଏକ ଆଲରାମ୍ ସେଟ୍ କରନ୍ତୁ ଯାହା ଦ୍ୱାରା ଆପଣ ଭୁଲି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ପ୍ରସ୍ଥାନର ଅତି କମରେ %4$d ଘଣ୍ଟା ପୂର୍ବରୁ ବିମାନବନ୍ଦରରେ ପହଁଚିବାକୁ %1$s%2$sଟା ରେ ବାହାରି ଯାଆନ୍ତୁ%3$s। ଏକ ଆଲରାମ୍ ସେଟ୍ କରନ୍ତୁ ଯାହା ଦ୍ୱାରା ଆପଣ ଭୁଲି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">ଆପଣଙ୍କ ଫ୍ଲାଇଟ୍ ଥିବାର ଅତି କମରେ %4$d ଘଣ୍ଟା ପୂର୍ବରୁ ବିମାନବନ୍ଦରରେ ପହଁଚିବାକୁ %1$s%2$sଟା ରେ ବାହାରି ଯାଆନ୍ତୁ%3$s।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ ଫ୍ଲାଇଟ୍ ଥିବାର ଅତି କମରେ %4$d ଘଣ୍ଟା ପୂର୍ବରୁ ବିମାନବନ୍ଦରରେ ପହଁଚିବାକୁ %1$s%2$sଟା ରେ ବାହାରି ଯାଆନ୍ତୁ%3$s।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">%2$s ପାଇଁ %1$d-ଦିନର ଏକ ଯାତ୍ରା ସୂଚୀ ପ୍ରସ୍ତାବ ଦିଅନ୍ତୁ ଯେଉଁଥିରେ ପରିଦର୍ଶନ କରିବାକୁ ସ୍ଥାନ, କରିବାକୁ ଥିବା ଜିନିଷ ଏବଂ ଚେଷ୍ଟା କରିବା ଯୋଗ୍ୟ ରେଷ୍ଟୁରାଣ୍ଟଗୁଡିକ ଅନ୍ତର୍ଭୁକ୍ତ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%2$s ପାଇଁ %1$d-ଦିନର ଏକ ଯାତ୍ରା ସୂଚୀ ପ୍ରସ୍ତାବ ଦିଅନ୍ତୁ ଯେଉଁଥିରେ ପରିଦର୍ଶନ କରିବାକୁ ସ୍ଥାନ, କରିବାକୁ ଥିବା ଜିନିଷ ଏବଂ ଚେଷ୍ଟା କରିବା ଯୋଗ୍ୟ ରେଷ୍ଟୁରାଣ୍ଟଗୁଡିକ ଅନ୍ତର୍ଭୁକ୍ତ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">ଆପଣଙ୍କ ଯାତ୍ରା ସମୟରେ ବ୍ୟବହାରଯୋଗୀ ହୋଇପାରେ ଏହିସବୁ %1$sପରାମର୍ଶିତ ଆପସ୍%2$s ଯାଞ୍ଚ କରନ୍ତୁ।</item>
+        <item quantity="one">ଆପଣଙ୍କ ଯାତ୍ରା ସମୟରେ ବ୍ୟବହାରଯୋଗୀ ହୋଇପାରେ ଏହି %1$sପରାମର୍ଶିତ ଆପ୍ଲିକେସନ୍%2$s ଯାଞ୍ଚ କରନ୍ତୁ।</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">ଆଡଭାନ୍ସରେ %1$sଏହି ଭାଷା ପ୍ୟାକ୍ ଡାଉନ‌ଲୋଡ୍ କରନ୍ତୁ%2$s ଯାହା ଦ୍ୱାରା ଆପଣ ଆପଣଙ୍କ ଲକ୍ଷ୍ୟସ୍ଥଳରେ ପହଞ୍ଚିବା ପରେ ଏହାକୁ ଇଣ୍ଟରପ୍ରେଟରରେ ବ୍ୟବହାର କରିବାକୁ ପ୍ରସ୍ତୁତ ଅଟନ୍ତି।</item>
+        <item quantity="one">ଆଡଭାନ୍ସରେ %1$sଏହିସବୁ ଭାଷା ପ୍ୟାକ୍ ଡାଉନ‌ଲୋଡ୍ କରନ୍ତୁ%2$s ଯାହା ଦ୍ୱାରା ଆପଣ ଆପଣଙ୍କ ଲକ୍ଷ୍ୟସ୍ଥଳରେ ପହଞ୍ଚିବା ପରେ ଏହାକୁ ଇଣ୍ଟରପ୍ରେଟରରେ ବ୍ୟବହାର କରିବାକୁ ପ୍ରସ୍ତୁତ ଅଟନ୍ତି।</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">ଡାଉନଲୋଡ୍ କରିବାକୁ ଭାଷା ପ୍ୟାକଗୁଡିକ</item>
+        <item quantity="one">ଡାଉନ‌ଲୋଡ୍ କରିବାକୁ ଭାଷା ପ୍ୟାକ୍</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%dଟି ଡିଭାଇସ୍ ଅନ୍ ଅଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଡିଭାଇସ୍‌ ଅନ୍‌ ଅଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">ଶେଷ ଥର %d ଦିନ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଥିଲା</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଶେଷ ଥର %d ଦିନ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଥିଲା</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">ଶେଷ ଥର %d ଦିନ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଶେଷ ଥର %d ଦିନ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">ଶେଷ ଥର %d ମାସ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଶେଷ ଥର %d ମାସ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">ଶେଷ ଥର %d ସପ୍ତାହ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଛି</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଶେଷ ଥର %d ସପ୍ତାହ ପୂର୍ବେ ସମ୍ପର୍କ କରାଯାଇଛି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">%dଟି ଅଧିକ ସମ୍ପର୍କ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଅଧିକ ସମ୍ପର୍କ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Samsung Walletରେ ଆପଣଙ୍କ ଏକ କୁପନ୍ ଅଛି ଯାହା %d ଦିନରେ ସମୟ ସମାପ୍ତ ହୋଇଛି। ଏହା ସମୟ ସମାପ୍ତ ହେବା ପୂର୍ବରୁ ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଆପଣ ଏହାକୁ ବ୍ୟବହାର କରୁଛନ୍ତି।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Samsung Walletରେ ଆପଣଙ୍କ ଏକ କୁପନ୍ ଅଛି ଯାହା %d ଦିନରେ ସମୟ ସମାପ୍ତ ହୋଇଛି। ଏହା ସମୟ ସମାପ୍ତ ହେବା ପୂର୍ବରୁ ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଆପଣ ଏହାକୁ ବ୍ୟବହାର କରୁଛନ୍ତି।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">ଉଚ୍ଚ ମାଇନସ୍ %d ଡିଗ୍ରୀ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଉଚ୍ଚ ମାଇନସ୍ %d ଡିଗ୍ରୀ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">କମ ମାଇନସ୍ %d ଡିଗ୍ରୀ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">କମ ମାଇନସ୍ %d ଡିଗ୍ରୀ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">ଆପଣଙ୍କ କ୍ୟାଲେଣ୍ଡରରେ %1$s ନାମକ ଏକ ଇଭେଣ୍ଟ ଅଛି। ଏହା %5$sରେ %4$sରେ %2$d ଡିଗ୍ରୀ %3$s ହେବ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଆପଣଙ୍କ କ୍ୟାଲେଣ୍ଡରରେ %1$s ନାମକ ଏକ ଇଭେଣ୍ଟ ଅଛି। ଏହା %5$sରେ %4$sରେ %2$d ଡିଗ୍ରୀ %3$s ହେବ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">ଉଚ୍ଚ %d ଡିଗ୍ରୀ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଉଚ୍ଚ %d ଡିଗ୍ରୀ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">କମ %d ଡିଗ୍ରୀ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">କମ %d ଡିଗ୍ରୀ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s ଦେଖନ୍ତୁ</item>
+        <item quantity="one">%s ଦେଖନ୍ତୁ​</item>
+    </plurals>
+</resources>

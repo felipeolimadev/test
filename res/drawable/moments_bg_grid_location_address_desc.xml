@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#fff1f1f1" />
+        </shape>
+    </item>
+    <item android:left="-1.0dip" android:top="0.0dip" android:right="-1.0dip" android:bottom="-1.0dip">
+        <shape android:shape="rectangle">
+            <stroke android:width="0.5dip" android:color="#1a979797" />
+            <solid android:color="@android:color/transparent" />
+            <padding android:left="@dimen/location_card_address_text_view_padding_horizontal" android:top="@dimen/location_card_address_text_view_padding_vertical" android:right="@dimen/location_card_address_text_view_padding_horizontal" android:bottom="@dimen/location_card_address_text_view_padding_vertical" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/collector_nav_graph" app:startDestination="@id/collector_main"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/document_nav_graph" />
+    <fragment android:label="Collector" android:name="com.samsung.android.moneta.debugui.developmode.collector.CollectorFragment" android:id="@id/collector_main">
+        <action android:id="@id/action_collector_main_to_data_provider" app:destination="@id/data_provider_viewer" />
+        <action android:id="@id/action_collector_main_to_document" app:destination="@id/document_nav_graph" />
+    </fragment>
+    <fragment android:label="Data Provider" android:name="com.samsung.android.moneta.debugui.developmode.collector.rawdata.DataProviderInfoFragment" android:id="@id/data_provider_viewer" />
+</navigation>

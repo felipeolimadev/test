@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d օր է մնացել:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d օր է մնացել:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">Մոտենում է %1$s, մնացել է %2$d օր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Մոտենում է %1$s, մնացել է %2$d օր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d իրադարձություն%3$s կշարունակվի վաղը:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d իրադարձություն%3$s կշարունակվի վաղը:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Դուք %1$s%2$d իրադարձություն%3$s ունեք այսօր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %1$s%2$d իրադարձություն%3$s ունեք այսօր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Դուք %1$d իրադարձություն ունեք այսօր: Առաջին իրադարձությունը %2$s-ն է:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %1$d իրադարձություն ունեք այսօր: Առաջին իրադարձությունը %2$s-ն է:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d իրադարձություն է մնացել%3$s այսօրվա համար:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d իրադարձություն է մնացել%3$s այսօրվա համար:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Դուք %1$s%2$d իրադարձություն%3$s ունեք վաղը:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %1$s%2$d իրադարձություն%3$s ունեք վաղը:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Դուք %1$d իրադարձություն ունեք վաղը: Առաջին իրադարձությունը %2$s-ն է:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %1$d իրադարձություն ունեք վաղը: Առաջին իրադարձությունը %2$s-ն է:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d իրդրձթն</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d իրդրձթն</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Սկսվում է %d րոպեից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Սկսվում է %d րոպեից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d հիշեցում է մն. այսօրվա հր</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d հիշեցում է մն. այսօրվա հր</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Դուք առաքման մասին %d հաղորդագրություն եք ստացել այսօր: Ստուգեք, որպեսզի համոզվեք, որ ունեք առաքումների կարգավիճակի վերաբերյալ վերջին տվյալները:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք առաքման մասին %d հաղորդագրություն եք ստացել այսօր: Ստուգեք, որպեսզի համոզվեք, որ ունեք առաքման կարգավիճակի վերաբերյալ վերջին տվյալները:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d առաքում այսօր</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d առաքում այսօր</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Թիրախից բարձր %d անգ. այս շաբաթ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Թիրախից բարձր %d անգ. այս շաբաթ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">Հասել եք ակտիվ. %d նպ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հասել եք ակտիվ. %d նպ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Ձեր ընդհանուր բարձունքի նվաճումը %1$s էր, և Դուք այրեցիք %2$,d կիլոկալորիա:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր ընդհանուր բարձունքի նվաճումը %1$s էր, և Դուք այրեցիք %2$,d կիլոկալորիա:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">Ձեր միջին տեմպը %1$s էր, և Դուք այրեցիք %2$,d կիլոկալորիա:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր միջին տեմպը %1$s էր, և Դուք այրեցիք %2$,d կիլոկալորիա:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">Ձեր միջին արագությունը %1$s էր, և Դուք այրեցիք %2$,d կիլոկալորիա:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր միջին արագությունը %1$s էր, և Դուք այրեցիք %2$,d կիլոկալորիա:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Ահա Ձեր %1$s մարզման ամփոփագիրը: Տևողությունը %2$s էր, և Դուք այրեցիք %3$,d կիլոկալորիա:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ահա Ձեր %1$s մարզման ամփոփագիրը: Տևողությունը %2$s էր, և Դուք այրեցիք %3$,d կիլոկալորիա:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Դուք %d պլանավորված դեղամիջոց եք բաց թողել այսօր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %d պլանավորված դեղամիջոց եք բաց թողել այսօր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ժամ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ժամ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ժամ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ժամ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Դուք այսօր ունեք %1$s%2$d կորսված կանչ%3$s, որոնք դեռ չեք ստուգել:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք այսօր ունեք %1$s%2$d կորսված կանչ%3$s, որը դեռ չեք ստուգել:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Դուք %d կանչ եք բաց թողել այսօր: Ստուգեք այս կորսված կանչերը Now brief-ում: Եթե կարիք կա, նաև կարող եք դնել հիշեցումներ, որպեսզի չմոռանաք հետ զանգել:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %d կանչ եք բաց թողել այսօր: Ստուգեք այս կորսված կանչը Now brief-ում: Եթե կարիք կա, նաև կարող եք դնել հիշեցում, որպեսզի չմոռանաք հետ զանգել:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Եվս %d կորսված կանչ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Եվս %d կորսված կանչ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d կորսված կանչ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d կորսված կանչ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ժամ առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ժամ առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d րոպե առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d րոպե առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Galaxy AI-ի զարգացած բանականության գործառական հնարավորություններն օգտագործելու համար պետք է լինեք առնվազն %d տարեկան:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Galaxy AI-ի զարգացած բանականության գործառական հնարավորություններն օգտագործելու համար պետք է լինեք առնվազն %d տարեկան:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d հաղորդագրություն</item>
+        <item quantity="one">%d հաղորդագրություն</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d մղոն</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d մղոն</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d վայրկյան</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d վայրկյան</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Դուք %1$s%2$d տագնապ%3$s եք նախադրել առավոտվա համար:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %1$s%2$d տագնապ%3$s եք նախադրել առավոտվա համար:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Դուք %1$s%2$d տագնապ%3$s եք նախադրել վաղը առավոտվա համար:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք %1$s%2$d տագնապ%3$s եք նախադրել վաղը առավոտվա համար:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sՄեկնեք մինչև %2$s%3$s, որպեսզի օդանավակայան ժամանեք մեկնումից առնվազն %4$d ժամ առաջ: Նախադրեք տագնապ, որպեսզի չմոռանաք:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sՄեկնեք մինչև %2$s%3$s, որպեսզի օդանավակայան ժամանեք մեկնումից առնվազն %4$d ժամ առաջ: Նախադրեք տագնապ, որպեսզի չմոռանաք:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sՄեկնեք մինչև %2$s%3$s, որպեսզի օդանավակայան հասնեք թռիչքից առնվազն %4$d ժամ առաջ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sՄեկնեք մինչև %2$s%3$s, որպեսզի օդանավակայան հասնեք թռիչքից առնվազն %4$d ժամ առաջ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Առաջարկիր %1$d-օրյա ճանապարհորդական ուղեպլան %2$s-ի համար, ներառյալ վայրերը, ուր պետք է այցելել, զբաղմունքները և ռեստորանները, որոնք արժե փորձել:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Առաջարկիր %1$d-օրյա ճանապարհորդական ուղեպլան %2$s-ի համար, ներառյալ վայրերը, ուր պետք է այցելել, զբաղմունքները և ռեստորանները, որոնք արժե փորձել:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Ծանոթացեք այս %1$sխորհուրդ տրվող ծրագրերին%2$s, որոնք կարող են օգտակար լինել Ձեր ուղևորության ընթացքում:</item>
+        <item quantity="one">Ծանոթացեք այս %1$sխորհուրդ տրվող ծրագրին%2$s, որը կարող է օգտակար լինել Ձեր ուղևորության ընթացքում:</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">Նախապես %1$sՆերբեռնեք այս լեզվական փաթեթը%2$s, որպեսզի պատրաստ լինեք այն օգտագործելու Բանավոր թարգմանչում, երբ ժամանեք նպատակակետ:</item>
+        <item quantity="one">Նախապես %1$sՆերբեռնեք այս լեզվական փաթեթները%2$s, որպեսզի պատրաստ լինեք դրանք օգտագործելու Բանավոր թարգմանչում, երբ ժամանեք նպատակակետ:</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Ներբեռնելու լեզվական փաթեթներ</item>
+        <item quantity="one">Ներբեռնելու լեզվական փաթեթ</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">Միացված է %d սարք</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Միացված է %d սարք</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Վերջին կապը՝ %d օր առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Վերջին կապը՝ %d օր առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Վերջին կապը՝ %d օր առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Վերջին կապը՝ %d օր առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Վերջին կապը՝ %d ամիս առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Վերջին կապը՝ %d ամիս առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Վերջին կապը՝ %d շաբաթ առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Վերջին կապը՝ %d շաբաթ առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Եվս %d կոնտակտ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Եվս %d կոնտակտ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Դուք Samsung Wallet-ում ունեք կտրոն, որի ժամկետը կավարտվի %d օրից: Անպայման այն օգտագործեք մինչև ժամկետի ավարտը:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Դուք Samsung Wallet-ում ունեք կտրոն, որի ժամկետը կավարտվի %d օրից: Անպայման այն օգտագործեք մինչև ժամկետի ավարտը:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Բարձր մինուս %d աստիճան</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Բարձր մինուս %d աստիճան</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Ցածր մինուս %d աստիճան</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ցածր մինուս %d աստիճան</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Ձեր օրացույցում ունեք %1$s կոչվող իրադարձություն: %2$d աստիճան %3$s կլինի ժամը %4$s-ին %5$s-ում:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ձեր օրացույցում ունեք %1$s կոչվող իրադարձություն: %2$d աստիճան %3$s կլինի ժամը %4$s-ին %5$s-ում:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Բարձր %d աստիճան</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Բարձր %d աստիճան</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Ցածր %d աստիճան</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ցածր %d աստիճան</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s դիտում</item>
+        <item quantity="one">%s դիտում</item>
+    </plurals>
+</resources>

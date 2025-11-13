@@ -1,0 +1,1142 @@
+{
+  "translateSupportLanguageInfo": {
+    "default": [
+      {
+        "displayLangCode": "af",
+        "langpackCode": "af",
+        "ondeviceLangCode": "af",
+        "serverLangCode": "af",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "am",
+        "langpackCode": "am",
+        "ondeviceLangCode": "am",
+        "serverLangCode": "am",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "as",
+        "langpackCode": "as",
+        "ondeviceLangCode": "as",
+        "serverLangCode": "as",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "az",
+        "langpackCode": "az",
+        "ondeviceLangCode": "az",
+        "serverLangCode": "az",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "be",
+        "langpackCode": "be",
+        "ondeviceLangCode": "be",
+        "serverLangCode": "be",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "bg",
+        "langpackCode": "bg-BG",
+        "ondeviceLangCode": "bg",
+        "serverLangCode": "bg",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "bn",
+        "langpackCode": "bn-IN",
+        "ondeviceLangCode": "bn",
+        "serverLangCode": "bn",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "bs",
+        "langpackCode": "bs",
+        "ondeviceLangCode": "bs",
+        "serverLangCode": "bs",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ca",
+        "langpackCode": "ca",
+        "ondeviceLangCode": "ca",
+        "serverLangCode": "ca",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "cs",
+        "langpackCode": "cs-CZ",
+        "ondeviceLangCode": "cs",
+        "serverLangCode": "cs",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "cy",
+        "langpackCode": "cy",
+        "ondeviceLangCode": "cy",
+        "serverLangCode": "cy",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "da",
+        "langpackCode": "da-DK",
+        "ondeviceLangCode": "da",
+        "serverLangCode": "da",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "de",
+        "langpackCode": "de-DE",
+        "ondeviceLangCode": "de",
+        "serverLangCode": "de",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.ende"
+      },
+      {
+        "displayLangCode": "el",
+        "langpackCode": "el-GR",
+        "ondeviceLangCode": "el",
+        "serverLangCode": "el",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "en",
+        "langpackCode": "en-US",
+        "ondeviceLangCode": "en",
+        "serverLangCode": "en",
+        "supportOndevice": true,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "eo",
+        "langpackCode": "eo",
+        "ondeviceLangCode": "eo",
+        "serverLangCode": "eo",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "es-ES",
+        "langpackCode": "es-ES",
+        "ondeviceLangCode": "es",
+        "serverLangCode": "es",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enes"
+      },
+      {
+        "displayLangCode": "es-MX",
+        "langpackCode": "es-MX",
+        "ondeviceLangCode": "esmx",
+        "serverLangCode": "es",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enesmx"
+      },
+      {
+        "displayLangCode": "es-US",
+        "langpackCode": "es-US",
+        "ondeviceLangCode": "esus",
+        "serverLangCode": "es",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enesus"
+      },
+      {
+        "displayLangCode": "et",
+        "langpackCode": "et-EE",
+        "ondeviceLangCode": "et",
+        "serverLangCode": "et",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "eu",
+        "langpackCode": "eu",
+        "ondeviceLangCode": "eu",
+        "serverLangCode": "eu",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "fa",
+        "langpackCode": "fa-IR",
+        "ondeviceLangCode": "fa",
+        "serverLangCode": "fa",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "fi",
+        "langpackCode": "fi-FI",
+        "ondeviceLangCode": "fi",
+        "serverLangCode": "fi",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "fr-FR",
+        "langpackCode": "fr-FR",
+        "ondeviceLangCode": "fr",
+        "serverLangCode": "fr",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enfr"
+      },
+      {
+        "displayLangCode": "fy",
+        "langpackCode": "fy",
+        "ondeviceLangCode": "fy",
+        "serverLangCode": "fy",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ga",
+        "langpackCode": "ga",
+        "ondeviceLangCode": "ga",
+        "serverLangCode": "ga",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "gd",
+        "langpackCode": "gd",
+        "ondeviceLangCode": "gd",
+        "serverLangCode": "gd",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "gl",
+        "langpackCode": "gl",
+        "ondeviceLangCode": "gl",
+        "serverLangCode": "gl",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "gn",
+        "langpackCode": "gn",
+        "ondeviceLangCode": "gn",
+        "serverLangCode": "gn",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "gu",
+        "langpackCode": "gu",
+        "ondeviceLangCode": "gu",
+        "serverLangCode": "gu",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ha",
+        "langpackCode": "ha",
+        "ondeviceLangCode": "ha",
+        "serverLangCode": "ha",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "he",
+        "langpackCode": "he-IL",
+        "ondeviceLangCode": "he",
+        "serverLangCode": "he",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "hi",
+        "langpackCode": "hi-IN",
+        "ondeviceLangCode": "hi",
+        "serverLangCode": "hi",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enhi"
+      },
+      {
+        "displayLangCode": "hr",
+        "langpackCode": "hr",
+        "ondeviceLangCode": "hr",
+        "serverLangCode": "hr",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ht",
+        "langpackCode": "ht",
+        "ondeviceLangCode": "ht",
+        "serverLangCode": "ht",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "hu",
+        "langpackCode": "hu-HU",
+        "ondeviceLangCode": "hu",
+        "serverLangCode": "hu",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "hy",
+        "langpackCode": "hy",
+        "ondeviceLangCode": "hy",
+        "serverLangCode": "hy",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "id",
+        "langpackCode": "id-ID",
+        "ondeviceLangCode": "id",
+        "serverLangCode": "id",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enid"
+      },
+      {
+        "displayLangCode": "ig",
+        "langpackCode": "ig",
+        "ondeviceLangCode": "ig",
+        "serverLangCode": "ig",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "is",
+        "langpackCode": "is",
+        "ondeviceLangCode": "is",
+        "serverLangCode": "is",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "it",
+        "langpackCode": "it-IT",
+        "ondeviceLangCode": "it",
+        "serverLangCode": "it",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enit"
+      },
+      {
+        "displayLangCode": "ja",
+        "langpackCode": "ja-JP",
+        "ondeviceLangCode": "ja",
+        "serverLangCode": "ja",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enja"
+      },
+      {
+        "displayLangCode": "jv",
+        "langpackCode": "jv",
+        "ondeviceLangCode": "jv",
+        "serverLangCode": "jv",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ka",
+        "langpackCode": "ka",
+        "ondeviceLangCode": "ka",
+        "serverLangCode": "ka",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "kk",
+        "langpackCode": "kk",
+        "ondeviceLangCode": "kk",
+        "serverLangCode": "kk",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "km",
+        "langpackCode": "km",
+        "ondeviceLangCode": "km",
+        "serverLangCode": "km",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "kn",
+        "langpackCode": "kn",
+        "ondeviceLangCode": "kn",
+        "serverLangCode": "kn",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ko",
+        "langpackCode": "ko-KR",
+        "ondeviceLangCode": "ko",
+        "serverLangCode": "ko",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enko"
+      },
+      {
+        "displayLangCode": "ku",
+        "langpackCode": "ku",
+        "ondeviceLangCode": "ku",
+        "serverLangCode": "ku",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ky",
+        "langpackCode": "ky",
+        "ondeviceLangCode": "ky",
+        "serverLangCode": "ky",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "la",
+        "langpackCode": "la",
+        "ondeviceLangCode": "la",
+        "serverLangCode": "la",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "lb",
+        "langpackCode": "lb",
+        "ondeviceLangCode": "lb",
+        "serverLangCode": "lb",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "lg",
+        "langpackCode": "lg",
+        "ondeviceLangCode": "lg",
+        "serverLangCode": "lg",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ln",
+        "langpackCode": "ln",
+        "ondeviceLangCode": "ln",
+        "serverLangCode": "ln",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "lo",
+        "langpackCode": "lo",
+        "ondeviceLangCode": "lo",
+        "serverLangCode": "lo",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "lt",
+        "langpackCode": "lt",
+        "ondeviceLangCode": "lt",
+        "serverLangCode": "lt",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "lv",
+        "langpackCode": "lv",
+        "ondeviceLangCode": "lv",
+        "serverLangCode": "lv",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mi",
+        "langpackCode": "mi",
+        "ondeviceLangCode": "mi",
+        "serverLangCode": "mi",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mk",
+        "langpackCode": "mk",
+        "ondeviceLangCode": "mk",
+        "serverLangCode": "mk",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ml",
+        "langpackCode": "ml",
+        "ondeviceLangCode": "ml",
+        "serverLangCode": "ml",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mn",
+        "langpackCode": "mn",
+        "ondeviceLangCode": "mn",
+        "serverLangCode": "mn",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mr",
+        "langpackCode": "mr",
+        "ondeviceLangCode": "mr",
+        "serverLangCode": "mr",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ms",
+        "langpackCode": "ms-MY",
+        "ondeviceLangCode": "ms",
+        "serverLangCode": "ms",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mt",
+        "langpackCode": "mt",
+        "ondeviceLangCode": "mt",
+        "serverLangCode": "mt",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "my",
+        "langpackCode": "my",
+        "ondeviceLangCode": "my",
+        "serverLangCode": "my",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "nl",
+        "langpackCode": "nl-NL",
+        "ondeviceLangCode": "nl",
+        "serverLangCode": "nl",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.ennl"
+      },
+      {
+        "displayLangCode": "no",
+        "langpackCode": "nb-NO",
+        "ondeviceLangCode": "no",
+        "serverLangCode": "no",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ny",
+        "langpackCode": "ny",
+        "ondeviceLangCode": "ny",
+        "serverLangCode": "ny",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "or",
+        "langpackCode": "or",
+        "ondeviceLangCode": "or",
+        "serverLangCode": "or",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "pa",
+        "langpackCode": "pa",
+        "ondeviceLangCode": "pa",
+        "serverLangCode": "pa",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "pl",
+        "langpackCode": "pl-PL",
+        "ondeviceLangCode": "pl",
+        "serverLangCode": "pl",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enpl"
+      },
+      {
+        "displayLangCode": "pt-BR",
+        "langpackCode": "pt-BR",
+        "ondeviceLangCode": "ptbr",
+        "serverLangCode": "pt",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enptbr"
+      },
+      {
+        "displayLangCode": "ro",
+        "langpackCode": "ro-RO",
+        "ondeviceLangCode": "ro",
+        "serverLangCode": "ro",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enro"
+      },
+      {
+        "displayLangCode": "ru",
+        "langpackCode": "ru-RU",
+        "ondeviceLangCode": "ru",
+        "serverLangCode": "ru",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enru"
+      },
+      {
+        "displayLangCode": "rw",
+        "langpackCode": "rw",
+        "ondeviceLangCode": "rw",
+        "serverLangCode": "rw",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sa",
+        "langpackCode": "sa",
+        "ondeviceLangCode": "sa",
+        "serverLangCode": "sa",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sd",
+        "langpackCode": "sd",
+        "ondeviceLangCode": "sd",
+        "serverLangCode": "sd",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "si",
+        "langpackCode": "si",
+        "ondeviceLangCode": "si",
+        "serverLangCode": "si",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sk",
+        "langpackCode": "sk-SK",
+        "ondeviceLangCode": "sk",
+        "serverLangCode": "sk",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sl",
+        "langpackCode": "sl-SL",
+        "ondeviceLangCode": "sl",
+        "serverLangCode": "sl",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sm",
+        "langpackCode": "sm",
+        "ondeviceLangCode": "sm",
+        "serverLangCode": "sm",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sn",
+        "langpackCode": "sn",
+        "ondeviceLangCode": "sn",
+        "serverLangCode": "sn",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "so",
+        "langpackCode": "so",
+        "ondeviceLangCode": "so",
+        "serverLangCode": "so",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sq",
+        "langpackCode": "sq",
+        "ondeviceLangCode": "sq",
+        "serverLangCode": "sq",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sr",
+        "langpackCode": "sr-RS",
+        "ondeviceLangCode": "sr",
+        "serverLangCode": "sr",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "st",
+        "langpackCode": "st",
+        "ondeviceLangCode": "st",
+        "serverLangCode": "st",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "su",
+        "langpackCode": "su",
+        "ondeviceLangCode": "su",
+        "serverLangCode": "su",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "sv",
+        "langpackCode": "sv-SE",
+        "ondeviceLangCode": "sv",
+        "serverLangCode": "sv",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.ensv"
+      },
+      {
+        "displayLangCode": "sw",
+        "langpackCode": "sw",
+        "ondeviceLangCode": "sw",
+        "serverLangCode": "sw",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ta",
+        "langpackCode": "ta-IN",
+        "ondeviceLangCode": "ta",
+        "serverLangCode": "ta",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "te",
+        "langpackCode": "te-IN",
+        "ondeviceLangCode": "te",
+        "serverLangCode": "te",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "tg",
+        "langpackCode": "tg",
+        "ondeviceLangCode": "tg",
+        "serverLangCode": "tg",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "th",
+        "langpackCode": "th-TH",
+        "ondeviceLangCode": "th",
+        "serverLangCode": "th",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enth"
+      },
+      {
+        "displayLangCode": "tk",
+        "langpackCode": "tk",
+        "ondeviceLangCode": "tk",
+        "serverLangCode": "tk",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "tl",
+        "langpackCode": "tl",
+        "ondeviceLangCode": "tl",
+        "serverLangCode": "tl",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "tr",
+        "langpackCode": "tr-TR",
+        "ondeviceLangCode": "tr",
+        "serverLangCode": "tr",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.entr"
+      },
+      {
+        "displayLangCode": "tt",
+        "langpackCode": "tt",
+        "ondeviceLangCode": "tt",
+        "serverLangCode": "tt",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ug",
+        "langpackCode": "ug",
+        "ondeviceLangCode": "ug",
+        "serverLangCode": "ug",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "uk",
+        "langpackCode": "uk-UA",
+        "ondeviceLangCode": "uk",
+        "serverLangCode": "uk",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ur",
+        "langpackCode": "ur",
+        "ondeviceLangCode": "ur",
+        "serverLangCode": "ur",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "uz",
+        "langpackCode": "uz",
+        "ondeviceLangCode": "uz",
+        "serverLangCode": "uz",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "vi",
+        "langpackCode": "vi-VN",
+        "ondeviceLangCode": "vi",
+        "serverLangCode": "vi",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.envi"
+      },
+      {
+        "displayLangCode": "xh",
+        "langpackCode": "xh",
+        "ondeviceLangCode": "xh",
+        "serverLangCode": "xh",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "yi",
+        "langpackCode": "yi",
+        "ondeviceLangCode": "yi",
+        "serverLangCode": "yi",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "yo",
+        "langpackCode": "yo",
+        "ondeviceLangCode": "yo",
+        "serverLangCode": "yo",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "zh-CN",
+        "langpackCode": "zh-CN",
+        "ondeviceLangCode": "zh",
+        "serverLangCode": "zh",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enzh"
+      },
+      {
+        "displayLangCode": "zh-CN",
+        "langpackCode": "zh-CN",
+        "ondeviceLangCode": "zh",
+        "serverLangCode": "zh-CHS",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enzh"
+      },
+      {
+        "displayLangCode": "zh-TW",
+        "langpackCode": "zh-TW",
+        "ondeviceLangCode": "zhtw",
+        "serverLangCode": "zh-TW",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enzhtw"
+      },
+      {
+        "displayLangCode": "zh-TW",
+        "langpackCode": "zh-TW",
+        "ondeviceLangCode": "zhtw",
+        "serverLangCode": "zh-CHT",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enzhtw"
+      },
+      {
+        "displayLangCode": "ay",
+        "langpackCode": "ay",
+        "ondeviceLangCode": "ay",
+        "serverLangCode": "ay",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "bm",
+        "langpackCode": "bm",
+        "ondeviceLangCode": "bm",
+        "serverLangCode": "bm",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "bho",
+        "langpackCode": "bho",
+        "ondeviceLangCode": "bho",
+        "serverLangCode": "bho",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ceb",
+        "langpackCode": "ceb",
+        "ondeviceLangCode": "ceb",
+        "serverLangCode": "ceb",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "co",
+        "langpackCode": "co",
+        "ondeviceLangCode": "co",
+        "serverLangCode": "co",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "dv",
+        "langpackCode": "dv",
+        "ondeviceLangCode": "dv",
+        "serverLangCode": "dv",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "doi",
+        "langpackCode": "doi",
+        "ondeviceLangCode": "doi",
+        "serverLangCode": "doi",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ee",
+        "langpackCode": "ee",
+        "ondeviceLangCode": "ee",
+        "serverLangCode": "ee",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "fil",
+        "langpackCode": "fil",
+        "ondeviceLangCode": "fil",
+        "serverLangCode": "fil",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "haw",
+        "langpackCode": "haw",
+        "ondeviceLangCode": "haw",
+        "serverLangCode": "haw",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "hmn",
+        "langpackCode": "hmn",
+        "ondeviceLangCode": "hmn",
+        "serverLangCode": "hmn",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ilo",
+        "langpackCode": "ilo",
+        "ondeviceLangCode": "ilo",
+        "serverLangCode": "ilo",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "gom",
+        "langpackCode": "gom",
+        "ondeviceLangCode": "gom",
+        "serverLangCode": "gom",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "kri",
+        "langpackCode": "kri",
+        "ondeviceLangCode": "kri",
+        "serverLangCode": "kri",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ckb",
+        "langpackCode": "ckb",
+        "ondeviceLangCode": "ckb",
+        "serverLangCode": "ckb",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mai",
+        "langpackCode": "mai",
+        "ondeviceLangCode": "mai",
+        "serverLangCode": "mai",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mg",
+        "langpackCode": "mg",
+        "ondeviceLangCode": "mg",
+        "serverLangCode": "mg",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "mni-Mtei",
+        "langpackCode": "mni-Mtei",
+        "ondeviceLangCode": "mni-Mtei",
+        "serverLangCode": "mni-Mtei",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "lus",
+        "langpackCode": "lus",
+        "ondeviceLangCode": "lus",
+        "serverLangCode": "lus",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ne",
+        "langpackCode": "ne",
+        "ondeviceLangCode": "ne",
+        "serverLangCode": "ne",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "om",
+        "langpackCode": "om",
+        "ondeviceLangCode": "om",
+        "serverLangCode": "om",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ps",
+        "langpackCode": "ps",
+        "ondeviceLangCode": "ps",
+        "serverLangCode": "ps",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "qu",
+        "langpackCode": "qu",
+        "ondeviceLangCode": "qu",
+        "serverLangCode": "qu",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "nso",
+        "langpackCode": "nso",
+        "ondeviceLangCode": "nso",
+        "serverLangCode": "nso",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ti",
+        "langpackCode": "ti",
+        "ondeviceLangCode": "ti",
+        "serverLangCode": "ti",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ts",
+        "langpackCode": "ts",
+        "ondeviceLangCode": "ts",
+        "serverLangCode": "ts",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ak",
+        "langpackCode": "ak",
+        "ondeviceLangCode": "ak",
+        "serverLangCode": "ak",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "zu",
+        "langpackCode": "zu",
+        "ondeviceLangCode": "zu",
+        "serverLangCode": "zu",
+        "supportOndevice": false,
+        "packageName": ""
+      },
+      {
+        "displayLangCode": "ar",
+        "langpackCode": "ar-AE",
+        "ondeviceLangCode": "ar",
+        "serverLangCode": "ar",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enar"
+      },
+      {
+        "displayLangCode": "zh-HK",
+        "langpackCode": "zh-HK",
+        "ondeviceLangCode": "zhhk",
+        "serverLangCode": "zh",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enzhhk"
+      },
+      {
+        "displayLangCode": "zh-HK",
+        "langpackCode": "zh-HK",
+        "ondeviceLangCode": "zhhk",
+        "serverLangCode": "yue",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enzhhk"
+      },
+      {
+        "displayLangCode": "fr-CA",
+        "langpackCode": "fr-CA",
+        "ondeviceLangCode": "frca",
+        "serverLangCode": "fr",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enfrca"
+      },
+      {
+        "displayLangCode": "pt-PT",
+        "langpackCode": "pt-PT",
+        "ondeviceLangCode": "pt",
+        "serverLangCode": "pt",
+        "supportOndevice": true,
+        "packageName": "com.samsung.android.nmt.apps.t2t.languagepack.enpt"
+      }
+    ]
+  }
+}

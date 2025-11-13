@@ -1,0 +1,6 @@
+<INPUT>
+{
+    ?input{IDX} <CONNECT> <TARGET> .
+} UNION {
+    <TARGET> <CONNECT> ?input{IDX} .
+}

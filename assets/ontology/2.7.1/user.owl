@@ -1,0 +1,254 @@
+@prefix content: <http://pkg.samsung.com/content#> .
+@prefix design: <http://pkg.samsung.com/design#> .
+@prefix location: <http://pkg.samsung.com/location#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <http://pkg.samsung.com/user/person#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix service: <http://pkg.samsung.com/service#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix user: <http://pkg.samsung.com/user#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+content:Content a owl:Class .
+
+content:MobileApplication a owl:Class .
+
+content:eventExtracted a owl:ObjectProperty ;
+    owl:inverseOf user:extractedFrom .
+
+location:Location a owl:Class .
+
+service:description a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+service:title a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+<http://pkg.samsung.com/user> a owl:Ontology ;
+    owl:versionIRI <http://pkg.samsung.com/user/1.8.1> .
+
+user:Booking a owl:Class ;
+    rdfs:subClassOf user:Action .
+
+user:Eating a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:Exercising a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:Female a user:GenderType .
+
+user:GeneralEngram a owl:Class ;
+    rdfs:subClassOf user:Engram .
+
+user:ListeningToMusic a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:Male a user:GenderType .
+
+user:Meeting a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:Moving a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:Paying a owl:Class ;
+    rdfs:subClassOf user:Action .
+
+user:PlayingGame a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:ScheduledTravel a owl:Class ;
+    rdfs:subClassOf user:ScheduledEvent .
+
+user:Sequencer a owl:Class .
+
+user:SharingContents a owl:Class ;
+    rdfs:subClassOf user:Action .
+
+user:Sleeping a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:SpeakingOnPhone a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:Staying a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:StoringContents a owl:Class ;
+    rdfs:subClassOf user:Action .
+
+user:SurfingInternet a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:TakingPictures a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:TravelEngram a owl:Class ;
+    rdfs:subClassOf user:SpecialEngram .
+
+user:Unknown a user:GenderType .
+
+user:WatchingVideo a owl:Class ;
+    rdfs:subClassOf user:Activity .
+
+user:amount a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:atLocation a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:location .
+
+user:calorie a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:capturedToScheduled a owl:ObjectProperty .
+
+user:completed a owl:DatatypeProperty .
+
+user:contactIdOfRecipient a owl:DatatypeProperty ;
+    rdfs:subPropertyOf user:contactId .
+
+user:contactIdOfSender a owl:DatatypeProperty ;
+    rdfs:subPropertyOf user:contactId .
+
+user:eventCategory a owl:ObjectProperty .
+
+user:exerciseCustomTypeName a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:exerciseName a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+user:fromApplication a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:application .
+
+user:fromLocation a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:location .
+
+user:fromPerson a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:withParticipant .
+
+user:galleryFaceId a owl:DatatypeProperty .
+
+user:galleryPersonId a owl:DatatypeProperty .
+
+user:gender a owl:ObjectProperty .
+
+user:hasTag a owl:DatatypeProperty .
+
+user:iconicMediaId a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:liveIn a owl:ObjectProperty .
+
+user:maxHeartRate a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:meanHeartRate a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:meanSpeed a owl:DatatypeProperty ;
+    design:isSubgraphProperty true ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+user:merchantDisplayName a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:minHeartRate a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:name a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+user:nickName a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+user:objectContent a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:object .
+
+user:objectFood a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:object .
+
+user:onApplication a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:application .
+
+user:paymentType a owl:DatatypeProperty ;
+    design:isSubgraphProperty true .
+
+user:realizedEvent a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:event .
+
+user:recipientName a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+user:scheduledToCaptured a owl:ObjectProperty .
+
+user:senderName a owl:DatatypeProperty ;
+    design:isIndexableProperty true .
+
+user:specialEvent a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:event .
+
+user:toApplication a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:application .
+
+user:toLocation a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:location .
+
+user:toPerson a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:withParticipant .
+
+user:withPerson a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:person .
+
+user:workIn a owl:ObjectProperty .
+
+person:TheUser a user:User .
+
+user:Person a owl:Class .
+
+user:ScheduledEvent a owl:Class ;
+    rdfs:subClassOf user:Event .
+
+user:SpecialEngram a owl:Class ;
+    rdfs:subClassOf user:Engram .
+
+user:User a owl:Class ;
+    rdfs:subClassOf user:Person .
+
+user:extractedFrom a owl:ObjectProperty .
+
+time:Instant a owl:Class .
+
+user:Engram a owl:Class ;
+    rdfs:subClassOf time:Interval .
+
+user:contactId a owl:DatatypeProperty .
+
+user:event a owl:ObjectProperty .
+
+user:object a owl:ObjectProperty .
+
+user:person a owl:ObjectProperty .
+
+user:withParticipant a owl:ObjectProperty ;
+    rdfs:subPropertyOf user:person .
+
+time:Interval a owl:Class .
+
+user:Event a owl:Class .
+
+user:GenderType a owl:Class .
+
+user:application a owl:ObjectProperty .
+
+user:location a owl:ObjectProperty .
+
+user:Action a owl:Class ;
+    rdfs:subClassOf user:Event,
+        time:Instant .
+
+user:Activity a owl:Class ;
+    rdfs:subClassOf user:Event,
+        time:Interval .
+

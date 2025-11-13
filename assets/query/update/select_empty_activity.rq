@@ -1,0 +1,6 @@
+SELECT distinct ?s
+WHERE {
+    VALUES (?activityClass) {(user:Eating) (user:ListeningToMusic) (user:Paying) (user:SpeakingOnPhone) (user:TakingPictures) (user:WatchingVideo) (user:ScheduledEvent)}
+    ?s rdf:type/rdfs:subClassOf ?activityClass .
+    FILTER NOT EXISTS { ?s user:extractedFrom|user:objectContent|user:object ?something . }
+}

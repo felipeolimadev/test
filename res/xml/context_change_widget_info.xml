@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:widgetFeatures="reconfigurable" android:targetCellWidth="2" android:targetCellHeight="1" app:widgetSize="small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

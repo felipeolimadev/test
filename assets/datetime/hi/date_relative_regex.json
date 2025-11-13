@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "NUM_TIME_AFTER_REFERENCE",
+    "comment": "2 days from now, a week after, after a week, past 2 days, before 3 days, etc.(सोमवार के 10 सप्ताह और 2 दिन बाद)",
+    "patternString": "(?:(की|के)\\s*)?((<num>)?\\s*(<time_period>))\\s*(?:और\\s*)?((<num>)?\\s*(<time_period>))?\\s*(<after_reference>|<before_reference>)",
+    "isRelative": true,
+    "isPrefix": true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id": 2,
+    "type": "AFTER_REFERENCE_NUM_TIME",
+    "comment": "after a week, before 2 months",
+    "patternString": "((<num>)?\\s*(<time_period>))\\s*(?:और\\s*)?(?:a|an)?\\s*((<num>)?\\s*(<time_period>))?\\s*(?:और\\s*)?((<num>)?\\s*(<time_period>))?\\s*(?:(की|के)\\s*)?(<after_reference>|<before_reference>)",
+    "isRelative": true,
+    "isPrefix" : true,
+    "isOnlyDelta" : true
+  },
+  {
+    "id" : 3,
+    "type" : "AFTER_REFERENCE_NUM_TIME_ONLY_FOR_PREFIX",
+    "comment" : "next month, next year, this will only serve as a prefix | suffix for cases like 25th jan next year, only next year will be handled by range resolver.",
+    "patternString" : "(?:(के|की)\\s*)?(<after_range>|<before_range>|<last_reference>|<current_reference>)\\s*(<time_period>)(?:\\s*(के|की))?",
+    "isOnlyPrefix" : true,
+    "isPrefix" : true,
+    "isRelative" : false
+  },
+  {
+    "id" : 4,
+    "type" : "SPECIAL_CASE_OF_FROM",
+    "comment" : "2 days from now",
+    "patternString" : "(<num>|<num_suffix>|a)\\s*(<time_period>)\\s*(<starts_from>)",
+    "isPrefix" : true,
+    "isOnlyPrefix" : true
+  },
+  {
+    "id" : 5,
+    "type" : "RELATIVE_DAY_OF_WEEK",
+    "patternString" : "(<after_range>|<before_range>|<current_reference>|<last_reference>)\\s*(<day_of_week>)",
+    "comment" : "last sunday, next sunday",
+    "isRelative": true
+  }
+]

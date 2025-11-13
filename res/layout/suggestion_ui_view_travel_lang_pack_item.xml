@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/suggestion_ui_view_travel_lang_pack_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/travel_lang_pack_text_min_height" android:paddingHorizontal="@dimen/travel_lang_pack_text_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/travel_lang_pack_item_icon" android:layout_width="@dimen/travel_lang_pack_item_icon_size" android:layout_height="@dimen/travel_lang_pack_item_icon_size" android:src="@drawable/travel_language_pack_icon" />
+    <TextView android:textSize="@dimen/travel_lang_pack_text_size" android:textColor="@color/travel_translate_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/travel_lang_pack_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/travel_lang_pack_text_margin_start" android:textFontWeight="400" app:layout_constrainedWidth="true" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+{
+    ?s rdf:unknown? ?engram .
+    ?s ?p ?o .
+    FILTER (?p != user:event)
+    BIND(STR(?engram) AS ?index)
+} UNION {
+    VALUES(?p) {(user:event)}
+    ?s rdf:unknown? ?engram .
+    <DECODE_ACTIVITY_FILTER>
+    ?s ?p ?activity .
+    BIND(?activity as ?o)
+    BIND(STR(?engram) AS ?index)
+} UNION {
+    ?engram time:hasBeginning|time:hasEnd ?s .
+    ?s ?p ?o .
+    BIND(STR(?engram) AS ?index)
+}

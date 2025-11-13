@@ -1,0 +1,74 @@
+[
+  {
+    "patternName": "<<hourly_suffix>>",
+    "patternValue": [
+      "en punto",
+      "in punto"
+    ]
+  },
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "de",
+      "a",
+      "en",
+      "por",
+      "hacia",
+      "sobre",
+      "alrededor",
+      "est[ea]",
+      "es[ea]",
+      "aquel(?:la)?",
+      "aquella"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "y",
+      "menos",
+      "para"
+    ]
+  },
+  {
+    "patternName": "<<time_keywords_before>>",
+    "patternValue": [
+      "a las?",
+      "por las?",
+      "las?",
+      "alrededor de"
+    ]
+  },
+  {
+    "patternName": "<<around_time>>",
+    "patternValue": [
+      "sobre",
+      "alrededor de"
+    ]
+  },
+  {
+    "patternName": "<<ref_num_connector>>",
+    "patternValue": [
+      "de",
+      "por",
+      "desde",
+      "del",
+      "de aproximadamente",
+      "al menos",
+      "aproximadamente",
+      "como máximo"
+    ]
+  },
+  {
+    "patternName": "<<time_connector>>",
+    "patternValue": [
+      "y",
+      "con"
+    ]
+  },
+  {
+    "patternName": "<<num_time_connector>>",
+    "patternValue": [
+    ]
+  }
+]

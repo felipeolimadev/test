@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "YEAR_WITH_YEAR_KEYWORD_AS_SUFFIX_OR_PREFIX",
+    "patternString": "(?:\\s|^|\\.|,)(<time_period>)\\s*(<num>)",
+    "comment": "year 2002",
+    "mapping": [
+      {
+        "timePeriod": 1,
+        "year": 2
+      }
+    ],
+    "shouldContainKeyword" : "năm"
+  },
+  {
+    "id": 2,
+    "type": "YEAR_WITH_SUPPORTING_KEYWORDS",
+    "patternString": "(?:\\s|^|\\.|,)(?:của|trong)\\s*(<num>)(?:\\s|$|\\.|,)",
+    "comment": "in 2002 or just in 24 | for now in/of is kept mandatory as it is not clear if the number is a year or not without it",
+    "mapping": [
+      {
+        "year": 1
+      }
+    ]
+  }
+]

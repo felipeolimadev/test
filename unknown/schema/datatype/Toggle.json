@@ -1,0 +1,25 @@
+{
+  "name": "Toggle",
+  "type": "datatype",
+  "id": "datatype.enumeration.Toggle",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "on",
+      "off"
+    ],
+    "descriptions": [
+      {
+        "value": "on",
+        "description": "On"
+      },
+      {
+        "value": "off",
+        "description": "Off"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

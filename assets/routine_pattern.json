@@ -1,0 +1,715 @@
+{
+  "version": "1",
+  "presets": [
+    {
+      "tag": "preset_at_home",
+      "suggestionType": "pattern",
+      "conditions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "plugin_gps_location_v3",
+          "contextId": "home_ce",
+          "parameters": [
+            {
+              "key": "direction",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "0"
+            },
+            {
+              "key": "place_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "1"
+            },
+            {
+              "key": "latitude",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "-999"
+            },
+            {
+              "key": "longitude",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "-999"
+            },
+            {
+              "key": "radius",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "150"
+            },
+            {
+              "key": "bssid",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "[]"
+            }
+          ],
+          "mandatory": "true",
+          "isEndCondition": "false"
+        }
+      ],
+      "actions": [
+        {
+          "package": "com.android.settings",
+          "tag": "as_volume",
+          "hint": "소리 모드 변경",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "as_sound_mode",
+              "dataTypeOfValue": "NUMBER",
+              "value": "",
+              "valueInjectionMethod": "LearningResult",
+              "source": {
+                "settingName": "mode_ringer",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "bluetooth_on_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "toggle_value",
+              "dataTypeOfValue": "BOOLEAN",
+              "valueInjectionMethod": "LearningResult",
+              "value": "",
+              "source": {
+                "settingName": "bluetooth_on",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "launch_app_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "launch_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsPreset",
+              "value": "0"
+            },
+            {
+              "key": "param_info",
+              "dataTypeOfValue": "STRING",
+              "value": "",
+              "valueInjectionMethod" : "LearningResult"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "play_media_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "play_media",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        }
+      ]
+    },
+    {
+      "tag": "preset_at_work",
+      "suggestionType": "pattern",
+      "conditions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "plugin_gps_location_v3",
+          "contextId": "office_ce",
+          "parameters": [
+            {
+              "key": "direction",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "0"
+            },
+            {
+              "key": "place_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "2"
+            },
+            {
+              "key": "latitude",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "-999"
+            },
+            {
+              "key": "longitude",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "-999"
+            },
+            {
+              "key": "radius",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "150"
+            },
+            {
+              "key": "bssid",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "SameAsPreset",
+              "value": "[]"
+            }
+          ],
+          "mandatory": "true",
+          "isEndCondition": "false"
+        }
+      ],
+      "actions": [
+        {
+          "package": "com.android.settings",
+          "tag": "as_volume",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "as_sound_mode",
+              "dataTypeOfValue": "NUMBER",
+              "value": "",
+              "valueInjectionMethod": "LearningResult",
+              "source": {
+                "settingName": "mode_ringer",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.android.settings",
+          "tag": "as_media_volume",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "volume_level_STREAM_MUSIC_SPEAKER",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "0.0"
+            },
+            {
+              "key": "volume_level_STREAM_MUSIC_USB_HEADSET",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "0.0"
+            },
+            {
+              "key": "volume_level_STREAM_MUSIC_BLUETOOTH",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "0.0"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "bluetooth_on_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "toggle_value",
+              "dataTypeOfValue": "BOOLEAN",
+              "valueInjectionMethod": "LearningResult",
+              "value": "",
+              "source": {
+                "settingName": "bluetooth_on",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "dnd_mode_on_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "dnd_intent_parameter",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "1"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "nfc_on_off",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "enable_nfc",
+              "dataTypeOfValue": "BOOLEAN",
+              "valueInjectionMethod": "LearningResult",
+              "value": "true"
+            }
+          ],
+          "mandatory": "true"
+        }
+      ]
+    },
+    {
+      "tag": "preset_at_car",
+      "suggestionType": "pattern",
+      "conditions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "runestone_time_occasion/context_car_place",
+          "parameters": [],
+          "contextId": "car_ce",
+          "mandatory": "true",
+          "isEndCondition": "false"
+        }
+      ],
+      "actions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "launch_app_v3",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "launch_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsPreset",
+              "value": "0"
+            },
+            {
+              "key": "param_info",
+              "dataTypeOfValue": "STRING",
+              "value": "",
+              "valueInjectionMethod" : "LearningResult"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "gps_on_v3",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "toggle_value",
+              "dataTypeOfValue": "BOOLEAN",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "hotspot_on_v3",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "enable_mobile_hotspot",
+              "dataTypeOfValue": "BOOLEAN",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.android.settings",
+          "tag": "as_volume",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "as_sound_mode",
+              "dataTypeOfValue": "NUMBER",
+              "value": "",
+              "valueInjectionMethod" : "LearningResult",
+              "source": {
+                "settingName": "mode_ringer",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "separate_app_sound_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "separate_app_sound_is_on_off",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "LearningResult",
+              "value": "",
+              "source": {
+                "settingName": "multisound_state",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            },
+            {
+              "key": "separate_app_sound_package_list",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "LearningResult",
+              "value": "",
+              "source": {
+                "settingName": "multisound_app",
+                "settingType": "system",
+                "settingDataType": "STRING"
+              }
+            },
+            {
+              "key": "separate_app_sound_audio_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "LearningResult",
+              "value": "bluetooth",
+              "source": {
+                "settingName": "multisound_devicetype",
+                "settingType": "system",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "play_media_v3",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "play_media",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        }
+      ]
+    },
+    {
+      "tag": "preset_exercising",
+      "suggestionType": "pattern",
+      "conditions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "samsung_health_during_exercise_v3",
+          "contextId": "exercising_ce",
+          "parameters": [
+            {
+              "key": "selected_exercises",
+              "valueInjectionMethod" : "LearningResult",
+              "dataTypeOfValue": "LIST{STRING}",
+              "value": ""
+            }
+          ],
+          "mandatory": "true",
+          "isEndCondition": "false"
+        }
+      ],
+      "actions": [
+        {
+          "package": "com.android.settings",
+          "tag": "as_volume",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "as_sound_mode",
+              "dataTypeOfValue": "NUMBER",
+              "value": "",
+              "valueInjectionMethod" : "LearningResult",
+              "source": {
+                "settingName": "mode_ringer",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "launch_app_v3",
+          "_supportLevel": "1",
+          "parameters": [
+            {
+              "key": "launch_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsPreset",
+              "value": "0"
+            },
+            {
+              "key": "param_info",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "dnd_mode_on_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "dnd_intent_parameter",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "1"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "play_media_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "play_media",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        }
+      ]
+    },
+    {
+      "tag": "preset_before_bed",
+      "suggestionType": "pattern",
+      "conditions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "runestone_time_occasion/context_before_bed_time",
+          "parameters": [],
+          "contextId": "before_sleeping_time_ce",
+          "mandatory": "true",
+          "isEndCondition": "false"
+        }
+      ],
+      "actions": [
+        {
+          "package": "com.android.settings",
+          "tag": "as_volume",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "as_sound_mode",
+              "dataTypeOfValue": "NUMBER",
+              "value": "",
+              "valueInjectionMethod" : "LearningResult",
+              "source": {
+                "settingName": "mode_ringer",
+                "settingType": "global",
+                "settingDataType": "STRING"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "dnd_mode_on_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "dnd_intent_parameter",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "1"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.android.settings",
+          "tag": "sec_eye_comfort_shield_routine",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "blue_light_filter_switch",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod": "LearningResult",
+              "value": "",
+              "source": {
+                "settingName": "blue_light_filter",
+                "settingType": "system",
+                "settingDataType": "NUMBER"
+              }
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "dark_mode_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "enable_dark_mode",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "2"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.lool",
+          "tag": "dc_power_mode_action",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "toggle_value",
+              "dataTypeOfValue": "BOOLEAN",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "true"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.aodservice",
+          "tag": "aod_main_setting",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "aod_on_off",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod": "LearningResult",
+              "value": "1"
+            },
+            {
+              "key": "aod_display_mode",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod": "LearningResult",
+              "value": "1"
+            },
+            {
+              "key": "aod_orientation",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod": "LearningResult",
+              "value": "5"
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.android.settings",
+          "tag": "as_media_volume",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "volume_level_STREAM_MUSIC_SPEAKER",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "0.0"
+            },
+            {
+              "key": "volume_level_STREAM_MUSIC_USB_HEADSET",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "0.0"
+            },
+            {
+              "key": "volume_level_STREAM_MUSIC_BLUETOOTH",
+              "dataTypeOfValue": "NUMBER",
+              "valueInjectionMethod" : "SameAsLearningResult",
+              "value": "0.0"
+            }
+          ],
+          "mandatory": "true"
+        }
+      ]
+    },
+    {
+      "tag": "preset_specific_bluetooth",
+      "suggestionType": "pattern",
+      "conditions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "specify_bluetooth_v3",
+          "contextId": "specific_bt_connected",
+          "parameters": [
+            {
+              "key": "specific_bluetooth_address",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod": "LearningResult",
+              "value": ""
+            },
+            {
+              "key": "specific_bluetooth_direction",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsPreset",
+              "value": "0"
+            }
+          ],
+          "mandatory": "true",
+          "isEndCondition": "false"
+        }
+      ],
+      "actions": [
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "launch_app_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "launch_type",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "SameAsPreset",
+              "value": "0"
+            },
+            {
+              "key": "param_info",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        },
+        {
+          "package": "com.samsung.android.app.routines",
+          "tag": "play_media_v3",
+          "_supportLevel": "2",
+          "parameters": [
+            {
+              "key": "play_media",
+              "dataTypeOfValue": "STRING",
+              "valueInjectionMethod" : "LearningResult",
+              "value": ""
+            }
+          ],
+          "mandatory": "true"
+        }
+      ]
+    }
+  ]
+}

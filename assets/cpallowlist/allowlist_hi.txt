@@ -1,0 +1,7 @@
+travel,यात्रा,trip
+wedding,विवाह समारोह,शादीसमारोह,विवाह,शादीकाजश्न,शादी,शादीकादिन,marriage ceremony,शादीकरना
+matriculation,मैट्रिकुलेशनसमारोह,प्रवेश समारोह,entrance ceremony,नामांकनसमारोह
+कॉन्वोकेशन,ग्रेजुएशनसमारोह,graduation,ग्रेजुएशनईवेंट,दीक्षांतसमारोह,डिप्लोमासेरेमनी,ग्रेजुएशनडे,commencement,ग्रेजुएशन
+birthday,जन्मतिथि,जन्मवर्षगाँठ,सालगिरह,जन्मदिन,birth anniversary
+शादीसमारोह,wedding anniversary,शादी की सालगिरह,marriage anniversary,वैवाहिकवर्षगाँठ
+vacation, छुट्टी

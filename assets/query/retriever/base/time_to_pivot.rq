@@ -1,0 +1,6 @@
+OPTIONAL {
+    ?pivot{IDX} (time:hasBeginning/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDCreatedDateTimeStamp|time:inXSDBeginningDateTimeStamp ?start_time .
+}
+OPTIONAL {
+    ?pivot{IDX} (time:hasEnd/time:inXSDDateTimeStamp)|time:inXSDDateTimeStamp|time:inXSDCreatedDateTimeStamp|time:inXSDEndDateTimeStamp ?end_time .
+}

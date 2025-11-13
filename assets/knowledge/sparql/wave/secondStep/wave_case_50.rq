@@ -1,0 +1,28 @@
+select distinct ?target where {
+    ?target rdf:type user:TakingPictures .
+
+    # (1) 초기 검색 결과와 동일한 장소에서 찍은 사진 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        values ?origin1 { <TAKING_PICTURES_IRI> } .
+        ?origin1 user:atLocation/^user:atLocation ?target .
+    }
+
+    # (2) 초기 검색 결과와 동일한 여행 기간 내 찍은 사진만 존재
+    # <TAKING_PICTURES_IRI> = "IRI_1 IRI_2 ... IRI_N"
+    FILTER EXISTS {
+        ?targetEventProperty rdfs:subPropertyOf user:event .
+        ?travel2 ?targetEventProperty ?target .
+        ?travel2 rdf:type user:TravelEngram .
+
+        FILTER EXISTS {
+            values ?origin2 { <TAKING_PICTURES_IRI> } .
+            ?originEventProperty rdfs:subPropertyOf user:event .
+            ?travel2 ?originEventProperty ?origin2 .
+        }
+    }
+
+    # (3) 연관 검색 결과가 초기 검색 결과 외의 사진 보유
+    # <TAKING_PICTURES_IRI_COMMA> = "IRI_1, IRI_2, ..., IRI_N"
+    FILTER (?target NOT IN (<TAKING_PICTURES_IRI_COMMA>)) .
+}

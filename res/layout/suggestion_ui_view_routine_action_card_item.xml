@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/suggestion_ui_view_routine_action_card_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/routine_action_card_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="horizontal" android:id="@id/routine_action_card_item_title_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/routine_action_card_item_icon_size" android:layout_weight="1.0">
+            <ImageView android:id="@id/routine_action_card_item_icon" android:layout_width="@dimen/routine_action_card_item_icon_size" android:layout_height="@dimen/routine_action_card_item_icon_size" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+            <TextView android:textAppearance="@style/TextAppearance.RobotoMedium" android:textSize="@dimen/action_card_item_title_text_size" android:id="@id/routine_action_card_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/routine_action_card_item_title_margin_start" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.RobotoRegular" android:textSize="@dimen/action_card_item_title_text_size" android:layout_gravity="end|center" android:id="@id/routine_action_card_item_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:id="@id/routine_action_card_item_divider" android:background="@color/smart_things_item_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/action_card_item_divider_height" android:layout_marginVertical="@dimen/action_card_item_divider_margin_vertical" />
+</LinearLayout>

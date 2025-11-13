@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="com.samsung.android.app.notes" package="" prefKey="notes" version="14"
+    embConfigUri="content://com.samsung.android.app.notes/data/document/update_multiple">
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" type="index" removeSpecialChar="false">
+        <subAnalyzer class="core.WhitespaceAnalyzer" lang="ko" />
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+        <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+    </defaultAnalyzer>
+    <defaultAnalyzer class="bs.core.PerLanguageAnalyzer" type="search" removeSpecialChar="false">
+        <subAnalyzer class="core.WhitespaceAnalyzer" lang="ko" />
+        <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+        <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+        <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+        <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+    </defaultAnalyzer>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="long_stored_field" dataType="long" class="StoredField"/>
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+    <fieldType name="content_field" class="TextField" dataType="String">
+        <analyzer class="bs.core.PerLanguageAnalyzer" type="index">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="ja" />
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented" />
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi" />
+            <subAnalyzer class="bs.LowerCaseKeywordAnalyzer" lang="default" />
+        </analyzer>
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="true" type="search">
+            <subAnalyzer class="bs.korean.bdc.KoreanAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la"/>
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="ja" />
+            <subAnalyzer class="bs.core.BiGramAnalyzer" lang="unsegmented" />
+            <subAnalyzer class="bs.emoji.EmojiAnalyzer" lang="emoji" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard" />
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi" />
+            <subAnalyzer class="bs.LowerCaseKeywordAnalyzer" lang="default" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="phonetic_field" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko"/>
+            <subAnalyzer class="bs.core.DummyAnalyzer" lang="default"/>
+        </analyzer>
+    </fieldType>
+
+    <field name="_id" type="string"/>
+    <field name="UUID" type="string"/>
+    <field name="title" type="text"/>
+    <field name="bodyText" type="content_field"/>
+    <field name="bodyText_phonetic" type="phonetic_field" src="bodyText" />
+    <field name="hwText" type="content_field"/>
+    <field name="hwText_phonetic" type="phonetic_field" src="hwText" />
+    <field name="pdfText" type="content_field"/>
+    <field name="pdfText_phonetic" type="phonetic_field" src="pdfText" />
+    <field name="thumbnailUri" type="string"/>
+    <field name="filter" type="multi_value_string"/>
+    <field name="lastModifiedAt" type="long_stored_field"/>
+    <field name="contentUri" type="string"/>
+
+    <field name="year" type="string" />
+    <field name="month" type="string" />
+    <field name="num_of_day" type="string" />
+    <field name="day" type="string" />
+    <field name="hour" type="int_compare_field" />
+    <field name="minute" type="int_compare_field" />
+    <field name="second" type="int_compare_field" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored_field" isNonNull="true" sort="true"/>
+    <field name="$sync_timestamp" type="long_stored_field" isNonNull="true" sort="true"/>
+
+    <!-- default sort order -->
+    <sort>
+        <sortedField name="_score" order="DESC" />
+    </sort>
+</schema>

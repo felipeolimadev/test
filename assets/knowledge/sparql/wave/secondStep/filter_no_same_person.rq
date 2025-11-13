@@ -1,0 +1,6 @@
+# 초기 검색 결과에 포함된 사람이 나온 사진 없음
+FILTER NOT EXISTS {
+    ?target user:withPerson ?person .
+    VALUES ?origin { <TAKING_PICTURES_IRI> }
+    ?origin user:withPerson ?person .
+}

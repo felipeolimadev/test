@@ -1,0 +1,35 @@
+{
+    select distinct ?location ?pivot{IDX} ?p_score{IDX} ?max_linkingScore{IDX}
+    where {
+        <INPUT_TO_PIVOT>
+
+        {
+            ?pivot{IDX} user:event ?b_activity .
+            ?b_activity ?predicate ?location .
+            FILTER(?predicate IN (user:fromLocation, user:toLocation, user:atLocation)) .
+            BIND(<SCORE_ENGRAM_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} user:event ?b_activity .
+            ?b_activity user:objectContent|user:extractedFrom ?b_content .
+            ?b_content ?predicate ?location .
+            FILTER(?predicate IN (content:locationCreated, content:locationRegistered))
+            BIND(<SCORE_ENGRAM_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} (user:capturedToScheduled|user:scheduledToCaptured)?/(user:objectContent|user:extractedFrom) ?b_content .
+            ?b_content ?predicate ?location .
+            FILTER(?predicate IN (content:locationCreated, content:locationRegistered))
+            BIND(<SCORE_ACTIVITY_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} (user:capturedToScheduled|user:scheduledToCaptured)? ?b_activity .
+            ?b_activity ?predicate ?location .
+            FILTER(?predicate IN (user:fromLocation, user:toLocation, user:atLocation)) .
+            BIND(<SCORE_ACTIVITY_PIVOT> AS ?p_score{IDX})
+        } UNION {
+            ?pivot{IDX} content:locationCreated|content:locationRegistered ?location .
+            BIND(<SCORE_CONTENT_PIVOT> AS ?p_score{IDX})
+        }
+
+        <PIVOT_TO_TIME>
+        <TIME_FILTER>
+    }
+}

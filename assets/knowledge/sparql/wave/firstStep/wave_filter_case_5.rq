@@ -1,0 +1,17 @@
+#시간(이벤트) 사람
+select distinct ?tp where {
+    values ?image {<IMAGE_FILE_IRI>}
+    ?tp user:objectContent ?image .
+    ?tp rdf:type user:TakingPictures .
+
+    # Event time filter
+    ?tp time:hasBeginning/time:inXSDDateTimeStamp ?tp_begin .
+    ?tp time:hasEnd/time:inXSDDateTimeStamp ?tp_end .
+    ?event rdf:type/rdfs:subClassOf user:ScheduledEvent .
+    ?event time:inXSDBeginningDateTimeStamp ?event_begin .
+    ?event time:inXSDEndDateTimeStamp ?event_end .
+    FILTER( ?event_begin <= ?tp_end && ?event_end >= ?tp_begin).
+
+    # Person filter
+    ?tp user:withPerson ?person .
+}

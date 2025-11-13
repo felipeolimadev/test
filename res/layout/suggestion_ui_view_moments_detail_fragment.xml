@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/suggestion_ui_view_moments_detail_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/toolbar_layout" layout="@layout/suggestion_ui_view_moments_detail_toolbar" />
+        <com.samsung.android.smartsuggestions.feature.aisuggestion.ui.view.full.moments.detail.gridview.MomentsDetailListViewPager android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.google.android.material.textview.MaterialTextView android:textSize="@dimen/moments_indicator_text_size" android:textColor="@color/moments_detail_page_indicator_text_color" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/moments_indicator" android:background="@drawable/suggestion_ui_view_moments_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/moments_indicator_margin" android:textAlignment="center" android:elevation="@dimen/moments_indicator_elevation" android:paddingHorizontal="@dimen/moments_indicator_padding_horizontal" android:paddingVertical="@dimen/moments_indicator_padding_vertical" style="@style/MomentsRegularStyle" />
+</FrameLayout>

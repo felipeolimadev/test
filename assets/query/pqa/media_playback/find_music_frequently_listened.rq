@@ -1,0 +1,20 @@
+SELECT ?title ?artist ?album_title (COUNT(*) AS ?count) {
+    {
+        SELECT DISTINCT ?activity ?music_playback {
+            ?activity rdf:type user:ListeningToMusic .
+            ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+            ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+            ?activity user:objectContent ?music_playback .
+<LOCATION_FILTER>
+<TIME_FILTER>
+<EXERCISING_FILTER>
+<MOVING_FILTER>
+        }
+    }
+    BIND (COALESCE(STR(?music_playback), "_error_") AS ?music_playback_string)
+    TT music_playback_subgraph_find_all_by_iri {
+        ?title ?artist ?album_title ?thumbnail_uri ?duration ?time_mills ?music_playback_string
+    }
+} GROUP BY ?title ?artist ?album_title
+ORDER BY DESC(?count)
+<MAX_NUM_RESULTS>

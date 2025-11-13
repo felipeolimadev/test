@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_container" android:tag="layout/suggestion_ui_view_loading_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:shimmer_auto_start="true" app:shimmer_dropoff="0.6" app:shimmer_duration="1200" app:shimmer_intensity="0.2" app:shimmer_tilt="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/animation_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/greeting_subtitle_margin_top">
+        <include layout="@layout/suggestion_ui_view_loading_item" />
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

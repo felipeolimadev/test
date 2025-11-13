@@ -1,0 +1,7 @@
+{
+    ?tag_predicate rdfs:subPropertyOf content:recognized .
+    ?content ?tag_predicate ?iri .
+    ?iri rdf:type/rdfs:subClassOf content:ContentTag .
+    BIND(content:ContentTag AS ?iri_type)
+}
+

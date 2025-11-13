@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/flight_layout" android:tag="layout/suggestion_ui_view_moments_widget_flight_overlay_view_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/moments_widget_flight_overlay_layout_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/flight_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moments_flight" android:layout_marginHorizontal="@dimen/moments_widget_flight_overlay_margin_horizontal" android:layout_marginVertical="@dimen/moments_widget_flight_overlay_margin_vertical" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/flight_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/MomentsWidgetLocationOverlayTextStyle" />
+</LinearLayout>

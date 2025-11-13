@@ -1,0 +1,29 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    {
+        ?activity rdf:type/rdfs:subClassOf user:Staying .
+        ?activity time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+        ?activity time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+        <TIME_FILTER>
+        <EVENT_FILTER>
+        <LOCATION_FILTER>
+    }
+    {
+        ?s rdf:unknown? ?activity .
+        VALUES (?p) { (rdf:type) (user:atLocation) } .
+        ?s ?p ?o .
+    }
+    UNION
+    {
+        ?s rdf:unknown? ?activity .
+        VALUES ?p {time:inXSDBeginningDateTimeStamp} .
+        ?s time:hasBeginning/time:inXSDDateTimeStamp ?o .
+    }
+    UNION
+    {
+        ?s rdf:unknown? ?activity .
+        VALUES ?p {time:inXSDEndDateTimeStamp} .
+        ?s time:hasEnd/time:inXSDDateTimeStamp ?o .
+    }
+}
+<OUTPUT_SORT>

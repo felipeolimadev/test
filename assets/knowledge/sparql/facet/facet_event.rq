@@ -1,0 +1,16 @@
+SELECT DISTINCT ?event ?begin ?end ?fourWEvent {
+    VALUES ?image {<IMAGE_FILE_IRI>}
+    ?tp user:objectContent ?image .
+    ?tp a user:TakingPictures .
+
+    ?tp user:capturedToScheduled ?event .
+    ?event a/rdfs:subClassOf user:ScheduledEvent .
+    ?event time:inXSDBeginningDateTimeStamp ?begin .
+    ?event time:inXSDEndDateTimeStamp ?end .
+
+    {
+        SELECT ?event ?fourWEvent {
+            ?event user:extractedFrom ?fourWEvent .
+        } LIMIT 1
+    }
+}

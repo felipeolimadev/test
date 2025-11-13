@@ -1,0 +1,12 @@
+SELECT ((SUM (?duration_seconds) / 60) AS ?total_duration_minutes)
+WHERE {
+    ?staying rdf:type/rdfs:subClassOf user:Staying .
+    ?staying time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?staying time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+    <TIME_FILTER>
+    <LOCATION_FILTER>
+    <PERSON_FILTER>
+
+    BIND ( DURATION_SECONDS(?end_time - ?start_time) AS ?temp )
+    BIND( COALESCE(?temp, 0) AS ?duration_seconds )
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "pattern" : "(<date>)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "2",
+    "pattern" : "(<date>)\\s?um\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "3",
+    "pattern" : "am (<date>)\\s?,?\\s?(?:um|@)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "4",
+    "pattern" : "(<date>)\\s?,?\\s?(?:um|@)\\s?(<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "5",
+    "pattern" : "(<date>)\\s*,\\s*(<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "6",
+    "pattern" : "(?:vor|nach)\\s?(<time>)\\s?am\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },{
+    "id": "7",
+    "pattern" : "(<time>)\\s?am\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },{
+    "id": "8",
+    "pattern" : "(<time>)\\s?,?\\s?(<date>)",
+    "groupings" : [[2,1]]
+  },{
+   "id": "9",
+    "pattern" : "(<date>) ab (<time>)",
+    "groupings" : [[1,2]]
+  },{
+    "id": "11",
+    "pattern" : "(<date>),?((?:\\s?\\w*){0,2})\\s*(endet?|beginnt?)\\s?(?:um)?\\s*(<time>)",
+    "groupings" : [[1,3]],
+    "specialLengthCase" : true
+  },{
+    "id": "12",
+    "pattern" : "(<date>),?\\s*(?:endet?|beginnt?)\\s?(?:um)?\\s*(<time>)",
+    "groupings" : [[1,2]]
+  }
+]

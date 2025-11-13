@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.MaterialComponents.Light" android:id="@id/container" android:tag="layout/suggestion_ui_view_moments_weekly_content_list_item_image_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stateListAnimator="?seslLargeTouchAnimator" style="@style/Base.Theme.MomentsWeeklyCardItemStyle">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/content_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/moments_fg_grid_card_content_view" android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

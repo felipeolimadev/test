@@ -1,0 +1,10 @@
+{
+  "name": "RBoolean",
+  "type": "datatype",
+  "id": "datatype.primitive.RBoolean",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "boolean"
+  }
+}

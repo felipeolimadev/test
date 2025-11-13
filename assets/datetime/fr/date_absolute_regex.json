@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "((?:le\\s*)?(<num>)?[\\s]*(?:de|du|[\\/.-])?[\\s]*<num>[\\s]*(?:en|[\\/.-])[\\s]*<num>)",
+    "comment": "25.01.2025 | le 25 de 1 2025 | le 25 du 1 2025 | le 25/1 en 2024 "
+  },
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM_2",
+    "patternString": "((?:en|le\\s*)(<num>)?(?:,\\s*)?[\\s]*(?:le\\s*)[\\s]*<num>[\\s]*(?:[\\/.-])[\\s]*<num>)",
+    "comment": "en 2024, le 25/01 "
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_YEAR_KEYWORD_PRESENT_ALL_NUM",
+    "patternString": "(<time_period>)\\s*(<num>)[\\s]*[\\/|\\.|-]?[\\s]*(<time_period>)\\s*(<num>)[\\s]*[\\/|\\.|-]?[\\s]*(<time_period>)\\s*(<num>)",
+    "comment": "année 2025 / mois 02 / jour 20"
+  },
+  {
+    "id": 3,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "((?:le\\s*)?(<num>|<num_suffix>)(?:\\s*de)?[\\s]*(<month>)(?:\\s*de)?[\\s]*(<num>))",
+    "comment": "1 de enero de 2025"
+  },
+  {
+    "id": 4,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "((?:le\\s*)?(<num>)[\\s]*(?:[—,-])?[\\s]*(?:le|jour)?[\\s]*(<num>|<num_suffix>)[\\s]*(?:del?)?[\\s]*(<month>))",
+    "comment": "2025, 1 janiver | 2025, le 1 janiver | 2025, jour 1 janiver | 2025, le 1er janiver"
+  },
+  {
+    "id": 5,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "((?:le\\s*)?(<num>|<num_suffix>)[\\s]*(?:[—,-])?[\\s]*(<num>)[\\s]*(<month>))",
+    "comment": "1 2025 janiver | 1st, 2025 janiver"
+  },
+  {
+    "id": 6,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "((?:le\\s*)?<num>[\\s]*(?:[\\/\\.-])[\\s]*<num>)",
+    "comment": "le 5-2026"
+  },
+  {
+    "id": 7,
+    "type": "DAY_NUM_MONTH_WORD",
+    "patternString": "((?:le\\s*)?(<num_suffix>|<num>)[\\s]*(<month>))",
+    "comment": "1 mars"
+  },
+  {
+    "id": 8,
+    "type": "MONTH_WORD_YEAR_NUM",
+    "patternString": "((?:en|mois de)?<month>[\\s]*,?[\\s]*(<num>))",
+    "comment": "mars 2025 | en mars 2025"
+  },
+  {
+    "id": 9,
+    "type": "MONTH_WORD_DAY_NUM_KEYWORD_YEAR_NUM",
+    "patternString": "(<month>)[\\s]*(<time_period>)[\\s]*(?:le\\s*)?(<num>|<num_suffix>)\\)[,]?[\\s]*(<num>)",
+    "comment": "mars le 10, 2023"
+  },
+  {
+    "id": 10,
+    "type": "special_days",
+    "patternString": "(<time_period>)?[\\s]*(de l[oa]s?|del?)?[\\s]*(<special_day>)",
+    "comment": "NO formats encountered AS OF NOW"
+  },
+  {
+    "id": 11,
+    "type": "RELATIVE_DAY",
+    "patternString": "((<after_reference>|<before_reference>|<last_reference>|<current_reference>)?[-]?\\s*<relative_day>)",
+    "comment": "demain"
+  },
+  {
+    "id": 12,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString": "((?:le\\s*)?(<month>[.]?|<day_of_week>)[\\s]*(<relative>))",
+    "comment": "avril prochain(next april)"
+  },
+  {
+    "id": 13,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK_REVERSED",
+    "patternString": "(<month>[.]?|<day_of_week>)\\s*(?:del?)?\\s*(<relative>)",
+    "comment": "So far, no format of this kind"
+  },
+  {
+    "id": 14,
+    "type": "NUM_OR_RELATIVE_TIME_PERIOD_OR_MONTH",
+    "patternString": "((?:le\\s*)(<num>|<num_suffix>|<relative>)[\\s](<time_period>|<day_of_week>|<month>))",
+    "comment": "1.o domingo, 8da enero"
+  },
+  {
+    "id": 15,
+    "type": "YEAR_NUM_MONTH_NUM_OR_WORD_DAY_NUM",
+    "patternString": "((?:le\\s*)?(<num>)[\\s]*[,-—]?[\\s]*(<num>|<month>)[\\s]*(<num>))",
+    "comment": "2026, mayo de 23 | 2026, 1 de 23"
+  },
+  {
+    "id": 16,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString": "(<time_period>)[\\s]*(<num>|<num_suffix>)[\\s]*(?:de[\\s]*)?(<num>)?",
+    "comment": "mois 1 de 2026"
+  },
+  {
+    "id": 17,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "((<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*)(<num_suffix>|<num>)?\\s*(<month>|<day_of_week>)",
+    "comment": "Ce dimanche"
+  },
+  {
+    "id": 18,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH_REVERSED",
+    "patternString": "(<month>)(\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>))?",
+    "comment": "Ce dimanche"
+  },
+  {
+    "id": 19,
+    "type": "RELATIVE_TIME_PERIOD_OF_RELATIVE_TIME_PERIOD_YEAR_NUM(OPTIONAL)",
+    "patternString": "((?:le\\s*)?(<num>|<num_suffix>|<last_reference>)\\s*(<time_period>|<day_of_week>)?\\s*(?:de|du)?\\s*(<num>|<num_suffix>|<month>)\\s*(?:[,])?\\s*(<time_period>)?\\s*(<num>)?)",
+    "comment": "troisiÃ¨me lundi de Mai"
+  }
+]

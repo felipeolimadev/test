@@ -1,0 +1,15 @@
+SELECT ?s ?p ?o
+WHERE {
+    {
+        ?surfing rdf:type/rdfs:subClassOf user:SurfingInternet .
+        ?surfing time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+        ?surfing time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+        <TIME_FILTER>
+
+    }
+    {
+        ?surfing user:objectContent ?s .
+        ?s ?p ?o .
+    }
+}

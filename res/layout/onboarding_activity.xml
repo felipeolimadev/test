@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/onboarding_activity_0" android:scrollbars="none" android:fadingEdgeLength="@dimen/scroll_view_fading_edge_length" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:requiresFadingEdge="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/onboarding_container_margin_horizontal">
+        <Space android:id="@id/onboarding_contents_left_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/onboarding_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/onboarding_header_view_margin_top" android:minWidth="@dimen/full_view_content_space_min_width" android:layout_weight="4.0" app:layout_constraintTop_toTopOf="parent">
+            <com.airbnb.lottie.LottieAnimationView android:id="@id/onboarding_four_star_image" android:layout_width="@dimen/greeting_four_star_image_size" android:layout_height="@dimen/greeting_four_star_image_size" app:lottie_rawRes="@raw/intelligence_progress_color" />
+            <FrameLayout android:id="@id/onboarding_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.samsung.android.vanillavibes.motion.text.view.MotionTextView android:textSize="@dimen/onboarding_title_text_size" android:textColor="@color/onboarding_header_color" android:ellipsize="end" android:id="@id/onboarding_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/onboarding_header_max_line" android:textDirection="locale" android:paddingEnd="48.0dip" android:breakStrategy="simple" style="@style/TextAppearance.RobotoMedium" />
+                <ImageView android:id="@id/weather_icon" android:layout_width="@dimen/onboarding_weather_icon_size" android:layout_height="@dimen/onboarding_weather_icon_size" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/onboarding_sub_title_text_size" android:textColor="@color/onboarding_description_color" android:id="@id/onboarding_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/onboarding_description" style="@style/TextAppearance.RobotoRegular" />
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/onboarding_survey_button" android:clipChildren="false" android:layout_width="@dimen/onboarding_survey_button_container_width" android:layout_height="@dimen/onboarding_survey_button_container_height" android:layout_marginBottom="@dimen/onboarding_survey_button_margin_bottom">
+                <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center" android:id="@id/onboarding_survey_button_bg" android:background="@drawable/onboarding_survey_button_bg" android:layout_width="@dimen/onboarding_survey_button_width" android:layout_height="@dimen/onboarding_survey_button_height" android:scaleType="centerCrop" android:contentDescription="@null" android:stateListAnimator="?seslSmallTouchAnimator" />
+                <TextView android:textSize="@dimen/onboarding_survey_button_text_size" android:textColor="@color/onboarding_description_color" android:gravity="center" android:layout_gravity="center" android:id="@id/onboarding_survey_button_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onboarding_survey_button_text" style="@style/TextAppearance.RobotoMedium" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/survey_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/survey_items_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/on_boarding_survey_choose_interest_margin_top">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/onboarding_description_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/onboarding_survey_button_text" style="@style/TextAppearance.RobotoMedium" />
+                    <com.samsung.android.smartsuggestions.feature.aisuggestion.ui.onboarding.WrappingGridView android:gravity="center" android:id="@id/survey_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:verticalSpacing="24.0dip" android:numColumns="3" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="49.0dip" android:layout_marginBottom="12.0dip" android:layout_marginHorizontal="4.0dip">
+                    <Button android:textColor="@color/onboarding_cancel_text_color" android:id="@id/survey_cancel" android:background="@drawable/onboarding_button_bg" android:layout_width="80.0dip" android:layout_height="40.0dip" android:text="@string/onboarding_cancel_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <Button android:textColor="@color/onboarding_done_text_color" android:id="@id/survey_done" android:background="@drawable/onboarding_button_bg" android:layout_width="80.0dip" android:layout_height="40.0dip" android:text="@string/onboarding_done_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:id="@id/onboarding_contents_right_space" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

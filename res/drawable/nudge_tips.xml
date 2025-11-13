@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="69.0dip" android:width="68.0dip" android:viewportWidth="68.0" android:viewportHeight="69.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$nudge_tips__0" android:pathData="M8,0.5L60,0.5A8,8 0,0 1,68 8.5L68,60.5A8,8 0,0 1,60 68.5L8,68.5A8,8 0,0 1,0 60.5L0,8.5A8,8 0,0 1,8 0.5z" />
+    <path android:fillColor="#fffcfcff" android:pathData="M37.228,49.951C37.224,51.433 35.775,52.633 33.993,52.633C32.211,52.633 30.762,51.433 30.762,49.951V49.36H37.224L37.228,49.951ZM33.151,16.39C40.078,15.91 45.846,21.398 45.847,28.235C45.847,31.642 44.414,34.712 42.12,36.877C39.948,38.926 38.774,41.823 38.773,44.813V45.091H38.772V45.438C38.772,46.208 38.148,46.832 37.378,46.832H30.609C29.84,46.832 29.215,46.208 29.215,45.438V45.091H29.214V44.814C29.214,41.748 27.898,38.868 25.709,36.725C23.303,34.369 21.893,30.997 22.176,27.301C22.62,21.484 27.342,16.792 33.151,16.39Z" />
+</vector>

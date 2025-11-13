@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/app_suggestion_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_suggestion_item_imageView" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="5.0dip" />
+    <TextView android:textColor="@color/widget_suggestion_item_text_color" android:id="@id/app_suggestion_item_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+</LinearLayout>

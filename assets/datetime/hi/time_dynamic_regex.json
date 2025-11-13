@@ -1,0 +1,26 @@
+[
+  {
+    "patternName": "<<hourly_suffix>>",
+    "patternValue": [
+      "बजे"
+    ]
+  },
+  {
+    "patternName": "<<important_prepositions>>",
+    "patternValue": [
+      "में"
+    ]
+  },
+  {
+    "patternName": "<<time_specific_prepositions>>",
+    "patternValue": [
+      "तक"
+    ]
+  },
+  {
+    "patternName": "<<around_time>>",
+    "patternValue": [
+      "आसपास"
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+@prefix content: <http://pkg.samsung.com/content#> .
+@prefix contenttag: <http://pkg.samsung.com/content/contenttag#> .
+@prefix design: <http://pkg.samsung.com/design#> .
+
+contenttag:BIRTHDAY a content:ContentTag ;
+    content:hasPart contenttag:birthday,
+        contenttag:birthday_cakes,
+        contenttag:bouquets,
+        contenttag:cakes,
+        contenttag:celebrations,
+        contenttag:floral_arrangements,
+        contenttag:flowers,
+        contenttag:gift_boxes,
+        contenttag:gifts,
+        contenttag:party,
+        contenttag:party_hats,
+        contenttag:red_wines,
+        contenttag:white_wines,
+        contenttag:wine ;
+    design:subIndividualOf contenttag:SOCIAL .
+
+contenttag:ENTRANCE_CEREMONY a content:ContentTag ;
+    content:hasPart contenttag:bouquets,
+        contenttag:celebrations,
+        contenttag:ceremonies,
+        contenttag:crowds,
+        contenttag:flowers,
+        contenttag:graduation,
+        contenttag:podiums,
+        contenttag:suits ;
+    design:subIndividualOf contenttag:SOCIAL .
+
+contenttag:GRADUATION a content:ContentTag ;
+    content:hasPart contenttag:bouquets,
+        contenttag:celebrations,
+        contenttag:ceremonies,
+        contenttag:crowds,
+        contenttag:flowers,
+        contenttag:graduation,
+        contenttag:podiums,
+        contenttag:suits ;
+    design:subIndividualOf contenttag:SOCIAL .
+
+contenttag:WEDDING a content:ContentTag ;
+    content:hasPart contenttag:bouquets,
+        contenttag:brides,
+        contenttag:bridesmaids,
+        contenttag:cakes,
+        contenttag:champagne,
+        contenttag:crowds,
+        contenttag:floral_arrangements,
+        contenttag:flowers,
+        contenttag:grooms,
+        contenttag:hanbok,
+        contenttag:petals,
+        contenttag:rings,
+        contenttag:saris,
+        contenttag:suits,
+        contenttag:tiaras,
+        contenttag:tuxedos,
+        contenttag:veils,
+        contenttag:wedding,
+        contenttag:wedding_cakes,
+        contenttag:wedding_dresses ;
+    design:subIndividualOf contenttag:SOCIAL .
+
+contenttag:WEDDING_ANNIVERSARY a content:ContentTag ;
+    content:hasPart contenttag:bouquets,
+        contenttag:cakes,
+        contenttag:floral_arrangements,
+        contenttag:flowers,
+        contenttag:gift_boxes,
+        contenttag:gifts,
+        contenttag:petals,
+        contenttag:red_wines,
+        contenttag:roses,
+        contenttag:suits,
+        contenttag:white_wines,
+        contenttag:wine,
+        contenttag:wine_glasses ;
+    design:subIndividualOf contenttag:SOCIAL .
+
+contenttag:birthday a content:ContentTag .
+
+contenttag:birthday_cakes a content:ContentTag .
+
+contenttag:brides a content:ContentTag .
+
+contenttag:bridesmaids a content:ContentTag .
+
+contenttag:champagne a content:ContentTag .
+
+contenttag:grooms a content:ContentTag .
+
+contenttag:hanbok a content:ContentTag .
+
+contenttag:party a content:ContentTag .
+
+contenttag:party_hats a content:ContentTag .
+
+contenttag:rings a content:ContentTag .
+
+contenttag:roses a content:ContentTag .
+
+contenttag:saris a content:ContentTag .
+
+contenttag:tiaras a content:ContentTag .
+
+contenttag:tuxedos a content:ContentTag .
+
+contenttag:veils a content:ContentTag .
+
+contenttag:wedding a content:ContentTag .
+
+contenttag:wedding_cakes a content:ContentTag .
+
+contenttag:wedding_dresses a content:ContentTag .
+
+contenttag:wine_glasses a content:ContentTag .
+
+contenttag:ceremonies a content:ContentTag .
+
+contenttag:gift_boxes a content:ContentTag .
+
+contenttag:gifts a content:ContentTag .
+
+contenttag:graduation a content:ContentTag .
+
+contenttag:petals a content:ContentTag .
+
+contenttag:podiums a content:ContentTag .
+
+contenttag:red_wines a content:ContentTag .
+
+contenttag:white_wines a content:ContentTag .
+
+contenttag:wine a content:ContentTag .
+
+contenttag:cakes a content:ContentTag .
+
+contenttag:celebrations a content:ContentTag .
+
+contenttag:crowds a content:ContentTag .
+
+contenttag:floral_arrangements a content:ContentTag .
+
+contenttag:suits a content:ContentTag .
+
+contenttag:SOCIAL a content:ContentTag .
+
+contenttag:bouquets a content:ContentTag .
+
+contenttag:flowers a content:ContentTag .
+

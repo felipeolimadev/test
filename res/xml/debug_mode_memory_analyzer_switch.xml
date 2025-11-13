@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/memory_restore_original_settings">
+        <Preference android:title="@string/memory_restore_original_settings" android:key="key_debug_memory_set_default_analyzer_switch" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:key="key_preference_category_debug_memory_analyzer_switch" app:title="@string/memory_set_analyzer_on_off">
+        <SwitchPreference android:title="@string/develop_mode_select_all" android:key="key_debug_test_select_all_items" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

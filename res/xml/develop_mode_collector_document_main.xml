@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="Document">
+        <Preference android:title="@string/collector_viewer" android:key="key_document_viewer" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/collector_raw_database_export" android:key="key_document_export" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/appsearch_import" android:key="key_document_import" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

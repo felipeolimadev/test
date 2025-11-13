@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/background_shape_container" android:tag="layout/smart_suggestion_widget_setting_bg_shape_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/background_shape_text" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_background_shape" style="@style/SubHeaderStyle" />
+    <LinearLayout android:id="@id/background_shape_settings" android:background="@drawable/setting_background_item_round_corner_all" android:layout_width="fill_parent" android:layout_height="@dimen/widget_glance_settings_bg_shape_container_height">
+        <HorizontalScrollView android:scrollbarThumbHorizontal="@drawable/scrollbar_horizontal_thumb" android:id="@id/bg_shape_scroll_view" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/bg_shape_container" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/shape_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/widget_glance_settings_shape_item_margin_end" layout="@layout/smart_suggestion_widget_setting_bg_shape_container" />
+                <include android:id="@id/right_leaf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/widget_glance_settings_shape_item_margin_end" layout="@layout/smart_suggestion_widget_setting_bg_shape_container" />
+                <include android:id="@id/left_leaf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/widget_glance_settings_shape_item_margin_end" layout="@layout/smart_suggestion_widget_setting_bg_shape_container" />
+                <include android:id="@id/left_speech_balloon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/widget_glance_settings_shape_item_margin_end" layout="@layout/smart_suggestion_widget_setting_bg_shape_container" />
+                <include android:id="@id/right_speech_balloon" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/smart_suggestion_widget_setting_bg_shape_container" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

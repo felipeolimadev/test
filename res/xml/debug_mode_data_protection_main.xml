@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/per_app_secure_storage" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat android:title="@string/enable_secure_storage" android:key="key_enable_secure_storage" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/pass_directory" android:key="key_pass_directory" android:summary="@string/pass_directory_not_created" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/pass_directory_locked_status" android:key="key_pass_directory_locked_status" android:summary="@string/pass_directory_not_created" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pass_functions_test" app:iconSpaceReserved="false">
+        <Preference android:title="@string/create_pass_directory" android:key="key_create_pass_directory" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/lock_pass_directory" android:key="key_lock_pass_directory" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/unlock_pass_directory" android:key="key_unlock_pass_directory" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/release_pass_directory" android:key="key_release_pass_directory" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "type": "RELATIVE_TIME_PERIOD",
+    "patternString": "(?:\\s|^|\\.|,)(<num>|<num_suffix>)?\\s*(<time_period>)\\s*(?:और\\s*)?(<num>|<num_suffix>|a)?\\s*(<time_period>)?\\s*(?:और\\s*)?(<num>|<num_suffix>)?\\s*(?:के|की)?\\s*(<time_period>)?(<after_reference>|<before_reference>|<last_reference>|<current_reference>|<after_range>|<before_range>)(?:\\s|$|\\.|,)",
+    "mapping" : [
+        {
+          "periodAndDurationGroupings" : [
+            {
+              "timeDurationGroup": 1,
+              "timePeriodGroup": 2
+            },
+            {
+              "timeDurationGroup": 3,
+              "timePeriodGroup": 4
+            },
+            {
+              "timeDurationGroup": 5,
+              "timePeriodGroup": 6
+            }
+          ]
+      }
+    ],
+    "comment" : "after 2 days(2 महीने और 3 सप्ताह और 2 दिन बाद)"
+  },
+  {
+    "id" : 3,
+    "type" : "RELATIVE_REFERENCE_DAY_OF_WEEK",
+    "comment" : "next monday, previous friday",
+    "patternString" : "(?:\\s|^|\\.|,)\\s*(<last_reference>|<current_reference>|<after_range>|<before_range>)\\s*(<day_of_week>)"
+  }
+]

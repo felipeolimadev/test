@@ -1,0 +1,10 @@
+{
+  "name": "RList",
+  "type": "datatype",
+  "id": "datatype.primitive.RList",
+  "version": "",
+  "description": "",
+  "schema": {
+    "type": "object"
+  }
+}

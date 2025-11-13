@@ -1,0 +1,25 @@
+{
+  "name": "KnowledgeComparisonOperator",
+  "type": "datatype",
+  "id": "datatype.enumeration.KnowledgeComparisonOperator",
+  "version": "",
+  "description": "",
+  "schema": {
+    "enumeration": [
+      "IS_TYPE",
+      "IS_NOT_TYPE"
+    ],
+    "descriptions": [
+      {
+        "value": "IS_TYPE",
+        "description": "is type"
+      },
+      {
+        "value": "IS_NOT_TYPE",
+        "description": "is not type"
+      }
+    ],
+    "strict": true,
+    "type": "string"
+  }
+}

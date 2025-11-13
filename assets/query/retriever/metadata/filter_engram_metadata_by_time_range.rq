@@ -1,0 +1,20 @@
+SELECT DISTINCT ?engram_iri ?engram_id ?start_time ?end_time ?is_completed
+WHERE {
+    <ENGRAM_FILTER>
+    ?engram_iri rdf:type/rdfs:subClassOf ?engram_type .
+    ?engram_iri time:hasBeginning/time:inXSDDateTimeStamp ?start_time .
+    ?engram_iri time:hasEnd/time:inXSDDateTimeStamp ?end_time .
+
+    OPTIONAL {
+        ?engram_iri user:completed ?comp .
+    }
+
+    BIND (COALESCE (STRAFTER(STR(?engram_iri), "engram#"), "UNKNOWN") AS ?engram_id)
+    BIND (COALESCE (?comp, true) AS ?is_completed)
+
+    <TIME_FILTER>
+
+}
+<SIMPLE_SORT_METHOD>
+<OFFSET_STATEMENT>
+<LIMIT>

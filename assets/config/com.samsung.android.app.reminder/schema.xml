@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema name="com.samsung.android.app.reminder" package="" prefKey="reminder" version="21"
+    embConfigUri="content://com.samsung.android.app.reminder/open/view_search">
+    <permissions>
+        <readPermission name="com.samsung.android.app.reminder.permission.READ" />
+        <writePermission name="com.samsung.android.app.reminder.permission.WRITE" />
+    </permissions>
+
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer"/>
+
+    <fieldType name="string" dataType="String" class="StringField" />
+    <fieldType name="text" dataType="String" class="TextField" />
+    <fieldType name="long_stored" dataType="long" class="StoredField" />
+    <fieldType name="int_stored" dataType="int" class="StoredField" />
+    <fieldType name="multi_value_string" dataType="MultiValuedString" class="StringField" />
+    <fieldType name="multi_value_text" dataType="MultiValuedString" class="TextField" />
+    <fieldType name="int_compare_field" dataType="int" class="IntPoint" />
+
+    <fieldType name="keyword_field" dataType="String" class="TextField">
+        <analyzer type="index" class="core.KeywordAnalyzer" />
+    </fieldType>
+    <fieldType name="chosung" dataType="String" class="TextField">
+        <analyzer class="bs.korean.ChosungAnalyzer" keepOtherLang="true" removeSpace="true" removeNewLine="true"/>
+    </fieldType>
+    <fieldType name="chosung_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.korean.ChosungAnalyzer" keepOtherLang="true" removeSpace="true" removeNewLine="true"/>
+    </fieldType>
+
+    <fieldType name="phonetic" dataType="String" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="phonetic_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.core.PerLanguageAnalyzer">
+            <subAnalyzer class="bs.korean.phonetic.KoreanPhoneticAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.PhoneticAnalyzer" lang="la" />
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="pinyin" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer"
+            withMixed="true" keepOtherLang="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+    <fieldType name="pinyin_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.chinese.PinyinAnalyzer"
+            withMixed="true" keepOtherLang="true"/>
+        <analyzer type="search" class="core.SimpleAnalyzer" />
+    </fieldType>
+
+    <fieldType name="fuzzy" dataType="String" class="TextField" >
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+    <fieldType name="fuzzy_multi" dataType="MultiValuedString" class="TextField" >
+        <analyzer class="bs.korean.ConsonantAnalyzer" />
+    </fieldType>
+
+    <fieldType name="transliteration_field" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="app" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="app" />
+    </fieldType>
+    <fieldType name="transliteration_field_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.transliteration.TransliterationAnalyzer"
+            input="la" output="default" category="app" />
+        <analyzer type="search" class="bs.transliteration.TransliterationSearchAnalyzer"
+            input="la" output="default" category="app" />
+    </fieldType>
+
+    <fieldType name="per_language_field" dataType="String" class="TextField" >
+        <analyzer type="index" class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.YomiganaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        </analyzer>
+        <analyzer type="search" class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="core.KeywordAnalyzer" lang="ko" />
+            <subAnalyzer class="bs.latin.AccentSimpleAnalyzer" lang="la" />
+            <subAnalyzer class="bs.chinese.CjkAnalyzer" lang="zh" />
+            <subAnalyzer class="bs.japanese.KanaAnalyzer" lang="ja" normalize="true"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="hi"/>
+            <subAnalyzer class="standard.StandardAnalyzer" lang="standard"/>
+        </analyzer>
+    </fieldType>
+
+    <fieldType name="korean_decompose" dataType="String" class="TextField">
+        <analyzer class="bs.korean.KoreanDecompositionAnalyzer" morphemeAnalysis="false"
+            mergeOrigin="false" backwardNGram="true" />
+    </fieldType>
+    <fieldType name="korean_decompose_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.korean.KoreanDecompositionAnalyzer" morphemeAnalysis="false"
+            mergeOrigin="false" backwardNGram="true" />
+    </fieldType>
+    <fieldType name="kana" dataType="String" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer" normalize="true"/>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+    <fieldType name="kana_multi" dataType="MultiValuedString" class="TextField">
+        <analyzer type="index" class="bs.japanese.YomiganaAnalyzer" normalize="true"/>
+        <analyzer type="search" class="bs.japanese.KanaAnalyzer" normalize="true"/>
+    </fieldType>
+    <fieldType name="addr_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.reminder.ReminderAddressAnalyzer"/>
+    </fieldType>
+    <fieldType name="no_space_field" dataType="MultiValuedString" class="TextField">
+        <analyzer class="bs.LowerCaseNoSpaceAnalyzer" />
+    </fieldType>
+    <fieldType name="stemmer_field" dataType="String" class="TextField" >
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" stem="true"/>
+            <subAnalyzer class="core.KeywordAnalyzer" lang="default" />
+        </analyzer>
+    </fieldType>
+    <fieldType name="stemmer_multi" dataType="MultiValuedString" class="TextField" >
+        <analyzer class="bs.core.PerLanguageAnalyzer" removeSpecialChar="false">
+            <subAnalyzer class="bs.latin.LatinDefaultAnalyzer" lang="la" stem="true"/>
+            <subAnalyzer class="core.KeywordAnalyzer" lang="default" />
+        </analyzer>
+    </fieldType>
+
+    <!-- Field definition -->
+    <field name="_id" type="string" />
+
+    <field name="uuid" type="string" />
+
+    <field name="title" type="text" />
+    <field name="title_chosung" type="chosung" src="title" stored="false" />
+    <field name="title_phonetic" type="phonetic" src="title" stored="false" />
+    <field name="title_pinyin" type="pinyin" stored="false" />
+    <field name="title_fuzzy" type="fuzzy" src="title" stored="false" />
+    <field name="title_per_lang" type="per_language_field" src="title" stored="false" />
+    <field name="title_transliterated" type="transliteration_field" src="title" stored="false" />
+    <field name="title_decomposition" type="korean_decompose" src="title" stored="false" />
+    <field name="title_no_space" type="no_space_field" stored="false"/>
+    <field name="title_kana" type="kana" src="title" stored="false"/>
+    <field name="title_stemmer" type="stemmer_field" src="title" stored="false" />
+
+    <field name="item_color" type="int_stored" />
+    <field name="item_status" type="long_stored" sort="true" compare="true" />
+    <field name="main_image_name" type="keyword_field" />
+    <field name="main_image_type" type="int_stored" />
+
+    <field name="last_modified_time" type="long_stored" sort="true" />
+
+    <field name="address" type="addr_field" />
+    <field name="place_of_interest" type="text" />
+
+    <field name="occasion_name" type="text" />
+
+    <field name="remind_time" type="long_stored" compare="true" sort="true" />
+
+    <field name="year" type="string" />
+    <field name="month" type="string" />
+    <field name="num_of_day" type="string" />
+    <field name="day" type="string" />
+    <field name="hour" type="int_compare_field" />
+    <field name="minute" type="int_compare_field" />
+    <field name="second" type="int_compare_field" />
+
+    <field name="repeat_weekdays" type="int_stored" />
+    <field name="rrule" type="string" />
+
+    <field name="original_image_path" type="string" />
+
+    <field name="text" type="multi_value_text" />
+    <field name="contentsCheck" type="multi_value_text" />
+    <field name="contentsCheck_chosung" type="chosung_multi" src="contentsCheck" stored="false" />
+    <field name="contentsCheck_phonetic" type="phonetic_multi" src="contentsCheck" stored="false" />
+    <field name="contentsCheck_pinyin" type="pinyin_multi" stored="false" />
+    <field name="contentsCheck_fuzzy" type="fuzzy_multi" src="contentsCheck" stored="false" />
+    <field name="contentsCheck_kana" type="kana_multi" src="contentsCheck" stored="false" />
+    <field name="contentsCheck_transliterated" type="transliteration_field_multi"
+        src="contentsCheck" stored="false" />
+    <field name="contentsCheck_decomposition" type="korean_decompose_multi"
+        src="contentsCheck" stored="false" />
+    <field name="contentsCheck_no_space" type="no_space_field" stored="false"/>
+    <field name="contentsCheck_stemmer" type="stemmer_multi" src="contentsCheck" stored="false" />
+
+    <field name="isChecked" type="multi_value_string" />
+
+    <field name="app_card_type" type="multi_value_string" />
+    <field name="data1" type="multi_value_text" />
+    <field name="data2" type="multi_value_text" />
+    <field name="data3" type="multi_value_string" />
+    <field name="data4" type="multi_value_string" />
+    <field name="data5" type="multi_value_string" />
+
+    <field name="start_time" type="long_stored" compare="true" />
+    <field name="end_time" type="long_stored" compare="true" />
+    <field name="all_day" type="int_stored" />
+    <field name="contentsType" type="multi_value_string" />
+
+    <field name="space_id" type="string" />
+    <field name="group_id" type="string" />
+    <field name="color" type="int_stored"/>
+    <field name="name" type="string" />
+    <field name="order_index" type="int_stored" />
+    <field name="category_color" type="int_stored" />
+    <field name="content_uri" type="string" />
+
+    <!-- fields used for synchronization between index and data source  -->
+    <field name="$sync_id" type="long_stored" isNonNull="true" sort="true" />
+    <field name="$sync_timestamp" type="long_stored" isNonNull="true" sort="true" />
+
+    <sort>
+        <!-- default sort order -->
+        <sortedField name="_score" order="DESC" />
+        <sortedField name="item_status" order="ASC" />
+        <sortedField name="remind_time" order="DESC" />
+    </sort>
+
+</schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/suggestion_ui_view_moments_detail_item_listening_music_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/moments_history_item_padding_vertical">
+        <TextView android:ellipsize="end" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/MomentsDetailCarouselHistoryItemTitleStyle" />
+        <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/MomentsDetailCarouselHistoryItemArtistStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/moments_history_item_duration_padding_start">
+        <TextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MomentsDetailCarouselHistoryItemDurationStyle" />
+    </LinearLayout>
+</LinearLayout>

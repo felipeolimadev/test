@@ -1,0 +1,7 @@
+trip,旅游,旅行,travel
+wedding,结婚了,结婚典礼,婚礼活动,marriage ceremony,婚礼庆典,婚礼当天,尝试打结,婚礼,进行拼接,婚姻
+matriculation,entrance ceremony,入学典礼,入学仪式
+graduation,commencement,召集,毕业,毕业典礼,开始,毕业日
+出生日期,多布,birthday,出生纪念日,birth anniversary,出生周年纪念日,出生日,生日
+结婚纪念,wedding anniversary,结婚纪念日,marriage anniversary
+vacation, 假期

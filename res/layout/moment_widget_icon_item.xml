@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ai_suggestion_app_widget_icon_padding_horizontal_2_2" android:layout_marginBottom="2.0dip" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon_image" android:background="@drawable/moment_widget_image_shape" android:layout_width="@dimen/ai_suggestion_app_widget_image_size_2_2" android:layout_height="@dimen/ai_suggestion_app_widget_image_size_2_2" android:scaleType="centerCrop" android:clipToOutline="true" />
+    <ImageView android:background="@drawable/suggestion_ui_body_icon_moments_stroke" android:layout_width="@dimen/ai_suggestion_app_widget_image_size_2_2" android:layout_height="@dimen/ai_suggestion_app_widget_image_size_2_2" />
+</FrameLayout>

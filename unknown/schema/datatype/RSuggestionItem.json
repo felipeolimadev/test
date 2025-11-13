@@ -1,0 +1,61 @@
+{
+  "name": "RSuggestionItem",
+  "type": "datatype",
+  "id": "datatype.composite.RSuggestionItem",
+  "version": "",
+  "description": "",
+  "schema": {
+    "properties": {
+      "valid": {
+        "dataType": "datatype.primitive.RBoolean",
+        "description": ""
+      },
+      "score": {
+        "dataType": "datatype.primitive.RNumber",
+        "description": ""
+      },
+      "displayName": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "description": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "suggestionDataList": {
+        "dataType": "datatype.primitive.RList",
+        "description": ""
+      },
+      "extras": {
+        "dataType": "datatype.composite.RRawBytes",
+        "description": ""
+      },
+      "validTime": {
+        "dataType": "datatype.primitive.RNumber",
+        "description": ""
+      },
+      "id": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "title": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "iconUri": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "url": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      },
+      "backgroundUri": {
+        "dataType": "datatype.primitive.RString",
+        "description": ""
+      }
+    },
+    "required": [],
+    "type": "object"
+  }
+}

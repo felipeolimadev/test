@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/moments_now_brief_detail_time_location_icon_size" android:width="@dimen/moments_now_brief_detail_time_location_icon_size" android:viewportWidth="18.0" android:viewportHeight="18.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M3.398,7.702C3.398,9.842 5.025,11.644 5.088,11.712L8.5,15.632C8.807,15.99 9.233,15.99 9.56,15.631L12.907,11.719C12.977,11.644 14.605,9.842 14.605,7.702C14.605,4.613 12.091,2.1 9,2.1C5.911,2.1 3.398,4.613 3.398,7.702Z" android:strokeColor="@color/moments_detail_time_location_color" android:strokeWidth="1.1368421" android:fillType="nonZero" />
+    <path android:fillColor="#00000000" android:pathData="M6.75,7.701C6.75,6.46 7.758,5.452 9,5.452C10.243,5.452 11.25,6.46 11.25,7.701C11.25,8.945 10.243,9.952 9,9.952C7.758,9.952 6.75,8.945 6.75,7.701Z" android:strokeColor="@color/moments_detail_time_location_color" android:strokeWidth="1.1368421" android:fillType="evenOdd" />
+</vector>

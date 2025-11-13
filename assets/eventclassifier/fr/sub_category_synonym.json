@@ -1,0 +1,225 @@
+[
+    {
+        "category": "SOCIAL",
+        "synonyms": [
+            {
+                "event": "BIRTHDAY",
+                "words": [
+                    "anniversaire",
+                    "jour de naissance",
+                    "anniversaire de naissance",
+                    "date de naissance"
+                ],
+                "excludes": [
+                    "cadeau",
+                    "présent",
+                    "offrande",
+                    "préparer",
+                    "emballer",
+                    "choisir",
+                    "acheter",
+                    "magasin",
+                    "sélectionner",
+                    "acheter",
+                    "commander",
+                    "briefing",
+                    "revue",
+                    "présentation",
+                    "réunion",
+                    "fête"
+                ]
+            },
+            {
+                "event": "WEDDING_ANNIVERSARY",
+                "words": [
+                    "anniversaire de mariage",
+                    "cérémonie nuptiale"
+                ]
+            },
+            {
+                "event": "WEDDING",
+                "words": [
+                    "cérémonie de mariage",
+                    "jour de mariage",
+                    "événement de mariage",
+                    "célébration de mariage",
+                    "mariage",
+                    "noce",
+                    "se marier"
+                ]
+            },
+            {
+                "event": "ENTRANCE_CEREMONY",
+                "words": [
+                    "cérémonie d'entrée",
+                    "cérémonie d'admission",
+                    "cérémonie d'inscription"
+                ]
+            },
+            {
+                "event": "GRADUATION",
+                "words": [
+                    "commencement",
+                    "cérémonie de remise des diplômes",
+                    "convocation",
+                    "jour de remise des diplômes",
+                    "événement de remise des diplômes",
+                    "graduation"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "RESERVATION",
+        "synonyms": [
+            {
+                "event": "ACCOMMODATION",
+                "words": [
+                    "hôtel",
+                    "motel",
+                    "auberge",
+                    "Airbnb",
+                    "station balnéaire",
+                    "maison d'hôtes",
+                    "maison de vacances",
+                    "loge",
+                    "hébergement",
+                    "terrain de camping",
+                    "Marriott",
+                    "Hilton",
+                    "Accor",
+                    "InterContinental",
+                    "Wyndham",
+                    "Hyatt",
+                    "Rosewood",
+                    "Four Seasons",
+                    "Chase",
+                    "Sheraton",
+                    "ibis",
+                    "Trident",
+                    "Mandarin Oriental",
+                    "Vantage",
+                    "Baccarat",
+                    "Bianco",
+                    "Langham",
+                    "Jefferson",
+                    "Montage",
+                    "Radisson",
+                    "Hostelling International",
+                    "Aman",
+                    "The Brando",
+                    "Six Senses Douro Valley",
+                    "Soneva Fushi",
+                    "One&Only Reethi Rah",
+                    "Anantara",
+                    "The Ritz-Carlton",
+                    "chambre double",
+                    "chambre simple",
+                    "chambre fumeur",
+                    "chambre non fumeur",
+                    "vue sur l'océan",
+                    "vue sur la ville",
+                    "vue sur le jardin",
+                    "Mercure",
+                    "Novotel",
+                    "B&B",
+                    "Pullman",
+                    "Astotel",
+                    "Le Meridien"
+                ]
+            },
+            {
+                "event": "TRANSPORTATION",
+                "words": [
+                    "bus",
+                    "métro",
+                    "train",
+                    "tram",
+                    "taxi",
+                    "ferry",
+                    "bateau",
+                    "croisière",
+                    "avion",
+                    "vol",
+                    "vols",
+                    "téléphérique",
+                    "van",
+                    "Uber",
+                    "Lyft",
+                    "Greyhound",
+                    "Amtrak",
+                    "Yellow Cab",
+                    "passeport Muni",
+                    "navette",
+                    "Skyscanner",
+                    "ferries",
+                    "trolley",
+                    "Eurostar",
+                    "location de voitures",
+                    "limousine",
+                    "transport",
+                    "voies aériennes",
+                    "compagnie aérienne",
+                    "aéronef",
+                    "avion de ligne",
+                    "aéroport",
+                    "Air Canada",
+                    "Emirates",
+                    "Allegiant Air",
+                    "Endeavor Air",
+                    "classe économique",
+                    "classe affaires",
+                    "première classe",
+                    "embarquement",
+                    "départ",
+                    "arrivée",
+                    "décoller",
+                    "atterrissage",
+                    "bagage",
+                    "transit",
+                    "sans escale",
+                    "escale",
+                    "tarif",
+                    "aller-retour",
+                    "aller simple",
+                    "Air France",
+                    "Ryanair",
+                    "Wizz Air",
+                    "Corsair",
+                    "TGV",
+                    "SNCF",
+                    "OUIGO",
+                    "FlixBus",
+                    "Bolt",
+                    "Navigo"
+                ]
+            },
+            {
+                "event": "RESTAURANT",
+                "words": [
+                    "restaurant",
+                    "café",
+                    "bistro",
+                    "pub",
+                    "lounge",
+                    "cantine",
+                    "réfectoire",
+                    "trattoria",
+                    "brasserie",
+                    "bar",
+                    "pizzeria",
+                    "rôtisserie",
+                    "restaurant à viande",
+                    "salle à manger",
+                    "buffet",
+                    "service au volant",
+                    "ciné-parc",
+                    "brunch",
+                    "petit-déjeuner",
+                    "Yelp",
+                    "OpenTable"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,733 @@
+[
+  {
+    "persona": "사용자 1 - 직장인",
+    "repeat": 20,
+    "patterns": [
+      {
+        "pattern": "차에서 내리면 hotspot을 꺼요?",
+        "contexts": [
+          "car_ce/end"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "hotspot_on_v3",
+            "parameters": [
+              {
+                "key": "enable_mobile_hotspot",
+                "value": "false"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "집에서 나면 방해금지모드를 끄고 소리 모드로 바꿔요",
+        "contexts": [
+          "home_ce/end"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "dnd_mode_on_v3",
+            "parameters": [
+              {
+                "key": "dnd_intent_parameter",
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "회사에서 나가면 방해금지모드를 끄고 소리 모드로 바꿔요",
+        "contexts": [
+          "office_ce/end"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "dnd_mode_on_v3",
+            "parameters": [
+              {
+                "key": "dnd_intent_parameter",
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "차에 타면 Tmap을 켜고 유튜브 뮤직을 틀어요",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.skt.tmap.ku/com.skt.tmap.activity.TmapIntroActivity"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "play_media_v3",
+            "parameters": [
+              {
+                "key": "play_media",
+                "value": "com.google.android.apps.youtube.music"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "회사 도착 시 미디어음량을 0으로 줄여요",
+        "contexts": [
+          "office_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.android.settings",
+            "tag": "as_media_volume",
+            "parameters": [
+              {
+                "key": "volume_level_STREAM_MUSIC_SPEAKER",
+                "value": "0.0"
+              },
+              {
+                "key": "volume_level_STREAM_MUSIC_USB_HEADSET",
+                "value": "0.0"
+              },
+              {
+                "key": "volume_level_STREAM_MUSIC_BLUETOOTH",
+                "value": "0.0"
+              }
+            ],
+            "mandatory": "true"
+          },
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "집에 도착하면 소리 모드로 바꿔요",
+        "contexts": [
+          "home_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "사용자 2 - 주부",
+    "repeat": 20,
+    "patterns": [
+      {
+        "pattern": "일어나면 주식 앱을 켜요",
+        "contexts": [
+          "wakeup_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.samsungpop.android.mpop/com.samsungpop.phonelib.SSSmartActivity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "차에 타면, Kakao map을 켜요",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "net.daum.android.map/com.kakao.map.main.view.IntroActivity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "운동을 하면 유투브 뮤직을 켜고, 무음모드로 바꿔요",
+        "contexts": [
+          "exercising_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.apps.youtube.music/.activities.MusicActivity"
+              }
+            ]
+          },
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "pattern": "집에 도착하면 소리 모드로 바꿔요",
+        "contexts": [
+          "home_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Home",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "집에서 할 행동",
+        "contexts": [
+          "home_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "wifi_on_sdk3",
+            "parameters": [
+              {
+                "key": "toggle_value",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "bluetooth_on_v3",
+            "parameters": [
+              {
+                "key": "toggle_value",
+                "value": "false"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Office",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "사무실에서 수행될 액션.",
+        "contexts": [
+          "office_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "package": "com.android.settings",
+            "tag": "as_media_volume",
+            "parameters": [
+              {
+                "key": "volume_level_STREAM_MUSIC_SPEAKER",
+                "value": "0.0"
+              },
+              {
+                "key": "volume_level_STREAM_MUSIC_USB_HEADSET",
+                "value": "0.0"
+              },
+              {
+                "key": "volume_level_STREAM_MUSIC_BLUETOOTH",
+                "value": "0.0"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "wifi_on_sdk3",
+            "parameters": [
+              {
+                "key": "toggle_value",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "bluetooth_on_v3",
+            "parameters": [
+              {
+                "key": "toggle_value",
+                "value": "false"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "dnd_mode_on_v3",
+            "parameters": [
+              {
+                "key": "dnd_intent_parameter",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "nfc_on_off",
+            "parameters": [
+              {
+                "key": "enable_nfc",
+                "value": "true"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Car",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "운전 중 수행해야 하는 동작.",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.apps.maps/com.google.android.maps.MapsActivity"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "play_media_v3",
+            "parameters": [
+              {
+                "key": "play_media",
+                "value": "com.google.android.apps.youtube.music"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.apps.youtube.music/.activities.MusicActivity"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "separate_app_sound_v3",
+            "parameters": [
+              {
+                "key": "separate_app_sound_audio_type",
+                "value": "mobile"
+              },
+              {
+                "key": "separate_app_sound_package_list",
+                "value": "com.google.android.youtube"
+              }
+            ]
+          },
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Exercising",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "운동 중 수행해야 하는 동작.",
+        "contexts": [
+          "exercising_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.android.settings",
+            "tag": "as_volume",
+            "parameters": [
+              {
+                "key": "as_sound_mode",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "play_media_v3",
+            "parameters": [
+              {
+                "key": "play_media",
+                "value": "com.google.android.youtube"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "dnd_mode_on_v3",
+            "parameters": [
+              {
+                "key": "dnd_intent_parameter",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Before Bed",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "수면 시간 전에 수행해야 하는 동작.",
+        "contexts": [
+          "before_sleeping_time_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "dnd_mode_on_v3",
+            "parameters": [
+              {
+                "key": "dnd_intent_parameter",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "package": "com.android.settings",
+            "tag": "sec_eye_comfort_shield_routine",
+            "parameters": []
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "dark_mode_v3",
+            "parameters": [
+              {
+                "key": "enable_dark_mode",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.lool",
+            "tag": "dc_power_mode_action",
+            "parameters": [
+              {
+                "key": "toggle_value",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "package": "com.android.settings",
+            "tag": "sec_eye_comfort_shield_routine",
+            "parameters": [
+              {
+                "key": "blue_light_filter_switch",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.aodservice",
+            "tag": "aod_main_setting",
+            "parameters": [
+              {
+                "key": "aod_on_off",
+                "value": "1"
+              },
+              {
+                "key": "aod_display_mode",
+                "value": "1"
+              },
+              {
+                "key": "aod_orientation",
+                "value": "5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Wakeup",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "각성 시 수행해야 할 동작.",
+        "contexts": [
+          "wakeup_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.youtube/.app.honeycomb.Shell$HomeActivity"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "play_media_v3",
+            "parameters": [
+              {
+                "key": "play_media",
+                "value": "com.google.android.youtube"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Device status",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "연결된 장치에 대해 수행되는 동작.",
+        "contexts": [
+          "specific_bt_connected/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.youtube/.app.honeycomb.Shell$HomeActivity"
+              }
+            ]
+          },
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "play_media_v3",
+            "parameters": [
+              {
+                "key": "play_media",
+                "value": "com.google.android.youtube"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Tmap 데모",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "차에 타면 Tmap을 실행",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.skt.tmap.ku/com.skt.tmap.activity.TmapIntroActivity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Car filtering test blocked",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "차에 타면 Youtube를 실행",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.youtube/.app.honeycomb.Shell$HomeActivity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Car filtering test allowed",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "차에 타면 Kakao map 실행",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "net.daum.android.map/com.kakao.map.main.view.IntroActivity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "persona": "Car - Google Map",
+    "repeat": 5,
+    "patterns": [
+      {
+        "pattern": "차에 타면 google map 실행",
+        "contexts": [
+          "car_ce/start"
+        ],
+        "actions": [
+          {
+            "package": "com.samsung.android.app.routines",
+            "tag": "launch_app_v3",
+            "parameters": [
+              {
+                "key": "param_info",
+                "value": "com.google.android.apps.maps/com.google.android.maps.MapsActivity"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+]

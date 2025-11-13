@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="46.0dip" android:width="46.0dip" android:viewportWidth="46.0" android:viewportHeight="46.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$miniapp_lost_device_protection__0" android:pathData="M23,23m-23,0a23,23 0,1 1,46 0a23,23 0,1 1,-46 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffafaff" android:pathData="M28.897,11.205C30.689,11.205 32.141,12.657 32.141,14.449L32.141,30.962C32.141,32.753 30.689,34.205 28.897,34.205L17.103,34.205C15.311,34.205 13.859,32.753 13.859,30.962L13.859,14.449C13.859,12.657 15.311,11.205 17.103,11.205L28.897,11.205ZM22.586,17.197C21.468,17.733 20.401,18.112 19.121,18.311C18.64,18.385 18.282,18.801 18.282,19.297L18.282,22.923C18.282,24.657 19.019,26.173 20.472,27.43C21.321,28.165 22.229,28.632 22.751,28.848C22.912,28.914 23.088,28.914 23.249,28.848C23.771,28.632 24.68,28.165 25.529,27.43C26.982,26.173 27.718,24.657 27.718,22.923L27.718,19.297C27.718,18.801 27.36,18.385 26.88,18.311C25.6,18.112 24.533,17.733 23.413,17.197C23.152,17.071 22.848,17.071 22.586,17.197Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

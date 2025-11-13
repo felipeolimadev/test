@@ -1,0 +1,81 @@
+{
+  "absolute": [
+    {
+      "id": 1,
+      "key": "am_present",
+      "keywords":[
+        "a[.]?\\s*m[.]?",
+        "de la mañana",
+        "en la mañana",
+        "por la mañana",
+        "temprano en la mañana",
+        "a última hora de la mañana",
+        "por la mañana",
+        "la mañana",
+        "amanecer"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "pm_present",
+      "keywords":[
+        "p[.]?\\s*m[.]?",
+        "de la tarde",
+        "en la tarde",
+        "por la tarde",
+        "tarde",
+        "de la noche",
+        "en la noche",
+        "por la noche",
+        "noche",
+        "temprano de la noche",
+        "tarde de noche",
+        "madrugada",
+        "temprano de la mañana",
+        "temprano en la mañana",
+        "a última hora de la tarde",
+        "anochecer"
+      ]
+    }
+  ],
+  "special": [
+    {
+      "id": 1,
+      "key": "00:00:00:AM",
+      "keywords": [
+        "de la media noche",
+        "de la medianoche",
+        "en la media noche",
+        "en la medianoche",
+        "media noche",
+        "medianoche"
+      ]
+    },
+    {
+      "id": 2,
+      "key": "12:00:00:PM",
+      "keywords": [
+        "de la medio día",
+        "de la mediodía",
+        "en la medio día",
+        "en la mediodía",
+        "medio día",
+        "mediodía"
+      ]
+    },
+    {
+      "id": 3,
+      "key": "00:30:00:DELTA",
+      "keywords": [
+        "(?:un[a]?\\s*)?media\\s*hora"
+      ]
+    },
+    {
+      "id": 4,
+      "key": "00:01:00:DELTA",
+      "keywords": [
+        "un\\s*minuto"
+      ]
+    }
+  ]
+}

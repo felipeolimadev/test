@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Activity">
+        <item>UnknownActivity</item>
+        <item>StartingPlayingMusic</item>
+        <item>StoppingPlayingMusic</item>
+        <item>StartingPlayingVideo</item>
+        <item>StoppingPlayingVideo</item>
+        <item>StartingPlayingGame</item>
+        <item>StoppingPlayingGame</item>
+        <item>StartingExercise</item>
+        <item>StoppingExercise</item>
+        <item>GoingToBed</item>
+        <item>WakingUp</item>
+        <item>StartingOnlineShopping</item>
+        <item>StoppingOnlineShopping</item>
+        <item>StartingWalking</item>
+        <item>StoppingWalking</item>
+        <item>BluetoothDeviceConnected</item>
+        <item>BluetoothDeviceDisconnected</item>
+        <item>FirstPickup</item>
+    </string-array>
+    <string-array name="AppAction">
+        <item>UnknownAppAction</item>
+    </string-array>
+    <string-array name="DailyTime">
+        <item>UnknownDailyTime</item>
+        <item>EarlyMorning</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>LateAfternoon</item>
+        <item>Evening</item>
+        <item>LateEvening</item>
+        <item>MidNight</item>
+    </string-array>
+    <string-array name="DayOfWeek">
+        <item>UnknownDayOfWeek</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="EventTime">
+        <item>UnknownEventTime</item>
+        <item>CommutingTime</item>
+        <item>RestingTime</item>
+        <item>WorkingTime</item>
+        <item>BeforeBedtime</item>
+    </string-array>
+    <string-array name="Location">
+        <item>UnknownLocation</item>
+        <item>Home</item>
+        <item>NearHome</item>
+        <item>Office</item>
+        <item>NearWork</item>
+        <item>Car</item>
+    </string-array>
+    <string-array name="Weather">
+        <item>UnknownWeather</item>
+        <item>Sunny</item>
+        <item>Cloudy</item>
+        <item>Raining</item>
+        <item>Thunder</item>
+        <item>Snowing</item>
+        <item>Windy</item>
+    </string-array>
+    <string-array name="WeeklyTime">
+        <item>UnknownWeeklyTime</item>
+        <item>Weekday</item>
+        <item>Weekend</item>
+    </string-array>
+    <string-array name="Widget">
+        <item>UnknownWidget</item>
+    </string-array>
+    <array name="ai_nudge_glow_colors">
+        <item>@color/ai_nudge_glow_color_e</item>
+        <item>@color/ai_nudge_glow_color_a</item>
+        <item>@color/ai_nudge_glow_color_b</item>
+        <item>@color/ai_nudge_glow_color_c</item>
+        <item>@color/ai_nudge_glow_color_d</item>
+        <item>@color/ai_nudge_glow_color_e</item>
+    </array>
+    <array name="app_widget_autosize_subtext_sizes">
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_3</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_2</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_1</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small</item>
+    </array>
+    <array name="app_widget_autosize_text_sizes">
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_4</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_3</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_2</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_1</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_medium</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_large</item>
+    </array>
+    <array name="app_widget_autosize_text_sizes_2_2">
+        <item>@dimen/ai_suggestion_app_widget_text_size_small</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_medium</item>
+    </array>
+    <array name="app_widget_cold_start_autosize_text_sizes">
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_4</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_3</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_2</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small_1</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_small</item>
+        <item>@dimen/ai_suggestion_app_widget_text_size_medium</item>
+    </array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="basicdomain_pet_usecase_list">
+        <item>GetMyPetUseCase</item>
+    </string-array>
+    <string-array name="contact_channel_list">
+        <item>ALL</item>
+        <item>CALL</item>
+        <item>MESSAGE</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="day_of_week_list">
+        <item>MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item>THURSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="dropdown_activity_type">
+        <item>All</item>
+        <item>Booking</item>
+        <item>Eating</item>
+        <item>Exercising</item>
+        <item>ListeningToMusic</item>
+        <item>Moving</item>
+        <item>Paying</item>
+        <item>PlayingGame</item>
+        <item>Sleeping</item>
+        <item>SpeakingOnPhone</item>
+        <item>Staying</item>
+        <item>TakingPictures</item>
+        <item>WatchingVideo</item>
+        <item>SurfingInternet</item>
+        <item>Searching</item>
+    </string-array>
+    <string-array name="dropdown_domain_data_type">
+        <item>All Activities</item>
+        <item>Booking</item>
+        <item>Eating</item>
+        <item>Exercising</item>
+        <item>ListeningToMusic</item>
+        <item>Moving</item>
+        <item>Paying</item>
+        <item>PlayingGame</item>
+        <item>Sleeping</item>
+        <item>SpeakingOnPhone</item>
+        <item>Staying</item>
+        <item>TakingPictures</item>
+        <item>WatchingVideo</item>
+        <item>SharingContents</item>
+        <item>SurfingInternet</item>
+        <item>FourWEvent</item>
+        <item>CallLog</item>
+        <item>MediaObject</item>
+        <item>Message</item>
+        <item>MusicPlayback</item>
+        <item>ScheduledEvent</item>
+        <item>ScheduledTravel</item>
+        <item>ImageFile</item>
+        <item>Location</item>
+        <item>Person</item>
+        <item>Engram</item>
+        <item>GeneralEngram</item>
+        <item>SpecialEngram</item>
+        <item>TravelEngram</item>
+        <item>Searching</item>
+    </string-array>
+    <string-array name="dropdown_options">
+        <item>-1m</item>
+        <item>-6m</item>
+        <item>-1y</item>
+        <item>-2y</item>
+        <item>-3y</item>
+    </string-array>
+    <string-array name="entertainment_usecase_list">
+        <item>GetTopMusicsUseCase</item>
+        <item>GetTopVideosUseCase</item>
+        <item>GetTopArtistsUseCase</item>
+        <item>RankDayOfWeekEntertainmentsUseCase</item>
+        <item>RankTimeOfDayEntertainmentsUseCase</item>
+        <item>GetAllMediaEntertainments</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="interest_data_source_list">
+        <item>ALL</item>
+        <item>APP_USAGE</item>
+        <item>MUSIC</item>
+        <item>YOUTUBE</item>
+        <item>WEB_HISTORY</item>
+        <item>GALLERY_POI</item>
+        <item>CE_EXERCISE</item>
+        <item>GALLERY_CMH</item>
+        <item>NOW_BAR_SPORTS</item>
+        <item>NOTIFICATION</item>
+    </string-array>
+    <string-array name="media_type_list">
+        <item>MUSIC</item>
+        <item>VIDEO</item>
+    </string-array>
+    <array name="meshGradientAfternoon">
+        <item>@color/ai_suggestion_background_afternoon_a</item>
+        <item>@color/ai_suggestion_background_afternoon_b</item>
+        <item>@color/ai_suggestion_background_afternoon_topping</item>
+    </array>
+    <array name="meshGradientAfternoonDark">
+        <item>@color/ai_suggestion_background_afternoon_dark_a</item>
+        <item>@color/ai_suggestion_background_afternoon_dark_b</item>
+        <item>@color/ai_suggestion_background_afternoon_dark_topping</item>
+    </array>
+    <array name="meshGradientBg">
+        <item>@array/meshGradientMorning</item>
+        <item>@array/meshGradientAfternoon</item>
+        <item>@array/meshGradientEvening</item>
+        <item>@array/meshGradientMorningWeekend</item>
+        <item>@array/meshGradientMorningDark</item>
+        <item>@array/meshGradientAfternoonDark</item>
+        <item>@array/meshGradientEveningDark</item>
+    </array>
+    <array name="meshGradientEvening">
+        <item>@color/ai_suggestion_background_evening_a</item>
+        <item>@color/ai_suggestion_background_evening_b</item>
+        <item>@color/ai_suggestion_background_evening_topping</item>
+    </array>
+    <array name="meshGradientEveningDark">
+        <item>@color/ai_suggestion_background_evening_dark_a</item>
+        <item>@color/ai_suggestion_background_evening_dark_b</item>
+        <item>@color/ai_suggestion_background_evening_dark_topping</item>
+    </array>
+    <array name="meshGradientMorning">
+        <item>@color/ai_suggestion_background_morning_a</item>
+        <item>@color/ai_suggestion_background_morning_b</item>
+        <item>@color/ai_suggestion_background_morning_topping</item>
+    </array>
+    <array name="meshGradientMorningDark">
+        <item>@color/ai_suggestion_background_morning_dark_a</item>
+        <item>@color/ai_suggestion_background_morning_dark_b</item>
+        <item>@color/ai_suggestion_background_morning_dark_topping</item>
+    </array>
+    <array name="meshGradientMorningWeekend">
+        <item>@color/ai_suggestion_background_morning_weekend_a</item>
+        <item>@color/ai_suggestion_background_morning_weekend_b</item>
+        <item>@color/ai_suggestion_background_morning_weekend_topping</item>
+    </array>
+    <string-array name="mobility_usecase_list">
+        <item>GetDrivingProbabilityUseCase</item>
+        <item>GetDrivingContextUseCase</item>
+    </string-array>
+    <string-array name="notification_log_debugger_filter">
+        <item>All</item>
+        <item>NotificationInferenceProcessor</item>
+        <item>GetFinancialTransactionAnalysis</item>
+        <item>GetTradingAnalysis</item>
+        <item>GetDeliveryAnalysis</item>
+        <item>GetRelationAnalysis</item>
+        <item>Exceptions</item>
+    </string-array>
+    <array name="offline_ai_features" />
+    <array name="online_ai_features" />
+    <string-array name="person_link_use_case_list">
+        <item>IsLinkedUseCase</item>
+        <item>LinkUseCase</item>
+        <item>UnlinkUseCase</item>
+        <item>GetUnlinkedPersonsByNameUseCase</item>
+        <item>SendUserFeedbackUseCase</item>
+    </string-array>
+    <string-array name="pet_usecase_list">
+        <item>GetClusteredPetUseCase</item>
+        <item>GetPetListUseCase</item>
+    </string-array>
+    <string-array name="place_by_location_usecase_list">
+        <item>GetPlacesUseCase-VisitedPlace</item>
+        <item>GetPlacesUseCase-Photo</item>
+        <item>GetPlaceCategoriesUseCase</item>
+        <item>GetHomeUseCase</item>
+        <item>GetWorkUseCase</item>
+    </string-array>
+    <string-array name="place_category_list">
+        <item>UNKNOWN</item>
+        <item>ADMINISTRATIVE</item>
+        <item>AMUSEMENT_PARK</item>
+        <item>AQUARIUM</item>
+        <item>BEACH</item>
+        <item>BUILDING</item>
+        <item>CAMPSITE</item>
+        <item>CASTLE</item>
+        <item>GOLF_CLUB</item>
+        <item>HISTORIC_SITE</item>
+        <item>HOSPITAL</item>
+        <item>ISLAND</item>
+        <item>LAKE</item>
+        <item>MOUNTAIN</item>
+        <item>MUSEUM</item>
+        <item>NATURAL_PARK</item>
+        <item>NEIGHBORHOOD</item>
+        <item>OUTLET</item>
+        <item>RESORT</item>
+        <item>REST_AREA</item>
+        <item>SHOPPING_MALL</item>
+        <item>STREET</item>
+        <item>TEMPLE</item>
+        <item>TOWER</item>
+        <item>UNIVERSITY</item>
+        <item>ZOO</item>
+    </string-array>
+    <string-array name="place_usecase_list">
+        <item>GetPlacesUseCase</item>
+        <item>GetPlaceCategoriesUseCase</item>
+        <item>GetPlacesByCategoryUseCase</item>
+        <item>GetPlacesByDayOfWeekUseCase</item>
+        <item>GetPlaceRecordsUseCase</item>
+    </string-array>
+    <string-array name="preference_database_table_list">
+        <item>all tables</item>
+        <item>contact_person</item>
+        <item>base_communication_behavior</item>
+        <item>call_communication_behavior</item>
+        <item>message_communication_behavior</item>
+        <item>im_communication_behavior</item>
+        <item>exercises</item>
+        <item>gallery_pet</item>
+        <item>media_entertainment</item>
+        <item>mobility_history</item>
+        <item>my_pet_cluster</item>
+        <item>my_pet_cluster_info</item>
+        <item>place</item>
+        <item>place_poi</item>
+        <item>place_record</item>
+        <item>gallery_scene_cluster</item>
+        <item>sports</item>
+        <item>sports_team</item>
+        <item>web_history</item>
+        <item>interest_data_source</item>
+        <item>interest_record</item>
+        <item>interest_detail</item>
+        <item>cached_app_category</item>
+        <item>app_usage_history</item>
+    </string-array>
+    <string-array name="preference_level_list">
+        <item>LOW</item>
+        <item>MID</item>
+        <item>HIGH</item>
+    </string-array>
+    <string-array name="resource_list">
+        <item>@string/Acres</item>
+        <item>@string/Acre</item>
+        <item>@string/Algerian_dinar</item>
+        <item>@string/Ares</item>
+        <item>@string/Are</item>
+        <item>@string/Argentine_peso</item>
+        <item>@string/Australian_dollar</item>
+        <item>@string/Bahraini_dinar</item>
+        <item>@string/Bits</item>
+        <item>@string/Brazilian_real</item>
+        <item>@string/British_pound</item>
+        <item>@string/Brunei_dollar</item>
+        <item>@string/Bulgarian_lev</item>
+        <item>@string/Bytes</item>
+        <item>@string/Cambodian_riel</item>
+        <item>@string/Canadian_dollar</item>
+        <item>@string/Celsius</item>
+        <item>@string/Centimeters</item>
+        <item>@string/Centimeter</item>
+        <item>@string/Chilean_peso</item>
+        <item>@string/Chinese_yuan</item>
+        <item>@string/Colombian_peso</item>
+        <item>@string/Costa_Rican_colón</item>
+        <item>@string/Croatian_kuna</item>
+        <item>@string/Cubic_centimeters</item>
+        <item>@string/Cubic_feet</item>
+        <item>@string/Cubic_foot</item>
+        <item>@string/Cubic_inches</item>
+        <item>@string/Cubic_inch</item>
+        <item>@string/Cubic_meters</item>
+        <item>@string/Czech_koruna</item>
+        <item>@string/Danish_krone</item>
+        <item>@string/Days</item>
+        <item>@string/Decreasing_installments</item>
+        <item>@string/Each</item>
+        <item>@string/Egyptian_pound</item>
+        <item>@string/Equal_installments</item>
+        <item>@string/Fahrenheit</item>
+        <item>@string/Feet</item>
+        <item>@string/Feet_per_hour</item>
+        <item>@string/Feet_per_second</item>
+        <item>@string/Foot</item>
+        <item>@string/Gibibytes</item>
+        <item>@string/Gigabytes</item>
+        <item>@string/Grams</item>
+        <item>@string/Gram</item>
+        <item>@string/Hectares</item>
+        <item>@string/Hectare</item>
+        <item>@string/HK_dollar</item>
+        <item>@string/Hours</item>
+        <item>@string/Hungarian_forint</item>
+        <item>@string/Icelandic_króna</item>
+        <item>@string/Inches</item>
+        <item>@string/Inches_per_hour</item>
+        <item>@string/Inches_per_second</item>
+        <item>@string/Inch</item>
+        <item>@string/Indian_rupee</item>
+        <item>@string/Indonesian_rupiah</item>
+        <item>@string/Iraqi_dinar</item>
+        <item>@string/Israeli_new_sheqel</item>
+        <item>@string/Japanese_yen</item>
+        <item>@string/Jordanian_dinar</item>
+        <item>@string/Kelvin</item>
+        <item>@string/Kenyan_shilling</item>
+        <item>@string/Kibibytes</item>
+        <item>@string/Kilobytes</item>
+        <item>@string/Kilograms</item>
+        <item>@string/Kilogram</item>
+        <item>@string/Kilometers</item>
+        <item>@string/Kilometers_per_hour</item>
+        <item>@string/Kilometers_per_second</item>
+        <item>@string/Kilometer</item>
+        <item>@string/Knots</item>
+        <item>@string/Korean_won</item>
+        <item>@string/Kuwaiti_dinar</item>
+        <item>@string/Laotian_kip</item>
+        <item>@string/Lebanese_pound</item>
+        <item>@string/Liters</item>
+        <item>@string/Macanese_pataca</item>
+        <item>@string/Malaysian_ringgit</item>
+        <item>@string/Mebibytes</item>
+        <item>@string/Megabytes</item>
+        <item>@string/Meters</item>
+        <item>@string/Meters_per_hour</item>
+        <item>@string/Meters_per_second</item>
+        <item>@string/Meter</item>
+        <item>@string/Mexican_peso</item>
+        <item>@string/Miles</item>
+        <item>@string/Miles_per_hour</item>
+        <item>@string/Miles_per_second</item>
+        <item>@string/Mile</item>
+        <item>@string/Milliliters</item>
+        <item>@string/Millimeters</item>
+        <item>@string/Millimeter</item>
+        <item>@string/Milliseconds</item>
+        <item>@string/Mils</item>
+        <item>@string/Mil</item>
+        <item>@string/Minutes</item>
+        <item>@string/Moroccan_dirham</item>
+        <item>@string/Move_cursor_left</item>
+        <item>@string/Move_cursor_right</item>
+        <item>@string/Myanmar_kyat</item>
+        <item>@string/Nautical_miles</item>
+        <item>@string/Nautical_mile</item>
+        <item>@string/New_Taiwan_dollar</item>
+        <item>@string/New_Zealand_dollar</item>
+        <item>@string/Norwegian_krone</item>
+        <item>@string/Omani_rial</item>
+        <item>@string/Ounces</item>
+        <item>@string/Ounce</item>
+        <item>@string/years_and_months</item>
+        <item>@string/People</item>
+        <item>@string/Person</item>
+        <item>@string/Philippine_peso</item>
+        <item>@string/Polish_zloty</item>
+        <item>@string/Pounds</item>
+        <item>@string/Pound</item>
+        <item>@string/Qatari_rial</item>
+        <item>@string/Romanian_leu</item>
+        <item>@string/Russian_ruble</item>
+        <item>@string/Saudi_riyal</item>
+        <item>@string/Seconds</item>
+        <item>@string/Serbian_dinar</item>
+        <item>@string/Singapore_dollar</item>
+        <item>@string/South_African_rand</item>
+        <item>@string/Square_centimeters</item>
+        <item>@string/Square_centimeter</item>
+        <item>@string/Square_feet</item>
+        <item>@string/Square_foot</item>
+        <item>@string/Square_inches</item>
+        <item>@string/Square_inch</item>
+        <item>@string/Square_meters</item>
+        <item>@string/Square_meter</item>
+        <item>@string/Sri_Lankan_rupee</item>
+        <item>@string/Subtotal</item>
+        <item>@string/Swedish_krona</item>
+        <item>@string/Swiss_franc</item>
+        <item>@string/Syrian_pound</item>
+        <item>@string/Tanzanian_shilling</item>
+        <item>@string/Tebibytes</item>
+        <item>@string/Terabytes</item>
+        <item>@string/Thai_baht</item>
+        <item>@string/Tip_amount</item>
+        <item>@string/Tons</item>
+        <item>@string/Total</item>
+        <item>@string/Total_amount_to_pay</item>
+        <item>@string/Turkish_lira</item>
+        <item>@string/UAE_dirham</item>
+        <item>@string/UK_gallons</item>
+        <item>@string/UK_gallon</item>
+        <item>@string/UK_tons</item>
+        <item>@string/UK_ton</item>
+        <item>@string/US_dollar</item>
+        <item>@string/US_gallons</item>
+        <item>@string/US_gallon</item>
+        <item>@string/US_tons</item>
+        <item>@string/US_ton</item>
+        <item>@string/Vietnamese_dong</item>
+        <item>@string/Weeks</item>
+        <item>@string/Yards</item>
+        <item>@string/Yard</item>
+        <item>@string/Zambian_kwacha</item>
+        <item>@string/Square_kilometers</item>
+        <item>@string/Square_yards</item>
+        <item>@string/Square_miles</item>
+        <item>@string/Cubic_millimeters</item>
+        <item>@string/Cubic_kilometers</item>
+        <item>@string/Cubic_yards</item>
+        <item>@string/Cubic_miles</item>
+        <item>@string/Imperial_quarts</item>
+        <item>@string/US_liquid_quarts</item>
+        <item>@string/Imperial_pints</item>
+        <item>@string/US_liquid_pints</item>
+        <item>@string/Imperial_fluid_ounce</item>
+        <item>@string/US_fluid_ounce</item>
+        <item>@string/Metric_tablespoons</item>
+        <item>@string/Imperial_tablespoons</item>
+        <item>@string/US_tablespoons</item>
+        <item>@string/Metric_teaspoons</item>
+        <item>@string/Imperial_teaspoons</item>
+        <item>@string/US_teaspoons</item>
+        <item>@string/Milligrams</item>
+        <item>@string/Petabytes</item>
+        <item>@string/Kilobits_per_second</item>
+        <item>@string/Megabits_per_second</item>
+        <item>@string/Gigabits_per_second</item>
+        <item>@string/Terabits_per_second</item>
+        <item>@string/Petabits_per_second</item>
+        <item>@string/Kilobytes_per_second</item>
+        <item>@string/Megabytes_per_second</item>
+        <item>@string/Gigabytes_per_second</item>
+        <item>@string/Terabyte_per_second</item>
+        <item>@string/Petabyte_per_second</item>
+    </string-array>
+    <string-array name="social_usecase_list">
+        <item>GetRecentContactsUseCase</item>
+        <item>GetFrequentContactsUseCase</item>
+        <item>GetMostContactsUseCase</item>
+        <item>GetUpcomingContactsUseCase</item>
+        <item>GetContactPeriodUseCase</item>
+        <item>GetFrequentContactsByLevelUseCase</item>
+        <item>GetLastContactChannelUseCase</item>
+        <item>GetMostContactChannelUseCase</item>
+    </string-array>
+    <string-array name="solar_terms_24_title_array">
+        <item>@string/chn_24solarterms_minor_cold</item>
+        <item>@string/chn_24solarterms_major_cold</item>
+        <item>@string/chn_24solarterms_start_of_spring</item>
+        <item>@string/chn_24solarterms_rain_water</item>
+        <item>@string/chn_24solarterms_awakening_of_insects</item>
+        <item>@string/chn_24solarterms_equinox</item>
+        <item>@string/chn_24solarterms_pur_brightness</item>
+        <item>@string/chn_24solarterms_grain_rain</item>
+        <item>@string/chn_24solarterms_start_of_summer</item>
+        <item>@string/chn_24solarterms_grain_full</item>
+        <item>@string/chn_24solarterms_grain_in_ear</item>
+        <item>@string/chn_24solarterms_summer_solstice</item>
+        <item>@string/chn_24solarterms_minor_heat</item>
+        <item>@string/chn_24solarterms_major_heat</item>
+        <item>@string/chn_24solarterms_start_of_autumn</item>
+        <item>@string/chn_24solarterms_limit_oh_heat</item>
+        <item>@string/chn_24solarterms_white_dew</item>
+        <item>@string/chn_24solarterms_autumnal_equinox</item>
+        <item>@string/chn_24solarterms_cold_dew</item>
+        <item>@string/chn_24solarterms_frost_descent</item>
+        <item>@string/chn_24solarterms_start_of_winter</item>
+        <item>@string/chn_24solarterms_minor_snow</item>
+        <item>@string/chn_24solarterms_major_snow</item>
+        <item>@string/chn_24solarterms_winter_solstice</item>
+    </string-array>
+    <string-array name="supportAppWidgetCellSizeArray">
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>4x2</item>
+    </string-array>
+    <string-array name="supportCellSizeArray">
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>4x2</item>
+    </string-array>
+    <string-array name="templates_person">
+        <item>{person}</item>
+    </string-array>
+    <string-array name="templates_person_place">
+        <item>{person} {place}의 추억</item>
+        <item>{place} {person} 추억</item>
+        <item>{person} {place}의 추억</item>
+    </string-array>
+    <string-array name="templates_person_place_time">
+        <item>{time}, {place} {person} 기억</item>
+        <item>{time}, {place} {person} 추억</item>
+    </string-array>
+    <string-array name="templates_person_time">
+        <item>{time}, {person} 기억</item>
+        <item>{time}, {person} 추억</item>
+    </string-array>
+    <string-array name="templates_place">
+        <item>{place}</item>
+    </string-array>
+    <string-array name="templates_place_time">
+        <item>{time} {place} 방문</item>
+        <item>{place} {time} 기억</item>
+    </string-array>
+    <string-array name="templates_time">
+        <item>{time}</item>
+    </string-array>
+    <string-array name="unit_list">
+        <item>Acres</item>
+        <item>Acre</item>
+        <item>Algerian dinar</item>
+        <item>Ares</item>
+        <item>Are</item>
+        <item>Argentine peso</item>
+        <item>Australian dollar</item>
+        <item>Bahraini dinar</item>
+        <item>Bit</item>
+        <item>Brazilian real</item>
+        <item>British pound</item>
+        <item>Brunei dollar</item>
+        <item>Bulgarian lev</item>
+        <item>Byte</item>
+        <item>Cambodian riel</item>
+        <item>Canadian dollar</item>
+        <item>Celsius</item>
+        <item>Centimeters</item>
+        <item>Centimetre</item>
+        <item>Chilean peso</item>
+        <item>Chinese yuan</item>
+        <item>Colombian peso</item>
+        <item>Costa Rican colón</item>
+        <item>Croatian kuna</item>
+        <item>Cubic Centimetre</item>
+        <item>Cubic Feet</item>
+        <item>Cubic Foot</item>
+        <item>Cubic Inches</item>
+        <item>Cubic Inch</item>
+        <item>Cubic Metre</item>
+        <item>Czech koruna</item>
+        <item>Danish krone</item>
+        <item>Day</item>
+        <item>Decreasing installments</item>
+        <item>Each</item>
+        <item>Egyptian pound</item>
+        <item>Equal installments</item>
+        <item>Fahrenheit</item>
+        <item>Feet</item>
+        <item>Foot Per Hour</item>
+        <item>Foot Per Second</item>
+        <item>Foot</item>
+        <item>Gibibyte</item>
+        <item>Gigabyte</item>
+        <item>Grams</item>
+        <item>Gram</item>
+        <item>Hectares</item>
+        <item>Hectare</item>
+        <item>HK dollar</item>
+        <item>Hour</item>
+        <item>Hungarian forint</item>
+        <item>Icelandic króna</item>
+        <item>Inches</item>
+        <item>Inches per hour</item>
+        <item>Inches per second</item>
+        <item>Inch</item>
+        <item>Indian rupee</item>
+        <item>Indonesian rupiah</item>
+        <item>Iraqi dinar</item>
+        <item>Israeli new sheqel</item>
+        <item>Japanese yen</item>
+        <item>Jordanian dinar</item>
+        <item>Kelvin</item>
+        <item>Kenyan shilling</item>
+        <item>Kibibytes</item>
+        <item>Kilobyte</item>
+        <item>Kilograms</item>
+        <item>Kilogram</item>
+        <item>Kilometres</item>
+        <item>Kilometre Per Hour</item>
+        <item>Kilometre Per Second</item>
+        <item>Kilometre</item>
+        <item>Knot</item>
+        <item>Korean won</item>
+        <item>Kuwaiti dinar</item>
+        <item>Laotian kip</item>
+        <item>Lebanese pound</item>
+        <item>Litre</item>
+        <item>Macanese pataca</item>
+        <item>Malaysian ringgit</item>
+        <item>Mebibytes</item>
+        <item>Megabyte</item>
+        <item>Meters</item>
+        <item>Metre Per Hour</item>
+        <item>Metre Per Second</item>
+        <item>Metre</item>
+        <item>Mexican peso</item>
+        <item>Miles</item>
+        <item>Mile Per Hour</item>
+        <item>Mile Per Second</item>
+        <item>Mile</item>
+        <item>Millilitre</item>
+        <item>Millimetres</item>
+        <item>Millimetre</item>
+        <item>Milliseconds</item>
+        <item>Mils</item>
+        <item>Mil</item>
+        <item>Minute</item>
+        <item>Moroccan dirham</item>
+        <item>Move cursor left</item>
+        <item>Move cursor right</item>
+        <item>Myanmar kyat</item>
+        <item>Nautical Miles</item>
+        <item>Nautical Mile</item>
+        <item>New Taiwan dollar</item>
+        <item>New Zealand dollar</item>
+        <item>Norwegian krone</item>
+        <item>Omani rial</item>
+        <item>Ounces</item>
+        <item>Ounce</item>
+        <item>%1$d years (%2$d months)</item>
+        <item>People</item>
+        <item>Person</item>
+        <item>Philippine peso</item>
+        <item>Polish zloty</item>
+        <item>Pounds</item>
+        <item>Pound</item>
+        <item>Qatari rial</item>
+        <item>Romanian leu</item>
+        <item>Russian ruble</item>
+        <item>Saudi riyal</item>
+        <item>Second</item>
+        <item>Serbian dinar</item>
+        <item>Singapore dollar</item>
+        <item>South African rand</item>
+        <item>Square Centimetres</item>
+        <item>Square Centimetre</item>
+        <item>Square Feet</item>
+        <item>Square Foot</item>
+        <item>Square Inches</item>
+        <item>Square Inch</item>
+        <item>Square Metres</item>
+        <item>Square Metre</item>
+        <item>Sri Lankan rupee</item>
+        <item>Subtotal</item>
+        <item>Swedish krona</item>
+        <item>Swiss franc</item>
+        <item>Syrian pound</item>
+        <item>Tanzanian shilling</item>
+        <item>Tebibytes</item>
+        <item>Terabyte</item>
+        <item>Thai baht</item>
+        <item>Tip amount</item>
+        <item>Tonne</item>
+        <item>Total</item>
+        <item>Total amount to pay is %s</item>
+        <item>Turkish lira</item>
+        <item>UAE dirham</item>
+        <item>Imperial Gallons</item>
+        <item>Imperial Gallon</item>
+        <item>Long Tons</item>
+        <item>Long Ton</item>
+        <item>US dollar</item>
+        <item>US Liquid Gallons</item>
+        <item>US Liquid Gallon</item>
+        <item>Short Tons</item>
+        <item>Short Ton</item>
+        <item>Vietnamese dong</item>
+        <item>Weeks</item>
+        <item>Yards</item>
+        <item>Yard</item>
+        <item>Zambian kwacha</item>
+        <item>Square Kilometre</item>
+        <item>Square Yard</item>
+        <item>Square Mile</item>
+        <item>Cubic Millimetre</item>
+        <item>Cubic Kilometre</item>
+        <item>Cubic Yard</item>
+        <item>Cubic Mile</item>
+        <item>Imperial Quart</item>
+        <item>US Liquid Quart</item>
+        <item>Imperial Pint</item>
+        <item>US Liquid Pint</item>
+        <item>Imperial Fluid Ounce</item>
+        <item>US Fluid Ounce</item>
+        <item>Metric Tablespoon</item>
+        <item>Imperial Tablespoon</item>
+        <item>US Tablespoon</item>
+        <item>Metric Teaspoon</item>
+        <item>Imperial Teaspoon</item>
+        <item>US Teaspoon</item>
+        <item>Milligram</item>
+        <item>Petabyte</item>
+        <item>Kilobit Per Second</item>
+        <item>Megabit Per Second</item>
+        <item>Gigabit Per Second</item>
+        <item>Terabit Per Second</item>
+        <item>Petabit Per Second</item>
+        <item>Kilobyte Per Second</item>
+        <item>Megabyte Per Second</item>
+        <item>Gigabyte Per Second</item>
+        <item>Terabyte Per Second</item>
+        <item>Petabyte Per Second</item>
+    </string-array>
+    <string-array name="user_feedback_type_list">
+        <item>ACCEPTED</item>
+        <item>REJECTED</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_2">
+        <item>weather_ic_63_sunny_mtrl</item>
+        <item>weather_ic_63_clear_mtrl</item>
+        <item>weather_ic_63_partlysunny_mtrl</item>
+        <item>weather_ic_63_mostlyclear_mtrl</item>
+        <item>weather_ic_63_cloudy_mtrl</item>
+        <item>weather_ic_63_fog_mtrl</item>
+        <item>weather_ic_63_rain_mtrl</item>
+        <item>weather_ic_63_shower_mtrl</item>
+        <item>weather_ic_63_partlysunnywithshower_mtrl</item>
+        <item>weather_ic_63_thunderstorm_mtrl</item>
+        <item>weather_ic_63_partlysunnywiththundershower_mtrl</item>
+        <item>weather_ic_63_flurries_mtrl</item>
+        <item>weather_ic_63_partlysunnywithflurries_mtrl</item>
+        <item>weather_ic_63_snow_mtrl</item>
+        <item>weather_ic_63_rainandsnowmixed_mtrl</item>
+        <item>weather_ic_63_ice_mtrl</item>
+        <item>weather_ic_63_hot_mtrl</item>
+        <item>weather_ic_63_cold_mtrl</item>
+        <item>weather_ic_63_windy_mtrl</item>
+        <item>weather_ic_63_hail_mtrl</item>
+        <item>weather_ic_63_heavyrain_mtrl</item>
+        <item>weather_ic_63_sandstorm_mtrl</item>
+        <item>weather_ic_63_hurricane_mtrl</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_3">
+        <item>weather_ic_63_sunny_mtrl</item>
+        <item>weather_ic_63_clear_mtrl</item>
+        <item>weather_ic_63_partlysunny_mtrl</item>
+        <item>weather_ic_63_mostlyclear_mtrl</item>
+        <item>weather_ic_63_cloudy_mtrl</item>
+        <item>weather_ic_63_fog_mtrl</item>
+        <item>weather_ic_63_rain_mtrl</item>
+        <item>weather_ic_63_shower_mtrl</item>
+        <item>weather_ic_63_partlysunnywithshower_mtrl</item>
+        <item>weather_ic_63_thunderstorm_mtrl</item>
+        <item>weather_ic_63_partlysunnywiththundershower_mtrl</item>
+        <item>weather_ic_63_flurries_mtrl</item>
+        <item>weather_ic_63_partlysunnywithflurries_mtrl</item>
+        <item>weather_ic_63_snow_mtrl</item>
+        <item>weather_ic_63_rainandsnowmixed_mtrl</item>
+        <item>weather_ic_63_ice_mtrl</item>
+        <item>weather_ic_63_hot_mtrl</item>
+        <item>weather_ic_63_cold_mtrl</item>
+        <item>weather_ic_63_windy_mtrl</item>
+        <item>weather_ic_63_hail_mtrl</item>
+        <item>weather_ic_63_heavyrain_mtrl</item>
+        <item>weather_ic_63_sandstorm_mtrl</item>
+        <item>weather_ic_63_hurricane_mtrl</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_4">
+        <item>ic_sunny</item>
+        <item>ic_clear</item>
+        <item>ic_partly_sunny</item>
+        <item>ic_mostly_clear</item>
+        <item>ic_cloudy</item>
+        <item>ic_fog</item>
+        <item>ic_rain</item>
+        <item>ic_showers</item>
+        <item>ic_partly_sunny_w_showers</item>
+        <item>ic_thunderstorm</item>
+        <item>ic_partly_sunny_w_showers_and_thunderstorm</item>
+        <item>ic_light_snow_flurries</item>
+        <item>ic_partly_sunny_w_light_snow</item>
+        <item>ic_snow</item>
+        <item>ic_rain_and_snow</item>
+        <item>ic_ice</item>
+        <item>ic_hot</item>
+        <item>ic_cold</item>
+        <item>ic_wind</item>
+        <item>ic_hail</item>
+        <item>ic_heavy_rain</item>
+        <item>ic_sand_storm</item>
+        <item>ic_hurricane</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_5">
+        <item>ic_sunny</item>
+        <item>ic_clear</item>
+        <item>ic_partly_sunny</item>
+        <item>ic_mostly_clear</item>
+        <item>ic_cloudy</item>
+        <item>ic_fog</item>
+        <item>ic_rain</item>
+        <item>ic_showers</item>
+        <item>ic_partly_sunny_w_showers</item>
+        <item>ic_thunderstorm</item>
+        <item>ic_partly_sunny_w_showers_and_thunderstorm</item>
+        <item>ic_light_snow_flurries</item>
+        <item>ic_partly_sunny_w_light_snow</item>
+        <item>ic_snow</item>
+        <item>ic_rain_and_snow</item>
+        <item>ic_ice</item>
+        <item>ic_hot</item>
+        <item>ic_cold</item>
+        <item>ic_wind</item>
+        <item>ic_hail</item>
+        <item>ic_heavy_rain</item>
+        <item>ic_sand_storm</item>
+        <item>ic_hurricane</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_6">
+        <item>ic_sunny</item>
+        <item>ic_clear</item>
+        <item>ic_partly_sunny</item>
+        <item>ic_mostly_clear</item>
+        <item>ic_cloudy</item>
+        <item>ic_fog</item>
+        <item>ic_rain</item>
+        <item>ic_showers</item>
+        <item>ic_partly_sunny_w_showers</item>
+        <item>ic_thunderstorm</item>
+        <item>ic_partly_sunny_w_showers_and_thunderstorm</item>
+        <item>ic_light_snow_flurries</item>
+        <item>ic_light_snow_flurries</item>
+        <item>ic_snow</item>
+        <item>ic_rain_and_snow</item>
+        <item>ic_ice</item>
+        <item>ic_hot</item>
+        <item>ic_cold</item>
+        <item>ic_wind</item>
+        <item>ic_hail</item>
+        <item>ic_heavy_rain</item>
+        <item>ic_sand_storm</item>
+        <item>ic_hurricane</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_7">
+        <item>ic_sunny</item>
+        <item>ic_clear</item>
+        <item>ic_partly_cloud</item>
+        <item>ic_partly_cloud_night</item>
+        <item>ic_cloudy</item>
+        <item>ic_fog</item>
+        <item>ic_rain</item>
+        <item>ic_shower</item>
+        <item>ic_partly_sunny_with_shower</item>
+        <item>ic_thunderstorm</item>
+        <item>ic_partly_sunny_with_thunder</item>
+        <item>ic_light_snow</item>
+        <item>ic_partly_sunny_with_flurries</item>
+        <item>ic_snow</item>
+        <item>ic_rain_and_snow</item>
+        <item>ic_ice</item>
+        <item>ic_hot</item>
+        <item>ic_cold</item>
+        <item>ic_wind</item>
+        <item>ic_rain_and_thunder</item>
+        <item>ic_heavy_rain</item>
+        <item>ic_sand_storm</item>
+        <item>ic_hurricane</item>
+        <item>ic_mostly_sunny</item>
+        <item>ic_mostly_clear</item>
+        <item>ic_mostly_cloudy</item>
+        <item>ic_mostly_cloudy_night</item>
+        <item>ic_heavy_snow</item>
+        <item>ic_rain_and_sleet</item>
+        <item>ic_hail</item>
+    </string-array>
+    <string-array name="weather_icon_names_one_ui_8">
+        <item>weather_ic_sunny</item>
+        <item>weather_ic_clear</item>
+        <item>weather_ic_partly_cloud</item>
+        <item>weather_ic_partly_cloud_night</item>
+        <item>weather_ic_cloudy</item>
+        <item>weather_ic_fog</item>
+        <item>weather_ic_rain</item>
+        <item>weather_ic_shower</item>
+        <item>weather_ic_partly_sunny_with_shower</item>
+        <item>weather_ic_thunderstorm</item>
+        <item>weather_ic_partly_sunny_with_thunder</item>
+        <item>weather_ic_light_snow</item>
+        <item>weather_ic_partly_sunny_with_flurries</item>
+        <item>weather_ic_snow</item>
+        <item>weather_ic_rain_and_snow</item>
+        <item>weather_ic_ice</item>
+        <item>weather_ic_hot</item>
+        <item>weather_ic_cold</item>
+        <item>weather_ic_wind</item>
+        <item>weather_ic_rain_and_thunder</item>
+        <item>weather_ic_heavy_rain</item>
+        <item>weather_ic_sand_storm</item>
+        <item>weather_ic_hurricane</item>
+        <item>weather_ic_mostly_sunny</item>
+        <item>weather_ic_mostly_clear</item>
+        <item>weather_ic_mostly_cloudy</item>
+        <item>weather_ic_mostly_cloudy_night</item>
+        <item>weather_ic_heavy_snow</item>
+        <item>weather_ic_rain_and_sleet</item>
+        <item>weather_ic_hail</item>
+    </string-array>
+    <string-array name="weather_mono_icon_names_one_ui_6">
+        <item>complication_sunny</item>
+        <item>complication_clear</item>
+        <item>complication_partlysunny</item>
+        <item>complication_mostlyclear</item>
+        <item>complication_cloudy</item>
+        <item>complication_fog</item>
+        <item>complication_rain</item>
+        <item>complication_showers</item>
+        <item>complication_partlysunnywithshowers</item>
+        <item>complication_thunderstorm</item>
+        <item>complication_partlysunnywithshowersandthunderstorm</item>
+        <item>complication_flurries</item>
+        <item>complication_flurries</item>
+        <item>complication_snow</item>
+        <item>complication_rainandsnow</item>
+        <item>complication_ice</item>
+        <item>complication_hot</item>
+        <item>complication_ice</item>
+        <item>complication_wind</item>
+        <item>complication_hail</item>
+        <item>complication_heavyrain</item>
+        <item>complication_sandstorm</item>
+        <item>complication_hurricane</item>
+    </string-array>
+    <string-array name="weather_mono_icon_names_one_ui_7_8">
+        <item>complication_sunny</item>
+        <item>complication_clear</item>
+        <item>complication_partly_cloud</item>
+        <item>complication_partly_cloud_night</item>
+        <item>complication_cloudy</item>
+        <item>complication_fog</item>
+        <item>complication_rain</item>
+        <item>complication_shower</item>
+        <item>complication_partly_sunny_with_shower</item>
+        <item>complication_thunderstorm</item>
+        <item>complication_partly_sunny_with_thunder</item>
+        <item>complication_light_snow</item>
+        <item>complication_partly_sunny_with_flurries</item>
+        <item>complication_snow</item>
+        <item>complication_rain_and_snow</item>
+        <item>complication_ice</item>
+        <item>complication_hot</item>
+        <item>complication_cold</item>
+        <item>complication_wind</item>
+        <item>complication_rain_and_thunder</item>
+        <item>complication_heavy_rain</item>
+        <item>complication_sand_storm</item>
+        <item>complication_hurricane</item>
+        <item>complication_mostly_sunny</item>
+        <item>complication_mostly_clear</item>
+        <item>complication_mostly_cloudy</item>
+        <item>complication_mostly_cloudy_night</item>
+        <item>complication_heavy_snow</item>
+        <item>complication_rain_and_sleet</item>
+        <item>complication_hail</item>
+    </string-array>
+    <string-array name="weather_whitebg_icon_names_one_ui_4">
+        <item>ic_sunny_whitebg</item>
+        <item>ic_clear_whitebg</item>
+        <item>ic_partly_sunny_whitebg</item>
+        <item>ic_mostly_clear_whitebg</item>
+        <item>ic_cloudy_whitebg</item>
+        <item>ic_fog_whitebg</item>
+        <item>ic_rain_whitebg</item>
+        <item>ic_showers_whitebg</item>
+        <item>ic_partly_sunny_w_showers_whitebg</item>
+        <item>ic_thunderstorm_whitebg</item>
+        <item>ic_partly_sunny_w_showers_and_thunderstorm_whitebg</item>
+        <item>ic_light_snow_flurries_whitebg</item>
+        <item>ic_partly_sunny_w_light_snow_whitebg</item>
+        <item>ic_snow_whitebg</item>
+        <item>ic_rain_and_snow_whitebg</item>
+        <item>ic_ice_whitebg</item>
+        <item>ic_hot_whitebg</item>
+        <item>ic_cold_whitebg</item>
+        <item>ic_wind_whitebg</item>
+        <item>ic_hail_whitebg</item>
+        <item>ic_heavy_rain_whitebg</item>
+        <item>ic_sand_storm_whitebg</item>
+        <item>ic_hurricane_whitebg</item>
+    </string-array>
+    <string-array name="weather_whitebg_icon_names_one_ui_5">
+        <item>ic_sunny_whitebg</item>
+        <item>ic_clear_whitebg</item>
+        <item>ic_partly_sunny_whitebg</item>
+        <item>ic_mostly_clear_whitebg</item>
+        <item>ic_cloudy_whitebg</item>
+        <item>ic_fog_whitebg</item>
+        <item>ic_rain_whitebg</item>
+        <item>ic_showers_whitebg</item>
+        <item>ic_partly_sunny_w_showers_whitebg</item>
+        <item>ic_thunderstorm_whitebg</item>
+        <item>ic_partly_sunny_w_showers_and_thunderstorm_whitebg</item>
+        <item>ic_light_snow_flurries_whitebg</item>
+        <item>ic_partly_sunny_w_light_snow_whitebg</item>
+        <item>ic_snow_whitebg</item>
+        <item>ic_rain_and_snow_whitebg</item>
+        <item>ic_ice_whitebg</item>
+        <item>ic_hot_whitebg</item>
+        <item>ic_cold_whitebg</item>
+        <item>ic_wind_whitebg</item>
+        <item>ic_hail_whitebg</item>
+        <item>ic_heavy_rain_whitebg</item>
+        <item>ic_sand_storm_whitebg</item>
+        <item>ic_hurricane_whitebg</item>
+    </string-array>
+    <string-array name="weather_whitebg_icon_names_one_ui_6">
+        <item>ic_sunny_whitebg</item>
+        <item>ic_clear_whitebg</item>
+        <item>ic_partly_sunny_whitebg</item>
+        <item>ic_mostly_clear_whitebg</item>
+        <item>ic_cloudy_whitebg</item>
+        <item>ic_fog_whitebg</item>
+        <item>ic_rain_whitebg</item>
+        <item>ic_showers_whitebg</item>
+        <item>ic_partly_sunny_w_showers_whitebg</item>
+        <item>ic_thunderstorm_whitebg</item>
+        <item>ic_partly_sunny_w_showers_and_thunderstorm_whitebg</item>
+        <item>ic_light_snow_flurries_whitebg</item>
+        <item>ic_light_snow_flurries_whitebg</item>
+        <item>ic_snow_whitebg</item>
+        <item>ic_rain_and_snow_whitebg</item>
+        <item>ic_ice_whitebg</item>
+        <item>ic_hot_whitebg</item>
+        <item>ic_cold_whitebg</item>
+        <item>ic_wind_whitebg</item>
+        <item>ic_hail_whitebg</item>
+        <item>ic_heavy_rain_whitebg</item>
+        <item>ic_sand_storm_whitebg</item>
+        <item>ic_hurricane_whitebg</item>
+    </string-array>
+    <string-array name="weather_whitebg_icon_names_one_ui_7">
+        <item>ic_sunny_whitebg</item>
+        <item>ic_clear_whitebg</item>
+        <item>ic_partly_cloud_whitebg</item>
+        <item>ic_partly_cloud_night_whitebg</item>
+        <item>ic_cloudy_whitebg</item>
+        <item>ic_fog_whitebg</item>
+        <item>ic_rain_whitebg</item>
+        <item>ic_shower_whitebg</item>
+        <item>ic_partly_sunny_with_shower_whitebg</item>
+        <item>ic_thunderstorm_whitebg</item>
+        <item>ic_partly_sunny_with_thunder_whitebg</item>
+        <item>ic_light_snow_whitebg</item>
+        <item>ic_partly_sunny_with_flurries_whitebg</item>
+        <item>ic_snow_whitebg</item>
+        <item>ic_rain_and_snow_whitebg</item>
+        <item>ic_ice_whitebg</item>
+        <item>ic_hot_whitebg</item>
+        <item>ic_cold_whitebg</item>
+        <item>ic_wind_whitebg</item>
+        <item>ic_rain_and_thunder_whitebg</item>
+        <item>ic_heavy_rain_whitebg</item>
+        <item>ic_sand_storm_whitebg</item>
+        <item>ic_hurricane_whitebg</item>
+        <item>ic_mostly_sunny_whitebg</item>
+        <item>ic_mostly_clear_whitebg</item>
+        <item>ic_mostly_cloudy_whitebg</item>
+        <item>ic_mostly_cloudy_night_whitebg</item>
+        <item>ic_heavy_snow_whitebg</item>
+        <item>ic_rain_and_sleet_whitebg</item>
+        <item>ic_hail_whitebg</item>
+    </string-array>
+    <string-array name="weather_whitebg_icon_names_one_ui_8">
+        <item>weather_ic_sunny_whitebg</item>
+        <item>weather_ic_clear_whitebg</item>
+        <item>weather_ic_partly_cloud_whitebg</item>
+        <item>weather_ic_partly_cloud_night_whitebg</item>
+        <item>weather_ic_cloudy_whitebg</item>
+        <item>weather_ic_fog_whitebg</item>
+        <item>weather_ic_rain_whitebg</item>
+        <item>weather_ic_shower_whitebg</item>
+        <item>weather_ic_partly_sunny_with_shower_whitebg</item>
+        <item>weather_ic_thunderstorm_whitebg</item>
+        <item>weather_ic_partly_sunny_with_thunder_whitebg</item>
+        <item>weather_ic_light_snow_whitebg</item>
+        <item>weather_ic_partly_sunny_with_flurries_whitebg</item>
+        <item>weather_ic_snow_whitebg</item>
+        <item>weather_ic_rain_and_snow_whitebg</item>
+        <item>weather_ic_ice_whitebg</item>
+        <item>weather_ic_hot_whitebg</item>
+        <item>weather_ic_cold_whitebg</item>
+        <item>weather_ic_wind_whitebg</item>
+        <item>weather_ic_rain_and_thunder_whitebg</item>
+        <item>weather_ic_heavy_rain_whitebg</item>
+        <item>weather_ic_sand_storm_whitebg</item>
+        <item>weather_ic_hurricane_whitebg</item>
+        <item>weather_ic_mostly_sunny_whitebg</item>
+        <item>weather_ic_mostly_clear_whitebg</item>
+        <item>weather_ic_mostly_cloudy_whitebg</item>
+        <item>weather_ic_mostly_cloudy_night_whitebg</item>
+        <item>weather_ic_heavy_snow_whitebg</item>
+        <item>weather_ic_rain_and_sleet_whitebg</item>
+        <item>weather_ic_hail_whitebg</item>
+    </string-array>
+</resources>

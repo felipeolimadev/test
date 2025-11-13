@@ -1,0 +1,163 @@
+{
+  "dataConfigs": {
+    "com.samsung.android.apps": {
+      "enabled": true,
+      "minSdkVersion": 30,
+      "always_index_list": [
+        "com.samsung.knox.securefolder"
+      ],
+      "extras": {
+        "usageScorerRunnable": "com.samsung.android.smartsuggestions.search.data.apps.AppUsageRunnable"
+      },
+      "settings_db_enabled_bit_pos": 0
+    },
+    "com.samsung.android.contacts": {
+      "enabled": true,
+      "minSdkVersion": 29,
+      "permissions": [
+        "android.permission.READ_CONTACTS"
+      ],
+      "extras": {
+        "usageScorerRunnable": "com.samsung.android.smartsuggestions.search.searcher.fsm.FsmUsageRunnable"
+      },
+      "settings_db_enabled_bit_pos": 1,
+      "installed_package_name": "com.samsung.android.app.contacts"
+    },
+    "com.samsung.android.calendar": {
+      "enabled": true,
+      "permissions": [
+        "android.permission.READ_CALENDAR"
+      ],
+      "settings_db_enabled_bit_pos": 2,
+      "installed_package_name": "com.android.providers.calendar",
+      "validate_package_name": "com.android.providers.calendar",
+      "validate_package_version_name_pattern": "[0-9]+\\.[0-9]+\\.[0-9]+(?:\\.[0-9]+)?"
+    },
+    "com.samsung.android.calendar.synctasks": {
+      "enabled": true,
+      "minSdkVersion": 33,
+      "permissions": [
+        "android.permission.READ_CALENDAR"
+      ],
+      "settings_db_enabled_bit_pos": 3,
+      "installed_package_name": "com.android.providers.calendar",
+      "validate_package_name": "com.android.providers.calendar",
+      "validate_package_version_name_pattern": "[0-9]+\\.[0-9]+\\.[0-9]+(?:\\.[0-9]+)?"
+    },
+    "com.samsung.android.app.reminder": {
+      "enabled": true,
+      "minSdkVersion": 33,
+      "permissions": [
+        "com.samsung.android.app.reminder.permission.READ"
+      ],
+      "settings_db_enabled_bit_pos": 4,
+      "installed_package_name": "com.samsung.android.app.reminder"
+    },
+    "com.android.settings": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 5
+    },
+    "com.sec.android.app.myfiles": {
+      "enabled": true,
+      "indexName": "com.google.android.providers.media",
+      "minSdkVersion": 31,
+      "permissions": [
+        "android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "settings_db_enabled_bit_pos": 6,
+      "chained_config": [
+        "com.google.android.providers.media",
+        "com.samsung.android.scs.documents"
+      ]
+    },
+    "com.google.android.providers.media": {
+      "enabled": true,
+      "force_reindex_sep_version_upgrade": 160000,
+      "floating_feature": "SEC_FLOATING_FEATURE_GALLERY_CONFIG_IMAGE_TAGGER_VERSION",
+      "permissions": [
+        "android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "settings_db_enabled_bit_pos": 7
+    },
+    "logs.call": {
+      "enabled": true,
+      "minSdkVersion": 29,
+      "permissions": [
+        "android.permission.READ_CALL_LOG",
+        "android.permission.READ_SMS",
+        "com.android.voicemail.permission.READ_VOICEMAIL"
+      ],
+      "settings_db_enabled_bit_pos": 8,
+      "installed_package_name": "com.samsung.android.dialer"
+    },
+    "analogy": {
+      "enabled": true,
+      "force_reindex_sep_version_upgrade": 150100,
+      "settings_db_enabled_bit_pos": 9
+    },
+    "correlated": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 11
+    },
+    "com.samsung.android.scs.documents": {
+      "enabled": true,
+      "forceEnablingProperty": "scs.documents.enable",
+      "minSepVersion": 130100,
+      "buildFlavor": "full",
+      "permissions": [
+        "android.permission.MANAGE_EXTERNAL_STORAGE"
+      ],
+      "settings_db_enabled_bit_pos": 12
+    },
+    "action": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 13
+    },
+    "com.samsung.android.app.notes": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 16,
+      "min_package_version": 442139000,
+      "minSepVersion": 170500,
+      "installed_package_name": "com.samsung.android.app.notes"
+    },
+    "com.sec.android.gallery3d.provider2.album_group": {
+      "enabled": true,
+      "permissions": [
+        "com.sec.android.gallery3d.provider2.READ"
+      ],
+      "settings_db_enabled_bit_pos": 17
+    },
+    "taxonomy": {
+      "enabled": true,
+      "floating_feature": "SEC_FLOATING_FEATURE_GALLERY_CONFIG_IMAGE_TAGGER_VERSION",
+      "settings_db_enabled_bit_pos": 18
+    },
+    "com.sec.android.app.voicenote": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 19,
+      "min_package_version": 2021540290,
+      "minSepVersion": 170500,
+      "installed_package_name": "com.sec.android.app.voicenote"
+    },
+    "com.samsung.android.callassistant": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 20,
+      "minSepVersion": 170500,
+      "installed_package_name": "com.samsung.android.callassistant"
+    },
+    "logs.sec_memo": {
+      "enabled": true,
+      "minSdkVersion": 36,
+      "permissions": [
+        "android.permission.READ_CALL_LOG",
+        "android.permission.READ_SMS"
+      ],
+      "settings_db_enabled_bit_pos": 21,
+      "installed_package_name": "com.samsung.android.dialer"
+    },
+    "com.samsung.android.pde.datacore": {
+      "enabled": true,
+      "settings_db_enabled_bit_pos": 22
+    }
+  }
+}

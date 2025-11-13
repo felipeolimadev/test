@@ -1,0 +1,280 @@
+[
+  {
+    "id": 1,
+    "type": "HOUR_MIN_SEC_OPTIONAL_ALL_NUMERAL_AM_PM_OPTIONAL",
+    "patternType": "<num><sep><num><sep><num>",
+    "patternString": "(?<=\\s|^|.|,)(<num>)\\s*[\\:\\.]\\s*(<num>)\\s*[\\:\\.]?\\s*(<num>)?\\s*(<time_format>)?(?=\\s|$|.|,)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "timeFormat" : 4
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "HOUR_WITH_SUFFIX",
+    "patternType": "<num><hourly_suffix>",
+    "patternString": "(<num>)\\s*<<hourly_suffix>>\\s*(<time_format>|<relative_time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "timeFormat" : 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "HOUR_WITH_SUFFIX_2",
+    "patternType": "<num>:<num> <time_h>",
+    "patternString": "(<num>):?(<num>)?\\s*<time_h>\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_TIME_FORMAT",
+    "patternType": "<num><relative_time_format><num>",
+    "patternString": "(<num>):?(<num>)?\\s*<<important_prepositions>>?\\s*(<relative_time_format>)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "RELATIVE_TIME_FORMAT",
+    "patternType": "<num><relative_time_format><num>",
+    "patternString": "(<relative_time_format>)\\s*<<important_prepositions>>?\\s*(<num>)\\s*:?\\s*(num)?(?:\\s|$|.|,)",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3,
+        "timeFormat" : 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "NUM_WORD_PAST_TO",
+    "patternType": "<num_word><past|to><num>",
+    "patternString": "(<num>)\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<before_reference>|<after_reference>)\\s*((<num>)\\s*(<time_format>|<relative_time_format>)?|<special_time>)(?:\\s|$|.|,)",
+    "isRelative": true,
+    "mapping" : [
+      {
+        "minuteDelta": 1,
+        "secondDelta": 3,
+        "hours" : 7,
+        "timeFormat": 8
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "NUM_WORD_PAST_TO",
+    "patternType": "<num_word><past|to><num>",
+    "patternString": "(<num>)\\s*(<time_h>)\\s*(<num>)?\\s*(<time_m>)?\\s*(<num>)?\\s*(<time_s>)?\\s*(<before_reference>|<after_reference>)\\s*((<num>)\\s*(<time_format>|relative_time_format)?|<special_time>)(?:\\s|$|.|,)",
+    "isRelative": true,
+    "mapping" : [
+      {
+        "hourDelta": 1,
+        "minuteDelta": 3,
+        "secondDelta": 5,
+        "hours" : 9,
+        "timeFormat": 10
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "KEYWORD_NUM",
+    "patternType": "<keyword><num>",
+    "patternString": "<<time_keywords_before>>\\s*(<num>):?(<num>)?\\s*(<time_format>)?\\s?(<<time_keywords_after>>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat" : 3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "SPECIAL_TIME",
+    "patternType": "<special_time>",
+    "patternString": "<special_time>"
+  },
+  {
+    "id": 7,
+    "type": "HOUR_MIN_AM_PM",
+    "patternType": "<num><sep><num><am_pm>",
+    "patternString": "(<num>)\\s*[\\:\\.]?\\s*(<num>)?\\s*[\\:\\.]?\\s*(<num>)?\\s*(<time_format>)",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 3,
+        "timeFormat" : 4
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "HOUR_MIN_AM_PM",
+    "patternType": "<num><sep><num><am_pm>",
+    "patternString": "(<time_format>)\\s*(<num>)\\s*[\\:\\.]?\\s*(<num>)?\\s*[\\:\\.]?\\s*(<num>)?",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3,
+        "seconds" : 4,
+        "timeFormat" : 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "HOUR_MIN",
+    "patternType": "<num><sep><num>",
+    "patternString": "(<num>)[\\:](<num>)\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "timeFormat": 3
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "HOUR_MIN_SEC_WORDS",
+    "patternType": "<num><word><num><word><num><word>",
+    "patternString": "(<num>)\\s*<time_h>,?\\s*(<num>)?\\s*(<time_m>)?,?\\s*(<num>)?\\s*(<time_s>)?\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 2,
+        "seconds" : 4,
+        "timeFormat": 6
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "NEXT_PREV",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<before_reference>|<after_reference>|in)\\s*((<num>)\\s*(<time_m>)|(<num>)\\s*(<time_s>))",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "minuteDelta": 3,
+        "secondDelta": 6
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "NEXT_PREV",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<before_reference>|<after_reference>|in\\s*(einer)?)\\s*(<num>)?\\s*(<time_h>)\\s*(und)?\\s*((<num>)?\\s*(<time_m>)?)?\\s*((<num>)\\s*(<time_s>))?",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping" : [
+      {
+        "hourDelta": 3,
+        "minuteDelta": 7,
+        "secondDelta": 10
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "NEXT_PREV_SUFFIX",
+    "patternType": "<num><time_period><next_prev>",
+    "patternString": "((<num>)\\s*<time_m>)\\s*((<num>)\\s*<time_s>)?\\s*(<before_reference>|<after_reference>)",
+    "isRelative": true,
+    "isPurelyRelative" : true,
+    "mapping" : [
+      {
+        "minuteDelta": 2,
+        "secondDelta": 4
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "NEXT_PREV_SUFFIX",
+    "patternType": "<num><time_period><next_prev>",
+    "patternString": "((<num>)?\\s*<time_h>)\\s*(?:und)?\\s*((<num>)?\\s*(?:<time_m>)?)?\\s*((<num>)\\s*<time_s>)?\\s*(<before_reference>|<after_reference>)",
+    "isRelative": true,
+    "isPurelyRelative" : true,
+    "mapping" : [
+      {
+        "hourDelta": 2,
+        "minuteDelta": 4,
+        "secondDelta": 6
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "NEXT_PREV_WITHOUT_NUM",
+    "patternType": "<next_prev><time_period>",
+    "patternString": "(<before_reference>|<after_reference>)\\s*(<time_h>|<time_m>|<time_s>)",
+    "isRelative": true,
+    "isPurelyRelative": true,
+    "mapping": [
+      {
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "NUM_H_NUM_M_NUM_S",
+    "patternType": "<num><h><num><m><num><s>",
+    "patternString": "(<num>)\\s*(h)\\s*(<num>)\\s*(m)\\s*(<num>)?\\s*s?\\s*(<time_format>)?",
+    "mapping" : [
+      {
+        "hours" : 1,
+        "minutes" : 3,
+        "seconds" : 5,
+        "timeFormat": 6
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "NUM_H_HOUR_NUM_M",
+    "patternType": "<num><h><num><m><num><s>",
+    "patternString": "(<current_reference>|<before_reference>|<after_reference>)?\\s*(<num>)\\s*(?:<time_h>)\\s*(<num>)",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "NUM_H",
+    "patternType": "<current_ref><num>",
+    "patternString": "(<current_reference>|<before_reference>|<after_reference>)\\s*(<num>)\\s*[:]?\\s*(<num>)?",
+    "mapping" : [
+      {
+        "hours" : 2,
+        "minutes" : 3
+      }
+    ]
+  }
+]

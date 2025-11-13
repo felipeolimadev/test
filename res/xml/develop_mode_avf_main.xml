@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="AVF Utils" app:iconSpaceReserved="false">
+        <Preference android:title="Controller" android:fragment="com.samsung.android.moneta.debugui.developmode.avf.AvfController" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="Use AVF" android:key="key_avf_enable" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="VM Never Stop" android:key="avf_vm_never_stop" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Aging Test" app:iconSpaceReserved="false">
+        <Preference android:title="AVF Run/Stop Test" android:fragment="com.samsung.android.moneta.debugui.developmode.avf.agingtest.AvfAgingTestRunStop" app:iconSpaceReserved="false" />
+        <Preference android:title="AVF Encrypt/Decrypt Test" android:fragment="com.samsung.android.moneta.debugui.developmode.avf.agingtest.AvfAgingTestEncryptDecrypt" app:iconSpaceReserved="false" />
+        <Preference android:title="AVF Large Encrypt/Decrypt Test" android:fragment="com.samsung.android.moneta.debugui.developmode.avf.agingtest.AvfAgingTestLargeEncryptDecrypt" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

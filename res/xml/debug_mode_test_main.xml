@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/debug_test">
+        <Preference android:title="@string/debug_test_run" android:key="key_debug_test_run" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/data_source_configuration" android:key="key_debug_test_data_source_configuration" android:fragment="com.samsung.android.moneta.debugui.developmode.configuration.DataSourceConfigurationFragment" app:iconSpaceReserved="false" />
+        <Preference android:title="@string/feature_configuration" android:key="key_debug_test_feature_configuration" android:fragment="com.samsung.android.moneta.debugui.developmode.configuration.FeatureConfigurationFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/debug_test_automated_testing">
+        <Preference android:title="@string/debug_test_automated_testing" android:fragment="com.samsung.android.moneta.debugui.debugmode.test.AutomatedTestingFragment" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

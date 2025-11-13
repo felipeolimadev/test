@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/brief_main_screen" android:title="@string/brief_settings_main_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.smartsuggestions.briefsettings.widget.LayoutPreference android:layout="@layout/brief_settings_preview_layout_one_pane" android:key="preview" />
+    <PreferenceCategory android:layout_width="fill_parent">
+        <Preference android:title="@string/brief_settings_content_to_include_title" android:key="content_to_include" />
+        <Preference android:title="@string/brief_settings_interests_title" android:key="preference" />
+        <SwitchPreference android:title="@string/brief_settings_show_now_brief_without_unlock_title" android:key="show_ai_brief_without_unlock" android:summary="@string/brief_settings_show_now_brief_without_unlock_description" />
+        <Preference android:title="홈 화면에 추가 - 검색어 / 키보드 분석" android:key="collecting_user_preference_home" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout_width="fill_parent">
+        <Preference android:title="@string/brief_settings_more_galaxy_ai_features_title" android:key="more_galaxy_ai_features" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout_width="fill_parent" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/upcoming_contact_item_icon_container" android:tag="layout/suggestion_ui_view_upcoming_expand_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="@dimen/upcoming_contact_item_interact_container_margin_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/upcoming_contact_item_call_icon" android:background="@drawable/ic_contact_call" android:layout_width="@dimen/upcoming_contact_item_interact_icon_size" android:layout_height="@dimen/upcoming_contact_item_interact_icon_size" android:importantForAccessibility="no" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/upcoming_contact_item_message_icon" android:background="@drawable/ic_contact_message" android:layout_width="@dimen/upcoming_contact_item_interact_icon_size" android:layout_height="@dimen/upcoming_contact_item_interact_icon_size" android:importantForAccessibility="no" android:layout_marginStart="@dimen/upcoming_contact_item_icon_margin" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema name="action" package="" keyFieldName="_id" prefKey="action" version="1">
+
+    <defaultAnalyzer class="bs.LowerCaseSpaceAnalyzer"/>
+
+    <fieldType name="string" dataType="String" class="StringField"/>
+
+    <fieldType name="text_field" dataType="String" class="TextField"/>
+    <fieldType name="string_stored_field" dataType="String" class="StoredField"/>
+    <fieldType name="multi_value_text" dataType="MultiValuedString" class="TextField"/>
+
+    <field name="_id" type="string"/>
+    <field name="name" type="text_field"/>
+    <field name="action_type" type="string_stored_field"/>
+    <field name="target" type="text_field"/>
+    <field name="alias" type="multi_value_text"/>
+
+</schema>

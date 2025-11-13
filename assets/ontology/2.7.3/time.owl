@@ -1,0 +1,113 @@
+@prefix : <http://www.w3.org/2006/time#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+xsd:date a rdfs:Datatype .
+
+xsd:duration a rdfs:Datatype .
+
+<http://www.w3.org/2006/time> a owl:Ontology ;
+    owl:versionIRI :2016-0.1.1 .
+
+:DateTimeInterval a owl:Class ;
+    rdfs:subClassOf :ProperInterval .
+
+:Instant a owl:Class ;
+    rdfs:subClassOf :TemporalEntity ;
+    owl:disjointWith :ProperInterval .
+
+:TRS a owl:Class .
+
+:TimeZone a owl:Class .
+
+:hasBeginning a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasTime .
+
+:hasEnd a owl:ObjectProperty ;
+    rdfs:subPropertyOf :hasTime .
+
+:hasTRS a owl:FunctionalProperty,
+        owl:ObjectProperty .
+
+:inXSDBeginningDateTimeStamp a owl:DatatypeProperty ;
+    rdfs:subPropertyOf :inXSDDateTimeStamp .
+
+:inXSDCreatedDateTimeStamp a owl:DatatypeProperty ;
+    rdfs:subPropertyOf :inXSDDateTimeStamp .
+
+:inXSDEndDateTimeStamp a owl:DatatypeProperty ;
+    rdfs:subPropertyOf :inXSDDateTimeStamp .
+
+:inXSDLastUpdatedDateTimeStamp a owl:DatatypeProperty ;
+    rdfs:subPropertyOf :inXSDDateTimeStamp .
+
+:inside a owl:ObjectProperty .
+
+:intervalAfter a owl:ObjectProperty ;
+    rdfs:subPropertyOf :after,
+        :intervalDisjoint ;
+    owl:inverseOf :intervalBefore .
+
+:intervalContains a owl:ObjectProperty ;
+    owl:inverseOf :intervalDuring .
+
+:intervalEquals a owl:ObjectProperty ;
+    owl:propertyDisjointWith :intervalIn .
+
+:intervalFinishedBy a owl:ObjectProperty ;
+    owl:inverseOf :intervalFinishes .
+
+:intervalMeets a owl:ObjectProperty ;
+    owl:inverseOf :intervalMetBy .
+
+:intervalOverlappedBy a owl:ObjectProperty ;
+    owl:inverseOf :intervalOverlaps .
+
+:intervalStartedBy a owl:ObjectProperty ;
+    owl:inverseOf :intervalStarts .
+
+:timeZone a owl:ObjectProperty .
+
+:unitType a owl:ObjectProperty .
+
+:Interval a owl:Class ;
+    rdfs:subClassOf :TemporalEntity .
+
+:after a owl:ObjectProperty ;
+    owl:inverseOf :before .
+
+:intervalBefore a owl:ObjectProperty ;
+    rdfs:subPropertyOf :before,
+        :intervalDisjoint .
+
+:intervalDuring a owl:ObjectProperty ;
+    rdfs:subPropertyOf :intervalIn .
+
+:intervalFinishes a owl:ObjectProperty ;
+    rdfs:subPropertyOf :intervalIn .
+
+:intervalMetBy a owl:ObjectProperty .
+
+:intervalOverlaps a owl:ObjectProperty .
+
+:intervalStarts a owl:ObjectProperty ;
+    rdfs:subPropertyOf :intervalIn .
+
+:ProperInterval a owl:Class ;
+    rdfs:subClassOf :Interval .
+
+:TemporalEntity a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+:before a owl:ObjectProperty,
+        owl:TransitiveProperty .
+
+:hasTime a owl:ObjectProperty .
+
+:intervalDisjoint a owl:ObjectProperty .
+
+:inXSDDateTimeStamp a owl:DatatypeProperty .
+
+:intervalIn a owl:ObjectProperty .
+

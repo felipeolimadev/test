@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/basic_domain_nav_graph" app:startDestination="@id/basic_domain"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/basicdomain_relationship_nav_graph" />
+    <fragment android:label="Basic Domain" android:name="com.samsung.android.moneta.debugui.developmode.profile.BasicDomainFragment" android:id="@id/basic_domain">
+        <action android:id="@id/action_basic_domain_to_my_profile" app:destination="@id/my_profile" />
+        <action android:id="@id/action_basic_domain_to_contact_person" app:destination="@id/contact_person" />
+        <action android:id="@id/action_basic_domain_to_usage" app:destination="@id/usage" />
+        <action android:id="@id/action_basic_domain_to_family_relationship" app:destination="@id/basicdomain_relationship_nav_graph" />
+        <action android:id="@id/action_basic_domain_to_person_link" app:destination="@id/person_link" />
+        <action android:id="@id/action_basic_domain_to_user_feedback" app:destination="@id/user_feedback" />
+        <action android:id="@id/action_basic_domain_to_person_link_use_case" app:destination="@id/person_link_use_case" />
+        <action android:id="@id/action_basic_domain_to_pet" app:destination="@id/pet" />
+    </fragment>
+    <fragment android:label="My Profile" android:name="com.samsung.android.moneta.debugui.developmode.preference.domain.MyProfileInfoFragment" android:id="@id/my_profile" />
+    <fragment android:label="Contact Person" android:name="com.samsung.android.moneta.debugui.developmode.preference.domain.PersonInfoFragment" android:id="@id/contact_person" />
+    <fragment android:label="Usage" android:name="com.samsung.android.moneta.debugui.developmode.preference.domain.UsagesInfoFragment" android:id="@id/usage" />
+    <fragment android:label="Person Link" android:name="com.samsung.android.moneta.debugui.developmode.basicdomain.personlink.PersonLinkFragment" android:id="@id/person_link" />
+    <fragment android:label="User Feedback" android:name="com.samsung.android.moneta.debugui.developmode.basicdomain.personlink.UserFeedbackFragment" android:id="@id/user_feedback" />
+    <fragment android:label="Person Link" android:name="com.samsung.android.moneta.debugui.developmode.basicdomain.personlink.PersonLinkUseCaseFragment" android:id="@id/person_link_use_case" />
+    <fragment android:label="Person Link" android:name="com.samsung.android.moneta.debugui.developmode.basicdomain.pet.PetFragment" android:id="@id/pet" />
+</navigation>

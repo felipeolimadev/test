@@ -1,0 +1,6 @@
+SELECT ?tp
+WHERE{
+    #TAGs example : { "8 누나" "5 조카 서울" }
+    VALUES ?tag { TAGs }
+    ?tp user:hasTag ?tag .
+}

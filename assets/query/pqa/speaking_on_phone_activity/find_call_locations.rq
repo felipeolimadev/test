@@ -1,0 +1,19 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    {
+        ?call_log rdf:type/rdfs:subClassOf content:CallLog .
+        ?call_log time:inXSDBeginningDateTimeStamp ?start_time .
+        ?call_log time:inXSDEndDateTimeStamp ?end_time .
+        <TIME_FILTER>
+
+        ?staying rdf:type/rdfs:subClassOf user:Staying .
+        ?staying time:hasBeginning/time:inXSDDateTimeStamp ?staying_start_time .
+        ?staying time:hasEnd/time:inXSDDateTimeStamp ?staying_end_time .
+        FILTER (?end_time >= ?staying_start_time && ?staying_end_time >= ?start_time)
+
+    }
+    <PERSON_FILTER>
+
+    ?staying user:atLocation ?s .
+    ?s ?p ?o EXPLICIT true .
+}

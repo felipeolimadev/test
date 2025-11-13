@@ -1,0 +1,18 @@
+{
+  "independence day": {
+    "day": 15,
+    "month": 8
+  },
+  "republic day": {
+    "day": 26,
+    "month": 1
+  },
+  "christmas": {
+    "day": 25,
+    "month": 12
+  },
+  "gandhi jayanti": {
+    "day": 2,
+    "month": 10
+  }
+}

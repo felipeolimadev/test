@@ -1,0 +1,24 @@
+select <OUTPUT>
+where{
+    {
+        select distinct <INNER_TARGET>
+        where {
+            <TARGET> rdf:type/rdfs:subClassOf <CLASS_IRI> .
+            <ACTIVITY_EXCEPTION>
+            <LOCATION_FILTER>
+            <ACTIVITY_FILTER>
+
+            <PIVOT_TO_TIME>
+            <TIME_FILTER>
+            <ONE_HOP_EXPR>
+        }
+        <GROUP_BY_TARGET>
+        <SIMPLE_SORT_METHOD>
+        <LIMIT>
+        <OFFSET_STATEMENT>
+    }
+    <BODY_GET_TARGET_TRIPLE>
+    BIND("UNDEF" AS ?pivot_score)
+    BIND("UNDEF" AS ?pivot_class_score)
+}
+<COMPLEX_SORT_METHOD>

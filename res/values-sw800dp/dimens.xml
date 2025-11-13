@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ai_suggestion_app_widget_preview_2_2_icon_padding">18.0dip</dimen>
+    <dimen name="ai_suggestion_app_widget_preview_2_2_text_padding">20.0dip</dimen>
+    <dimen name="capsule_background_radius">24.0dip</dimen>
+    <dimen name="capsule_extract_text_action_icon_width_height">22.0dip</dimen>
+    <dimen name="capsule_extract_text_action_margin_top_bottom">8.0dip</dimen>
+    <dimen name="capsule_extract_text_action_text_height">24.0dip</dimen>
+    <dimen name="capsule_extract_text_action_view_height">40.0dip</dimen>
+    <dimen name="capsule_icon_margin_start">12.0dip</dimen>
+    <dimen name="capsule_spacing">7.0dip</dimen>
+    <dimen name="capsule_text_size">15.0dip</dimen>
+    <dimen name="lang_code_button_margin">20.0dip</dimen>
+    <item type="dimen" name="sesl_glance_combine_layout_end_padding">20.0</item>
+    <item type="dimen" name="sesl_glance_combine_layout_start_padding">10.0</item>
+    <item type="dimen" name="sesl_glance_combine_max_button_large_size">85.0</item>
+    <item type="dimen" name="sesl_glance_combine_max_button_medium_size">74.0</item>
+    <item type="dimen" name="sesl_glance_combine_max_button_small_size">66.0</item>
+    <item type="dimen" name="sesl_glance_graph_large_display_text_size">26.0</item>
+    <item type="dimen" name="sesl_glance_graph_small_display_text_size">20.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_large_circle_padding">@dimen/circle_padding_60</item>
+    <dimen name="sesl_glance_grid_item_large_circle_size">60.0dip</dimen>
+    <item type="dimen" name="sesl_glance_grid_item_medium_circle_padding">@dimen/circle_padding_56</item>
+    <dimen name="sesl_glance_grid_item_medium_circle_size">56.0dip</dimen>
+    <item type="dimen" name="sesl_glance_grid_item_medium_icon_max_size">72.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_medium_icon_max_size_with_label">62.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_small_circle_padding">@dimen/circle_padding_46</item>
+    <dimen name="sesl_glance_grid_item_small_circle_size">40.0dip</dimen>
+    <item type="dimen" name="sesl_glance_grid_item_small_icon_max_size">62.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_small_icon_max_size_with_label">62.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_text_size">12.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_text_view_height">16.0</item>
+    <item type="dimen" name="sesl_glance_grid_item_text_view_height_over_2_line">34.0</item>
+    <dimen name="sesl_glance_linear_graph_medium_graph_bottom_padding">14.0dip</dimen>
+    <dimen name="sesl_glance_linear_graph_medium_graph_height">26.0dip</dimen>
+    <dimen name="sesl_glance_linear_graph_small_graph_height">14.0dip</dimen>
+    <dimen name="sesl_glance_linear_graph_with_2line_headline_medium_graph_bottom_padding">14.0dip</dimen>
+    <dimen name="sesl_glance_linear_graph_with_2line_headline_medium_graph_height">26.0dip</dimen>
+    <item type="dimen" name="sesl_glance_list_body_text_size">17.0</item>
+    <item type="dimen" name="sesl_glance_list_body_text_size_over_medium_size">17.0</item>
+    <item type="dimen" name="sesl_glance_list_body_text_size_with_3_line">13.0</item>
+    <item type="dimen" name="sesl_glance_list_default_item_icon_start_padding">57.0</item>
+    <item type="dimen" name="sesl_glance_list_default_item_medium_height_with_1_line">40.0</item>
+    <item type="dimen" name="sesl_glance_list_default_item_medium_height_with_2_line">63.0</item>
+    <item type="dimen" name="sesl_glance_list_description_text_size">14.0</item>
+    <item type="dimen" name="sesl_glance_list_display_text_over_large_size">17.0</item>
+    <item type="dimen" name="sesl_glance_list_display_text_over_medium_size">17.0</item>
+    <item type="dimen" name="sesl_glance_list_display_text_size">13.0</item>
+    <item type="dimen" name="sesl_glance_list_item_bottom_padding">7.0</item>
+    <item type="dimen" name="sesl_glance_list_item_bottom_padding_with_sub_text">10.0</item>
+    <item type="dimen" name="sesl_glance_list_item_icon_size">34.0</item>
+    <item type="dimen" name="sesl_glance_list_item_small_icon_size">22.0</item>
+    <item type="dimen" name="sesl_glance_list_item_start_padding_over_medium">14.0</item>
+    <item type="dimen" name="sesl_glance_list_item_top_padding">8.0</item>
+    <item type="dimen" name="sesl_glance_list_label_text_size">13.0</item>
+    <item type="dimen" name="sesl_glance_list_label_text_size_over_large">13.0</item>
+    <item type="dimen" name="sesl_glance_list_progress_item_body_text">16.0</item>
+    <item type="dimen" name="sesl_glance_list_progress_item_label_text">14.0</item>
+    <dimen name="sesl_glance_list_progress_item_medium_height">30.0dip</dimen>
+    <dimen name="sesl_glance_list_progress_item_medium_height_at_monotone">24.0dip</dimen>
+    <dimen name="sesl_glance_list_progress_item_medium_vertical_margin">8.0dip</dimen>
+    <item type="dimen" name="sesl_glance_list_progress_item_start_padding_over_medium">18.0</item>
+    <dimen name="style_graph_large_display_text_size">26.0dip</dimen>
+    <dimen name="style_graph_small_display_text_size">20.0dip</dimen>
+</resources>

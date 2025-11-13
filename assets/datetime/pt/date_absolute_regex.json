@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "type": "DAY_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<relative_day>)?\\s*(é)?\\s*(<time_period>)?\\s*(<num>|<num_suffix>)?[\\s]*(?:de|[\\/.-])?[\\s]*(<num>|<month>)[\\s]*(?:de|[\\/.-])?[\\s]*(<num>)?",
+    "comment": "04/03/2025 | 04-03-2025 | 25.01.2025 | 25 de 1 de 2025 | 25 de 1 do 2025"
+  },
+  {
+    "id": 2,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "(?:\\s|\\.|,|-)(dia)?\\s*(<num>)\\s*(d[oe])?\\s*(<month>)\\s*(de)?\\s*(<num>)",
+    "comment": "04 de março de 2025 | 4 de março, 2025 | 5 do março, 2025"
+  },
+  {
+    "id": 3,
+    "type": "YEAR_NUM_DAY_NUM_MONTH_WORD",
+    "patternString": "((<num>)[\\s]*(?:do?|[—,-])?[\\s]*(<num>)[\\s]*(?:do)?[\\s]*(<month>))",
+    "comment": "2025 — janeiro 20"
+  },
+  {
+    "id": 4,
+    "type": "DAY_YEAR_NUM_MONTH_WORD",
+    "patternString": "((<num>|<num_suffix>)[\\s]*(?:do?)?[\\s]*(<num>)[\\s]*(?:de[l]?|[,])?[\\s]*(<month>))",
+    "comment": "1 de 2025 de janeiro"
+  },
+  {
+    "id": 5,
+    "type": "DAY_MONTH_OR_MONTH_YEAR_ALL_NUM",
+    "patternString": "(<num>[\\s]*(?:de|[\\/\\.-])[\\s]*<num>)",
+    "comment": "5 de 2026"
+  },
+  {
+    "id": 6,
+    "type": "DAY_NUM_MONTH_WORD",
+    "patternString": "(<num_suffix>|<num>)[\\s]*(?:de)[\\s]*(<month>)",
+    "comment": "1 de janeiro"
+  },
+  {
+    "id": 7,
+    "type": "MONTH_WORD_YEAR_NUM",
+    "patternString": "(<month>[\\s]*(?:do?)?[\\s]*(<num>))([,]?[\\s]*<time_period>[\\s]*<num>)?",
+    "comment": "janeiro 2025"
+  },
+  {
+    "id": 8,
+    "type": "MONTH_WORD_DAY_NUM_KEYWORD_YEAR_NUM",
+    "patternString": "(<month>)[\\s]*\\(<time_period>[\\s]*(<num>|<num_suffix>)\\)[,]?[\\s]*(<num>)",
+    "comment": "abril (dia 10), 2023"
+  },
+  {
+    "id": 9,
+    "type": "special_days",
+    "patternString": "(<time_period>)?[\\s]*(de l[oa]s?|do?)?[\\s]*(<special_day>)"
+  },
+  {
+    "id": 10,
+    "type": "RELATIVE_DAY",
+    "patternString": "(<relative_day>|<time_period>)",
+    "comment": "hoje"
+  },
+  {
+    "id": 11,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK",
+    "patternString": "(<relative>)?[\\s]*(do?)?[\\s]*(<month>[.]?|<day_of_week>)",
+    "comment": "próximo outubro"
+  },
+  {
+    "id": 12,
+    "type": "RELATIVE_MONTH_OR_DAY_OF_WEEK_REVERSED",
+    "patternString": "(<month>[.]?|<day_of_week>)\\s*(do?)?\\s*(<relative>)",
+    "comment": "terça-feira passada"
+  },
+  {
+    "id": 14,
+    "type": "YEAR_NUM_MONTH_NUM_OR_WORD_DAY_NUM",
+    "patternString": "(<num>)[\\s]*[,]?[\\s]*(<num>|<month>)[\\s]*(?:do?)?[\\s]*(<num>)",
+    "comment": "2026, maio de 23 | 2026, 1 de 23"
+  },
+  {
+    "id": 15,
+    "type": "TIME_PERIOD_NUM_YEAR_NUM",
+    "patternString": "(<time_period>)[\\s]*(<num>|<num_suffix>)[\\s]*(?:do?|da|no|no ano de)?[\\s]*(<num>)?",
+    "comment": "trimestre 2 do ano 2022"
+  },
+  {
+    "id": 16,
+    "type": "RELATIVE_DAY_OF_MONTH_OR_MONTH",
+    "patternString": "(<before_reference>|<last_reference>|<current_reference>|<num_suffix>)\\s*(?:do?|da|no)?\\s*(<month>|<day_of_week>)\\s*(<after_reference>)?\\s*(<month>)?",
+    "comment": "este domingo"
+  },
+  {
+    "id": 17,
+    "type": "MONTH_DAY_YEAR_ALL_NUM",
+    "patternString": "(?:\\s|\\.|,|\\-)(<month>)\\s*(<num>)\\s*(?:de|[,])?\\s*(<num>)",
+    "comment": "Março 5, 2025 | Março 5 de 2025"
+  },
+  {
+    "id": 18,
+    "type": "DAY_ODINAL_MONTH",
+    "patternString": "(?:\\s|\\.|,|-)(<num>)\\.\\s*[o|ª]\\s*(?:<time_period>\\s*)?(?:de|do)\\s*(<month>)?\\s*(<time_period>)?\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>|<num_suffix>)?",
+    "comment": "1.o de Maio, "
+  },
+  {
+    "id": 19,
+    "type": "IN_NUM_TIME",
+    "patternString": "(<num>|<num_word>)\\s*(<time_period>|<time_h>|<time_m>|<time_s>)"
+  },
+  {
+    "id": 20,
+    "type": "RELATIVE_DAY_OF_WEEK",
+    "patternString": "(<day_of_week>)\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)"
+  },
+  {
+    "id":21,
+    "type": "RELATIVE_DAY_RELATIVE_MONTH",
+    "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>|<num_suffix>)\\s*(?:do?|da|no)?[\\s]*(<month>|<day_of_week>)"
+  },
+  {
+    "id": 22,
+    "type": "COMBINED_RELATIVE_DATE",
+    "patternString": "(?:\\s|\\.|,|-)(<num>|<num_suffix>)\\s*(\\.ª)?\\s*(<day_of_week>)\\s*(<current_reference>)\\s*(<time_period>)|(<num_suffix>|<num>)\\s*(<day_of_week>|<time_period>)\\s*(de|em|do)\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)?\\s*(<time_period>)?\\s*(<month>)?\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)?|(<day_of_week>)\\s*(de|da)\\s*(<time_period>)\\s*(<after_reference>|<before_reference>|<last_reference>|<current_reference>)"
+  },
+  {
+    "id": 23,
+    "type": "ABSOLUTE_YEAR",
+    "patternString": "(<after_reference>|<before_reference>|<last_reference>|<current_reference>)\\s*(<time_period>)\\s*(em)\\s*(<num>)"
+  },
+  {
+    "id": 24,
+    "type": "RELATIVE_YEAR",
+    "patternString": "(<num_suffix>|<num>)\\s*<time_period>\\s*em\\s*(<num>|<num_word>)"
+  }
+]
+  

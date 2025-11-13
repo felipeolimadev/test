@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="anniversary_day_left">
+        <item quantity="other">%d giorni residui</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d giorno residuo</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="anniversary_listen_brief">
+        <item quantity="other">L’evento %1$s si verificherà tra %2$d giorni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">L’evento %1$s si verificherà tra %2$d giorno.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_continue_tomorrow_description">
+        <item quantity="other">%1$s%2$d eventi%3$s continueranno domani.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d evento%3$s continuerà domani.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_description">
+        <item quantity="other">Sono presenti %1$s%2$d eventi%3$s per oggi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">È presente %1$s%2$d evento%3$s per oggi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_all_listen_brief">
+        <item quantity="other">Oggi avete %1$d eventi. Il primo evento è %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oggi avete %1$d evento. Il primo evento è %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_left_description">
+        <item quantity="other">%1$s%2$d eventi rimanenti%3$s per oggi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s%2$d evento rimanente%3$s per oggi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_description_all">
+        <item quantity="other">Sono presenti %1$s%2$d eventi%3$s per domani.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">È presente %1$s%2$d evento%3$s per domani.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="calendar_events_tomorrow_listen_brief">
+        <item quantity="other">Domani avete %1$d eventi. Il primo evento è %2$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Domani avete %1$d evento. Il primo evento è %2$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_daily_alarm_events">
+        <item quantity="other">%d eventi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d evento</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="capability_upcoming_event_starts_in_minutes">
+        <item quantity="other">Inizia tra %d minuti</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Inizia tra %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="daily_reminder_review_title">
+        <item quantity="other">%d prom. rimanenti per oggi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d prom. rimanente per oggi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_message_listen_brief">
+        <item quantity="other">Oggi avete ricevuto %d messaggi di consegna. Assicuratevi di essere aggiornati sullo stato delle consegne.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oggi avete ricevuto %d messaggio di consegna. Assicuratevi di essere aggiornati sullo stato della consegna.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delivery_title">
+        <item quantity="other">%d consegne oggi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d consegna oggi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_blood_glucose_insight">
+        <item quantity="other">Sopra limite %d volte questa sett.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sopra limite %d volta questa sett.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_daily_activity_title">
+        <item quantity="other">%d obiettivi giorn. ragg.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d obiettivo giorn. ragg.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_elevation_gain_and_calories_listen_brief">
+        <item quantity="other">Il tuo incremento di elevazione totale è stato di %1$s e hai bruciato %2$,d kilocalorie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Il tuo incremento di elevazione totale è stato di %1$s e hai bruciato %2$,d kilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_pace_and_calories_listen_brief">
+        <item quantity="other">La tua andatura media è stata di %1$s e hai bruciato %2$,d kilocalorie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">La tua andatura media è stata di %1$s e hai bruciato %2$,d kilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_secondary_speed_and_calories_listen_brief">
+        <item quantity="other">La tua velocità media è stata di %1$s e hai bruciato %2$,d kilocalorie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">La tua velocità media è stata di %1$s e hai bruciato %2$,d kilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_exercises_workout_result_summary_listen_brief">
+        <item quantity="other">Ecco un riepilogo del tuo allenamento di %1$s. È durato %2$s e hai bruciato %3$,d kilocalorie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ecco un riepilogo del tuo allenamento di %1$s. È durato %2$s e hai bruciato %3$,d kilocaloria.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="health_medication_missed_schedule_listen_brief">
+        <item quantity="other">Oggi hai saltato %d farmaci programmati.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oggi hai saltato %d farmaco programmato.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="hourse_plrural">
+        <item quantity="other">%d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_hour">
+        <item quantity="other">%d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="map_description_time_min">
+        <item quantity="other">%d minuti</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="minutes_plrural">
+        <item quantity="other">%d minuti</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_insight_message">
+        <item quantity="other">Oggi hai %1$s%2$d chiamate perse%3$s che non hai ancora controllato.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oggi hai %1$s%2$d chiamata persa%3$s che non hai ancora controllato.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_listen_brief">
+        <item quantity="other">Oggi avete perso %d chiamate. Potete rivederle in Now brief. Se necessario, potete anche impostare dei promemoria per non dimenticare di richiamare chi vi ha cercato.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oggi avete perso %d chiamata. Potete rivederla in Now brief. Se necessario, potete anche impostare un promemoria per non dimenticare di richiamare chi vi ha cercato.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_more_missed_calls">
+        <item quantity="other">Altre %d chiamate perse</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d altra chiamata persa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="missed_call_title">
+        <item quantity="other">%d chiamate perse</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d chiamata persa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nuove notifiche</item>
+        <item quantity="one">%d nuova notifica</item>
+    </plurals>
+    <plurals name="news_hours_ago">
+        <item quantity="other">%d ore fa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ora fa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="news_minutes_ago">
+        <item quantity="other">%d minuti fa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuto fa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="onboarding_child_account_notice">
+        <item quantity="other">Per utilizzare le funzioni di intelligenza avanzata di Galaxy AI, dovete avere almeno %d anni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Per utilizzare le funzioni di intelligenza avanzata di Galaxy AI, dovete avere almeno %d anno.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_messages">
+        <item quantity="other">%d messaggi</item>
+        <item quantity="one">%d messaggi</item>
+    </plurals>
+    <plurals name="pd_mi">
+        <item quantity="other">%d mi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d mi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="seconds_plrural">
+        <item quantity="other">%d secondi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d secondo</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="today_morning_alarm_insight_description">
+        <item quantity="other">Avete impostato %1$s%2$d sveglie%3$s per la mattina.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avete impostato %1$s%2$d sveglia%3$s per la mattina.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="tomorrow_alarm_insight_description">
+        <item quantity="other">Avete impostato %1$s%2$d sveglie%3$s per domani mattina.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avete impostato %1$s%2$d sveglia%3$s per domani mattina.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_alarm_insight_message">
+        <item quantity="other">%1$sParti entro le %2$s%3$s per arrivare in aeroporto almeno %4$d ore prima della partenza. Imposta una sveglia per evitare di dimenticartene.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sParti entro le %2$s%3$s per arrivare in aeroporto almeno %4$d ora prima della partenza. Imposta una sveglia per evitare di dimenticartene.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_airport_time_to_leave_insight_message">
+        <item quantity="other">%1$sParti entro le %2$s%3$s per raggiungere l’aeroporto almeno %4$d ore prima del volo.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$sParti entro le %2$s%3$s per raggiungere l’aeroporto almeno %4$d ora prima del volo.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_gemini_travel_itinerary_city_prompt_period_before">
+        <item quantity="other">Consiglia un itinerario di viaggio di %1$d giorni per %2$s inclusi luoghi da visitare, cose da fare e ristoranti da provare.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Consiglia un itinerario di viaggio di %1$d giorno per %2$s inclusi luoghi da visitare, cose da fare e ristoranti da provare.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="travel_installed_package_insight_message">
+        <item quantity="other">Controlla queste %1$sapplicazioni consigliate%2$s che potrebbero risultare utili durante il viaggio.</item>
+        <item quantity="one">Controlla questa %1$sapplicazione consigliata%2$s che potrebbe rivelarsi utile durante il viaggio.</item>
+    </plurals>
+    <plurals name="travel_lanauage_pack_insight_message">
+        <item quantity="other">%1$sScarica questo pacchetto lingua%2$s in anticipo per prepararti a utilizzarlo in Interprete quando arrivi a destinazione.</item>
+        <item quantity="one">%1$sScarica questi pacchetti lingua%2$s in anticipo per prepararti a utilizzarli in Interprete quando arrivi a destinazione.</item>
+    </plurals>
+    <plurals name="travel_language_pack_available_to_download">
+        <item quantity="other">Pacchetti lingua da scaricare</item>
+        <item quantity="one">Pacchetto lingua da scaricare</item>
+    </plurals>
+    <plurals name="unattended_iot_title_1">
+        <item quantity="other">%d dispositivi accesi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dispositivo acceso</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day">
+        <item quantity="other">Ultimo contatto %d giorni fa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimo contatto %d giorno fa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_day_simple">
+        <item quantity="other">Ultimo contatto %d giorni fa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimo contatto %d giorno fa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_month">
+        <item quantity="other">Ultimo contatto %d mesi fa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimo contatto %d mese fa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_last_contacted_week">
+        <item quantity="other">Ultimo contatto %d settimane fa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ultimo contatto %d settimana fa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="upcoming_contact_more_contact">
+        <item quantity="other">Altri %d contatti</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d altro contatto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wallet_coupon_expires_listen_brief_data">
+        <item quantity="other">Un coupon presente in Samsung Wallet scadrà tra %d giorni. Assicuratevi di utilizzarlo prima che scada.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Un coupon presente in Samsung Wallet scadrà tra %d giorno. Assicuratevi di utilizzarlo prima che scada.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_high_temperature">
+        <item quantity="other">Massima meno %d gradi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Massima meno %d grado</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_below_zero_low_temperature">
+        <item quantity="other">Minima meno %d gradi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minima meno %d grado</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_destination_listen_brief">
+        <item quantity="other">Avete un evento in calendario dal titolo %1$s. Alle %4$s, la temperatura sarà di %2$d gradi %3$s a %5$s.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Avete un evento in calendario dal titolo %1$s. Alle %4$s, la temperatura sarà di %2$d grado %3$s a %5$s.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_high_temperature">
+        <item quantity="other">Massima %d gradi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Massima %d grado</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="weather_low_temperature">
+        <item quantity="other">Minima %d gradi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minima %d grado</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="youtube_view">
+        <item quantity="other">%s visualizzazioni</item>
+        <item quantity="one">%s visualizzazione</item>
+    </plurals>
+</resources>

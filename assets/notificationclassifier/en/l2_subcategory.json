@@ -1,0 +1,2811 @@
+[
+    {
+      "category": "accommodation",
+      "rules": [
+        {
+          "name": "booking_accommodation",
+          "pattern": [
+            {
+              "name": "booking_status",
+              "keywords": [
+                "booking",
+                "booked",
+                "reservation",
+                "reserved"
+              ]
+            },
+            {
+              "name": "accommodation_type",
+              "keywords": [
+                "hotel",
+                "motel",
+                "hostel",
+                "accommodation",
+                "room",
+                "duplex",
+                "triplex",
+                "quadruplex",
+                "villa",
+                "inn",
+                "pg",
+                "penthouse",
+                "rooftop",
+                "residency",
+                "dharmsala",
+                "property",
+                "resort",
+                "lodge"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "accommodation_booking_action",
+          "pattern": [
+            {
+              "name": "accommodation_type",
+              "keywords": [
+                "hotel",
+                "resort",
+                "motel",
+                "hostel",
+                "homestay",
+                "bnb",
+                "airbnb",
+                "guesthouse",
+                "guest house",
+                "lodge",
+                "stay",
+                "villa",
+                "suite",
+                "room"
+              ]
+            },
+            {
+              "name": "booking_activity",
+              "keywords": [
+                "booking",
+                "reservation",
+                "appointment",
+                "stay",
+                "slot"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "stay_status_update",
+          "pattern": [
+            {
+              "name": "stay_action",
+              "keywords": [
+                "stay"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "accommodation_booking_time",
+          "pattern": [
+            {
+              "name": "accommodation_item",
+              "keywords": [
+                "stay",
+                "room"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "tonight",
+                "morning",
+                "evening",
+                "afternoon",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "accommodation_booking_status",
+          "pattern": [
+            {
+              "name": "accommodation_type",
+              "keywords": [
+                "hotel",
+                "resort",
+                "homestay",
+                "airbnb",
+                "guesthouse",
+                "villa",
+                "room",
+                "suite"
+              ]
+            },
+            {
+              "name": "booking_action",
+              "keywords": [
+                "booking",
+                "reservation",
+                "stay"
+              ]
+            },
+            {
+              "name": "status_update",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "hotel_booking_time",
+          "pattern": [
+            {
+              "name": "accommodation_type",
+              "keywords": [
+                "checkin",
+                "check-in",
+                "check in",
+                "checkout",
+                "check-out",
+                "check out",
+                "hotel",
+                "stay",
+                "room",
+                "villa",
+                "resort",
+                "guesthouse"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "morning",
+                "evening",
+                "night",
+                "afternoon",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "beauty",
+      "rules": [
+        {
+          "name": "beauty_service_booking",
+          "pattern": [
+            {
+              "name": "booking_action",
+              "keywords": [
+                "booking",
+                "booked",
+                "appointment"
+              ]
+            },
+            {
+              "name": "beauty_service",
+              "keywords": [
+                "beauty parlor",
+                "makeup",
+                "manicure",
+                "pedicure"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_booking_service",
+          "pattern": [
+            {
+              "name": "booking_status",
+              "keywords": [
+                "booking",
+                "booked",
+                "appointment"
+              ]
+            },
+            {
+              "name": "body_part",
+              "keywords": [
+                "head",
+                "face",
+                "foot",
+                "body"
+              ]
+            },
+            {
+              "name": "service_type",
+              "keywords": [
+                "massage"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "beauty_service_booking",
+          "pattern": [
+            {
+              "name": "appointment_booking",
+              "keywords": [
+                "booking",
+                "booked",
+                "appointment"
+              ]
+            },
+            {
+              "name": "service_type",
+              "keywords": [
+                "hair"
+              ]
+            },
+            {
+              "name": "service_action",
+              "keywords": [
+                "clean",
+                "cleansing",
+                "spa",
+                "cut",
+                "cutting",
+                "color",
+                "coloring",
+                "styling",
+                "dry"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "beauty_service_booking",
+          "pattern": [
+            {
+              "name": "beauty_service_type",
+              "keywords": [
+                "salon",
+                "spa",
+                "parlour",
+                "parlor",
+                "beauty",
+                "makeup",
+                "haircut",
+                "hairstyle",
+                "manicure",
+                "pedicure",
+                "massage",
+                "facial",
+                "waxing"
+              ]
+            },
+            {
+              "name": "appointment_action",
+              "keywords": [
+                "appointment",
+                "booking",
+                "slot",
+                "visit",
+                "session"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_booking_status",
+          "pattern": [
+            {
+              "name": "appointment_item",
+              "keywords": [
+                "appointment",
+                "session",
+                "booking"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "beauty_service",
+              "keywords": [
+                "salon",
+                "spa",
+                "beauty",
+                "parlour",
+                "parlor",
+                "stylist",
+                "massage",
+                "facial",
+                "makeup"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_reference_salon_service",
+          "pattern": [
+            {
+              "name": "appointment_reference",
+              "keywords": [
+                "booking",
+                "reference",
+                "ref",
+                "appointment"
+              ]
+            },
+            {
+              "name": "identification_number",
+              "keywords": [
+                "id",
+                "number"
+              ]
+            },
+            {
+              "name": "salon_service",
+              "keywords": [
+                "salon",
+                "spa",
+                "beauty",
+                "stylist",
+                "makeup",
+                "facial",
+                "massage"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_schedule_service",
+          "pattern": [
+            {
+              "name": "appointment_type",
+              "keywords": [
+                "appointment",
+                "session",
+                "booking",
+                "visit"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "tonight",
+                "morning",
+                "evening",
+                "afternoon",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "service_providers",
+              "keywords": [
+                "salon",
+                "spa",
+                "beauty",
+                "stylist",
+                "massage",
+                "facial"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "beauty_service_appointment_status",
+          "pattern": [
+            {
+              "name": "service_type",
+              "keywords": [
+                "salon",
+                "spa",
+                "massage",
+                "facial",
+                "stylist",
+                "parlour",
+                "makeup",
+                "manicure",
+                "pedicure",
+                "haircut"
+              ]
+            },
+            {
+              "name": "appointment_reference",
+              "keywords": [
+                "appointment",
+                "session",
+                "booking",
+                "slot"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "medical",
+      "rules": [
+        {
+          "name": "appointment_healthcare_location",
+          "pattern": [
+            {
+              "name": "appointment_item",
+              "keywords": [
+                "appointment"
+              ]
+            },
+            {
+              "name": "healthcare_location",
+              "keywords": [
+                "doctor",
+                "hospital",
+                "clinic"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_doctor_relationship",
+          "pattern": [
+            {
+              "name": "appointment_reference",
+              "keywords": [
+                "appointment with"
+              ]
+            },
+            {
+              "name": "medical_professional",
+              "keywords": [
+                "dr",
+                "doctor"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "home_collection_status",
+          "pattern": [
+            {
+              "name": "collection_type",
+              "keywords": [
+                "home collection"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "cancel"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_status_update",
+          "pattern": [
+            {
+              "name": "medical_event",
+              "keywords": [
+                "appointment",
+                "checkup",
+                "test",
+                "visit",
+                "consult",
+                "consultation"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "diagnostic_center_service",
+          "pattern": [
+            {
+              "name": "diagnostic_center",
+              "keywords": [
+                "lab",
+                "pathology",
+                "diagnostic",
+                "diagnostics",
+                "center",
+                "centre"
+              ]
+            },
+            {
+              "name": "medical_service",
+              "keywords": [
+                "test",
+                "scan",
+                "xray",
+                "ultrasound",
+                "bloodwork",
+                "checkup",
+                "report",
+                "booking"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "medical_appointment_scheduling",
+          "pattern": [
+            {
+              "name": "health_facility",
+              "keywords": [
+                "hospital",
+                "clinic",
+                "opd",
+                "health center",
+                "healthcenter",
+                "healthcare"
+              ]
+            },
+            {
+              "name": "appointment_activity",
+              "keywords": [
+                "appointment",
+                "visit",
+                "slot",
+                "booking"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_scheduling_time",
+          "pattern": [
+            {
+              "name": "appointment_action",
+              "keywords": [
+                "appointment",
+                "checkup",
+                "test",
+                "consult",
+                "visit"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "tonight",
+                "morning",
+                "evening",
+                "afternoon",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "medical_test_booking",
+          "pattern": [
+            {
+              "name": "diagnostic_service",
+              "keywords": [
+                "lab",
+                "diagnostic",
+                "diagnostics",
+                "pathology"
+              ]
+            },
+            {
+              "name": "test_type",
+              "keywords": [
+                "test",
+                "bloodwork",
+                "scan",
+                "xray",
+                "ultrasound"
+              ]
+            },
+            {
+              "name": "booking_status",
+              "keywords": [
+                "booking",
+                "slot",
+                "confirmed",
+                "scheduled",
+                "booked"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "doctor_appointment_status",
+          "pattern": [
+            {
+              "name": "medical_professional",
+              "keywords": [
+                "doctor",
+                "dr",
+                "physician"
+              ]
+            },
+            {
+              "name": "consultation_activity",
+              "keywords": [
+                "consult",
+                "consultation",
+                "appointment"
+              ]
+            },
+            {
+              "name": "appointment_status",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "equipment_rental",
+      "rules": [
+        {
+          "name": "rental_booking_status",
+          "pattern": [
+            {
+              "name": "rental_action",
+              "keywords": [
+                "booking",
+                "reservation",
+                "rent",
+                "rental",
+                "hire",
+                "leasing",
+                "slot"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "equipment_item",
+              "keywords": [
+                "tool",
+                "gear",
+                "camera",
+                "bike",
+                "car",
+                "projector",
+                "equipment",
+                "machine",
+                "furniture",
+                "tent",
+                "instrument"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "booking_reference_identification",
+          "pattern": [
+            {
+              "name": "booking_reference",
+              "keywords": [
+                "booking",
+                "reference",
+                "ref",
+                "reservation",
+                "rental",
+                "lease"
+              ]
+            },
+            {
+              "name": "id_number",
+              "keywords": [
+                "id",
+                "number",
+                "token"
+              ]
+            },
+            {
+              "name": "equipment_item",
+              "keywords": [
+                "camera",
+                "bike",
+                "car",
+                "equipment",
+                "tool",
+                "instrument",
+                "machine",
+                "gear",
+                "tent",
+                "furniture"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "rental_booking_time_item",
+          "pattern": [
+            {
+              "name": "rental_action",
+              "keywords": [
+                "rental",
+                "reservation",
+                "booking",
+                "lease",
+                "hire"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "morning",
+                "afternoon",
+                "evening",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "equipment_item",
+              "keywords": [
+                "camera",
+                "bike",
+                "car",
+                "equipment",
+                "tool",
+                "gear",
+                "machine",
+                "instrument",
+                "tent",
+                "furniture"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "equipment_rental_status",
+          "pattern": [
+            {
+              "name": "equipment_item",
+              "keywords": [
+                "camera",
+                "bike",
+                "car",
+                "equipment",
+                "tool",
+                "gear",
+                "instrument",
+                "projector",
+                "laptop",
+                "machine",
+                "tent",
+                "furniture"
+              ]
+            },
+            {
+              "name": "rental_action",
+              "keywords": [
+                "rent",
+                "rental",
+                "reservation",
+                "booking",
+                "lease",
+                "hire"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "education",
+      "rules": [
+        {
+          "name": "education_event_booking",
+          "pattern": [
+            {
+              "name": "booking_action",
+              "keywords": [
+                "booking",
+                "booked",
+                "reservation",
+                "registration"
+              ]
+            },
+            {
+              "name": "education_event",
+              "keywords": [
+                "workshop",
+                "interview",
+                "school",
+                "college",
+                "institute",
+                "coaching",
+                "seminar"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "education_event_scheduling",
+          "pattern": [
+            {
+              "name": "education_topic",
+              "keywords": [
+                "class",
+                "course",
+                "coaching",
+                "training",
+                "lesson",
+                "lecture",
+                "exam",
+                "test",
+                "tuition",
+                "tutorial",
+                "counselling",
+                "counseling",
+                "orientation",
+                "seminar",
+                "workshop",
+                "admission",
+                "enrollment",
+                "registration",
+                "library"
+              ]
+            },
+            {
+              "name": "appointment_term",
+              "keywords": [
+                "appointment",
+                "booking",
+                "reservation",
+                "slot",
+                "session",
+                "schedule"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_status_update",
+          "pattern": [
+            {
+              "name": "appointment_item",
+              "keywords": [
+                "appointment",
+                "session",
+                "slot",
+                "booking",
+                "reservation",
+                "registration"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "education_event",
+              "keywords": [
+                "class",
+                "exam",
+                "test",
+                "counselling",
+                "training",
+                "course",
+                "seminar",
+                "workshop",
+                "admission"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "reservation_reference_identification",
+          "pattern": [
+            {
+              "name": "reservation_reference",
+              "keywords": [
+                "booking",
+                "reservation",
+                "reference",
+                "ref",
+                "registration"
+              ]
+            },
+            {
+              "name": "identification_number",
+              "keywords": [
+                "id",
+                "number"
+              ]
+            },
+            {
+              "name": "education_related",
+              "keywords": [
+                "class",
+                "exam",
+                "training",
+                "course",
+                "admission",
+                "library"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "education_appointment_management",
+          "pattern": [
+            {
+              "name": "education_item",
+              "keywords": [
+                "class",
+                "exam",
+                "test",
+                "course",
+                "training",
+                "seminar",
+                "workshop",
+                "counselling",
+                "admission",
+                "library"
+              ]
+            },
+            {
+              "name": "appointment_action",
+              "keywords": [
+                "appointment",
+                "session",
+                "slot",
+                "booking",
+                "reservation",
+                "registration"
+              ]
+            },
+            {
+              "name": "status_confirmation",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "fitness_sports",
+      "rules": [
+        {
+          "name": "sports_booking_activity",
+          "pattern": [
+            {
+              "name": "booking_action",
+              "keywords": [
+                "booking",
+                "booked",
+                "reservation"
+              ]
+            },
+            {
+              "name": "sport_type",
+              "keywords": [
+                "yoga",
+                "football",
+                "baseball",
+                "basketball",
+                "cricket",
+                "badminton",
+                "volleyball",
+                "hockey",
+                "tennis",
+                "scoccer",
+                "rugby",
+                "squash",
+                "snooker",
+                "pool",
+                "billiards"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "fitness_facility_booking",
+          "pattern": [
+            {
+              "name": "fitness_terms",
+              "keywords": [
+                "gym",
+                "fitness",
+                "workout",
+                "training",
+                "trainer",
+                "personal training",
+                "zumba",
+                "yoga",
+                "pilates",
+                "aerobics",
+                "dance",
+                "martialarts",
+                "kickboxing",
+                "crossfit",
+                "swimming",
+                "pool",
+                "badminton",
+                "tennis",
+                "squash",
+                "cricket",
+                "football",
+                "soccer",
+                "basketball",
+                "stadium",
+                "sports complex",
+                "club",
+                "arena",
+                "court",
+                "field",
+                "track"
+              ]
+            },
+            {
+              "name": "reservation_terms",
+              "keywords": [
+                "booking",
+                "reservation",
+                "slot",
+                "appointment",
+                "registration",
+                "membership"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "sports_booking_status",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "slot",
+                "appointment",
+                "registration",
+                "membership"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "sports_venue",
+              "keywords": [
+                "gym",
+                "fitness",
+                "yoga",
+                "zumba",
+                "training",
+                "swimming",
+                "pool",
+                "badminton",
+                "tennis",
+                "squash",
+                "court",
+                "stadium",
+                "field",
+                "sports"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "membership_reference_identification",
+          "pattern": [
+            {
+              "name": "membership_reference",
+              "keywords": [
+                "booking",
+                "reference",
+                "ref",
+                "reservation",
+                "membership"
+              ]
+            },
+            {
+              "name": "identification_token",
+              "keywords": [
+                "id",
+                "number",
+                "token"
+              ]
+            },
+            {
+              "name": "fitness_facility",
+              "keywords": [
+                "gym",
+                "fitness",
+                "yoga",
+                "zumba",
+                "trainer",
+                "pool",
+                "badminton",
+                "tennis",
+                "court",
+                "field",
+                "arena",
+                "stadium"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_time_activity",
+          "pattern": [
+            {
+              "name": "reservation_action",
+              "keywords": [
+                "booking",
+                "reservation",
+                "slot",
+                "appointment",
+                "registration"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "morning",
+                "afternoon",
+                "evening",
+                "night",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "activity_location",
+              "keywords": [
+                "gym",
+                "fitness",
+                "yoga",
+                "zumba",
+                "pool",
+                "badminton",
+                "tennis",
+                "squash",
+                "court",
+                "arena",
+                "field",
+                "stadium"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "facility_booking_status",
+          "pattern": [
+            {
+              "name": "facility_type",
+              "keywords": [
+                "gym",
+                "fitness",
+                "trainer",
+                "yoga",
+                "zumba",
+                "swimming",
+                "pool",
+                "badminton",
+                "tennis",
+                "squash",
+                "stadium",
+                "arena",
+                "field",
+                "court"
+              ]
+            },
+            {
+              "name": "booking_action",
+              "keywords": [
+                "booking",
+                "reservation",
+                "slot",
+                "appointment",
+                "registration"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "government_public",
+      "rules": [
+        {
+          "name": "appointment_documentation",
+          "pattern": [
+            {
+              "name": "appointment_item",
+              "keywords": [
+                "appointment"
+              ]
+            },
+            {
+              "name": "document_item",
+              "keywords": [
+                "passport",
+                "visa"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "government_document_reservation",
+          "pattern": [
+            {
+              "name": "government_document",
+              "keywords": [
+                "passport",
+                "visa",
+                "aadhaar",
+                "aadhar",
+                "pan card",
+                "ration card",
+                "driving license",
+                "dl",
+                "id card",
+                "election card",
+                "voter id",
+                "municipal",
+                "govt",
+                "government",
+                "public service",
+                "embassy",
+                "consulate",
+                "immigration",
+                "registration office"
+              ]
+            },
+            {
+              "name": "appointment_details",
+              "keywords": [
+                "appointment",
+                "booking",
+                "reservation",
+                "slot",
+                "schedule",
+                "id",
+                "number",
+                "token"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "appointment_status_documents",
+          "pattern": [
+            {
+              "name": "appointment_item",
+              "keywords": [
+                "appointment",
+                "booking",
+                "reservation",
+                "slot",
+                "registration"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "identification_documents",
+              "keywords": [
+                "passport",
+                "visa",
+                "aadhaar",
+                "aadhar",
+                "pan",
+                "ration",
+                "license",
+                "voter",
+                "govt",
+                "government",
+                "public service",
+                "immigration"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "government_identification_booking",
+          "pattern": [
+            {
+              "name": "booking_reference",
+              "keywords": [
+                "booking",
+                "reference",
+                "ref",
+                "appointment",
+                "registration",
+                "slot",
+                "token"
+              ]
+            },
+            {
+              "name": "identification_number",
+              "keywords": [
+                "id",
+                "number"
+              ]
+            },
+            {
+              "name": "government_document",
+              "keywords": [
+                "passport",
+                "visa",
+                "aadhaar",
+                "aadhar",
+                "pan",
+                "ration",
+                "license",
+                "govt",
+                "government",
+                "public service"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "government_service_booking_time",
+          "pattern": [
+            {
+              "name": "booking_item",
+              "keywords": [
+                "appointment",
+                "booking",
+                "reservation",
+                "slot",
+                "registration"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "morning",
+                "afternoon",
+                "evening",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "government_document",
+              "keywords": [
+                "passport",
+                "visa",
+                "aadhaar",
+                "aadhar",
+                "pan",
+                "ration",
+                "license",
+                "govt",
+                "government",
+                "public service",
+                "immigration"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "government_service_appointment_status",
+          "pattern": [
+            {
+              "name": "government_document",
+              "keywords": [
+                "passport",
+                "visa",
+                "aadhaar",
+                "aadhar",
+                "pan",
+                "ration",
+                "license",
+                "govt",
+                "government",
+                "immigration",
+                "public service",
+                "embassy",
+                "consulate"
+              ]
+            },
+            {
+              "name": "appointment_booking",
+              "keywords": [
+                "appointment",
+                "booking",
+                "reservation",
+                "slot",
+                "registration"
+              ]
+            },
+            {
+              "name": "status_update",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "restaurant",
+      "rules": [
+        {
+          "name": "restaurant_booking_process",
+          "pattern": [
+            {
+              "name": "reservation_action",
+              "keywords": [
+                "booking",
+                "booked",
+                "reservation",
+                "reserved"
+              ]
+            },
+            {
+              "name": "restaurant_type",
+              "keywords": [
+                "restaurant",
+                "cafe",
+                "diner",
+                "canteen",
+                "food"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "reservation_food_service",
+          "pattern": [
+            {
+              "name": "reservation_status",
+              "keywords": [
+                "booking",
+                "booked",
+                "reservation",
+                "reserved"
+              ]
+            },
+            {
+              "name": "dining_activity",
+              "keywords": [
+                "dinning",
+                "dining",
+                "lunch",
+                "dineout",
+                "food",
+                "dinner",
+                "diner",
+                "buffet",
+                "caterers"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "restaurant_booking_management",
+          "pattern": [
+            {
+              "name": "restaurant_type",
+              "keywords": [
+                "restaurant",
+                "dine in",
+                "dining",
+                "eatery",
+                "bistro",
+                "cafe",
+                "cafeteria",
+                "foodcourt",
+                "buffet",
+                "steakhouse",
+                "bar",
+                "pub"
+              ]
+            },
+            {
+              "name": "reservation_details",
+              "keywords": [
+                "booking",
+                "reservation",
+                "table",
+                "slot",
+                "id",
+                "number"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "reservation_status_restaurant",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "reservation",
+                "booking",
+                "table"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "restaurant_type",
+              "keywords": [
+                "restaurant",
+                "dine",
+                "dining",
+                "bistro",
+                "cafe",
+                "bar",
+                "pub",
+                "eatery"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "reservation_identification_location",
+          "pattern": [
+            {
+              "name": "reservation_reference_item",
+              "keywords": [
+                "booking",
+                "reference",
+                "ref",
+                "reservation",
+                "table"
+              ]
+            },
+            {
+              "name": "identification_number",
+              "keywords": [
+                "id",
+                "number",
+                "no."
+              ]
+            },
+            {
+              "name": "dining_location",
+              "keywords": [
+                "restaurant",
+                "cafe",
+                "bistro",
+                "dining",
+                "eatery",
+                "bar",
+                "pub"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "restaurant_reservation_timing",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "reservation",
+                "booking",
+                "table"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "tonight",
+                "morning",
+                "evening",
+                "afternoon",
+                "lunch",
+                "dinner",
+                "breakfast",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "dining_location",
+              "keywords": [
+                "restaurant",
+                "dining",
+                "cafe",
+                "bistro",
+                "pub",
+                "bar"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "restaurant_reservation_status",
+          "pattern": [
+            {
+              "name": "restaurant_venue",
+              "keywords": [
+                "restaurant",
+                "dining",
+                "cafe",
+                "bistro",
+                "eatery",
+                "buffet",
+                "pub",
+                "bar"
+              ]
+            },
+            {
+              "name": "booking_action",
+              "keywords": [
+                "table",
+                "reservation",
+                "booking"
+              ]
+            },
+            {
+              "name": "status_update",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "reservation_details_process",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "reservation",
+                "table",
+                "booking"
+              ]
+            },
+            {
+              "name": "guest_count_identifier",
+              "keywords": [
+                "under",
+                "party",
+                "guest",
+                "guests",
+                "people",
+                "persons",
+                "covers"
+              ]
+            },
+            {
+              "name": "dining_venue_type",
+              "keywords": [
+                "restaurant",
+                "dining",
+                "cafe",
+                "bistro",
+                "bar",
+                "pub"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "culture",
+      "rules": [
+        {
+          "name": "pilgrim_booking_activity",
+          "pattern": [
+            {
+              "name": "booking_status",
+              "keywords": [
+                "booking",
+                "booked"
+              ]
+            },
+            {
+              "name": "religious_place",
+              "keywords": [
+                "temple",
+                "pilgrim"
+              ]
+            },
+            {
+              "name": "religious_activity",
+              "keywords": [
+                "darshan"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "cultural_event_booking",
+          "pattern": [
+            {
+              "name": "cultural_activity",
+              "keywords": [
+                "concert",
+                "event",
+                "festival",
+                "theatre",
+                "theater",
+                "museum",
+                "exhibition",
+                "gallery",
+                "show",
+                "performance",
+                "heritage",
+                "tour",
+                "opera",
+                "drama",
+                "dance",
+                "stand up",
+                "standup",
+                "comedy",
+                "cultural",
+                "screen"
+              ]
+            },
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pass",
+                "entry",
+                "slot"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "event_booking_status",
+          "pattern": [
+            {
+              "name": "ticket_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "entry",
+                "pass"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "event_type",
+              "keywords": [
+                "concert",
+                "event",
+                "festival",
+                "museum",
+                "exhibition",
+                "gallery",
+                "show",
+                "theatre",
+                "theater",
+                "performance"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "event_booking_reference",
+          "pattern": [
+            {
+              "name": "booking_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "reference",
+                "ref",
+                "ticket"
+              ]
+            },
+            {
+              "name": "identifier_type",
+              "keywords": [
+                "id",
+                "number"
+              ]
+            },
+            {
+              "name": "event_type",
+              "keywords": [
+                "concert",
+                "event",
+                "festival",
+                "museum",
+                "show",
+                "gallery",
+                "theatre",
+                "theater"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "cultural_event_ticket_status",
+          "pattern": [
+            {
+              "name": "cultural_event_type",
+              "keywords": [
+                "concert",
+                "festival",
+                "exhibition",
+                "theatre",
+                "theater",
+                "museum",
+                "show",
+                "performance",
+                "gallery"
+              ]
+            },
+            {
+              "name": "ticket_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "entry",
+                "pass"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "flight",
+      "rules": [
+        {
+          "name": "flight_booking_schedule",
+          "pattern": [
+            {
+              "name": "booking_schedule_keywords",
+              "keywords": [
+                "confirmed",
+                "booking",
+                "arrival",
+                "departure",
+                "reservation",
+                "ticket",
+                "confirmation",
+                "schedule",
+                "scheduled"
+              ]
+            },
+            {
+              "name": "flight_keyword",
+              "keywords": [
+                "flight"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "flight_booking_reference",
+          "pattern": [
+            {
+              "name": "airline_name",
+              "keywords": [
+                "flight",
+                "airline",
+                "airways",
+                "airlines",
+                "jet",
+                "indigo",
+                "emirates",
+                "lufthansa",
+                "spicejet",
+                "vistara",
+                "qatar",
+                "etihad"
+              ]
+            },
+            {
+              "name": "booking_reference",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pnr",
+                "boarding",
+                "check in",
+                "checkin",
+                "check-in",
+                "seat"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "flight_booking_status",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pnr",
+                "boarding",
+                "check in",
+                "checkin"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "airline_name",
+              "keywords": [
+                "flight",
+                "airline",
+                "airways",
+                "airlines"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "flight_booking_identification",
+          "pattern": [
+            {
+              "name": "booking_reference",
+              "keywords": [
+                "booking",
+                "reference",
+                "ref",
+                "pnr",
+                "ticket"
+              ]
+            },
+            {
+              "name": "identifier_number",
+              "keywords": [
+                "id",
+                "number"
+              ]
+            },
+            {
+              "name": "airline_name",
+              "keywords": [
+                "flight",
+                "airline",
+                "airways",
+                "airlines"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "flight_booking_schedule",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "booking",
+                "ticket",
+                "pnr",
+                "reservation",
+                "boarding"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "tonight",
+                "morning",
+                "evening",
+                "afternoon",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "flight_identifier",
+              "keywords": [
+                "flight",
+                "airline",
+                "airways"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "flight_booking_status",
+          "pattern": [
+            {
+              "name": "airline_identifier",
+              "keywords": [
+                "flight",
+                "airline",
+                "airways",
+                "airlines"
+              ]
+            },
+            {
+              "name": "booking_reference",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pnr",
+                "boarding"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled"
+              ]
+            }
+          ],
+          "excludes": []
+        }
+      ]
+    },
+    {
+      "category": "transportation",
+      "rules": [
+        {
+          "name": "transport_reservation_action",
+          "pattern": [
+            {
+              "name": "reservation_action",
+              "keywords": [
+                "booking",
+                "booked",
+                "reservation",
+                "reserved"
+              ]
+            },
+            {
+              "name": "transportation_mode",
+              "keywords": [
+                "flight",
+                "train",
+                "bus",
+                "plane"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "transport_service_booking",
+          "pattern": [
+            {
+              "name": "transport_mode",
+              "keywords": [
+                "flight",
+                "train",
+                "bus",
+                "cab",
+                "taxi",
+                "ride",
+                "shuttle",
+                "metro",
+                "subway",
+                "tram",
+                "ferry",
+                "cruise",
+                "airline",
+                "railway",
+                "transport",
+                "car rental",
+                "vehicle"
+              ]
+            },
+            {
+              "name": "booking_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pass",
+                "pnr",
+                "boarding",
+                "slot",
+                "id"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "reservation_status_transport",
+          "pattern": [
+            {
+              "name": "booking_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pnr",
+                "boarding"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled",
+                "cancelled",
+                "canceled",
+                "pending"
+              ]
+            },
+            {
+              "name": "transport_mode",
+              "keywords": [
+                "train",
+                "bus",
+                "cab",
+                "taxi",
+                "ride",
+                "shuttle",
+                "ferry",
+                "cruise"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "booking_reference_identification",
+          "pattern": [
+            {
+              "name": "booking_reference_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "reference",
+                "ref",
+                "ticket",
+                "pnr"
+              ]
+            },
+            {
+              "name": "identification_number",
+              "keywords": [
+                "id",
+                "number"
+              ]
+            },
+            {
+              "name": "transportation_mode",
+              "keywords": [
+                "train",
+                "bus",
+                "cab",
+                "taxi",
+                "ride",
+                "shuttle",
+                "ferry",
+                "cruise"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "trip_schedule_booking",
+          "pattern": [
+            {
+              "name": "reservation_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pnr",
+                "boarding"
+              ]
+            },
+            {
+              "name": "time_expression",
+              "keywords": [
+                "today",
+                "tomorrow",
+                "tonight",
+                "morning",
+                "evening",
+                "afternoon",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday",
+                "sunday"
+              ]
+            },
+            {
+              "name": "transportation_mode",
+              "keywords": [
+                "train",
+                "bus",
+                "cab",
+                "ride",
+                "taxi"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+        {
+          "name": "transport_booking_status",
+          "pattern": [
+            {
+              "name": "transport_mode",
+              "keywords": [
+                "train",
+                "bus",
+                "cab",
+                "taxi",
+                "ride",
+                "ferry",
+                "cruise",
+                "shuttle"
+              ]
+            },
+            {
+              "name": "booking_item",
+              "keywords": [
+                "booking",
+                "reservation",
+                "ticket",
+                "pnr",
+                "boarding"
+              ]
+            },
+            {
+              "name": "status_action",
+              "keywords": [
+                "confirmed",
+                "booked",
+                "scheduled",
+                "rescheduled"
+              ]
+            }
+          ],
+          "excludes": []
+        },
+              {
+        "name": "ground_transport_anchor",
+        "pattern": [
+          {
+            "name": "anchor_subject",
+            "keywords": [
+              "abhibus",
+              "auto",
+              "berth",
+              "boarding",
+              "bus",
+              "bus stand",
+              "cab",
+              "coach",
+              "coach position",
+              "confirmtkt",
+              "cruise",
+              "express bus",
+              "ferry",
+              "indian railway",
+              "intercity bus",
+              "intrcity",
+              "irctc",
+              "ixigo bus",
+              "makemytrip bus",
+              "metro",
+              "mmt bus",
+              "ola",
+              "paytm bus",
+              "platform",
+              "platform number",
+              "rail",
+              "railway",
+              "rapido",
+              "redbus",
+              "rickshaw",
+              "shuttle",
+              "sleeper",
+              "station",
+              "subway",
+              "taxi",
+              "ticket",
+              "train",
+              "tram",
+              "uber",
+              "volvo"
+            ]
+          },
+          {
+            "name": "ticket_action",
+            "keywords": [
+              "ticket",
+              "booking",
+              "reservation",
+              "booked",
+              "reserved",
+              "pass",
+              "pnr",
+              "pnr number",
+              "booking reference",
+              "seat no",
+              "seat number",
+              "coach number",
+              "berth number",
+              "boarding point",
+              "boarding time",
+              "reporting time",
+              "pickup point",
+              "drop point",
+              "dropping point",
+              "driver assigned",
+              "otp",
+              "departure time",
+              "arrival time",
+              "delayed",
+              "rescheduled",
+              "canceled",
+              "cancelled",
+              "qr ticket",
+              "digital ticket",
+              "e-ticket",
+              "eticket"
+            ]
+          }
+        ]
+      }
+      ]
+    },
+    {
+      "category": "payment",
+      "rules": [
+      {
+        "name": "payment_transaction_status",
+        "pattern": [
+          {
+            "name": "payment_method",
+            "keywords": ["wallet", "card", "balance", "upi", "skrill", "receipt", "ksh", "ref", "cash", "paytm", "pesa", "apple pay", "debit", "rent", "cash card", "apple", "bank", "visa", "rs", "payments", "wallet balance", "funds", "google pay", "cafe"]
+          },
+          {
+            "name": "transaction_status",
+            "keywords": ["transfer", "failed", "view receipt", "retry", "completed", "paid", "using", "pay", "debited", "pending", "sent", "payment", "insufficient", "charge", "received", "top", "approved", "auto", "added", "tap view", "try"]
+          }
+        ]
+      }
+    ]
+    },
+    {
+    "category": "trading",
+    "rules": [
+      {
+        "name": "stock_market_transaction",
+        "pattern": [
+          {
+            "name": "financial_instrument",
+            "keywords": [
+              "aapl",
+              "alert",
+              "average price",
+              "brokerage",
+              "bse",
+              "buy",
+              "call",
+              "cdsl",
+              "cost",
+              "credit of shares",
+              "debit of shares",
+              "demat",
+              "deposit",
+              "dividend",
+              "equity",
+              "est",
+              "etf",
+              "executed at",
+              "funds",
+              "futures",
+              "ipo",
+              "limit",
+              "loss",
+              "margin",
+              "market",
+              "msft",
+              "mutual fund",
+              "nifty",
+              "nsdl",
+              "nse",
+              "options",
+              "order cancelled",
+              "order placed",
+              "order rejected",
+              "portfolio",
+              "position closed",
+              "position opened",
+              "price",
+              "rebalanced",
+              "sell",
+              "sensex",
+              "share",
+              "shares",
+              "size",
+              "sl",
+              "split",
+              "stock",
+              "stocks",
+              "stop loss",
+              "stop loss hit",
+              "target hit"
+            ]
+          },
+          {
+            "name": "trading_operation",
+            "keywords": [
+              "adjusted",
+              "after",
+              "assigned",
+              "average price",
+              "booking",
+              "buy",
+              "closed",
+              "confirmed",
+              "credit of shares",
+              "credited",
+              "debit of shares",
+              "deposit",
+              "executed",
+              "executed at",
+              "filled",
+              "open",
+              "order cancelled",
+              "order placed",
+              "order rejected",
+              "position closed",
+              "position opened",
+              "processed",
+              "reached",
+              "rebalanced",
+              "sell",
+              "sep",
+              "settles",
+              "sl",
+              "sold",
+              "split",
+              "stop",
+              "stop loss hit",
+              "target hit",
+              "triggered"
+            ]
+          }
+        ]
+      }
+    ]
+    },
+    {
+    "category": "delivery",
+    "rules": [
+      {
+        "name": "delivery_tracking",
+        "pattern": [
+          {
+            "name": "delivery_term",
+            "keywords": ["delivery", "eta", "driver", "drop off", "photo", "courier", "door", "handoff", "gate", "parcel", "buzzer", "aramex", "rider", "spot", "signature required", "logistics", "amazon logistics", "signature", "instructions", "ups", "building", "unit", "package", "route", "reception", "map", "apartment", "amazon"]
+          },
+          {
+            "name": "delivery_status",
+            "keywords": ["drop", "live", "access", "delivered", "leave", "out delivery", "today", "safe", "switch", "arriving", "prefer", "tomorrow", "app", "requires"]
+          }
+        ]
+      }
+    ]
+    },
+    {
+    "category": "order",
+    "rules": [
+      {
+        "name": "order_management",
+        "pattern": [
+          {
+            "name": "order_term",
+            "keywords": ["order", "items", "item", "store", "collection", "pickup", "notes", "person", "plan", "tee"]
+          },
+          {
+            "name": "order_status",
+            "keywords": ["remove", "edit", "update", "choose", "review", "keep", "processing", "changes", "lock", "add", "selected", "reply", "updated", "decline", "ready", "tap", "booking", "adjust", "set"]
+          }
+        ]
+      }
+    ]
+    }
+  ]

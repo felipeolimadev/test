@@ -1,0 +1,5 @@
+SELECT distinct ?s
+WHERE {
+    ?s rdf:type/rdfs:subClassOf user:Staying .
+    FILTER NOT EXISTS { ?s user:atLocation ?loc . }
+}
